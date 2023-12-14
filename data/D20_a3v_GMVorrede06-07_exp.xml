@@ -1,0 +1,289 @@
+<?teipublisher template="surface.html" odd="surface.odd" view="surface" media="pdf epub print"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>a3v</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div1>
+            <anchor xml:id="a3v_div1_d2e22"/>
+            <pb xml:id="a3v" corresp="#contents_a3v #folDesc_a3rv #addDesc_a3v #N_brown1" facs="#D-20a_VI" change="#GMfrontRecord #GM01-02finalVersion #GMVorrede06-07Addenda #proofreadingCbTitel"/>
+            <fw type="pageNumber" hand="#N_red" place="top-right" xml:id="a3v_fw_d2e27">VI.<del>VII</del>
+            </fw>
+            <substJoin target="#substAdd1_a3v #substDel1a_a3v #substDel1b_a3v #substDel1c_a3v"/>
+            <div2>
+               <anchor xml:id="a3v_div2_d2e33"/>
+               <p>
+                  <lb n="1" xml:id="a3v_lb1"/>als „den Bösen“ anzusetzen, höherwerthig im Sinn der Förderung, Nützlichkeit, Gedeihlichkeit in Hinsicht auf <hi rend="underline">den</hi> Menschen über<pc force="weak">-</pc>
+                  <lb n="2" xml:id="a3v_lb2"/>haupt (die Zukunft des Menschen eingerechnet) Wie<subst>
+                     <del rend="overwritten">
+                        <del rend="strikethrough">,</del>
+                     </del>
+                     <add place="superimposed" xml:id="a3v_add_d2e52">?</add>
+                  </subst> wenn das Umgekehrte die Wahrheit wäre? Wie? wenn im „Guten“ 
+               <lb n="3" xml:id="a3v_lb3"/>auch ein Rückgangssymptom läge, insgleichen eine Gefahr, eine Verführung, ein Gift, ein <hi rend="latin">Narcoticum</hi>, durch das 
+                  <lb n="4" xml:id="a3v_lb4"/>etwa die Gegenwart <hi rend="underline">auf</hi>
+                  <hi rend="underline">Kosten</hi>
+                  <hi rend="underline">der</hi>
+                  <hi rend="underline">Zukunft</hi> lebte? Vielleicht behaglicher, ungefährlicher, aber auch in kleinerem Stile, 
+                  <lb n="5" xml:id="a3v_lb5"/>niedriger?… So daß gerade die Moral daran Schuld wäre, wenn eine an sich mögliche <hi rend="underline">höchste</hi>
+                  <hi rend="underline">Mächtigkeit</hi>
+                  <hi rend="underline">und</hi>
+                  <lb n="6" xml:id="a3v_lb6"/>
+                  <hi rend="underline">Pracht</hi> des Typus Mensch niemals erreicht würde?… So daß gerade die Moral die Gefahr der Gefahren wäre?…</p>
+            </div2>
+            <div2 xml:id="GMVorrede07">
+               <anchor xml:id="a3v_div2_GMVorrede07"/>
+               <head xml:id="a3v_head_d2e99">
+                  <lb n="7" xml:id="a3v_lb7"/>7.</head>
+               <p>
+                  <lb n="8" rend="indent" xml:id="a3v_lb8"/>Genug, daß <subst>
+                     <add place="above" rend="insM" xml:id="a3v_add_d2e109">ich</add>
+                     <del rend="hatching">mir</del>
+                  </subst> selbst, seitdem mir dieser Ausblick sich öffnete, Gründe hatte, mich nach gelehrten, kühnen und arbeit<pc force="weak">-</pc>
+                  <lb n="9" xml:id="a3v_lb9"/>samen Genossen umzusehn (ich thue es heute noch). Es gilt, das ungeheure, ferne <milestone unit="page" edRef="#Ed" n="XII"/>und so versteckte Land der Moral – 
+                  <lb n="10" xml:id="a3v_lb10"/>der wirklich dagewesenen, wirklich gelebten Moral – mit lauter neuen Fragen und gleichsam mit neuen Augen zu 
+                  <lb n="11" xml:id="a3v_lb11"/>bereisen: und heißt dies nicht beinahe so viel als dieses Land erst <hi rend="underline">entdecken</hi>?… Wenn ich dabei, unter Anderen, 
+                  <lb n="12" xml:id="a3v_lb12"/>auch an den genannten <hi rend="latin">Dr. Rée</hi> dachte, so geschah es, weil ich gar nicht zweifelte, daß er von der Natur seiner Fra<pc force="weak">-</pc>
+                  <lb n="13" xml:id="a3v_lb13"/>gen selbst auf eine richtigere Methodik, um zu Antworten zu gelangen, gedrängt werden würde. Habe ich mich darin 
+                  <lb n="14" xml:id="a3v_lb14"/>betrogen? Mein Wunsch war es jedenfalls, einem so scharfen und unbetheiligten Auge eine bessere Richtung, die Rich<pc force="weak">-</pc>
+                  <lb n="15" xml:id="a3v_lb15"/>tung zur wirklichen <hi rend="underline">Historie</hi>
+                  <hi rend="underline">der</hi>
+                  <hi rend="underline">Moral</hi> zu geben und ihn vor solchem englischen Hypothesenwesen <hi rend="underline">ins</hi>
+                  <hi rend="underline">Blaue</hi>
+                  <lb n="16" xml:id="a3v_lb16"/>noch zur rechten Zeit zu warnen. Es liegt ja auf der Hand, welche Farbe für einen Moral-Genealogen hundert 
+                  <lb n="17" xml:id="a3v_lb17"/>Mal wichtiger sein muß als gerade das Blaue: nämlich <hi rend="underline">das</hi>
+                  <hi rend="underline">Graue</hi>, will sagen, das Urkundliche, das Wirklich<pc force="strong">-</pc>
+                  <lb n="18" xml:id="a3v_lb18"/>Feststellbare, das Wirklich-Dagewesene, kurz die ganze lange schwer zu entziffernde Hieroglyphenschrift der 
+                  <lb n="19" xml:id="a3v_lb19"/>menschlichen Moral-Vergangenheit! – <hi rend="underline">Diese</hi> war dem <hi rend="latin">Dr. Rée</hi> unbekannt; aber er hatte Darwin gelesen – und 
+                  <lb n="20" xml:id="a3v_lb20"/>so reichen sich in seinen Hypothesen auf eine Weise, die zum Mindesten unterhaltend ist, die Darwinsche Bestie 
+                  <lb n="21" xml:id="a3v_lb21"/>und der allermodernste <metamark xml:id="mark1a_a3v" place="below" rend="typesetter_black" target="#mark1ba3v #substAdd1_a3v" change="#GMVorrede06-07Addenda">╘</metamark>
+                  <del xml:id="substDel1a_a3v" hand="#typesetter_black" rend="strikethrough" seq="2" change="#GMVorrede06-07Addenda">kleinbürgerliche</del>
+                  <subst change="#GMVorrede06-07Addenda">
+                     <add hand="#typesetter_black" place="above" seq="1" xml:id="a3v_add_d2e198">
+                        <del xml:id="substDel1b_a3v" hand="#typesetter_black" rend="strikethrough" seq="2">Genüßling</del>
+                     </add>
+                     <del hand="#typesetter_black" rend="strikethrough" seq="1">Zärtling</del>
+                  </subst> und <subst change="#GMVorrede06-07Addenda">
+                     <add hand="#typesetter_black" place="above" seq="1" xml:id="a3v_add_d2e205">
+                        <del xml:id="substDel1c_a3v" hand="#typesetter_black" rend="strikethrough" seq="2">Stubenhocker</del>
+                     </add>
+                     <del hand="#typesetter_black" rend="strikethrough" seq="1">Bildungsphilister</del>
+                  </subst> artig die Hand, letzterer mit dem Ausdruck 
+                  <lb n="22" xml:id="a3v_lb22"/>einer gewissen gutmüthigen und feinen Indolenz im Gesicht, in die selbst ein Gran von Pessimismus, von Ermü<pc force="weak">-</pc>
+                  <lb n="23" xml:id="a3v_lb23"/>dung eingemischt ist: als ob es sich eigent<milestone unit="page" edRef="#Ed" n="XIII"/>lich gar nicht lohne, alle diese Dinge – die Probleme der Moral <add place="inline" xml:id="a3v_add_d2e221">–</add> so 
+                  <lb n="24" xml:id="a3v_lb24"/>ernst zu nehmen. Mir nun scheint es umgekehrt gar keine Dinge zu geben, die es mehr <hi rend="underline">lohnten</hi>, daß man 
+                  <lb n="25" xml:id="a3v_lb25"/>sie ernst nimmt; zu welchem Lohne es zum Beispiel gehört, daß man eines Tags vielleicht die Erlaub<pc force="weak">-</pc>
+                  <lb n="26" xml:id="a3v_lb26"/>niß erhält, sie <hi rend="underline">heiter</hi> zu nehmen. Die Heiterkeit nämlich oder, um es in meiner Sprache zu sagen, <hi rend="underline">die</hi>
+                  <lb n="27" xml:id="a3v_lb27"/>
+                  <hi rend="underline">fröhliche</hi>
+                  <hi rend="underline">Wissenschaft</hi> – ist ein Lohn: ein Lohn für einen langen, tapferen, arbeitsamen <del rend="hatching" instant="true">Ernst</del> und unter<pc force="weak">-</pc>
+                  <lb n="28" xml:id="a3v_lb28"/>irdischen Ernst, der freilich nicht Jedermanns Sache ist. An dem Tage aber, wo wir aus vollem Herzen 
+                  <lb n="29" xml:id="a3v_lb29"/>sagen: „vorwärts! auch unsre alte Moral gehört <hi rend="underline">in</hi>
+                  <hi rend="underline">die</hi>
+                  <hi rend="underline">Komödie</hi>!“ haben wir für das <subst change="#proofreadingCbTitel">
+                     <add hand="#Koeselitz_pencil" place="above" xml:id="a3v_add_d2e272">dionysische</add>
+                     <del hand="#Koeselitz_pencil" rend="strikethrough">hundertaktige</del>
+                  </subst>
+                  <note type="editorial" xml:id="a3v_note_d2e276">vgl. N an Naumann, 18.10.1887 (in KGB/KSB mit  Fehllesung „hundertartige“, recte: „hundertactige“)</note> Dra<pc force="weak">-</pc>
+                  <lb n="30" xml:id="a3v_lb30"/>ma vom „Schicksal der Seele“ eine neue Verwicklung und Möglichkeit entdeckt –: und er wird sie sich 
+                  <lb n="31" xml:id="a3v_lb31"/>schon zu Nutze machen, darauf darf man wetten, er, der große alte ewige Komödiendichter unsres Daseins!…</p>
+               <p>
+                  <lb n="32" rend="indent" xml:id="a3v_lb32"/>
+                  <hi rend="latin">
+                     <hi rend="underline">Sils</hi>-<hi rend="underline">Maria</hi>
+                  </hi>, Oberengadin,
+                  <lb n="33" rend="indent" xml:id="a3v_lb33"/>im Juli 1887.</p>
+               <ab xml:id="a3v_ab_d2e303">
+                  <lb n="34" xml:id="a3v_lb34"/>
+                  <add xml:id="substAdd1_a3v" hand="#typesetter_black" place="inline" seq="2" change="#GMVorrede06-07Addenda">
+                     <metamark xml:id="mark1b_a3v" rend="typesetter_black" target="#mark1a_a3v">╘</metamark>bescheidene Moral-Zärtling, der „nicht mehr beißt“</add>
+               </ab>
+            </div2>
+            <note type="authorial" hand="#N_brown" place="bottom-right" xml:id="a3v_note_d2e312">
+               <lb n="35" xml:id="a3v_lb35"/>
+               <hi rend="markLine">NB! Hierauf folgt ein leeres Blatt, auf dem nur diese Wor<pc force="weak">-</pc>
+                  <lb n="36" xml:id="a3v_lb36"/>te stehn: 
+               <lb n="37" rend="centered" xml:id="a3v_lb37"/>
+                  <hi rend="latin">
+                     <hi rend="underline">Erste</hi>
+                     <hi rend="underline">Abhandlung</hi>: 
+                  <lb n="38" rend="centered" xml:id="a3v_lb38"/>„Gut und Böse“, „Gut und Schlecht.“</hi>
+               </hi>
+            </note>
+         </div1>
+      </body>
+   </text>
+   <sourceDoc>
+      <surface xml:id="srcD_surface_a3v" type="relative" start="#a3v">
+         <zone xml:id="srcD_zone_a3v_div2_d2e33" start="#a3v_div2_d2e33" type="firstBlock" style="padding-top:5em;">
+            <zone xml:id="srcD_zone_a3v_fw_d2e27" type="fw-top-right" start="#a3v_fw_d2e27">
+               <fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a3v_fw_d2e27">VI.<del>VII</del>
+               </fw>
+            </zone>
+            <line xml:id="srcD_line_a3v_lb1" start="#a3v_lb1" n="1">als „den Bösen“ anzusetzen, höherwerthig im Sinn der Förderung, Nützlichkeit, Gedeihlichkeit in Hinsicht auf <hi rend="underline">den</hi> Menschen über<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a3v_lb2" start="#a3v_lb2" n="2">haupt (die Zukunft des Menschen eingerechnet) Wie<subst>
+                  <del rend="overwritten">
+                     <del rend="strikethrough">,</del>
+                  </del>
+                  <add place="superimposed" corresp="#a3v_add_d2e52">?</add>
+               </subst> wenn das Umgekehrte die Wahrheit wäre? Wie? wenn im „Guten“ 
+               </line>
+            <line xml:id="srcD_line_a3v_lb3" start="#a3v_lb3" n="3">auch ein Rückgangssymptom läge, insgleichen eine Gefahr, eine Verführung, ein Gift, ein <hi rend="latin">Narcoticum</hi>, durch das 
+                  </line>
+            <line xml:id="srcD_line_a3v_lb4" start="#a3v_lb4" n="4">etwa die Gegenwart <hi rend="underline">auf</hi>
+               <hi rend="underline">Kosten</hi>
+               <hi rend="underline">der</hi>
+               <hi rend="underline">Zukunft</hi> lebte? Vielleicht behaglicher, ungefährlicher, aber auch in kleinerem Stile, 
+                  </line>
+            <line xml:id="srcD_line_a3v_lb5" start="#a3v_lb5" n="5">niedriger?… So daß gerade die Moral daran Schuld wäre, wenn eine an sich mögliche <hi rend="underline">höchste</hi>
+               <hi rend="underline">Mächtigkeit</hi>
+               <hi rend="underline">und</hi>
+            </line>
+            <line xml:id="srcD_line_a3v_lb6" start="#a3v_lb6" n="6">
+               <hi rend="underline">Pracht</hi> des Typus Mensch niemals erreicht würde?… So daß gerade die Moral die Gefahr der Gefahren wäre?…
+                    <anchor corresp="#a3v_div2_GMVorrede07"/>
+            </line>
+         </zone>
+         <zone xml:id="srcD_zone_a3v_div2_GMVorrede07" start="#a3v_div2_GMVorrede07" type="lastBlock" style="padding-bottom:5.8em;">
+            <line xml:id="srcD_line_a3v_head_d2e99_a3v_lb7" start="#a3v_lb7" n="7">
+               <zone xml:id="srcD_zone_a3v_head_d2e99_a3v_lb7" type="head">7.
+                  </zone>
+            </line>
+            <line xml:id="srcD_line_a3v_lb8" start="#a3v_lb8" rend="indent" n="8">Genug, daß 
+                            <metamark function="insertion">
+                  <add place="above">ich</add>
+               </metamark>
+               <del rend="hatching">mir</del>
+                         selbst, seitdem mir dieser Ausblick sich öffnete, Gründe hatte, mich nach gelehrten, kühnen und arbeit<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a3v_lb9" start="#a3v_lb9" n="9">samen Genossen umzusehn (ich thue es heute noch). Es gilt, das ungeheure, ferne <milestone unit="page" edRef="#Ed" n="XII"/>und so versteckte Land der Moral – 
+                  </line>
+            <line xml:id="srcD_line_a3v_lb10" start="#a3v_lb10" n="10">der wirklich dagewesenen, wirklich gelebten Moral – mit lauter neuen Fragen und gleichsam mit neuen Augen zu 
+                  </line>
+            <line xml:id="srcD_line_a3v_lb11" start="#a3v_lb11" n="11">bereisen: und heißt dies nicht beinahe so viel als dieses Land erst <hi rend="underline">entdecken</hi>?… Wenn ich dabei, unter Anderen, 
+                  </line>
+            <line xml:id="srcD_line_a3v_lb12" start="#a3v_lb12" n="12">auch an den genannten <hi rend="latin">Dr. Rée</hi> dachte, so geschah es, weil ich gar nicht zweifelte, daß er von der Natur seiner Fra<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a3v_lb13" start="#a3v_lb13" n="13">gen selbst auf eine richtigere Methodik, um zu Antworten zu gelangen, gedrängt werden würde. Habe ich mich darin 
+                  </line>
+            <line xml:id="srcD_line_a3v_lb14" start="#a3v_lb14" n="14">betrogen? Mein Wunsch war es jedenfalls, einem so scharfen und unbetheiligten Auge eine bessere Richtung, die Rich<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a3v_lb15" start="#a3v_lb15" n="15">tung zur wirklichen <hi rend="underline">Historie</hi>
+               <hi rend="underline">der</hi>
+               <hi rend="underline">Moral</hi> zu geben und ihn vor solchem englischen Hypothesenwesen <hi rend="underline">ins</hi>
+               <hi rend="underline">Blaue</hi>
+            </line>
+            <line xml:id="srcD_line_a3v_lb16" start="#a3v_lb16" n="16">noch zur rechten Zeit zu warnen. Es liegt ja auf der Hand, welche Farbe für einen Moral-Genealogen hundert 
+                  </line>
+            <line xml:id="srcD_line_a3v_lb17" start="#a3v_lb17" n="17">Mal wichtiger sein muß als gerade das Blaue: nämlich <hi rend="underline">das</hi>
+               <hi rend="underline">Graue</hi>, will sagen, das Urkundliche, das Wirklich<pc force="strong">-</pc>
+            </line>
+            <line xml:id="srcD_line_a3v_lb18" start="#a3v_lb18" n="18">Feststellbare, das Wirklich-Dagewesene, kurz die ganze lange schwer zu entziffernde Hieroglyphenschrift der 
+                  </line>
+            <line xml:id="srcD_line_a3v_lb19" start="#a3v_lb19" n="19">menschlichen Moral-Vergangenheit! – <hi rend="underline">Diese</hi> war dem <hi rend="latin">Dr. Rée</hi> unbekannt; aber er hatte Darwin gelesen – und 
+                  </line>
+            <line xml:id="srcD_line_a3v_lb20" start="#a3v_lb20" n="20">so reichen sich in seinen Hypothesen auf eine Weise, die zum Mindesten unterhaltend ist, die Darwinsche Bestie 
+                  </line>
+            <line xml:id="srcD_line_a3v_lb21" start="#a3v_lb21" n="21">und der allermodernste <metamark corresp="#mark1a_a3v" place="below" rend="typesetter_black" target="#mark1ba3v #substAdd1_a3v" change="#GMVorrede06-07Addenda">╘</metamark>
+               <del corresp="#substDel1a_a3v" hand="#typesetter_black" rend="strikethrough" change="#GMVorrede06-07Addenda">kleinbürgerliche</del>
+               <add xml:id="srcD_add_a3v_add_d2e198" corresp="#a3v_add_d2e198" place="above" hand="#typesetter_black">
+                  <del corresp="#substDel1b_a3v" hand="#typesetter_black" rend="strikethrough">Genüßling</del>
+               </add>
+               <del hand="#typesetter_black" rend="strikethrough">Zärtling</del>
+                         und 
+                            <add xml:id="srcD_add_a3v_add_d2e205" corresp="#a3v_add_d2e205" place="above" hand="#typesetter_black">
+                  <del corresp="#substDel1c_a3v" hand="#typesetter_black" rend="strikethrough">Stubenhocker</del>
+               </add>
+               <del hand="#typesetter_black" rend="strikethrough">Bildungsphilister</del>
+                         artig die Hand, letzterer mit dem Ausdruck 
+                  </line>
+            <line xml:id="srcD_line_a3v_lb22" start="#a3v_lb22" n="22">einer gewissen gutmüthigen und feinen Indolenz im Gesicht, in die selbst ein Gran von Pessimismus, von Ermü<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a3v_lb23" start="#a3v_lb23" n="23">dung eingemischt ist: als ob es sich eigent<milestone unit="page" edRef="#Ed" n="XIII"/>lich gar nicht lohne, alle diese Dinge – die Probleme der Moral <add place="inline" corresp="#a3v_add_d2e221">–</add> so 
+                  </line>
+            <line xml:id="srcD_line_a3v_lb24" start="#a3v_lb24" n="24">ernst zu nehmen. Mir nun scheint es umgekehrt gar keine Dinge zu geben, die es mehr <hi rend="underline">lohnten</hi>, daß man 
+                  </line>
+            <line xml:id="srcD_line_a3v_lb25" start="#a3v_lb25" n="25">sie ernst nimmt; zu welchem Lohne es zum Beispiel gehört, daß man eines Tags vielleicht die Erlaub<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a3v_lb26" start="#a3v_lb26" n="26">niß erhält, sie <hi rend="underline">heiter</hi> zu nehmen. Die Heiterkeit nämlich oder, um es in meiner Sprache zu sagen, <hi rend="underline">die</hi>
+            </line>
+            <line xml:id="srcD_line_a3v_lb27" start="#a3v_lb27" n="27">
+               <hi rend="underline">fröhliche</hi>
+               <hi rend="underline">Wissenschaft</hi> – ist ein Lohn: ein Lohn für einen langen, tapferen, arbeitsamen <del rend="hatching" instant="true">Ernst</del> und unter<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a3v_lb28" start="#a3v_lb28" n="28">irdischen Ernst, der freilich nicht Jedermanns Sache ist. An dem Tage aber, wo wir aus vollem Herzen 
+                  </line>
+            <line xml:id="srcD_line_a3v_lb29" start="#a3v_lb29" n="29">sagen: „vorwärts! auch unsre alte Moral gehört <hi rend="underline">in</hi>
+               <hi rend="underline">die</hi>
+               <hi rend="underline">Komödie</hi>!“ haben wir für das 
+                            <add xml:id="srcD_add_a3v_add_d2e272" corresp="#a3v_add_d2e272" place="above" hand="#Koeselitz_pencil">dionysische</add>
+               <del hand="#Koeselitz_pencil" rend="strikethrough">hundertaktige</del>
+                         Dra<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a3v_lb30" start="#a3v_lb30" n="30">ma vom „Schicksal der Seele“ eine neue Verwicklung und Möglichkeit entdeckt –: und er wird sie sich 
+                  </line>
+            <line xml:id="srcD_line_a3v_lb31" start="#a3v_lb31" n="31">schon zu Nutze machen, darauf darf man wetten, er, der große alte ewige Komödiendichter unsres Daseins!…
+                  </line>
+            <line xml:id="srcD_line_a3v_lb32" start="#a3v_lb32" rend="indent" n="32">
+               <hi rend="latin">
+                  <hi rend="underline">Sils</hi>-<hi rend="underline">Maria</hi>
+               </hi>, Oberengadin,
+                  </line>
+            <line xml:id="srcD_line_a3v_lb33" start="#a3v_lb33" rend="indent" n="33">im Juli 1887.
+                  </line>
+            <zone xml:id="srcD_zone_a3v_ab_d2e303_a3v_lb34" start="#a3v_lb34" type="ab-zone" style="margin-left:-19px;">
+               <line xml:id="srcD_line_a3v_lb34" start="#a3v_lb34" style="bottom:5em;" n="34">
+                  <add corresp="#substAdd1_a3v" hand="#typesetter_black" place="inline" change="#GMVorrede06-07Addenda">
+                     <metamark corresp="#mark1b_a3v" rend="typesetter_black" target="#mark1a_a3v">╘</metamark>bescheidene Moral-Zärtling, der „nicht mehr beißt“</add>
+               </line>
+            </zone>
+            <zone xml:id="srcD_zone_a3v_note_d2e312_a3v_lb35" type="note-zone" start="#a3v_lb35" style="margin-left:397px;">
+               <line xml:id="srcD_line_a3v_note_d2e312_a3v_lb35" start="#a3v_lb35" style="bottom:4em;" rend="#N_brown" n="35">
+                  <hi rend="markLine">NB! Hierauf folgt ein leeres Blatt, auf dem nur diese Wor</hi>
+                  <pc force="weak">
+                     <hi rend="markLine">-</hi>
+                  </pc>
+               </line>
+            </zone>
+            <zone xml:id="srcD_zone_a3v_note_d2e312_a3v_lb36" type="note-zone" start="#a3v_lb36" style="margin-left:397px;">
+               <line xml:id="srcD_line_a3v_note_d2e312_a3v_lb36" start="#a3v_lb36" style="bottom:3em;" rend="#N_brown" n="36">
+                  <hi rend="markLine">te stehn: 
+               </hi>
+               </line>
+            </zone>
+            <zone xml:id="srcD_zone_a3v_note_d2e312_a3v_lb37" type="note-zone" start="#a3v_lb37" style="margin-left:397px;">
+               <line xml:id="srcD_line_a3v_note_d2e312_a3v_lb37" start="#a3v_lb37" style="bottom:2em;" rend="#N_brown" n="37">
+                  <hi rend="markLine">
+                     <hi rend="underline">
+                        <hi rend="latin">Erste</hi>
+                     </hi>
+                     <hi rend="underline">
+                        <hi rend="latin">Abhandlung</hi>
+                     </hi>
+                     <hi rend="latin">: 
+                  </hi>
+                  </hi>
+               </line>
+            </zone>
+            <zone xml:id="srcD_zone_a3v_note_d2e312_a3v_lb38" type="note-zone" start="#a3v_lb38" style="margin-left:397px;">
+               <line xml:id="srcD_line_a3v_note_d2e312_a3v_lb38" start="#a3v_lb38" style="bottom:1em;" rend="#N_brown" n="38">
+                  <hi rend="markLine">
+                     <hi rend="latin">„Gut und Böse“, „Gut und Schlecht.“</hi>
+                  </hi>
+               </line>
+            </zone>
+         </zone>
+      </surface>
+   </sourceDoc>
+</TEI>
