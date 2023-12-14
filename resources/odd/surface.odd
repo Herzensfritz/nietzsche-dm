@@ -26,30 +26,13 @@
         </revisionDesc></teiHeader><text>
         <body>
             <schemaSpec start="TEI teiCorpus" ident="surface" source="teipublisher.odd"> 
-                <elementSpec ident="pb" mode="change"><model predicate="root($parameters?root)//sourceDoc" behaviour="inline">
-            <pb:template xmlns="" xml:space="preserve"><h1>[[content]]</h1></pb:template>
-            <outputRendition xml:space="preserve">
-            color: red;
-            </outputRendition>
-        </model><model behaviour="break" useSourceRendition="true">
-            <param name="type" value="'page'"/>
-            <param name="label" value="@xml:id"/>
-            <outputRendition xml:space="preserve">
-            display: block; margin-left: 4pt; color: grey; float: right;
-            </outputRendition>
-            <outputRendition xml:space="preserve" scope="before">
-            content: '[Seite ';
-            </outputRendition>
-            <outputRendition xml:space="preserve" scope="after">
-            content: ']';
-            </outputRendition>
-        </model></elementSpec>
+                <elementSpec ident="pb" mode="change"/>
                 <elementSpec ident="hi" mode="change"><model predicate="@rend='underline'" behaviour="inline"/><model predicate="@rend='doubleUnderline'" behaviour="inline"/><model predicate="@rend='latin'" behaviour="inline"/></elementSpec>
                 <elementSpec ident="note" mode="change"><model behaviour="omit"/></elementSpec>
                 <elementSpec ident="noteGrp" mode="add"/>
             <elementSpec ident="lb" mode="change"/>
                 <elementSpec ident="p" mode="change"/>
-                <elementSpec ident="sourceDoc" mode="add"><model behaviour="body" cssClass="transkriptionField"/></elementSpec>
+                <elementSpec ident="sourceDoc" mode="add"/>
                 <elementSpec ident="text" mode="change"/>
                 <elementSpec ident="div2" mode="add"/>
                 <elementSpec ident="body" mode="change"/>
@@ -135,6 +118,17 @@
             <pb:template xmlns="" xml:space="preserve"><span class="[[parentClass]] [[hand]]">
   <span class="[[class]]" style="[[style]]">[[content]]</span>
 </span></pb:template>
-        </model></elementSpec></schemaSpec>
+        </model></elementSpec>
+                <elementSpec ident="subst" mode="add"><model predicate="add/@place = 'superimposed' and del and not(parent::fw)" behaviour="inline" cssClass="popover">
+            <param name="alternate" value="del/(*|text())"/>
+            <param name="content" value="add[@place='superimposed']/(*|text())"/>
+            <pb:template xmlns="" xml:space="preserve">
+                <pb-popover theme="material">
+                    <span slot="default">[[content]]</span>
+                    <span slot="alternate">[[alternate]]</span>
+                </pb-popover>
+            </pb:template>
+        </model></elementSpec>
+            </schemaSpec>
         </body>
     </text></TEI>

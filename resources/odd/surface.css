@@ -13,6 +13,7 @@
    .metamark { cursor: pointer;}
    .small { color: black; padding: 3px; }
    .fw-box { background-color: #add8e6;}
+   .popover { background-color: #F5F5F5; cursor: context-menu; }
     .box, .editorCorrection { background-color: #F5F5F5; width: max-content; text-align: start;}
     .box .tooltip {
        display: none;
@@ -98,7 +99,7 @@
         content: "";
         left: -2px;
         height: inherit;
-        width: var(--length);
+        width: 0.2em;
         top: -3px;
         border-top: 1px solid;
         border-left: 1px solid;
@@ -146,7 +147,7 @@
         position: absolute;
         content: "";
         left: -2px;
-        width: var(--length);
+        width: 0.2em;
         height: inherit;
         top: 2px;
         border-bottom: 1px solid;
