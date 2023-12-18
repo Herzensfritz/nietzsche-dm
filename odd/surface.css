@@ -1,0 +1,250 @@
+:root {
+         --highlight: yellow;
+         --radius: 1em 1em;
+         --red-marking: red;
+         --length: 0.2em;
+         --nbrown: #5C4033;
+}
+   #input { position: fixed; left: 70%;}
+   form { margin-top: 2px;}
+   #message { color: red;}
+   .transkriptionField {background-color: #CED5CE; padding-right: 20px; padding-left: 5px; padding-top: 10px; padding-bottom: 10px;margin-left: 30px; width: max-content;}
+   .highlight, .metamark:hover { background-color: var(--highlight); }
+   .metamark { cursor: pointer;}
+   .small { color: black; padding: 3px; }
+   .fw-box { background-color: #add8e6;}
+    .box, .editorCorrection { background-color: #F5F5F5; width: max-content; text-align: start;}
+    .box .tooltip {
+       display: none;
+    }
+    .fw-box .tooltip {
+       display: none;
+    }
+    .box:hover, .fw-box:hover, .editorCorrection:hover  {
+        cursor: context-menu;
+         position: relative;
+    }
+    .tooltip {
+       padding: 5px;
+       display: inline;
+       min-width: max-content;
+       border-radius: 5px;
+       font-size: 80%;
+    }
+    .box:hover .tooltip, .fw-box:hover .tooltip {
+     display: block;
+     z-index: 100;
+     line-height: 1.1em;
+     background-color: black;
+     opacity: .7;
+     color: white;
+     left: 0px;
+     position: absolute;
+     top: -2em;
+     text-decoration: none;
+    }
+   .EOL { color: red;}
+   .XXX_red, .N_red { color: #dc4731;}
+   .N-Archiv_red { color: #b8390e;font-face: bold;}
+   .N_pencil { color: gray; font-weight: bold;}
+   .N_brown1, .N_brown { color: var(--nbrown);}
+   .red-marking:before { 
+      color: var(--red-marking);
+      position: relative;
+      content: "";
+      left: -2px;
+      height: inherit;
+      top: 3px;
+      border-left: 2.5px solid;
+   }
+   .indent { margin-left: 34px;}
+   *[draggable] { cursor: grab; }
+    .deleted, .deleted-000, .hatching { cursor: context-menu; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAX/GZH4/4FsRpgAmAOSBBFwDkgAAIKuBATRTAAZAAAAAElFTkSuQmCC ) repeat; }
+    .red-deleted { cursor: context-menu; background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='2000' stroke='red' stroke-dasharray='1.2 1.8 1.2' d='M1,1 1500,1500'/></svg>") repeat; }
+    .hex-deleted { background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='240' stroke='%23750606' stroke-dasharray='1' d='M1,1 150,150'/></svg>") repeat; }
+    .new-deleted { background:url("https://upload.wikimedia.org/wikipedia/commons/7/73/Schraffur_fein_diagonal_hoch.svg") repeat; }
+   .deleted-N_brown1, .hatching-N_brown1 { cursor: context-menu; background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='2000' stroke='%235C4033' stroke-dasharray='0.1 0.2 0.1 0.2' d='M1,1 1500,1500'/></svg>") repeat; }
+   .GSA_pencil { color: #6b6b6b;font-family: cursive;} 
+     .singleBlock { position: relative; padding-top: 5em; padding-bottom: 5em;}
+     .firstBlock { position: relative; padding-top: 5em; }
+     .lastBlock { position: relative; padding-bottom: 5em; }
+     .textBlock { position: relative;}
+     .add-zone { font-size: 90%; }
+     .ab-zone { }
+     .zoneLine { position: absolute;}
+     .note-zone-bottom-right { position: absolute; bottom: 1em;  font-style: italic;}
+     .fw-top { position: absolute; top: -0.1em;}
+     .fw-top-right { position: absolute; top: -0.1em; right: 50px;}
+     .fw-top-left { position: absolute; top: -0.1em; left: 25px;}
+     .fw-top-center { position: absolute; top: -0.1em; left: 50%;}
+     .fw-bottom-left { position: absolute; bottom: 0em; left: 25px;}
+     .fw-container { margin-left: 30px; width: 90%; display: inline-block;font-style: italic;}
+     .note-top-right { position: absolute; top: 1em; right: 0px;width: 100%;font-style: italic;}
+     .note-bottom-right { position: absolute; bottom: 2em; right: 0px;font-style: italic;}
+     .note-margin-left { position: absolute; bottom: 2em; left: 0px;font-style: italic;}
+      .note-right { position: absolute; right: 0px;font-style: italic;}
+     .note-left, .note-bottom { position: absolute;width: 100%;font-style: italic;}
+     .note-top-center { position: absolute; top: 1em; margin-left: 60%;margin-right:60%;width: 100%;font-style: italic; }
+     .head-zone { position: absolute; top: 1em; width: 100%;}
+     .top-left { text-align: left }
+     .bottom-left { text-align: left }
+     .top-right { margin-left: 60%; }
+     .afterWordinsertion-above, .beforePunctuationinsertion-above, .inWordinsertion-above, .inSpatiuminsertion-above, .insMinsertion-above, .Ezinsertion-above, .insertion-above { 
+         position:relative; top: -2px;height: 100%; width: 100%; }
+     .inSpatiuminsertion-above { padding-left: -3.5px;}
+     .beforePunctuationinsertion-above { padding-left: 3px;}
+     .afterWordinsertion-above:before, .beforePunctuationinsertion-above:before, .inWordinsertion-above:before, .inSpatiuminsertion-above:before, .insMinsertion-above:before, .Ezinsertion-above:before { 
+        position: absolute;
+        content: "";
+        left: -2px;
+        height: inherit;
+        width: var(--length);
+        top: -3px;
+        border-top: 1px solid;
+        border-left: 1px solid;
+        border-top-left-radius: var(--radius);
+        border-color: inherit;/* inherit color from text */
+     }
+    .inSpatiuminsertion-above:before { left: -3.5px; }
+    .afterWordinsertion-above:before { left: 1px;   }
+    .inWordinsertion-above:before { left: -0.5px; }
+    .beforePunctuationinsertion-above:before {  left: 2px;  }
+     .below { 
+        position: absolute;
+        top: 1.8em;
+        font-size:80%;
+        width: max-content;
+        line-height: 1em;
+         transition: color 1s;
+         
+     }
+     .above  {
+         position: absolute;
+         top: -1.5em;
+         font-size:80%;
+         width: max-content;
+         line-height: 1em;
+         /*height: max-content;*/
+         transition: color 1s;
+     }
+     .centered{
+         display: inline-block;
+         text-align: center;
+         margin: auto;
+         width: 80%;
+      }
+     .centerLeft {
+         transform: translateX(-30%);
+     }
+     .insert-mark-above, .insert-mark-below { position: relative;padding-left: 2px; padding-right: 2px; height: 100%; }
+     .afterWordinsertion-below, .beforePunctuationinsertion-below, .inWordinsertion-below, .inSpatiuminsertion-below,.insMinsertion-below, .Ezinsertion-below, .insertion-below  { 
+         position:relative; top: 10px;height: 100%; width: 100%; 
+      }
+     .inSpatiuminsertion-below { padding-left: -3.5px;}
+     .beforePunctuationinsertion-below { padding-left: 3px;}
+     .afterWordinsertion-below:before, .beforePunctuationinsertion-below:before, .inWordinsertion-below:before, .inSpatiuminsertion-below:before, .insMinsertion-below:before, .Ezinsertion-below:before { 
+        position: absolute;
+        content: "";
+        left: -2px;
+        width: var(--length);
+        height: inherit;
+        top: 2px;
+        border-bottom: 1px solid;
+        border-left: 1px solid;
+        border-bottom-left-radius:  var(--radius);
+        border-color: inherit;
+     }
+    .inSpatiuminsertion-below:before { left: -3.5px; }
+    .afterWordinsertion-below:before { left: 1px;   }
+    .inWordinsertion-below:before { left: -0.5px; }
+   .beforePunctuationinsertion-below:before { margin-left: 4px;}
+   .addSpan { font-size:90%;}
+   .erased { color: grey;}
+    .inline { font-size:90%;}
+    .overwritten { text-decoration: line-through; color: red;}
+        .superimposed { color: green;}
+  
+        .strikethrough, .strikethrough1 { text-decoration: line-through; }
+        .strikethrough2 { text-decoration: line-through; }
+        .overwritten-punctuation { position: relative; color: red; }
+        .overwritten-punctuation:before {
+           position: absolute;
+           content: "";
+           left: 0;
+           top: 65%;
+           right: 0;
+           border-top: 1px solid;
+           border-color: inherit;
+
+           -webkit-transform:rotate(12deg);
+           -moz-transform:rotate(12deg);
+           -ms-transform:rotate(12deg);
+           -o-transform:rotate(12deg);
+           transform:rotate(12deg);
+         }
+
+        .strikethrough-apastrophe { position: relative; }
+        .strikethrough-apastrophe:before {
+           position: absolute;
+           content: "";
+           left: 0;
+           top: 25%;
+           right: 0;
+           border-top: 1px solid;
+           border-color: inherit;
+
+           -webkit-transform:rotate(-7deg);
+           -moz-transform:rotate(-7deg);
+           -ms-transform:rotate(-7deg);
+           -o-transform:rotate(-7deg);
+           transform:rotate(-7deg);
+         }
+
+        .deleted-underline { text-decoration: underline; position: relative; }
+        .deleted-underline:before {
+           position: absolute;
+           content: "";
+           left: 0;
+           top: 85%;
+           right: 0;
+           border-top: 1px solid;
+           border-color: inherit;
+
+           -webkit-transform:rotate(-5deg);
+           -moz-transform:rotate(-5deg);
+           -ms-transform:rotate(-5deg);
+           -o-transform:rotate(-5deg);
+           transform:rotate(-5deg);
+         }
+         .del-linearisiert:before { content: '['; }
+         .del-linearisiert:after { content: ']'; }
+         .underline { text-decoration: underline;  }
+         .markLine { border-bottom: solid; }
+         .markLine_N_brown1 {
+             border-bottom: solid;
+             border-bottom-color: var(--nbrown);
+         } 
+        .doubleUnderline {
+            text-decoration-line: underline;
+            text-decoration-style: double;
+        }
+        .above-linearisiert:before { content: '\2308'; }
+        .above-linearisiert:after { content: '\2309'; }
+         .below-linearisiert:before { content: '\230A'; }
+         .below-linearisiert:after { content: '\230B'; }
+        span.lnr { position:relative; left: -30px;font-style: italic; color: blue;margin-right: 20px;font-size: 80%; cursor: pointer;}
+        span.zlnr { position:relative; left: -30px;font-style: italic; color: grey;margin-right: 20px;font-size: 80%; cursor: pointer;}
+        span.nolnr { margin-left: 40px;}
+        div.line { line-height: 3.0em;  }
+        .flushRight {  display: inline-block;
+                        margin: auto;
+                        width: 80%;
+                        text-align: end;
+            
+        }
+         .flushMiniRight { margin-left: 10%; }
+        span.line:after { content: '\00B6' }
+        .old-insert-mark:before { content: '\23DF';}
+        .headSpan { position: absolute; display: inline-block; left: 208px;}
+        .head { margin-left: 20%; display: inline-block; }
+        .latin { font-family: MyLatin, Arial, Helvetica, sans-serif;}
