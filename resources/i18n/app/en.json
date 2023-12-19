@@ -1,5 +1,7 @@
 {
     "myapp": {
-        "title": "Foo"
+        "title": "Foo",
+        "overwritten": "overwritten",
+        "erased": "erased"
     }
 }

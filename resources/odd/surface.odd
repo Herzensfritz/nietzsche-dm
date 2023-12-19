@@ -121,18 +121,25 @@
                 <elementSpec ident="subst" mode="add"><model predicate="add/@place = 'superimposed' and del and not(parent::fw)" behaviour="inline" cssClass="popover">
             <param name="alternate" value="del/(*|text())"/>
             <param name="content" value="add[@place='superimposed']/(*|text())"/>
-            <param name="howOverwritten" value="if (del/@rend = 'erased') then ('radiert') else ('überschrieben')"/>
-            <pb:template xmlns="" xml:space="preserve">
-                <pb-popover theme="material">
-                    <span slot="default">[[content]]</span>
-                    <template slot="alternate">
+            <param name="key" value="concat('myapp.',del/@rend)"/>
+            <param name="hand" value="replace(add[@place = 'superimposed']/@hand,'#','')"/>
+            <param name="id" value="replace(add/@corresp, '#','')"/>
+            <pb:template xmlns="" xml:space="preserve">                <span class="trigger" id="[[id]]"><span class="[[hand]]">[[content]]</span></span>
+                <pb-popover theme="material" for="[[id]]">
                       <p>
-                        <span style="font-style: italic;">[[howOverwritten]]:</span>
+                        <span style="font-style: italic;">
+                          <pb-i18n key="[[key]]">
+                            überschrieben
+                          </pb-i18n>:</span>
                         <span class="transkriptionField small">[[alternate]]</span>
-                      </p></template>
+                      </p>
                 </pb-popover>
             </pb:template>
         </model></elementSpec>
-            </schemaSpec>
+            <elementSpec ident="metamark" mode="add"><model predicate="@target" behaviour="inline">
+            <param name="content" value="."/>
+            <param name="target" value="concat(replace(@target[1], '#', ''), replace(@corresp, '#', ''))"/>
+            <pb:template xmlns="" xml:space="preserve"><pb-highlight key="target" highlight-self="highlight-self" duration="5000">[[content]]</pb-highlight></pb:template>
+        </model></elementSpec></schemaSpec>
         </body>
     </text></TEI>
