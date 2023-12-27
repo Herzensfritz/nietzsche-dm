@@ -423,7 +423,9 @@ declare function dapi:get-fragment($request as map(*), $docs as node()*, $path a
             let $config := tpu:parse-pi(root($document), $view)
             let $data :=
                 if (count($request?parameters?id) = 1) then
-                    nav:get-section-for-node($config, $document/id($request?parameters?id))
+                    if ($view = 'surface') then (
+                        $document/id($request?parameters?id)
+                    ) else (nav:get-section-for-node($config, $document/id($request?parameters?id)))
                 else
                     let $ms1 := $document/id($request?parameters?id[1])
                     let $ms2 := $document/id($request?parameters?id[2])
@@ -442,7 +444,6 @@ declare function dapi:get-fragment($request as map(*), $docs as node()*, $path a
         ) else
             pages:load-xml($docs, $view, $request?parameters?root, $path)
     
-    let $log := console:log($xml?data)
     return
         if ($xml?data) then
             let $userParams :=
@@ -468,7 +469,8 @@ declare function dapi:get-fragment($request as map(*), $docs as node()*, $path a
                     pages:get-content($xml?config, $data)
                 else
                     $data
-
+            
+            
             let $html :=
                 typeswitch ($mapped)
                     case element() | document-node() return
@@ -476,8 +478,6 @@ declare function dapi:get-fragment($request as map(*), $docs as node()*, $path a
                     default return
                         $content
             let $transformed := dapi:extract-footnotes($html[1])
-            let $path := replace($path, "^.*/([^/]+)$", "$1")
-            let $log := console:log($request?parameters?format)
             return
                 if ($request?parameters?format = "html") then
                     router:response(200, "text/html", $transformed?content)
@@ -571,7 +571,9 @@ declare function dapi:table-of-contents($request as map(*)) {
                 let $xml := pages:load-xml($documents, $request?parameters?view, (), $doc)
                 return
                 if (exists($xml)) then
-                    pages:toc-div(root($xml?data), $xml, $request?parameters?target, $request?parameters?icons)
+                    if ($xml?config?view = 'surface') then (
+                        pages:toc-ms-contents(root($xml?data), $xml, $request?parameters?target, $request?parameters?icons)
+                    ) else (pages:toc-div(root($xml?data), $xml, $request?parameters?target, $request?parameters?icons))
                 else
                     error($errors:NOT_FOUND, "Document " || $doc || " not found")
                 })

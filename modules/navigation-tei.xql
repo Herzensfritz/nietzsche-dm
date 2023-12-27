@@ -108,7 +108,7 @@ declare function nav:get-first-page-start($config as map(*), $data as element())
 };
 
 declare function nav:get-first-surface-start($config as map(*), $data as element()) {
-    ($data//tei:surface)[1]
+    ($data//tei:sourceDoc//tei:surface)[1]
 };
 
 
@@ -244,6 +244,8 @@ declare function nav:get-next($config as map(*), $div as element(), $view as xs:
                 $div/following::tei:pb[1]
             case "body" return
                 ($div/following-sibling::*, $div/../following-sibling::*)[1]
+            case "surface" return
+                $div/following-sibling::tei:surface[parent::tei:sourceDoc][1]
             default return
                 nav:next-page($config, $div)
     return
@@ -260,6 +262,8 @@ declare function nav:get-previous($config as map(*), $div as element(), $view as
                 $div/preceding::tei:pb[1]
             case "body" return
                 ($div/preceding-sibling::*, $div/../preceding-sibling::*)[1]
+            case "surface" return
+                $div/preceding::tei:surface[parent::tei:sourceDoc][1]
             default return
                 nav:previous-page($config, $div)
     return

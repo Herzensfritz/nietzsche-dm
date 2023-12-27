@@ -97,7 +97,6 @@ declare function pages:load-xml($data as node()*, $view as xs:string?, $root as 
     let $config :=
         (: parse processing instructions and remember original context :)
         map:merge((tpu:parse-pi(root($data[1]), $view), map { "context": $data }))
-    let $log := console:log($config)
     return
         map {
             "config": $config,
@@ -118,7 +117,11 @@ declare function pages:load-xml($data as node()*, $view as xs:string?, $root as 
                     case "single" return
                         $data
                     case "surface" return
-                        nav:get-first-surface-start($config, $data)
+                        if ($root) then
+                            let $node := util:node-by-id($data, $root)
+                            return $node
+                        else
+                            nav:get-first-surface-start($config, $data)
                     default return
                         if ($root) then
                             util:node-by-id($data, $root)
@@ -199,6 +202,22 @@ declare function pages:clean-footnotes($nodes as node()*) {
                     }
             default return
                 $node
+};
+
+declare function pages:toc-ms-contents($node, $model as map(*), $target as xs:string?,
+    $icons as xs:boolean?) {
+    <ul>
+        {
+            for $locus in $node//tei:sourceDesc//tei:msContents//tei:locus
+                where contains($node//tei:text//tei:pb/@xml:id, $locus/text())
+                let $id := $locus/text()
+                let $desc := $locus/following-sibling::tei:desc/text()
+                let $root := $node//tei:sourceDoc/tei:surface[@start = concat('#', $id)]
+                let $nodeId := util:node-id($root)
+                let $xmlId := $root/@xml:id
+                return <li><pb-link xml-id="{$xmlId}" node-id="{$nodeId}" emit="{$target}" subscribe="{$target}">{$desc}</pb-link></li>
+            }
+    </ul>
 };
 
 declare function pages:toc-div($node, $model as map(*), $target as xs:string?,
