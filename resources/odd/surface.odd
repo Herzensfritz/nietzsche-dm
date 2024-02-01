@@ -76,7 +76,7 @@
             <elementSpec ident="zone" mode="add"><model predicate="parent::line and not(ends-with(@type, 'Block'))" behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <param name="content" value="."/>
-            <param name="class" value="if (@type = 'head') then ('marginLeft head') else ()"/>
+            <param name="class" value="@type"/>
             <param name="style" value="@style"/>
             <pb:template xmlns="" xml:space="preserve"><span id="[[id]]" style="[[style]]" class="[[class]]">
   [[content]]
@@ -90,15 +90,46 @@
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" style="[[style]]" class="[[class]]" debug-msg="test">
   [[content]]
 </div></pb:template>
-        </model><model predicate="parent::zone and not(ends-with(@type, 'Block'))" behaviour="pass-through">
+        </model><model predicate="parent::zone and not(ends-with(@type, 'Block')) and line" behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <param name="class" value="@type"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="[[class]]">
   [[content]]
 </div></pb:template>
+        </model><model predicate="parent::zone and not(ends-with(@type, 'Block')) and not(line)" behaviour="pass-through">
+            <param name="id" value="@xml:id"/>
+            <param name="class" value="@type"/>
+            <param name="content" value="."/>
+            <param name="style" value="@style"/>
+            <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="[[class]]" style="[[style]]">
+  [[content]]
+</div></pb:template>
         </model></elementSpec>
-            <elementSpec ident="add" mode="change"><model predicate="parent::metamark and (@place='above' or @place='below')" behaviour="pass-through">
+            <elementSpec ident="add" mode="change"><model predicate="@place = 'superimposed' and parent::fw" behaviour="omit">
+            <param name="id" value="replace(@corresp, '#', '')"/>
+            <param name="hand" value="@hand"/>
+            <param name="content" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]"><span class="[[hand]]">[[content]]</span></span></pb:template>
+        </model><model predicate="@place = 'superimposed'" behaviour="pass-through">
+            <param name="id" value="replace(@corresp, '#', '')"/>
+            <param name="hand" value="replace(@hand, '#', '')"/>
+            <param name="content" value="."/>
+            <param name="style" value="if (preceding-sibling::del[1]/@cause = @corresp and not(matches(preceding-sibling::del[1]/preceding::text()[1], '.*\s$'))) then ('margin-left: -0.2em;') else (concat('color: red; ',preceding-sibling::del[1]/@cause))"/>
+            <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]" style="[[style]]"><span class="[[hand]]">[[content]]</span></span></pb:template>
+        </model><model predicate="parent::metamark[following-sibling::del/@cause = concat('#', @xml:id) or preceding-sibling::del/@cause = concat('#', @xml:id)] and (@place='above' or @place='below')" behaviour="pass-through">
+            <param name="metamarkClass" value="if (parent::metamark/@rend) then (concat(parent::metamark/@rend, 'insertion-', @place)) else (concat('insMinsertion-', @place))"/>
+            <param name="metamarkStyle" value="parent::metamark/@style"/>
+            <param name="hand" value="@hand"/>
+            <param name="class" value="@place"/>
+            <param name="style" value="@style"/>
+            <param name="content" value="."/>
+            <param name="id" value="parent::metamark/@xml:id"/>
+            <param name="overwritten" value="if(parent::metamark/following-sibling::del[1]/@cause = concat('#', parent::metamark/@xml:id)) then (parent::metamark/following-sibling::del[1]/text()) else (parent::metamark/preceding-sibling::del[1]/text())"/>
+            <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]">[[overwritten]]</span><span class="[[metamarkClass]] [[hand]]" style="[[metamarkStyle]]">
+  <span class="[[class]]" style="[[style]]">[[content]]</span>
+</span></pb:template>
+        </model><model predicate="parent::metamark and (@place='above' or @place='below')" behaviour="pass-through">
             <param name="metamarkClass" value="if (parent::metamark/@rend) then (concat(parent::metamark/@rend, 'insertion-', @place)) else (concat('insMinsertion-', @place))"/>
             <param name="metamarkStyle" value="parent::metamark/@style"/>
             <param name="hand" value="@hand"/>
@@ -118,28 +149,63 @@
   <span class="[[class]]" style="[[style]]">[[content]]</span>
 </span></pb:template>
         </model></elementSpec>
-                <elementSpec ident="subst" mode="add"><model predicate="add/@place = 'superimposed' and del and not(parent::fw)" behaviour="inline" cssClass="popover">
-            <param name="alternate" value="del/(*|text())"/>
-            <param name="content" value="add[@place='superimposed']/(*|text())"/>
-            <param name="key" value="concat('myapp.',del/@rend)"/>
-            <param name="hand" value="replace(add[@place = 'superimposed']/@hand,'#','')"/>
-            <param name="id" value="replace(add/@corresp, '#','')"/>
-            <pb:template xmlns="" xml:space="preserve">                <span class="trigger" id="[[id]]"><span class="[[hand]]">[[content]]</span></span>
-                <pb-popover theme="material" for="[[id]]">
-                      <p>
-                        <span style="font-style: italic;">
-                          <pb-i18n key="[[key]]">
-                            überschrieben
-                          </pb-i18n>:</span>
-                        <span class="transkriptionField small">[[alternate]]</span>
-                      </p>
-                </pb-popover>
-            </pb:template>
-        </model></elementSpec>
+                <elementSpec ident="subst" mode="add"/>
             <elementSpec ident="metamark" mode="add"><model predicate="@target" behaviour="inline">
             <param name="content" value="."/>
             <param name="target" value="concat(replace(@target[1], '#', ''), replace(@corresp, '#', ''))"/>
             <pb:template xmlns="" xml:space="preserve"><pb-highlight key="target" highlight-self="highlight-self" duration="5000">[[content]]</pb-highlight></pb:template>
+        </model></elementSpec><elementSpec ident="del" mode="change"><model predicate=" (@rend = 'erased' or @rend = 'overwritten') and parent::fw" behaviour="pass-through" cssClass="popover">
+            <param name="id" value="replace(@cause, '#', '')"/>
+            <param name="key" value="concat('myapp.',@rend)"/>
+            <param name="alternate" value="."/>
+            <param name="place" value="replace(parent::fw/@place, '#','')"/>
+            <param name="hand" value="replace(parent::fw/@hand, '#','')"/>
+            <param name="content" value="parent::fw/add[@place=&#34;superimposed&#34;]/text()"/>
+            <param name="parentKey" value="concat('myapp.',replace(parent::fw/@hand, '#',''))"/>
+            <pb:template xmlns="" xml:space="preserve"><span id="[[id]]" class="[[place]] [[hand]] trigger popover">
+         [[content]]
+      </span> 
+<pb-popover theme="material" for="[[id]]"><p>
+                    <span style="font-style: italic; margin: 2px;">
+                          (<pb-i18n key="[[parentKey]]">
+                            key not found: [[parentKey]]
+                          </pb-i18n>)</span>
+                        <span style="font-style: italic;">
+                          <pb-i18n key="[[key]]">
+                            überschrieben
+                          </pb-i18n>:</span>
+                        <span class="transkriptionField small [[hand]]">[[alternate]]</span></p></pb-popover></pb:template>
+        </model><model predicate=" (@rend = 'erased' or @rend = 'overwritten')" behaviour="pass-through" cssClass="popover">
+            <param name="id" value="replace(@cause, '#', '')"/>
+            <param name="key" value="concat('myapp.',@rend)"/>
+            <param name="alternate" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><pb-popover theme="material" for="[[id]]"><p>
+                        <span style="font-style: italic;">
+                          <pb-i18n key="[[key]]">
+                            überschrieben
+                          </pb-i18n>:</span>
+                        <span class="transkriptionField small">[[alternate]]</span></p></pb-popover></pb:template>
+        </model><model predicate="@rend" behaviour="inline"/><model behaviour="inline" cssClass="strikethrough"/></elementSpec><elementSpec ident="substJoin" mode="add"><model predicate="following::add/@place = 'superimposed' and following::del and not(parent::fw) and not(matches(preceding::text()[1], '.*\s$'))" behaviour="inline">
+            <outputRendition xml:space="preserve">
+            margin-left: -0.2em;
+            </outputRendition>
+        </model></elementSpec><elementSpec ident="index" mode="add"><model behaviour="omit"/></elementSpec><elementSpec ident="text()" mode="add"/><elementSpec ident="fw" mode="change"><model predicate="not(del[@cause])" behaviour="inline">
+            <param name="place" value="@place"/>
+            <param name="hand" value="replace(@hand, '#', '')"/>
+            <param name="id" value="replace(@corresp, '#','')"/>
+            <param name="key" value="concat(&#34;myapp.&#34;, replace(@hand, '#',''))"/>
+            <param name="content" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><span id="[[id]]" class="[[place]] [[hand]]">
+         [[content]]
+      </span> 
+       <pb-popover theme="material" for="[[id]]">
+                      <p>
+                        <span style="font-style: italic;">
+                          <pb-i18n key="[[key]]">
+                            key not found: [[key]]
+                          </pb-i18n></span>
+                      </p>
+          </pb-popover></pb:template>
         </model></elementSpec></schemaSpec>
         </body>
     </text></TEI>

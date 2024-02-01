@@ -2,6 +2,14 @@
     "myapp": {
         "title": "Foo",
         "overwritten": "overwritten",
-        "erased": "erased"
+        "erased": "erased",
+        "XXX_red": "unknown foreign hand",
+        "typesetter_pencil": "typesetter: pencil",
+        "N-Archiv_red": "foreign hand: Nietzsche Archiv",
+        "N_pencil": "Nietzsche: pencil",
+        "N_red": "Nietzsche: red pen",
+        "N_brown": "Nietzsche: brown pen",
+        "N_brown1": "Nietzsche: brown pen",
+        "GSA_pencil": "foreign hand: GSA, pencil"
     }
 }

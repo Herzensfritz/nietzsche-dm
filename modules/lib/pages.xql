@@ -215,7 +215,7 @@ declare function pages:toc-ms-contents($node, $model as map(*), $target as xs:st
                 let $root := $node//tei:sourceDoc/tei:surface[@start = concat('#', $id)]
                 let $nodeId := util:node-id($root)
                 let $xmlId := $root/@xml:id
-                return <li><pb-link xml-id="{$xmlId}" node-id="{$nodeId}" emit="{$target}" subscribe="{$target}">{$desc}</pb-link></li>
+                return <li><pb-link xml-id="{$xmlId}" node-id="{$nodeId}" emit="{$target}" subscribe="{$target}">{$locus}: {$desc}</pb-link></li>
             }
     </ul>
 };

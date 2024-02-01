@@ -2,6 +2,14 @@
     "myapp": {
         "title": "Nietzsche Druckmanuskripte",
         "overwritten": "überschrieben",
-        "erased": "radiert"
+        "erased": "radiert",
+        "XXX_red": "unbekannte fremde Hand",
+         "typesetter_pencil": "Schriftsetzer: Bleistift",
+        "N-Archiv_red": "fremde Hand: Nietzsche Archiv",
+        "N_pencil": "Nietzsche: Bleistift",
+        "N_red": "Nietzsche: roter Stift",
+        "N_brown": "Nietzsche: brauner Stift",
+        "N_brown1": "Nietzsche: brauner Stift",
+        "GSA_pencil": "fremde Hand: GSA, Bleistift"
     }
 }

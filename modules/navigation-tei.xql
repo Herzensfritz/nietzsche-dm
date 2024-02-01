@@ -108,7 +108,12 @@ declare function nav:get-first-page-start($config as map(*), $data as element())
 };
 
 declare function nav:get-first-surface-start($config as map(*), $data as element()) {
-    ($data//tei:sourceDoc//tei:surface)[1]
+    (: TODO DEBUG OPTION :)
+    if ($data//tei:revisionDesc/tei:listChange/tei:change[@status="debug"]) then (
+        ($data//tei:sourceDoc//tei:surface[@xml:id = $data//tei:revisionDesc/tei:listChange/tei:change[@status="debug"]/text()])[1]
+    ) else (
+        ($data//tei:sourceDoc//tei:surface)[1]
+    )
 };
 
 
