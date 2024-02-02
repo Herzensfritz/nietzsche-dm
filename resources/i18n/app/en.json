@@ -2,6 +2,7 @@
     "myapp": {
         "title": "Foo",
         "overwritten": "overwritten",
+        "over": "over",
         "erased": "erased",
         "XXX_red": "unknown foreign hand",
         "typesetter_pencil": "typesetter: pencil",
