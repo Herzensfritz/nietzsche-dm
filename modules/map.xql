@@ -10,6 +10,35 @@ import module namespace nav="http://www.tei-c.org/tei-simple/navigation/tei" at 
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 
 import module namespace console="http://exist-db.org/xquery/console";
+import module namespace util="http://exist-db.org/xquery/util";
+import module namespace config="http://www.tei-c.org/tei-simple/config" at "config.xqm";
+
+(:~
+ : For the Nietzsche Druckmanuskript: find the page break  corresponding
+ : to the surface shown in the diplomatic transcription.
+ :)
+declare function mapping:nietzsche-page($root as element(), $userParams as map(*)) {
+    let $pbId := substring-after($root/@start, '#')
+    return root($root)//tei:text//tei:pb[@xml:id = $pbId]
+};
+
+(:~
+ : For the Nietzsche Druckmanuskript: find the notes  corresponding
+ : to the surface shown in the diplomatic transcription.
+ :)
+declare function mapping:nietzsche-notes($root as element(), $userParams as map(*)) {
+    let $pbId := substring-after($root/@start, '#')
+    let $notes := if (root($root)//tei:surface[@xml:id = $root/@xml:id]/following-sibling::tei:surface) then (
+        root($root)//tei:text//tei:note[@type="editorial" and preceding::tei:pb[1][@xml:id = $pbId] and  following::tei:pb[preceding::tei:pb[1][@xml:id = $pbId] ]]
+    ) else (
+        root($root)//tei:text//tei:note[@type="editorial" and preceding::tei:pb[@xml:id = $pbId]]    
+    )
+    let $div := <div xmlns="http://www.tei-c.org/ns/1.0" type="noteDiv">{ for $note in $notes
+            return <note xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$note/@xml:id}" type="{$note/@type}" target="{concat('#',root($root)//tei:text//tei:note[@xml:id = $note/@xml:id]/preceding::tei:lb[1]/@xml:id)}">{$note/text()}</note>
+    }</div>
+    let $log := console:log($div)
+    return $div
+};
 
 (:~
  : For the Van Gogh letters: find the page break in the translation corresponding

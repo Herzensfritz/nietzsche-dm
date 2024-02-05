@@ -587,7 +587,7 @@
      </profileDesc>
      <revisionDesc><!-- summarizes the revision history for a file -->
        <listChange>
-                <change status="debug">srcD_surface_a7r</change>
+                <change status="debug">srcD_surface_a30r</change>
             </listChange>
      </revisionDesc>
    </teiHeader>
@@ -5608,7 +5608,8 @@
                 <line xml:id="srcD_line_a7r_lb26" start="#a7r_lb26" n="26">bis zum Haß entzügelt, in Sonderheit <metamark xml:id="srcD_metamark_a7r_add_d2e304" function="insertion">
                         <add place="above" corresp="#a7r_add_d2e304">für Moral und Historie</add>
                     </metamark>
-                    <del rend="hatching">in der Historie</del> anrichten kann, zeigt der berüchtigte Fall <hi rend="latin">Buckle</hi><del rend="overwritten" cause="#a7r_add_d2e314">.</del>
+                    <del rend="hatching">in der Historie</del> anrichten kann, zeigt der berüchtigte Fall <hi rend="latin">Buckle</hi>
+                    <del rend="overwritten" cause="#a7r_add_d2e314">.</del>
                     <add place="superimposed" corresp="#a7r_add_d2e314">
                         <del rend="overwritten" cause="#a7r_add_d2e317">;</del>
                         <add place="superimposed" corresp="#a7r_add_d2e317">

@@ -75,10 +75,16 @@
                     </pb-view>
                 </section>
                 <main class="content-body">
-                    <div id="view1">
-                        <pb-view src="document1" column-separator=".tei-cb" view="surface" subscribe="transcription" emit="transcription"/>
-                    </div>
-                    
+                   
+                             
+                                <pb-view src="document1" column-separator=".tei-cb" view="surface" subscribe="transcription" emit="transcription">
+                                   
+                                </pb-view>
+                              
+                                <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-notes" subscribe="transcription">
+                                    <pb-param name="view" value="normalized"/>
+                                </pb-view>
+                              
                 </main>
             </app-header-layout>
         </app-drawer-layout>

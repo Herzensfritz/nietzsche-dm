@@ -1,5 +1,10 @@
 @import url("../fonts/font.css");
 
+div#content {
+    margin-top: 200px;
+    position: fixed;
+}
+
 /* Due to a safari issue, relative paths to background images won't work as variables, so we list them here */
 
 .logo {
