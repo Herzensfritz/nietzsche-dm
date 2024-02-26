@@ -298,6 +298,10 @@ declare function pages:if-supported($node as node(), $model as map(*), $media as
             templates:process($node/node(), $model)
         }
 };
+declare function pages:test($node as node(), $model as map(*)) {
+    let $log := console:log($model?config?view)
+    return $node
+};
 
 declare function pages:pb-page($node as node(), $model as map(*)) {
     let $docPath := 

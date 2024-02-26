@@ -12,8 +12,14 @@
     <title data-template="config:app-title"/>
     <meta name="description" content="Surface"/>
     <link rel="stylesheet" href="resources/css/theme.css"/>
+    <link rel="stylesheet" href="resources/css/mystyle.css"/>
+    <script src="resources/scripts/debug.js"/>
     <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
     <style>
+    
+        pb-page[unresolved] {
+            display: none;
+        }
         body {
             --pb-view-height: calc(100vh - 200px);
         }
@@ -35,10 +41,23 @@
             justify-content: center;
             padding: 0 20px;
         }
+        
+         pb-page[unresolved] pb-facsimile {
+            display: none;
+        }
 
         .content-body pb-facsimile {
             flex: 1 1;
-            --pb-facsimile-height: calc(var(--pb-view-height) - 22px);
+           // --pb-facsimile-height: calc(var(--pb-view-height) - 22px);
+           
+        }
+        
+        pb-facsimile.toggle {
+            display: none;
+        }
+        
+        pb-facs-link.toggle {
+            display: none;
         }
 
         @media (max-width: 769px) {
@@ -75,15 +94,21 @@
                     </pb-view>
                 </section>
                 <main class="content-body">
-                   
+               
+                 <!--  <header class="timeline-nav">
+                            <pb-timeline url="api/timeline/B${id}" scopes='["D", "M", "Y", "5Y", "10Y"]' auto="auto" emit="timeline" data-template="pages:parse-params"></pb-timeline>
+                        </header> -->
                              
-                                <pb-view src="document1" column-separator=".tei-cb" view="surface" subscribe="transcription" emit="transcription">
-                                   
+                                <pb-view noScroll="true" id="view1" src="document1" column-separator=".tei-cb" view="surface" subscribe="transcription" emit="transcription">
                                 </pb-view>
-                              
-                                <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-notes" subscribe="transcription">
+                                 
+                            
+                             <pb-facsimile id="facsimile" default-zoom-level="0" show-full-page-control="true" show-home-control="true" emit="transcription" subscribe="transcription" type="iiif" show-navigation-control="show-navigation-control" show-navigator="show-navigator">
+                            </pb-facsimile>
+                            
+                                <!-- <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-notes" subscribe="transcription">
                                     <pb-param name="view" value="normalized"/>
-                                </pb-view>
+                                    </pb-view>-->
                               
                 </main>
             </app-header-layout>

@@ -587,7 +587,7 @@
      </profileDesc>
      <revisionDesc><!-- summarizes the revision history for a file -->
        <listChange>
-                <change status="debug">srcD_surface_a30r</change>
+                <change when="2022-01">first steps</change>
             </listChange>
      </revisionDesc>
    </teiHeader>
@@ -4540,7 +4540,7 @@
         </body>
    </text>
 <sourceDoc>
-        <surface xml:id="srcD_surface_a1r" type="relative" start="#a1r" style="min-width:900px;">
+        <surface xml:id="srcD_surface_a1r" type="relative" start="#a1r" style="min-width:900px;" facs="#D-20a_I">
             <zone xml:id="srcD_zone_a1r_div2_GMTitelseite" start="#a1r_div2_GMTitelseite" type="singleBlock" style="padding-top:5em;padding-bottom:5em;">
                 <zone xml:id="srcD_zone_a1r_fw_d2e26" type="fw-top-right" start="#a1r_fw_d2e26">
                     <fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a1r_fw_d2e26">
@@ -4591,7 +4591,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a1v" type="relative" start="#a1v">
+        <surface xml:id="srcD_surface_a1v" type="relative" start="#a1v" facs="#D-20a_II">
             <zone xml:id="srcD_zone_a1v_div2_GMTitelruckseite" start="#a1v_div2_GMTitelruckseite" type="singleBlock" style="padding-top:5em;padding-bottom:5em;">
                 <zone xml:id="srcD_zone_a1v_fw_d2e26" type="fw-top-right" start="#a1v_fw_d2e26">
                     <fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a1v_fw_d2e26">II.</fw>
@@ -4611,7 +4611,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a2r" type="relative" start="#a2r">
+        <surface xml:id="srcD_surface_a2r" type="relative" start="#a2r" facs="#D-20a_III">
             <zone xml:id="srcD_zone_a2r_div2_GMVorrede01" start="#a2r_div2_GMVorrede01" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a2r_fw_d2e26" type="fw-top-right" start="#a2r_fw_d2e26">
                     <fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a2r_fw_d2e26">III.</fw>
@@ -4733,7 +4733,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a2v" type="relative" start="#a2v">
+        <surface xml:id="srcD_surface_a2v" type="relative" start="#a2v" facs="#D-20a_IV">
             <zone xml:id="srcD_zone_a2v_div2_d2e29" start="#a2v_div2_d2e29" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a2v_fw_d2e26" type="fw-top-left" start="#a2v_fw_d2e26">
                     <fw type="pageNumber" hand="#N_red" place="top-left" corresp="#a2v_fw_d2e26">IV.</fw>
@@ -4827,7 +4827,7 @@
                 <line xml:id="srcD_line_a2v_lb38" start="#a2v_lb38" n="38">der Sitte“, jene viel ältere und ursprünglichere Art Moral, welche <hi rend="latin">toto coelo</hi> von der altruistischen Werthungsweise </line>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a3r" type="relative" start="#a3r">
+        <surface xml:id="srcD_surface_a3r" type="relative" start="#a3r" facs="#D-20a_V">
             <zone xml:id="srcD_zone_a3r_div2_d2e38" start="#a3r_div2_d2e38" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a3r_fw_d2e27" type="fw-top-right" start="#a3r_fw_d2e27">
                     <fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a3r_fw_d2e27">V.</fw>
@@ -4971,7 +4971,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a3v" type="relative" start="#a3v">
+        <surface xml:id="srcD_surface_a3v" type="relative" start="#a3v" facs="#D-20a_VI">
             <zone xml:id="srcD_zone_a3v_div2_d2e33" start="#a3v_div2_d2e33" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a3v_fw_d2e27" type="fw-top-right" start="#a3v_fw_d2e27">
                     <fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a3v_fw_d2e27">VI.<del>VII</del>
@@ -5135,7 +5135,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a4r" type="relative" start="#a4r">
+        <surface xml:id="srcD_surface_a4r" type="relative" start="#a4r" facs="#D-20a_VII">
             <zone xml:id="srcD_zone_a4r_div2_GMVorrede08" start="#a4r_div2_GMVorrede08" type="singleBlock" style="padding-top:5em;padding-bottom:6.3em;">
                 <zone xml:id="srcD_zone_a4r_fw_d2e26" type="fw-top-right" start="#a4r_fw_d2e26">
                     <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#a4r_fw_d2e26">VII</fw>
@@ -5239,7 +5239,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a5r" type="relative" start="#a5r">
+        <surface xml:id="srcD_surface_a5r" type="relative" start="#a5r" facs="#D-20a_1">
             <zone xml:id="srcD_zone_a5r_div2_GM0101" start="#a5r_div2_GM0101" type="singleBlock" style="padding-top:5em;padding-bottom:5em;">
                 <zone xml:id="srcD_zone_a5r_fw_d2e26" type="fw-top-right" start="#a5r_fw_d2e26">
                     <fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a5r_fw_d2e26">1.</fw>
@@ -5333,7 +5333,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a6r" type="relative" start="#a6r">
+        <surface xml:id="srcD_surface_a6r" type="relative" start="#a6r" facs="#D-20a_2">
             <zone xml:id="srcD_zone_a6r_div2_GM0102" start="#a6r_div2_GM0102" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a6r_fw_d2e26" type="fw-top-right" start="#a6r_fw_d2e26" style="left:841px;top:22px;">
                     <fw type="pageNumber" hand="#N_pencil" place="top-right" corresp="#a6r_fw_d2e26">2</fw>
@@ -5487,7 +5487,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a7r" type="relative" start="#a7r">
+        <surface xml:id="srcD_surface_a7r" type="relative" start="#a7r" facs="#D-20a_3">
             <zone xml:id="srcD_zone_a7r_div2_d2e42" start="#a7r_div2_d2e42" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a7r_fw_d2e26" type="fw-top-right" start="#a7r_fw_d2e26">
                     <fw type="pageNumber" hand="#N_pencil" place="top-right" corresp="#a7r_fw_d2e26">3</fw>
@@ -5681,7 +5681,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a8r" type="relative" start="#a8r">
+        <surface xml:id="srcD_surface_a8r" type="relative" start="#a8r" facs="#D-20a_4">
             <zone xml:id="srcD_zone_a8r_div2_d2e38" start="#a8r_div2_d2e38" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a8r_fw_d2e26" type="fw-top-right" start="#a8r_fw_d2e26">
                     <fw type="pageNumber" hand="#N_pencil" place="top-right" corresp="#a8r_fw_d2e26">4</fw>
@@ -5841,7 +5841,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a9r" type="relative" start="#a9r">
+        <surface xml:id="srcD_surface_a9r" type="relative" start="#a9r" facs="#D-20a_5">
             <zone xml:id="srcD_zone_a9r_div2_d2e47" start="#a9r_div2_d2e47" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a9r_fw_d2e26" type="fw-top-right" start="#a9r_fw_d2e26">
                     <fw type="pageNumber" hand="#N_pencil" place="top-right" corresp="#a9r_fw_d2e26">5</fw>
@@ -6058,7 +6058,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a10r" type="relative" start="#a10r">
+        <surface xml:id="srcD_surface_a10r" type="relative" start="#a10r" facs="#D-20a_6">
             <zone xml:id="srcD_zone_a10r_div2_d2e35" start="#a10r_div2_d2e35" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a10r_fw_d2e26" type="fw-top-right" start="#a10r_fw_d2e26">
                     <fw type="pageNumber" hand="#N_pencil" place="top-right" corresp="#a10r_fw_d2e26">6</fw>
@@ -6174,7 +6174,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a11r" type="relative" start="#a11r">
+        <surface xml:id="srcD_surface_a11r" type="relative" start="#a11r" facs="#D-20a_7">
             <zone xml:id="srcD_zone_a11r_div2_d2e43" start="#a11r_div2_d2e43" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a11r_fw_d2e26" type="fw-top-right" start="#a11r_fw_d2e26">
                     <fw type="pageNumber" hand="#N_pencil" place="top-right" corresp="#a11r_fw_d2e26">7</fw>
@@ -6297,7 +6297,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a12r" type="relative" start="#a12r">
+        <surface xml:id="srcD_surface_a12r" type="relative" start="#a12r" facs="#D-20a_8">
             <zone xml:id="srcD_zone_a12r_div2_d2e40" start="#a12r_div2_d2e40" type="firstBlock" style="padding-top:5em;">
                 <line xml:id="srcD_line_a12r_lb1" start="#a12r_lb1" n="1">in welchem Sinne <hi rend="grc">οïζυρός</hi>, <hi rend="grc">ἄνολβος</hi>, <hi rend="grc">τλήμων</hi>, <hi rend="grc">δυστυχεῖν</hi>, <hi rend="grc">ξυμφορά</hi> gebraucht werden) Die „Wohlgeborenen“ <hi rend="underline">fühlten</hi> sich eben 
                   </line>
@@ -6483,7 +6483,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a13r" type="relative" start="#a13r">
+        <surface xml:id="srcD_surface_a13r" type="relative" start="#a13r" facs="#D-20a_9">
             <zone xml:id="srcD_zone_a13r_div2_d2e34" start="#a13r_div2_d2e34" type="singleBlock" style="padding-top:5em;padding-bottom:5em;">
                 <zone xml:id="srcD_zone_a13r_fw_d2e26" type="fw-top-right" start="#a13r_fw_d2e26">
                     <fw type="pageNumber" hand="#N_pencil" place="top-right" corresp="#a13r_fw_d2e26">9</fw>
@@ -6644,7 +6644,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a14r" type="relative" start="#a14r">
+        <surface xml:id="srcD_surface_a14r" type="relative" start="#a14r" facs="#D-20a_10">
             <zone xml:id="srcD_zone_a14r_div2_d2e37" start="#a14r_div2_d2e37" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a14r_fw_d2e26" type="fw-top-right" start="#a14r_fw_d2e26">
                     <fw type="pageNumber" hand="#N_pencil" place="top-right" corresp="#a14r_fw_d2e26">10</fw>
@@ -6927,7 +6927,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a15r" type="relative" start="#a15r">
+        <surface xml:id="srcD_surface_a15r" type="relative" start="#a15r" facs="#D-20a_11">
             <zone xml:id="srcD_zone_a15r_div2_d2e37" start="#a15r_div2_d2e37" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a15r_fw_d2e26" type="fw-top-right" start="#a15r_fw_d2e26">
                     <fw type="pageNumber" hand="#N_pencil" place="top-right" corresp="#a15r_fw_d2e26">11</fw>
@@ -7031,7 +7031,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a16r" type="relative" start="#a16r">
+        <surface xml:id="srcD_surface_a16r" type="relative" start="#a16r" facs="#D-20a_12">
             <zone xml:id="srcD_zone_a16r_div2_d2e41" start="#a16r_div2_d2e41" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a16r_fw_d2e26" type="fw-top-right" start="#a16r_fw_d2e26">
                     <fw type="pageNumber" hand="#N_pencil" place="top-right" corresp="#a16r_fw_d2e26">12</fw>
@@ -7209,7 +7209,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a17r" type="relative" start="#a17r">
+        <surface xml:id="srcD_surface_a17r" type="relative" start="#a17r" facs="#D-20a_13">
             <zone xml:id="srcD_zone_a17r_div2_d2e32" start="#a17r_div2_d2e32" type="singleBlock" style="padding-top:5em;padding-bottom:5em;">
                 <zone xml:id="srcD_zone_a17r_fw_d2e26" type="fw-top-right" start="#a17r_fw_d2e26">
                     <fw type="pageNumber" hand="#N_pencil" place="top-right" corresp="#a17r_fw_d2e26">13</fw>
@@ -7274,7 +7274,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a18r" type="relative" start="#a18r">
+        <surface xml:id="srcD_surface_a18r" type="relative" start="#a18r" facs="#D-20a_13a">
             <zone xml:id="srcD_zone_a18r_div2_d2e43" start="#a18r_div2_d2e43" type="singleBlock" style="padding-top:5em;padding-bottom:5em;">
                 <zone xml:id="srcD_zone_a18r_fw_d2e26" type="fw-top-left" start="#a18r_fw_d2e26">
                     <fw type="pageNumber" hand="#N-Archiv_red" place="top-left" corresp="#a18r_fw_d2e26">13a</fw>
@@ -7358,7 +7358,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a18v" type="relative" start="#a18v">
+        <surface xml:id="srcD_surface_a18v" type="relative" start="#a18v" facs="#D-20a_13b">
             <zone xml:id="srcD_zone_a18v_div2_d2e33" start="#a18v_div2_d2e33" type="singleBlock" style="padding-top:5em;padding-bottom:5em;">
                 <zone xml:id="srcD_zone_a18v_fw_d2e26" type="fw-top-right" start="#a18v_fw_d2e26">
                     <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#a18v_fw_d2e26">
@@ -7419,7 +7419,7 @@
                </line>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a19r" type="relative" start="#a19r">
+        <surface xml:id="srcD_surface_a19r" type="relative" start="#a19r" facs="#D-20a_13c">
             <zone xml:id="srcD_zone_a19r_div2_GM0116" start="#a19r_div2_GM0116" type="singleBlock" style="padding-top:5em;padding-bottom:5em;">
                 <zone xml:id="srcD_zone_a19r_fw_d2e26" type="fw-top-right" start="#a19r_fw_d2e26">
                     <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#a19r_fw_d2e26">
@@ -7533,7 +7533,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a20r" type="relative" start="#a20r">
+        <surface xml:id="srcD_surface_a20r" type="relative" start="#a20r" facs="#D-20a_14">
             <zone xml:id="srcD_zone_a20r_div2_GM0116" start="#a20r_div2_GM0116" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a20r_fw_d2e26" type="fw-top-right" start="#a20r_fw_d2e26">
                     <fw type="pageNumber" hand="#N_brown1" place="top-right" corresp="#a20r_fw_d2e26">14.</fw>
@@ -7793,8 +7793,8 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a20v" type="relative" start="#a20v"/>
-        <surface xml:id="srcD_surface_a21r" type="relative" start="#a21r">
+        <surface xml:id="srcD_surface_a20v" type="relative" start="#a20v" facs="#D-20a_14v"/>
+        <surface xml:id="srcD_surface_a21r" type="relative" start="#a21r" facs="#D-20a_15">
             <zone xml:id="srcD_zone_a21r_div2_GM0201" start="#a21r_div2_GM0201" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a21r_fw_d2e26" type="fw-top-right" start="#a21r_fw_d2e26">
                     <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#a21r_fw_d2e26">
@@ -7969,8 +7969,8 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a21v" type="relative" start="#a21v"/>
-        <surface xml:id="srcD_surface_a22r" type="relative" start="#a22r">
+        <surface xml:id="srcD_surface_a21v" type="relative" start="#a21v" facs="#D-20a_15v"/>
+        <surface xml:id="srcD_surface_a22r" type="relative" start="#a22r" facs="#D-20a_16">
             <zone xml:id="srcD_zone_a22r_div2_GM0203" start="#a22r_div2_GM0203" type="singleBlock" style="padding-top:5em;padding-bottom:5em;">
                 <zone xml:id="srcD_zone_a22r_fw_d2e26" type="fw-top-right" start="#a22r_fw_d2e26">
                     <fw type="pageNumber" place="top-right" hand="#N-Archiv_red" corresp="#a22r_fw_d2e26">
@@ -8125,7 +8125,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a23r" type="relative" start="#a23r">
+        <surface xml:id="srcD_surface_a23r" type="relative" start="#a23r" facs="#D-20a_17">
             <zone xml:id="srcD_zone_a23r_div2_d2e57" start="#a23r_div2_d2e57" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a23r_fw_d2e26" type="fw-top-right" start="#a23r_fw_d2e26">
                     <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#a23r_fw_d2e26">
@@ -8302,7 +8302,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a24r" type="relative" start="#a24r">
+        <surface xml:id="srcD_surface_a24r" type="relative" start="#a24r" facs="#D-20a_18">
             <zone xml:id="srcD_zone_a24r_div2_d2e52" start="#a24r_div2_d2e52" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a24r_fw_d2e26" type="fw-top-right" start="#a24r_fw_d2e26">
                     <fw type="pageNumber" place="top-right" hand="#N-Archiv_red" corresp="#a24r_fw_d2e26">
@@ -8571,7 +8571,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a25r" type="relative" start="#a25r">
+        <surface xml:id="srcD_surface_a25r" type="relative" start="#a25r" facs="#D-20a_19">
             <zone xml:id="srcD_zone_a25r_div2_d2e36" start="#a25r_div2_d2e36" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a25r_fw_d2e26" type="fw-top-right" start="#a25r_fw_d2e26">
                     <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#a25r_fw_d2e26">
@@ -8699,7 +8699,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a26r" type="relative" start="#a26r">
+        <surface xml:id="srcD_surface_a26r" type="relative" start="#a26r" facs="#D-20a_20">
             <zone xml:id="srcD_zone_a26r_div2_d2e47" start="#a26r_div2_d2e47" type="singleBlock" style="padding-top:5em;padding-bottom:5em;">
                 <zone xml:id="srcD_zone_a26r_fw_d2e26" type="fw-top-right" start="#a26r_fw_d2e26">
                     <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#a26r_fw_d2e26">
@@ -8852,7 +8852,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a27r" type="relative" start="#a27r">
+        <surface xml:id="srcD_surface_a27r" type="relative" start="#a27r" facs="#D-20a_21">
             <zone xml:id="srcD_zone_a27r_div2_GM0208" start="#a27r_div2_GM0208" type="singleBlock" style="padding-top:5em;padding-bottom:5em;">
                 <zone xml:id="srcD_zone_a27r_fw_d2e26" type="fw-top-right" start="#a27r_fw_d2e26">
                     <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#a27r_fw_d2e26">
@@ -8984,7 +8984,7 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a28r" type="relative" start="#a28r">
+        <surface xml:id="srcD_surface_a28r" type="relative" start="#a28r" facs="#D-20a_22">
             <zone xml:id="srcD_zone_a28r_div2_GM0209" start="#a28r_div2_GM0209" type="firstBlock" style="padding-top:5em;">
                 <zone xml:id="srcD_zone_a28r_fw_d2e26" type="fw-top-right" start="#a28r_fw_d2e26">
                     <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#a28r_fw_d2e26">
@@ -9151,8 +9151,8 @@
                 </zone>
             </zone>
         </surface>
-        <surface xml:id="srcD_surface_a30r" type="relative" start="#a30r">
-            <zone xml:id="srcD_zone_a30r_div2_GM0212" start="#a30r_div2_GM0212" type="singleBlock" style="padding-top:5em;padding-bottom:5em;">
+        <surface xml:id="srcD_surface_a30r" type="relative" start="#a30r" facs="#D-20a_24">
+            <zone xml:id="srcD_zone_a30r_div2_GM0212" start="#a30r_div2_GM0212" type="singleBlock" style="padding-top:11.5em;padding-bottom:5em;">
                 <zone xml:id="srcD_zone_a30r_fw_d2e26" type="fw-top-left" start="#a30r_fw_d2e26">
                     <fw type="pageNumber" hand="#typesetter_red" place="top-left" corresp="#a30r_fw_d2e26">
                     <certainty match="@hand" locus="value" cert="medium"/>24.</fw>
@@ -9163,7 +9163,7 @@
                         <add place="superimposed" corresp="#a30r_add_d2e34">24</add>
                 </fw>
                 </zone>
-                <zone xml:id="srcD_zone_a30r_lb1" start="#a30r_lb1" type="add-zone">
+                <zone xml:id="srcD_zone_a30r_lb1" start="#a30r_lb1" type="add-zone" style="margin-left:407px;">
                     <line xml:id="srcD_line_a30r_lb1" start="#a30r_lb1" style="top:1em;" n="1">
                         <add corresp="#substAdd1a_a30r" place="inline" change="#GM02abortedVersion">
                             <seg type="head">
@@ -9189,8 +9189,8 @@
                         <add corresp="#substAdd3c_a30r" hand="#N_brown1" place="inline">wöhnlich in Eins. </add> 
                   </line>
                 </zone>
-                <zone xml:id="srcD_zone_a30r_lb4" start="#a30r_lb4" type="add-zone">
-                    <line xml:id="srcD_line_a30r_lb4" start="#a30r_lb4" style="top:4em;" n="4">
+                <zone xml:id="srcD_zone_a30r_lb4" start="#a30r_lb4" type="add-zone" style="margin-left:27px;">
+                    <line xml:id="srcD_line_a30r_lb4" start="#a30r_lb4" style="top:5em;" n="4">
                         <add corresp="#substAdd1b_a30r" place="inline">
                             <del corresp="#substDel4a_a30r" hand="#N_brown1" rend="hatching">Man kann sich</del>
                             <metamark xml:id="srcD_metamark_substAdd3d_a30r" function="insertion" rend="inWord">
@@ -9204,21 +9204,21 @@
                                     <del corresp="#substDel4d_a30r" hand="#N_brown1" rend="hatching">naiver</del>
                                 </add>
                             </metamark>
-                            <add corresp="#substAdd4_a30r" place="above" hand="#N_brown1">
+                            <add corresp="#substAdd4_a30r" style="left:51px;top:-11px;" place="above" hand="#N_brown1">
                                 <milestone unit="page" edRef="#Ed" n="67"/>Wie treiben es doch die bisherigen Moral-Genealogen in diesem Falle? Naiv, wie sie es immer </add>
                             <del corresp="#substDel3b_a30r" hand="#N_brown1" rend="hatching">mehr</del>
                             <del corresp="#substDel4e_a30r" hand="#N_brown1" rend="hatching">an der Geschichte</del>
                             <del corresp="#substDel4f_a30r" hand="#N_brown1" rend="hatching">vergreifen</del>
                             <del corresp="#substDel4g_a30r" hand="#N_brown1" rend="hatching">, als wenn man es </del>
-                            <metamark xml:id="srcD_metamark_substAdd2a_a30r" function="insertion">
-                                <add place="above" corresp="#substAdd2a_a30r">
+                            <metamark xml:id="srcD_metamark_substAdd2a_a30r" function="insertion" style="top:-8px;height:24px;">
+                                <add place="above" corresp="#substAdd2a_a30r" style="left:0px;">
                                     <del corresp="#substDel4h_a30r" hand="#N_brown1" rend="hatching">treibt</del>
                                 </add>
                             </metamark>
                             <del corresp="#substDel2a_a30r" rend="hatching">macht</del>
                             <del corresp="#substDel4i_a30r" hand="#N_brown1" rend="hatching">, wie es bisher die Moral-Genealogen</del>
                             <metamark xml:id="srcD_metamark_substAdd2b_a30r" function="insertion" rend="afterWord">
-                                <add place="above" corresp="#substAdd2b_a30r">
+                                <add place="above" corresp="#substAdd2b_a30r" style="left:-51px;top:-17px;">
                                     <del hand="#N_brown1" corresp="#substDel4j_a30r">in Betreff der Strafe</del>
                                 </add>
                             </metamark>
@@ -9226,19 +9226,19 @@
                   </line>
                 </zone>
                 <zone xml:id="srcD_zone_a30r_lb5" start="#a30r_lb5" type="add-zone">
-                    <line xml:id="srcD_line_a30r_lb5" start="#a30r_lb5" style="top:5em;" n="5">
+                    <line xml:id="srcD_line_a30r_lb5" start="#a30r_lb5" style="top:8.4em;" n="5">
                         <add corresp="#substAdd1c_a30r" place="inline">
-                            <metamark xml:id="srcD_metamark_a30r_add_d2e172" function="insertion">
-                                <add place="above" corresp="#a30r_add_d2e172">getrieben haben</add>
+                            <metamark xml:id="srcD_metamark_a30r_add_d2e172" function="insertion" style="top:-2px;height:18px;">
+                                <add place="above" corresp="#a30r_add_d2e172" style="left:-29px;">getrieben haben</add>
                             </metamark>
                             <del rend="hatching">machten</del>, <metamark xml:id="srcD_metamark_substAdd2c_a30r" function="insertion">
                                 <add place="above" corresp="#substAdd2c_a30r">– sie mach<del corresp="#substDel2b_a30r" rend="hatching">t</del>en irgend einen</add>
                             </metamark>
                             <del corresp="#substDel2c_a30r" rend="hatching">nämlich einen</del>
                             <del rend="hatching" cert="unknown">„</del>
-                            <retrace>Z</retrace>weck“ in der Strafe <metamark xml:id="srcD_metamark_substAdd2d_a30r" function="insertion">
-                                <add place="above" corresp="#substAdd2d_a30r">ausfindig <del corresp="#substDel2d_a30r" rend="hatching">machen</del>, zum Beispiel <metamark xml:id="srcD_metamark_substAdd2e_a30r" function="insertion" rend="inSpatium">
-                                        <add place="above" corresp="#substAdd2e_a30r">Rache oder</add>
+                            <retrace>Z</retrace>weck“ in der Strafe <metamark xml:id="srcD_metamark_substAdd2d_a30r" function="insertion" style="top:-2px;height:18px;">
+                                <add place="above" corresp="#substAdd2d_a30r" style="left:-96px;">ausfindig <del corresp="#substDel2d_a30r" rend="hatching">machen</del>, zum Beispiel <metamark xml:id="srcD_metamark_substAdd2e_a30r" function="insertion" rend="inSpatium">
+                                        <add place="above" corresp="#substAdd2e_a30r" style="left:0px;top:-8px;">Rache oder</add>
                                     </metamark> Abschreckung<add corresp="#substAdd2f_a30r" place="inline" rend="insMExt">, setz<del corresp="#substDel2e_a30r" rend="hatching">t</del>en dann arglos</add>
                                 </add>
                             </metamark>
@@ -9251,26 +9251,26 @@
                             <del rend="hatching">die Entstehung</del> der Strafe </add>
                   </line>
                 </zone>
-                <zone xml:id="srcD_zone_a30r_lb6" start="#a30r_lb6" type="add-zone">
-                    <line xml:id="srcD_line_a30r_lb6" start="#a30r_lb6" style="top:6em;" n="6">
+                <zone xml:id="srcD_zone_a30r_lb6" start="#a30r_lb6" type="add-zone" style="margin-left:-12px;">
+                    <line xml:id="srcD_line_a30r_lb6" start="#a30r_lb6" style="top:10.8em;" n="6">
                         <add corresp="#substAdd1d_a30r" place="inline" next="#substAdd1e_a30r">
                             <del corresp="#substDel2h_a30r" rend="hatching">hinein</del>
                             <metamark xml:id="srcD_metamark_substAdd1dd_a30r" function="insertion" rend="inWord">
-                                <add place="above" corresp="#substAdd1dd_a30r">
+                                <add place="above" corresp="#substAdd1dd_a30r" style="left:0px;top:-14px;">
                                     <del corresp="#substDel2i_a30r" rend="hatching">spielen</del>
                                 </add>
                             </metamark>
                             <del corresp="#substDel2j_a30r" rend="hatching">setzen</del>
                             <del corresp="#substDel2k_a30r" rend="hatching">, als deren <hi rend="latin">causa</hi>.</del>
                             <metamark xml:id="srcD_metamark_substAdd2h_a30r" function="insertion" rend="afterWord">
-                                <add place="above" corresp="#substAdd2h_a30r">
+                                <add place="above" corresp="#substAdd2h_a30r" style="left:0px;top:-14px;">
                                     <add corresp="#substAdd2i_a30r" place="inline">und </add>– <del corresp="#substDel2l_a30r" rend="hatching">und wa</del>
                                     <del rend="overwritten" cause="#a30r_add_d2e257">ren</del>
                                     <add place="superimposed" corresp="#a30r_add_d2e257">sind</add> fertig.</add>
                             </metamark> Der „<retrace>Z</retrace>weck im Rechte“ ist <metamark xml:id="srcD_metamark_substAdd2j_a30r" function="insertion" rend="inSpatium">
-                                <add place="above" corresp="#substAdd2j_a30r">aber</add>
-                            </metamark> zuallerletzt für die Entstehungsgeschichte des <metamark xml:id="srcD_metamark_a30r_add_d2e270" function="insertion">
-                                <add place="above" corresp="#a30r_add_d2e270">Rechts zu</add>
+                                <add place="above" corresp="#substAdd2j_a30r" style="left:0px;top:-14px;">aber</add>
+                            </metamark> zuallerletzt für die Entstehungsgeschichte des <metamark xml:id="srcD_metamark_a30r_add_d2e270" function="insertion" style="top:3px;height:13px;">
+                                <add place="above" corresp="#a30r_add_d2e270" style="left:0px;">Rechts zu</add>
                             </metamark>
                             <del rend="hatching">Rechts zu</del> verwenden:</add>
                   </line>
@@ -9295,8 +9295,8 @@
                         </metamark> Gewohnheiten </del>
                         <metamark xml:id="srcD_metamark_a30r_add_d2e318" function="insertion">
                         <add place="above" corresp="#a30r_add_d2e318">
-                            <del corresp="#substDel1h_a30r" rend="hatching">und</del> <del corresp="#substDel1i_a30r" rend="hatching">Wünschbarkeiten</del> <metamark xml:id="srcD_metamark_a30r_add_d2e325" function="insertion">
-                                <add place="above" corresp="#a30r_add_d2e325">
+                            <del corresp="#substDel1h_a30r" rend="hatching">und</del> <del corresp="#substDel1i_a30r" rend="hatching">Wünschbarkeiten</del> <metamark xml:id="srcD_metamark_a30r_add_d2e325" function="insertion" style="top:-2px;height:16px;">
+                                <add place="above" corresp="#a30r_add_d2e325" style="left:-120px;">
                                     <del corresp="#substDel1j_a30r" rend="hatching">des modernen Menschen</del>
                                 </add>
                             </metamark>
@@ -9304,15 +9304,15 @@
                     </metamark>
                     <del rend="hatching">und Verwöhnungen</del>
                   </line>
-                <zone xml:id="srcD_zone_a30r_lb8" start="#a30r_lb8" type="add-zone">
-                    <line xml:id="srcD_line_a30r_lb8" start="#a30r_lb8" style="top:8em;" n="8">
+                <zone xml:id="srcD_zone_a30r_lb8" start="#a30r_lb8" type="add-zone" style="margin-left:929px;">
+                    <line xml:id="srcD_line_a30r_lb8" start="#a30r_lb8" style="top:15.5em;" n="8">
                         <add corresp="#substAdd1e_a30r" place="inline" prev="#substAdd1d_a30r">vielmehr giebt </add>
                   </line>
                 </zone>
                 <line xml:id="srcD_line_a30r_lb9" start="#a30r_lb9" n="9">
                         <del corresp="#substDel1k_a30r" rend="strikethrough">auf’s höchste zuwider geht – <del corresp="#substDel5a_a30r" rend="hatching">es ist</del>
                         <metamark xml:id="srcD_metamark_substAdd5a_a30r" function="insertion" rend="afterWord">
-                            <add place="above" corresp="#substAdd5a_a30r">
+                            <add place="above" corresp="#substAdd5a_a30r" style="left:-32px;top:-19px;">
                                 <del corresp="#substDel1l_a30r" rend="hatching">sein Sieg wäre</del>
                             </add>
                         </metamark> vielleicht <metamark xml:id="srcD_metamark_substAdd5b_a30r" function="insertion">
@@ -9331,9 +9331,9 @@
                         
                   </line>
                 <zone xml:id="srcD_zone_a30r_lb10" start="#a30r_lb10" type="add-zone">
-                    <line xml:id="srcD_line_a30r_lb10" start="#a30r_lb10" style="top:10em;" n="10">
+                    <line xml:id="srcD_line_a30r_lb10" start="#a30r_lb10" style="top:19.2em;" n="10">
                         <add corresp="#substAdd1f_a30r" place="inline">es für alle Art Historie gar keinen wichtigeren Satz<metamark xml:id="srcD_metamark_substAdd1g_a30r" function="insertion" rend="beforePunctuation">
-                                <add place="above" corresp="#substAdd1g_a30r"> als jenen</add>
+                                <add place="above" corresp="#substAdd1g_a30r" style="left:3px;top:-6px;"> als jenen</add>
                             </metamark>, der mit solcher Mühe errungen ist, aber auch wirklich errungen <hi rend="underline">sein</hi>
                             <hi rend="underline">sollte</hi> – daß nämlich</add>
                   </line>
@@ -9373,7 +9373,7 @@
                     </metamark> nothwendig verdunkelt oder ganz ausgelöscht werden muß. Wenn man die <hi rend="underline">Nützlichkeit</hi> 
                   </line>
                 <line xml:id="srcD_line_a30r_lb17" start="#a30r_lb17" n="17">von irgend welchem physiologischen Organ (oder auch einer Rechts-Institution, einer <metamark xml:id="srcD_metamark_a30r_add_d2e491" function="insertion" rend="inSpatium">
-                        <add place="above" corresp="#a30r_add_d2e491">gesellschaftlichen</add>
+                        <add place="above" corresp="#a30r_add_d2e491" style="left:-40px;top:-19px;">gesellschaftlichen</add>
                     </metamark> Sitte, eines <metamark xml:id="srcD_metamark_a30r_add_d2e494" function="insertion" rend="inSpatium">
                         <add place="above" corresp="#a30r_add_d2e494">politischen</add>
                     </metamark> Brauchs, einer Form <add corresp="#a30r_add_d2e498" place="above">in den</add>
@@ -9404,11 +9404,11 @@
                 <line xml:id="srcD_line_a30r_lb21" start="#a30r_lb21" n="21">stehungsgrund zu begreifen <del rend="hatching">gewähnt</del>
                     <del rend="overwritten" cause="#srcD_metamark_a30r_add_d2e555">.</del>
                     <metamark xml:id="srcD_metamark_a30r_add_d2e555" function="insertion" rend="afterWord">
-                        <add place="above" corresp="#a30r_add_d2e555">geglaubt, das Auge <metamark xml:id="srcD_metamark_a30r_add_d2e558" function="insertion">
-                                <add place="above" corresp="#a30r_add_d2e558">als gemacht zum</add>
+                        <add place="above" corresp="#a30r_add_d2e555" style="left:-296px;top:-15px;">geglaubt, das Auge <metamark xml:id="srcD_metamark_a30r_add_d2e558" function="insertion" style="top:4px;height:10px;">
+                                <add place="above" corresp="#a30r_add_d2e558" style="left:-8px;">als gemacht zum</add>
                             </metamark>
-                            <del rend="hatching">aus dem</del> Sehen, die Hand <metamark xml:id="srcD_metamark_a30r_add_d2e564" function="insertion">
-                                <add place="above" corresp="#a30r_add_d2e564">als gemacht <hi rend="underline">zum</hi>
+                            <del rend="hatching">aus dem</del> Sehen, die Hand <metamark xml:id="srcD_metamark_a30r_add_d2e564" function="insertion" style="top:4px;height:10px;">
+                                <add place="above" corresp="#a30r_add_d2e564" style="left:-8px;">als gemacht <hi rend="underline">zum</hi>
                                 </add>
                             </metamark>
                             <del rend="hatching">aus dem</del> Greifen.<add place="inline" rend="insMExt" corresp="#a30r_add_d2e571"> So hat man sich auch die Strafe vorgestellt als erfunden <hi rend="underline">zum</hi> Strafen.</add>
@@ -9428,7 +9428,7 @@
                     </metamark>Kette von immer neuen Interpretationen und Zurechtma<pc force="weak">-</pc>
                   </line>
                 <line xml:id="srcD_line_a30r_lb24" start="#a30r_lb24" n="24">chungen sein, deren Ursachen selbst unter sich nicht im Zusammenhange zu sein brauchen, vielmehr <metamark xml:id="srcD_metamark_substAdd8_a30r" function="insertion" rend="inSpatium">
-                        <add place="above" corresp="#substAdd8_a30r">unter Umständen sich</add>
+                        <add place="above" corresp="#substAdd8_a30r" style="left:-80px;top:-19px;">unter Umständen sich</add>
                     </metamark> bloß zufällig <metamark xml:id="srcD_metamark_a30r_add_d2e604" function="insertion" rend="inSpatium">
                         <add place="above" corresp="#a30r_add_d2e604">
                             <del corresp="#substDel8_a30r" rend="hatching">sich</del>
@@ -9444,7 +9444,7 @@
                 <line xml:id="srcD_line_a30r_lb26" start="#a30r_lb26" n="26">ger ein logischer und kürzester, mit dem kleinsten Aufwand von Kraft und Kosten erreichter <hi rend="latin">progressus</hi>, – sondern die Auf<pc force="weak">-</pc>
                   </line>
                 <line xml:id="srcD_line_a30r_lb27" start="#a30r_lb27" n="27">einanderfolge von mehr oder minder tiefgehenden, mehr oder minder von einander unabhängigen <metamark xml:id="srcD_metamark_substAdd9_a30r" function="insertion" rend="inSpatium">
-                        <add place="above" corresp="#substAdd9_a30r">
+                        <add place="above" corresp="#substAdd9_a30r" style="left:-296px;top:-19px;">
                             <add corresp="#substAdd11_a30r" place="inline" rend="insMExt">an ihm sich abspielenden<space unit="char" quantity="5"/>
                             </add>
                             <del corresp="#substDel11a_a30r" rend="hatching">an irgend etwas Festerem und Widerstehenden </del>
@@ -9454,13 +9454,13 @@
                                 </add>
                             </metamark>
                             <del corresp="#substDel10a_a30r" rend="hatching">zu Stande</del>
-                            <add corresp="#a30r_add_d2e646" place="below">
+                            <add corresp="#a30r_add_d2e646" style="left:-72px;top:41px;" place="below">
                                 <del corresp="#substDel10b_a30r" rend="hatching">gekommenen</del>
                             </add>
                         </add>
                     </metamark> Überwältigung<del rend="overwritten" cause="#a30r_add_d2e654">en</del>
                     <add place="superimposed" corresp="#a30r_add_d2e654">s-</add>
-                    <add corresp="#a30r_add_d2e656" place="below">-Prozessen</add>
+                    <add corresp="#a30r_add_d2e656" style="left:-36px;top:15px;" place="below">-Prozessen</add>
                         <add place="inline" corresp="#a30r_add_d2e660">,</add>
                     <del rend="hatching">und Versu<pc force="weak">-</pc>
                     </del>
@@ -9482,7 +9482,7 @@
                         <add place="superimposed" corresp="#a30r_add_d2e699"> <del rend="hatching">A</del>
                         </add>ngriffen</del>
                         <del corresp="#substDel14c_a30r" rend="hatching">, Eingriffen, Aneignungen</del>.<metamark xml:id="srcD_metamark_substAdd13a_a30r" function="insertion" rend="afterWord">
-                        <add place="above" corresp="#substAdd13a_a30r">
+                        <add place="above" corresp="#substAdd13a_a30r" style="left:-184px;top:-19px;">
                             <del corresp="#substDel14d_a30r" rend="hatching">seitens des Dings, das sich entwickelt</del>.</add>
                     </metamark>
                   </line>
@@ -9522,7 +9522,7 @@
                     <del hand="#N_brown1" rend="hatching">bildungen</del>) ein Zeichen wachsender Kraft und <milestone unit="page" edRef="#Ed" n="69"/>Vollkommenheit sein. Ich wollte sagen: auch 
                   </line>
                 <line xml:id="srcD_line_a30r_lb35" start="#a30r_lb35" n="35">das theilweise <hi rend="underline">Unnützlichwerden</hi>, das Verkümmern und Entarten, das Verlustiggehn von Sinn und Zweckmäßigkeit gehört <metamark xml:id="srcD_metamark_a30r_add_d2e781" function="insertion" rend="inSpatium">
-                        <add place="above" corresp="#a30r_add_d2e781">unter Umständen</add>
+                        <add place="above" corresp="#a30r_add_d2e781" style="left:-48px;top:-19px;">unter Umständen</add>
                     </metamark> zu 
                   </line>
                 <line xml:id="srcD_line_a30r_lb36" start="#a30r_lb36" n="36">de<del rend="overwritten" cause="#a30r_add_d2e789">m</del>
@@ -9539,31 +9539,31 @@
                 <line xml:id="srcD_line_a30r_lb38" start="#a30r_lb38" n="38">ihm <metamark xml:id="srcD_metamark_a30r_add_d2e822" function="insertion" rend="inSpatium">
                         <add place="above" corresp="#a30r_add_d2e822">Alles</add>
                     </metamark> <hi rend="underline">geopfert</hi> werden mußte<del rend="overwritten" cause="#a30r_add_d2e831">.</del>
-                    <add place="superimposed" corresp="#a30r_add_d2e831">;</add> <metamark xml:id="srcD_metamark_a30r_add_d2e834" function="insertion">
-                        <add place="above" corresp="#a30r_add_d2e834">die Menschheit als Masse dem Gedeihen einer </add>
+                    <add place="superimposed" corresp="#a30r_add_d2e831">;</add> <metamark xml:id="srcD_metamark_a30r_add_d2e834" function="insertion" style="top:-2px;height:19px;">
+                        <add place="above" corresp="#a30r_add_d2e834" style="left:-152px;">die Menschheit als Masse dem Gedeihen einer </add>
                     </metamark>
                     <metamark xml:id="srcD_metamark_a30r_add_d2e836" function="insertion" rend="inSpatium">
-                        <add place="below" corresp="#a30r_add_d2e836">einzelnen stärkeren <hi rend="latin">Species</hi> Mensch <metamark xml:id="srcD_metamark_a30r_add_d2e841" function="insertion" rend="inSpatium">
-                                <add place="above" corresp="#a30r_add_d2e841">geopfert</add>
+                        <add place="below" corresp="#a30r_add_d2e836" style="left:0px;top:17px;">einzelnen stärkeren <hi rend="latin">Species</hi> Mensch <metamark xml:id="srcD_metamark_a30r_add_d2e841" function="insertion" rend="inSpatium">
+                                <add place="above" corresp="#a30r_add_d2e841" style="left:0px;top:-6px;">geopfert</add>
                             </metamark> – das <hi rend="underline">wäre</hi> ein Fortschritt…</add>
                     </metamark> – Ich hebe diesen <metamark xml:id="srcD_metamark_a30r_add_d2e848" function="insertion">
                         <add place="above" corresp="#a30r_add_d2e848">Haupt-</add>
                     </metamark>Gesichtspunkt <metamark xml:id="srcD_metamark_a30r_add_d2e851" function="insertion" rend="inSpatium">
-                        <add place="above" corresp="#a30r_add_d2e851">der historischen Methodik</add>
+                        <add place="above" corresp="#a30r_add_d2e851" style="left:-56px;top:-19px;">der historischen Methodik</add>
                     </metamark> hervor, <del rend="hatching">so sehr</del>
                     <metamark xml:id="srcD_metamark_a30r_add_d2e859" function="insertion" rend="inWord">
-                        <add place="above" corresp="#a30r_add_d2e859">um so mehr als<add place="inline" corresp="#a30r_add_d2e861"> er</add>
+                        <add place="above" corresp="#a30r_add_d2e859" style="left:0px;top:-28px;">um so mehr als<add place="inline" corresp="#a30r_add_d2e861"> er</add>
                         </add>
                     </metamark>
                     <del rend="hatching">er</del> <del rend="hatching">auch</del> <metamark xml:id="srcD_metamark_a30r_add_d2e870" function="insertion" rend="inSpatium">
-                        <add place="above" corresp="#a30r_add_d2e870">im Grunde <add corresp="#substAdd15_a30r" place="inline" rend="insMExt">dem gerade</add>
+                        <add place="above" corresp="#a30r_add_d2e870" style="left:2px;top:-15px;">im Grunde <add corresp="#substAdd15_a30r" place="inline" rend="insMExt">dem gerade</add>
                         </add>
                     </metamark> <del corresp="#substDel15_a30r" rend="hatching">dem</del> herrschenden Instinkte <metamark xml:id="srcD_metamark_a30r_add_d2e881" function="insertion" rend="inSpatium">
                         <add place="above" corresp="#a30r_add_d2e881">und Zeitgeschmacke</add>
                     </metamark> entgegengeht, 
                   </line>
                 <line xml:id="srcD_line_a30r_lb39" start="#a30r_lb39" n="39">welcher lieber sich noch mit der absoluten Zufälligkeit, ja <metamark xml:id="srcD_metamark_a30r_add_d2e887" function="insertion" rend="inSpatium">
-                        <add place="above" corresp="#a30r_add_d2e887">mechanistischen</add>
+                        <add place="above" corresp="#a30r_add_d2e887" style="left:0px;top:-9px;">mechanistischen</add>
                     </metamark> Unsinnigkeit alles Geschehens <del instant="unknown">sich</del> vertragen würde als mit der The<pc force="weak">-</pc>
                   </line>
                 <line xml:id="srcD_line_a30r_lb40" start="#a30r_lb40" n="40">orie eines in allem Geschehen sich abspielenden <hi rend="underline">Macht-Willens</hi>. D<del rend="overwritten" cause="#a30r_add_d2e905">er</del>
@@ -9573,13 +9573,13 @@
                     <del rend="hatching">Haß</del> gegen alles, was herrscht und herrschen 
                   </line>
                 <line xml:id="srcD_line_a30r_lb41" start="#a30r_lb41" n="41">will, der moderne <hi rend="underline">Misarchismus</hi> <metamark xml:id="srcD_metamark_a30r_add_d2e919" function="insertion" rend="inSpatium">
-                        <add place="above" corresp="#a30r_add_d2e919">(um ein <del rend="overwritten" cause="#a30r_add_d2e924">neues</del>
+                        <add place="above" corresp="#a30r_add_d2e919" style="left:-289px;top:-14px;">(um ein <del rend="overwritten" cause="#a30r_add_d2e924">neues</del>
                             <add place="superimposed" corresp="#a30r_add_d2e924">schlechtes</add> Wort für <del rend="overwritten" cause="#a30r_add_d2e930">diese</del>
                             <add place="superimposed" corresp="#a30r_add_d2e930">eine</add>
                             <del rend="overwritten" cause="#a30r_add_d2e936">neue</del>
                             <add place="superimposed" corresp="#a30r_add_d2e936">schlechte</add> Sache zu bilden)</add>
-                    </metamark> hat sich <metamark xml:id="srcD_metamark_a30r_add_d2e941" function="insertion">
-                        <add place="above" corresp="#a30r_add_d2e941">
+                    </metamark> hat sich <metamark xml:id="srcD_metamark_a30r_add_d2e941" function="insertion" style="top:-8px;height:25px;">
+                        <add place="above" corresp="#a30r_add_d2e941" style="left:0px;">
                             <del rend="hatching">allmählich</del> <add place="inline" rend="insMExt" corresp="#a30r_add_d2e945">allmählich</add>
                         </add>
                     </metamark>
@@ -9591,8 +9591,8 @@
                         <add place="above" corresp="#a30r_add_d2e955" style="left:-38px;top:-19px;"> und verkleidet</add>
                     </metamark>, daß er <metamark xml:id="srcD_metamark_a30r_add_d2e958" function="insertion" rend="inSpatium">
                         <add place="above" corresp="#a30r_add_d2e958">heute</add>
-                    </metamark> <metamark xml:id="srcD_metamark_a30r_add_d2e962" function="insertion">
-                        <add place="above" corresp="#a30r_add_d2e962">
+                    </metamark> <metamark xml:id="srcD_metamark_a30r_add_d2e962" function="insertion" style="top:0px;height:17px;">
+                        <add place="above" corresp="#a30r_add_d2e962" style="left:-3px;">
                             <del rend="hatching">bereits</del>
                         </add>
                     </metamark>
@@ -9656,7 +9656,7 @@
                     <add corresp="#a30r_add_d2e1090" place="above">Funktionäre abgeleugnet, in denen der Wille zum Leben aktiv und aggressiv erscheint. Man erinnert sich, was <hi rend="latin">Huxley Spencer’n</hi> zum Vorwurf gemacht hat – seinen „<hi rend="latin">admini<pc force="weak">-</pc>
                                 </hi>
                     </add>
-                    <add corresp="#a30r_add_d2e1099" place="below">
+                    <add corresp="#a30r_add_d2e1099" style="left:552px;top:23px;" place="below">
                         <hi rend="latin">strativen Nihilismus</hi>“: aber es handelt sich noch um <hi rend="underline">mehr</hi> als um’s „Administriren“…</add>
                     <del rend="hatching">zu schwach ist, um über den Feind Herr zu werden, und eben noch stark genug, um sein Sonderdasein aufrecht zu erhalten</del>
                 </line>

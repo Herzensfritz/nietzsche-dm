@@ -1,6 +1,7 @@
 {
     "myapp": {
         "title": "Nietzsche Druckmanuskripte",
+        "facsimile": "Faksimile",
         "over": "auf",
         "overwritten": "überschrieben",
         "erased": "radiert",
