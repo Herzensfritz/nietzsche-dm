@@ -84,7 +84,6 @@ declare function pages:load-components($node as node(), $model as map(*)) {
 };
 
 declare function pages:load-xml($view as xs:string?, $root as xs:string?, $doc as xs:string) {
-
     for $data in config:get-document($doc)
     return
         if (exists($data)) then
@@ -215,7 +214,7 @@ declare function pages:toc-ms-contents($node, $model as map(*), $target as xs:st
                 let $root := $node//tei:sourceDoc/tei:surface[@start = concat('#', $id)]
                 let $nodeId := util:node-id($root)
                 let $xmlId := $root/@xml:id
-                return <li><pb-link xml-id="{$xmlId}" node-id="{$nodeId}" emit="{$target}" subscribe="{$target}">{$locus}: {$desc}</pb-link></li>
+                return <li><pb-link  node-id="{$nodeId}" emit="{$target}" subscribe="{$target}">{$locus}: {$desc}</pb-link></li>
             }
     </ul>
 };
@@ -224,11 +223,13 @@ declare function pages:toc-div($node, $model as map(*), $target as xs:string?,
     $icons as xs:boolean?) {
     let $view := $model?config?view
     let $divs := nav:get-subsections($model?config, $node)
+   
     return
         <ul>
         {
             for $div in $divs
             let $headings := nav:get-section-heading($model?config, $div)/node()
+             let $log := console:log($headings)
             let $html :=
                 if ($headings/*) then
                     $pm-config:web-transform($headings, map { "mode": "toc", "root": $div }, $model?config?odd)

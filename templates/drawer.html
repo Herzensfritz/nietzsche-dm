@@ -87,9 +87,9 @@
             <h3>
                 <pb-i18n key="document.settings">Settings</pb-i18n>
             </h3>
-             <pb-select-feature id="select-view1" global="global" subscribe="transcription" emit="transcription" name="view1" label="View" items="[         {&#34;name&#34;: &#34;Diplomatic View&#34;, &#34;properties&#34;: {&#34;mode&#34;: &#34;diplomatic&#34;, &#34;view&#34;: &#34;page&#34;}},         {&#34;name&#34;: &#34;Normalized View&#34;, &#34;properties&#34;: {&#34;mode&#34;: &#34;norm&#34;, &#34;view&#34;: &#34;single&#34;, &#34;root&#34;: null}}         ]"/>
-             <pb-toggle-feature emit="transcription" subscribe="transcription" name="faksimile" selector="pb-facsimile,pb-facs-link">
-                <pb-i18n key="myapp.facsimile">Faksimile</pb-i18n>
+             <!--<pb-select-feature id="select-view1" global="global" subscribe="transcription" emit="transcription" name="view1" label="View" items="[         {&#34;name&#34;: &#34;Diplomatic View&#34;, &#34;properties&#34;: {&#34;mode&#34;: &#34;diplomatic&#34;, &#34;view&#34;: &#34;page&#34;}},         {&#34;name&#34;: &#34;Normalized View&#34;, &#34;properties&#34;: {&#34;mode&#34;: &#34;norm&#34;, &#34;view&#34;: &#34;single&#34;, &#34;root&#34;: null}}         ]"/> -->
+             <pb-toggle-feature emit="transcription" subscribe="transcription" name="edRef" selector=".edRefLB">
+                <pb-i18n key="myapp.edref-lb">... KGW KSA Zeilenumbruch ...</pb-i18n>
                 </pb-toggle-feature>
             <!-- <pb-toggle-feature emit="transcription" subscribe="transcription" name="view" on="page" off="div" init-from-view="init-from-view">
                 <pb-i18n key="document.view-type">Page View</pb-i18n> 

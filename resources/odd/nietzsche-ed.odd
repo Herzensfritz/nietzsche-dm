@@ -1,0 +1,146 @@
+<?xml-model href="teipublisher_odds.xsd"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:pb="http://teipublisher.com/1.0" xml:lang="en"><teiHeader><fileDesc>
+            <titleStmt><title>Nietzsche Erstdruck</title></titleStmt>
+            <publicationStmt>
+                <publisher>eXistSolutions GmbH</publisher>
+                <availability>
+                    <licence target="https://www.gnu.org/licenses/gpl-3.0.en.html">Distributed under GNU General Public License</licence>
+                    <p>Copyright 2017 <ref target="http://existsolutions.com">eXistSolutions GmbH</ref>
+                    </p>
+                    <p>This program is free software: you can redistribute it and/or modify
+                        it under the terms of the GNU General Public License as published by
+                        the Free Software Foundation, either version 3 of the License, or
+                        (at your option) any later version.</p>
+                    <p>This program is distributed in the hope that it will be useful,
+                        but WITHOUT ANY WARRANTY; without even the implied warranty of
+                        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+                        GNU General Public License for more details.</p>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Default customization maintained by <ref target="http://tei-publisher.com">TEI
+                        Publisher</ref>, building upon the ODD developed by TEI Consortium as tei_simplePrint.odd.</p>
+                <p>born digital</p>
+            </sourceDesc>
+        </fileDesc><encodingDesc><tagsDecl><rendition xml:id="allcaps">text-transform: uppercase;</rendition><rendition xml:id="blackletter">font-family: fantasy;</rendition><rendition xml:id="bold">font-weight: bold;</rendition><rendition xml:id="bottombraced">padding-bottom: 2pt; border-bottom: dashed gray
+                2pt;</rendition><rendition xml:id="block">display:block;</rendition><rendition xml:id="boxed">padding: 2pt; border: solid black 1pt;</rendition><rendition xml:id="centre">text-align: center;</rendition><rendition xml:id="cursive">font-family: cursive;</rendition><rendition xml:id="doublestrikethrough">text-decoration: line-through; color:
+                red;</rendition><rendition xml:id="doubleunderline">text-decoration: underline; color: red;</rendition><rendition xml:id="dropcap">font-size : 6em; font-family: cursive; font-weight : bold;
+                vertical-align: top; height: 1em; line-height: 1em; float : left; width : 1em; color :
+                #c00; margin: 0em; padding: 0px;</rendition><rendition xml:id="float">float:right; display: block; font-size: smaller; clear: right;
+                padding: 4pt; width: 15%; </rendition><rendition xml:id="hyphen"/><rendition xml:id="inline">display:inline;</rendition><rendition xml:id="italic">font-style: italic;</rendition><rendition xml:id="justify">text-align: justify;</rendition><rendition xml:id="larger">font-size: larger;</rendition><rendition xml:id="left">text-align: left;</rendition><rendition xml:id="leftbraced">padding-left: 2pt; border-left: dotted gray 2pt; </rendition><rendition xml:id="letterspace">letter-spacing: 0.5em;</rendition><rendition xml:id="literal">font-family:monospace; white-space:pre;</rendition><rendition xml:id="normalstyle">font-style:roman;</rendition><rendition xml:id="normalweight">font-weight:normal;</rendition><rendition xml:id="right">text-align: right;</rendition><rendition xml:id="rightbraced">padding-right: 2pt; border-right: dotted gray 2pt; </rendition><rendition xml:id="rotateleft">-webkit-transform: rotate(90deg); transform:
+                rotate(90deg);</rendition><rendition xml:id="rotateright">-webkit-transform: rotate(-90deg); transform:
+                rotate(-90deg);</rendition><rendition xml:id="rules">border: 1px solid black; padding:
+                2px;border-collapse:collapse;border-spacing:0;</rendition><rendition xml:id="smallcaps">font-variant: small-caps;</rendition><rendition xml:id="smaller">font-size: smaller;</rendition><rendition xml:id="strikethrough">text-decoration: line-through;</rendition><rendition xml:id="subscript">vertical-align: bottom; font-size: smaller;</rendition><rendition xml:id="superscript">vertical-align: super; font-size: smaller;</rendition><rendition xml:id="topbraced">padding-top: 2pt; border-top: dotted gray 2pt; </rendition><rendition xml:id="typewriter">font-family:monospace;</rendition><rendition xml:id="underline">text-decoration: underline;</rendition><rendition xml:id="wavyunderline">text-decoration: underline; text-decoration-style:
+                wavy;</rendition><rendition source="nietzsche-ed.css"/></tagsDecl></encodingDesc><revisionDesc>
+            <change when="2024-03-18">first version</change>
+        </revisionDesc></teiHeader><text>
+        <body>
+            <schemaSpec start="TEI teiCorpus" ident="nietzsche-ed" source="teipublisher.odd">
+            <elementSpec ident="app" mode="change"><model predicate="rdg and lem and note" behaviour="pass-through">
+            <param name="rdg" value="rdg"/>
+            <param name="lem" value="lem"/>
+            <param name="index" value="count(preceding::app)+1"/>
+            <param name="note" value="note[1]/text()"/>
+            <param name="secondNote" value="note[2]/text()"/>
+            <param name="wit" value="substring-after(rdg/@wit, '#')"/>
+            <pb:template xmlns="" xml:space="preserve"><pb-popover theme="material" class="KGWKSAchoice toggle"><span slot="default" class="popoverTarget"><sup>[[index]]</sup></span>
+   <template slot="alternate">
+          <p><span style="margin-right: 2px;">ED:</span> <span>[[lem]]</span></p>
+          <p><span style="margin-right: 2px;">[[wit]]</span><span style="margin-right: 2px; font-style: italic;">([[note]]):</span> <span>[[rdg]]</span></p>
+          <p style="font-style: italic;">[[secondNote]]</p>
+      </template>
+</pb-popover></pb:template>
+        </model><model predicate="rdg and lem" behaviour="pass-through">
+            <param name="content" value="."/>
+            <param name="index" value="count(preceding::app)+1"/>
+            <pb:template xmlns="" xml:space="preserve"><pb-popover theme="material" class="KGWKSAchoice toggle"><span slot="default" class="popoverTarget"><sup>[[index]]</sup></span>
+   <template slot="alternate">
+        [[content]]          
+      </template>
+</pb-popover></pb:template>
+        </model></elementSpec>
+                <elementSpec ident="lem" mode="add"><model behaviour="pass-through">
+            <param name="lem" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><p><span>[[lem]]</span>]</p></pb:template>
+        </model></elementSpec>
+            <elementSpec ident="lb" mode="change"><model predicate="$parameters?mode = 'toc'" behaviour="omit"/><model predicate="@edRef and not($parameters?mode = 'toc')" behaviour="pass-through">
+            <param name="line" value="@n"/>
+            <param name="reference" value="replace(replace(@edRef, '#', ''), ' ', '/')"/>
+            <param name="page" value="if(preceding::pb[@edRef][1]) then (preceding::pb[@edRef][1]/@n) else ($parameters?root/preceding::pb[@edRef][1]/@n)"/>
+            <pb:template xmlns="" xml:space="preserve"><pb-popover theme="material" class="edRefLB toggle"><span slot="default">¶</span>
+   <template slot="alternate">
+          <p><span style="margin-right: 2px;">[[reference]]</span><span>[[page]]:</span> <span>[[line]]</span></p>
+      </template>
+</pb-popover></pb:template>
+        </model><model predicate="not(@edRef) and ((number(@n) mod 5 = 0) or (number(@n) = 1))" behaviour="pass-through" useSourceRendition="true">
+            <param name="line" value="@n"/>
+            <param name="rend" value="@rend"/>
+            <pb:template xmlns="" xml:space="preserve"><br class="tei-lb3"/><span style="position:absolute; left: -3em; color: blue;">[[line]]:</span><span class="[[rend]]"/></pb:template>
+        </model><model predicate="not(@edRef)" behaviour="break" useSourceRendition="true">
+            <param name="type" value="'line'"/>
+            <param name="label" value="@n"/>
+            <param name="rend" value="@rend"/>
+        </model></elementSpec>
+                <elementSpec ident="pc" mode="add"><model predicate="@source=&#34;#KGW #KSA&#34;" behaviour="pass-through">
+            <pb:template xmlns="" xml:space="preserve"><span style="margin-left: -0.3em"/></pb:template>
+        </model></elementSpec>
+                <elementSpec ident="pb" mode="change"><model predicate="@edRef" behaviour="pass-through" useSourceRendition="true">
+            <param name="page" value="@n"/>
+            <param name="edRef" value="replace(replace(@edRef, '#',''), ' ', '/')"/>
+            <pb:template xmlns="" xml:space="preserve"><span style="display: block; margin-left: 7pt; color: grey; float: right; font-size: 70%">[[[edRef]]: [[page]]]</span></pb:template>
+        </model><model behaviour="pass-through" useSourceRendition="true">
+            <param name="page" value="@n"/>
+            <param name="key" value="concat('myapp.', 'overwritten')"/>
+            <pb:template xmlns="" xml:space="preserve"><span style="display: block; margin-left: 4pt; color: var(--paper-fab-background); float: right;">
+  [[page]]
+</span></pb:template>
+        </model></elementSpec>
+                <elementSpec ident="orig" mode="add"/>
+            <elementSpec ident="choice" mode="change"><model predicate="parent::lem and orig[@source=&#34;#Ed&#34;] and corr[@source=&#34;#KGW #KSA&#34;]" behaviour="pass-through">
+            <param name="default" value="orig[@source=&#34;#Ed&#34;]"/>
+            <param name="alternate" value="corr[@source=&#34;#KGW #KSA&#34;]"/>
+            <pb:template xmlns="" xml:space="preserve"><span><span style="margin-right: 0.5em;">[[default]]</span>&gt;<span style="margin-left: 0.5em;">KGW/KSA: [[alternate]]</span></span></pb:template>
+        </model><model predicate="orig[@source=&#34;#Ed&#34;] and corr[@source=&#34;#KGW #KSA&#34;]" behaviour="pass-through">
+            <param name="default" value="orig[@source=&#34;#Ed&#34;]"/>
+            <param name="alternate" value="corr[@source=&#34;#KGW #KSA&#34;]"/>
+            <pb:template xmlns="" xml:space="preserve"><pb-popover theme="material" class="KGWKSAchoice toggle"><span slot="default" class="popoverTarget">[[default]]</span>
+   <template slot="alternate">
+          <p><span style="margin-right: 0.5em;">[[default]]</span>&gt;<span style="margin-left: 0.5em;">[[alternate]] (KGW/KSA)</span></p>
+      </template>
+</pb-popover></pb:template>
+        </model><model predicate="$parameters?mode = 'toc' and orig[@source=&#34;#Ed&#34;] and orig[@source=&#34;#KGW #KSA&#34;]" behaviour="inline">
+            <param name="content" value="orig[@source=&#34;#Ed&#34;]"/>
+        </model><model predicate="orig[@source=&#34;#Ed&#34;] and orig[@source=&#34;#KGW #KSA&#34;]" behaviour="pass-through">
+            <param name="default" value="orig[@source=&#34;#Ed&#34;]"/>
+            <param name="alternate" value="orig[@source=&#34;#KGW #KSA&#34;]"/>
+            <pb:template xmlns="" xml:space="preserve"><pb-popover theme="material" class="KGWKSAchoice toggle"><span slot="default" class="popoverTarget">[[default]]</span>
+   <template slot="alternate">
+          <p><span style="margin-right: 2px;">KGW/KSA:</span> <span>[[alternate]]</span></p>
+      </template>
+</pb-popover></pb:template>
+        </model><model predicate="sic and corr" behaviour="alternate">
+            <param name="default" value="corr[1]"/>
+            <param name="alternate" value="sic[1]"/>
+        </model><model predicate="abbr and expan" behaviour="alternate">
+            <param name="default" value="expan[1]"/>
+            <param name="alternate" value="abbr[1]"/>
+        </model><model predicate="orig and reg" behaviour="alternate">
+            <param name="default" value="reg[1]"/>
+            <param name="alternate" value="orig[1]"/>
+        </model></elementSpec><elementSpec ident="anchor" mode="change"><model behaviour="pass-through">
+            <desc>following::app/@to = concat('#', @xml:id)</desc>
+            <param name="id" value="@xml:id"/>
+            <param name="count" value="count(preceding::anchor)+1"/>
+            <param name="rdg" value="following::app[@to=concat('#', @xml:id)]/rdg/@wit"/>
+            <pb:template xmlns="" xml:space="preserve"><span class="popover trigger" id="[[id]]"><sup>[[count]]</sup></span>
+</pb:template>
+        </model></elementSpec><elementSpec ident="rdg" mode="add"><model behaviour="pass-through">
+            <param name="rdg" value="."/>
+            <param name="wit" value="if (@n) then (concat(replace(substring-after(@wit, '#'), ' #', '/'), ' ', @n)) else (replace(substring-after(@wit, '#'), ' #', '/'))"/>
+            <pb:template xmlns="" xml:space="preserve"><p><span>[[rdg]] ([[wit]])</span></p></pb:template>
+        </model></elementSpec><elementSpec ident="note" mode="change">
+        <model behaviour="inline" cssClass="note">
+            <desc>type="annotation"</desc>
+        </model>
+    </elementSpec></schemaSpec>
+        </body>
+    </text></TEI>

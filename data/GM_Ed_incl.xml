@@ -1,0 +1,1548 @@
+<?teipublisher template="view.html" odd="nietzsche-ed.odd" view="page" media="pdf epub print"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+   <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>Zur Genealogie der Moral. Erstdruck E 40</title>
+          <author xml:id="N">Friedrich Nietzsche</author>
+          <editor xml:id="editors">
+                    <name>Beat Röllin</name>, <name>Christian Steiner</name>, <name>René Stockmar</name>
+                </editor>
+          <respStmt>
+            <resp>Projektleiter: </resp>
+                    <name>Hubert Thüring</name>
+          </respStmt>
+        </titleStmt>
+        <publicationStmt>
+          <publisher>Nietzsche-Edition, Universität Basel</publisher>
+                <date>tba</date>
+        </publicationStmt>
+        <seriesStmt>
+          <title>Der späte Nietzsche. Werke. Digitale Edition der Druckdokumente</title>
+        </seriesStmt>
+        <sourceDesc>
+                <listBibl>
+                    <head>
+          Bibliographie</head><!-- NB! analog in teiHeader von Dm, Cb, Ed/KGW/KSA, QV -->
+          <bibl xml:id="Dm">Druckmanuskript zu Zur Genealogie der Moral. Eine Streitschrift. Leipzig: C. G. Naumann 1887 (Mette-Signatur: D 20; GSA-Signatur: 71/27,1, 71/27,2). Aufbewahrungsort: Goethe- und Schiller-Archiv, Weimar. [=Dm]</bibl>
+          <bibl xml:id="Cb">Zur Genealogie der Moral [Korrekturbogenexemplar] (Mette-Signatur: K 11; HAAB-Signatur: C 4616). Aufbewahrungsort: Herzogin Anna Amalia Bibliothek, Weimar. [=Cb]</bibl>
+          <bibl xml:id="Ed">Friedrich Nietzsche: Zur Genealogie der Moral. Eine Streitschrift. Leipzig: C. G. Naumann 1887 (Mette-Signatur: E 40) [=Ed]. Exemplar HAAB: ed. cit. (HAAB-Signatur: C 4620). Aufbewahrungsort: Herzogin Anna Amalia Bibliothek, Weimar.</bibl>
+          <bibl xml:id="KGW">Nietzsche: Werke. Kritische Gesamtausgabe. Herausgegeben von Giorgio Colli und Mazzino Montinari. Band VI 2: Friedrich Nietzsche: Jenseits von Gut und Böse. Zur Genealogie der Moral. (1886-1887). Berlin: Walter de Gruyter 1968. [=KGW]</bibl>
+          <bibl xml:id="KSA">Friedrich Nietzsche: Sämtliche Werke. Kritische Studienausgabe. Herausgegeben von Giorgio Colli und Mazzino Montinari. Band 5: Friedrich Nietzsche: Jenseits von Gut und Böse. Zur Genealogie der Moral. München: Deutscher Taschenbuch Verlag; Berlin/New York: Walter de Gruyter 1988 (2., durchges. Aufl.). [=KSA]</bibl>
+          <bibl xml:id="Gast1908">Peter Gast [= Heinrich Köselitz] (Hg.): Friedrich Nietzsches Briefe an Peter Gast. 2. Aufl. Leipzig: Insel 1908.</bibl>
+          <bibl xml:id="Mette1933">Hans Joachim Mette: Sachlicher Vorbericht zur Gesamtausgabe der Werke Friedrich Nietzsches. In: Friedrich Nietzsche: Werke und Briefe. Historisch-kritische Gesamtausgabe. Werke. Bd. I. München: C. H. Beck’sche Verlagsbuchhandlung 1933 [=BAW I], XXXI-CXXVI.</bibl>
+                </listBibl>
+            </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+            <projectDesc>
+                <p/>
+            </projectDesc>
+        <variantEncoding location="external" method="double-end-point"/>
+     </encodingDesc>  
+   </teiHeader>
+   <text>
+     <milestone xml:id="Titelbogen" unit="section" type="signature" spanTo="#TitelbogenEnd"/>
+     <front>
+       <milestone xml:id="GMTitelblatt" unit="section" type="div1" spanTo="#div1endEd-II"/>
+       <titlePage>
+         <pb n="I"/>
+                <pb edRef="#KGW #KSA" n="258[a]/245"/>
+         <milestone xml:id="GMTitelseite" unit="section" type="div2" spanTo="#div2endEd-I"/>
+         <milestone unit="page" source="#Dm" n="a1r"/>
+         <docTitle>
+           <titlePart type="main">
+             <lb n="1"/>
+                        <lb edRef="#KGW #KSA" n="1"/>
+                        <seg type="lem" xml:id="lemIa"/>Zur 
+             <lb n="2"/>
+                        <lb edRef="#KGW #KSA" n="2"/>Genealogie der Moral.</titlePart>
+           <titlePart type="sub">
+             <lb n="3"/>
+                        <lb edRef="#KGW #KSA" n="3"/>Eine <seg type="lem" xml:id="lemIb"/>Streitschrift
+           </titlePart>
+         </docTitle>
+         <byline>
+           <lb n="4"/>
+                    <lb edRef="#KGW #KSA" n="4"/>von<anchor xml:id="lemEndIb"/> 
+           <docAuthor>
+             <lb n="5"/>
+                        <lb edRef="#KGW #KSA" n="5"/>Friedrich <seg type="lem" xml:id="lemIc"/>Nietzsche.<anchor xml:id="lemEndIc"/>
+                    </docAuthor>
+         </byline>
+         <docImprint>
+           <pubPlace>
+                        <lb n="6"/>
+                        <lb edRef="#KGW #KSA" n="6"/>LEIPZIG</pubPlace>
+           <publisher>
+                        <lb n="7"/>
+                        <lb edRef="#KGW #KSA" n="7"/>Verlag von C. G. Naumann.</publisher>
+           <lb n="8"/>
+                    <lb edRef="#KGW #KSA" n="8"/>1887.<anchor xml:id="lemEndIa"/>
+         </docImprint>
+         <anchor xml:id="div2endEd-I"/>
+         <app from="#lemIa" to="#lemEndIa">
+           <lem>Zur … 1887.</lem>
+           <note type="annotation">in KSA nur Titel: </note>
+                    <rdg wit="#KSA" n="245">Zur Genealogie der Moral. / Eine Streitschrift</rdg>
+                </app>
+         <app from="#lemIb" to="#lemEndIb">
+           <lem>Streitschrift von</lem>
+           <rdg wit="#Dm" n="a1r,3" source="#a1r_lb3">Streitschrift. Von</rdg>
+                </app>
+         <app from="#lemIc" to="#lemEndIc">
+           <lem>Nietzsche.</lem>
+           <note type="annotation">danach Motto: </note>
+                    <rdg wit="#Dm" n="a1r,6" source="#a1r_lb6">Tout comprendre c’est tout – <hi rend="underline">mépriser</hi>?…</rdg>
+                    <note type="annotation">– in GM nicht aufgenommen; später in NW Epilog 2 eingegangen</note>
+                </app>
+         
+         <pb n="II"/>
+                <pb edRef="#KGW #KSA" n="258[b]/246"/>
+         <milestone unit="page" source="#Dm" n="a1v"/>
+         <titlePart type="titlePageVerso" xml:id="GMTitelrückseite">
+           <seg type="lem" xml:id="lemIIa"/>
+                    <choice>
+             <orig source="#Ed">
+                            <lb n="1" rend="centered"/>Dem letztveröffentlichten „<hi rend="spaced">Jenseits von Gut und Böse</hi>“ zur <lb n="2" rend="centered"/>Ergänzung und Verdeutlichung beigegeben.</orig>
+             <sic source="#KGW #KSA">
+                            <note type="editorial">vakat</note>
+                        </sic>
+           </choice>
+                    <anchor xml:id="lemEndIIa"/>
+         </titlePart>
+         <app from="#lemIIa" to="#lemEndIIa">
+           <lem>
+                        <choice>
+                            <orig source="#Ed">Dem … beigegeben.</orig>
+                            <sic source="#KGW #KSA">
+                                <note type="editorial">vakat</note>
+                            </sic>
+                        </choice>
+                    </lem>
+           <note type="annotation">Titelrückseite von Ed in KGW/KSA nicht wiedergegeben, in KSA im Kommentarband mitgeteilt (KSA 14, 377)</note>
+                </app>
+       </titlePage>
+            <anchor xml:id="div1endEd-II"/>
+     </front>
+     
+      <body>          
+        <div1 xml:id="GMVorrede">
+        <pb n="III"/>
+                <pb edRef="#KGW #KSA" n="259/247"/>
+        <milestone unit="page" source="#Dm" n="a2r"/>
+        <head>
+                    <lb n="1"/>
+                    <lb edRef="#KGW #KSA" n="1"/>
+                    <choice>
+            <orig source="#Ed">VORREDE.</orig>
+            <orig source="#KGW #KSA">Vorrede.</orig>
+                    </choice>
+                </head>
+        <div2 xml:id="GMVorrede01">
+          <head>
+                        <lb n="2"/>
+                        <lb edRef="#KGW #KSA" n="2"/>1.</head>
+          <p>
+                        <lb n="3" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="3" rend="indent"/>Wir sind uns unbekannt, wir Erkennenden, wir <lb n="4"/>selbst uns <lb edRef="#KGW #KSA" n="4"/>selbst: das hat seinen guten Grund. Wir <lb n="5"/>haben nie nach uns ge<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="5"/>sucht, – wie sollte es geschehn, <lb n="6"/>dass wir eines Tags uns <hi rend="spaced">fän<pc source="#KGW #KSA" force="weak">-</pc>
+                            <lb edRef="#KGW #KSA" n="6"/>den</hi>? Mit Recht hat man <lb n="7"/>gesagt: „wo euer Schatz ist, da ist <lb edRef="#KGW #KSA" n="7"/>auch euer Herz“; <lb n="8"/>
+                        <hi rend="spaced">unser</hi> Schatz ist, wo die Bienenkörbe <lb edRef="#KGW #KSA" n="8"/>unsrer Erkennt<pc source="#Ed" force="weak">-</pc>
+                        <lb n="9"/>niss stehn. Wir sind immer dazu unterwegs, als <lb edRef="#KGW #KSA" n="9"/>ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="10"/>borne Flügelthiere und Honigsammler des Geistes, wir <lb n="11"/>küm<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="10"/>mern uns von Herzen eigentlich nur um Eins – <lb n="12"/>
+                        <seg type="lem" xml:id="lemIIIa"/>Etwas<anchor xml:id="lemEndIIIa"/> „heim<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="11"/>zubringen“. Was das Leben sonst, die so<pc source="#Ed" force="weak">-</pc>
+                        <lb n="13"/>genannten „Erlebnisse“ <lb edRef="#KGW #KSA" n="12"/>angeht, – wer von uns hat <lb n="14"/>dafür auch nur Ernst genug? Oder <lb edRef="#KGW #KSA" n="13"/>Zeit genug? Bei <lb n="15"/>solchen Sachen waren wir, fürchte ich, nie recht <lb edRef="#KGW #KSA" n="14"/>„bei <lb n="16"/>der Sache“: wir haben eben unser Herz nicht dort – <lb n="17"/>und <lb edRef="#KGW #KSA" n="15"/>nicht einmal unser Ohr! Vielmehr wie ein Göttlich-<lb n="18"/>Zerstreuter <lb edRef="#KGW #KSA" n="16"/>und In-sich-Versenkter, dem die Glocke <lb n="19"/>eben mit aller Macht <lb edRef="#KGW #KSA" n="17"/>ihre zwölf Schläge des Mittags <lb n="20"/>in’s Ohr gedröhnt hat, mit <seg type="lem" xml:id="lemIIIb"/>einem<anchor xml:id="lemEndIIIb"/> <lb edRef="#KGW #KSA" n="18"/>Male aufwacht und <lb n="21"/>sich fragt „was hat es da eigentlich geschla<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="19"/>gen?“ so <lb n="22"/>reiben auch wir uns mitunter <hi rend="spaced">hinterdrein</hi> die <lb edRef="#KGW #KSA" n="20"/>Ohren <lb n="23"/>und fragen, ganz erstaunt, ganz betreten „was haben wir <lb n="24"/>
+                        <lb edRef="#KGW #KSA" n="21"/>da eigentlich erlebt? mehr noch: wer <hi rend="spaced">sind</hi> wir eigent<pc source="#Ed" force="weak">-</pc>
+                        <lb n="25"/>lich?“ und <lb edRef="#KGW #KSA" n="22"/>zählen nach, hinterdrein, wie gesagt, alle <pb n="IV"/>
+                        <lb n="1"/>die zitternden zwölf <lb edRef="#KGW #KSA" n="23"/>Glockenschläge unsres Erlebnisses, <lb n="2"/>unsres Lebens, unsres <hi rend="spaced">Seins</hi> <lb edRef="#KGW #KSA" n="24"/>– ach! und verzählen uns <lb n="3"/>dabei… Wir bleiben uns eben noth<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="25"/>wendig fremd, <lb n="4"/>wir verstehn uns nicht, wir <hi rend="spaced">müssen</hi> uns ver<pc source="#KGW #KSA" force="weak">-</pc>
+                        <pb edRef="#KGW #KSA" n="260/248"/>
+                        <lb edRef="#KGW #KSA" n="1"/>wechseln, <lb n="5"/>für uns heisst der Satz in alle Ewigkeit „Jeder ist <lb n="6"/>sich <lb edRef="#KGW #KSA" n="2"/>selbst der Fernste“, – für uns sind wir keine „Er<pc source="#Ed #KGW #KSA" force="weak">-</pc>
+                        <lb n="7"/>
+                        <lb edRef="#KGW #KSA" n="3"/>kennenden“…</p>
+                </div2>
+          <app from="#lemIIIa" to="#lemEndIIIa">
+            <lem>Etwas</lem>
+            <rdg wit="#Dm" n="a2r,7" source="#a2r_lb7">etwas</rdg>
+                </app>
+          <app from="#lemIIIb" to="#lemEndIIIb">
+          <lem>einem</lem>
+          <rdg wit="#Dm" n="a2r,11" source="#a2r_lb11">Einem</rdg>
+                </app>
+          
+        <div2 xml:id="GMVorrede02">
+          <head>
+                        <lb n="8"/>
+                        <lb edRef="#KGW #KSA" n="4"/>2.</head>
+          <p>
+                        <lb n="9" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="5" rend="indent"/>– Meine Gedanken über die <hi rend="spaced">Herkunft</hi> <seg type="lem" xml:id="lemIVa"/>unserer<anchor xml:id="lemEndIVa"/> <lb n="10"/>mora<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="6"/>lischen Vorurtheile – denn um sie handelt es sich <lb n="11"/>in dieser <lb edRef="#KGW #KSA" n="7"/>Streitschrift – haben ihren ersten, sparsamen <lb n="12"/>und vorläufigen <lb edRef="#KGW #KSA" n="8"/>Ausdruck in jener Aphorismen-Samm<pc source="#Ed" force="weak">-</pc>
+                        <lb n="13"/>lung erhalten, die den Ti<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="9"/>tel trägt „Menschliches, All<pc source="#Ed" force="weak">-</pc>
+                        <lb n="14"/>zumenschliches. Ein Buch für freie <lb edRef="#KGW #KSA" n="10"/>
+                        <seg type="lem" xml:id="lemIVaa"/>Geister“,<anchor xml:id="lemEndIVaa"/><!-- je nach Dm-Enzifferung app oder nicht!! --> und deren <lb n="15"/>Niederschrift in Sorrent begonnen wurde, <lb edRef="#KGW #KSA" n="11"/>während eines <lb n="16"/>Winters, welcher es mir erlaubte, Halt zu machen <lb edRef="#KGW #KSA" n="12"/>wie <lb n="17"/>ein Wandrer Halt <seg type="lem" xml:id="lemIVb"/>macht<anchor xml:id="lemEndIVb"/> und das weite und gefährliche <lb n="18"/>Land <lb edRef="#KGW #KSA" n="13"/>zu überschauen, durch das mein Geist bis dahin <lb n="19"/>gewandert war. <lb edRef="#KGW #KSA" n="14"/>Dies geschah im Winter 1876-77; die <lb n="20"/>Gedanken selbst sind <lb edRef="#KGW #KSA" n="15"/>älter. Es waren in der Haupt<pc source="#Ed" force="weak">-</pc>
+                        <lb n="21"/>sache schon die gleichen Gedanken, <lb edRef="#KGW #KSA" n="16"/>die ich in den vor<pc source="#Ed" force="weak">-</pc>
+                        <lb n="22"/>liegenden Abhandlungen wieder aufnehme: <lb edRef="#KGW #KSA" n="17"/>– hoffen <lb n="23"/>wir, dass die lange Zwischenzeit ihnen gut gethan hat, <lb n="24"/>
+                        <lb edRef="#KGW #KSA" n="18"/>dass sie reifer, heller, stärker, vollkommner geworden <lb n="25"/>sind! <lb edRef="#KGW #KSA" n="19"/>
+                        <hi rend="spaced">Dass</hi> ich aber heute noch an ihnen festhalte, <lb n="26"/>dass sie sich sel<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="20"/>ber inzwischen immer fester an einander <lb n="27"/>gehalten haben, ja in <lb edRef="#KGW #KSA" n="21"/>einander gewachsen und verwach<pc source="#Ed" force="weak">-</pc>
+                        <lb n="28"/>sen sind, das stärkt in mir die <lb edRef="#KGW #KSA" n="22"/>frohe Zuversichtlich<pc source="#Ed" force="weak">-</pc>
+                        <lb n="29"/>keit, sie möchten von Anfang an in mir nicht <lb edRef="#KGW #KSA" n="23"/>einzeln, <pb n="V"/>
+                        <lb n="1"/>nicht beliebig, nicht sporadisch entstanden sein, son<pc source="#Ed" force="weak">-</pc>
+                        <lb n="2"/>dern <lb edRef="#KGW #KSA" n="24"/>aus einer gemeinsamen Wurzel heraus, aus einem <lb n="3"/>in der Tiefe <lb edRef="#KGW #KSA" n="25"/>gebietenden, immer bestimmter redenden, <lb n="4"/>immer Bestimmteres <lb edRef="#KGW #KSA" n="26"/>verlangenden <hi rend="spaced">Grundwillen</hi> der <lb n="5"/>Erkenntniss. So allein <lb edRef="#KGW #KSA" n="27"/>nämlich geziemt es sich bei <lb n="6"/>einem Philosophen. Wir haben kein <lb edRef="#KGW #KSA" n="28"/>Recht darauf, <lb n="7"/>irgend worin <hi rend="spaced">einzeln</hi> zu sein: wir dürfen <lb edRef="#KGW #KSA" n="29"/>weder ein<pc source="#Ed" force="weak">-</pc>
+                        <lb n="8"/>zeln irren, noch einzeln die Wahrheit treffen. Vielmehr <lb n="9"/>
+                        <lb edRef="#KGW #KSA" n="30"/>mit der Nothwendigkeit, mit der ein Baum seine Früchte <lb n="10"/>trägt, <lb edRef="#KGW #KSA" n="31"/>wachsen aus uns unsre Gedanken, unsre Werthe, <lb n="11"/>unsre Ja’s und <lb edRef="#KGW #KSA" n="32"/>Nein’s und Wenn’s und Ob’s – ver<pc source="#Ed" force="weak">-</pc>
+                        <lb n="12"/>wandt und bezüglich alle<pc source="#KGW #KSA" force="weak">-</pc>
+                        <pb edRef="#KGW #KSA" n="261/249"/>
+                        <lb edRef="#KGW #KSA" n="1"/>sammt unter einander und <lb n="13"/>Zeugnisse Eines Willens, Einer Ge<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="2"/>sundheit, Eines Erd<pc source="#Ed" force="weak">-</pc>
+                        <lb n="14"/>reichs, Einer Sonne. – Ob sie <hi rend="spaced">euch</hi> <lb edRef="#KGW #KSA" n="3"/>schmecken, diese <lb n="15"/>unsre Früchte? – Aber was geht das die Bäume <lb edRef="#KGW #KSA" n="4"/>an! <lb n="16"/>Was geht das <hi rend="spaced">uns</hi> an, uns Philosophen!…</p>
+                </div2>
+        <app from="#lemIVa" to="#lemEndIVa">
+          <lem>unserer</lem>
+          <rdg wit="#Dm" n="a2r,19" source="#a2r_lb19">unsrer</rdg>
+                </app>
+          <app from="#lemIVaa" to="#lemEndIVaa">
+            <lem>Geister“,</lem>
+            <rdg wit="#Dm" n="a2r,21" source="#a2r_lb21">Geister“</rdg>
+                </app><!-- Dm-Entzifferung noch unsicher… -->
+        <app from="#lemIVb" to="#lemEndIVb">
+          <lem>macht</lem>
+          <rdg wit="#Dm" n="a2r,22" source="#a2r_lb22">macht,</rdg>
+                </app>
+          
+        <div2 xml:id="GMVorrede03">
+          <head>
+                        <lb n="17"/>
+                        <lb edRef="#KGW #KSA" n="5"/>3.</head>
+          <p>
+                        <lb n="18" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="6" rend="indent"/>Bei einer mir eignen Bedenklichkeit, die ich un<pc source="#Ed" force="weak">-</pc>
+                        <lb n="19"/>gern ein<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="7"/>gestehe – sie bezieht sich nämlich auf die <lb n="20"/>
+                        <hi rend="spaced">Moral</hi>, auf Alles, <lb edRef="#KGW #KSA" n="8"/>was bisher auf Erden als Moral ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="21"/>feiert worden ist –, einer <lb edRef="#KGW #KSA" n="9"/>Bedenklichkeit, welche in <lb n="22"/>meinem <milestone unit="page" source="#Dm" n="a2v"/><!-- so?! -->Leben so früh, so unaufge<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="10"/>fordert, so unauf<pc source="#Ed" force="weak">-</pc>
+                        <lb n="23"/>haltsam, so in Widerspruch gegen Umgebung, <lb edRef="#KGW #KSA" n="11"/>Alter, <lb n="24"/>Beispiel, Herkunft auftrat, dass ich beinahe das Recht <lb n="25"/>
+                        <lb edRef="#KGW #KSA" n="12"/>hätte, sie mein „A priori“ zu nennen, – musste meine <lb n="26"/>Neu<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="13"/>gierde ebenso wie mein Verdacht bei Zeiten an der <lb n="27"/>Frage Halt <lb edRef="#KGW #KSA" n="14"/>machen, <hi rend="spaced">welchen Ursprung</hi> eigentlich <lb n="28"/>unser Gut und <lb edRef="#KGW #KSA" n="15"/>Böse habe. In der That gieng mir be<pc source="#Ed" force="weak">-</pc>
+                        <pb n="VI"/>
+                        <lb n="1"/>reits als dreizehnjährigem <lb edRef="#KGW #KSA" n="16"/>Knaben das Problem vom <lb n="2"/>Ursprung des Bösen nach: ihm wid<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="17"/>mete ich, in einem <lb n="3"/>Alter, wo man „halb Kinderspiele, halb Gott <lb edRef="#KGW #KSA" n="18"/>im Herzen“ <lb n="4"/>hat, mein erstes litterarisches Kinderspiel, meine <lb edRef="#KGW #KSA" n="19"/>erste <lb n="5"/>philosophische Schreibübung – und was meine da<pc source="#Ed" force="weak">-</pc>
+                        <lb n="6"/>malige <lb edRef="#KGW #KSA" n="20"/>„Lösung“ des Problems anbetrifft, nun, so gab <lb n="7"/>ich, wie es billig <lb edRef="#KGW #KSA" n="21"/>ist, Gott die Ehre und machte ihn <lb n="8"/>zum <hi rend="spaced">Vater</hi> des Bösen. <lb edRef="#KGW #KSA" n="22"/>Wollte es gerade <hi rend="spaced">so</hi> mein „A <lb n="9"/>priori“ von mir? jenes <seg type="lem" xml:id="lemVIa"/>neue,<anchor xml:id="lemEndVIa"/> un<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="23"/>moralische, mindestens <lb n="10"/>immoralistische „A priori“ und der aus <lb edRef="#KGW #KSA" n="24"/>ihm redende ach! <lb n="11"/>so anti-Kantische, so räthselhafte „katego<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="25"/>rische Impera<pc source="#Ed" force="weak">-</pc>
+                        <lb n="12"/>tiv“, dem ich inzwischen immer mehr Gehör und <lb edRef="#KGW #KSA" n="26"/>nicht <lb n="13"/>nur Gehör geschenkt habe?… Glücklicher Weise lernte <lb n="14"/>ich <lb edRef="#KGW #KSA" n="27"/>bei Zeiten das theologische Vorurtheil von dem mo<pc source="#Ed" force="weak">-</pc>
+                        <lb n="15"/>ralischen ab<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="28"/>scheiden und suchte nicht mehr den Ur<pc source="#Ed" force="weak">-</pc>
+                        <lb n="16"/>sprung des Bösen <hi rend="spaced">hin<pc source="#KGW #KSA" force="weak">-</pc>
+                            <lb edRef="#KGW #KSA" n="29"/>ter</hi> der Welt. Etwas historische <lb n="17"/>und philologische Schulung, <lb edRef="#KGW #KSA" n="30"/>eingerechnet ein angeborner <lb n="18"/>wählerischer Sinn in Hinsicht auf <lb edRef="#KGW #KSA" n="31"/>psychologische Fra<pc source="#Ed" force="weak">-</pc>
+                        <lb n="19"/>gen überhaupt, verwandelte in Kürze mein <lb edRef="#KGW #KSA" n="32"/>Problem in <lb n="20"/>das andre: unter welchen Bedingungen erfand sich <pb edRef="#KGW #KSA" n="262/250"/>
+                        <lb edRef="#KGW #KSA" n="1"/>der <lb n="21"/>Mensch jene Werthurtheile gut und böse? <hi rend="spaced">und wel<pc source="#Ed" force="weak">-</pc>
+                            <lb n="22"/>chen <lb edRef="#KGW #KSA" n="2"/>Werth haben sie selbst?</hi> Hemmten oder för<pc source="#Ed" force="weak">-</pc>
+                        <lb n="23"/>derten sie <lb edRef="#KGW #KSA" n="3"/>bisher das menschliche Gedeihen? Sind sie <lb n="24"/>ein Zeichen von Noth<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="4"/>stand, von Verarmung, von Ent<pc source="#Ed" force="weak">-</pc>
+                        <lb n="25"/>artung des Lebens? Oder um<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="5"/>gekehrt, verräth sich in <lb n="26"/>ihnen die Fülle, die Kraft, der Wille des <lb edRef="#KGW #KSA" n="6"/>Lebens, sein <lb n="27"/>Muth, seine Zuversicht, seine Zukunft? – Darauf <lb edRef="#KGW #KSA" n="7"/>fand <lb n="28"/>und wagte ich bei mir mancherlei Antworten, ich unter<pc source="#Ed" force="weak">-</pc>
+                        <lb n="29"/>schied <lb edRef="#KGW #KSA" n="8"/>Zeiten, Völker, Ranggrade der Individuen, ich <pb n="VII"/>
+                        <lb n="1"/>spezialisirte <lb edRef="#KGW #KSA" n="9"/>mein Problem, aus den Antworten wurden <lb n="2"/>neue Fragen, For<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="10"/>schungen, Vermuthungen, Wahrschein<pc source="#Ed" force="weak">-</pc>
+                        <lb n="3"/>lichkeiten: bis ich endlich <lb edRef="#KGW #KSA" n="11"/>ein eignes Land, einen eig<pc source="#Ed" force="weak">-</pc>
+                        <lb n="4"/>nen Boden hatte, eine ganze verschwie<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="12"/>gene wachsende <lb n="5"/>blühende Welt, heimliche Gärten gleichsam, von <lb edRef="#KGW #KSA" n="13"/>denen <lb n="6"/>Niemand <seg type="lem" xml:id="lemVIIa"/>Etwas<anchor xml:id="lemEndVIIa"/> ahnen durfte… Oh wie wir <hi rend="spaced">glück<pc source="#Ed #KGW #KSA" force="weak">-</pc>
+                            <lb n="7"/>
+                            <lb edRef="#KGW #KSA" n="14"/>lich</hi> sind, wir Erkennenden, vorausgesetzt, dass wir <lb n="8"/>nur lange <lb edRef="#KGW #KSA" n="15"/>genug zu schweigen wissen!…</p>
+                </div2>
+          <app from="#lemVIa" to="#lemEndVIa">
+            <lem>neue,</lem>
+            <rdg wit="#Dm" n="a2v,8" source="#a2v_lb8">neue</rdg>
+                </app>
+          <app from="#lemVIIa" to="#lemEndVIIa">
+            <lem>Etwas</lem>
+            <rdg wit="#Dm" n="a2v,20" source="#a2v_lb20">etwas</rdg>
+                </app>
+          
+        <div2 xml:id="GMVorrede04">
+          <head>
+                        <lb n="9"/>
+                        <lb edRef="#KGW #KSA" n="16"/>4.</head>
+          <p>
+                        <lb n="10" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="17" rend="indent"/>Den ersten Anstoss, von meinen Hypothesen über <lb n="11"/>den Ur<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="18"/>sprung der Moral Etwas zu verlautbaren, gab <lb n="12"/>mir ein klares, <lb edRef="#KGW #KSA" n="19"/>sauberes und kluges, auch altkluges <lb n="13"/>Büchlein, in welchem mir <lb edRef="#KGW #KSA" n="20"/>eine umgekehrte und per<pc source="#Ed" force="weak">-</pc>
+                        <lb n="14"/>verse Art von genealogischen Hypo<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="21"/>thesen, ihre eigent<pc source="#Ed" force="weak">-</pc>
+                        <lb n="15"/>lich <hi rend="spaced">englische</hi> Art, zum ersten Male <lb edRef="#KGW #KSA" n="22"/>deutlich ent<pc source="#Ed" force="weak">-</pc>
+                        <lb n="16"/>gegentrat, und das mich anzog – mit jener Anzie<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="23"/>hungs<pc source="#Ed" force="weak">-</pc>
+                        <lb n="17"/>kraft, die alles Entgegengesetzte, alles Antipodische <lb n="18"/>hat. <lb edRef="#KGW #KSA" n="24"/>Der Titel des Büchleins war „der Ursprung der <lb n="19"/>moralischen <lb edRef="#KGW #KSA" n="25"/>Empfindungen“; sein Verfasser Dr. Paul <lb n="20"/>Rée; das Jahr seines <lb edRef="#KGW #KSA" n="26"/>Erscheinens 1877. Vielleicht habe <lb n="21"/>ich niemals Etwas gelesen, zu <lb edRef="#KGW #KSA" n="27"/>dem ich dermaassen, <lb n="22"/>Satz für Satz, Schluss für Schluss, bei mir <lb edRef="#KGW #KSA" n="28"/>Nein ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="23"/>sagt hätte wie zu diesem Buche: doch ganz ohne Ver<pc source="#Ed #KGW #KSA" force="weak">-</pc>
+                        <lb n="24"/>
+                        <lb edRef="#KGW #KSA" n="29"/>druss und Ungeduld. In dem vorher bezeichneten <lb n="25"/>Werke, an dem <lb edRef="#KGW #KSA" n="30"/>ich damals arbeitete, nahm ich ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="26"/>legentlich und ungelegentlich <lb edRef="#KGW #KSA" n="31"/>auf die Sätze jenes Buchs <lb n="27"/>Bezug, nicht indem ich sie widerlegte – <lb edRef="#KGW #KSA" n="32"/>was habe ich <lb n="28"/>mit Widerlegungen zu schaffen! – sondern, wie <pb edRef="#KGW #KSA" n="263/251"/>
+                        <lb edRef="#KGW #KSA" n="1"/>es <pb n="VIII"/>
+                        <lb n="1"/>einem positiven Geiste zukommt, an Stelle des Un<pc source="#Ed" force="weak">-</pc>
+                        <lb n="2"/>wahrschein<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="2"/>lichen das Wahrscheinlichere setzend, unter <lb n="3"/>Umständen an Stelle <lb edRef="#KGW #KSA" n="3"/>eines Irrthums einen andern. Da<pc source="#Ed" force="weak">-</pc>
+                        <lb n="4"/>mals brachte ich, wie gesagt, <lb edRef="#KGW #KSA" n="4"/>zum ersten Male jene <lb n="5"/>Herkunfts-Hypothesen <seg type="lem" xml:id="lemVIIIa"/>an’s<anchor xml:id="lemEndVIIIa"/> Tageslicht, <lb edRef="#KGW #KSA" n="5"/>denen diese Ab<pc source="#Ed" force="weak">-</pc>
+                        <lb n="6"/>handlungen gewidmet sind, mit Ungeschick, wie <lb edRef="#KGW #KSA" n="6"/>ich <lb n="7"/>mir selbst am letzten verbergen möchte, noch unfrei, <lb n="8"/>noch <lb edRef="#KGW #KSA" n="7"/>ohne eine eigne Sprache für diese eignen Dinge <lb n="9"/>und mit mancher<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="8"/>lei Rückfälligkeit und Schwankung. <lb n="10"/>Im Einzelnen vergleiche <lb edRef="#KGW #KSA" n="9"/>man, was ich Menschl. Allzu<pc source="#Ed" force="weak">-</pc>
+                        <lb n="11"/>menschl. S. 51 über die doppelte <lb edRef="#KGW #KSA" n="10"/>Vorgeschichte von Gut <lb n="12"/>und Böse sage (nämlich aus der Sphäre <lb edRef="#KGW #KSA" n="11"/>der Vornehmen <lb n="13"/>und der der Sklaven); insgleichen <seg type="lem" xml:id="lemVIIIb"/>S. 119 ff.<anchor xml:id="lemEndVIIIb"/> über <lb edRef="#KGW #KSA" n="12"/>Werth <lb n="14"/>und Herkunft der asketischen Moral; insgleichen S. 78. <lb edRef="#KGW #KSA" n="13"/>82. <lb n="15"/>II, 35 über die „Sittlichkeit der Sitte“, jene viel ältere <lb n="16"/>und <lb edRef="#KGW #KSA" n="14"/>ursprünglichere Art Moral, welche toto coelo von <lb n="17"/>der altrui<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="15"/>stischen Werthungsweise <milestone unit="page" source="#Dm" n="a3r"/>abliegt (in der Dr. <lb n="18"/>Rée, gleich allen <lb edRef="#KGW #KSA" n="16"/>englischen Moralgenealogen, die mo<pc source="#Ed" force="weak">-</pc>
+                        <lb n="19"/>ralische Werthungsweise <hi rend="spaced">an <lb edRef="#KGW #KSA" n="17"/>sich</hi> sieht); insgleichen <lb n="20"/>S. 74. <seg type="lem" xml:id="lemVIIIc"/>Wanderer<anchor xml:id="lemEndVIIIc"/> S. 29. Morgenr. S. 99 <lb edRef="#KGW #KSA" n="18"/>über die Herkunft <lb n="21"/>der Gerechtigkeit als eines Ausgleichs zwi<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="19"/>schen unge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="22"/>fähr Gleich-Mächtigen (Gleichgewicht als Vorausset<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="20"/>zung <lb n="23"/>aller Verträge, folglich alles Rechts); insgleichen über <lb n="24"/>die <lb edRef="#KGW #KSA" n="21"/>Herkunft der Strafe Wand. S. 25. 34., für die der <lb n="25"/>terroristische <lb edRef="#KGW #KSA" n="22"/>
+                        <seg type="lem" xml:id="lemVIIId"/>Zweck weder essentiell, noch ursprünglich <lb n="26"/>ist (wie Dr. Rée <lb edRef="#KGW #KSA" n="23"/>meint: – er<anchor xml:id="lemEndVIIId"/> ist ihr vielmehr erst <lb n="27"/>eingelegt, unter bestimmten <lb edRef="#KGW #KSA" n="24"/>Umständen, und immer <lb n="28"/>als ein Nebenbei, als etwas <seg type="lem" xml:id="lemVIIIe"/>Hinzukom<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="25"/>mendes).<anchor xml:id="lemEndVIIIe"/>
+                    </p>
+                </div2>
+        <app from="#lemVIIIa" to="#lemEndVIIIa">
+          <lem>an’s</lem>
+          <rdg wit="#Dm" n="a2v,33" source="#a2v_lb33">ans</rdg>
+                </app>
+        <app from="#lemVIIIb" to="#lemEndVIIIb">
+          <lem>S. 119 ff.</lem>
+          <rdg wit="#Dm" n="a2v,37" source="#a2v_lb37">S. 119 ss.</rdg>
+                    <note type="annotation">(„ss.“ in Dm in lateinischer Schrift)</note>
+                </app>
+        <app from="#lemVIIIc" to="#lemEndVIIIc">
+          <lem>Wanderer</lem>
+          <rdg wit="#Dm" n="a3r,2" source="#a3r_lb2">Wand.</rdg>
+                </app>
+        <app from="#lemVIIId" to="#lemEndVIIId">
+          <lem>Hinzukommendes).</lem>
+          <rdg wit="#Dm" n="a3r,5" source="#a3r_lb5">Hinzukommendes)</rdg>
+                </app>
+          <app from="#lemVIIIe" to="#lemEndVIIIe">
+            <lem>Zweck weder essentiell, noch ursprünglich ist (wie Dr. Rée meint: – er</lem>
+            <rdg wit="#Dm" n="a3r,4" source="#a3r_lb4">Zweck, weder ursprünglich, wie Dr. Rée meint, noch essentiell ist (– er</rdg>
+                </app>
+          
+          <pb n="IX"/>
+          <div2 xml:id="GMVorrede05">
+          <head>
+                        <lb n="1"/>
+                        <lb edRef="#KGW #KSA" n="26"/>5.</head>
+          <p>
+                        <lb n="2" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="27" rend="indent"/>Im Grunde lag mir gerade damals etwas viel Wich<pc source="#Ed" force="weak">-</pc>
+                        <lb n="3"/>tigeres am <lb edRef="#KGW #KSA" n="28"/>Herzen als eignes oder fremdes Hypothesen<pc source="#Ed" force="weak">-</pc>
+                        <lb n="4"/>wesen über den Ur<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="29"/>sprung der Moral (<seg type="lem" xml:id="lemIXa"/>oder, genauer: <lb n="5"/>letzteres allein<anchor xml:id="lemEndIXa"/> um eines <choice>
+                            <orig source="#Ed">Zweckes</orig>
+                            <sic source="#KGW #KSA">Zwek<pc source="#KGW #KSA" force="weak">-</pc>
+                                <lb edRef="#KGW #KSA" n="30"/>kes</sic>
+                            <reg source="#KGW #KSA" resp="#editors">Zweckes</reg>
+                        </choice><!-- KGW: k-k für ck! --> willen, zu dem es <lb n="6"/>eins unter vielen Mitteln <seg type="lem" xml:id="lemIXb"/>ist).<anchor xml:id="lemEndIXb"/> Es handelte <lb edRef="#KGW #KSA" n="31"/>sich für <lb n="7"/>mich um den <hi rend="spaced">Werth</hi> der Moral, – und darüber <lb n="8"/>hatte <lb edRef="#KGW #KSA" n="32"/>ich mich fast allein mit meinem grossen Lehrer <lb n="9"/>Schopenhauer <pb edRef="#KGW #KSA" n="264/252"/>
+                        <lb edRef="#KGW #KSA" n="1"/>auseinanderzusetzen, an den wie an <lb n="10"/>einen Gegenwärtigen jenes <lb edRef="#KGW #KSA" n="2"/>Buch, die Leidenschaft und <lb n="11"/>der geheime Widerspruch jenes Buchs <lb edRef="#KGW #KSA" n="3"/>sich wendet <lb n="12"/>(– denn auch jenes Buch war eine <seg type="lem" xml:id="lemIXbb"/>„Streitschrift“).<anchor xml:id="lemEndIXbb"/> <lb n="13"/>
+                        <lb edRef="#KGW #KSA" n="4"/>Es handelte sich in Sonderheit um den Werth des „Un<pc source="#Ed" force="weak">-</pc>
+                        <lb n="14"/>egoi<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="5"/>stischen“, der <seg type="lem" xml:id="lemIXc"/>Mitleids-, Selbstverleugnungs-,<anchor xml:id="lemEndIXc"/> Selbst<pc source="#Ed" force="weak">-</pc>
+                        <lb n="15"/>opferungs-<lb edRef="#KGW #KSA" n="6"/>Instinkte, welche gerade Schopenhauer so <lb n="16"/>lange vergoldet, ver<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="7"/>göttlicht und verjenseitigt hatte, <lb n="17"/>bis sie ihm schliesslich als die <lb edRef="#KGW #KSA" n="8"/>„Werthe an sich“ übrig <lb n="18"/>blieben, auf Grund deren er zum Leben, <lb edRef="#KGW #KSA" n="9"/>auch zu sich <lb n="19"/>selbst, <hi rend="spaced">Nein sagte</hi>. Aber gerade gegen <hi rend="spaced">diese</hi> <lb edRef="#KGW #KSA" n="10"/>Instinkte <lb n="20"/>redete aus mir ein immer grundsätzlicherer Argwohn, <lb n="21"/>
+                        <lb edRef="#KGW #KSA" n="11"/>eine immer tiefer grabende Skepsis! Gerade hier sah <lb n="22"/>ich die <lb edRef="#KGW #KSA" n="12"/>
+                        <hi rend="spaced">grosse</hi> Gefahr der Menschheit, ihre sublimste <lb n="23"/>Lockung und <lb edRef="#KGW #KSA" n="13"/>Verführung – wohin doch? in’s Nichts? – <lb n="24"/>gerade hier sah ich <lb edRef="#KGW #KSA" n="14"/>den Anfang vom Ende, das Stehen<pc source="#Ed" force="weak">-</pc>
+                        <lb n="25"/>bleiben, die <seg type="lem" xml:id="lemIXd"/>zurückblickende<anchor xml:id="lemEndIXd"/> <lb edRef="#KGW #KSA" n="15"/>Müdigkeit, den Willen <lb n="26"/>
+                        <hi rend="spaced">gegen</hi> das Leben sich wendend, die <lb edRef="#KGW #KSA" n="16"/>letzte Krankheit <lb n="27"/>sich zärtlich und schwermüthig ankündigend: <lb edRef="#KGW #KSA" n="17"/>ich ver<pc source="#Ed" force="weak">-</pc>
+                        <lb n="28"/>stand die immer mehr um sich greifende Mitleids-Moral, <lb n="29"/>
+                        <lb edRef="#KGW #KSA" n="18"/>welche selbst die Philosophen ergriff und krank machte, <pb n="X"/>
+                        <lb n="1"/>als das <lb edRef="#KGW #KSA" n="19"/>unheimlichste Symptom <seg type="lem" xml:id="lemXa"/>unsrer<anchor xml:id="lemEndXa"/> unheimlich ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="2"/>wordnen euro<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="20"/>päischen Cultur, als ihren Umweg <seg type="lem" xml:id="lemXb"/>zu einem <lb n="3"/>neuen Buddhis<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="21"/>mus? zu einem Europäer-Buddhismus? <lb n="4"/>zum – <hi rend="spaced">Nihilis<pc source="#KGW #KSA" force="weak">-</pc>
+                            <lb edRef="#KGW #KSA" n="22"/>mus</hi>
+                        <anchor xml:id="lemEndXb"/>?… Diese moderne Philosophen-<lb n="5"/>Bevorzugung und Über<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="23"/>schätzung des Mitleidens ist <lb n="6"/>nämlich etwas Neues: gerade über <lb edRef="#KGW #KSA" n="24"/>den <hi rend="spaced">Unwerth</hi> des <lb n="7"/>Mitleidens waren bisher die Philosophen <lb edRef="#KGW #KSA" n="25"/>übereinge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="8"/>kommen. Ich nenne nur Plato, Spinoza, La Roche<pc source="#Ed" force="weak">-</pc>
+                        <lb n="9"/>fou<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="26"/>cauld und Kant, vier Geister so verschieden von <lb n="10"/>einander als <lb edRef="#KGW #KSA" n="27"/>möglich, aber in Einem Eins: in der Ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="11"/>ringschätzung des Mit<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="28"/>leidens. –</p>
+                </div2>
+        <app from="#lemIXa" to="#lemEndIXa">
+          <lem>oder, genauer: letzteres allein</lem>
+          <rdg wit="#Dm" n="a3r,8" source="#a3r_lb8">oder vielmehr: das letztere nur</rdg>
+                </app>
+        <app from="#lemIXb" to="#lemEndIXb">
+          <lem>ist).</lem>
+          <rdg wit="#Dm" n="a3r,9" source="#a3r_lb9">war)</rdg>
+                </app>
+          <app from="#lemIXbb" to="#lemEndIXbb">
+            <lem>„Streitschrift“).</lem>
+            <rdg wit="#Dm" n="a3r,11" source="#a3r_lb11">„Streitschrift.“)</rdg>
+                </app>
+          <app from="#lemIXc" to="#lemEndIXc">
+            <lem>Mitleids-, Selbstverleugnungs-,</lem>
+            <rdg wit="#Dm" n="a3r,12" source="#a3r_lb12">Mitleids- Selbstverläugnungs-</rdg>
+                </app>
+        <app from="#lemIXd" to="#lemEndIXd">
+          <lem>zurückblickende</lem>
+          <rdg wit="#Dm" n="a3r,17" source="#a3r_lb17">nihilistische</rdg>
+                </app>
+        <app from="#lemXa" to="#lemEndXa">
+          <lem>unsrer</lem>
+          <rdg wit="#Dm" n="a3r,19" source="#a3r_lb19">einer</rdg>
+                </app>
+        <app from="#lemXb" to="#lemEndXb">
+          <lem>zu einem neuen Buddhismus? zu einem Europäer-Buddhismus? zum – <hi rend="spaced">Nihilismus</hi>
+                    </lem>
+          <rdg wit="#Dm" n="a3r,20-21" source="#a3r_lb20-21">– zum Nihilismus?… Zu einem neuen Buddhismus, einem Zukunfts-Buddhismus</rdg>
+                </app>
+          
+        <div2 xml:id="GMVorrede06">
+          <head>
+                        <lb n="12"/>
+                        <lb edRef="#KGW #KSA" n="29"/>6.</head>
+          <p>
+                        <lb n="13" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="30" rend="indent"/>Dies Problem vom <hi rend="spaced">Werthe</hi> des Mitleids und der <lb n="14"/>Mit<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="31"/>leids-Moral (– ich bin ein Gegner der schändlichen <lb n="15"/>modernen <lb edRef="#KGW #KSA" n="32"/>Gefühlsverweichlichung –) scheint zunächst <lb n="16"/>nur etwas Verein<pc source="#KGW #KSA" force="weak">-</pc>
+                        <pb edRef="#KGW #KSA" n="265/253"/>
+                        <lb edRef="#KGW #KSA" n="1"/>zeltes, ein Fragezeichen für sich; wer <lb n="17"/>aber einmal hier hängen <lb edRef="#KGW #KSA" n="2"/>bleibt, hier fragen <hi rend="spaced">lernt</hi>, dem <lb n="18"/>wird es gehn, wie es mir er<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="3"/>gangen <seg type="lem" xml:id="lemXe"/>ist:<anchor xml:id="lemEndXe"/> – eine unge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="19"/>heure neue Aussicht thut sich ihm auf, <lb edRef="#KGW #KSA" n="4"/>eine Möglich<pc source="#Ed" force="weak">-</pc>
+                        <lb n="20"/>keit fasst ihn wie ein Schwindel, jede Art Miss<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="5"/>trauen, <lb n="21"/>Argwohn, Furcht springt hervor, der Glaube an die <lb n="22"/>Mo<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="6"/>ral, an alle Moral wankt, – endlich wird eine neue <lb n="23"/>Forderung <lb edRef="#KGW #KSA" n="7"/>laut. Sprechen wir sie aus, diese <hi rend="spaced">neue <lb n="24"/>Forderung:</hi> wir <lb edRef="#KGW #KSA" n="8"/>haben eine <hi rend="spaced">Kritik</hi> der moralischen <lb n="25"/>Werthe nöthig, <hi rend="spaced">der <lb edRef="#KGW #KSA" n="9"/>Werth dieser Werthe ist selbst <lb n="26"/>erst einmal <lb edRef="#KGW #KSA" n="10"/>in Frage zu stellen</hi> – und dazu thut <lb n="27"/>eine Kenntniss der <lb edRef="#KGW #KSA" n="11"/>Bedingungen und Umstände noth, <lb n="28"/>aus denen sie gewachsen, <lb edRef="#KGW #KSA" n="12"/>unter denen sie sich ent<pc source="#Ed" force="weak">-</pc>
+                        <pb n="XI"/>
+                        <lb n="1"/>wickelt und verschoben haben (Moral als <lb edRef="#KGW #KSA" n="13"/>Folge, als <lb n="2"/>Symptom, als Maske, als Tartüfferie, als Krankheit, <lb n="3"/>
+                        <lb edRef="#KGW #KSA" n="14"/>als <seg type="lem" xml:id="lemXIa"/>Missverständniss;<anchor xml:id="lemEndXIa"/> aber auch Moral als Ursache, als <lb n="4"/>Heilmit<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="15"/>tel, als <seg type="lem" xml:id="lemXIb"/>
+                        <choice>
+                            <orig source="#Ed">Stimulanz</orig>
+                            <corr source="#KGW #KSA">Stimulans</corr>
+                        </choice>
+                        <anchor xml:id="lemEndXIb"/>, als Hemmung, als Gift), wie <lb n="5"/>eine solche <lb edRef="#KGW #KSA" n="16"/>Kenntniss weder bis jetzt da war, noch <lb n="6"/>auch nur begehrt worden <lb edRef="#KGW #KSA" n="17"/>ist. Man nahm den <hi rend="spaced">Werth</hi> <lb n="7"/>dieser „Werthe“ als gegeben, als <lb edRef="#KGW #KSA" n="18"/>thatsächlich, als jen<pc source="#Ed" force="weak">-</pc>
+                        <lb n="8"/>seits aller In-Frage-Stellung; man hat bisher <lb edRef="#KGW #KSA" n="19"/>auch nicht <lb n="9"/>im Entferntesten daran gezweifelt und geschwankt, <lb edRef="#KGW #KSA" n="20"/>„den <lb n="10"/>Guten“ für höherwerthig <milestone unit="page" source="#Dm" n="a3v"/>als „den Bösen“ anzusetzen, <lb n="11"/>
+                        <lb edRef="#KGW #KSA" n="21"/>höherwerthig im <seg type="lem" xml:id="lemXIc"/>Sinne<anchor xml:id="lemEndXIc"/> der Förderung, Nützlichkeit, Ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="12"/>deihlich<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="22"/>keit in Hinsicht auf <hi rend="spaced">den</hi> Menschen überhaupt <lb n="13"/>(die Zukunft <lb edRef="#KGW #KSA" n="23"/>des Menschen <seg type="lem" xml:id="lemXIcc"/>eingerechnet).<anchor xml:id="lemEndXIcc"/> Wie? wenn <lb n="14"/>das Umgekehrte die <lb edRef="#KGW #KSA" n="24"/>Wahrheit wäre? Wie? wenn im <lb n="15"/>„Guten“ auch ein Rückgangs<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="25"/>symptom läge, insgleichen <lb n="16"/>eine Gefahr, eine Verführung, ein <lb edRef="#KGW #KSA" n="26"/>Gift, ein Narcoticum, <lb n="17"/>durch das etwa die Gegenwart <hi rend="spaced">auf Ko<pc source="#KGW #KSA" force="weak">-</pc>
+                            <lb edRef="#KGW #KSA" n="27"/>sten der Zu<pc source="#Ed" force="weak">-</pc>
+                            <lb n="18"/>kunft</hi> lebte? Vielleicht behaglicher, ungefähr<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="28"/>licher, <lb n="19"/>aber auch in kleinerem Stile, niedriger?… So dass <lb n="20"/>gerade <lb edRef="#KGW #KSA" n="29"/>die Moral daran Schuld wäre, wenn eine an <lb n="21"/>sich mögliche <lb edRef="#KGW #KSA" n="30"/>
+                        <hi rend="spaced">höchste Mächtigkeit und Pracht</hi> <lb n="22"/>des Typus Mensch <lb edRef="#KGW #KSA" n="31"/>niemals erreicht <seg type="lem" xml:id="lemXId"/>würde?<anchor xml:id="lemEndXId"/> So dass <lb n="23"/>gerade die Moral die Gefahr <lb edRef="#KGW #KSA" n="32"/>der Gefahren wäre?…</p>
+                </div2>
+          <app from="#lemXe" to="#lemEndXe">
+            <lem>ist:</lem>
+            <rdg wit="#Dm" n="a3r,27" source="#a3r_lb27">ist</rdg>
+                </app>
+          <app from="#lemXIa" to="#lemEndXIa">
+            <lem>Missverständniss;</lem>
+            <rdg wit="#Dm" n="a3r,33" source="#a3r_lb33">Mißverständniß,</rdg>
+                </app>
+          <app from="#lemXIb" to="#lemEndXIb">
+            <lem>
+                        <choice>
+                            <orig source="#Ed">Stimulanz</orig>
+                            <corr source="#KGW #KSA">Stimulans</corr>
+                        </choice>
+                    </lem>
+            <rdg wit="#Dm" n="a3r,34" source="#a3r_lb34">Stimulans</rdg>
+            <rdg wit="#Ed" n="XI,4">Stimulanz</rdg>
+            <rdg wit="#KGW #KSA" n="265/253,15">Stimulans</rdg>
+                </app>
+          <app from="#lemXIc" to="#lemEndXIc">
+            <lem>Sinne</lem>
+            <rdg wit="#Dm" n="a3v,1" source="#a3v_lb1">Sinn</rdg>
+                </app>
+          <app from="#lemXIcc" to="#lemEndXIcc">
+            <lem>eingerechnet).</lem>
+            <rdg wit="#Dm" n="a3v,2" source="#a3v_lb2">eingerechnet)</rdg>
+                </app>
+          <app from="#lemXId" to="#lemEndXId">
+            <lem>würde?</lem>
+            <rdg wit="#Dm" n="a3v,6" source="#a3v_lb6">würde?…</rdg>
+                </app>
+          
+          <pb edRef="#KGW #KSA" n="266/254"/>
+          <div2 xml:id="GMVorrede07">
+          <head>
+                        <lb n="24"/>
+                        <lb edRef="#KGW #KSA" n="1"/>7.</head>
+          <p>
+                        <lb n="25" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="2" rend="indent"/>Genug, dass ich selbst, seitdem mir dieser Aus<pc source="#Ed" force="weak">-</pc>
+                        <lb n="26"/>blick sich öff<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="3"/>nete, Gründe hatte, mich nach ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="27"/>lehrten, kühnen und arbeit<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="4"/>samen Genossen umzusehn <lb n="28"/>(ich thue es heute noch). Es gilt, das <lb edRef="#KGW #KSA" n="5"/>ungeheure, ferne <pb n="XII"/>
+                        <lb n="1"/>und so versteckte Land der Moral – der wirk<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="6"/>lich da<pc source="#Ed" force="weak">-</pc>
+                        <lb n="2"/>gewesenen, wirklich gelebten Moral – mit lauter neuen <lb n="3"/>
+                        <lb edRef="#KGW #KSA" n="7"/>Fragen und gleichsam mit neuen Augen zu bereisen: <lb n="4"/>und heisst <lb edRef="#KGW #KSA" n="8"/>dies nicht beinahe so viel als dieses Land <lb n="5"/>erst <hi rend="spaced">entdecken</hi>?… <lb edRef="#KGW #KSA" n="9"/>Wenn ich dabei, unter Anderen, <lb n="6"/>auch an den genannten Dr. Rée <lb edRef="#KGW #KSA" n="10"/>dachte, so geschah es, <lb n="7"/>weil ich gar nicht zweifelte, dass er von <lb edRef="#KGW #KSA" n="11"/>der Natur seiner <lb n="8"/>Fragen selbst auf eine richtigere Methodik, um <lb edRef="#KGW #KSA" n="12"/>zu Ant<pc source="#Ed" force="weak">-</pc>
+                        <lb n="9"/>worten zu gelangen, gedrängt werden würde. Habe ich <lb n="10"/>
+                        <lb edRef="#KGW #KSA" n="13"/>mich darin betrogen? Mein Wunsch war es jeden<pc source="#Ed" force="weak">-</pc>
+                        <lb n="11"/>falls, einem so <lb edRef="#KGW #KSA" n="14"/>scharfen und unbetheiligten Auge eine <lb n="12"/>bessere Richtung, die <lb edRef="#KGW #KSA" n="15"/>Richtung zur wirklichen <hi rend="spaced">Histo<pc source="#Ed" force="weak">-</pc>
+                            <lb n="13"/>rie der Moral</hi> zu geben <lb edRef="#KGW #KSA" n="16"/>und ihn vor solchem eng<pc source="#Ed" force="weak">-</pc>
+                        <lb n="14"/>lischen Hypothesenwesen <hi rend="spaced">
+                            <seg type="lem" xml:id="lemXIIa"/>in’s<anchor xml:id="lemEndXIIa"/> Blaue</hi> <lb edRef="#KGW #KSA" n="17"/>noch zur rechten <lb n="15"/>Zeit zu warnen. Es liegt ja auf der Hand, <lb edRef="#KGW #KSA" n="18"/>welche Farbe <lb n="16"/>für einen Moral-Genealogen hundert Mal wichtiger <lb edRef="#KGW #KSA" n="19"/>sein <lb n="17"/>muss als gerade das Blaue: nämlich <hi rend="spaced">das Graue</hi>, will <lb n="18"/>
+                        <lb edRef="#KGW #KSA" n="20"/>sagen, das Urkundliche, das Wirklich-Feststellbare, das <lb n="19"/>Wirk<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="21"/>lich-Dagewesene, kurz die ganze <seg type="lem" xml:id="lemXIIb"/>lange,<anchor xml:id="lemEndXIIb"/> schwer zu <lb n="20"/>entziffernde <lb edRef="#KGW #KSA" n="22"/>Hieroglyphenschrift der menschlichen Moral-<lb n="21"/>Vergangenheit! – <lb edRef="#KGW #KSA" n="23"/>
+                        <hi rend="spaced">Diese</hi> war dem Dr. Rée unbekannt; <lb n="22"/>aber er hatte Darwin <lb edRef="#KGW #KSA" n="24"/>
+                        <seg type="lem" xml:id="lemXIIc"/>gelesen:<anchor xml:id="lemEndXIIc"/> – und so reichen sich <lb n="23"/>in seinen Hypothesen auf eine <lb edRef="#KGW #KSA" n="25"/>Weise, die zum Min<pc source="#Ed" force="weak">-</pc>
+                        <lb n="24"/>desten unterhaltend ist, die <seg type="lem" xml:id="lemXIId"/>Darwin’sche<anchor xml:id="lemEndXIId"/> <lb edRef="#KGW #KSA" n="26"/>Bestie und der <lb n="25"/>allermodernste bescheidene Moral-Zärtling, der <lb edRef="#KGW #KSA" n="27"/>„nicht <lb n="26"/>mehr beisst“, artig die Hand, letzterer mit dem Aus<pc source="#Ed" force="weak">-</pc>
+                        <lb n="27"/>druck <lb edRef="#KGW #KSA" n="28"/>einer gewissen gutmüthigen und feinen Indolenz <lb n="28"/>im Gesicht, in <lb edRef="#KGW #KSA" n="29"/>die selbst ein Gran von Pessimismus, <lb n="29"/>von Ermüdung eingemischt <lb edRef="#KGW #KSA" n="30"/>ist: als ob es sich eigent<pc source="#Ed" force="weak">-</pc>
+                        <pb n="XIII"/>
+                        <lb n="1"/>lich gar nicht lohne, alle diese Dinge – <lb edRef="#KGW #KSA" n="31"/>die Probleme <lb n="2"/>der Moral – so ernst zu nehmen. Mir nun scheint <lb edRef="#KGW #KSA" n="32"/>es <lb n="3"/>umgekehrt gar keine Dinge zu geben, die es mehr <lb n="4"/>
+                        <hi rend="spaced">lohnten</hi>, <lb edRef="#KGW #KSA" n="33"/>dass man sie ernst nimmt; zu welchem Lohne <lb n="5"/>es zum Beispiel <lb edRef="#KGW #KSA" n="34"/>gehört, dass man eines Tags vielleicht <lb n="6"/>die Erlaubniss erhält, sie <pb edRef="#KGW #KSA" n="267/255"/>
+                        <lb edRef="#KGW #KSA" n="1"/>
+                        <hi rend="spaced">heiter</hi> zu nehmen. Die Hei<pc source="#Ed" force="weak">-</pc>
+                        <lb n="7"/>terkeit nämlich oder, um es in <lb edRef="#KGW #KSA" n="2"/>meiner Sprache zu sagen, <lb n="8"/>
+                        <hi rend="spaced">die fröhliche Wissen<pc source="#KGW #KSA" force="weak">-</pc>
+                            <lb edRef="#KGW #KSA" n="3"/>schaft</hi> – ist ein Lohn: ein <lb n="9"/>Lohn für einen langen, tapferen, <lb edRef="#KGW #KSA" n="4"/>arbeitsamen und unter<pc source="#Ed" force="weak">-</pc>
+                        <lb n="10"/>irdischen Ernst, der freilich nicht Jeder<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="5"/>manns Sache <lb n="11"/>ist. An dem Tage aber, wo wir aus vollem Herzen <lb n="12"/>
+                        <lb edRef="#KGW #KSA" n="6"/>sagen: „vorwärts! auch unsre alte Moral gehört<hi rend="spaced"> in die <lb n="13"/>Ko<pc source="#KGW #KSA" force="weak">-</pc>
+                            <lb edRef="#KGW #KSA" n="7"/>mödie</hi>!“ haben wir für das dionysische Drama <lb n="14"/>vom „Schick<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="8"/>sal der Seele“ eine neue Verwicklung und <lb n="15"/>Möglichkeit ent<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="9"/>deckt –: und er wird sie sich schon <lb n="16"/>zu Nutze machen, darauf <lb edRef="#KGW #KSA" n="10"/>darf man wetten, er, der <lb n="17"/>grosse alte ewige Komödiendichter <lb edRef="#KGW #KSA" n="11"/>unsres Daseins!…</p>
+                </div2>
+          <app from="#lemXIIa" to="#lemEndXIIa">
+            <lem>
+                        <hi rend="spaced">in’s</hi>
+                    </lem>
+            <rdg wit="#Dm" n="a3v,15" source="#a3v_lb15">
+                        <hi rend="underline">ins</hi>
+                    </rdg>
+                </app>
+          <app from="#lemXIIb" to="#lemEndXIIb">
+            <lem>lange,</lem>
+            <rdg wit="#Dm" n="a3v,18" source="#a3v_lb18">lange</rdg>
+                </app>
+          <app from="#lemXIIc" to="#lemEndXIIc">
+            <lem>gelesen:</lem>
+            <rdg wit="#Dm" n="a3v,19" source="#a3v_lb19">gelesen</rdg>
+                </app>
+          <app from="#lemXIId" to="#lemEndXIId">
+            <lem>Darwin’sche</lem>
+            <rdg wit="#Dm" n="a3v,20" source="#a3v_lb20">Darwinsche</rdg>
+                </app>
+          
+          <div2 xml:id="GMVorrede08">
+            <head>
+                        <milestone unit="page" source="#Dm" n="a4r"/>
+                        <lb n="18"/>
+                        <lb edRef="#KGW #KSA" n="12"/>8.</head>
+            <p>
+                        <lb n="19" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="13" rend="indent"/>– Wenn diese Schrift irgend Jemandem unverständ<pc source="#Ed" force="weak">-</pc>
+                        <lb n="20"/>lich ist <lb edRef="#KGW #KSA" n="14"/>und schlecht zu Ohren geht, so liegt die Schuld, <lb n="21"/>wie mich dünkt, <lb edRef="#KGW #KSA" n="15"/>nicht nothwendig an mir. Sie ist <lb n="22"/>deutlich genug, vorausgesetzt, <lb edRef="#KGW #KSA" n="16"/>was ich voraussetze, dass <lb n="23"/>man zuerst meine früheren Schriften <lb edRef="#KGW #KSA" n="17"/>gelesen und einige <lb n="24"/>Mühe dabei nicht gespart hat: diese sind in <lb edRef="#KGW #KSA" n="18"/>der That <lb n="25"/>nicht leicht zugänglich. Was zum Beispiel meinen <lb n="26"/>
+                        <lb edRef="#KGW #KSA" n="19"/>„Zarathustra“ anbetrifft, so lasse ich Niemanden als <lb n="27"/>dessen <lb edRef="#KGW #KSA" n="20"/>Kenner gelten, den nicht jedes seiner Worte <lb n="28"/>irgendwann einmal <lb edRef="#KGW #KSA" n="21"/>tief verwundet und irgendwann <pb n="XIV"/>
+                        <lb n="1"/>einmal tief entzückt hat: erst <lb edRef="#KGW #KSA" n="22"/>dann nämlich darf er <lb n="2"/>des Vorrechts geniessen, an dem hal<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="23"/>kyonischen Ele<pc source="#Ed" force="weak">-</pc>
+                        <lb n="3"/>ment, aus dem jenes Werk geboren ist, an seiner <lb n="4"/>
+                        <lb edRef="#KGW #KSA" n="24"/>sonnigen Helle, Ferne, Weite und Gewissheit ehrfürch<pc source="#Ed" force="weak">-</pc>
+                        <lb n="5"/>tig An<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="25"/>theil zu haben. In andern Fällen macht die <lb n="6"/>aphoristische Form <lb edRef="#KGW #KSA" n="26"/>Schwierigkeit: sie liegt darin, dass <lb n="7"/>man diese Form heute <lb edRef="#KGW #KSA" n="27"/>
+                        <hi rend="spaced">nicht schwer genug</hi> nimmt. <lb n="8"/>Ein Aphorismus, rechtschaf<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="28"/>fen geprägt und ausgegossen, <lb n="9"/>ist <seg type="lem" xml:id="lemXIVa"/>damit, dass er abgelesen ist, <lb edRef="#KGW #KSA" n="29"/>noch nicht „entziffert“<anchor xml:id="lemEndXIVa"/>; <lb n="10"/>vielmehr hat nun erst dessen <hi rend="spaced">Aus<pc source="#KGW #KSA" force="weak">-</pc>
+                            <lb edRef="#KGW #KSA" n="30"/>legung</hi> zu beginnen, <lb n="11"/>zu der es einer Kunst der Auslegung <lb edRef="#KGW #KSA" n="31"/>bedarf. Ich habe <lb n="12"/>in der dritten Abhandlung dieses Buchs ein <lb edRef="#KGW #KSA" n="32"/>Muster von <lb n="13"/>dem dargeboten, was ich in einem solchen Falle <pb edRef="#KGW #KSA" n="268/256"/>
+                        <lb edRef="#KGW #KSA" n="1"/>„Aus<pc source="#Ed" force="weak">-</pc>
+                        <lb n="14"/>legung“ nenne: – dieser Abhandlung ist ein Aphoris<pc source="#Ed" force="weak">-</pc>
+                        <lb n="15"/>mus <lb edRef="#KGW #KSA" n="2"/>vorangestellt, sie selbst ist dessen Commentar. Frei<pc source="#Ed" force="weak">-</pc>
+                        <lb n="16"/>lich thut, um <lb edRef="#KGW #KSA" n="3"/>dergestalt das Lesen als <hi rend="spaced">Kunst</hi> zu üben, <lb n="17"/>Eins vor Allem <seg type="lem" xml:id="lemXIVb"/>noth<anchor xml:id="lemEndXIVb"/>, <lb edRef="#KGW #KSA" n="4"/>was heutzutage gerade am Besten <lb n="18"/>verlernt worden ist – und <lb edRef="#KGW #KSA" n="5"/>darum hat es noch Zeit bis <lb n="19"/>zur „Lesbarkeit“ meiner Schriften –, <lb edRef="#KGW #KSA" n="6"/>
+                        <seg type="lem" xml:id="lemXIVc"/>zu dem<anchor xml:id="lemEndXIVc"/> man bei<pc source="#Ed" force="weak">-</pc>
+                        <lb n="20"/>nahe Kuh und jedenfalls <hi rend="spaced">nicht</hi> „moderner <lb edRef="#KGW #KSA" n="7"/>Mensch“ <lb n="21"/>sein muss: <hi rend="spaced">das Wiederkäuen</hi>… </p>
+            <p>
+                        <lb n="22" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="8" rend="indent"/>
+                        <hi rend="spaced">Sils-Maria</hi>, Oberengadin, <lb n="23" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="9" rend="indent"/>im Juli 1887.</p>
+                </div2>
+          <app from="#lemXIVa" to="#lemEndXIVa">
+            <lem>damit, dass er abgelesen ist, noch nicht „entziffert“</lem>
+            <rdg wit="#Dm" n="a4r,12" source="#a4r_lb12">damit noch nicht „entziffert“, daß er abgelesen ist</rdg>
+                </app>
+          <app from="#lemXIVb" to="#lemEndXIVb">
+            <lem>noth</lem>
+            <rdg wit="#Dm" n="a4r,17" source="#a4r_lb17">Noth</rdg>
+                </app>
+          <app from="#lemXIVc" to="#lemEndXIVc">
+            <lem>zu dem</lem>
+            <rdg wit="#Dm" n="a4r,19" source="#a4r_lb19">wozu</rdg>
+                </app>
+      </div1>
+        
+        <div1 xml:id="GM01">
+          <pb n="[XV]"/><!-- unpaginiert -->
+                <pb edRef="#KGW #KSA" n="269/257"/>
+          <head>
+                    <lb n="1"/>
+                    <lb edRef="#KGW #KSA" n="1/1"/>
+                    <seg type="lem" xml:id="lemXVa"/>Erste Abhandlung: <lb n="2"/>
+                    <lb edRef="#KGW #KSA" n="2/2"/>„Gut und Böse“, „Gut und Schlecht“.<anchor xml:id="lemEndXVa"/>
+                </head>
+          <pb n="[XVI]"/><!-- unpaginiert -->
+                <pb edRef="#KGW #KSA" n="270/–"/>
+                <note type="editorial">vakat</note>
+          <anchor xml:id="TitelbogenEnd"/>
+          <app from="#lemXVa" to="#lemEndXVa">
+            <lem>Erste … Schlecht“.</lem>
+            <note type="annotation">in Dm nur die Instruktion Ns: </note>
+                    <rdg wit="#Dm" n="a3v,35-38" source="#a3v_lb35-38">NB! Hierauf folgt ein leeres Blatt, auf dem nur diese Worte stehn: <hi rend="underline">Erste</hi> <hi rend="underline">Abhandlung</hi>: „Gut und Böse“, „Gut und Schlecht.“</rdg>
+                    <note type="annotation">– in Ed und KGW separate Titelseite, in KSA Titel und Abschnitt 1 auf derselben Seite (KSA 5, 257)</note>
+          </app>
+          
+          <milestone xml:id="Bogen1" unit="section" type="signature" spanTo="#Bogen1End"/><!-- xml:id=Bogen1End für Ed, p. 16 noch zu codieren! -->
+          <pb n="1"/>
+                <pb edRef="#KGW #KSA" n="271/257"/>
+          <div2 xml:id="GM0101">
+            <milestone unit="page" source="#Dm" n="a5r"/>
+            <head>
+                        <lb n="1"/>
+                        <lb edRef="#KGW #KSA" n="1/3"/>1.</head>
+            <p>
+                        <lb n="2" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="2/4" rend="indent"/>– Diese englischen Psychologen, denen man bisher <lb n="3"/>auch die <lb edRef="#KGW #KSA" n="3/5"/>einzigen Versuche zu danken hat, es zu einer <lb n="4"/>Entstehungs<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="4/6"/>geschichte der Moral zu <seg type="lem" xml:id="lem1a"/>bringen, –<anchor xml:id="lemEnd1a"/> sie <lb n="5"/>geben uns mit sich selbst <lb edRef="#KGW #KSA" n="5/7"/>kein kleines Räthsel auf; sie <lb n="6"/>haben sogar, dass ich es gestehe, <lb edRef="#KGW #KSA" n="6/8"/>eben <seg type="lem" xml:id="lem1b"/>damit,<anchor xml:id="lemEnd1b"/> als leib<pc source="#Ed" force="weak">-</pc>
+                        <lb n="7"/>haftige Räthsel, etwas Wesentliches vor ihren <lb edRef="#KGW #KSA" n="7/9"/>Büchern <lb n="8"/>voraus – <hi rend="spaced">sie selbst sind interessant!</hi> Diese <lb edRef="#KGW #KSA" n="8/10"/>eng<pc source="#Ed" force="weak">-</pc>
+                        <lb n="9"/>lischen Psychologen – was wollen sie eigentlich? Man <lb n="10"/>findet <lb edRef="#KGW #KSA" n="9/11"/>sie, sei es nun freiwillig oder unfreiwillig, immer <lb n="11"/>am gleichen <lb edRef="#KGW #KSA" n="10/12"/>Werke, nämlich die partie honteuse unsrer <lb n="12"/>inneren Welt in den <lb edRef="#KGW #KSA" n="11/13"/>Vordergrund zu drängen und ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="13"/>rade dort das eigentlich Wirk<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="12/14"/>same, Leitende, für die <lb n="14"/>Entwicklung Entscheidende zu suchen, wo <lb edRef="#KGW #KSA" n="13/15"/>der intellek<pc source="#Ed" force="weak">-</pc>
+                        <lb n="15"/>tuelle Stolz des Menschen es am letzten zu finden <lb n="16"/>
+                        <lb edRef="#KGW #KSA" n="14/16"/>
+                        <hi rend="spaced">wünschte</hi> (zum Beispiel in der vis inertiae der Ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="17"/>wohnheit <lb edRef="#KGW #KSA" n="15/17"/>oder in der Vergesslichkeit oder in einer blin<pc source="#Ed" force="weak">-</pc>
+                        <lb n="18"/>den und zufälligen <lb edRef="#KGW #KSA" n="16/18"/>Ideen-Verhäkelung und -Mechanik <lb n="19"/>oder in irgend etwas Rein-<lb edRef="#KGW #KSA" n="17/19"/>Passivem, Automatischem, <lb n="20"/>Reflexmässigem, Molekularem und <lb edRef="#KGW #KSA" n="18/20"/>Gründlich-Stupi<pc source="#Ed" force="weak">-</pc>
+                        <lb n="21"/>dem) – was treibt diese Psychologen eigentlich <lb edRef="#KGW #KSA" n="19/21"/>immer <lb n="22"/>gerade in <hi rend="spaced">diese</hi> Richtung? Ist es ein <seg type="lem" xml:id="lem1c"/>heimlicher, hä<pc source="#Ed #KGW #KSA" force="weak">-</pc>
+                        <lb n="23"/>
+                        <lb edRef="#KGW #KSA" n="20/22"/>mischer, gemeiner,<anchor xml:id="lemEnd1c"/> seiner selbst vielleicht uneingeständ<pc source="#Ed" force="weak">-</pc>
+                        <lb n="24"/>licher In<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="21/23"/>stinkt der Verkleinerung des Menschen? Oder <lb n="25"/>etwa ein pessi<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="22/24"/>mistischer Argwohn, das Misstrauen von <lb n="26"/>enttäuschten, verdü<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="23/25"/>sterten, giftig und grün gewordenen <lb n="27"/>Idealisten? Oder eine kleine <lb edRef="#KGW #KSA" n="24/26"/>unterirdische Feindschaft <lb n="28"/>und Rancune gegen das Christenthum <pb edRef="#KGW #KSA" n="272/258"/>
+                        <lb edRef="#KGW #KSA" n="1"/>(und Plato), die <pb n="2"/>
+                        <lb n="1"/>vielleicht nicht einmal über die Schwelle des <lb edRef="#KGW #KSA" n="2"/>Bewusst<pc source="#Ed" force="weak">-</pc>
+                        <lb n="2"/>seins gelangt ist? Oder gar ein lüsterner Geschmack <lb n="3"/>am <lb edRef="#KGW #KSA" n="3"/>Befremdlichen, am Schmerzhaft-Paradoxen, am Frag<pc source="#Ed" force="weak">-</pc>
+                        <lb n="4"/>würdigen <lb edRef="#KGW #KSA" n="4"/>und Unsinnigen des Daseins? Oder endlich <lb n="5"/>– von Allem Etwas, <lb edRef="#KGW #KSA" n="5"/>ein wenig Gemeinheit, ein wenig <lb n="6"/>Verdüsterung, ein wenig Anti<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="6"/>christlichkeit, ein wenig <lb n="7"/>Kitzel und Bedürfniss nach Pfeffer?… <lb edRef="#KGW #KSA" n="7"/>Aber man sagt <lb n="8"/>mir, dass es einfach <seg type="lem" xml:id="lem2a"/>alte, kalte,<anchor xml:id="lemEnd2a"/> langweilige Frö<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="8"/>sche <lb n="9"/>seien, die am Menschen herum, in den Menschen hinein <lb n="10"/>krie<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="9"/>chen und hüpfen, wie als ob sie da so recht in <lb n="11"/>ihrem Elemente <lb edRef="#KGW #KSA" n="10"/>wären, nämlich in einem <hi rend="spaced">Sumpfe</hi>. <lb n="12"/>Ich höre das mit Wider<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="11"/>stand, mehr noch, ich glaube <lb n="13"/>nicht daran; und wenn man wün<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="12"/>schen darf, wo man <lb n="14"/>nicht wissen kann, so wünsche ich von Her<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="13"/>zen, dass es <lb n="15"/>umgekehrt mit ihnen stehen möge, – dass diese <lb edRef="#KGW #KSA" n="14"/>For<pc source="#Ed" force="weak">-</pc>
+                        <lb n="16"/>scher und Mikroskopiker der Seele im Grunde tapfere, <lb n="17"/>
+                        <lb edRef="#KGW #KSA" n="15"/>grossmüthige und stolze Thiere seien, welche ihr Herz <lb n="18"/>wie ihren <lb edRef="#KGW #KSA" n="16"/>Schmerz im Zaum zu halten wissen und sich <lb n="19"/>dazu erzogen haben, <lb edRef="#KGW #KSA" n="17"/>der Wahrheit alle Wünschbarkeit <lb n="20"/>zu opfern, <hi rend="spaced">jeder</hi> Wahrheit, <lb edRef="#KGW #KSA" n="18"/>sogar der schlichten, her<pc source="#Ed" force="weak">-</pc>
+                        <lb n="21"/>ben, hässlichen, widrigen, unchristlichen, <lb edRef="#KGW #KSA" n="19"/>unmoralischen <lb n="22"/>Wahrheit… Denn es giebt solche Wahrheiten. –</p>
+                </div2>
+          <app from="#lem1a" to="#lemEnd1a">
+            <lem>bringen, –</lem>
+            <rdg wit="#Dm" n="a5r,4" source="#a5r_lb4">
+                        <note type="annotation">Gedankenstrich in Dm getilgt? Befund unklar</note>
+                    </rdg>
+            <rdg wit="#Cb" n="1,4">bringen, –</rdg>
+                </app>
+          <app loc="1,6 271/257,6/8" from="#lem1b" to="#lemEnd1b">
+            <lem>damit,</lem>
+            <rdg wit="#Dm" n="a5r,4" source="#a5r_lb4">damit</rdg>
+            <rdg wit="#Cb" n="1,6">damit, <note type="annotation">(Korrektur von Ns Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem1c" to="#lemEnd1c">
+            <lem>heimlicher, hämischer, gemeiner,</lem>
+            <rdg wit="#Dm" n="a5r,12" source="#a5r_lb12">heimlicher hämischer gemeiner</rdg>
+            <rdg wit="#Cb" n="1,22-23">heimlicher, hämischer, gemeiner,</rdg>
+                </app>
+          <app from="#lem2a" to="#lemEnd2a">
+            <lem>alte, kalte,</lem>
+            <rdg wit="#Dm" n="a5r,18" source="#a5r_lb18">alte kalte</rdg>
+            <rdg wit="#Cb" n="2,8">alte, kalte,</rdg>
+                </app>
+          
+          <div2 xml:id="GM0102">
+            <milestone unit="page" source="#Dm" n="a6r"/>
+            <head>
+                        <lb n="23"/>
+                        <lb edRef="#KGW #KSA" n="20"/>
+                        <seg type="lem" xml:id="lem2aa"/>2.<anchor xml:id="lemEnd2aa"/>
+                    </head>
+            <p>
+              <lb n="24" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="21" rend="indent"/>Alle Achtung also vor den guten Geistern, die in <lb n="25"/>diesen Hi<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="22"/>storikern der Moral walten mögen! Aber <lb n="26"/>gewiss ist leider, dass <lb edRef="#KGW #KSA" n="23"/>ihnen der <hi rend="spaced">historische Geist</hi> <lb n="27"/>selber abgeht, dass sie ge<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="24"/>rade von allen guten Geistern <lb n="28"/>der Historie selbst in Stich gelas<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="25"/>sen worden sind! Sie <lb n="29"/>denken allesammt, wie es nun einmal alter <lb edRef="#KGW #KSA" n="26"/>Philosophen-<lb n="30"/>Brauch ist, <hi rend="spaced">wesentlich</hi> <seg type="lem" xml:id="lem2b"/>unhistorisch;<anchor xml:id="lemEnd2b"/> daran ist <lb edRef="#KGW #KSA" n="27"/>kein <lb n="31"/>Zweifel. Die Stümperei ihrer Moral-Genealogie kommt <lb n="32"/>
+                        <lb edRef="#KGW #KSA" n="28"/>gleich am Anfang zu Tage, da, wo es sich darum han<pc source="#Ed" force="weak">-</pc>
+                        <pb n="3"/>
+                        <lb n="1"/>delt, die <lb edRef="#KGW #KSA" n="29"/>Herkunft des Begriffs und Urtheils „gut“ zu <lb n="2"/>ermitteln. „Man <lb edRef="#KGW #KSA" n="30"/>hat ursprünglich – so dekretieren <lb n="3"/>sie – unegoistische Handlun<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="31"/>gen von Seiten <seg type="lem" xml:id="lem3a"/>Derer<anchor xml:id="lemEnd3a"/> ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="4"/>lobt und gut genannt, denen sie erwie<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="32"/>sen wurden, <lb n="5"/>also denen sie <hi rend="spaced">nützlich</hi> waren; später hat man <pb edRef="#KGW #KSA" n="273/259"/>
+                        <lb edRef="#KGW #KSA" n="1"/>diesen <lb n="6"/>Ursprung des Lobes <hi rend="spaced">vergessen</hi> und die unegoisti<pc source="#Ed #KGW #KSA" force="weak">-</pc>
+                        <lb n="7"/>
+                        <lb edRef="#KGW #KSA" n="2"/>schen Handlungen einfach, weil sie <hi rend="spaced">gewohnheits<pc source="#Ed" force="weak">-</pc>
+                            <lb n="8"/>mässig</hi> <lb edRef="#KGW #KSA" n="3"/>immer als gut gelobt wurden, auch als gut <lb n="9"/>empfunden – wie als <lb edRef="#KGW #KSA" n="4"/>ob sie an sich etwas Gutes wä<pc source="#Ed" force="weak">-</pc>
+                        <lb n="10"/>ren.“ Man sieht sofort: diese erste <lb edRef="#KGW #KSA" n="5"/>Ableitung enthält <lb n="11"/>bereits alle typischen Züge der englischen <lb edRef="#KGW #KSA" n="6"/>Psychologen-<lb n="12"/>Idiosynkrasie, – wir haben „die Nützlichkeit“, <lb edRef="#KGW #KSA" n="7"/>„das <lb n="13"/>Vergessen“, „die Gewohnheit“ und am Schluss „den <lb n="14"/>Irr<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="8"/>thum“, Alles als Unterlage einer Werthschätzung, <lb n="15"/>auf welche <lb edRef="#KGW #KSA" n="9"/>der höhere Mensch bisher wie auf eine Art <lb n="16"/>Vorrecht des Men<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="10"/>schen überhaupt stolz gewesen ist. <lb n="17"/>Dieser Stolz <hi rend="spaced">soll</hi> gedemü<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="11"/>thigt, diese Werthschätzung <lb n="18"/>entwerthet werden: ist das er<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="12"/>reicht?… Nun liegt für <lb n="19"/>mich erstens auf der Hand, dass von <lb edRef="#KGW #KSA" n="13"/>dieser Theorie <lb n="20"/>der eigentliche Entstehungsheerd des Begriffs <lb edRef="#KGW #KSA" n="14"/>„gut“ <lb n="21"/>an falscher Stelle gesucht und angesetzt wird: das Ur<pc source="#Ed" force="weak">-</pc>
+                        <lb n="22"/>theil <lb edRef="#KGW #KSA" n="15"/>„gut“ rührt <hi rend="spaced">nicht</hi> von <seg type="lem" xml:id="lem3b"/>Denen<anchor xml:id="lemEnd3b"/> her, welchen „Güte“ <lb n="23"/>erwiesen <lb edRef="#KGW #KSA" n="16"/>wird! Vielmehr sind es „die Guten“ selber <lb n="24"/>gewesen, das heisst <lb edRef="#KGW #KSA" n="17"/>die Vornehmen, Mächtigen, Höher<pc source="#Ed" force="weak">-</pc>
+                        <lb n="25"/>gestellten und Hochgesinn<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="18"/>ten, welche sich selbst und <lb n="26"/>ihr Thun als gut, nämlich als ersten <lb edRef="#KGW #KSA" n="19"/>Ranges empfanden <lb n="27"/>und ansetzten, im Gegensatz zu allem Nied<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="20"/>rigen, Niedrig-<lb n="28"/>Gesinnten, Gemeinen und Pöbelhaften. Aus die<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="21"/>sem <hi rend="spaced">Pa<pc source="#Ed" force="weak">-</pc>
+                            <lb n="29"/>thos der Distanz</hi> heraus haben sie sich das <lb edRef="#KGW #KSA" n="22"/>Recht, <lb n="30"/>Werthe zu schaffen, Namen der Werthe auszuprägen, <lb n="31"/>erst <lb edRef="#KGW #KSA" n="23"/>genommen: was gieng sie die Nützlichkeit an! Der <lb n="32"/>Gesichts<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="24"/>punkt der Nützlichkeit ist gerade in Bezug auf <lb n="33"/>ein solches heis<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="25"/>ses Herausquellen oberster rang-ord<pc source="#Ed" force="weak">-</pc>
+                        <pb n="4"/>
+                        <lb n="1"/>nender, rang-abhebender <lb edRef="#KGW #KSA" n="26"/>Werthurtheile so fremd und <lb n="2"/>unangemessen wie möglich: hier ist <lb edRef="#KGW #KSA" n="27"/>eben das Gefühl <lb n="3"/>bei einem Gegensatze jenes niedrigen Wärme<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="28"/>grades <lb n="4"/>angelangt, den jede berechnende Klugheit, jeder Nütz<pc source="#Ed" force="weak">-</pc>
+                        <lb n="5"/>lich<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="29"/>keits-Calcul voraussetzt, – und nicht für einmal, <lb n="6"/>nicht für eine <lb edRef="#KGW #KSA" n="30"/>Stunde der Ausnahme, sondern für die <lb n="7"/>Dauer. Das Pathos der <lb edRef="#KGW #KSA" n="31"/>Vornehmheit und Distanz, wie <lb n="8"/>gesagt, das dauernde und domi<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="32"/>nirende Gesammt- und <lb n="9"/>Grundgefühl einer höheren herrschenden <lb edRef="#KGW #KSA" n="33"/>Art im Ver<pc source="#Ed" force="weak">-</pc>
+                        <lb n="10"/>hältniss zu einer niederen Art, zu einem „Unten“ <lb edRef="#KGW #KSA" n="34"/>– <lb n="11"/>
+                        <hi rend="spaced">das</hi> ist der Ursprung des Gegensatzes „gut“ und <lb n="12"/>„schlecht“. <pb edRef="#KGW #KSA" n="274/260"/>
+                        <lb edRef="#KGW #KSA" n="1"/>(Das Herrenrecht, Namen zu geben, geht <lb n="13"/>so weit, dass man sich <lb edRef="#KGW #KSA" n="2"/>erlauben sollte, den Ursprung <lb n="14"/>der Sprache selbst als Machtäusse<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="3"/>rung der Herrschen<pc source="#Ed" force="weak">-</pc>
+                        <lb n="15"/>den zu fassen: sie sagen „das <hi rend="spaced">ist</hi> das und <lb edRef="#KGW #KSA" n="4"/>das“, sie <lb n="16"/>siegeln jegliches Ding und Geschehen mit einem Laute <lb n="17"/>
+                        <lb edRef="#KGW #KSA" n="5"/>ab und nehmen es dadurch gleichsam in Besitz.) Es <lb n="18"/>liegt an <lb edRef="#KGW #KSA" n="6"/>diesem Ursprunge, dass das Wort „gut“ sich <lb n="19"/>von vornherein <lb edRef="#KGW #KSA" n="7"/>durchaus <hi rend="spaced">nicht</hi> nothwendig an „un<pc source="#Ed" force="weak">-</pc>
+                        <lb n="20"/>egoistische“ Handlungen <lb edRef="#KGW #KSA" n="8"/>anknüpft: wie es der Aber<pc source="#Ed" force="weak">-</pc>
+                        <lb n="21"/>glaube jener Moralgenealogen ist. <lb edRef="#KGW #KSA" n="9"/>Vielmehr geschieht <lb n="22"/>es erst bei einem <hi rend="spaced">Niedergange</hi> aristo<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="10"/>kratischer Werth<pc source="#Ed" force="weak">-</pc>
+                        <lb n="23"/>urtheile, dass sich dieser ganze Gegensatz „ego<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="11"/>istisch“ <lb n="24"/>„unegoistisch“ dem menschlichen Gewissen mehr und <lb n="25"/>
+                        <lb edRef="#KGW #KSA" n="12"/>mehr <seg type="lem" xml:id="lem4a"/>aufdrängt,<anchor xml:id="lemEnd4a"/> – es ist, um mich meiner Sprache zu <lb n="26"/>bedienen, <lb edRef="#KGW #KSA" n="13"/>
+                        <hi rend="spaced">der Heerdeninstinkt</hi>, der mit ihm endlich <lb n="27"/>zu Worte <lb edRef="#KGW #KSA" n="14"/>(auch zu <hi rend="spaced">Worten</hi>) kommt. Und auch dann <lb n="28"/>dauert es noch <lb edRef="#KGW #KSA" n="15"/>lange, bis dieser Instinkt in dem Maasse <lb n="29"/>Herr wird, dass die <lb edRef="#KGW #KSA" n="16"/>moralische Werthschätzung bei <lb n="30"/>jenem Gegensatze geradezu hän<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="17"/>gen und stecken bleibt <lb n="31"/>(wie dies zum Beispiel im gegenwärtigen <lb edRef="#KGW #KSA" n="18"/>Europa der <lb n="32"/>Fall ist: heute herrscht das Vorurtheil, welches „mo<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="19"/>ra<pc source="#Ed" force="weak">-</pc>
+                        <lb n="33"/>lisch“, „unegoistisch“, „<seg type="lem" xml:id="lem4b"/>
+                        <choice>
+                            <orig source="#Ed">désinteressé</orig>
+                            <orig source="#KGW #KSA">désintéressé</orig>
+                        </choice>
+                        <anchor xml:id="lemEnd4b"/>“ als gleichwerthige <pb n="5"/>
+                        <lb n="1"/>Be<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="20"/>griffe nimmt, <seg type="lem" xml:id="lem5a"/>bereits<anchor xml:id="lemEnd5a"/> mit der Gewalt einer „fixen Idee“ <lb n="2"/>und <lb edRef="#KGW #KSA" n="21"/>
+                        <seg type="lem" xml:id="lem5b"/>Kopfkrankheit).<anchor xml:id="lemEnd5b"/>
+                    </p>
+                </div2>
+          <app from="#lem2aa" to="#lemEnd2aa">
+            <lem>2.</lem>
+            <rdg wit="#Dm" n="a6r,1" source="#a6r_lb1">3.</rdg>
+            <rdg wit="#Cb" n="2,23">2.</rdg>
+                </app>
+          <app from="#lem2b" to="#lemEnd2b">
+            <lem>unhistorisch;</lem>
+            <rdg wit="#Dm" n="a6r,4-5" source="#a6r_lb4-5">unhistorisch:</rdg>
+            <rdg wit="#Cb" n="2,30">unhistorisch;</rdg>
+                </app>
+          <app from="#lem3a" to="#lemEnd3a">
+            <lem>Derer</lem>
+            <rdg wit="#Dm" n="a6r,7" source="#a6r_lb7">derer</rdg>
+            <rdg wit="#Cb" n="3,3">Derer <note type="annotation">(Korrektur von Köselitz’ Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem3b" to="#lemEnd3b">
+            <lem>Denen</lem>
+            <rdg wit="#Dm" n="a6r,15" source="#a6r_lb15">denen</rdg>
+            <rdg wit="#Cb" n="3,22">Denen <note type="annotation">(Korrektur von Köselitz’ Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem4a" to="#lemEnd4a">
+            <lem>aufdrängt,</lem>
+            <rdg wit="#Dm" n="a6r,31" source="#a6r_lb31">aufdrängt</rdg>
+            <rdg wit="#Cb" n="4,25">aufdrängt</rdg>
+                </app><!-- ergo Korr. post Cb! -->
+          <app from="#lem4b" to="#lemEnd4b">
+            <lem>
+                        <choice>
+                            <orig source="#Ed">désinteressé</orig>
+                            <corr source="#KGW #KSA">désintéressé</corr>
+                        </choice>
+                    </lem>
+            <rdg wit="#Dm" n="a6r,35" source="#a6r_lb35">désinteressé</rdg>
+            <rdg wit="#Cb" n="4,35">désinteressé</rdg>
+            <rdg wit="#Ed" n="4,33">désinteressé</rdg>
+            <rdg wit="#KGW #KSA" n="274/260,19">désintéressé</rdg>
+                </app>
+          <app from="#lem5a" to="#lemEnd5a">
+            <lem>bereits</lem>
+            <rdg wit="#Dm" n="a6r,36" source="#a6r_lb36">unter uns bereits</rdg>
+            <rdg wit="#Cb" n="5,1">bereits <note type="annotation">(Korrektur von Köselitz’ Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem5b" to="#lemEnd5b">
+            <lem>Kopfkrankheit).</lem>
+            <rdg wit="#Dm" n="a6r,36" source="#a6r_lb36">Kopfkrankheit)</rdg>
+            <rdg wit="#Cb" n="5,2">Kopfkrankheit).</rdg>
+                </app>
+          
+          <div2 xml:id="GM0103">
+            <head>
+                        <lb n="3"/>
+                        <lb edRef="#KGW #KSA" n="22"/>
+                        <seg type="lem" xml:id="lem5c"/>3.<anchor xml:id="lemEnd5c"/>
+                    </head>
+            <p>
+              <lb n="4" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="23" rend="indent"/>Zweitens aber: ganz <seg type="lem" xml:id="lem5d"/>abgesehen<anchor xml:id="lemEnd5d"/> von der historischen <lb n="5"/>Unhalt<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="24"/>barkeit jener Hypothese über die Herkunft des <lb n="6"/>Werthurtheils <lb edRef="#KGW #KSA" n="25"/>„gut“, krankt sie an einem psychologi<pc source="#Ed" force="weak">-</pc>
+                        <lb n="7"/>schen Widersinn in sich <lb edRef="#KGW #KSA" n="26"/>selbst. Die Nützlichkeit der <lb n="8"/>unegoistischen Handlung soll <milestone unit="page" source="#Dm" n="a7r"/>der <lb edRef="#KGW #KSA" n="27"/>Ursprung ihres <lb n="9"/>Lobes sein, und dieser Ursprung soll <hi rend="spaced">verges<pc source="#KGW #KSA" force="weak">-</pc>
+                            <lb edRef="#KGW #KSA" n="28"/>sen</hi> <lb n="10"/>worden sein: – wie ist dies Vergessen auch nur <hi rend="spaced">mög<pc source="#Ed #KGW #KSA" force="weak">-</pc>
+                            <lb n="11"/>
+                            <lb edRef="#KGW #KSA" n="29"/>lich</hi>? Hat vielleicht die Nützlichkeit solcher Hand<pc source="#Ed" force="weak">-</pc>
+                        <lb n="12"/>lungen <lb edRef="#KGW #KSA" n="30"/>
+                        <seg type="lem" xml:id="lem5e"/>irgend wann<anchor xml:id="lemEnd5e"/> einmal aufgehört? Das Gegen<pc source="#Ed" force="weak">-</pc>
+                        <lb n="13"/>theil ist der Fall: diese <lb edRef="#KGW #KSA" n="31"/>Nützlichkeit ist vielmehr die <lb n="14"/>Alltagserfahrung zu allen Zeiten <lb edRef="#KGW #KSA" n="32"/>gewesen, Etwas also, <lb n="15"/>das fortwährend immer neu unterstrichen <pb edRef="#KGW #KSA" n="275/261"/>
+                        <lb edRef="#KGW #KSA" n="1"/>wurde; folg<pc source="#Ed" force="weak">-</pc>
+                        <lb n="16"/>lich, statt aus dem Bewusstsein zu verschwinden, statt <lb n="17"/>
+                        <lb edRef="#KGW #KSA" n="2"/>vergessbar zu werden, sich dem Bewusstsein mit immer <lb n="18"/>grösserer <lb edRef="#KGW #KSA" n="3"/>Deutlichkeit <seg type="lem" xml:id="lem5f"/>eindrücken<anchor xml:id="lemEnd5f"/> musste. Um wie viel <lb n="19"/>vernünftiger ist <lb edRef="#KGW #KSA" n="4"/>jene entgegengesetzte Theorie (sie ist <lb n="20"/>deshalb nicht <seg type="lem" xml:id="lem5g"/>wahrer –),<anchor xml:id="lemEnd5g"/> <lb edRef="#KGW #KSA" n="5"/>welche zum Beispiel von <lb n="21"/>Herbert Spencer vertreten wird: der <lb edRef="#KGW #KSA" n="6"/>den Begriff „gut“ <lb n="22"/>als wesensgleich mit dem Begriff „nützlich“, <lb edRef="#KGW #KSA" n="7"/>„zweck<pc source="#Ed" force="weak">-</pc>
+                        <lb n="23"/>mässig“ ansetzt, so dass in den Urtheilen „gut“ und <lb n="24"/>
+                        <lb edRef="#KGW #KSA" n="8"/>„schlecht“ die Menschheit gerade ihre <hi rend="spaced">unvergess<pc source="#Ed" force="weak">-</pc>
+                            <lb n="25"/>nen</hi> und <lb edRef="#KGW #KSA" n="9"/>
+                        <hi rend="spaced">unvergessbaren</hi> Erfahrungen über nütz<pc source="#Ed" force="weak">-</pc>
+                        <lb n="26"/>lich-zweckmäs<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="10"/>sig, über schädlich-unzweckmässig auf<pc source="#Ed" force="weak">-</pc>
+                        <lb n="27"/>summirt und sanktionirt <lb edRef="#KGW #KSA" n="11"/>habe. Gut ist, nach dieser <lb n="28"/>Theorie, was sich von jeher als nütz<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="12"/>lich bewiesen hat: <lb n="29"/>damit darf es als „werthvoll im höchsten <lb edRef="#KGW #KSA" n="13"/>Grade“, als <lb n="30"/>„werthvoll an sich“ Geltung behaupten. Auch dieser <lb n="31"/>
+                        <lb edRef="#KGW #KSA" n="14"/>Weg der Erklärung ist, wie gesagt, falsch, aber wenig<pc source="#Ed" force="weak">-</pc>
+                        <lb n="32"/>stens ist <lb edRef="#KGW #KSA" n="15"/>die Erklärung selbst in sich vernünftig und <lb n="33"/>psychologisch <seg type="lem" xml:id="lem5h"/>halt<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="16"/>bar.<anchor xml:id="lemEnd5h"/>
+            </p>
+                </div2>
+          <app from="#lem5c" to="#lemEnd5c">
+            <lem>3.</lem>
+            <rdg wit="#Dm" n="a6r,37" source="#a6r_lb37">4.</rdg>
+            <rdg wit="#Cb" n="5,3">3.</rdg>
+                </app>
+          <app from="#lem5d" to="#lemEnd5d">
+            <lem>abgesehen</lem>
+            <rdg wit="#Dm" n="a6r,38" source="#a6r_lb38">abgesehn</rdg>
+            <rdg wit="#Cb" n="5,4">abgesehen</rdg>
+                </app>
+          <app from="#lem5e" to="#lemEnd5e">
+            <lem>irgend wann</lem>
+            <rdg wit="#Dm" n="a7r,2" source="#a7r_lb2">irgendwann</rdg>
+            <rdg wit="#Cb" n="5,12">irgend wann</rdg>
+                </app>
+          <app from="#lem5f" to="#lemEnd5f">
+            <lem>eindrücken</lem>
+            <rdg wit="#Dm" n="a7r,5" source="#a7r_lb5">darstellen</rdg>
+            <rdg wit="#Cb" n="5,18">eindrücken <note type="annotation">(Korrektur von Ns Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem5g" to="#lemEnd5g">
+            <lem>wahrer –),</lem>
+            <rdg wit="#Dm" n="a7r,6" source="#a7r_lb6">wahrer –)</rdg>
+            <rdg wit="#Cb" n="5,20">wahrer –),</rdg>
+                </app>
+          <app from="#lem5h" to="#lemEnd5h">
+            <lem>haltbar.</lem>
+            <rdg wit="#Dm" n="a7r,11" source="#a7r_lb11">haltbar. –</rdg>
+            <rdg wit="#Cb" n="5,33">haltbar.</rdg>
+                </app>
+          
+          <pb n="6"/>
+          <div2 xml:id="GM0104">
+            <head>
+                        <lb n="1"/>
+                        <lb edRef="#KGW #KSA" n="17"/>
+                        <seg type="lem" xml:id="lem6a"/>4.<anchor xml:id="lemEnd6a"/>
+                    </head>
+            <p>
+              <lb n="2"/>
+                        <lb edRef="#KGW #KSA" n="18"/>– Den Fingerzeig zum <hi rend="spaced">rechten</hi> Wege gab mir die <lb n="3"/>Frage, <lb edRef="#KGW #KSA" n="19"/>was eigentlich die von den <seg type="lem" xml:id="lem6aa"/>verschiedenen<anchor xml:id="lemEnd6aa"/> Spra<pc source="#Ed" force="weak">-</pc>
+                        <lb n="4"/>chen ausgepräg<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="20"/>ten Bezeichnungen des „Guten“ in ety<pc source="#Ed" force="weak">-</pc>
+                        <lb n="5"/>mologischer Hinsicht zu <lb edRef="#KGW #KSA" n="21"/>bedeuten haben: <seg type="lem" xml:id="lem6b"/>da<anchor xml:id="lemEnd6b"/> fand ich, <lb n="6"/>dass sie allesammt auf die <lb edRef="#KGW #KSA" n="22"/>
+                        <hi rend="spaced">gleiche Begriffs-Ver<pc source="#Ed" force="weak">-</pc>
+                            <lb n="7"/>wandlung</hi> zurückleiten, – <lb edRef="#KGW #KSA" n="23"/>dass überall <seg type="lem" xml:id="lem6c"/>„vornehm“,<anchor xml:id="lemEnd6c"/> <lb n="8"/>„edel“ im ständischen Sinne der Grund<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="24"/>begriff ist, aus <lb n="9"/>dem sich „gut“ im Sinne von <seg type="lem" xml:id="lem6d"/>„seelisch-vornehm“,<anchor xml:id="lemEnd6d"/> <lb n="10"/>
+                        <lb edRef="#KGW #KSA" n="25"/>„edel“, von „seelisch-hochgeartet“, „seelisch-privilegirt“ <lb n="11"/>mit <lb edRef="#KGW #KSA" n="26"/>Nothwendigkeit heraus entwickelt: eine Entwick<pc source="#Ed" force="weak">-</pc>
+                        <lb n="12"/>lung, die <lb edRef="#KGW #KSA" n="27"/>immer parallel mit jener anderen läuft, welche <lb n="13"/>
+                        <seg type="lem" xml:id="lem6e"/>„gemein“, „pö<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="28"/>belhaft“,<anchor xml:id="lemEnd6e"/> „niedrig“ schliesslich in den <lb n="14"/>Begriff „schlecht“ <seg type="lem" xml:id="lem6f"/>über<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="29"/>gehen<anchor xml:id="lemEnd6f"/> macht. Das beredteste <lb n="15"/>Beispiel für das Letztere ist das <lb edRef="#KGW #KSA" n="30"/>deutsche Wort „schlecht“ <lb n="16"/>selber: als welches mit „schlicht“ iden<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="31"/>tisch ist – ver<pc source="#Ed" force="weak">-</pc>
+                        <lb n="17"/>gleiche <seg type="lem" xml:id="lem6g"/>„schlechtweg“,<anchor xml:id="lemEnd6g"/> „schlechterdings“ – und <lb edRef="#KGW #KSA" n="32"/>ur<pc source="#Ed" force="weak">-</pc>
+                        <lb n="18"/>sprünglich den schlichten, den gemeinen Mann noch <lb n="19"/>ohne <pb edRef="#KGW #KSA" n="276/262"/>
+                        <lb edRef="#KGW #KSA" n="1"/>einen verdächtigenden <seg type="lem" xml:id="lem6h"/>Seitenblick,<anchor xml:id="lemEnd6h"/> einfach im Ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="20"/>gensatz zum <lb edRef="#KGW #KSA" n="2"/>Vornehmen bezeichnete. Um die Zeit des <lb n="21"/>dreissigjährigen Kriegs <lb edRef="#KGW #KSA" n="3"/>ungefähr, also spät <seg type="lem" xml:id="lem6i"/>genug,<anchor xml:id="lemEnd6i"/> ver<pc source="#Ed" force="weak">-</pc>
+                        <lb n="22"/>schiebt sich dieser Sinn in den jetzt <lb edRef="#KGW #KSA" n="4"/>gebräuchlichen. – <lb n="23"/>Dies scheint mir in Betreff der Moral-Ge<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="5"/>nealogie eine <lb n="24"/>
+                        <hi rend="spaced">wesentliche</hi> Einsicht; dass sie so spät erst <lb edRef="#KGW #KSA" n="6"/>gefunden <lb n="25"/>wird, liegt an dem hemmenden Einfluss, den das <lb edRef="#KGW #KSA" n="7"/>demo<pc source="#Ed" force="weak">-</pc>
+                        <lb n="26"/>kratische Vorurtheil innerhalb der modernen Welt in <lb n="27"/>Hin<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="8"/>sicht auf alle Fragen der Herkunft ausübt. Und <lb n="28"/>dies bis in das <lb edRef="#KGW #KSA" n="9"/>anscheinend objektivste Gebiet der Natur<pc source="#Ed" force="weak">-</pc>
+                        <lb n="29"/>wissenschaft und Phy<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="10"/>siologie <seg type="lem" xml:id="lem6j"/>hinein,<anchor xml:id="lemEnd6j"/> wie hier nur an<pc source="#Ed" force="weak">-</pc>
+                        <lb n="30"/>gedeutet werden soll. Welchen <lb edRef="#KGW #KSA" n="11"/>Unfug aber dieses Vor<pc source="#Ed" force="weak">-</pc>
+                        <lb n="31"/>urtheil, einmal bis zum Hass entzügelt, <lb edRef="#KGW #KSA" n="12"/>in Sonderheit <lb n="32"/>für Moral und Historie anrichten kann, zeigt der <lb edRef="#KGW #KSA" n="13"/>be<pc source="#Ed" force="weak">-</pc>
+                        <lb n="33"/>rüchtigte Fall Buckle’s; der <hi rend="spaced">Plebejismus</hi> des mo<pc source="#Ed" force="weak">-</pc>
+                        <pb n="7"/>
+                        <lb n="1"/>dernen <lb edRef="#KGW #KSA" n="14"/>Geistes, der englischer Abkunft ist, brach da <lb n="2"/>einmal wieder auf <lb edRef="#KGW #KSA" n="15"/>seinem heimischen Boden heraus, <lb n="3"/>heftig wie ein schlammichter <lb edRef="#KGW #KSA" n="16"/>Vulkan und mit jener <seg type="lem" xml:id="lem7a"/>ver<pc source="#Ed" force="weak">-</pc>
+                        <lb n="4"/>salzten, überlauten,<anchor xml:id="lemEnd7a"/> gemeinen Beredt<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="17"/>samkeit, mit der <lb n="5"/>bisher alle Vulkane geredet haben. –
+            </p>
+                </div2>
+          <app from="#lem6a" to="#lemEnd6a">
+            <lem>4.</lem>
+            <rdg wit="#Dm" n="a7r,12" source="#a7r_lb12">5.</rdg>
+            <rdg wit="#Cb" n="6,1">4.</rdg>
+                </app>
+          <app from="#lem6aa" to="#lemEnd6aa">
+            <lem>verschiedenen</lem>
+            <rdg wit="#Dm" n="a7r,13" source="#a7r_lb13">verschiednen</rdg>
+            <rdg wit="#Cb" n="6,3">verschiedenen</rdg>
+                </app>
+          <app from="#lem6b" to="#lemEnd6b">
+            <lem>da</lem>
+            <rdg wit="#Dm" n="a7r,14" source="#a7r_lb14">und da</rdg>
+            <rdg wit="#Cb" n="6,5">da <note type="annotation">(Korrektur von Köselitz’ Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem6c" to="#lemEnd6c">
+            <lem>„vornehm“,</lem>
+            <rdg wit="#Dm" n="a7r,15" source="#a7r_lb15">„vornehm“</rdg>
+            <rdg wit="#Cb" n="6,7">„vornehm“,</rdg>
+                </app>
+          <app from="#lem6d" to="#lemEnd6d">
+            <lem>„seelisch-vornehm“,</lem>
+            <rdg wit="#Dm" n="a7r,16" source="#a7r_lb16">seelisch-„vornehm“</rdg>
+            <rdg wit="#Cb" n="6,9">„seelisch-vornehm“,</rdg>
+                </app>
+          <app from="#lem6e" to="#lemEnd6e">
+            <lem>„gemein“, „pöbelhaft“,</lem>
+            <rdg wit="#Dm" n="a7r,17-18" source="#a7r_lb17-18">„gemein“ „pöbelhaft“</rdg>
+            <rdg wit="#Cb" n="6,13">„gemein“, „pöbelhaft“,</rdg>
+                </app>
+          <app from="#lem6f" to="#lemEnd6f">
+            <lem>übergehen</lem>
+            <rdg wit="#Dm" n="a7r,18" source="#a7r_lb18">übergehn</rdg>
+            <rdg wit="#Cb" n="6,14">übergehen <note type="annotation">(Korrektur von Köselitz’ Hand von Setzerfehler „übergehend“)</note>
+                    </rdg>
+                </app>
+          <app from="#lem6g" to="#lemEnd6g">
+            <lem>„schlechtweg“,</lem>
+            <rdg wit="#Dm" n="a7r,19" source="#a7r_lb19">„schlechtweg“</rdg>
+            <rdg wit="#Cb" n="6,17">„schlechtweg“,</rdg>
+                </app>
+          <app from="#lem6h" to="#lemEnd6h">
+            <lem>Seitenblick,</lem>
+            <rdg wit="#Dm" n="a7r,20" source="#a7r_lb20">Seitenblick</rdg>
+            <rdg wit="#Cb" n="6,19">Seitenblick,</rdg>
+                </app>
+          <app from="#lem6i" to="#lemEnd6i">
+            <lem>genug,</lem>
+            <rdg wit="#Dm" n="a7r,21" source="#a7r_lb21">genug</rdg>
+            <rdg wit="#Cb" n="6,21">genug,</rdg>
+                </app>
+          <app from="#lem6j" to="#lemEnd6j">
+            <lem>hinein,</lem>
+            <rdg wit="#Dm" n="a7r,25" source="#a7r_lb25">hinein:</rdg>
+            <rdg wit="#Cb" n="6,29">hinein,</rdg>
+                </app>
+          <app from="#lem7a" to="#lemEnd7a">
+            <lem>versalzten, überlauten,</lem>
+            <rdg wit="#Dm" n="a7r,28" source="#a7r_lb28">versalzten überlauten</rdg>
+            <rdg wit="#Cb" n="7,3-4">versalzten, überlauten,</rdg>
+                </app>
+          <!-- bis hier alles (analog und digital) kollationiert und neu App mit allen Änderungen gegenüber Dm 250523 -->
+          
+          <div2 xml:id="GM0105">
+            <head>
+                        <lb n="6"/>
+                        <lb edRef="#KGW #KSA" n="18"/>
+                        <seg type="lem" xml:id="lem7b"/>5.<anchor xml:id="lemEnd7b"/>
+                    </head>
+            <p>
+              <lb n="7" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="19" rend="indent"/>In Hinsicht auf <hi rend="spaced">unser</hi> Problem, das aus guten <lb n="8"/>Gründen <lb edRef="#KGW #KSA" n="20"/>ein <hi rend="spaced">stilles</hi> Problem genannt werden kann <lb n="9"/>und sich wähle<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="21"/>risch nur an wenige Ohren wendet, ist <lb n="10"/>es von keinem kleinen <lb edRef="#KGW #KSA" n="22"/>Interesse, festzustellen, dass viel<pc source="#Ed" force="weak">-</pc>
+                        <lb n="11"/>fach noch in jenen Worten und <lb edRef="#KGW #KSA" n="23"/>Wurzeln, die „gut“ <lb n="12"/>bezeichnen, die Hauptnuance durchschim<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="24"/>mert, auf welche <lb n="13"/>hin die Vornehmen sich eben als Menschen hö<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="25"/>heren <lb n="14"/>Ranges fühlten. Zwar benennen sie sich vielleicht in <lb n="15"/>den <lb edRef="#KGW #KSA" n="26"/>häufigsten Fällen einfach nach ihrer Überlegenheit <lb n="16"/>an Macht <lb edRef="#KGW #KSA" n="27"/>(als „die Mächtigen“, „die <seg type="lem" xml:id="lem7c"/>Herren“,<anchor xml:id="lemEnd7c"/> „die Ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="17"/>bietenden“) oder <lb edRef="#KGW #KSA" n="28"/>nach dem sichtbarsten Abzeichen die<pc source="#Ed" force="weak">-</pc>
+                        <lb n="18"/>ser Überlegenheit, zum Bei<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="29"/>spiel als „die Reichen“, „die <lb n="19"/>Besitzenden“ (das ist der Sinn von <lb edRef="#KGW #KSA" n="30"/>arya; und entspre<pc source="#Ed" force="weak">-</pc>
+                        <lb n="20"/>chend im Eranischen und <seg type="lem" xml:id="lem7d"/>Slavischen).<anchor xml:id="lemEnd7d"/> Aber <lb edRef="#KGW #KSA" n="31"/>auch nach <lb n="21"/>einem <hi rend="spaced">typischen Charakterzuge</hi>: und <lb edRef="#KGW #KSA" n="32"/>dies ist der <lb n="22"/>Fall, der uns hier angeht. Sie heissen sich zum Bei<pc source="#Ed #KGW #KSA" force="weak">-</pc>
+                        <lb n="23"/>
+                        <pb edRef="#KGW #KSA" n="277/263"/>
+                        <lb edRef="#KGW #KSA" n="1"/>spiel „die <seg type="lem" xml:id="lem7e"/>Wahrhaftigen“:<anchor xml:id="lemEnd7e"/> voran der <seg type="lem" xml:id="lem7f"/>griechische<anchor xml:id="lemEnd7f"/> Adel, <lb n="24"/>dessen <lb edRef="#KGW #KSA" n="2"/>Mundstück der Megarische Dichter Theognis <lb n="25"/>ist. Das dafür aus<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="3"/>geprägte Wort <foreign xml:lang="grc">ἐσϑλός</foreign> bedeutet der <lb n="26"/>Wurzel nach Einen, der <lb edRef="#KGW #KSA" n="4"/>
+                        <hi rend="spaced">ist</hi>, der Realität hat, der wirk<pc source="#Ed" force="weak">-</pc>
+                        <lb n="27"/>lich ist, der wahr ist; dann, mit <lb edRef="#KGW #KSA" n="5"/>einer subjektiven <lb n="28"/>Wendung, den Wahren als den Wahrhaftigen: <lb edRef="#KGW #KSA" n="6"/>in dieser <lb n="29"/>Phase der Begriffs-Verwandlung wird es zum Schlag- <lb n="30"/>
+                        <lb edRef="#KGW #KSA" n="7"/>und Stichwort des Adels und geht ganz und gar in <lb n="31"/>den Sinn <lb edRef="#KGW #KSA" n="8"/>„adelig“ über, zur Abgrenzung vom <hi rend="spaced">lügen<pc source="#Ed" force="weak">-</pc>
+                            <lb n="32"/>haften</hi> ge<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="9"/>meinen <seg type="lem" xml:id="lem7g"/>Mann<anchor xml:id="lemEnd7g"/>, so wie Theognis ihn nimmt <pb n="8"/>
+                        <lb n="1"/>und <seg type="lem" xml:id="lem8a"/>schildert,<anchor xml:id="lemEnd8a"/> – bis <lb edRef="#KGW #KSA" n="10"/>endlich das Wort, nach dem Nieder<pc source="#Ed" force="weak">-</pc>
+                        <lb n="2"/>gange des Adels, zur Bezeich<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="11"/>nung der seelischen <lb n="3"/>noblesse übrig bleibt und gleichsam reif und <lb edRef="#KGW #KSA" n="12"/>süss wird. <lb n="4"/>Im Worte <foreign xml:lang="grc">κακός</foreign> wie in <foreign xml:lang="grc">δειλός</foreign> (der Plebejer im Ge<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="13"/>gen<pc source="#Ed" force="weak">-</pc>
+                        <lb n="5"/>satz zum <foreign xml:lang="grc">ἀγαϑός</foreign>) ist die Feigheit unterstrichen: dies <lb n="6"/>giebt <lb edRef="#KGW #KSA" n="14"/>vielleicht einen Wink, in welcher Richtung man <lb n="7"/>die etymolo<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="15"/>gische Herkunft des mehrfach deutbaren <lb n="8"/>
+                        <foreign xml:lang="grc">ἀγαϑός</foreign> zu suchen hat. <lb edRef="#KGW #KSA" n="16"/>Im lateinischen malus (dem ich <lb n="9"/>
+                        <foreign xml:lang="grc">μέλας</foreign> zur Seite stelle) könnte <lb edRef="#KGW #KSA" n="17"/>der gemeine Mann als <lb n="10"/>der Dunkelfarbige, vor allem als der <lb edRef="#KGW #KSA" n="18"/>Schwarzhaarige <lb n="11"/>(„hic niger est –“) gekennzeichnet sein, als der <lb edRef="#KGW #KSA" n="19"/>vorari<pc source="#Ed" force="weak">-</pc>
+                        <lb n="12"/>sche Insasse des italischen Bodens, der sich von der <lb n="13"/>herr<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="20"/>schend <seg type="lem" xml:id="lem8b"/>gewordenen<anchor xml:id="lemEnd8b"/> blonden, nämlich arischen Er<pc source="#Ed" force="weak">-</pc>
+                        <lb n="14"/>oberer-Rasse <lb edRef="#KGW #KSA" n="21"/>durch die Farbe am deutlichsten abhob; <lb n="15"/>wenigstens bot mir das <lb edRef="#KGW #KSA" n="22"/>
+                        <seg type="lem" xml:id="lem8c"/>Gälische<anchor xml:id="lemEnd8c"/> den genau entsprechen<pc source="#Ed" force="weak">-</pc>
+                        <lb n="16"/>den <seg type="lem" xml:id="lem8d"/>Fall,<anchor xml:id="lemEnd8d"/> – fin (zum Beispiel <lb edRef="#KGW #KSA" n="23"/>im Namen <seg type="lem" xml:id="lem8e"/>Fin-Gal),<anchor xml:id="lemEnd8e"/> das <lb n="17"/>abzeichnende Wort des Adels, <seg type="lem" xml:id="lem8f"/>zuletzt <lb edRef="#KGW #KSA" n="24"/>der Gute, Edle, <lb n="18"/>Reine, ursprünglich der Blondkopf<anchor xml:id="lemEnd8f"/>, im Gegen<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="25"/>satz zu <lb n="19"/>den <seg type="lem" xml:id="lem8g"/>dunklen,<anchor xml:id="lemEnd8g"/> schwarzhaarigen Ureinwohnern. Die Kel<pc source="#Ed #KGW #KSA" force="weak">-</pc>
+                        <lb n="20"/>
+                        <lb edRef="#KGW #KSA" n="26"/>ten, beiläufig gesagt, waren durchaus eine blonde <lb n="21"/>Rasse; man thut <lb edRef="#KGW #KSA" n="27"/>Unrecht, wenn man jene Streifen einer <lb n="22"/>wesentlich dunkel<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="28"/>haarigen Bevölkerung, die sich auf <lb n="23"/>
+                        <seg type="lem" xml:id="lem8h"/>sorgfältigeren<anchor xml:id="lemEnd8h"/> ethnogra<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="29"/>phischen Karten Deutschlands <lb n="24"/>bemerkbar machen, mit irgend <lb edRef="#KGW #KSA" n="30"/>
+                        <seg type="lem" xml:id="lem8i"/>welcher<anchor xml:id="lemEnd8i"/> keltischen Her<pc source="#Ed" force="weak">-</pc>
+                        <lb n="25"/>kunft und Blutmischung in Zusammen<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="31"/>hang bringt, wie <lb n="26"/>dies noch Virchow thut: vielmehr schlägt an <lb edRef="#KGW #KSA" n="32"/>diesen <lb n="27"/>Stellen die <hi rend="spaced">vorarische</hi> Bevölkerung Deutschlands <lb n="28"/>
+                        <lb edRef="#KGW #KSA" n="33"/>vor. (Das Gleiche gilt beinahe für ganz Europa: im <lb n="29"/>Wesent<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="34"/>lichen hat die <seg type="lem" xml:id="lem8j"/>unterworfene<anchor xml:id="lemEnd8j"/> Rasse schliesslich <lb n="30"/>daselbst wieder die <pb edRef="#KGW #KSA" n="278/264"/>
+                        <lb edRef="#KGW #KSA" n="1"/>Oberhand bekommen, in Farbe, <lb n="31"/>Kürze des Schädels, vielleicht <lb edRef="#KGW #KSA" n="2"/>sogar in den intellek<pc source="#Ed" force="weak">-</pc>
+                        <lb n="32"/>tuellen und socialen Instinkten: wer steht <lb edRef="#KGW #KSA" n="3"/>uns dafür, <lb n="33"/>ob nicht die moderne Demokratie, der noch moder<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="4"/>nere <pb n="9"/>
+                        <lb n="1"/>Anarchismus und namentlich jener Hang zur „<seg type="lem" xml:id="lem9a"/>Commune<anchor xml:id="lemEnd9a"/>“, <lb n="2"/>
+                        <lb edRef="#KGW #KSA" n="5"/>zur primitivsten Gesellschafts-Form, der allen Socia<pc source="#Ed" force="weak">-</pc>
+                        <lb n="3"/>listen Euro<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="6"/>pa’s jetzt gemeinsam ist, in der Hauptsache <lb n="4"/>einen ungeheuren <lb edRef="#KGW #KSA" n="7"/>
+                        <hi rend="spaced">Nachschlag</hi> zu bedeuten hat – <lb n="5"/>und dass die Eroberer- <lb edRef="#KGW #KSA" n="8"/>und <hi rend="spaced">Herren-Rasse</hi>, die der <lb n="6"/>Arier, auch physiologisch im <lb edRef="#KGW #KSA" n="9"/>Unterliegen ist?…) Das <lb n="7"/>lateinische bonus glaube ich als „den <lb edRef="#KGW #KSA" n="10"/>Krieger“ auslegen <lb n="8"/>zu dürfen: vorausgesetzt, dass ich mit Recht <lb edRef="#KGW #KSA" n="11"/>bonus auf <lb n="9"/>ein älteres duonus zurückführe (vergleiche bellum = <lb n="10"/>
+                        <lb edRef="#KGW #KSA" n="12"/>duellum = duen-lum, worin mir jenes duonus erhalten <lb n="11"/>
+                        <seg type="lem" xml:id="lem9b"/>scheint).<anchor xml:id="lemEnd9b"/> <lb edRef="#KGW #KSA" n="13"/>Bonus somit als Mann des Zwistes, der Ent<pc source="#Ed" force="weak">-</pc>
+                        <lb n="12"/>zweiung (duo), als <lb edRef="#KGW #KSA" n="14"/>Kriegsmann: man sieht, was im alten <lb n="13"/>Rom an einem Manne <lb edRef="#KGW #KSA" n="15"/>seine „Güte“ ausmachte. Unser <lb n="14"/>deutsches „Gut“ selbst: sollte <lb edRef="#KGW #KSA" n="16"/>es nicht „den Göttlichen“, <lb n="15"/>den Mann <seg type="lem" xml:id="lem9c"/>„göttlichen Geschlechts“<anchor xml:id="lemEnd9c"/> <lb edRef="#KGW #KSA" n="17"/>bedeuten? Und <lb n="16"/>mit dem Volks- (ursprünglich Adels-)Namen der <lb edRef="#KGW #KSA" n="18"/>Gothen <lb n="17"/>identisch sein? Die Gründe zu dieser Vermuthung <lb n="18"/>ge<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="19"/>hören nicht hierher. –</p>
+          </div2>
+          <app from="#lem7b" to="#lemEnd7b">
+            <lem>5.</lem>
+            <rdg wit="#Dm" n="a7r,30" source="#a7r_lb30">6.</rdg>
+            <rdg wit="#Cb" n="7,6">5.</rdg>
+                </app>
+          <app from="#lem7c" to="#lemEnd7c">
+            <lem>Herren“,</lem>
+            <rdg wit="#Dm" n="a7r,35" source="#a7r_lb35">Herren“</rdg>
+            <rdg wit="#Cb" n="7,16">Herren“,</rdg>
+                </app>
+          <app from="#lem7d" to="#lemEnd7d">
+            <lem>Slavischen).</lem>
+            <rdg wit="#Dm" n="a7r,37" source="#a7r_lb37">Slavischen)</rdg>
+            <rdg wit="#Cb" n="7,20">Slavischen).</rdg>
+                </app>
+          <app from="#lem7e" to="#lemEnd7e">
+            <lem>Wahrhaftigen“:</lem>
+            <rdg wit="#Dm" n="a7r,38" source="#a7r_lb38">Wahrhaftigen“;</rdg>
+            <rdg wit="#Cb" n="7,23">Wahrhaftigen“: <note type="annotation">(Korrektur von Ns Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem7f" to="#lemEnd7f">
+            <lem>griechische</lem>
+            <rdg wit="#Dm" n="a7r,38" source="#a7r_lb38">griechischen <note type="annotation">(Lapsus)</note>
+                    </rdg>
+            <rdg wit="#Cb" n="7,23">griechische</rdg>
+                </app>
+          <app from="#lem7g" to="#lemEnd7g">
+            <lem>Mann</lem>
+            <rdg wit="#Dm" n="a8r,4" source="#a8r_lb4">Manne</rdg>
+            <rdg wit="#Cb" n="7,32">Mann</rdg>
+                </app>
+          <app from="#lem8a" to="#lemEnd8a">
+            <lem>schildert,</lem>
+            <rdg wit="#Dm" n="a8r,4" source="#a8r_lb4">schildert</rdg>
+            <rdg wit="#Cb" n="8,1">schildert</rdg>
+                </app><!-- ergo Korr. post Cb! -->
+          <app from="#lem8b" to="#lemEnd8b">
+            <lem>gewordenen</lem>
+            <rdg wit="#Dm" n="a8r,9" source="#a8r_lb9">gewordnen</rdg>
+            <rdg wit="#Cb" n="8,13">gewordenen</rdg>
+                </app>
+          <app from="#lem8c" to="#lemEnd8c">
+            <lem>Gälische</lem>
+            <rdg wit="#Dm" n="a8r,10" source="#a8r_lb10">Irische</rdg>
+            <rdg wit="#Cb" n="8,15">Irische</rdg>
+                </app><!-- ergo Korr. post Cb! -->
+          <app from="#lem8d" to="#lemEnd8d">
+            <lem>Fall,</lem>
+            <rdg wit="#Dm" n="a8r,10" source="#a8r_lb10">Fall</rdg>
+            <rdg wit="#Cb" n="8,16">Fall, <note type="annotation">(Korrektur von Ns Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem8e" to="#lemEnd8e">
+            <lem>Fin-Gal),</lem>
+            <rdg wit="#Dm" n="a8r,11" source="#a8r_lb11">Fin-Gal)</rdg>
+            <rdg wit="#Cb" n="8,16">Fin-Gal),</rdg>
+                </app>
+          <app from="#lem8f" to="#lemEnd8f">
+            <lem>zuletzt der Gute, Edle, Reine, ursprünglich der Blondkopf</lem>
+            <rdg wit="#Dm" n="a8r,10" source="#a8r_lb10">ursprünglich der Blondkopf, zuletzt der Gute, Edle, Reine</rdg>
+            <rdg wit="#Cb" n="8,17-18">zuletzt der Gute, Edle, Reine, ursprünglich der Blondkopf <note type="annotation">(Korrektur von Ns Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem8g" to="#lemEnd8g">
+            <lem>dunklen,</lem>
+            <rdg wit="#Dm" n="a8r,12" source="#a8r_lb12">dunklen</rdg>
+            <rdg wit="#Cb" n="8,19">dunklen,</rdg>
+                </app>
+          <app from="#lem8h" to="#lemEnd8h">
+            <lem>sorgfältigeren</lem>
+            <rdg wit="#Dm" n="a8r,14" source="#a8r_lb14">sorgfältigen</rdg>
+            <rdg wit="#Cb" n="8,23">sorgfältigeren <note type="annotation">(Korrektur von Ns Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem8i" to="#lemEnd8i">
+            <lem>welcher</lem>
+            <rdg wit="#Dm" n="a8r,14" source="#a8r_lb14">welchen <note type="annotation">(Lapsus)</note>
+                    </rdg>
+            <rdg wit="#Cb" n="8,24">welcher</rdg>
+                </app>
+          <app from="#lem8j" to="#lemEnd8j">
+            <lem>unterworfene</lem>
+            <rdg wit="#Dm" n="a8r,16-17" source="#a8r_lb16-17">unterworfne</rdg>
+            <rdg wit="#Cb" n="8,29">unterworfene</rdg>
+                </app>
+          <app from="#lem9a" to="#lemEnd9a">
+            <lem>Commune</lem>
+            <rdg wit="#Dm" n="a8r,19" source="#a8r_lb19">commune</rdg>
+            <rdg wit="#Cb" n="9,1">Commune <note type="annotation">(Korrektur von Ns Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem9b" to="#lemEnd9b">
+            <lem>scheint).</lem>
+            <rdg wit="#Dm" n="a8r,22" source="#a8r_lb22">scheint)</rdg>
+            <rdg wit="#Cb" n="9,11">scheint).</rdg>
+                </app>
+          <app from="#lem9c" to="#lemEnd9c">
+            <lem>„göttlichen Geschlechts“</lem>
+            <rdg wit="#Dm" n="a8r,25" source="#a8r_lb25">göttlichen Geschlechts</rdg>
+            <rdg wit="#Cb" n="9,15">„göttlichen Geschlechts“</rdg>
+                </app>
+          <!-- bis hier alles (analog und digital) kollationiert und neu App mit allen Änderungen gegenüber Dm 010623 -->
+          
+          <div2 xml:id="GM0106">
+            <head>
+                        <lb n="19"/>
+                        <lb edRef="#KGW #KSA" n="20"/>
+                        <seg type="lem" xml:id="lem9d"/>6.<anchor xml:id="lemEnd9d"/>
+                    </head>
+            <p>
+              <lb n="20" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="21" rend="indent"/>Von dieser Regel, dass der politische Vorrangs-<lb n="21"/>Begriff sich <lb edRef="#KGW #KSA" n="22"/>immer in einen seelischen Vorrangs-Begriff <lb n="22"/>auslöst, macht es zu<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="23"/>nächst noch keine Ausnahme (ob<pc source="#Ed" force="weak">-</pc>
+                        <lb n="23"/>gleich es Anlass zu Ausnahmen <lb edRef="#KGW #KSA" n="24"/>giebt), wenn die höchste <lb n="24"/>Kaste zugleich die <hi rend="spaced">priester<pc source="#KGW #KSA" force="weak">-</pc>
+                            <lb edRef="#KGW #KSA" n="25"/>liche</hi> Kaste ist und folg<pc source="#Ed" force="weak">-</pc>
+                        <lb n="25"/>lich zu ihrer Gesammt-Bezeichnung <lb edRef="#KGW #KSA" n="26"/>ein Prädikat be<pc source="#Ed" force="weak">-</pc>
+                        <lb n="26"/>vorzugt, <seg type="lem" xml:id="lem9e"/>das<anchor xml:id="lemEnd9e"/> an ihre priesterliche Funktion er<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="27"/>innert. <lb n="27"/>Da tritt zum Beispiel „rein“ und „unrein“ sich zum <lb n="28"/>er<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="28"/>sten Male als Ständeabzeichen gegenüber; und auch <lb n="29"/>hier kommt <lb edRef="#KGW #KSA" n="29"/>später ein „gut“ und ein „schlecht“ in <lb n="30"/>einem nicht mehr stän<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="30"/>dischen Sinne zur Entwicklung. <lb n="31"/>Im Übrigen sei man davor ge<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="31"/>warnt, diese Begriffe <lb n="32"/>„rein“ und „unrein“ nicht von vornherein <lb edRef="#KGW #KSA" n="32"/>zu schwer, <lb n="33"/>zu weit oder gar symbolisch zu nehmen: alle Begriffe <pb n="10"/>
+                        <pb edRef="#KGW #KSA" n="279/265"/>
+                        <lb n="1"/>
+                        <lb edRef="#KGW #KSA" n="1"/>der älteren Menschheit sind vielmehr anfänglich in <lb n="2"/>einem uns <lb edRef="#KGW #KSA" n="2"/>kaum ausdenkbaren Maasse grob, plump, <lb n="3"/>äusserlich, eng, <lb edRef="#KGW #KSA" n="3"/>geradezu und <seg type="lem" xml:id="lem10a"/>insbesondere<anchor xml:id="lemEnd10a"/> <hi rend="spaced">unsym<pc source="#Ed" force="weak">-</pc>
+                            <lb n="4"/>bolisch</hi> verstanden <lb edRef="#KGW #KSA" n="4"/>
+                        <seg type="lem" xml:id="lem10aa"/>worden.<anchor xml:id="lemEnd10aa"/> Der „Reine“ ist von <lb n="5"/>Anfang an bloss ein Mensch, der <lb edRef="#KGW #KSA" n="5"/>sich wäscht, der sich <lb n="6"/>gewisse Speisen verbietet, die Hautkrank<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="6"/>heiten nach <lb n="7"/>sich <seg type="lem" xml:id="lem10b"/>ziehen<anchor xml:id="lemEnd10b"/>, der nicht mit den schmutzigen Weibern <lb edRef="#KGW #KSA" n="7"/>des <lb n="8"/>niederen Volkes schläft, der einen Abscheu vor Blut <seg type="lem" xml:id="lem10c"/>hat,<anchor xml:id="lemEnd10c"/> – <lb n="9"/>
+                        <lb edRef="#KGW #KSA" n="8"/>nicht mehr, nicht viel mehr! Andrerseits erhellt es frei<pc source="#Ed" force="weak">-</pc>
+                        <lb n="10"/>lich aus <lb edRef="#KGW #KSA" n="9"/>der ganzen Art einer wesentlich priesterlichen <lb n="11"/>Aristokratie, <lb edRef="#KGW #KSA" n="10"/>warum hier gerade frühzeitig sich die <lb n="12"/>Werthungs-Gegensätze <lb edRef="#KGW #KSA" n="11"/>auf eine gefährliche Weise ver<pc source="#Ed" force="weak">-</pc>
+                        <lb n="13"/>innerlichen und verschärfen konn<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="12"/>ten; und in der That <lb n="14"/>sind durch sie schliesslich Klüfte zwischen <lb edRef="#KGW #KSA" n="13"/>Mensch und <lb n="15"/>Mensch aufgerissen worden, über die selbst ein <lb edRef="#KGW #KSA" n="14"/>Achill <lb n="16"/>der Freigeisterei nicht ohne Schauder hinwegsetzen <lb n="17"/>wird. <lb edRef="#KGW #KSA" n="15"/>Es ist von Anfang an etwas <hi rend="spaced">Ungesundes</hi> in <lb n="18"/>solchen prie<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="16"/>sterlichen Aristokratien und in den daselbst <lb n="19"/>
+                        <seg type="lem" xml:id="lem10d"/>herrschenden,<anchor xml:id="lemEnd10d"/> dem <lb edRef="#KGW #KSA" n="17"/>Handeln abgewendeten, theils brü<pc source="#Ed" force="weak">-</pc>
+                        <lb n="20"/>tenden, theils gefühls-explo<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="18"/>siven Gewohnheiten, als <lb n="21"/>deren Folge jene den Priestern aller <lb edRef="#KGW #KSA" n="19"/>Zeiten fast unver<pc source="#Ed" force="weak">-</pc>
+                        <lb n="22"/>meidlich anhaftende intestinale Krankhaftig<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="20"/>keit und <lb n="23"/>Neurasthenie erscheint; was aber von ihnen selbst <lb n="24"/>gegen <lb edRef="#KGW #KSA" n="21"/>diese ihre <seg type="lem" xml:id="lem10e"/>Krankhaftigkeit<anchor xml:id="lemEnd10e"/> als Heilmittel erfun<pc source="#Ed" force="weak">-</pc>
+                        <lb n="25"/>den worden ist, <lb edRef="#KGW #KSA" n="22"/>– muss man nicht sagen, dass es sich <lb n="26"/>zuletzt in seinen Nach<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="23"/>wirkungen noch hundert Mal ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="27"/>fährlicher erwiesen <seg type="lem" xml:id="lem10f"/>hat,<anchor xml:id="lemEnd10f"/> als die <lb edRef="#KGW #KSA" n="24"/>Krankheit, von der es <lb n="28"/>erlösen sollte? Die Menschheit selbst <lb edRef="#KGW #KSA" n="25"/>krankt noch an <lb n="29"/>den Nachwirkungen dieser priesterlichen Kur-<lb edRef="#KGW #KSA" n="26"/>Naive<pc source="#Ed" force="weak">-</pc>
+                        <lb n="30"/>täten! Denken wir zum Beispiel an gewisse Diätformen <lb n="31"/>
+                        <lb edRef="#KGW #KSA" n="27"/>(Vermeidung des Fleisches), an das Fasten, an die ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="32"/>schlechtliche <lb edRef="#KGW #KSA" n="28"/>Enthaltsamkeit, an die Flucht „in die <lb n="33"/>Wüste“ (Weir Mitchell’<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="29"/>sche Isolirung, freilich ohne die <pb n="11"/>
+                        <lb n="1"/>darauf folgende Mastkur und <lb edRef="#KGW #KSA" n="30"/>Überernährung, in der das <lb n="2"/>wirksamste Gegenmittel gegen alle <lb edRef="#KGW #KSA" n="31"/>Hysterie des aske<pc source="#Ed" force="weak">-</pc>
+                        <lb n="3"/>tischen Ideals besteht): hinzugerechnet die <lb edRef="#KGW #KSA" n="32"/>ganze sinnen<pc source="#Ed" force="weak">-</pc>
+                        <lb n="4"/>feindliche, faul- und raffinirtmachende Metaphysik <lb edRef="#KGW #KSA" n="33"/>der <lb n="5"/>Priester, <seg type="lem" xml:id="lem11a"/>ihre<anchor xml:id="lemEnd11a"/> Selbst-Hypnotisirung nach Art des <lb n="6"/>Fakirs und <lb edRef="#KGW #KSA" n="34"/>Brahmanen – Brahman als gläserner Knopf <lb n="7"/>und fixe Idee be<pc source="#KGW #KSA" force="weak">-</pc>
+                        <pb edRef="#KGW #KSA" n="280/266"/>
+                        <lb edRef="#KGW #KSA" n="1"/>nutzt – und das <seg type="lem" xml:id="lem11b"/>schliessliche,<anchor xml:id="lemEnd11b"/> nur zu <lb n="8"/>begreifliche allgemeine <lb edRef="#KGW #KSA" n="2"/>Satthaben mit seiner <seg type="lem" xml:id="lem11c"/>Radikal<pc source="#Ed" force="weak">-</pc>
+                        <lb n="9"/>kur<anchor xml:id="lemEnd11c"/>, dem <hi rend="spaced">Nichts</hi> (oder Gott: <lb edRef="#KGW #KSA" n="3"/>– das Verlangen nach <lb n="10"/>einer unio mystica mit Gott ist das Ver<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="4"/>langen des <lb n="11"/>Buddhisten <seg type="lem" xml:id="lem11d"/>in’s<anchor xml:id="lemEnd11d"/> Nichts, Nirvâna – und nicht <seg type="lem" xml:id="lem11e"/>mehr!)<anchor xml:id="lemEnd11e"/> <lb n="12"/>
+                        <lb edRef="#KGW #KSA" n="5"/>Bei den Priestern wird eben <hi rend="spaced">Alles</hi> gefährlicher, nicht <lb n="13"/>nur <lb edRef="#KGW #KSA" n="6"/>Kurmittel und Heilkünste, sondern auch Hochmuth, <lb n="14"/>Rache, <lb edRef="#KGW #KSA" n="7"/>Scharfsinn, Ausschweifung, Liebe, Herrschsucht, <lb n="15"/>Tugend, Krank<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="8"/>heit; – mit einiger Billigkeit liesse sich <lb n="16"/>allerdings auch hinzu<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="9"/>fügen, dass erst auf dem Boden <lb n="17"/>dieser <hi rend="spaced">wesentlich ge<pc source="#KGW #KSA" force="weak">-</pc>
+                            <lb edRef="#KGW #KSA" n="10"/>fährlichen</hi> Daseinsform des <lb n="18"/>Menschen, der priesterlichen, <lb edRef="#KGW #KSA" n="11"/>der Mensch überhaupt <lb n="19"/>
+                        <hi rend="spaced">ein interessantes Thier</hi> gewor<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="12"/>den ist, dass erst <lb n="20"/>hier die menschliche Seele in einem höheren <lb edRef="#KGW #KSA" n="13"/>Sinne <lb n="21"/>
+                        <hi rend="spaced">Tiefe</hi> bekommen hat und <hi rend="spaced">böse</hi> geworden ist – und <lb n="22"/>
+                        <lb edRef="#KGW #KSA" n="14"/>das sind ja die beiden Grundformen der bisherigen <lb n="23"/>Überlegen<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="15"/>heit des Menschen über sonstiges <seg type="lem" xml:id="lem11f"/>Gethier!..<anchor xml:id="lemEnd11f"/>
+                    </p>
+          </div2>
+          <app from="#lem9d" to="#lemEnd9d">
+            <lem>6.</lem>
+            <rdg wit="#Dm" n="a8r,27" source="#a8r_lb27">7.</rdg>
+            <rdg wit="#Cb" n="9,19">6.</rdg>
+                </app>
+          <app from="#lem9e" to="#lemEnd9e">
+            <lem>das</lem><!-- NB!!! hier und im Folg. Seiitenangaben von Cb überprüfen, da stimmt was nicht?! -->
+            <rdg wit="#Dm" n="a8r,30" source="#a8r_lb30">daß <note type="annotation">(Lapsus)</note>
+                    </rdg>
+            <rdg wit="#Cb" n="8,26">das <note type="annotation">(Korrektur von Köselitz’ Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem10a" to="#lemEnd10a">
+            <lem>insbesondere</lem>
+            <rdg wit="#Dm" n="a8r,35" source="#a8r_lb35">insbesondre</rdg>
+            <rdg wit="#Cb" n="10,3">insbesondere</rdg>
+                </app>
+          <app from="#lem10aa" to="#lemEnd10aa">
+            <lem>worden.</lem>
+            <rdg wit="#Dm" n="a8r,35" source="#a8r_lb35">worden.. <note type="annotation">(unvollständige Korrektur)</note>
+                    </rdg>
+            <rdg wit="#Cb" n="9,4">worden.</rdg>
+                </app>
+          <app from="#lem10b" to="#lemEnd10b">
+            <lem>ziehen</lem>
+            <rdg wit="#Dm" n="a8r,36" source="#a8r_lb36">ziehn</rdg>
+            <rdg wit="#Cb" n="10,7">ziehen</rdg>
+                </app>
+          <app from="#lem10c" to="#lemEnd10c">
+            <lem>hat,</lem>
+            <rdg wit="#Dm" n="a8r,37" source="#a8r_lb37">hat</rdg>
+            <rdg wit="#Cb" n="10,8">hat, <note type="annotation">(Korrektur von Köselitz’ Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem10d" to="#lemEnd10d">
+            <lem>herrschenden,</lem>
+            <rdg wit="#Dm" n="a9r,3" source="#a9r_lb3">herrschenden</rdg>
+            <rdg wit="#Cb" n="10,19">herrschenden,</rdg>
+                </app>
+          <app from="#lem10e" to="#lemEnd10e">
+            <lem>Krankhaftigkeit</lem>
+            <rdg wit="#Dm" n="a9r,5" source="#a9r_lb5">Krankheithaftigkeit <note type="annotation">(unvollständige Korrektur)</note>
+                    </rdg>
+            <rdg wit="#Cb" n="10,24">Krankhaftigkeit</rdg>
+                </app>
+          <app from="#lem10f" to="#lemEnd10f">
+            <lem>hat,</lem>
+            <rdg wit="#Dm" n="a9r,6" source="#a9r_lb6">hat</rdg>
+            <rdg wit="#Cb" n="10,27">hat,</rdg>
+                </app>
+          <app from="#lem11a" to="#lemEnd11a">
+            <lem>ihre</lem>
+            <rdg wit="#Dm" n="a9r,10" source="#a9r_lb10">ihre, <note type="annotation">(unvollständige Korrektur)</note>
+                    </rdg>
+            <rdg wit="#Cb" n="11,5">ihre</rdg>
+                </app>
+          <app from="#lem11b" to="#lemEnd11b">
+            <lem>schliessliche,</lem>
+            <rdg wit="#Dm" n="a9r,11" source="#a9r_lb11">schließliche</rdg>
+            <rdg wit="#Cb" n="11,7">schliessliche,</rdg>
+                </app>
+          <app from="#lem11c" to="#lemEnd11c">
+            <lem>Radikalkur</lem>
+            <rdg wit="#Dm" n="a9r,11" source="#a9r_lb11">Radikulkur <note type="annotation">(Lapsus)</note>
+                    </rdg>
+            <rdg wit="#Cb" n="11,8-9">Radikalkur <note type="annotation">(Korrektur von Köselitz’ Hand nach Setzerfehler „Ratikalkur“)</note>
+                    </rdg>
+                </app><!-- so? oder besser ohne comment, da Korr. von Setzerfehler wie sonst nicht mitteilenswert? -->
+          <!-- NB! zu Z. 10 "einer" evtl. rdg nötig, falls es an dieser Stelle im Dm ein sic/corr gibt (aktuell in Dm "eine*r", a9r,12)in’s  -->
+          <app from="#lem11d" to="#lemEnd11d">
+            <lem>in’s</lem>
+            <rdg wit="#Dm" n="a9r,12" source="#a9r_lb12">ins</rdg>
+            <rdg wit="#Cb" n="11,12">in’s <note type="annotation">(Korrektur von Köselitz’ Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem11e" to="#lemEnd11e">
+            <lem>mehr!)</lem>
+            <rdg wit="#Dm" n="a9r,12" source="#a9r_lb12">mehr! <note type="annotation">(unvollständige Korrektur)</note>
+                    </rdg>
+            <rdg wit="#Cb" n="11,12">mehr!)</rdg>
+                </app>
+          <app from="#lem11f" to="#lemEnd11f">
+            <lem>Gethier!..</lem><!-- comment, dass Ed vmtl. Druckfehler? bin mir aber gar nicht so sicher, könnte auch absichtlich wg. Platzmangel sein?! -->
+            <rdg wit="#Dm" n="a9r,17" source="#a9r_lb17">Gethier!…</rdg>
+            <rdg wit="#Cb" n="11,23">Gethier!…</rdg>
+                </app>
+          <!-- manuell und digital alles koll. 140623 -->
+          
+          <div2 xml:id="GM0107">
+            <head>
+              <lb n="24"/>
+                        <lb edRef="#KGW #KSA" n="16"/>
+                        <seg type="lem" xml:id="lem11g"/>7.<anchor xml:id="lemEnd11g"/>
+                    </head>
+            <p>
+              <lb n="25" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="17" rend="indent"/>– Man wird bereits errathen haben, wie leicht sich <lb n="26"/>die <lb edRef="#KGW #KSA" n="18"/>priesterliche Werthungs-Weise von der ritterlich-<lb n="27"/>aristokratischen <lb edRef="#KGW #KSA" n="19"/>abzweigen und dann zu deren Gegen<pc source="#Ed" force="weak">-</pc>
+                        <lb n="28"/>satze fortentwickeln kann; <lb edRef="#KGW #KSA" n="20"/>wozu es in Sonderheit jedes <lb n="29"/>Mal einen Anstoss giebt, wenn die <lb edRef="#KGW #KSA" n="21"/>Priesterkaste und <lb n="30"/>die Kriegerkaste einander eifersüchtig ent<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="22"/>gegentreten <lb n="31"/>und über den Preis mit einander nicht einig <seg type="lem" xml:id="lem11h"/>werden <lb n="32"/>
+                        <lb edRef="#KGW #KSA" n="23"/>wollen.<anchor xml:id="lemEnd11h"/> Die ritterlich-aristokratischen Werthurtheile <pb n="12"/>
+                        <lb n="1"/>haben zu <lb edRef="#KGW #KSA" n="24"/>ihrer Voraussetzung eine mächtige Leiblich<pc source="#Ed" force="weak">-</pc>
+                        <lb n="2"/>keit, eine blühende, <lb edRef="#KGW #KSA" n="25"/>reiche, selbst überschäumende Ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="3"/>sundheit, sammt dem, was deren <lb edRef="#KGW #KSA" n="26"/>Erhaltung bedingt, <lb n="4"/>Krieg, Abenteuer, Jagd, Tanz, Kampf<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="27"/>spiele und <seg type="lem" xml:id="lem12a"/>Alles<anchor xml:id="lemEnd12a"/> <lb n="5"/>überhaupt, was <seg type="lem" xml:id="lem12b"/>starkes, freies,<anchor xml:id="lemEnd12b"/> frohgemuthes <lb edRef="#KGW #KSA" n="28"/>Handeln <lb n="6"/>in sich schliesst. Die priesterlich-vornehme Werthungs-<lb n="7"/>
+                        <lb edRef="#KGW #KSA" n="29"/>Weise hat – wir sahen es – <seg type="lem" xml:id="lem12c"/>andere<anchor xml:id="lemEnd12c"/> Voraussetzungen: <lb n="8"/>schlimm <lb edRef="#KGW #KSA" n="30"/>genug für sie, wenn es sich um Krieg han<pc source="#Ed" force="weak">-</pc>
+                        <lb n="9"/>delt! Die Priester sind, <lb edRef="#KGW #KSA" n="31"/>wie bekannt, die <hi rend="spaced">bösesten <lb n="10"/>Feinde</hi> – weshalb doch? <lb edRef="#KGW #KSA" n="32"/>Weil sie die ohnmächtig<pc source="#Ed" force="weak">-</pc>
+                        <lb n="11"/>sten sind. Aus der Ohnmacht wächst bei <pb edRef="#KGW #KSA" n="281/267"/>
+                        <lb edRef="#KGW #KSA" n="1"/>ihnen der <lb n="12"/>Hass <seg type="lem" xml:id="lem12d"/>in’s<anchor xml:id="lemEnd12d"/> Ungeheure und Unheimliche, <seg type="lem" xml:id="lem12e"/>in’s<anchor xml:id="lemEnd12e"/> Geistigste <lb n="13"/>
+                        <lb edRef="#KGW #KSA" n="2"/>und Giftigste. Die ganz grossen Hasser in der Welt<pc source="#Ed" force="weak">-</pc>
+                        <lb n="14"/>geschichte <lb edRef="#KGW #KSA" n="3"/>sind immer Priester gewesen, auch die geist<pc source="#Ed" force="weak">-</pc>
+                        <lb n="15"/>reichsten Hasser: <lb edRef="#KGW #KSA" n="4"/>– gegen den Geist der priesterlichen <lb n="16"/>Rache kommt überhaupt <lb edRef="#KGW #KSA" n="5"/>aller übrige Geist kaum in <lb n="17"/>Betracht. Die menschliche Geschichte <lb edRef="#KGW #KSA" n="6"/>wäre eine gar <lb n="18"/>zu dumme Sache ohne den Geist, der von den <lb edRef="#KGW #KSA" n="7"/>Ohn<pc source="#Ed" force="weak">-</pc>
+                        <lb n="19"/>mächtigen her in sie gekommen ist: – nehmen wir so<pc source="#Ed" force="weak">-</pc>
+                        <lb n="20"/>fort <lb edRef="#KGW #KSA" n="8"/>das grösste Beispiel. Alles, was auf Erden gegen <lb n="21"/>„die Vor<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="9"/>nehmen“, „die Gewaltigen“, „die Herren“, „die <lb n="22"/>Machthaber“ <lb edRef="#KGW #KSA" n="10"/>gethan worden ist, ist nicht der Rede <lb n="23"/>werth im Vergleich mit <lb edRef="#KGW #KSA" n="11"/>dem, was <hi rend="spaced">die Juden</hi> gegen <lb n="24"/>sie gethan haben: die Juden, <lb edRef="#KGW #KSA" n="12"/>jenes priesterliche Volk, <lb n="25"/>das sich an seinen Feinden und Über<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="13"/>wältigern zuletzt <lb n="26"/>nur durch eine radikale Umwerthung von <lb edRef="#KGW #KSA" n="14"/>deren Wer<pc source="#Ed" force="weak">-</pc>
+                        <lb n="27"/>then, also durch einen Akt der <hi rend="spaced">geistigsten Rache</hi> <lb n="28"/>
+                        <lb edRef="#KGW #KSA" n="15"/>Genugthuung zu schaffen wusste. So allein war es <lb n="29"/>eben einem <lb edRef="#KGW #KSA" n="16"/>priesterlichen Volke gemäss, dem Volke <lb n="30"/>der zurückgetretensten <lb edRef="#KGW #KSA" n="17"/>priesterlichen Rachsucht. Die <lb n="31"/>Juden sind es gewesen, die gegen <lb edRef="#KGW #KSA" n="18"/>die aristokratische <lb n="32"/>Werthgleichung (gut = vornehm = mächtig <lb edRef="#KGW #KSA" n="19"/>= schön <lb n="33"/>= glücklich = gottgeliebt) mit einer furchteinflössenden <pb n="13"/>
+                        <lb n="1"/>
+                        <lb edRef="#KGW #KSA" n="20"/>Folgerichtigkeit die Umkehrung gewagt und mit den <lb n="2"/>Zähnen des <lb edRef="#KGW #KSA" n="21"/>abgründlichsten Hasses (des Hasses der <lb n="3"/>Ohnmacht) festgehalten <lb edRef="#KGW #KSA" n="22"/>haben, nämlich „die Elenden <lb n="4"/>sind allein die Guten, die Armen, <lb edRef="#KGW #KSA" n="23"/>Ohnmächtigen, Nied<pc source="#Ed" force="weak">-</pc>
+                        <lb n="5"/>rigen sind allein die Guten, die <seg type="lem" xml:id="lem13a"/>Leidenden, <lb edRef="#KGW #KSA" n="24"/>Entbehren<pc source="#Ed" force="weak">-</pc>
+                        <lb n="6"/>den, Kranken,<anchor xml:id="lemEnd13a"/> Hässlichen sind auch die einzig From<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="25"/>men, <lb n="7"/>die einzig Gottseligen, für sie <milestone unit="page" source="#Dm" n="a10r"/>allein giebt es Selig<pc source="#Ed" force="weak">-</pc>
+                        <lb n="8"/>keit, – <lb edRef="#KGW #KSA" n="26"/>dagegen ihr, ihr Vornehmen und Gewaltigen, <lb n="9"/>ihr seid in alle <lb edRef="#KGW #KSA" n="27"/>Ewigkeit die Bösen, die Grausamen, <lb n="10"/>die Lüsternen, die Unersätt<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="28"/>lichen, die Gottlosen, ihr <lb n="11"/>werdet auch ewig die Unseligen, Ver<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="29"/>fluchten und Ver<pc source="#Ed" force="weak">-</pc>
+                        <lb n="12"/>dammten sein!“… Man weiss, <hi rend="spaced">wer</hi> die Erb<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="30"/>schaft <lb n="13"/>dieser jüdischen Umwerthung gemacht hat… Ich er<pc source="#Ed" force="weak">-</pc>
+                        <lb n="14"/>innere <lb edRef="#KGW #KSA" n="31"/>in Betreff der ungeheuren und über alle Maassen <lb n="15"/>verhängniss<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="32"/>vollen Initiative, welche die Juden mit die<pc source="#Ed" force="weak">-</pc>
+                        <lb n="16"/>ser grundsätzlichsten <lb edRef="#KGW #KSA" n="33"/>aller Kriegserklärungen gegeben <lb n="17"/>haben, an den Satz, auf den <lb edRef="#KGW #KSA" n="34"/>ich bei einer <seg type="lem" xml:id="lem13b"/>anderen<anchor xml:id="lemEnd13b"/> Ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="18"/>legenheit gekommen bin („Jenseits von <pb edRef="#KGW #KSA" n="282/268"/>
+                        <lb edRef="#KGW #KSA" n="1"/>Gut und Böse“ <lb n="19"/>p. 118) – dass nämlich mit den Juden <hi rend="spaced">der <lb edRef="#KGW #KSA" n="2"/>Sklaven<pc source="#Ed" force="weak">-</pc>
+                            <lb n="20"/>aufstand in der Moral</hi> beginnt: jener Auf<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="3"/>stand, <lb n="21"/>welcher eine zweitausendjährige Geschichte hinter sich <lb n="22"/>hat <lb edRef="#KGW #KSA" n="4"/>und der uns heute nur deshalb aus den Augen ge<pc source="#Ed" force="weak">-</pc>
+                        <lb n="23"/>rückt ist, weil <lb edRef="#KGW #KSA" n="5"/>er – siegreich gewesen ist…</p>
+          </div2>
+          <app from="#lem11g" to="#lemEnd11g">
+            <lem>7.</lem>
+            <rdg wit="#Dm" n="a9r,18" source="#a9r_lb18">8.</rdg>
+            <rdg wit="#Cb" n="11,24">7.</rdg>
+                </app>
+          <app from="#lem11h" to="#lemEnd11h">
+            <lem>werden wollen.</lem>
+            <rdg wit="#Dm" n="a9r,22" source="#a9r_lb22">werden. wollen. <note type="annotation">(unvollständige Korrektur)</note>
+                    </rdg>
+            <rdg wit="#Cb" n="11,31-32">werden wollen.</rdg>
+                </app>
+          <app from="#lem12a" to="#lemEnd12a">
+            <lem>Alles</lem>
+            <rdg wit="#Dm" n="a9r,24" source="#a9r_lb24">alles</rdg>
+            <rdg wit="#Cb" n="12,4">Alles <note type="annotation">(Korrektur von Köselitz’ Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem12b" to="#lemEnd12b">
+            <lem>starkes, freies,</lem>
+            <rdg wit="#Dm" n="a9r,24" source="#a9r_lb24">starkes freies</rdg>
+            <rdg wit="#Cb" n="12,5">starkes, freies,</rdg>
+                </app>
+          <app from="#lem12c" to="#lemEnd12c">
+            <lem>andere</lem>
+            <rdg wit="#Dm" n="a9r,25" source="#a9r_lb25">andre</rdg>
+            <rdg wit="#Cb" n="12,7">andere</rdg>
+                </app>
+          <app from="#lem12d" to="#lemEnd12d">
+            <lem>in’s</lem>
+            <rdg wit="#Dm" n="a9r,27" source="#a9r_lb27">ins</rdg>
+            <rdg wit="#Cb" n="12,12">in’s <note type="annotation">(Korrektur von Köselitz’ Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem12e" to="#lemEnd12e">
+            <lem>in’s</lem>
+            <rdg wit="#Dm" n="a9r,27" source="#a9r_lb27">ins</rdg>
+            <rdg wit="#Cb" n="12,12">in’s <note type="annotation">(Korrektur von Köselitz’ Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem13a" to="#lemEnd13a">
+            <lem>Leidenden, Entbehrenden, Kranken,</lem>
+            <rdg wit="#Dm" n="a9r,38" source="#a9r_lb38">Leidenden Entbehrenden Kranken</rdg>
+            <rdg wit="#Cb" n="13,5-6">Leidenden, Entbehrenden, Kranken,</rdg>
+                </app>
+          <app from="#lem13b" to="#lemEnd13b">
+            <lem>anderen</lem>
+            <rdg wit="#Dm" n="a10r,5" source="#a10r_lb5">andren</rdg>
+            <rdg wit="#Cb" n="13,17">anderen</rdg>
+                </app>
+          
+          <div2 xml:id="GM0108">
+            <head>
+              <lb n="24"/>
+                        <lb edRef="#KGW #KSA" n="6"/>
+                        <seg type="lem" xml:id="lem13c"/>8.<anchor xml:id="lemEnd13c"/>
+                    </head>
+            <p>
+              <lb n="25" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="7" rend="indent"/>– Aber ihr versteht das nicht? Ihr habt keine <lb n="26"/>Augen für <lb edRef="#KGW #KSA" n="8"/>Etwas, das zwei Jahrtausende gebraucht hat, <lb n="27"/>um zum Siege zu <lb edRef="#KGW #KSA" n="9"/>kommen?… Daran ist Nichts zum <lb n="28"/>Verwundern: alle <seg type="lem" xml:id="lem13d"/>
+                        <hi rend="spaced">langen</hi>
+                        <anchor xml:id="lemEnd13d"/> <lb edRef="#KGW #KSA" n="10"/>Dinge sind schwer zu sehn, <lb n="29"/>zu übersehn. <hi rend="spaced">Das</hi> aber ist das Er<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="11"/>eigniss: aus dem <lb n="30"/>Stamme jenes Baums der Rache und des Has<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="12"/>ses, des <lb n="31"/>jüdischen Hasses – des tiefsten und sublimsten, näm<pc source="#Ed #KGW #KSA" force="weak">-</pc>
+                        <lb n="32"/>
+                        <lb edRef="#KGW #KSA" n="13"/>lich Ideale schaffenden, Werthe umschaffenden Hasses, <pb n="14"/>
+                        <lb n="1"/>dessen <lb edRef="#KGW #KSA" n="14"/>Gleichen nie auf Erden dagewesen ist – wuchs <lb n="2"/>etwas ebenso <lb edRef="#KGW #KSA" n="15"/>Unvergleichliches heraus, eine <hi rend="spaced">neue <lb n="3"/>Liebe</hi>, die tiefste und <lb edRef="#KGW #KSA" n="16"/>sublimste aller Arten Liebe: – <lb n="4"/>und aus welchem <seg type="lem" xml:id="lem14a"/>andern<anchor xml:id="lemEnd14a"/> Stamme <lb edRef="#KGW #KSA" n="17"/>hätte sie auch wachsen <lb n="5"/>können?… Dass man aber ja nicht ver<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="18"/>meine, sie sei <lb n="6"/>etwa als die eigentliche Verneinung jenes Durstes <lb edRef="#KGW #KSA" n="19"/>nach <lb n="7"/>Rache, als der Gegensatz des jüdischen Hasses empor<pc source="#Ed #KGW #KSA" force="weak">-</pc>
+                        <lb n="8"/>
+                        <lb edRef="#KGW #KSA" n="20"/>gewachsen! Nein, das Umgekehrte ist die Wahrheit! <lb n="9"/>Diese Liebe <lb edRef="#KGW #KSA" n="21"/>wuchs aus ihm heraus, als seine Krone, als <lb n="10"/>die triumphirende, <lb edRef="#KGW #KSA" n="22"/>in der reinsten Helle und Sonnenfülle <lb n="11"/>sich breit und breiter ent<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="23"/>faltende Krone, welche mit <lb n="12"/>demselben Drange gleichsam im <lb edRef="#KGW #KSA" n="24"/>Reiche des Lichts und <lb n="13"/>der Höhe auf die Ziele jenes Hasses, auf <lb edRef="#KGW #KSA" n="25"/>Sieg, auf Beute, <lb n="14"/>auf Verführung aus war, mit dem die Wurzeln <lb edRef="#KGW #KSA" n="26"/>jenes <lb n="15"/>Hasses sich immer gründlicher und begehrlicher in <lb n="16"/>Alles, <lb edRef="#KGW #KSA" n="27"/>was Tiefe hatte und böse war, hinunter senkten. <lb n="17"/>Dieser Jesus <lb edRef="#KGW #KSA" n="28"/>von Nazareth, als das leibhafte Evange<pc source="#Ed" force="weak">-</pc>
+                        <lb n="18"/>lium der Liebe, dieser <lb edRef="#KGW #KSA" n="29"/>den Armen, den Kranken, den <lb n="19"/>Sündern die Seligkeit und den <lb edRef="#KGW #KSA" n="30"/>Sieg bringende „Er<pc source="#Ed" force="weak">-</pc>
+                        <lb n="20"/>löser“ – war er nicht gerade die Verführung <lb edRef="#KGW #KSA" n="31"/>in ihrer <lb n="21"/>unheimlichsten und unwiderstehlichsten Form, die Ver<pc source="#Ed #KGW #KSA" force="weak">-</pc>
+                        <lb n="22"/>
+                        <lb edRef="#KGW #KSA" n="32"/>führung und der Umweg zu eben jenen <hi rend="spaced">jüdischen</hi> <lb n="23"/>Werthen <pb edRef="#KGW #KSA" n="283/269"/>
+                        <lb edRef="#KGW #KSA" n="1"/>und Neuerungen des Ideals? Hat Israel nicht <lb n="24"/>gerade auf dem <lb edRef="#KGW #KSA" n="2"/>Umwege dieses „Erlösers“, dieses <lb n="25"/>scheinbaren Widersachers und <lb edRef="#KGW #KSA" n="3"/>Auflösers Israel’s, das <lb n="26"/>letzte Ziel seiner sublimen Rachsucht <seg type="lem" xml:id="lem14b"/>er<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="4"/>reicht<anchor xml:id="lemEnd14b"/>? Gehört <lb n="27"/>es nicht in die geheime schwarze Kunst einer <lb edRef="#KGW #KSA" n="5"/>wahrhaft <lb n="28"/>
+                        <hi rend="spaced">grossen</hi> Politik der Rache, einer weitsichtigen, <lb edRef="#KGW #KSA" n="6"/>unter<pc source="#Ed" force="weak">-</pc>
+                        <lb n="29"/>irdischen, langsam-greifenden und vorausrechnenden <lb n="30"/>Rache, <lb edRef="#KGW #KSA" n="7"/>dass Israel selber das eigentliche Werkzeug <lb n="31"/>seiner Rache vor <lb edRef="#KGW #KSA" n="8"/>aller Welt wie etwas Todfeindliches <lb n="32"/>verleugnen und an’s Kreuz <lb edRef="#KGW #KSA" n="9"/>schlagen musste, damit „alle <lb n="33"/>Welt“, nämlich alle Gegner <seg type="lem" xml:id="lem14c"/>Israel’s<anchor xml:id="lemEnd14c"/> <lb edRef="#KGW #KSA" n="10"/>unbedenklich ge<pc source="#Ed" force="weak">-</pc>
+                        <pb n="15"/>
+                        <lb n="1"/>rade an <seg type="lem" xml:id="lem15a"/>diesem Köder anbeissen<anchor xml:id="lemEnd15a"/> konnten? Und <lb edRef="#KGW #KSA" n="11"/>wüsste <lb n="2"/>man sich andrerseits, aus allem Raffinement des Geistes <lb n="3"/>
+                        <lb edRef="#KGW #KSA" n="12"/>heraus, überhaupt noch einen <hi rend="spaced">gefährlicheren</hi> Köder <lb n="4"/>aus<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="13"/>zudenken? Etwas, das an <seg type="lem" xml:id="lem15b"/>verlockender, berauschen<pc source="#Ed" force="weak">-</pc>
+                        <lb n="5"/>der, betäu<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="14"/>bender,<anchor xml:id="lemEnd15b"/> verderbender Kraft jenem Symbol <lb n="6"/>des „heiligen Kreu<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="15"/>zes“ gleichkäme, jener schauerlichen <lb n="7"/>Paradoxie eines „Gottes am <lb edRef="#KGW #KSA" n="16"/>Kreuze“, jenem Mysterium <lb n="8"/>einer unausdenkbaren letzten äusser<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="17"/>sten Grausamkeit <lb n="9"/>und Selbstkreuzigung Gottes <hi rend="spaced">zum Heile <lb edRef="#KGW #KSA" n="18"/>des Men<pc source="#Ed" force="weak">-</pc>
+                            <lb n="10"/>schen</hi>?… Gewiss ist wenigstens, dass sub hoc <lb edRef="#KGW #KSA" n="19"/>signo <lb n="11"/>Israel mit seiner Rache und Umwerthung aller Werthe <lb edRef="#KGW #KSA" n="20"/>
+                        <lb n="12"/>bisher über alle anderen Ideale, über alle <hi rend="spaced">vornehme<pc source="#Ed" force="weak">-</pc>
+                            <lb n="13"/>ren</hi> <lb edRef="#KGW #KSA" n="21"/>Ideale immer wieder triumphirt hat. – –
+            </p>
+          </div2>
+          <app from="#lem13c" to="#lemEnd13c">
+            <lem>8.</lem>
+            <rdg wit="#Dm" n="a10r,9" source="#a10r_lb9">9.</rdg>
+            <rdg wit="#Cb" n="13,24">8.</rdg>
+                </app>
+          <app from="#lem13d" to="#lemEnd13d">
+            <lem>
+                        <hi rend="spaced">langen</hi>
+                    </lem>
+            <rdg wit="#Dm" n="a10r,11" source="#a10r_lb11">langen</rdg>
+            <rdg wit="#Cb" n="13,28">
+                        <hi rend="spaced">langen</hi> <note type="annotation">(Korrektur von Ns Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem14a" to="#lemEnd14a">
+            <lem>andern</lem>
+            <rdg wit="#Dm" n="a10r,14" source="#a10r_lb14">andren</rdg>
+            <rdg wit="#Cb" n="14,4">andern</rdg>
+                </app>
+          <app from="#lem14b" to="#lemEnd14b">
+            <lem>erreicht</lem>
+            <rdg wit="#Dm" n="a10r,24" source="#a10r_lb24">
+                        <hi rend="underline">erreicht</hi>
+                    </rdg>
+            <rdg wit="#Cb" n="14,26">erreicht</rdg>
+                </app>
+          <app from="#lem14c" to="#lemEnd14c">
+            <lem>Israel’s</lem>
+            <rdg wit="#Dm" n="a10r,27" source="#a10r_lb27">Israels</rdg>
+            <rdg wit="#Cb" n="14,33">Israel’s <note type="annotation">(Korrektur von Köselitz’ Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem15a" to="#lemEnd15a">
+            <lem>diesem Köder anbeissen</lem>
+            <rdg wit="#Dm" n="a10r,9" source="#a10r_lb9">diesen Köder einbeißen</rdg>
+            <rdg wit="#Cb" n="15,1">diesem Köder anbeissen</rdg>
+                </app>
+          <app from="#lem15b" to="#lemEnd15b">
+            <lem>verlockender, berauschender, betäubender,</lem>
+            <rdg wit="#Dm" n="a10r,29" source="#a10r_lb29">verlockender berauschender betäubender</rdg>
+            <rdg wit="#Cb" n="15,4-5">verlockender, berauschender, betäubender,</rdg>
+                </app>
+          <!-- NB. zu Z. 12: in Cb vom Setzer versehentlich 4 Wörter unterschlagen, was Kö korrigiert (was zu neuen Seitenumbruch führt!) – Korrekturen von div. Setzerfehler -->
+          <!-- manuell und digital alles koll. 050723 -->
+          
+          <div2 xml:id="GM0109">
+            <head>
+              <lb n="14"/>
+                        <lb edRef="#KGW #KSA" n="22"/>
+                        <seg type="lem" xml:id="lem15c"/>9.<anchor xml:id="lemEnd15c"/>
+                    </head>
+            <p>
+              <lb n="15" rend="indent"/>
+                        <lb edRef="#KGW #KSA" n="23" rend="indent"/>– „Aber was reden Sie noch von <hi rend="spaced">vornehmeren</hi> <lb n="16"/>
+                        <lb edRef="#KGW #KSA" n="24"/>Idealen! Fügen wir uns in die Thatsachen: das Volk <lb n="17"/>hat gesiegt <lb edRef="#KGW #KSA" n="25"/>– oder „die <seg type="lem" xml:id="lem15d"/>Sklaven“, oder „der Pöbel“, <lb n="18"/>oder „die Heerde“,<anchor xml:id="lemEnd15d"/> <lb edRef="#KGW #KSA" n="26"/>oder wie Sie es zu nennen belieben <lb n="19"/>– wenn dies durch die Ju<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="27"/>den <seg type="lem" xml:id="lem15e"/>geschehen<anchor xml:id="lemEnd15e"/> ist, wohlan! <lb n="20"/>so hatte nie ein Volk eine welt<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="28"/>historischere Mission. <lb n="21"/>„Die Herren“ sind abgethan; die Moral <lb edRef="#KGW #KSA" n="29"/>des gemeinen <lb n="22"/>Mannes hat gesiegt. Man mag diesen Sieg zugleich <lb n="23"/>
+                        <lb edRef="#KGW #KSA" n="30"/>als eine Blutvergiftung nehmen (er hat die Rassen <lb n="24"/>durch ein<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="31"/>ander gemengt) – ich widerspreche nicht; <lb n="25"/>unzweifelhaft<milestone unit="page" source="#Dm" n="a11r"/> ist aber <lb edRef="#KGW #KSA" n="32"/>diese Intoxikation <seg type="lem" xml:id="lem15f"/>
+                        <hi rend="spaced">gelungen</hi>.<anchor xml:id="lemEnd15f"/> <lb n="26"/>Die „Erlösung“ des <seg type="lem" xml:id="lem15g"/>Men<pc source="#KGW #KSA" force="weak">-</pc>
+                        <pb edRef="#KGW #KSA" n="284/270"/>
+                        <lb edRef="#KGW #KSA" n="1"/>schengeschlechtes<anchor xml:id="lemEnd15g"/> (nämlich von <lb n="27"/>„den Herren“) ist auf dem <lb edRef="#KGW #KSA" n="2"/>besten Wege; Alles ver<pc source="#Ed" force="weak">-</pc>
+                        <lb n="28"/>jüdelt oder verchristlicht oder verpöbelt <lb edRef="#KGW #KSA" n="3"/>sich zusehends <lb n="29"/>(was liegt an <seg type="lem" xml:id="lem15h"/>Worten!).<anchor xml:id="lemEnd15h"/> Der Gang dieser Vergif<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="4"/>tung, <lb n="30"/>durch den ganzen Leib der Menschheit hindurch, scheint <lb n="31"/>
+                        <lb edRef="#KGW #KSA" n="5"/>unaufhaltsam, ihr tempo und Schritt darf sogar von <lb n="32"/>nun an <lb edRef="#KGW #KSA" n="6"/>immer langsamer, feiner, unhörbarer, besonnener <pb n="16"/>
+                        <lb n="1"/>sein – man <lb edRef="#KGW #KSA" n="7"/>hat ja Zeit… Kommt der Kirche in die<pc source="#Ed" force="weak">-</pc>
+                        <lb n="2"/>ser Absicht heute noch <lb edRef="#KGW #KSA" n="8"/>eine <hi rend="spaced">nothwendige</hi> Aufgabe, <lb n="3"/>überhaupt noch ein Recht auf <lb edRef="#KGW #KSA" n="9"/>Dasein zu? Oder könnte <lb n="4"/>man ihrer entrathen? Quaeritur. Es <lb edRef="#KGW #KSA" n="10"/>scheint, dass sie <lb n="5"/>jenen Gang eher hemmt und zurückhält, statt <lb edRef="#KGW #KSA" n="11"/>ihn zu <lb n="6"/>beschleunigen? Nun, eben das könnte ihre Nützlichkeit <lb n="7"/>
+                        <lb edRef="#KGW #KSA" n="12"/>sein… Sicherlich ist sie nachgerade <seg type="lem" xml:id="lem16a"/>etwas<anchor xml:id="lemEnd16a"/> Gröb<pc source="#Ed" force="weak">-</pc>
+                        <lb n="8"/>liches und Bäu<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="13"/>risches, das einer zarteren Intelligenz, <lb n="9"/>einem eigentlich moder<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="14"/>nen Geschmacke widersteht. <lb n="10"/>Sollte sie sich zum Mindesten nicht <lb edRef="#KGW #KSA" n="15"/>etwas raffinieren?… <lb n="11"/>Sie entfremdet heute <seg type="lem" xml:id="lem16b"/>mehr,<anchor xml:id="lemEnd16b"/> als dass sie <lb edRef="#KGW #KSA" n="16"/>verführte… <lb n="12"/>Wer von uns würde wohl Freigeist sein, wenn es <lb edRef="#KGW #KSA" n="17"/>nicht <lb n="13"/>die Kirche gäbe? Die Kirche widersteht uns, <hi rend="spaced">nicht</hi> ihr <lb n="14"/>
+                        <lb edRef="#KGW #KSA" n="18"/>Gift… Von der Kirche abgesehn lieben auch wir das <lb n="15"/>Gift…“ <lb edRef="#KGW #KSA" n="19"/>– Dies der Epilog eines „Freigeistes“ zu <lb n="16"/>meiner Rede, eines <lb edRef="#KGW #KSA" n="20"/>ehrlichen Thiers, wie er reichlich <lb n="17"/>verrathen hat, überdies eines <lb edRef="#KGW #KSA" n="21"/>Demokraten; er hatte mir <lb n="18"/>bis dahin zugehört und hielt es nicht <lb edRef="#KGW #KSA" n="22"/>aus, mich schwei<pc source="#Ed" force="weak">-</pc>
+                        <lb n="19"/>gen zu hören. Für mich nämlich giebt es an die<pc source="#KGW #KSA" force="weak">-</pc>
+                        <lb edRef="#KGW #KSA" n="23"/>ser <lb n="20"/>Stelle viel zu schweigen. –
+            </p>
+          </div2>
+          <app from="#lem15c" to="#lemEnd15c">
+            <lem>9.</lem>
+            <rdg wit="#Dm" n="a10r,34" source="#a10r_lb34">10.</rdg>
+            <rdg wit="#Cb" n="15,14">9.</rdg>
+                </app>
+          <app from="#lem15d" to="#lemEnd15d">
+            <lem>Sklaven“, oder „der Pöbel“, oder „die Heerde“,</lem>
+            <rdg wit="#Dm" n="a10r,36" source="#a10r_lb36">Sklaven“ oder „der Pöbel“ oder „die Heerde“</rdg>
+            <rdg wit="#Cb" n="15,17-18">Sklaven“, oder „der Pöbel“, oder „die Heerde“,</rdg>
+                </app>
+          <app from="#lem15e" to="#lemEnd15e">
+            <lem>geschehen</lem>
+            <rdg wit="#Dm" n="a10r,36" source="#a10r_lb36">geschehn</rdg>
+            <rdg wit="#Cb" n="15,19">geschehen</rdg>
+                </app>
+          <app from="#lem15f" to="#lemEnd15f">
+            <lem>
+                        <hi rend="spaced">gelungen</hi>.</lem>
+            <rdg wit="#Dm" n="a11r,1" source="#a11r_lb1">
+                        <hi rend="underline">gelungen</hi>!</rdg>
+            <rdg wit="#Cb" n="15,25">
+                        <hi rend="spaced">gelungen</hi>.</rdg>
+                </app>
+          <app from="#lem15g" to="#lemEnd15g">
+            <lem>Menschengeschlechtes</lem>
+            <rdg wit="#Dm" n="a11r,1" source="#a11r_lb1">Menschengeschlechts</rdg>
+            <rdg wit="#Cb" n="15,26">Menschengeschlechtes</rdg>
+                </app>
+          <app from="#lem15h" to="#lemEnd15h">
+            <lem>Worten!).</lem>
+            <rdg wit="#Dm" n="a11r,2" source="#a11r_lb2">Worten!)</rdg>
+            <rdg wit="#Cb" n="15,29">Worten!).</rdg>
+                </app>
+          <app from="#lem16a" to="#lemEnd16a">
+            <lem>etwas</lem>
+            <rdg wit="#Dm" n="a11r,6" source="#a11r_lb6">Etwas</rdg>
+            <rdg wit="#Cb" n="16,7">etwas <note type="annotation">(Korrektur von Köselitz’ Hand)</note>
+                    </rdg>
+                </app>
+          <app from="#lem16b" to="#lemEnd16b">
+            <lem>mehr,</lem>
+            <rdg wit="#Dm" n="a11r,8" source="#a11r_lb8">mehr</rdg>
+            <rdg wit="#Cb" n="16,10">mehr,</rdg>
+                </app><!-- in Dm sic! in Ed 16,11! -->
+          <!-- manuell und digital alles koll. 210723 -->
+          
+          <div2 xml:id="GM0117"/>
+        </div1>
+        <div1 xml:id="GM02">
+          <div2 xml:id="GM0201"/>
+          <div2 xml:id="GM0225"/>
+        </div1>
+        <div1 xml:id="GM03">
+          <div2 xml:id="GM0301"/>
+          <div2 xml:id="GM0328"/>
+        </div1>
+        <div1 xml:id="GMInhalt">
+          <div2 xml:id="GMInhaltsverzeichnis"/>
+        </div1>
+        
+      </body>
+     <back>
+       <div1 type="appendix">
+       </div1>
+       <div1 type="apparatus">
+         <listApp>
+           <app/>
+         </listApp>
+       </div1>
+     </back>
+   </text>
+</TEI>

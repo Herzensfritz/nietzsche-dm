@@ -1,0 +1,344 @@
+<?teipublisher template="view.html" odd="teipublisher.odd" view="div" media="pdf epub print"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+   <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>Zur Genealogie der Moral. Anhang 2: Dokumente zur Entstehungs- und Druckgeschichte</title>
+          <author xml:id="N">Friedrich Nietzsche</author>
+          <editor xml:id="editors">
+                    <name>Beat Röllin</name>, <name>Christian Steiner</name>, <name>René Stockmar</name>
+                </editor>
+          <respStmt>
+            <resp>Projektleiter: </resp>
+                    <name>Hubert Thüring</name>
+          </respStmt>
+        </titleStmt>
+        <publicationStmt>
+          <publisher>Nietzsche-Edition, Universität Basel</publisher>
+                <date>tba</date>
+        </publicationStmt>
+        <seriesStmt>
+          <title>Der späte Nietzsche. Digitale Edition der Druckdokumente</title>
+        </seriesStmt>
+        <sourceDesc>
+                <listBibl>
+                    <head>
+          Bibliographie</head><!-- NB! analog in teiHeader von Dm, Cb, Ed/KGW/KSA, QV -->
+          <bibl xml:id="Dm">Druckmanuskript zu Zur Genealogie der Moral. Eine Streitschrift. Leipzig: C. G. Naumann 1887 (Mette-Signatur: D 20; GSA-Signatur: 71/27,1, 71/27,2). Aufbewahrungsort: Goethe- und Schiller-Archiv, Weimar. [=Dm]</bibl>
+          <bibl xml:id="Cb">Zur Genealogie der Moral [Korrekturbogenexemplar] (Mette-Signatur: K 11; HAAB-Signatur: C 4616). Aufbewahrungsort: Herzogin Anna Amalia Bibliothek, Weimar. [=Cb]</bibl><!-- und von hier ein Link?? -->
+          <bibl xml:id="Ed">Friedrich Nietzsche: Zur Genealogie der Moral. Eine Streitschrift. Leipzig: C. G. Naumann 1887 (Mette-Signatur: E 40) [=Ed]. Exemplar HAAB: ed. cit. (HAAB-Signatur: C 4620). Aufbewahrungsort: Herzogin Anna Amalia Bibliothek, Weimar.</bibl>
+          <bibl xml:id="KGW">Nietzsche: Werke. Kritische Gesamtausgabe. Herausgegeben von Giorgio Colli und Mazzino Montinari. Band VI 2: Friedrich Nietzsche: Jenseits von Gut und Böse. Zur Genealogie der Moral. (1886-1887). Berlin: Walter de Gruyter 1968. [=KGW]</bibl>
+          <bibl xml:id="KSA">Friedrich Nietzsche: Sämtliche Werke. Kritische Studienausgabe. Herausgegeben von Giorgio Colli und Mazzino Montinari. Band 5: Friedrich Nietzsche: Jenseits von Gut und Böse. Zur Genealogie der Moral. München: Deutscher Taschenbuch Verlag; Berlin/New York: Walter de Gruyter 1988 (2., durchges. Aufl.). [=KSA]</bibl>
+          <bibl xml:id="Gast1908">Peter Gast [= Heinrich Köselitz] (Hg.): Friedrich Nietzsches Briefe an Peter Gast. 2. Aufl. Leipzig: Insel 1908.</bibl>
+          <bibl xml:id="Mette1933">Hans Joachim Mette: Sachlicher Vorbericht zur Gesamtausgabe der Werke Friedrich Nietzsches. In: Friedrich Nietzsche: Werke und Briefe. Historisch-kritische Gesamtausgabe. Werke. Bd. I. München: C. H. Beck’sche Verlagsbuchhandlung 1933 [=BAW I], XXXI-CXXVI.</bibl>
+                </listBibl>
+            </sourceDesc>
+      </fileDesc>
+     <encodingDesc>
+            <projectDesc>
+                <p/>
+            </projectDesc>
+       <variantEncoding method="location-referenced" location="internal"/>
+     </encodingDesc>  
+   </teiHeader>
+   <text>
+     <front/>
+      <body>
+            <p/>
+        </body>
+     <back>
+       <div1 type="appendix"><!-- statt verdoppeln alles mit seg+change!! (dann aber alle app in p reinnehmen!) -->
+         
+         <head>Dokumente zur Entstehungs- und Druckgeschichte</head>
+         
+         <!--<div2 xml:id="apdx1887">
+           <head>N an @, <date when="1887">@.@.1887</date> (KGB III 5/KSB 8 Nr. @)</head>
+           <p>
+                        <seg change="#@"/>
+                    </p>
+           <app>
+                        <lem/>
+                        <note type="editorial"/>
+                    </app>
+         </div2>-->
+         
+         <div2 xml:id="apdx1887-06">
+           <head>Notiz, <date notAfter="1887-06-05">Anfang Juni 1887</date> (BW 272, 1r)</head>
+           <p>
+                        <seg type="passage" change="#preliminaryContext">Jenseits v. G. u B. <hi rend="underline">420</hi> Ex. übrig / 66 Freiexempl. / also 114 verkauft. / nach der Ostermesse 1887.<app>
+                                <note type="editorial">Anfang Juni 1887 hinzugefügte Randnotiz Ns zu einer Auflistung der Restbestände seiner Schriften im Verlag von E. Schmeitzner, in E. Schmeitzner an N, 1.7.1886 (KGB III 4, Nr. 387).</note>
+                            </app>
+                        </seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-06-08">
+           <head>N an H. Köselitz, <date when="1887-06-08">8.6.1887</date> (KGB III 5/KSB 8 Nr. 856)</head>
+           <p>
+                        <seg type="passage" change="#preliminaryContext">Die Leipziger Buchhändlermesse hat mir ein lehrreiches Resultat abgeworfen. Dies Mal, in Bezug auf Jens. v. G. u. B. ist buchhändlerischer Seits Alles, was noth thut (und etwas mehr sogar!) gethan worden: also dem Herrn Schmeitzner ist nichts mehr in die Schuhe zu schieben, wie ich es bisher that. <hi rend="undeline">Trotzdem</hi> – ist das Ergebniß dasselbe wie bei Schmeitzner: oder vielmehr, es ist noch schlechter! Es sind überhaupt nur 114 Exemplare <hi rend="underline">verkauft</hi> worden (während allein 66 Ex. an Zeitungen u Zeitschriften verschenkt worden sind) / Lehrreich! Nämlich <hi rend="underline">man</hi> <hi rend="doubleUnderline">will</hi> partout meine Litteratur <hi rend="underline">nicht</hi>: und <hi rend="underline">ich</hi> – <hi rend="doubleUnderline">darf</hi> mir den Luxus des Druckes nicht mehr gestatten. –<app>
+                                <note type="editorial">Vgl. auch N an E. Förster, 5.6.1887 (KGB III 5/KSB 8 Nr. 855), und N an F. Overbeck, Be (N VII 3, 75f. [KGW IX 3]), ca. 8.6.1887 (KGB III 5/KSB 8 Nr. 858).</note>
+                            </app>
+                        </seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-06-24">
+           <head>N an C. G. Naumann, <date when="1887-06-24">24.6.1887</date> (KGB III 5/KSB 8 Nr. 866)</head>
+           <p>
+                        <seg type="passage" change="#preliminaryContext">Ihre Mittheilungen über das Ergebniß der Ostermesse, für die ich Ihnen auf das Verbindlichste zu danken habe, gaben mir reichlich Anlaß zum Nachdenken: ich habe mich ersichtlich, obschon ich in meinen Erwartungen nicht unbescheiden war, etwas <hi rend="underline">verrechnet</hi>. Das thut mir umso mehr leid, als ich gerne gerade <hi rend="underline">das</hi> Buch möglichst bald <hi rend="underline">neu</hi> herauszugeben gedachte, etwa im Umfange verdoppelt. Ich nahm an, daß man besser auf dieses kleine Buch „anbeißen“ werde, und daß es dann leichter sein dürfte, das vervollständigte und stärkere Werk zum Verkauf zu bringen. Aber es ist klar, daß ich den Geschmack der gegenwärtigen Deutschen zu wenig kenne.</seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-07">
+           <head>Titelentwurf, vermutlich <date when="1887-07-01" cert="high">Juli 1887</date> (BW 272, 2v [KGW IX 13])</head>
+           <p>
+                        <seg type="passage" change="#GM01formerVersion">
+                            <hi rend="underline">Jenseits</hi> <hi rend="underline">von</hi> <hi rend="underline">Gut</hi> <hi rend="underline">und</hi> <hi rend="underline">Schlecht?</hi> / Eine / philosophische Streitschrift. / (Zur Ergänzung und Verdeutlichung des letztveröffentlichten Buchs „Jenseits v. G. u. B.“) / Von / Friedrich Nietzsche.</seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-07-06">
+           <head>N an F. Overbeck, <date when="1887-07-06">6.7.1887</date> (KGB III 5/KSB 8 Nr. 873)</head>
+           <p>
+                        <seg type="passage" change="#preliminaryContext">Eben erhielt ich Mittheilungen und Anfragen aus Weimar, seitens des Archivrath Burckart [recte: Burkhardt], aus denen sich ergiebt, daß sich komischer Weise die <hi rend="underline">Goethe</hi>forschung auch in meine Familiengeschichte mengt<app>
+                                <note type="editorial">Vgl. auch N an C. A. H. Burkhardt, Be (N VII 3, 87 [KGW IX 3]), Mitte Juli 1887 (KGB III 5/KSB 8 Nr. 875): „Noch eine Bemerkung zu der genealogischen [sic!] Notiz auf meiner letzten Karte.“; vgl. N an F. Overbeck, 17.7.1887 (KGB III 5/KSB 8 Nr. 876), und N an H. Köselitz, 18.7.1887 (KGB III 5/KSB 8 Nr. 878).</note>
+                            </app>
+                        </seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-07-17a">
+           <head>N an C. G. Naumann, <date when="1887-07-17">17.7.1887</date> (KGB III 5/KSB 8 Nr. 877)</head>
+           <p>
+                        <seg type="passage" change="#GM01formerVersion">Hier, geehrtester Herr Verleger, ist eine kleine <hi rend="underline">Streitschrift</hi> die in direktem Zusammenhange mit dem voriges Jahr erschienenen „Jenseits“ steht: schon dem <hi rend="underline">Titel</hi> nach<app>
+                                <lem>schon dem <hi rend="underline">Titel</hi> nach</lem>
+                                <note type="editorial">Titel vermutlich „<hi rend="underline">Jenseits</hi> <hi rend="underline">von</hi> <hi rend="underline">Gut</hi> <hi rend="underline">und</hi> <hi rend="underline">Schlecht?</hi> Eine philosophische Streitschrift.“, vgl. den <ref target="#apdx1887-07">Titelentwurf</ref> in BW 272, 2v (KGW IX 13).</note>
+                            </app>. Vielleicht bringt sie das zu wege, die Aufmerksamkeit auf jenes Buch zu lenken: obschon sie gewiß nicht in dieser Absicht entstanden ist. – Meine Bitte ist, den Druck derselben <hi rend="underline">umgehend</hi> zu beginnen<app>
+                                <lem>Druck … beginnen</lem>
+                                <note type="editorial">mit dem Druck wurde noch nicht begonnen, da N das Manuskript umgehend zurückverlangte, vgl. <ref target="#apdx1887-07-20">N an C. G. Naumann, 20.7.1887</ref> (KGB III 5/KSB 8 Nr. 880).</note>
+                            </app>; Ausstattung, Typen, Papier, Zahl der Exemplare — Alles <hi rend="underline">exakt</hi> wie bei „Jenseits“: so daß diese Abhandlung wirklich als Fortsetzung von jenem „Jenseits“ auch äußerlich sich ausnimmt.</seg> <seg type="passage" change="#proofreading">Auch der Correkturengang der gleiche: ein Exemplar <hi rend="underline">mit</hi> <hi rend="underline">dem</hi> <hi rend="underline">Manusc.</hi> an Herrn Köselitz (Venezia, San Canciano calle nuova 5256) und gleichzeitig ein Exemplar an mich <hi rend="underline">hierher</hi>.</seg> […] <seg type="passage" change="#GM01formerVersion">Mit dem Wunsche, in einem gewissen Sinne auch einem <hi rend="underline">Ihrer</hi> Vorschläge<app>
+                                <lem>einem <hi rend="underline">Ihrer</hi> Vorschläge</lem>
+                                <note type="editorial">vielleicht in Bezug auf C. G. Naumanns Einschätzung zu den Absatzzahlen von JGB (noch vor der Leipziger Ostermesse): „daß sich ein eigentlich großer Absatz nur dann erreichen läßt, wenn die Neugierde des Publikums durch witzige Recensionen und scharfe Controverse [sic!] geweckt wird“ (C. G. Naumann an N, 22.2.1887, KGB III 6 Nr. 436).</note>
+                            </app> in Betreff Verbreitung meiner Litteratur mit dieser kleinen Schrift entsprochen zu haben</seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-07-17b">
+           <head>N an F. Overbeck, <date when="1887-07-17">17.7.1887</date> (KGB III 5/KSB 8 Nr. 876)</head>
+           <p>
+                        <seg type="passage" change="#TertullianPassage">eine Bitte an Dich als „Kirchenvater“ – mir fehlt dringlich eine Stelle des Tertullian, in der diese schöne Seele die Freuden voraus schildert, welche er im „Jenseits“ genießen werde beim Anblick der Martern seiner Feinde und Antichristlich-Gesinnten: die Martern werden sehr ironisch u. bösartig spezialisirt in Anspielung auf die ehemaligen Berufsarten dieser Feinde. Ist es Dir möglich, Dich dieser Stelle zu erinnern? und sie mir eventuell zu senden? (originaliter oder auch übersetzt: ich habe sie <hi rend="underline">deutsch</hi> nöthig)<app>
+                                <note type="editorial">Vgl. <ref target="#apdx1887-07-30">N an F. Overbeck, 30.8.1887</ref> (KGB III 5/KSB 8 Nr. 900).</note>
+                            </app>
+                        </seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-07-18a">
+           <head>N an H. Köselitz, <date when="1887-07-18">18.7.1887</date> (KGB III 5/KSB 8 Nr. 878)</head>
+           <p>
+                        <seg type="passage" change="#GM01beginning">Zuletzt will ich billig sein und eine wesentliche Veränderung seit <date when="1887-07-10">8 Tagen</date>
+                            <app>
+                                <lem>seit 8 Tagen</lem>
+                                <note type="editorial">vgl. auch <ref target="@#apdx1887-08-08b">N an an H. Köselitz, 8.8.1887</ref> (KGB III 5/KSB 8 Nr. 886).</note>
+                            </app> ungefähr zugestehn […] Diese besseren Tage habe ich sofort vehement ausgenutzt</seg> <seg type="passage" change="#GM01formerVersion">und eine kleine Streitschrift abgefaßt, die das Problem meines letzten Buchs, wie mir scheint, recht <hi rend="underline">vor</hi> <hi rend="underline">die</hi> <hi rend="underline">Augen</hi> bringt […] Vielleicht bringt es diese kleine Streitschrift zu Wege, daß man ein paar Exemplare meiner <hi rend="underline">älteren</hi> Schriften kauft</seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-07-18b">
+           <head>N an C. G. Naumann (Postkarte), <date when="1887-07-18">18.7.1887</date> (KGB III 5/KSB 8 Nr. 879)</head>
+           <p>
+                        <seg type="passage" change="#GM01formerVersion">Bitte, geehrtester Herr Verleger, ordnen Sie an, daß man nicht mehr als 30 Zeilen auf die Seite setzt – noch lieber wäre mir 29<app>
+                                <lem>30 … 29</lem>
+                                <note type="editorial">schließlich wurden, analog zu JGB, 33, für die Vorrede 29 Zeilen pro Seite gesetzt, vgl. bereits <ref target="#apdx1887-07-17a">N an C. G. Naumann, 17.7.1887</ref> (KGB III 5/KSB 8 Nr. 877) und definitiv <ref target="#apdx1887-07-29">N an C. G. Naumann, 29.7.1887</ref> (KGB III 5/KSB 8 Nr. 882).</note>
+                            </app>. Brief und Manuscript<app>
+                                <lem>Brief und Manuscript</lem>
+                                <note type="editorial">Brief und erste Dm-Fassung vom 17. Juli, vgl. <ref target="#apdx1887-07-29">N an C. G. Naumann, 29.7.1887</ref> (KGB III 5/KSB 8 Nr. 882).</note>
+                            </app> wird hoffentlich in Ihren werthen Händen sein? Nochmals darum bittend, daß man ungesäumt an den Druck geht</seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-07-20">
+           <head>N an C. G. Naumann (Telegramm), <date when="1887-07-20">20.7.1887</date> (KGB III 5/KSB 8 Nr. 880)</head>
+           <p>
+                        <seg type="passage" change="#GM01MsBack">Bitte Manuscript<app>
+                                <lem>Manuscript</lem>
+                                <note type="editorial">erste Dm-Fassung vom 17. Juli 1887.</note>
+                            </app> wieder zurück Zwischenfall / Nietzsche</seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-07-24">
+           <head>N an H. Köselitz (Postkarte), <date when="1887-07-24">24.7.1887</date> (KGB III 5/KSB 8 Nr. 881)</head>
+           <p>
+                        <seg type="passage" change="#GM01MsBack">Eine Andeutung meines letzten Briefs, daß bei Naumann gedruckt werde, war verfrüht; ich habe telegraphisch mir das Manuscript<app>
+                                <lem>Manuscript</lem>
+                                <note type="editorial">erste Dm-Fassung vom 17. Juli 1887.</note>
+                            </app> zurück bestellt, nicht aus Unzufriedenheit damit, sondern weil inzwischen das Begonnene weiter gewachsen ist<app>
+                                <lem>gewachsen ist</lem>
+                                <note type="editorial">aus: wächst</note>
+                            </app> und sobald auch noch kein Ende absehn läßt.</seg> <seg type="passage" change="#GMdefiniteTitle">Titel und Thema: „zur Genealogie der Moral. Eine Streitschrift“<app>
+                                <lem>zur Genealogie der Moral</lem>
+                                <note type="editorial">erstmalige Erwähnung des definitiven Titels.</note>
+                            </app>.</seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-07-29"><!-- evtl. verdoppeln wg. #Correkturen?! -->
+           <head>N an C. G. Naumann, <date when="1887-07-29">29.7.1887</date> (KGB III 5/KSB 8 Nr. 882)</head>
+           <p>
+                        <seg type="passage" change="#GM01-02finalVersion">nunmehr ist Alles in Ordnung, der „Zwischenfall“<app>
+                                <lem>Zwischenfall</lem>
+                                <note type="editorial">vgl. <ref target="#apdx1887-07-20">N an C. G. Naumann, 20.7.1887</ref> (KGB III 5/KSB 8 Nr. 880)</note>
+                            </app> beseitigt – der Druck kann sofort beginnen (oder vielmehr: ich bitte darum, <hi rend="underline">daß</hi> <hi rend="underline">er</hi> <hi rend="underline">sofort</hi> <hi rend="underline">beginnt</hi> und mit großer Lebendigkeit durchgeführt wird, damit die ganze Sache vor meiner Abreise von hier erledigt ist: 6–7 Bogen) In Betreff der Ausstattung, Papier, Lettern, <hi rend="underline">Zahl</hi> <hi rend="underline">der</hi> <hi rend="underline">Zeilen</hi>
+                            <app>
+                                <lem>
+                                    <hi rend="underline">Zahl</hi> <hi rend="underline">der</hi> <hi rend="underline">Zeilen</hi>
+                                </lem>
+                                <note type="editorial">vgl. <ref target="#apdx1887-07-17a">N an C. G. Naumann, 17.7.1887</ref> (KGB III 5/KSB 8 Nr. 877) und <ref target="#apdx1887-07-18b">N an C. G. Naumann, 18.7.1887</ref> (KGB III 5/KSB 8 Nr. 879)</note>
+                            </app> usw. bleibt es bei meiner anfänglichen Bestimmung: absolute <hi rend="underline">Gleichheit</hi> mit „Jens v. G. u. Böse.“ Die beiden Bücher müssen zum <hi rend="underline">Verwechseln</hi> ähnlich aussehn. (Also auch die <hi rend="underline">Vorrede</hi> nach dem Muster von Jens. v. G. u B., ganz wie <hi rend="underline">dort</hi> die Vorrede arrangirt ist)</seg> <seg type="passage" change="#proofreading">Auch in Betreff des Correkturengangs bleibt es bei dem zuletzt Angeordneten. Die Adresse des Herrn Köselitz in Venedig haben Sie.</seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-07-30">
+           <head>N an H. Köselitz (Postkarte), <date when="1887-07-30">30.7.1887</date> (KGB III 5/KSB 8 Nr. 883)</head>
+           <p>
+                        <seg type="passage" change="#GM01-02finalVersion">Mein Manuscript<app>
+                                <lem>Manuscript</lem>
+                                <note type="editorial">Dm von GM I-II sowie Titelblatt und Vorrede 1-7.</note>
+                            </app> ist fertig, sogar in der Abschrift<app>
+                                <lem>Abschrift</lem>
+                                <note type="editorial">die unmittelbaren Vorarbeiten dazu sind größtenteils nicht erhalten geblieben, vgl. aber N VII 3, 70 (KGW IX 3; Vs GM II 19), Mp XVII, 72v und 104v, 105v (KGW IX 13; Vs GM II 17 und Vs GM II 7); vgl. auch <ref target="#apdx1887-08-14">N an C. G. Naumann, 14.8.1887</ref> (KGB III 5/KSB 8 Nr. 889).</note>
+                            </app>. Es wird doch noch <hi rend="underline">gedruckt</hi>.</seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-08-08a">
+           <head>N an H. Köselitz, <date when="1887-08-08">8.8.1887</date> (KGB III 5/KSB 8 Nr. 886)</head>
+           <p>
+                        <seg type="passage" change="#proofreading">Es ist möglich, daß alsbald auch Naumannsche Correkturen eintreffen: seien Sie, lieber Freund, geduldig!</seg> <seg type="passage" change="#GM01-02finalVersion">Zum Wenigsten verspreche ich Ihnen ein paar Überraschungen bei dieser „Streitschrift“. Sie ist in der That rasch beschlossen, begonnen und fertig gemacht: nach dem Postschein habe ich das Ms. (zum 2. Mal)<app>
+                                <lem>zum 2. Mal</lem>
+                                <note type="editorial">zum ersten Mal am <ref target="#apdx1887-07-17a">17. Juli 1887</ref> (KGB III 5/KSB 8 Nr. 877)  an Druckerei geschickt.</note>
+                            </app> an Naumann am <date when="1887-07-30">30. Juli</date> abgeschickt</seg>: <seg type="passage" change="#GM01beginning">der Anfang der Arbeit, leider nicht von mir notirt, muß gegen den <date when="1887-07-10">10. Juli</date>
+                            <app>
+                                <lem>gegen den 10. Juli</lem>
+                                <note type="editorial">vgl. auch <ref target="@#apdx1887-07-18">N an an H. Köselitz, 18.7.1887</ref> (KGB III 5/KSB 8 Nr. 878).</note>
+                            </app> gewesen sein. Bis dahin ungefähr war ich krank und <hi rend="underline">extrem</hi> indisponirt.</seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-08-11">
+           <head>H. Köselitz an N,, <date when="1887-08-11">11.8.1887</date> (KGB III 6 Nr. 468)</head>
+           <p>
+                        <seg change="#proofreading">Haben Sie herzlichsten Dank […] für den ersten, mit Frohlocken gelesenen Correkturbogen<app>
+                                <note type="editorial">Cb 1 ist in doppelter Ausführung erhalten geblieben: <ref target="#Cb">K 11, Cb 1a, 1-16 (Exemplar N), Cb 1b, 1-16 (Exemplar Köselitz)</ref>.</note>
+                            </app>
+                        </seg>
+                    </p>
+         </div2><!-- vgl. ebenso apdx1908a -->
+         
+         <div2 xml:id="apdx1887-08-14">
+           <head>N an C. G. Naumann, <date when="1887-08-14">14.8.1887</date> (KGB III 5/KSB 8 Nr. 889)</head>
+           <p>
+                        <seg change="#proofreading">Geehrtester Herr Verleger, so eben habe ich mit bestem Danke für den hiermit bewiesenen „<hi rend="underline">guten</hi> Willen“, den Druck rasch zu Ende zu führen, den 3.ten Bogen erhalten. Morgen sende ich die Correktur des 2.ten: der erste, druckfertig, muß schon wieder in Ihren Händen sein.<app>
+                                <note type="editorial">Cb 2 und Cb 3 nicht überliefert, nur Cb 1 ist, in doppelter Ausführung, erhalten geblieben.</note>
+                            </app>
+                        </seg> <seg change="#GM03finalVersion">In drei, vier Tagen<app>
+                                <lem>drei, vier Tagen</lem>
+                                <note type="editorial">zuletzt dauerte es noch zwei Wochen, bis N das Druckmanuskript von GM III an die Druckerei schickte, vgl. <ref target="#apdx1887-08-28">N an C. G. Naumann, 28.8.1887</ref> (KGB III 5/KSB 8 Nr. 897).</note>
+                            </app> folgt der <hi rend="underline">Rest</hi> des Manuscriptes, die <hi rend="underline">dritte</hi> Abhandlung: sie wäre eher fertig geworden, wenn nicht meine Augen protestirt hätten: doch sind ¾ schon abgeschrieben.<app>
+                                <lem>abgeschrieben</lem>
+                                <note type="editorial">die unmittelbaren Vorarbeiten dazu sind größtenteils nicht erhalten geblieben, vgl. aber Mp XV, 113r (KGW IX 12; Vs GM III 22), Mp XVII, 33v, 90v, 111v (KGW IX 13; Vs GM III 22, Vs GM III 6, Vs GM III 28); vgl. auch <ref target="#apdx1887-07-30">N an H. Köselitz, 30.7.1887</ref> (KGB III 5/KSB 8 Nr. 883).</note>
+                            </app>
+                        </seg>
+                    </p>
+         </div2>
+        
+         <div2 xml:id="apdx1887-08-28">
+           <head>N an C. G. Naumann, <date when="1887-08-28">28.8.1887</date> (KGB III 5/KSB 8 Nr. 897)</head>
+           <p>
+                        <seg type="passage" change="#GM03finalVersion">hiermit folgt endlich die <hi rend="underline">dritte</hi> Schluß-(Abhandlung) – zu spät, wie ich mit Bedauern sage, ich war viel krank, die ganze letzte Zeit. Doch bilden jetzt die drei Abhandlungen ein gutes <hi rend="underline">Ganze</hi> / Dem Manuscript der Abhandlung (das <hi rend="underline">von hinten</hi> anfängt NB!)<app>
+                                <lem>von hinten anfängt NB!</lem>
+                                <note type="editorial">die Niederschrift von GM III muss in einem Arbeitsheft erfolgt sein, das N seiner Eigenart gemäß von hinten nach vorn jeweils linksseitig beschriftete, und das Manuskript muss daraufhin der Druckerei in noch geheftetem Zustand zugestellt worden sein (mit Ausnahme von Blatt b1rv, welches N nachträglich b2rv ff. vorangestellt und vermutlich in das Manuskript einglegt hatte). Spätestens für den Korrekturdurchgang, im Zuge dessen die jeweils gesetzten Bogen zusammen mit den entsprechenden Manuskriptseiten der Druckvorlage an Köselitz zur Kontrolle verschickt wurden, muss das Manuskript von der Druckerei aufgetrennt worden sein.</note>
+                            </app> liegen noch zwei Blätter bei, einmal die / 1) <hi rend="underline">Inhalts-Angabe</hi>, am Schlusse des Buchs oder <hi rend="underline">vor</hi> den drei Abhandlungen einzufügen / 2) ein Nachtrag zur <hi rend="underline">Vorrede</hi>.</seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-07-30a">
+           <head>N an F. Overbeck, <date when="1887-08-30">30.8.1887</date> (KGB III 5/KSB 8 Nr. 900)</head>
+           <p>
+                        <seg type="passage" change="#TertullianPassage">Noch habe ich Dir nicht für die Tertullianstelle gedankt, ich habe von Deinen adnotat. [sc. adnotationes] dazu den <hi rend="underline">unbefangensten</hi> Gebrauch gemacht (nämlich in einer Abhandlung, die jetzt gedruckt wird): ein Stück der Stelle fand sich noch vor Eintreffen Deines Briefes in meinen Manuscripten, aber es war mir sehr werthvoll, sie in extenso zu bekommen.</seg> – <seg type="passage" change="#preliminaryContext">Das Resultat vom Verkauf von „Jenseits“ ist sehr lehrreich […] Trotzdem schien es mir nothwendig, diesem „Jenseits“ von mir aus etwas zu Hülfe zu kommen: und so habe ich ein paar gute Wochen benutzt, um in Gestalt von 3 Abhandlungen das Problem des genannten Buchs noch einmal zu präcisiren.<app>
+                                <note type="editorial">Vgl. <ref target="@#apdx1887-07-17b">N an F. Overbeck, 17.7.1887</ref> (KGB III 5/KSB 8 Nr. 876).</note>
+                            </app>
+                        </seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-09-08">
+           <head>N an H. Köselitz, <date when="1887-09-08">8.9.1887</date> (KGB III 5/KSB 8 Nr. 903)</head>
+           <p>
+                        <seg type="passage" change="#proofreading">Naumann sandte gestern [<date when="1887-09-07">7.9.1887</date>] den 4ten, heute (Donnerstag) [<date when="1887-09-08">8.9.1887</date>] den fünften Bogen.<app>
+                                <note type="editorial">Cb 4 und Cb 5, nicht überliefert.</note>
+                            </app>
+                        </seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1887-11-12" change="#distribution">
+           <head>H. Köselitz an N, <date when="1887-11-12">12.11.1887</date> (KGB III 6 Nr. 495)</head>
+           <p>
+                        <seg change="#distribution">ich Undankbarer habe noch mit keiner Silbe Ihres <date when="1887-11-12">heute</date> glücklich angekommenen Buches gedacht. Naumann schickte zwei Exemplare.<app>
+                                <note type="editorial">Vgl. auch <ref target="#apdx1908d">Gasts Anmerkung zu Ns Brief vom 3.11.1887</ref>.</note>
+                            </app>
+                        </seg>
+                    </p>
+           
+         </div2>
+         
+         <div2 xml:id="apdx1908a">
+           <head>P. Gast (H. Köselitz), Anmerkung zu Ns Brief vom 18.7.1887 (<ref target="#Gast1908">Gast 1908</ref>, 496)</head>
+           <p>
+                        <seg type="passage" change="#proofreading">der 1. Bogen der „Genealogie der Moral“ kam am <date when="1887-08-09">9. Aug.</date> zu mir<app>
+                                <note type="editorial">Cb 1 ist in doppelter Ausführung erhalten geblieben: <ref target="#Cb">K 11, Cb 1a, 1-16 (Exemplar N), Cb 1b, 1-16 (Exemplar Köselitz)</ref>.</note>
+                            </app>
+                        </seg>
+                    </p>
+         </div2><!-- vgl. ebenso apdx1887-08-11 -->
+         
+         <div2 xml:id="apdx1908b">
+           <head>P. Gast (H. Köselitz), Anmerkung zu Ns Brief vom 18.8.1887 (<ref target="#Gast1908">Gast 1908</ref>, 496)</head>
+           <p>
+                        <seg type="passage" change="#proofreading">Der 3. Correkturbogen war an mich von der Druckerei einen Tag später als an N. abgesandt und seine Auslieferung auch noch durch die Venediger Post verzögert worden.<app>
+                                <note type="editorial">Cb 3, nicht überliefert. Vgl. N an H. Köselitz, @@@@</note>
+                            </app>
+                        </seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1908c">
+           <head>P. Gast (H. Köselitz), Anmerkung zu Ns Brief vom 15.9.1887 (<ref target="#Gast1908">Gast 1908</ref>, 497)</head>
+           <p>
+                        <seg type="passage" change="#proofreading">bis zur Ankunft N.’s in Venedig [<date when="1887-09-21">21.9.1887</date>] waren 7 Bogen der „Genealogie“ gesetzt; die übrigen 5 ½ Bogen wurden bis zum <date when="1887-10-19">19. Okt.</date> erledigt.<app>
+                                <note type="editorial">Cb 1-12 (Cb 12 = ½ Bogen) und Cb Titel; Cb 1 in doppelter Ausführung und von Cb 10 ein unkorrigiertes Exemplar überliefert, die restlichen Bogen nicht überliefert.</note>
+                            </app>
+                        </seg>
+                    </p>
+         </div2>
+         
+         <div2 xml:id="apdx1908d">
+           <head>P. Gast (H. Köselitz), Anmerkung zu Ns Brief vom 3.11.1887 (<ref target="#Gast1908">Gast 1908</ref>, 499)</head>
+           <p>
+                        <seg type="passage" change="#distribution">die ersten fertigen Exemplare der „Genealogie der Moral“ wurden am <date when="1887-11-10">10. Nov. 87</date> aus Leipzig nach Nizza und Venedig gesandt.<app>
+                                <note type="editorial">Vgl. <ref target="#apdx1887-11-12">H. Köselitz an N, 12.11.1887</ref> (KGB III 6 Nr. 495)</note>
+                            </app>
+                        </seg>
+                    </p>
+         </div2>
+         
+       </div1>
+       <div1 type="apparatus">
+         <listApp>
+           <app/>
+         </listApp>
+       </div1>
+     </back>
+   </text>
+</TEI>

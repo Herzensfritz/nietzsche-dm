@@ -1,0 +1,20 @@
+
+.edRefLB  {
+    display: none;
+}
+
+.edRefLB.toggle {
+    display: inline-block;
+}
+.popoverTarget {
+    text-decoration: var(--pb-toolbar-background-color) wavy underline;
+}
+.popoverTargetCorr {
+    text-decoration: var(-paper-red-200) wavy underline;
+}
+.indent {
+    margin-right: 0.5em;
+}
+.note {
+    font-style: italic;
+}

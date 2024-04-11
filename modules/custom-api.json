@@ -25,6 +25,71 @@
         }
     },
     "paths": {
+    	"/api/genesis" : {
+    		"get": {
+    		"summary": "Retrieve timeline data",
+				"operationId": "custom:documentingGenesis",
+				"responses": {
+					"200": {
+						"description": "Timeline data",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object"
+								}
+							}
+						}
+					}
+				}
+    		}
+    	},
+    	"/api/timeline" : {
+    		"get": {
+    		"summary": "Retrieve timeline data",
+				"operationId": "custom:timeline",
+				"responses": {
+					"200": {
+						"description": "Timeline data",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object"
+								}
+							}
+						}
+					}
+				}
+    		}
+    	},
+    	"/api/timeline/{id}" : {
+    		"get": {
+    		"summary": "Retrieve timeline data",
+				"operationId": "custom:timeline",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"schema": {
+							"type": "string",
+							"example": "srcD_surface_a11r"
+						},
+						"required": false
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Timeline data",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object"
+								}
+							}
+						}
+					}
+				}
+    		}
+    	}
     },
     "security": [
         {

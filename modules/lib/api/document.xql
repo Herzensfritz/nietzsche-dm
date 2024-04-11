@@ -7,6 +7,7 @@ import module namespace errors = "http://e-editiones.org/roaster/errors";
 import module namespace config="http://www.tei-c.org/tei-simple/config" at "../../config.xqm";
 import module namespace pages="http://www.tei-c.org/tei-simple/pages" at "../pages.xql";
 import module namespace pm-config="http://www.tei-c.org/tei-simple/pm-config" at "../../pm-config.xql";
+import module namespace generate-config="http://www.tei-c.org/tei-simple/generate" at "../../generate-pm-config.xql";
 import module namespace tpu="http://www.tei-c.org/tei-publisher/util" at "../util.xql";
 import module namespace nav-tei="http://www.tei-c.org/tei-simple/navigation/tei" at "../../navigation-tei.xql";
 import module namespace nav="http://www.tei-c.org/tei-simple/navigation" at "../../navigation.xql";

@@ -17,8 +17,11 @@ import module namespace vapi="http://teipublisher.com/api/view" at "api/view.xql
 import module namespace anno="http://teipublisher.com/api/annotations" at "api/annotations.xql";
 import module namespace custom="http://teipublisher.com/api/custom" at "../custom-api.xql";
 import module namespace nlp="http://teipublisher.com/api/nlp" at "api/nlp.xql";
+import module namespace console="http://exist-db.org/xquery/console";
 
 declare option output:indent "no";
+
+let $log := console:log("test")
 
 let $lookup := function($name as xs:string) {
     try {

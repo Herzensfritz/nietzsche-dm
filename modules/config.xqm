@@ -73,7 +73,7 @@ declare variable $config:address-by-id := false();
 (:~
  : Set default language for publisher app i18n
  :)
-declare variable $config:default-language := "en";
+declare variable $config:default-language := "de";
 
 (:
  : The default to use for determining the amount of content to be shown
@@ -333,7 +333,7 @@ declare variable $config:default-odd :="surface.odd";
  : make sure to run modules/generate-pm-config.xql to update the main configuration
  : module for transformations (modules/pm-config.xql).
  :)
-declare variable $config:odd-available :=("surface.odd");
+declare variable $config:odd-available :=("surface.odd","nietzsche-ed.odd");
 
 (:~
  : List of ODD files which are used internally only, i.e. not for displaying information

@@ -95,21 +95,24 @@
                 </section>
                 <main class="content-body">
                
-                 <!--  <header class="timeline-nav">
-                            <pb-timeline url="api/timeline/B${id}" scopes='["D", "M", "Y", "5Y", "10Y"]' auto="auto" emit="timeline" data-template="pages:parse-params"></pb-timeline>
+                 <!-- <header class="timeline-nav">
+                            <pb-timeline url="api/genesis" scopes="['D']" auto="auto" emit="timeline" data-template="pages:parse-params"/>
                         </header> -->
                              
-                                <pb-view noScroll="true" id="view1" src="document1" column-separator=".tei-cb" view="surface" subscribe="transcription" emit="transcription">
+                                <pb-view no-scroll="true" id="view1" src="document1" column-separator=".tei-cb" view="surface" subscribe="transcription" emit="transcription">
                                 </pb-view>
                                  
-                            
-                             <pb-facsimile id="facsimile" default-zoom-level="0" show-full-page-control="true" show-home-control="true" emit="transcription" subscribe="transcription" type="iiif" show-navigation-control="show-navigation-control" show-navigator="show-navigator">
+                              <!--
+                             <pb-facsimile id="facsimile" default-zoom-level="0.7" show-full-page-control="true" show-home-control="true" emit="transcription" subscribe="transcription" type="iiif" show-navigation-control="show-navigation-control" show-navigator="show-navigator">
                             </pb-facsimile>
-                            
-                                <!-- <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-notes" subscribe="transcription">
+                         
+                                 <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-notes" subscribe="transcription">
                                     <pb-param name="view" value="normalized"/>
-                                    </pb-view>-->
-                              
+                                    </pb-view>
+                               -->
+                               <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-diffs" subscribe="transcription">
+                                    <pb-param name="view" value="normalized"/>
+                                    </pb-view>
                 </main>
             </app-header-layout>
         </app-drawer-layout>

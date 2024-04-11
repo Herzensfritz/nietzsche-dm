@@ -20,6 +20,7 @@ xquery version "3.1";
 module namespace nav="http://www.tei-c.org/tei-simple/navigation/tei";
 
 declare namespace tei="http://www.tei-c.org/ns/1.0";
+declare namespace exist="http://exist.sourceforge.net/NS/exist";
 import module namespace console="http://exist-db.org/xquery/console";
 
 import module namespace config="http://www.tei-c.org/tei-simple/config" at "config.xqm";
@@ -116,13 +117,53 @@ declare function nav:get-first-surface-start($config as map(*), $data as element
     )
 };
 
+declare function nav:add-app-to-anchor($div as element(), $currentNode as node()) {
+   (:   let $apps := for $anchor in $chunk//tei:anchor/@xml:id
+                    return $div/ancestor::*//tei:app[@to = concat('#',$anchor)]
+    let $empty := for $anchor in $chunk//tei:anchor
+                    where empty($div/ancestor::*//tei:app[@to = concat('#',$anchor/@xml:id)])
+                    return $anchor
+    let $log := console:log($empty)                
+    let $result :=  element { node-name($chunk) } {
+                    $chunk/@* except $chunk/@exist:id,
+                    attribute exist:id { util:node-id($chunk) },
+                    util:expand(($chunk/*|$apps), "add-exist-id=all")
+                }
+   
+    return $result :)
+    typeswitch ($currentNode)
+        case element(tei:app)
+            return ()
+        case element(tei:anchor)
+            return util:expand($div/ancestor::*//tei:app[@to = concat('#',$currentNode/@xml:id)], "add-exist-id=all") 
+        default return 
+            if (count($currentNode//tei:anchor) > 0) then (
+                element { node-name($currentNode) } {
+                            $currentNode/@* except $currentNode/@exist:id,
+                            attribute exist:id { util:node-id($currentNode) },
+                            for $child in $currentNode/(*|text())
+                                return nav:add-app-to-anchor($div, $child)
+                        }    
+            ) else (
+                if (count($currentNode//tei:app) > 0) then (
+                    element { node-name($currentNode) } {
+                            $currentNode/@* except $currentNode/@exist:id,
+                            attribute exist:id { util:node-id($currentNode) },
+                            for $child in $currentNode/(*|text())
+                                return nav:add-app-to-anchor($div, $child)
+                        }     
+                ) else 
+                    util:expand(($currentNode), "add-exist-id=all")    
+            )
+};
+
 
 declare function nav:get-content($config as map(*), $div as element()) {
     typeswitch ($div)
         case element(tei:teiHeader) return
             $div
         case element(tei:pb) return
-            let $nextPage := $div/following::tei:pb[1]
+            let $nextPage := $div/following::tei:pb[not(@edRef)][1]
             let $chunk :=
                 nav:milestone-chunk($div, $nextPage,
                     if ($nextPage) then
@@ -135,8 +176,10 @@ declare function nav:get-content($config as map(*), $div as element()) {
                       else
                         ($div/ancestor::tei:div, $div/ancestor::tei:text)[1]
                 )
+            let $newChunk := nav:add-app-to-anchor($div, $chunk)
+            let $log := console:log($newChunk)
             return
-                $chunk
+                $newChunk
         case element(tei:div) return
             nav:fill($config, $div)
         default return
@@ -144,7 +187,10 @@ declare function nav:get-content($config as map(*), $div as element()) {
 };
 
 declare function nav:get-subsections($config as map(*), $root as node()) {
-    $root//tei:div[tei:head] except $root//tei:div[tei:head]//tei:div
+    if (empty($root//tei:div)) then (
+        if ($root/tei:div2[tei:head]) then ($root/tei:div2[tei:head]) else ($root//tei:div1[tei:head])    
+    ) else 
+        $root//tei:div[tei:head] except $root//tei:div[tei:head]//tei:div
 };
 
 declare function nav:get-section-heading($config as map(*), $section as node()) {
@@ -246,7 +292,7 @@ declare function nav:get-next($config as map(*), $div as element(), $view as xs:
     let $next :=
         switch ($view)
             case "page" return
-                $div/following::tei:pb[1]
+                $div/following::tei:pb[not(@edRef)][1]
             case "body" return
                 ($div/following-sibling::*, $div/../following-sibling::*)[1]
             case "surface" return
@@ -264,7 +310,7 @@ declare function nav:get-previous($config as map(*), $div as element(), $view as
     let $previous :=
         switch ($view)
             case "page" return
-                $div/preceding::tei:pb[1]
+                $div/preceding::tei:pb[not(@edRef)][1]
             case "body" return
                 ($div/preceding-sibling::*, $div/../preceding-sibling::*)[1]
             case "surface" return
