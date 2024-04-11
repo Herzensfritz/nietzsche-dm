@@ -45,7 +45,9 @@ declare function mapping:nietzsche-notes($root as element(), $userParams as map(
  : to the surface shown in the diplomatic transcription.
  :)
 declare function mapping:nietzsche-diffs($root as element(), $userParams as map(*)) {
-    let $log := console:log($userParams)
+    let $ED := doc($config:data-root || "/GM_Ed_incl.xml")
+    let $rdgs := for $line in $root//tei:line/@start
+                    return $ED//tei:rdg[@wit="#Dm" and @source=$line]/parent::tei:app
     let $pbId := substring-after($root/@start, '#')
     let $notes := if (root($root)//tei:surface[@xml:id = $root/@xml:id]/following-sibling::tei:surface) then (
         root($root)//tei:text//tei:note[@type="editorial" and preceding::tei:pb[1][@xml:id = $pbId] and  following::tei:pb[preceding::tei:pb[1][@xml:id = $pbId] ]]
@@ -54,7 +56,10 @@ declare function mapping:nietzsche-diffs($root as element(), $userParams as map(
     )
     let $div := <div xmlns="http://www.tei-c.org/ns/1.0" type="noteDiv">{ for $note in $notes
             return <note xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$note/@xml:id}" type="{$note/@type}" target="{concat('#',root($root)//tei:text//tei:note[@xml:id = $note/@xml:id]/preceding::tei:lb[1]/@xml:id)}">{$note/text()}</note>
+    }{    for $rdg in $rdgs
+                return $rdg
     }</div>
+    let $log := console:log($div)
 
     return $div
 };

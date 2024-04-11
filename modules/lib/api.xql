@@ -21,7 +21,7 @@ import module namespace console="http://exist-db.org/xquery/console";
 
 declare option output:indent "no";
 
-let $log := console:log("test")
+
 
 let $lookup := function($name as xs:string) {
     try {
