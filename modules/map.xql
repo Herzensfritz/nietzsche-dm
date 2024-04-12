@@ -40,6 +40,21 @@ declare function mapping:nietzsche-notes($root as element(), $userParams as map(
     return $div
 };
 
+declare function local:extendApp($node as node()*, $ED){
+
+    let $seg := if (count($node/@from) > 1) then ($ED//tei:seg[@xml:id=substring-after($node[1]/@from, '#')]) else ($ED//tei:seg[@xml:id=substring-after($node/@from, '#')])
+    let $log := console:log($seg)
+    return if ($seg) then (
+        element { node-name($node) } {
+                            $node/@* except $node/@exist:id,
+                            attribute exist:id { util:node-id($node) },
+                            attribute n { concat($seg/preceding::tei:pb[not(@edRef)][1]/@n, ',', $seg/preceding::tei:lb[not(@edRef)][1]/@n) },
+                            util:expand(($node/(*|text())), "add-exist-id=all")  
+                        }     
+    ) else
+        $node
+};
+
 (:~
  : For the Nietzsche Druckmanuskript: find the notes  corresponding
  : to the surface shown in the diplomatic transcription.
@@ -47,7 +62,7 @@ declare function mapping:nietzsche-notes($root as element(), $userParams as map(
 declare function mapping:nietzsche-diffs($root as element(), $userParams as map(*)) {
     let $ED := doc($config:data-root || "/GM_Ed_incl.xml")
     let $rdgs := for $line in $root//tei:line/@start
-                    return $ED//tei:rdg[@wit="#Dm" and @source=$line]/parent::tei:app
+                    return local:extendApp($ED//tei:rdg[@wit="#Dm" and @source=$line]/parent::tei:app, $ED)
     let $pbId := substring-after($root/@start, '#')
     let $notes := if (root($root)//tei:surface[@xml:id = $root/@xml:id]/following-sibling::tei:surface) then (
         root($root)//tei:text//tei:note[@type="editorial" and preceding::tei:pb[1][@xml:id = $pbId] and  following::tei:pb[preceding::tei:pb[1][@xml:id = $pbId] ]]
