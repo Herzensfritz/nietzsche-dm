@@ -52,7 +52,7 @@
             <param name="url" value="substring-before(id(substring-after(@facs,'#'), root($parameters?root))/graphic/@url,'/full')"/>
             <param name="test" value="$parameters?mode"/>
             <pb:template xmlns="" xml:space="preserve">
-                            <pb-facs-link emit="transcription" facs="[[url]]" style="float: right; margin-top: -2em;">[[pb]]</pb-facs-link>                           <h1>[[test]]</h1>
+                            <pb-facs-link emit="transcription" facs="[[url]]" style="float: right; margin-top: -2em;">[[pb]]</pb-facs-link>                           
                             <div id="[[id]]" class="transkriptionField" style="[[style]]">
                                 [[content]]
                             </div>

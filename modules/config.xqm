@@ -62,7 +62,7 @@ declare variable $config:origin-whitelist := (
 declare variable $config:enable-proxy-caching :=
     let $prop := util:system-property("teipublisher.proxy-caching")
     return
-        exists($prop) and lower-case($prop) = 'true'
+        exists($prop) and lower-case($prop) = 'false'
 ;
 
 (:~

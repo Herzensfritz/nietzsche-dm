@@ -22,22 +22,12 @@
         }
         body {
             --pb-view-height: calc(100vh - 200px);
-            --pb-grid-column-gap: 2em;
-            --pb-facsimile-height: calc(var(--pb-view-height) - 22px);
         }
 
         #view1 {
             flex: 1 1;
             display: flex;
             justify-content: center;
-        }
-         #facsimile {
-            flex: 1 1;
-            height: var(--pb-facsimile-height);
-        }
-        
-        ._pb_panel {
-            height: height: var(--pb-facsimile-height);
         }
 
         #view1 pb-view {
@@ -58,16 +48,23 @@
 
         .content-body pb-facsimile {
             flex: 1 1;
+          // --pb-facsimile-height: calc(var(--pb-view-height) - 22px);
            
         }
         
-    
+        pb-facsimile.toggle {
+            display: none;
+        }
+        
+        pb-facs-link.toggle {
+            display: none;
+        }
 
-      /*  @media (max-width: 769px) {
+        @media (max-width: 769px) {
             pb-facsimile {
                 display: none;
             }
-        } */
+        }
     </style>
 </head>
 
@@ -98,35 +95,16 @@
                 </section>
                 <main class="content-body">
               
-                        <pb-grid id="grid" panels="[0,1]" subscribe="transcription" animation="true">
-                            <template>
-                                <!-- template used for adding a new column: user can choose between translation, facsimile and notes -->
-                                <pb-panel emit="transcription">
-                                <!-- Added to the toolbar -->
-                                    <pb-grid-action grid="#grid" slot="toolbar" action="remove" emit="transcription" subscribe="transcription">
-                                        <paper-icon-button icon="icons:close"/>
-                                    </pb-grid-action>
-                                        <template title="Transkription">
-                                            <pb-view id="view1" src="document1" column-separator=".tei-cb" view="surface" subscribe="transcription" emit="transcription">
-                                            </pb-view>
-                                        </template>
-                                         <template title="Faksimile">
-                                            <pb-facsimile id="facsimile" default-zoom-level="0.7" show-full-page-control="true" show-home-control="true" emit="transcription" subscribe="transcription" type="iiif" show-navigation-control="show-navigation-control" show-navigator="show-navigator">
-                                            </pb-facsimile>
-                                        </template>
-                                        <template title="Marginalien">
-                                             <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-diffs" subscribe="transcription">
-                                                <pb-param name="view" value="normalized"/>
-                                            </pb-view>
-                                        </template>
-                                    </pb-panel>
-                                </template> 
-                            </pb-grid>
-                            <pb-grid-action action="add" class="grid-add" grid="#grid" initial="1" emit="transcription" subscribe="transcription">
-                                <paper-button>
-                                    <iron-icon icon="icons:add"/> Add Column
-                                </paper-button>
-                        </pb-grid-action>
+                 
+                         <pb-view no-scroll="true" id="view1" src="document1" column-separator=".tei-cb" view="surface" subscribe="transcription" emit="transcription">
+                            </pb-view>      
+                               
+                                 
+                              
+                             <pb-facsimile id="facsimile" default-zoom-level="0.7" show-full-page-control="true" show-home-control="true" emit="transcription" subscribe="transcription" type="iiif" show-navigation-control="show-navigation-control" show-navigator="show-navigator">
+                            </pb-facsimile>
+                         
+                                 
                 </main>
             </app-header-layout>
         </app-drawer-layout>
