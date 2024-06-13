@@ -1,0 +1,180 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>a4r</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div1 xml:space="preserve"><anchor xml:id="a4r_div1_d2e22"/>
+            <pb xml:id="a4r" corresp="#contents_a4r #folDesc_a4rv #addDesc_a4r #N_black2" facs="#D-20a_VII" change="#GMVorrede08record #GM03finalVersion #GMVorrede08Addendum"/>
+            <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" xml:id="a4r_fw_d2e26">VII</fw>
+            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="a4r_fw_d2e29">4</fw>
+            <substJoin target="#substDel1a_a4r #substDel1b_a4r"/>
+            <substJoin target="#subst2_a4r #substAdd2_a4r" change="#GMVorrede08Addendum"/>
+            <note type="authorial" hand="#N_black2" place="top-right" xml:id="a4r_note_d2e37"><handShift new="#N_black2"/>
+                  <lb n="1" xml:id="a4r_lb1"/><hi n="a4r,1" hand="#N_red" rend="markLine"/><hi rend="underline">Schluß</hi> (achter Abschnitt) der <hi rend="doubleUnderline"><hi rend="latin">Vorrede</hi></hi></note>
+                  
+               <div2 xml:id="GMVorrede08"><anchor xml:id="a4r_div2_GMVorrede08"/>
+                  <head xml:id="a4r_head_d2e53">
+                     <lb n="2" xml:id="a4r_lb2"/>8.</head>
+                  <p>
+                     
+                     <lb/>
+                     <lb n="3" rend="indent" xml:id="a4r_lb3"/>– Wenn diese Schrift irgend Jemandem unverständlich ist und schlecht zu Ohren geht, 
+                     <lb n="4" xml:id="a4r_lb4"/>so liegt die Schuld, wie mich dünkt, nicht nothwendig an mir. Sie ist deutlich genug, 
+                     <lb n="5" xml:id="a4r_lb5"/>vorausgesetzt, was ich voraussetze, daß man zuerst meine früheren Schriften <del xml:id="substDel1a_a4r" rend="hatching">Zeile für</del> 
+                     <lb n="6" xml:id="a4r_lb6"/><del xml:id="substDel1b_a4r" rend="hatching">Zeile</del> gelesen und einige Mühe dabei nicht gespart hat: diese sind in der That nicht 
+                     <lb n="7" xml:id="a4r_lb7"/>leicht zugänglich. Was zum Beispiel meinen „Zarathustra“ anbetrifft, so lasse ich 
+                     <lb n="8" xml:id="a4r_lb8"/>Niemanden als dessen Kenner gelten, den nicht jedes seiner Worte irgendwann 
+                     <lb n="9" xml:id="a4r_lb9"/>einmal tief verwundet und irgendwann <milestone unit="page" edRef="#Ed" n="XIV"/>einmal tief entzückt hat<subst xml:id="subst2_a4r" seq="1" change="#GMVorrede08Addendum" resp="#N"><del rend="overwritten">.</del><add hand="#typesetter_black1" place="superimposed" xml:id="a4r_add_d2e90">:<add hand="#typesetter_black1" place="inline" instant="true" xml:id="a4r_add_d2e92"><metamark xml:id="mark2a_a4r" target="#mark2b_a4r #substAdd2_a4r">╒</metamark></add></add></subst> In andern Fäl<pc force="weak">-</pc>
+                     <lb n="10" xml:id="a4r_lb10"/>len macht die aphoristische Form Schwierigkeit: sie liegt darin, daß man diese 
+                     <lb n="11" xml:id="a4r_lb11"/>Form heute <hi rend="underline">nicht</hi> <hi rend="underline">schwer</hi> <hi rend="underline">genug</hi> nimmt. Ein Aphorismus, rechtschaffen geprägt und 
+                     <lb n="12" xml:id="a4r_lb12"/>ausgegossen, ist damit noch nicht „entziffert“, daß er abgelesen ist; vielmehr hat 
+                     <lb n="13" xml:id="a4r_lb13"/>nun erst dessen <hi rend="underline">Auslegung</hi> zu beginnen, zu der es einer Kunst der Auslegung 
+                     <lb n="14" xml:id="a4r_lb14"/>bedarf. Ich habe in der dritten Abhandlung dieses Buchs ein Muster von dem dar<pc force="weak">-</pc>
+                     <lb n="15" xml:id="a4r_lb15"/>geboten, was ich in einem solchen Falle „Auslegung“ nenne: – dieser Abhandlung ist 
+                     <lb n="16" xml:id="a4r_lb16"/>ein Aphorismus vorangestellt, sie selbst ist dessen Commentar. Freilich thut, um 
+                     <lb n="17" xml:id="a4r_lb17"/>dergestalt das Lesen als <hi rend="underline">Kunst</hi> zu üben, Eins vor Allem Noth, was heutzu<pc force="weak">-</pc>
+                     <lb n="18" xml:id="a4r_lb18"/>tage gerade am Besten verlernt worden ist – und darum hat es noch Zeit bis 
+                     <lb n="19" xml:id="a4r_lb19"/>zur „Lesbarkeit“ meiner Schriften –, wozu man beinahe Kuh und jedenfalls 
+                     <lb n="20" xml:id="a4r_lb20"/><hi rend="underline">nicht</hi> „moderner Mensch“ sein muß: <hi rend="underline">das</hi> <hi rend="underline">Wiederkäuen</hi>…</p>
+                  <p>
+                     
+                     <lb/>
+                     <lb n="21" rend="indent" xml:id="a4r_lb21"/><hi rend="underline">Sils</hi>-<hi rend="underline">Maria</hi>, Oberengadin,
+                     <lb n="22" rend="indent" xml:id="a4r_lb22"/>im Juli 1887.</p>
+                  <ab xml:id="a4r_ab_d2e170">
+                     <add xml:id="substAdd2_a4r" hand="#typesetter_black1" place="inline" seq="1" change="#GMVorrede08Addendum" resp="#N">
+                        <lb n="23" xml:id="a4r_lb23"/><add hand="#typesetter_black1" place="inline" instant="true" xml:id="a4r_add_d2e175"><metamark xml:id="mark2b_a4r" target="#mark2a_a4r">╒</metamark></add> erst dann nämlich darf er des Vorrechts 
+                        <lb n="24" xml:id="a4r_lb24"/>genießen, an dem halkyonischen Element, 
+                        <lb n="25" xml:id="a4r_lb25"/>aus dem jenes Werk geboren ist, an seiner 
+                        <lb n="26" xml:id="a4r_lb26"/>sonnigen Helle, Ferne, Weite und 
+                        <lb n="27" xml:id="a4r_lb27"/>Gewißheit ehrfürchtig Antheil 
+                        <lb n="28" xml:id="a4r_lb28"/>zu haben.</add></ab>
+            </div2>
+         </div1>
+      </body>
+   </text>
+   <sourceDoc>
+      <surface xml:id="srcD_surface_a4r" type="relative" start="#a4r" facs="#D-20a_VII">
+         <zone xml:id="srcD_zone_a4r_div2_GMVorrede08" start="#a4r_div2_GMVorrede08" type="singleBlock" style="padding-top:5em;padding-bottom:8.2em;">
+            <zone xml:id="srcD_zone_a4r_fw_d2e26" type="fw-top-right" start="#a4r_fw_d2e26">
+               <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#a4r_fw_d2e26">VII</fw>
+            </zone>
+            <zone xml:id="srcD_zone_a4r_note_d2e37_a4r_lb1" type="note-zone" start="#a4r_lb1">
+               <line xml:id="srcD_line_a4r_note_d2e37_a4r_lb1" style="top:1em;" start="#a4r_lb1" hand="#N_black2" n="1">
+                  <hi n="a4r,1" hand="#N_red" rend="markLine"/>
+                  <hi rend="underline">Schluß</hi> (achter Abschnitt) der <hi rend="doubleUnderline">
+                     <hi rend="latin">Vorrede</hi>
+                  </hi>
+                  <anchor corresp="#a4r_div2_GMVorrede08"/>
+               </line>
+            </zone>
+            <line xml:id="srcD_line_a4r_head_d2e53_a4r_lb2" start="#a4r_lb2" n="2" hand="#N_black2">
+               <zone xml:id="srcD_zone_a4r_head_d2e53_a4r_lb2" type="head">8.</zone>
+            </line>
+            <line xml:id="srcD_line_empty_d4e60"/>
+            <line xml:id="srcD_line_a4r_lb3" start="#a4r_lb3" rend="indent" hand="#N_black2" n="3">– Wenn diese Schrift irgend Jemandem unverständlich ist und schlecht zu Ohren geht, 
+                     </line>
+            <line xml:id="srcD_line_a4r_lb4" start="#a4r_lb4" hand="#N_black2" n="4">so liegt die Schuld, wie mich dünkt, nicht nothwendig an mir. Sie ist deutlich genug, 
+                     </line>
+            <line xml:id="srcD_line_a4r_lb5" start="#a4r_lb5" hand="#N_black2" n="5">vorausgesetzt, was ich voraussetze, daß man zuerst meine früheren Schriften <del corresp="#substDel1a_a4r" rend="hatching">Zeile für</del>
+            </line>
+            <line xml:id="srcD_line_a4r_lb6" start="#a4r_lb6" hand="#N_black2" n="6">
+               <del corresp="#substDel1b_a4r" rend="hatching">Zeile</del> gelesen und einige Mühe dabei nicht gespart hat: diese sind in der That nicht 
+                     </line>
+            <line xml:id="srcD_line_a4r_lb7" start="#a4r_lb7" hand="#N_black2" n="7">leicht zugänglich. Was zum Beispiel meinen „Zarathustra“ anbetrifft, so lasse ich 
+                     </line>
+            <line xml:id="srcD_line_a4r_lb8" start="#a4r_lb8" hand="#N_black2" n="8">Niemanden als dessen Kenner gelten, den nicht jedes seiner Worte irgendwann 
+                     </line>
+            <line xml:id="srcD_line_a4r_lb9" start="#a4r_lb9" hand="#N_black2" n="9">einmal tief verwundet und irgendwann <milestone unit="page" edRef="#Ed" n="XIV"/>einmal tief entzückt hat<del rend="overwritten" cause="#a4r_add_d2e90">.</del>
+               <add hand="#typesetter_black1" place="superimposed" corresp="#a4r_add_d2e90">:<add hand="#typesetter_black1" place="inline" instant="true" corresp="#a4r_add_d2e92">
+                     <metamark corresp="#mark2a_a4r" target="#mark2b_a4r #substAdd2_a4r">╒</metamark>
+                  </add>
+               </add> In andern Fäl<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a4r_lb10" start="#a4r_lb10" hand="#N_black2" n="10">len macht die aphoristische Form Schwierigkeit: sie liegt darin, daß man diese 
+                     </line>
+            <line xml:id="srcD_line_a4r_lb11" start="#a4r_lb11" hand="#N_black2" n="11">Form heute <hi rend="underline">nicht</hi>
+               <hi rend="underline">schwer</hi>
+               <hi rend="underline">genug</hi> nimmt. Ein Aphorismus, rechtschaffen geprägt und 
+                     </line>
+            <line xml:id="srcD_line_a4r_lb12" start="#a4r_lb12" hand="#N_black2" n="12">ausgegossen, ist damit noch nicht „entziffert“, daß er abgelesen ist; vielmehr hat 
+                     </line>
+            <line xml:id="srcD_line_a4r_lb13" start="#a4r_lb13" hand="#N_black2" n="13">nun erst dessen <hi rend="underline">Auslegung</hi> zu beginnen, zu der es einer Kunst der Auslegung 
+                     </line>
+            <line xml:id="srcD_line_a4r_lb14" start="#a4r_lb14" hand="#N_black2" n="14">bedarf. Ich habe in der dritten Abhandlung dieses Buchs ein Muster von dem dar<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a4r_lb15" start="#a4r_lb15" hand="#N_black2" n="15">geboten, was ich in einem solchen Falle „Auslegung“ nenne: – dieser Abhandlung ist 
+                     </line>
+            <line xml:id="srcD_line_a4r_lb16" start="#a4r_lb16" hand="#N_black2" n="16">ein Aphorismus vorangestellt, sie selbst ist dessen Commentar. Freilich thut, um 
+                     </line>
+            <line xml:id="srcD_line_a4r_lb17" start="#a4r_lb17" hand="#N_black2" n="17">dergestalt das Lesen als <hi rend="underline">Kunst</hi> zu üben, Eins vor Allem Noth, was heutzu<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a4r_lb18" start="#a4r_lb18" hand="#N_black2" n="18">tage gerade am Besten verlernt worden ist – und darum hat es noch Zeit bis 
+                     </line>
+            <line xml:id="srcD_line_a4r_lb19" start="#a4r_lb19" hand="#N_black2" n="19">zur „Lesbarkeit“ meiner Schriften –, wozu man beinahe Kuh und jedenfalls 
+                     </line>
+            <line xml:id="srcD_line_a4r_lb20" start="#a4r_lb20" hand="#N_black2" n="20">
+               <hi rend="underline">nicht</hi> „moderner Mensch“ sein muß: <hi rend="underline">das</hi>
+               <hi rend="underline">Wiederkäuen</hi>…</line>
+            <line xml:id="srcD_line_empty_d4e154"/>
+            <line xml:id="srcD_line_a4r_lb21" start="#a4r_lb21" rend="indent" hand="#N_black2" n="21">
+               <hi rend="underline">Sils</hi>-<hi rend="underline">Maria</hi>, Oberengadin,
+                     </line>
+            <line xml:id="srcD_line_a4r_lb22" start="#a4r_lb22" rend="indent" hand="#N_black2" n="22">im Juli 1887.
+                        </line>
+            <zone xml:id="srcD_zone_a4r_ab_d2e170_a4r_lb23" start="#a4r_lb23" type="ab-zone" style="margin-left:20.5em;">
+               <line xml:id="srcD_line_a4r_lb23" start="#a4r_lb23" style="bottom:6em;" n="23" hand="#N_black2">
+                  <add hand="#typesetter_black1" place="inline" seq="1" change="#GMVorrede08Addendum" resp="#N">
+                     <add hand="#typesetter_black1" place="inline" instant="true" corresp="#a4r_add_d2e175">
+                        <metamark corresp="#mark2b_a4r" target="#mark2a_a4r">╒</metamark>
+                     </add> erst dann nämlich darf er des Vorrechts 
+                        </add>
+               </line>
+            </zone>
+            <zone xml:id="srcD_zone_a4r_ab_d2e170_a4r_lb24" start="#a4r_lb24" type="ab-zone" style="margin-left:20.5em;">
+               <line xml:id="srcD_line_a4r_lb24" style="bottom:5em;" start="#a4r_lb24" n="24" hand="#N_black2">
+                  <add hand="#typesetter_black1" place="inline" seq="1" change="#GMVorrede08Addendum" resp="#N">genießen, an dem halkyonischen Element, 
+                        </add>
+               </line>
+            </zone>
+            <zone xml:id="srcD_zone_a4r_ab_d2e170_a4r_lb25" start="#a4r_lb25" type="ab-zone" style="margin-left:20.5em;">
+               <line xml:id="srcD_line_a4r_lb25" style="bottom:4em;" start="#a4r_lb25" n="25" hand="#N_black2">
+                  <add hand="#typesetter_black1" place="inline" seq="1" change="#GMVorrede08Addendum" resp="#N">aus dem jenes Werk geboren ist, an seiner 
+                        </add>
+               </line>
+            </zone>
+            <zone xml:id="srcD_zone_a4r_ab_d2e170_a4r_lb26" start="#a4r_lb26" type="ab-zone">
+               <line xml:id="srcD_line_a4r_lb26" style="bottom:3em;" start="#a4r_lb26" n="26" hand="#N_black2">
+                  <add hand="#typesetter_black1" place="inline" seq="1" change="#GMVorrede08Addendum" resp="#N">sonnigen Helle, Ferne, Weite und 
+                        </add>
+               </line>
+            </zone>
+            <zone xml:id="srcD_zone_a4r_ab_d2e170_a4r_lb27" start="#a4r_lb27" type="ab-zone">
+               <line xml:id="srcD_line_a4r_lb27" style="bottom:2em;" start="#a4r_lb27" n="27" hand="#N_black2">
+                  <add hand="#typesetter_black1" place="inline" seq="1" change="#GMVorrede08Addendum" resp="#N">Gewißheit ehrfürchtig Antheil 
+                        </add>
+               </line>
+            </zone>
+            <zone xml:id="srcD_zone_a4r_ab_d2e170_a4r_lb28" start="#a4r_lb28" type="ab-zone">
+               <line xml:id="srcD_line_a4r_lb28" style="bottom:1em;" start="#a4r_lb28" n="28" hand="#N_black2">
+                  <add hand="#typesetter_black1" place="inline" seq="1" change="#GMVorrede08Addendum" resp="#N">zu haben.</add>
+               </line>
+            </zone>
+            <zone xml:id="srcD_zone_a4r_fw_d2e29" type="fw-bottom-left" start="#a4r_fw_d2e29">
+               <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#a4r_fw_d2e29">4</fw>
+            </zone>
+         </zone>
+      </surface>
+   </sourceDoc>
+</TEI>

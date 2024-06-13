@@ -1,19 +1,27 @@
-:root {
+body {
          --highlight: yellow;
          --radius: 1em 1em;
          --red-marking: red;
          --length: 0.2em;
          --nbrown: #5C4033;
+         --red: #dc3545;
 }
-   #input { position: fixed; left: 70%;}
-   form { margin-top: 2px;}
-   #message { color: red;}
-   .transkriptionField {background-color: #CED5CE; padding-right: 20px; padding-left: 5px; padding-top: 10px; padding-bottom: 10px;margin-top: 3em; margin-left: 30px; width: max-content;}
-   .highlight, .metamark:hover { background-color: var(--highlight); }
-   .metamark { cursor: pointer;}
-   .small { color: black; padding: 3px; }
-   .fw-box { background-color: #add8e6;}
-   .popover { background-color: #F5F5F5; cursor: context-menu; }
+.typesetter_red {
+    color: var(--red);
+}
+.typesetter_black, .strikethrough-typesetter_black1 {
+    color: var(--typesetter_black);
+    font-weight: 600;
+}
+.N_black2 {
+    color: var(--nblack2);
+}
+.transkriptionField {background-color: #CED5CE; padding-right: 20px; padding-left: 5px; padding-top: 10px; padding-bottom: 10px;margin-top: 3em; margin-left: 30px; width: max-content;}
+.highlight, .metamark:hover { background-color: var(--highlight); }
+.metamark { cursor: pointer;}
+.small { color: black; padding: 3px; }
+.fw-box { background-color: #add8e6;}
+.popover { background-color: #F5F5F5; cursor: context-menu; }
     .box, .editorCorrection { background-color: #F5F5F5; width: max-content; text-align: start;}
     .box .tooltip {
        display: none;
@@ -58,19 +66,20 @@
       top: 3px;
       border-left: 2.5px solid;
    }
-   .indent { margin-left: 34px;}
+   .indent { margin-left: 1em;}
    *[draggable] { cursor: grab; }
     .deleted, .deleted-000, .hatching { cursor: context-menu; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAX/GZH4/4FsRpgAmAOSBBFwDkgAAIKuBATRTAAZAAAAAElFTkSuQmCC ) repeat; }
     .red-deleted { cursor: context-menu; background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='2000' stroke='red' stroke-dasharray='1.2 1.8 1.2' d='M1,1 1500,1500'/></svg>") repeat; }
     .hex-deleted { background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='240' stroke='%23750606' stroke-dasharray='1' d='M1,1 150,150'/></svg>") repeat; }
     .new-deleted { background:url("https://upload.wikimedia.org/wikipedia/commons/7/73/Schraffur_fein_diagonal_hoch.svg") repeat; }
    .deleted-N_brown1, .hatching-N_brown1 { cursor: context-menu; background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='2000' stroke='%235C4033' stroke-dasharray='0.1 0.2 0.1 0.2' d='M1,1 1500,1500'/></svg>") repeat; }
+   .N_brown1 .hatching, .N_brown1 .deleted { cursor: context-menu; background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='2000' stroke='%235C4033' stroke-dasharray='0.1 0.2 0.1 0.2' d='M1,1 1500,1500'/></svg>") repeat; }
    .GSA_pencil { color: #6b6b6b;font-family: cursive;} 
      .singleBlock { position: relative; padding-top: 5em; padding-bottom: 5em;}
      .firstBlock { position: relative; padding-top: 5em; }
      .lastBlock { position: relative; padding-bottom: 5em; }
      .textBlock { position: relative;}
-     .add-zone { font-size: 90%; }
+     .add-zone { font-size: 80%; }
      .ab-zone { }
      .zoneLine { position: absolute;}
      .note-zone-bottom-right { position: absolute; bottom: 1em;  font-style: italic;}
@@ -84,7 +93,7 @@
      .note-bottom-right { position: absolute; bottom: 2em; right: 0px;font-style: italic;}
      .note-margin-left { position: absolute; bottom: 2em; left: 0px;font-style: italic;}
       .note-right { position: absolute; right: 0px;font-style: italic;}
-     .note-left, .note-bottom { position: absolute;width: 100%;font-style: italic;}
+     .note-left, .note-bottom { position: absolute;width: fit-content;height:1em;font-style: italic;}
      .note-top-center { position: absolute; top: 1em; margin-left: 60%;margin-right:60%;width: 100%;font-style: italic; }
      .head-zone { position: absolute; top: 1em; width: 100%;}
      .top-left { text-align: left }
@@ -113,16 +122,20 @@
      .below { 
         position: absolute;
         top: 1.8em;
-        font-size:80%;
         width: max-content;
         line-height: 1em;
          transition: color 1s;
          
      }
+    .above.instantaneous, .below.instantaneous {
+       font-size: 100%; 
+    }
+    .above, .below {
+       font-size:80%; 
+    }
      .above  {
          position: absolute;
          top: -1.5em;
-         font-size:80%;
          width: max-content;
          line-height: 1em;
          /*height: max-content;*/
@@ -159,14 +172,19 @@
     .afterWordinsertion-below:before { left: 1px;   }
     .inWordinsertion-below:before { left: -0.5px; }
    .beforePunctuationinsertion-below:before { margin-left: 4px;}
-   .addSpan { font-size:90%;}
+   .addSpan { font-size:80%;}
    .erased { color: grey;}
-    .inline { font-size:90%;}
+    .inline { font-size:80%;}
+    .add-zone .inline {
+        font-size: 100%;
+    }
     .overwritten { text-decoration: line-through; color: red;}
         .superimposed { color: green;}
-  
-        .strikethrough, .strikethrough1 { text-decoration: line-through; }
-        .strikethrough2 { text-decoration: line-through; }
+    .strikethrough, .strikethrough1,.strikethrough2 , .strikethrough-typesetter_black1, .strikethrough-N_brown1 { text-decoration: line-through; }
+    .strikethrough-N_brown1 {
+        text-decoration-color: var(--nbrown);
+        text-decoration-thickness: 3px;
+    }
         .overwritten-punctuation { position: relative; color: red; }
         .overwritten-punctuation:before {
            position: absolute;
@@ -233,15 +251,14 @@
         .above-linearisiert:after { content: '\2309'; }
          .below-linearisiert:before { content: '\230A'; }
          .below-linearisiert:after { content: '\230B'; }
-        span.lnr { position:relative; left: -30px;font-style: italic; color: blue;margin-right: 20px;font-size: 80%; cursor: pointer;}
-        span.zlnr { position:relative; left: -30px;font-style: italic; color: grey;margin-right: 20px;font-size: 80%; cursor: pointer;}
-        span.nolnr { margin-left: 40px;}
+        span.lnr { position:relative; left: -2.3em;font-style: italic; color: blue;margin-right: 20px;font-size: 80%; cursor: pointer;}
+        span.zlnr { position:relative; left: -2.3em;font-style: italic; color: grey;margin-right: 20px;font-size: 80%; cursor: pointer;}
+        span.nolnr { margin-left: 3.125em;}
         div.line { line-height: 3.0em;  }
-        .flushRight {  display: inline-block;
-                        margin: auto;
-                        width: 80%;
-                        text-align: end;
-            
+        div.line.empty { display: inline-block;  }
+        .flushRight {  float: right;  
+             position: relative;
+             left: -1em;
         }
          .flushMiniRight { margin-left: 10%; }
         span.line:after { content: '\00B6' }

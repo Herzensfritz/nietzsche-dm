@@ -22,7 +22,7 @@ import module namespace console="http://exist-db.org/xquery/console";
 
 declare namespace tei="http://www.tei-c.org/ns/1.0";
 
-declare variable $dapi:CACHE := true();
+declare variable $dapi:CACHE := false();
 
 declare variable $dapi:CACHE_COLLECTION := $config:app-root || "/cache";
 

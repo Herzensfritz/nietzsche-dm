@@ -58,16 +58,20 @@
                             </div>
                         </pb:template>
         </model></elementSpec>
-                <elementSpec ident="line" mode="add"><model predicate="ends-with(parent::zone/@type, 'Block') and parent::zone/parent::surface" behaviour="pass-through">
+                <elementSpec ident="line" mode="add"><model predicate="ends-with(parent::zone/@type, 'Block') and parent::zone/parent::surface and @start" behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <param name="style" value="@style"/>
             <param name="n" value="@n"/>
-            <param name="hand" value="@hand"/>
+            <param name="hand" value="substring-after(@hand, '#')"/>
             <param name="rend" value="@rend"/>
             <param name="target" value="substring-after(@start, '#')"/>
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="line" style="[[style]]">
   <span class="lnr"><pb-highlight key="[[target]]" duration="5000">[[n]]</pb-highlight>:</span>
   <span class="[[hand]] [[rend]]" style="[[spanStyle]]">[[content]]</span>
+</div></pb:template>
+        </model><model predicate="ends-with(parent::zone/@type, 'Block') and parent::zone/parent::surface and not(@start)" behaviour="pass-through">
+            <param name="id" value="@xml:id"/>
+            <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="line empty">
 </div></pb:template>
         </model><model predicate="parent::zone/parent::zone and not(ends-with(parent::zone/@type, 'Block'))" behaviour="pass-through">
             <param name="n" value="@n"/>
@@ -76,7 +80,7 @@
             <param name="content" value="."/>
             <param name="isMarginLeft" value="if (contains(parent::zone/@type, 'zone')) then ('marginLeft') else ()"/>
             <param name="spanStyle" value="parent::zone/@style"/>
-            <param name="hand" value="@hand"/>
+            <param name="hand" value="substring-after(@hand, '#')"/>
             <param name="rend" value="@rend"/>
             <param name="target" value="substring-after(@start, '#')"/>
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="zoneLine" style="[[style]]">
@@ -89,7 +93,7 @@
             <param name="content" value="."/>
             <param name="class" value="@type"/>
             <param name="style" value="@style"/>
-            <pb:template xmlns="" xml:space="preserve"><span id="[[id]]" style="[[style]]" class="[[class]]">
+            <pb:template xmlns="" xml:space="preserve"><span id="[[id]]" style="[[style]]" class="[[class]]" data-debug="0">
   [[content]]
 </span></pb:template>
         </model><model predicate="@xml:id and (empty(@type) or ends-with(@type, 'Block'))" behaviour="pass-through">
@@ -98,7 +102,7 @@
             <param name="class" value="if (ends-with(@type,'Block') and not(starts-with(@type, 'text'))) then (concat(@type, ' textBlock')) else (@type)"/>
             <param name="content" value="."/>
             <param name="id" value="@xml:id"/>
-            <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" style="[[style]]" class="[[class]]" debug-msg="test">
+            <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" style="[[style]]" class="[[class]]" debug-msg="test" data-debug="1">
   [[content]]
 </div></pb:template>
         </model><model predicate="parent::zone and not(ends-with(@type, 'Block')) and line" behaviour="pass-through">
@@ -117,17 +121,17 @@
   [[content]]
 </div></pb:template>
         </model></elementSpec>
-            <elementSpec ident="add" mode="change"><model predicate="@place = 'superimposed' and parent::fw" behaviour="omit">
+            <elementSpec ident="add" mode="change"><model predicate="@place = 'inline'" behaviour="inline" cssClass="inline"/><model predicate="@place = 'superimposed' and parent::fw" behaviour="omit">
             <param name="id" value="replace(@corresp, '#', '')"/>
             <param name="hand" value="@hand"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]"><span class="[[hand]]">[[content]]</span></span></pb:template>
         </model><model predicate="@place = 'superimposed' and add[@place='superimposed']" behaviour="pass-through">
-            <param name="style" value="if (preceding-sibling::del[1]/@cause = @corresp and ((preceding-sibling::del[1]/preceding-sibling::*[1]/preceding-sibling::text()[1] = preceding-sibling::del[1]/preceding-sibling::text()[1] and not(matches(preceding-sibling::del[1]/preceding-sibling::*[1]/., '.*\s$')))) or (preceding-sibling::del[1]/preceding-sibling::*[1]/following-sibling::text()[1] = preceding-sibling::del[1]/preceding-sibling::text()[1] and not(matches(preceding-sibling::del[1]/preceding-sibling::text()[1], '.*\s$')))) then ('margin-left: -0.2em;') else ()"/>
+            <param name="style" value="if (preceding-sibling::del[1]/@cause = @corresp and ((preceding-sibling::del[1]/preceding::*[1]/preceding-sibling::text()[1] = preceding-sibling::del[1]/preceding-sibling::text()[1] and not(matches(preceding-sibling::del[1]/preceding-sibling::*[1]/., '.*\s$')))) or ((count(preceding-sibling::del[1]/preceding-sibling::*) eq 0 or preceding-sibling::del[1]/preceding-sibling::*[1]/following-sibling::text()[1] = preceding-sibling::del[1]/preceding-sibling::text()[1]) and not(matches(preceding-sibling::del[1]/preceding-sibling::text()[1], '.*\s$')))) then ('margin-left: -0.2em;') else ()"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><span style="[[style]]">[[content]]</span></pb:template>
         </model><model predicate="@place = 'superimposed'" behaviour="pass-through">
-            <param name="id" value="replace(@corresp, '#', '')"/>
+            <param name="id" value="parent::metamark/@xml:id"/>
             <param name="hand" value="replace(@hand, '#', '')"/>
             <param name="content" value="."/>
             <param name="style" value="if (preceding-sibling::del[1]/@cause = @corresp and ((preceding-sibling::del[1]/preceding::*[1]/preceding-sibling::text()[1] = preceding-sibling::del[1]/preceding-sibling::text()[1] and not(matches(preceding-sibling::del[1]/preceding-sibling::*[1]/., '.*\s$')))) or ((count(preceding-sibling::del[1]/preceding-sibling::*) eq 0 or preceding-sibling::del[1]/preceding-sibling::*[1]/following-sibling::text()[1] = preceding-sibling::del[1]/preceding-sibling::text()[1]) and not(matches(preceding-sibling::del[1]/preceding-sibling::text()[1], '.*\s$')))) then ('margin-left: -0.2em;') else ()"/>
@@ -218,7 +222,15 @@
                             überschrieben
                           </pb-i18n>:</span>
                         <span class="transkriptionField small [[hand]]">[[alternate]]</span></p></pb-popover></pb:template>
-        </model><model predicate="@rend" behaviour="inline"/><model behaviour="inline" cssClass="strikethrough"/></elementSpec><elementSpec ident="substJoin" mode="add"><model predicate="following::add/@place = 'superimposed' and following::del and not(parent::fw) and not(matches(preceding::text()[1], '.*\s$'))" behaviour="inline">
+        </model><model predicate="@rend and @hand" behaviour="pass-through">
+            <param name="content" value="."/>
+            <param name="deleteCls" value="concat(@rend, replace(@hand, '#', '-'))"/>
+            <pb:template xmlns="" xml:space="preserve"><span class="[[deleteCls]]">[[content]]</span></pb:template>
+        </model><model predicate="@hand" behaviour="pass-through">
+            <param name="content" value="."/>
+            <param name="deleteCls" value="concat('deleted', replace(@hand, '#', '-'))"/>
+            <pb:template xmlns="" xml:space="preserve"><span class="[[deleteCls]]">[[content]]</span></pb:template>
+        </model><model behaviour="inline" cssClass="strikethrough"/></elementSpec><elementSpec ident="substJoin" mode="add"><model predicate="following::add/@place = 'superimposed' and following::del and not(parent::fw) and not(matches(preceding::text()[1], '.*\s$'))" behaviour="inline">
             <outputRendition xml:space="preserve">
             margin-left: -0.2em;
             </outputRendition>

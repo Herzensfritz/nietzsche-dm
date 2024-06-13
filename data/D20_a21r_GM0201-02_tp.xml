@@ -1,0 +1,284 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>a21r</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div1 xml:id="GM02" xml:space="preserve"><anchor xml:id="a21r_div1_GM02"/>
+            <pb xml:id="a21r" corresp="#contents_a21r #folDesc_a21rv #addDesc_a21r #N_brown1" facs="#D-20a_15" change="#GM02revision #GM01-02finalVersion"/>
+            <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" xml:id="a21r_fw_d2e26"><subst xml:id="a21r_subst_d2e27"><del rend="erased">18</del><add place="superimposed" xml:id="a21r_add_d2e30">15</add></subst></fw>               
+            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="a21r_fw_d2e33">21</fw>
+            <note type="authorial" hand="#N_brown1" place="right" xml:id="a21r_note_d2e36">
+
+               <lb n="1" xml:id="a21r_lb1"/><handShift new="#N_brown1"/>NB! Anfang der <hi rend="underline">zweiten</hi> 
+               <lb n="2" xml:id="a21r_lb2"/>Abhandlung!</note>
+            <div2 xml:id="GM0201"><anchor xml:id="a21r_div2_GM0201"/>
+               <head xml:id="a21r_head_d2e49">
+                  <lb n="3" xml:id="a21r_lb3"/><milestone unit="page" edRef="#Ed" n="41"/>1.</head>
+               <p>
+                  <lb n="4" xml:id="a21r_lb4"/>Ein Thier heranzüchten, das <hi rend="underline">versprechen</hi> <hi rend="underline">darf</hi>  – ist das nicht gerade jene paradoxe Aufgabe selbst, welche sich die Natur in Hin<pc force="weak">-</pc>
+                  <lb n="5" xml:id="a21r_lb5"/>sicht auf den Menschen gestellt hat? ist es nicht das eigentliche Problem <hi rend="underline">vom</hi> Menschen?… Daß dies Problem bis zu einem 
+                  <lb n="6" xml:id="a21r_lb6"/>hohen Grad gelöst ist, muß dem um so erstaunlicher erscheinen, der die entgegenwirkende Kraft, die der <hi rend="underline">Vergeßlichkeit</hi>, voll<pc force="weak">-</pc>
+                  <lb n="7" xml:id="a21r_lb7"/>auf zu würdigen weiß. Vergeßlichkeit ist keine bloße <hi rend="latin">vis inertiae</hi>, wie die Oberflächlichen glauben, sie ist vielmehr ein ak<pc force="weak">-</pc>
+                  <lb n="8" xml:id="a21r_lb8"/>tives, im strengsten Sinne positives Hemmungsvermögen, dem es zuzuschreiben ist, daß was nur von uns erlebt, erfahren, 
+                  <lb n="9" xml:id="a21r_lb9"/>in uns hineingenommen wird, uns im Zustande der Verdauung (man dürfte ihn „Einverseelung“ nennen) ebenso wenig ins 
+                  <lb n="10" xml:id="a21r_lb10"/>Bewußtsein tritt, als der ganze tausendfältige Prozeß, mit dem sich unsre leibliche Ernährung, die sogenannte „Einverleibung“ 
+                  <lb n="11" xml:id="a21r_lb11"/>abspielt. Die Thüren und Fenster des Bewußtseins zeitweilig schließen; von dem Lärm und Kampf, mit dem unsre Un<pc force="weak">-</pc>
+                  <lb n="12" xml:id="a21r_lb12"/>terwelt von dienstbaren Organen für und gegen einander arbeitet, unbehelligt bleiben; ein wenig Stille, ein wenig 
+                  <lb n="13" xml:id="a21r_lb13"/><hi rend="latin">tabula rasa</hi><subst xml:id="a21r_subst_d2e108"><del rend="overwritten">,</del><add place="superimposed" instant="true" xml:id="a21r_add_d2e111"> d</add></subst>es Bewußtseins, damit wieder Platz wird für Neues, vor Allem für die vornehmeren Funktionen und 
+                  <lb n="14" xml:id="a21r_lb14"/>Funktionäre, für Regieren, Voraussehn, Vorausbestimmen (denn unser Organismus ist oligarchisch eingerichtet) – das 
+                  <lb n="15" xml:id="a21r_lb15"/>ist der Nutzen der, wie gesagt, aktiven Vergeßlichkeit, einer Thürwärterin gleichsam, <milestone unit="page" edRef="#Ed" n="42"/>einer Aufrechterhalterin der seeli<pc force="weak">-</pc>
+                  <lb n="16" xml:id="a21r_lb16"/>schen Ordnung, der Ruhe, der Etiquette: womit sofort abzusehn ist, inwiefern es kein Glück, keine Heiterkeit, keine 
+                  <lb n="17" xml:id="a21r_lb17"/>Hoffnung, keinen Stolz, keine <hi rend="underline">Gegenwart</hi> geben könnte ohne Vergeßlichkeit. Der Mensch, in dem dieser Hemmungsappa<pc force="weak">-</pc>
+                  <lb n="18" xml:id="a21r_lb18"/>rat beschädigt wird und aussetzt, ist einem Dyspeptiker zu vergleichen und nicht nur zu vergleichen – er wird mit Nichts 
+                  <lb n="19" xml:id="a21r_lb19"/>„fertig“… Eben dieses nothwendig vergeßliche Thier, an dem das Vergessen eine Kraft, eine Form der <hi rend="underline">starken</hi> Gesundheit dar<pc force="weak">-</pc>
+                  <lb n="20" xml:id="a21r_lb20"/>stellt, hat sich nun ein Gegenvermögen angezüchtet, ein Gedächtniß, mit Hülfe dessen für gewisse Fälle die Vergeßlichkeit 
+                  <lb n="21" xml:id="a21r_lb21"/>ausgehängt wird, – für die Fälle nämlich, daß versprochen werden soll: somit keineswegs bloß ein passivisches Nicht-wieder-los--
+                  <lb n="22" xml:id="a21r_lb22"/>werden-können des einmal eingeritzten Eindrucks, nicht bloß die Indigestion an einem ein Mal verpfändeten Wort, mit dem 
+                  <lb n="23" xml:id="a21r_lb23"/>man n*icht  wieder fertig wird, sondern ein aktives <subst xml:id="a21r_subst_d2e156"><del rend="overwritten">n</del><add place="superimposed" xml:id="a21r_add_d2e159">N</add></subst>icht-wieder-los-werden-<hi rend="underline">wollen</hi>, ein Fort- und Fortwollen des ein Mal 
+                  <lb n="24" xml:id="a21r_lb24"/>Gewollten, ein eigentliches <hi rend="underline">Gedächtniß</hi> <hi rend="underline">des</hi> <hi rend="underline">Willens</hi>: so daß zwischen das ursprüngliche „ich will“ „ich werde thun“ und 
+                  <lb n="25" xml:id="a21r_lb25"/>die eigentliche Entladung des Willens, seinen Akt unbedenklich eine Welt von neuen fremden Dingen, Umständen, selbst 
+                  <lb n="26" xml:id="a21r_lb26"/>Willensakten dazwischengelegt werden darf, ohne daß diese lange Kette des Willens springt. Was setzt das aber Alles voraus! 
+                  <lb n="27" xml:id="a21r_lb27"/>Wie muß der Mensch, um dermaaßen über die Zukunft vorauszuverfügen, erst gelernt haben, das nothwendige vom zufälligen 
+                  <lb n="28" xml:id="a21r_lb28"/>Geschehen scheiden, causal denken, das Ferne wie gegenwärtig sehn und vorwegnehmen, was Zweck ist, was Mittel <add place="above" rend="insM" xml:id="a21r_add_d2e186">dazu</add> ist, mit 
+                  <lb n="29" xml:id="a21r_lb29"/>Sicherheit ansetzen, überhaupt rechnen, berechnen können – wie muß dazu der Mensch selbst vorerst <milestone unit="page" edRef="#Ed" n="43"/><hi rend="underline">berechenbar</hi>, <hi rend="underline"> regelmä<pc force="weak">-</pc>
+                  <lb n="30" xml:id="a21r_lb30"/>ßig</hi>,<hi rend="underline"> nothwendig</hi> geworden sein, auch sich selbst für seine eigne Vorstellung, um endlich dergestalt, wie es ein Versprechender 
+                  <lb n="31" xml:id="a21r_lb31"/>thut, für sich <hi rend="underline">als</hi> <hi rend="underline">Zukunft</hi> gut sagen zu können!
+                  </p>
+            </div2>
+            <div2 xml:id="GM0202"><anchor xml:id="a21r_div2_GM0202"/>
+               <head xml:id="a21r_head_d2e220">
+                  <lb n="32" xml:id="a21r_lb32"/>2.</head>
+               <p>
+                  <lb n="33" xml:id="a21r_lb33"/>Eben das ist die lange Geschichte von der Herkunft der <hi rend="underline">Verantwortlichkeit</hi>. Jene Aufgabe, ein Thier heranzuzüchten, das 
+                  <lb n="34" xml:id="a21r_lb34"/>versprechen darf, schließt, wie wir bereits begriffen haben, als Bedingung und Vorbereitung die nähere Aufgabe in sich, den 
+                  <lb n="35" xml:id="a21r_lb35"/>Menschen zuerst bis zu einem gewissen Grade nothwendig, einförmig, gleich unter Gleichen, regelmäßig und folglich berechen<pc force="weak">-</pc>
+                  <lb n="36" xml:id="a21r_lb36"/>bar zu <hi rend="underline">machen</hi>. Die ungeheure Arbeit dessen, was von mir „Sittlichkeit der Sitte“ genannt worden ist (vergl. <hi rend="latin">Morgen<pc force="weak">-</pc>
+                  <lb n="37" xml:id="a21r_lb37"/>röthe</hi> S. 7. 13. 16) – die eigentliche Arbeit des Menschen an sich selber in der längsten Zeitdauer des Menschengeschlechts, seine 
+                  <lb n="38" xml:id="a21r_lb38"/>ganze <hi rend="underline">vorhistorische</hi> Arbeit hat hierin ihren Sinn, ihre große Rechtfertigung, wie viel ihr auch von Härte, Tyrannei, Stumpf<pc force="weak">-</pc>
+                  <lb n="39" xml:id="a21r_lb39"/>sinn und Idiotismus innewohnt: <subst xml:id="a21r_subst_d2e264"><del rend="overwritten">D</del><add place="superimposed" xml:id="a21r_add_d2e267">d</add></subst>er Mensch wurde mit Hülfe der Sittlichkeit der Sitte und der socialen Zwangsjacke wirk<pc force="weak">-</pc>
+                  <lb n="40" xml:id="a21r_lb40"/>lich berechenbar <hi rend="underline">gemacht</hi>. Stellen wir uns dagegen ans Ende des ungeheuren Prozesses, dorthin, wo der Baum endlich seine 
+                  <lb n="41" xml:id="a21r_lb41"/>Früchte zeitigt, wo die Societät und ihre Sittlichkeit der Sitte endlich zu Tage bringt, <hi rend="underline">wozu</hi> sie nur das Mittel war: so 
+                  <lb n="42" xml:id="a21r_lb42"/>finden wir <add place="above" rend="insM" xml:id="a21r_add_d2e286">als reifste Frucht an ihrem Baume</add> das <hi rend="underline">souveraine</hi> <hi rend="underline">Individuum</hi>, das nur sich selbst gleiche, das von der Sittlichkeit der Sitte <add place="above" rend="insM" xml:id="a21r_add_d2e295">wieder</add> losgekommene<subst instant="true" xml:id="a21r_subst_d2e299"><add place="inline" xml:id="a21r_add_d2e300">, </add> <del rend="hatching"><hi rend="latin">ego</hi>, das</del></subst> 
+                  <lb n="43" xml:id="a21r_lb43"/> das autonome <hi rend="underline">un</hi>sittliche <subst xml:id="a21r_subst_d2e315"><add place="above" rend="insM" xml:id="a21r_add_d2e316">Individuum</add><del rend="hatching"><hi rend="latin">ego</hi></del></subst> (denn „autonom“ und „sittlich“ sind Gegensätze), kurz den Menschen des eignen unabhän<pc force="weak">-</pc>
+                  <lb n="44" xml:id="a21r_lb44"/>gigen langen Willens, der <hi rend="underline">ver<milestone unit="page" edRef="#Ed" n="44"/>sprechen</hi> <hi rend="underline">darf</hi> – und in ihm ein stolzes, in allen Muskeln zuckendes Bewußtsein davon, 
+                  <lb n="45" xml:id="a21r_lb45"/><hi rend="underline">was</hi> da endlich errungen und in ihm leibhaft geworden ist, ein eigentliches Macht- und Freiheits-Bewußtsein, ein Vol<pc force="weak">-</pc>
+                  <lb n="46" xml:id="a21r_lb46"/>lendungs-Gefühl des Menschen überhaupt. Dieser Freigewordne, der wirklich versprechen <hi rend="underline">darf</hi>, dieser Herr des <hi rend="underline">freien</hi> 
+                  <lb n="47" xml:id="a21r_lb47"/>Willens, dieser Souverain – wie sollte er es nicht wissen, welche Überlegenheit er damit vor Allem voraus hat, 
+                  <lb n="48" xml:id="a21r_lb48"/>was nicht versprechen und für sich selbst gut sagen darf, wie viel Vertrauen, wie viel Furcht, wie viel Ehrfurcht er 
+                  <lb n="49" xml:id="a21r_lb49"/>erweckt – er <hi rend="underline">verdient</hi> alles Dreies – und wie ihm, mit dieser Herrschaft über sich, auch die Herrschaft über die Umstände, 
+                  <lb n="50" xml:id="a21r_lb50"/>über die Natur und alle willenskürzeren und unzuverlässigeren Creaturen nothwendig in die Hand gegeben ist? Der 
+                  <lb n="51" xml:id="a21r_lb51"/>„freie“ Mensch, der Inhaber eines langen unzerbrechlichen Willens, hat in diesem Besitz auch sein <hi rend="underline">Werthmaaß</hi>: von sich 
+                  <lb n="52" xml:id="a21r_lb52"/>aus nach den Andern hinblickend, ehrt er oder verachtet er; und eben so nothwendig als er die ihm Gleichen, die Starken 
+                  <lb n="53" xml:id="a21r_lb53"/>und Zuverlässigen (die welche versprechen <hi rend="underline">dürfen</hi>) ehrt – also Jedermann, der wie ein Souverain verspricht, schwer, sel<pc force="weak">-</pc>
+                  <lb n="54" xml:id="a21r_lb54"/>ten, langsam, der mit seinem Vertrauen geizt, der <hi rend="underline">auszeichnet</hi>, wenn er vertraut, der sein Wort giebt als etwas, auf 
+                  <lb n="55" xml:id="a21r_lb55"/>das Verlaß ist, weil er sich stark genug weiß, es selbst gegen Unfälle, selbst „gegen das Schicksal“ aufrecht zu halten –: 
+                  <lb n="56" xml:id="a21r_lb56"/>eben so nothwendig wird er seinen Fußtritt für die schmächtigen Windhunde bereit halten, welche versprechen, ohne es 
+                  <lb n="57" xml:id="a21r_lb57"/>zu dürfen, und seine Zuchtruthe für den Lügner, der sein Wort bricht, im Augenblick schon, wo er es im Munde hat. 
+                  <lb n="58" xml:id="a21r_lb58"/>Das stolze Wissen um das außerordentliche Privilegium der <hi rend="underline">Verantwortlichkeit</hi>, das Bewußtsein <milestone unit="page" edRef="#Ed" n="45"/>dieser seltenen Frei<pc force="weak">-</pc>
+                  <lb n="59" xml:id="a21r_lb59"/>heit, dieser Macht über sich und das Geschick hat sich bei ihm bis in seine unterste Tiefe hinabgesenkt und ist 
+                  <lb n="60" xml:id="a21r_lb60"/>zum Instinkt geworden, zum <choice xml:id="a21r_choice_d2e407"><sic>domirenden</sic><corr>dominirenden</corr></choice> Instinkt: – wie wird er ihn nennen, diesen dominirenden Instinkt, ge<pc force="weak">-</pc>
+                  <lb n="61" xml:id="a21r_lb61"/>setzt, daß er ein Wort dafür bei sich nöthig hat? Aber es ist kein Zweifel: dieser souveraine Mensch nennt ihn 
+                  <lb n="62" xml:id="a21r_lb62"/>sein <hi rend="underline">Gewissen</hi>…
+               </p></div2></div1>
+      </body>
+   </text>
+   <sourceDoc>
+      <surface xml:id="srcD_surface_a21r" type="relative" start="#a21r" facs="#D-20a_15">
+         <zone xml:id="srcD_zone_a21r_div2_GM0201" start="#a21r_div2_GM0201" type="firstBlock" style="padding-top:5em;">
+            <zone xml:id="srcD_zone_a21r_fw_d2e26" type="fw-top-right" start="#a21r_fw_d2e26">
+               <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#a21r_fw_d2e26">
+                  <del rend="erased" cause="#a21r_add_d2e30">18</del>
+                  <add place="superimposed" corresp="#a21r_add_d2e30">15</add>
+               </fw>
+            </zone>
+            <zone xml:id="srcD_zone_a21r_note_d2e36_a21r_lb1" type="note-zone" start="#a21r_lb1">
+               <line xml:id="srcD_line_a21r_note_d2e36_a21r_lb1" style="top:1em;" start="#a21r_lb1" hand="#N_brown1" n="1">
+                  <handShift new="#N_brown1"/>NB! Anfang der <hi rend="underline">zweiten</hi>
+               </line>
+            </zone>
+            <zone xml:id="srcD_zone_a21r_note_d2e36_a21r_lb2" type="note-zone" start="#a21r_lb2">
+               <line xml:id="srcD_line_a21r_note_d2e36_a21r_lb2" style="top:2em;" start="#a21r_lb2" hand="#N_brown1" n="2">Abhandlung!
+            <anchor corresp="#a21r_div2_GM0201"/>
+               </line>
+            </zone>
+            <line xml:id="srcD_line_a21r_head_d2e49_a21r_lb3" start="#a21r_lb3" n="3" hand="#N_brown1">
+               <zone xml:id="srcD_zone_a21r_head_d2e49_a21r_lb3" type="head">
+                  <milestone unit="page" edRef="#Ed" n="41"/>1.
+                  </zone>
+            </line>
+            <line xml:id="srcD_line_a21r_lb4" start="#a21r_lb4" hand="#N_brown1" n="4">Ein Thier heranzüchten, das <hi rend="underline">versprechen</hi>
+               <hi rend="underline">darf</hi>  – ist das nicht gerade jene paradoxe Aufgabe selbst, welche sich die Natur in Hin<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a21r_lb5" start="#a21r_lb5" hand="#N_brown1" n="5">sicht auf den Menschen gestellt hat? ist es nicht das eigentliche Problem <hi rend="underline">vom</hi> Menschen?… Daß dies Problem bis zu einem 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb6" start="#a21r_lb6" hand="#N_brown1" n="6">hohen Grad gelöst ist, muß dem um so erstaunlicher erscheinen, der die entgegenwirkende Kraft, die der <hi rend="underline">Vergeßlichkeit</hi>, voll<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a21r_lb7" start="#a21r_lb7" hand="#N_brown1" n="7">auf zu würdigen weiß. Vergeßlichkeit ist keine bloße <hi rend="latin">vis inertiae</hi>, wie die Oberflächlichen glauben, sie ist vielmehr ein ak<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a21r_lb8" start="#a21r_lb8" hand="#N_brown1" n="8">tives, im strengsten Sinne positives Hemmungsvermögen, dem es zuzuschreiben ist, daß was nur von uns erlebt, erfahren, 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb9" start="#a21r_lb9" hand="#N_brown1" n="9">in uns hineingenommen wird, uns im Zustande der Verdauung (man dürfte ihn „Einverseelung“ nennen) ebenso wenig ins 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb10" start="#a21r_lb10" hand="#N_brown1" n="10">Bewußtsein tritt, als der ganze tausendfältige Prozeß, mit dem sich unsre leibliche Ernährung, die sogenannte „Einverleibung“ 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb11" start="#a21r_lb11" hand="#N_brown1" n="11">abspielt. Die Thüren und Fenster des Bewußtseins zeitweilig schließen; von dem Lärm und Kampf, mit dem unsre Un<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a21r_lb12" start="#a21r_lb12" hand="#N_brown1" n="12">terwelt von dienstbaren Organen für und gegen einander arbeitet, unbehelligt bleiben; ein wenig Stille, ein wenig 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb13" start="#a21r_lb13" hand="#N_brown1" n="13">
+               <hi rend="latin">tabula rasa</hi>
+               <del rend="overwritten" cause="#a21r_add_d2e111">,</del>
+               <add place="superimposed" instant="true" corresp="#a21r_add_d2e111"> d</add>es Bewußtseins, damit wieder Platz wird für Neues, vor Allem für die vornehmeren Funktionen und 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb14" start="#a21r_lb14" hand="#N_brown1" n="14">Funktionäre, für Regieren, Voraussehn, Vorausbestimmen (denn unser Organismus ist oligarchisch eingerichtet) – das 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb15" start="#a21r_lb15" hand="#N_brown1" n="15">ist der Nutzen der, wie gesagt, aktiven Vergeßlichkeit, einer Thürwärterin gleichsam, <milestone unit="page" edRef="#Ed" n="42"/>einer Aufrechterhalterin der seeli<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a21r_lb16" start="#a21r_lb16" hand="#N_brown1" n="16">schen Ordnung, der Ruhe, der Etiquette: womit sofort abzusehn ist, inwiefern es kein Glück, keine Heiterkeit, keine 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb17" start="#a21r_lb17" hand="#N_brown1" n="17">Hoffnung, keinen Stolz, keine <hi rend="underline">Gegenwart</hi> geben könnte ohne Vergeßlichkeit. Der Mensch, in dem dieser Hemmungsappa<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a21r_lb18" start="#a21r_lb18" hand="#N_brown1" n="18">rat beschädigt wird und aussetzt, ist einem Dyspeptiker zu vergleichen und nicht nur zu vergleichen – er wird mit Nichts 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb19" start="#a21r_lb19" hand="#N_brown1" n="19">„fertig“… Eben dieses nothwendig vergeßliche Thier, an dem das Vergessen eine Kraft, eine Form der <hi rend="underline">starken</hi> Gesundheit dar<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a21r_lb20" start="#a21r_lb20" hand="#N_brown1" n="20">stellt, hat sich nun ein Gegenvermögen angezüchtet, ein Gedächtniß, mit Hülfe dessen für gewisse Fälle die Vergeßlichkeit 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb21" start="#a21r_lb21" hand="#N_brown1" n="21">ausgehängt wird, – für die Fälle nämlich, daß versprochen werden soll: somit keineswegs bloß ein passivisches Nicht-wieder-los--
+                  </line>
+            <line xml:id="srcD_line_a21r_lb22" start="#a21r_lb22" hand="#N_brown1" n="22">werden-können des einmal eingeritzten Eindrucks, nicht bloß die Indigestion an einem ein Mal verpfändeten Wort, mit dem 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb23" start="#a21r_lb23" hand="#N_brown1" n="23">man n*icht  wieder fertig wird, sondern ein aktives <del rend="overwritten" cause="#a21r_add_d2e159">n</del>
+               <add place="superimposed" corresp="#a21r_add_d2e159">N</add>icht-wieder-los-werden-<hi rend="underline">wollen</hi>, ein Fort- und Fortwollen des ein Mal 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb24" start="#a21r_lb24" hand="#N_brown1" n="24">Gewollten, ein eigentliches <hi rend="underline">Gedächtniß</hi>
+               <hi rend="underline">des</hi>
+               <hi rend="underline">Willens</hi>: so daß zwischen das ursprüngliche „ich will“ „ich werde thun“ und 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb25" start="#a21r_lb25" hand="#N_brown1" n="25">die eigentliche Entladung des Willens, seinen Akt unbedenklich eine Welt von neuen fremden Dingen, Umständen, selbst 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb26" start="#a21r_lb26" hand="#N_brown1" n="26">Willensakten dazwischengelegt werden darf, ohne daß diese lange Kette des Willens springt. Was setzt das aber Alles voraus! 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb27" start="#a21r_lb27" hand="#N_brown1" n="27">Wie muß der Mensch, um dermaaßen über die Zukunft vorauszuverfügen, erst gelernt haben, das nothwendige vom zufälligen 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb28" start="#a21r_lb28" hand="#N_brown1" n="28">Geschehen scheiden, causal denken, das Ferne wie gegenwärtig sehn und vorwegnehmen, was Zweck ist, was Mittel <metamark xml:id="srcD_metamark_a21r_add_d2e186" function="insertion" rend="inSpatium">
+                  <add place="above" corresp="#a21r_add_d2e186">dazu</add>
+               </metamark> ist, mit 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb29" start="#a21r_lb29" hand="#N_brown1" n="29">Sicherheit ansetzen, überhaupt rechnen, berechnen können – wie muß dazu der Mensch selbst vorerst <milestone unit="page" edRef="#Ed" n="43"/>
+               <hi rend="underline">berechenbar</hi>, <hi rend="underline"> regelmä</hi>
+               <hi rend="underline">
+                  <pc force="weak">-</pc>
+               </hi>
+            </line>
+            <line xml:id="srcD_line_a21r_lb30" start="#a21r_lb30" hand="#N_brown1" n="30">
+               <hi rend="underline">ßig</hi>,<hi rend="underline"> nothwendig</hi> geworden sein, auch sich selbst für seine eigne Vorstellung, um endlich dergestalt, wie es ein Versprechender 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb31" start="#a21r_lb31" hand="#N_brown1" n="31">thut, für sich <hi rend="underline">als</hi>
+               <hi rend="underline">Zukunft</hi> gut sagen zu können!
+                  
+            <anchor corresp="#a21r_div2_GM0202"/>
+            </line>
+         </zone>
+         <zone xml:id="srcD_zone_a21r_div2_GM0202" start="#a21r_div2_GM0202" type="lastBlock" style="padding-bottom:5em;">
+            <line xml:id="srcD_line_a21r_head_d2e220_a21r_lb32" start="#a21r_lb32" n="32" hand="#N_brown1">
+               <zone xml:id="srcD_zone_a21r_head_d2e220_a21r_lb32" type="head">2.
+                  </zone>
+            </line>
+            <line xml:id="srcD_line_a21r_lb33" start="#a21r_lb33" hand="#N_brown1" n="33">Eben das ist die lange Geschichte von der Herkunft der <hi rend="underline">Verantwortlichkeit</hi>. Jene Aufgabe, ein Thier heranzuzüchten, das 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb34" start="#a21r_lb34" hand="#N_brown1" n="34">versprechen darf, schließt, wie wir bereits begriffen haben, als Bedingung und Vorbereitung die nähere Aufgabe in sich, den 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb35" start="#a21r_lb35" hand="#N_brown1" n="35">Menschen zuerst bis zu einem gewissen Grade nothwendig, einförmig, gleich unter Gleichen, regelmäßig und folglich berechen<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a21r_lb36" start="#a21r_lb36" hand="#N_brown1" n="36">bar zu <hi rend="underline">machen</hi>. Die ungeheure Arbeit dessen, was von mir „Sittlichkeit der Sitte“ genannt worden ist (vergl. <hi rend="latin">Morgen</hi>
+               <hi rend="latin">
+                  <pc force="weak">-</pc>
+               </hi>
+            </line>
+            <line xml:id="srcD_line_a21r_lb37" start="#a21r_lb37" hand="#N_brown1" n="37">
+               <hi rend="latin">röthe</hi> S. 7. 13. 16) – die eigentliche Arbeit des Menschen an sich selber in der längsten Zeitdauer des Menschengeschlechts, seine 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb38" start="#a21r_lb38" hand="#N_brown1" n="38">ganze <hi rend="underline">vorhistorische</hi> Arbeit hat hierin ihren Sinn, ihre große Rechtfertigung, wie viel ihr auch von Härte, Tyrannei, Stumpf<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a21r_lb39" start="#a21r_lb39" hand="#N_brown1" n="39">sinn und Idiotismus innewohnt: <del rend="overwritten" cause="#a21r_add_d2e267">D</del>
+               <add place="superimposed" corresp="#a21r_add_d2e267">d</add>er Mensch wurde mit Hülfe der Sittlichkeit der Sitte und der socialen Zwangsjacke wirk<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a21r_lb40" start="#a21r_lb40" hand="#N_brown1" n="40">lich berechenbar <hi rend="underline">gemacht</hi>. Stellen wir uns dagegen ans Ende des ungeheuren Prozesses, dorthin, wo der Baum endlich seine 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb41" start="#a21r_lb41" hand="#N_brown1" n="41">Früchte zeitigt, wo die Societät und ihre Sittlichkeit der Sitte endlich zu Tage bringt, <hi rend="underline">wozu</hi> sie nur das Mittel war: so 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb42" start="#a21r_lb42" hand="#N_brown1" n="42">finden wir <metamark xml:id="srcD_metamark_a21r_add_d2e286" function="insertion" rend="inSpatium">
+                  <add place="above" corresp="#a21r_add_d2e286">als reifste Frucht an ihrem Baume</add>
+               </metamark> das <hi rend="underline">souveraine</hi>
+               <hi rend="underline">Individuum</hi>, das nur sich selbst gleiche, das von der Sittlichkeit der Sitte <metamark xml:id="srcD_metamark_a21r_add_d2e295" function="insertion" rend="inSpatium">
+                  <add place="above" corresp="#a21r_add_d2e295">wieder</add>
+               </metamark> losgekommene<add place="inline" corresp="#a21r_add_d2e300">, </add>
+               <del rend="hatching">
+                  <hi rend="latin">ego</hi>, das</del>
+            </line>
+            <line xml:id="srcD_line_a21r_lb43" start="#a21r_lb43" hand="#N_brown1" n="43"> das autonome <hi rend="underline">un</hi>sittliche <metamark xml:id="srcD_metamark_a21r_add_d2e316" function="insertion">
+                  <add place="above" corresp="#a21r_add_d2e316">Individuum</add>
+               </metamark>
+               <del rend="hatching">
+                  <hi rend="latin">ego</hi>
+               </del> (denn „autonom“ und „sittlich“ sind Gegensätze), kurz den Menschen des eignen unabhän<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a21r_lb44" start="#a21r_lb44" hand="#N_brown1" n="44">gigen langen Willens, der <hi rend="underline">ver<milestone unit="page" edRef="#Ed" n="44"/>sprechen</hi>
+               <hi rend="underline">darf</hi> – und in ihm ein stolzes, in allen Muskeln zuckendes Bewußtsein davon, 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb45" start="#a21r_lb45" hand="#N_brown1" n="45">
+               <hi rend="underline">was</hi> da endlich errungen und in ihm leibhaft geworden ist, ein eigentliches Macht- und Freiheits-Bewußtsein, ein Vol<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a21r_lb46" start="#a21r_lb46" hand="#N_brown1" n="46">lendungs-Gefühl des Menschen überhaupt. Dieser Freigewordne, der wirklich versprechen <hi rend="underline">darf</hi>, dieser Herr des <hi rend="underline">freien</hi>
+            </line>
+            <line xml:id="srcD_line_a21r_lb47" start="#a21r_lb47" hand="#N_brown1" n="47">Willens, dieser Souverain – wie sollte er es nicht wissen, welche Überlegenheit er damit vor Allem voraus hat, 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb48" start="#a21r_lb48" hand="#N_brown1" n="48">was nicht versprechen und für sich selbst gut sagen darf, wie viel Vertrauen, wie viel Furcht, wie viel Ehrfurcht er 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb49" start="#a21r_lb49" hand="#N_brown1" n="49">erweckt – er <hi rend="underline">verdient</hi> alles Dreies – und wie ihm, mit dieser Herrschaft über sich, auch die Herrschaft über die Umstände, 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb50" start="#a21r_lb50" hand="#N_brown1" n="50">über die Natur und alle willenskürzeren und unzuverlässigeren Creaturen nothwendig in die Hand gegeben ist? Der 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb51" start="#a21r_lb51" hand="#N_brown1" n="51">„freie“ Mensch, der Inhaber eines langen unzerbrechlichen Willens, hat in diesem Besitz auch sein <hi rend="underline">Werthmaaß</hi>: von sich 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb52" start="#a21r_lb52" hand="#N_brown1" n="52">aus nach den Andern hinblickend, ehrt er oder verachtet er; und eben so nothwendig als er die ihm Gleichen, die Starken 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb53" start="#a21r_lb53" hand="#N_brown1" n="53">und Zuverlässigen (die welche versprechen <hi rend="underline">dürfen</hi>) ehrt – also Jedermann, der wie ein Souverain verspricht, schwer, sel<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a21r_lb54" start="#a21r_lb54" hand="#N_brown1" n="54">ten, langsam, der mit seinem Vertrauen geizt, der <hi rend="underline">auszeichnet</hi>, wenn er vertraut, der sein Wort giebt als etwas, auf 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb55" start="#a21r_lb55" hand="#N_brown1" n="55">das Verlaß ist, weil er sich stark genug weiß, es selbst gegen Unfälle, selbst „gegen das Schicksal“ aufrecht zu halten –: 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb56" start="#a21r_lb56" hand="#N_brown1" n="56">eben so nothwendig wird er seinen Fußtritt für die schmächtigen Windhunde bereit halten, welche versprechen, ohne es 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb57" start="#a21r_lb57" hand="#N_brown1" n="57">zu dürfen, und seine Zuchtruthe für den Lügner, der sein Wort bricht, im Augenblick schon, wo er es im Munde hat. 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb58" start="#a21r_lb58" hand="#N_brown1" n="58">Das stolze Wissen um das außerordentliche Privilegium der <hi rend="underline">Verantwortlichkeit</hi>, das Bewußtsein <milestone unit="page" edRef="#Ed" n="45"/>dieser seltenen Frei<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a21r_lb59" start="#a21r_lb59" hand="#N_brown1" n="59">heit, dieser Macht über sich und das Geschick hat sich bei ihm bis in seine unterste Tiefe hinabgesenkt und ist 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb60" start="#a21r_lb60" hand="#N_brown1" n="60">zum Instinkt geworden, zum <index indexName="choice" spanTo="#a21r_choice_d2e407_anchor" corresp="#a21r_choice_d2e407"/>domirenden<anchor xml:id="a21r_choice_d2e407_anchor"/> Instinkt: – wie wird er ihn nennen, diesen dominirenden Instinkt, ge<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a21r_lb61" start="#a21r_lb61" hand="#N_brown1" n="61">setzt, daß er ein Wort dafür bei sich nöthig hat? Aber es ist kein Zweifel: dieser souveraine Mensch nennt ihn 
+                  </line>
+            <line xml:id="srcD_line_a21r_lb62" start="#a21r_lb62" hand="#N_brown1" n="62">sein <hi rend="underline">Gewissen</hi>…
+               </line>
+            <zone xml:id="srcD_zone_a21r_fw_d2e33" type="fw-bottom-left" start="#a21r_fw_d2e33">
+               <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#a21r_fw_d2e33">21</fw>
+            </zone>
+         </zone>
+      </surface>
+   </sourceDoc>
+</TEI>
