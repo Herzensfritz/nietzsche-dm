@@ -6,6 +6,9 @@ body {
          --nbrown: #5C4033;
          --red: #dc3545;
 }
+.choice {
+    text-decoration: var(--blue, blue) wavy underline;
+}
 .typesetter_red {
     color: var(--red);
 }
@@ -21,7 +24,7 @@ body {
 .metamark { cursor: pointer;}
 .small { color: black; padding: 3px; }
 .fw-box { background-color: #add8e6;}
-.popover { background-color: #F5F5F5; cursor: context-menu; }
+.popover { background-color: #F5F5F5; cursor: context-menu; color: black;}
     .box, .editorCorrection { background-color: #F5F5F5; width: max-content; text-align: start;}
     .box .tooltip {
        display: none;
@@ -127,7 +130,7 @@ body {
          transition: color 1s;
          
      }
-    .above.instantaneous, .below.instantaneous {
+    .above.instantaneous, .below.instantaneous, .inline.instantaneous {
        font-size: 100%; 
     }
     .above, .below {
@@ -174,6 +177,10 @@ body {
    .beforePunctuationinsertion-below:before { margin-left: 4px;}
    .addSpan { font-size:80%;}
    .erased { color: grey;}
+   .tei-del1.erased {
+       color: inherit;
+       opacity: 0.6;
+   }
     .inline { font-size:80%;}
     .add-zone .inline {
         font-size: 100%;

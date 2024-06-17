@@ -1,0 +1,137 @@
+<?teipublisher template="surface.html" odd="surface.odd" view="surface" media="pdf epub print"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+          <title>b3r</title>
+         </titleStmt>
+         <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div1 xml:space="preserve"><anchor xml:id="b3r_div1_d2e22"/>
+            <pb xml:id="b3r" corresp="#contents_b3r #folDesc_b3rv #addDesc_b3r #N_black2" facs="#D-20b_3" change="#GM03firstVersion #GM03completion #GM03finalVersion"/>
+            <fw type="pageNumber" hand="#N_pencil" place="top-left" xml:id="b3r_fw_d2e26">3</fw>
+            <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" xml:id="b3r_fw_d2e29"><del rend="erased">39</del></fw>
+            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="b3r_fw_d2e33">3</fw>
+            <substJoin n="12" target="#subst1a_b3r #subst1b_b3r"/>
+            <div2><anchor xml:id="b3r_div2_d2e39"/><p>
+               <lb n="1" xml:id="b3r_lb1"/>leicht <milestone unit="page" edRef="#Ed" n="99"/>in Nichts größer als gerade darin, den Muth zu seiner <hi rend="underline">Sinnlichkeit</hi> gehabt zu 
+               <lb n="2" xml:id="b3r_lb2"/>haben<subst xml:id="b3r_subst_d2e52"><del rend="strikethrough" cause="insM">.</del> <add place="above" rend="insM" xml:id="b3r_add_d2e56">(– man hieß sie damals, zart genug, die „evangelische Freiheit“…)</add></subst> Selbst aber in jenem Falle, wo es wirklich jenen Gegensatz zwischen Keuschheit 
+               <lb n="3" xml:id="b3r_lb3"/>und Sinnlichkeit giebt, braucht es glücklicher Weise noch lange kein tragischer Gegensatz 
+               <lb n="4" xml:id="b3r_lb4"/>zu sein. Dies dürfte wenigstens für alle wohlgeratheneren, wohlgemutheren Sterbli<pc force="weak">-</pc>
+               <lb n="5" xml:id="b3r_lb5"/>chen gelten, welche ferne davon sind, ihr labiles Gleichgewicht zwischen „Thier und 
+               <lb n="6" xml:id="b3r_lb6"/>Engel“ ohne Weiteres zu den Gegengründen des Daseins zu rechnen<subst instant="true" xml:id="b3r_subst_d2e71"><del rend="overwritten">.</del><add place="superimposed" xml:id="b3r_add_d2e74">,</add></subst> – die Feinsten 
+               <lb n="7" xml:id="b3r_lb7"/>und Hellsten, gleich Goethen, gleich Hafis, haben darin sogar einen Lebensreiz <hi rend="underline">mehr</hi> 
+               <lb n="8" xml:id="b3r_lb8"/>gesehn. Solche „Widersprüche“ gerade verführen zum Dasein… Andrerseits versteht es 
+               <lb n="9" xml:id="b3r_lb9"/>sich nur zu gut, daß wenn einmal die verunglückten Schweine dazu gebracht werden, 
+               <lb n="10" xml:id="b3r_lb10"/>die Keuschheit anzubeten – und es giebt solche Schweine! – sie in ihr nur ihren Ge<pc force="weak">-</pc>
+               <lb n="11" xml:id="b3r_lb11"/>gensatz, den Gegensatz zum verunglückten Schweine sehn und anbeten<subst xml:id="b3r_subst_d2e95"><del rend="strikethrough" cause="insM">*;</del> <add place="above" rend="insM" xml:id="b3r_add_d2e100">werden –</add></subst> oh mit was für 
+               <lb n="12" xml:id="b3r_lb12"/>einem tragischen Gegrunz und Eifer<subst xml:id="subst1a_b3r" seq="1"><del rend="overwritten">,</del><add place="superimposed" xml:id="b3r_add_d2e108">!</add></subst> man kann es sich denken<subst xml:id="subst1b_b3r" seq="1" instant="true"><del rend="strikethrough">!</del><add place="inline" xml:id="b3r_add_d2e114">:</add> <del rend="hatching">–</del></subst> jenen peinlichen 
+               <lb n="13" xml:id="b3r_lb13"/>und überflüssigen Gegensatz, den Richard Wagner unbestreitbar am Ende seines Le<pc force="weak">-</pc>
+               <lb n="14" xml:id="b3r_lb14"/>bens noch hat in Musik setzen und auf die Bühne stellen wollen. <hi rend="underline">Wozu</hi> <hi rend="underline">doch</hi>? 
+               <lb n="15" xml:id="b3r_lb15"/>wie man billig fragen darf. Denn was giengen ihn, was gehen uns <del rend="hatching">–</del> die Schwei<pc force="weak">-</pc>
+               <lb n="16" xml:id="b3r_lb16"/>ne an? –</p></div2>
+            <div2 xml:id="GM0303"><anchor xml:id="b3r_div2_GM0303"/>
+               <head xml:id="b3r_head_d2e148">
+                  <lb n="17" xml:id="b3r_lb17"/><subst change="#GM03completion" xml:id="b3r_subst_d2e151"><del rend="overwritten">2</del><add hand="#N_pencil" place="superimposed" xml:id="b3r_add_d2e154">3</add></subst>.</head>
+               <p>
+                  <lb n="18" rend="indent" xml:id="b3r_lb18"/>Dabei ist freilich jene andre Frage nicht zu umgehn, was ihn eigentlich jene männ<pc force="weak">-</pc>
+                  <lb n="19" xml:id="b3r_lb19"/>liche (ach, so unmännliche) „Einfalt vom Lande“ angieng, jener arme Teufel und Natur<pc force="weak">-</pc>
+                  <lb n="20" xml:id="b3r_lb20"/>bursch Parsifal, der von ihm mit so verfänglichen Mitteln schließlich katholisch gemacht 
+                  <lb n="21" xml:id="b3r_lb21"/>wird – wie? war dieser Parsifal überhaupt <hi rend="underline">ernst</hi> ge<milestone unit="page" edRef="#Ed" n="100"/>meint? Man könnte näm<pc force="weak">-</pc>
+                  <lb n="22" xml:id="b3r_lb22"/>lich versucht sein, das Umgekehrte zu muthma<restore type="dotUnderline"><del rend="strikethrough">a</del></restore>ßen, selbst zu wünschen, – daß der 
+                  <lb n="23" xml:id="b3r_lb23"/>Wagnersche Parsifal heiter gemeint sei, gleichsam als Schlußstück und Satyrdrama, 
+                  <lb n="24" xml:id="b3r_lb24"/>mit dem der Tragiker Wagner auf eine gerade ihm gebührende und würdige Weise von 
+               </p></div2></div1>
+        </body>
+   </text>
+<sourceDoc>
+        <surface xml:id="srcD_surface_b3r" type="relative" start="#b3r" facs="#D-20b_3">
+            <zone xml:id="srcD_zone_b3r_div2_d2e39" start="#b3r_div2_d2e39" type="firstBlock" style="padding-top:5em;">
+                <zone xml:id="srcD_zone_b3r_fw_d2e26" type="fw-top-left" start="#b3r_fw_d2e26">
+                    <fw type="pageNumber" hand="#N_pencil" place="top-left" corresp="#b3r_fw_d2e26">3</fw>
+                </zone>
+                <zone xml:id="srcD_zone_b3r_fw_d2e29" type="fw-top-right" start="#b3r_fw_d2e29">
+                    <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#b3r_fw_d2e29">
+                        <del rend="erased">39</del>
+                    </fw>
+                </zone>
+                <line xml:id="srcD_line_b3r_lb1" start="#b3r_lb1" n="1">leicht <milestone unit="page" edRef="#Ed" n="99"/>in Nichts größer als gerade darin, den Muth zu seiner <hi rend="underline">Sinnlichkeit</hi> gehabt zu 
+               </line>
+                <line xml:id="srcD_line_b3r_lb2" start="#b3r_lb2" n="2">haben<del rend="strikethrough" cause="insM">.</del> <metamark xml:id="srcD_metamark_b3r_add_d2e56" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b3r_add_d2e56">(– man hieß sie damals, zart genug, die „evangelische Freiheit“…)</add>
+                    </metamark> Selbst aber in jenem Falle, wo es wirklich jenen Gegensatz zwischen Keuschheit 
+               </line>
+                <line xml:id="srcD_line_b3r_lb3" start="#b3r_lb3" n="3">und Sinnlichkeit giebt, braucht es glücklicher Weise noch lange kein tragischer Gegensatz 
+               </line>
+                <line xml:id="srcD_line_b3r_lb4" start="#b3r_lb4" n="4">zu sein. Dies dürfte wenigstens für alle wohlgeratheneren, wohlgemutheren Sterbli<pc force="weak">-</pc>
+               </line>
+                <line xml:id="srcD_line_b3r_lb5" start="#b3r_lb5" n="5">chen gelten, welche ferne davon sind, ihr labiles Gleichgewicht zwischen „Thier und 
+               </line>
+                <line xml:id="srcD_line_b3r_lb6" start="#b3r_lb6" n="6">Engel“ ohne Weiteres zu den Gegengründen des Daseins zu rechnen<del rend="overwritten" cause="#b3r_add_d2e74">.</del>
+                    <add place="superimposed" corresp="#b3r_add_d2e74" instant="true">,</add> – die Feinsten 
+               </line>
+                <line xml:id="srcD_line_b3r_lb7" start="#b3r_lb7" n="7">und Hellsten, gleich Goethen, gleich Hafis, haben darin sogar einen Lebensreiz <hi rend="underline">mehr</hi> 
+               </line>
+                <line xml:id="srcD_line_b3r_lb8" start="#b3r_lb8" n="8">gesehn. Solche „Widersprüche“ gerade verführen zum Dasein… Andrerseits versteht es 
+               </line>
+                <line xml:id="srcD_line_b3r_lb9" start="#b3r_lb9" n="9">sich nur zu gut, daß wenn einmal die verunglückten Schweine dazu gebracht werden, 
+               </line>
+                <line xml:id="srcD_line_b3r_lb10" start="#b3r_lb10" n="10">die Keuschheit anzubeten – und es giebt solche Schweine! – sie in ihr nur ihren Ge<pc force="weak">-</pc>
+               </line>
+                <line xml:id="srcD_line_b3r_lb11" start="#b3r_lb11" n="11">gensatz, den Gegensatz zum verunglückten Schweine sehn und anbeten<del rend="strikethrough" cause="insM">*;</del> <metamark xml:id="srcD_metamark_b3r_add_d2e100" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b3r_add_d2e100">werden –</add>
+                    </metamark> oh mit was für 
+               </line>
+                <line xml:id="srcD_line_b3r_lb12" start="#b3r_lb12" n="12">einem tragischen Gegrunz und Eifer<del rend="overwritten" cause="#b3r_add_d2e108">,</del>
+                    <add place="superimposed" corresp="#b3r_add_d2e108">!</add> man kann es sich denken<del rend="strikethrough">!</del>
+                    <add place="inline" corresp="#b3r_add_d2e114" instant="true">:</add> <del rend="hatching">–</del> jenen peinlichen 
+               </line>
+                <line xml:id="srcD_line_b3r_lb13" start="#b3r_lb13" n="13">und überflüssigen Gegensatz, den Richard Wagner unbestreitbar am Ende seines Le<pc force="weak">-</pc>
+               </line>
+                <line xml:id="srcD_line_b3r_lb14" start="#b3r_lb14" n="14">bens noch hat in Musik setzen und auf die Bühne stellen wollen. <hi rend="underline">Wozu</hi> <hi rend="underline">doch</hi>? 
+               </line>
+                <line xml:id="srcD_line_b3r_lb15" start="#b3r_lb15" n="15">wie man billig fragen darf. Denn was giengen ihn, was gehen uns <del rend="hatching">–</del> die Schwei<pc force="weak">-</pc>
+               </line>
+                <line xml:id="srcD_line_b3r_lb16" start="#b3r_lb16" n="16">ne an? –
+            <anchor corresp="#b3r_div2_GM0303"/>
+               
+                  </line>
+            </zone>
+            <zone xml:id="srcD_zone_b3r_div2_GM0303" start="#b3r_div2_GM0303" type="lastBlock" style="padding-bottom:5em;">
+                <line xml:id="srcD_line_b3r_head_d2e148_b3r_lb17" start="#b3r_lb17" n="17">
+                    <zone xml:id="srcD_zone_b3r_head_d2e148_b3r_lb17" type="head">
+                        <del rend="overwritten" cause="#b3r_add_d2e154">2</del>
+                        <add hand="#N_pencil" place="superimposed" corresp="#b3r_add_d2e154">3</add>.
+               
+                  </zone>
+                </line>
+                <line xml:id="srcD_line_b3r_lb18" start="#b3r_lb18" rend="indent" n="18">Dabei ist freilich jene andre Frage nicht zu umgehn, was ihn eigentlich jene männ<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_b3r_lb19" start="#b3r_lb19" n="19">liche (ach, so unmännliche) „Einfalt vom Lande“ angieng, jener arme Teufel und Natur<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_b3r_lb20" start="#b3r_lb20" n="20">bursch Parsifal, der von ihm mit so verfänglichen Mitteln schließlich katholisch gemacht 
+                  </line>
+                <line xml:id="srcD_line_b3r_lb21" start="#b3r_lb21" n="21">wird – wie? war dieser Parsifal überhaupt <hi rend="underline">ernst</hi> ge<milestone unit="page" edRef="#Ed" n="100"/>meint? Man könnte näm<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_b3r_lb22" start="#b3r_lb22" n="22">lich versucht sein, das Umgekehrte zu muthma<restore type="dotUnderline">
+                        <del rend="strikethrough">a</del>
+                    </restore>ßen, selbst zu wünschen, – daß der 
+                  </line>
+                <line xml:id="srcD_line_b3r_lb23" start="#b3r_lb23" n="23">Wagnersche Parsifal heiter gemeint sei, gleichsam als Schlußstück und Satyrdrama, 
+                  </line>
+                <line xml:id="srcD_line_b3r_lb24" start="#b3r_lb24" n="24">mit dem der Tragiker Wagner auf eine gerade ihm gebührende und würdige Weise von 
+               </line>
+                <zone xml:id="srcD_zone_b3r_fw_d2e33" type="fw-bottom-left" start="#b3r_fw_d2e33">
+                    <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#b3r_fw_d2e33">3</fw>
+                </zone>
+            </zone>
+        </surface>
+    </sourceDoc>
+</TEI>
