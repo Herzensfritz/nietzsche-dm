@@ -241,12 +241,12 @@
         </model></elementSpec><elementSpec ident="index" mode="add"><model predicate="@indexName = 'choice'" behaviour="pass-through">
             <param name="content" value="let $start := . return $start/following-sibling:: node()[following::anchor[@xml:id = substring-after($start/@spanTo, '#')]]"/>
             <param name="alternate" value="id(substring-after(@corresp, '#'), root($parameters?root))"/>
+            <param name="id" value="substring-after(@corresp, '#')"/>
             <pb:template xmlns="" xml:space="preserve"><pb-popover theme="material">
   <span slot="default" class="choice">[[content]]</span>
-  <template slot="alternate"><p>[[alternate]]</p>
-  </template>
+  <template slot="alternate"><p>[[alternate]]</p></template>
 </pb-popover></pb:template>
-        </model></elementSpec><elementSpec ident="text()" mode="add"/><elementSpec ident="fw" mode="change"><model predicate="del and not(del[cause])" behaviour="inline">
+        </model></elementSpec><elementSpec ident="text()" mode="add"><model predicate="following::anchor[1]/@xml:id = substring-after(preceding::index[1]/@spanTo, '#')" behaviour="omit"/><model behaviour="text"/></elementSpec><elementSpec ident="fw" mode="change"><model predicate="del and not(del[cause])" behaviour="inline">
             <param name="place" value="@place"/>
             <param name="hand" value="substring-after(@hand, '#')"/>
             <param name="id" value="substring-after(@corresp, '#')"/>
@@ -303,13 +303,20 @@
             <param name="content" value="."/>
             <param name="ref" value="if (@n) then (concat(replace(substring-after(@wit, '#'), ' #', '/'), ' ', @n)) else (replace(substring-after(@wit, '#'), ' #', '/'))"/>
             <pb:template xmlns="" xml:space="preserve"><span style="margin-right: 0.5em;">[[content]] ([[ref]])</span></pb:template>
-        </model></elementSpec><elementSpec ident="node()" mode="add"/><elementSpec ident="choice" mode="change"><model predicate="sic and corr" behaviour="pass-through">
+        </model></elementSpec><elementSpec ident="node()" mode="add"/><elementSpec ident="choice" mode="change"><model predicate="@corresp and sic" behaviour="pass-through">
+            <param name="sic" value="sic[1]"/>
+            <param name="alternate" value="id(substring-after(@corresp, '#'), root($parameters?root))"/>
+            <pb:template xmlns="" xml:space="preserve"><pb-popover theme="material">
+  <span slot="default" class="choice">[[sic]]</span>
+  <template slot="alternate"><p>[[alternate]]</p></template>
+</pb-popover></pb:template>
+        </model><model predicate="sic and corr" behaviour="pass-through">
             <param name="corr" value="corr[1]"/>
             <param name="sic" value="sic[1]"/>
             <pb:template xmlns="" xml:space="preserve"><p class="hellow">[[sic]] &gt; [[corr]]</p></pb:template>
-        </model><model predicate="abbr and expan" behaviour="alternate">
-            <param name="default" value="expan[1]"/>
-            <param name="alternate" value="abbr[1]"/>
+        </model><model predicate="abbr and reg" behaviour="alternate">
+            <param name="default" value="abbr[1]"/>
+            <param name="alternate" value="reg[1]"/>
         </model><model predicate="orig and reg" behaviour="alternate">
             <param name="default" value="reg[1]"/>
             <param name="alternate" value="orig[1]"/>
@@ -320,6 +327,15 @@
             <outputRendition xml:space="preserve" scope="after">
             content: '}';
             </outputRendition>
-        </model></elementSpec></schemaSpec>
+        </model></elementSpec><elementSpec ident="element()" mode="add"/><elementSpec ident="anchor" mode="change">
+        <model predicate="preceding::index[1]/@spanTo = concat('#', @xml:id)" behaviour="pass-through">
+            <param name="content" value="let $start := . return $start/preceding-sibling:: node()[preceding::index[@spanTo = concat('#', $start/@xml:id)]]"/>
+            <param name="alternate" value="let $start := . return id(substring-after(preceding::index[@spanTo = concat('#', $start/@xml:id)]/@corresp, '#'), root($parameters?root))"/>
+            <pb:template xmlns="" xml:space="preserve"><pb-popover theme="material">
+  <span slot="default" class="choice">[[content]]</span>
+  <template slot="alternate"><p>[[alternate]]</p></template>
+</pb-popover></pb:template>
+        </model>
+    </elementSpec></schemaSpec>
         </body>
     </text></TEI>
