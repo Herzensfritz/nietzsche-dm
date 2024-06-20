@@ -9,6 +9,17 @@ body {
 .choice {
     text-decoration: var(--blue, blue) wavy underline;
 }
+.overwrittenSic {
+    position: absolute;
+    top: 2.5em;
+}
+.sicCor:has(.overwrittenSic){
+    position: inline-block;
+    height: 3.5em;
+}
+.choice .overwrittenSic {
+    display: none;
+}
 .typesetter_red {
     color: var(--red);
 }
