@@ -237,8 +237,8 @@ body {
            transform:rotate(-7deg);
          }
 
-        .deleted-underline { text-decoration: underline; position: relative; }
-        .deleted-underline:before {
+        .underline.restoreByhatching, .underline.restoreBystrikethrough, .deleted-underline { text-decoration: underline; position: relative; }
+        .underline.restoreBystrikethrough:before, .deleted-underline:before {
            position: absolute;
            content: "";
            left: 0;
@@ -246,15 +246,26 @@ body {
            right: 0;
            border-top: 1px solid;
            border-color: inherit;
-
            -webkit-transform:rotate(-5deg);
            -moz-transform:rotate(-5deg);
            -ms-transform:rotate(-5deg);
            -o-transform:rotate(-5deg);
            transform:rotate(-5deg);
          }
-         .del-linearisiert:before { content: '['; }
-         .del-linearisiert:after { content: ']'; }
+          .underline.restoreByhatching:before {
+           position: absolute;
+           content: "";
+           left: 0;
+           top: 80%;
+           right: 0;
+           height: 0.1em;
+           background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAX/GZH4/4FsRpgAmAOSBBFwDkgAAIKuBATRTAAZAAAAAElFTkSuQmCC ) repeat;
+           -webkit-transform:rotate(-5deg);
+           -moz-transform:rotate(-5deg);
+           -ms-transform:rotate(-5deg);
+           -o-transform:rotate(-5deg);
+           transform:rotate(-5deg);
+         }
          .underline { text-decoration: underline;  }
          .markLine { border-bottom: solid; }
          .markLine_N_brown1 {
