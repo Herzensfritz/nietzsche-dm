@@ -6,6 +6,15 @@ body {
          --nbrown: #5C4033;
          --red: #dc3545;
 }
+.note {
+    font-style: italic;
+}
+.note .term {
+    font-style: normal;
+}
+.retrace {
+    font-weight: 1000;
+}
 .choice {
     text-decoration: var(--blue, blue) wavy underline;
 }

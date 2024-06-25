@@ -34,10 +34,42 @@ declare function mapping:nietzsche-notes($root as element(), $userParams as map(
         root($root)//tei:text//tei:note[@type="editorial" and preceding::tei:pb[@xml:id = $pbId]]    
     )
     let $div := <div xmlns="http://www.tei-c.org/ns/1.0" type="noteDiv">{ for $note in $notes
-            return <note xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$note/@xml:id}" type="{$note/@type}" target="{concat('#',root($root)//tei:text//tei:note[@xml:id = $note/@xml:id]/preceding::tei:lb[1]/@xml:id)}">{$note/text()}</note>
+            let $target := local:getLineTargets($root, $note/@xml:id, $note/text(), true())
+            let $targetEnd := local:getLineTargets($root, $note/@xml:id, $note/text(), false())
+            return if ($targetEnd) then (<note xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$note/@xml:id}" type="{$note/@type}" 
+                            target="{$target}" targetEnd="{$targetEnd}">
+                            {local:parseNoteContent($note/text())}
+                            </note>) 
+                    else (
+                       <note xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$note/@xml:id}" type="{$note/@type}" 
+                            target="{$target}">
+                            {local:parseNoteContent($note/text())}
+                            </note>
+                     )
     }</div>
-
+    let $log := console:log($div)
     return $div
+};
+
+declare function local:getLineTargets($root, $id, $text, $isFirst) {
+    if (matches($text, '.*[0-9]+-[0-9]+:')) then (
+        let $lineRef := substring-before($text, ':')    
+        let $firstId := substring-before($lineRef, '-')
+        let $lastId := substring-after($lineRef, '-')
+        return if ($isFirst) then (concat('#',root($root)//tei:text//tei:lb[@n = $firstId]/@xml:id)) else (concat('#',root($root)//tei:text//tei:lb[@n = $lastId]/@xml:id)) 
+    ) else (
+        if ($isFirst) then (concat('#',root($root)//tei:text//tei:note[@xml:id = $id]/preceding::tei:lb[1]/@xml:id)) else ()      
+    )    
+};
+
+declare function local:parseNoteContent($text as xs:string*) {
+    if (contains($text, ']')) then (
+        <term xmlns="http://www.tei-c.org/ns/1.0" type="lem"> {local:parseNoteContent(substring-before($text, ']')) } </term>, substring-after($text, ']')
+    ) else (
+        if (matches($text, '.*[0-9]:')) then (
+            substring-after($text, ':')    
+        ) else ($text)    
+    )    
 };
 
 declare function local:extendApp($node as node()*, $ED){

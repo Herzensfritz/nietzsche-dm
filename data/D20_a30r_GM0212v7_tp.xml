@@ -95,7 +95,7 @@
    </text>
 <sourceDoc>
         <surface xml:id="srcD_surface_a30r" type="relative" start="#a30r" facs="#D-20a_24">
-            <zone xml:id="srcD_zone_a30r_div2_GM0212" start="#a30r_div2_GM0212" type="singleBlock" style="padding-top:5em;padding-bottom:5em;">
+            <zone xml:id="srcD_zone_a30r_div2_GM0212" start="#a30r_div2_GM0212" type="singleBlock" style="padding-top:10em;padding-bottom:5em;">
                 <zone xml:id="srcD_zone_a30r_fw_d2e26" type="fw-top-left" start="#a30r_fw_d2e26">
                     <fw type="pageNumber" hand="#typesetter_red" place="top-left" corresp="#a30r_fw_d2e26">
                         <certainty match="@hand" locus="value" cert="medium"/>24.</fw>
@@ -106,8 +106,8 @@
                         <add place="superimposed" corresp="#a30r_add_d2e34">24</add>
                     </fw>
                 </zone>
-                <zone xml:id="srcD_zone_a30r_lb1" start="#a30r_lb1" type="add-zone">
-                    <line xml:id="srcD_line_a30r_lb1" style="top:1em;" start="#a30r_lb1" n="1">
+                <zone xml:id="srcD_zone_a30r_lb1" start="#a30r_lb1" type="add-zone" style="margin-left:25em;">
+                    <line xml:id="srcD_line_a30r_lb1" start="#a30r_lb1" style="top:-0.234375em;" n="1">
                         <add corresp="#substAdd1a_a30r" place="inline" change="#GM02abortedVersion">
                             <seg type="head">
                                 <del corresp="#substDel3a_a30r" hand="#N_brown1" rend="strikethrough">10.</del> <add corresp="#substAdd3a_a30r" hand="#N_brown1" place="inline" change="#GM02revision">12.</add>
@@ -118,7 +118,7 @@
                 <zone xml:id="srcD_zone_a30r_lb2" start="#a30r_lb2" type="add-zone">
                     <line xml:id="srcD_line_a30r_lb2" style="top:2em;" start="#a30r_lb2" hand="#N_brown1" n="2">
                         <add corresp="#substAdd3b_a30r" hand="#N_brown1" place="inline">Hier noch ein Wort über Ursprung und Zweck der Strafe – zwei Probleme, die auseinander fallen<del rend="overwritten" cause="#a30r_add_d2e107">.</del>
-                            <add place="superimposed" corresp="#a30r_add_d2e107"> o</add>der <restore type="strikethrough" corresp="#substRestore4a_a30r">
+                            <add place="superimposed" corresp="#a30r_add_d2e107" instant="true"> o</add>der <restore type="strikethrough" corresp="#substRestore4a_a30r">
                                 <hi rend="underline">fallen</hi>
                             </restore> <restore corresp="#substRestore4b_a30r" type="strikethrough">
                                 <hi rend="underline">sollten</hi>
@@ -126,13 +126,13 @@
                         </add>
                   </line>
                 </zone>
-                <zone xml:id="srcD_zone_a30r_lb3" start="#a30r_lb3" type="add-zone">
-                    <line xml:id="srcD_line_a30r_lb3" style="top:3em;" start="#a30r_lb3" hand="#N_brown1" n="3">
+                <zone xml:id="srcD_zone_a30r_lb3" start="#a30r_lb3" type="add-zone" style="margin-left:-0.15625em;">
+                    <line xml:id="srcD_line_a30r_lb3" start="#a30r_lb3" hand="#N_brown1" style="top:3.28125em;" n="3">
                         <add corresp="#substAdd3c_a30r" hand="#N_brown1" place="inline">wöhnlich in Eins. </add> 
                   </line>
                 </zone>
-                <zone xml:id="srcD_zone_a30r_lb4" start="#a30r_lb4" type="add-zone">
-                    <line xml:id="srcD_line_a30r_lb4" style="top:4em;" start="#a30r_lb4" n="4">
+                <zone xml:id="srcD_zone_a30r_lb4" start="#a30r_lb4" type="add-zone" style="margin-left:1.64067em;">
+                    <line xml:id="srcD_line_a30r_lb4" start="#a30r_lb4" style="top:4.92188em;" n="4">
                         <add corresp="#substAdd1b_a30r" place="inline">
                             <del corresp="#substDel4a_a30r" hand="#N_brown1" rend="hatching">Man kann sich</del> <metamark xml:id="srcD_metamark_substAdd3d_a30r" function="insertion" rend="inSpatium">
                                 <add place="above" hand="#N_brown1" corresp="#substAdd3d_a30r">
@@ -160,18 +160,18 @@
                             </metamark> </add>
                   </line>
                 </zone>
-                <zone xml:id="srcD_zone_a30r_lb5" start="#a30r_lb5" type="add-zone">
-                    <line xml:id="srcD_line_a30r_lb5" style="top:5em;" start="#a30r_lb5" n="5">
+                <zone xml:id="srcD_zone_a30r_lb5" start="#a30r_lb5" type="add-zone" style="margin-left:0em;">
+                    <line xml:id="srcD_line_a30r_lb5" start="#a30r_lb5" style="top:7.89063em;" n="5">
                         <add corresp="#substAdd1c_a30r" place="inline">
-                            <metamark xml:id="srcD_metamark_a30r_add_d2e172" function="insertion">
-                                <add place="above" corresp="#a30r_add_d2e172">getrieben haben</add>
+                            <metamark xml:id="srcD_metamark_a30r_add_d2e172" function="insertion" style="top:0.136719em;height:1.19141em;">
+                                <add place="above" corresp="#a30r_add_d2e172" style="left:-2.05082em;">getrieben haben</add>
                             </metamark>
-                            <del rend="hatching">machten</del>, <metamark xml:id="srcD_metamark_substAdd2c_a30r" function="insertion">
-                                <add place="above" corresp="#substAdd2c_a30r">– sie mach<del corresp="#substDel2b_a30r" rend="hatching">t</del>en irgend einen</add>
+                            <del rend="hatching">machten</del>, <metamark xml:id="srcD_metamark_substAdd2c_a30r" function="insertion" style="top:0.0390625em;height:1.28906em;">
+                                <add place="above" corresp="#substAdd2c_a30r" style="left:0em;">– sie mach<del corresp="#substDel2b_a30r" rend="hatching">t</del>en irgend einen</add>
                             </metamark>
                             <del corresp="#substDel2c_a30r" rend="hatching">nämlich einen</del> <del rend="hatching" cert="unknown">„</del>
-                            <retrace>Z</retrace>weck“ in der Strafe <metamark xml:id="srcD_metamark_substAdd2d_a30r" function="insertion">
-                                <add place="above" corresp="#substAdd2d_a30r">ausfindig <del corresp="#substDel2d_a30r" rend="hatching">machen</del>, zum Beispiel <add place="above">Rache oder</add> Abschreckung<add corresp="#substAdd2f_a30r" place="inline" rend="insMExt">, setz<del corresp="#substDel2e_a30r" rend="hatching">t</del>en dann arglos</add>
+                            <retrace>Z</retrace>weck“ in der Strafe <metamark xml:id="srcD_metamark_substAdd2d_a30r" function="insertion" style="top:0.527343em;height:0.800782em;">
+                                <add place="above" corresp="#substAdd2d_a30r" style="left:-7.03134em;">ausfindig <del corresp="#substDel2d_a30r" rend="hatching">machen</del>, zum Beispiel <add place="above">Rache oder</add> Abschreckung<add corresp="#substAdd2f_a30r" place="inline" rend="insMExt">, setz<del corresp="#substDel2e_a30r" rend="hatching">t</del>en dann arglos</add>
                                 </add>
                             </metamark>
                             <del corresp="#substDel2f_a30r" rend="hatching">suchen</del> <del corresp="#substDel2g_a30r" rend="hatching">und dann arglos</del> diesen <retrace>Z</retrace>weck <del rend="overwritten" cause="#a30r_add_d2e219">i</del>
@@ -182,51 +182,51 @@
                             <del rend="hatching">die Entstehung</del> der Strafe </add>
                   </line>
                 </zone>
-                <zone xml:id="srcD_zone_a30r_lb6" start="#a30r_lb6" type="add-zone">
-                    <line xml:id="srcD_line_a30r_lb6" style="top:6em;" start="#a30r_lb6" n="6">
+                <zone xml:id="srcD_zone_a30r_lb6" start="#a30r_lb6" type="add-zone" style="margin-left:0em;">
+                    <line xml:id="srcD_line_a30r_lb6" start="#a30r_lb6" style="top:10.625em;" n="6">
                         <add corresp="#substAdd1d_a30r" place="inline" next="#substAdd1e_a30r">
                             <del corresp="#substDel2h_a30r" rend="hatching">hinein</del>
-                            <metamark xml:id="srcD_metamark_substAdd1dd_a30r" function="insertion" rend="inWord">
-                                <add place="above" corresp="#substAdd1dd_a30r">
+                            <metamark xml:id="srcD_metamark_substAdd1dd_a30r" function="insertion" rend="inWord" style="top:0.332032em;height:0.996093em;">
+                                <add place="above" corresp="#substAdd1dd_a30r" style="left:0em;">
                                     <del corresp="#substDel2i_a30r" rend="hatching">spielen</del>
                                 </add>
                             </metamark>
                             <del corresp="#substDel2j_a30r" rend="hatching">setzen</del>
-                            <del corresp="#substDel2k_a30r" rend="hatching">, als deren <hi rend="latin">causa</hi>.</del> <metamark xml:id="srcD_metamark_substAdd2h_a30r" function="insertion" rend="inSpatium">
-                                <add place="above" corresp="#substAdd2h_a30r">
+                            <del corresp="#substDel2k_a30r" rend="hatching">, als deren <hi rend="latin">causa</hi>.</del> <metamark xml:id="srcD_metamark_substAdd2h_a30r" function="insertion" rend="inSpatium" style="top:0.332032em;height:0.996093em;">
+                                <add place="above" corresp="#substAdd2h_a30r" style="left:0em;">
                                     <add corresp="#substAdd2i_a30r" place="inline">und </add>– <del corresp="#substDel2l_a30r" rend="hatching">und wa</del>
                                     <del rend="overwritten" cause="#a30r_add_d2e257">ren</del>
                                     <add place="superimposed" corresp="#a30r_add_d2e257">sind</add> fertig.</add>
-                            </metamark> Der „<retrace>Z</retrace>weck im Rechte“ ist <metamark xml:id="srcD_metamark_substAdd2j_a30r" function="insertion" rend="inSpatium">
-                                <add place="above" corresp="#substAdd2j_a30r">aber</add>
-                            </metamark> zuallerletzt für die Entstehungsgeschichte des <metamark xml:id="srcD_metamark_a30r_add_d2e270" function="insertion">
-                                <add place="above" corresp="#a30r_add_d2e270">Rechts zu</add>
+                            </metamark> Der „<retrace>Z</retrace>weck im Rechte“ ist <metamark xml:id="srcD_metamark_substAdd2j_a30r" function="insertion" rend="inSpatium" style="top:0.527344em;height:0.800781em;">
+                                <add place="above" corresp="#substAdd2j_a30r" style="left:0em;">aber</add>
+                            </metamark> zuallerletzt für die Entstehungsgeschichte des <metamark xml:id="srcD_metamark_a30r_add_d2e270" function="insertion" style="top:0.332032em;height:0.996093em;">
+                                <add place="above" instant="true" corresp="#a30r_add_d2e270" style="left:-0.0976563em;">Rechts zu</add>
                             </metamark>
                             <del rend="hatching">Rechts zu</del> verwenden: </add>
                   </line>
                 </zone>
                 <line xml:id="srcD_line_a30r_lb7" start="#a30r_lb7" n="7">
                     <del corresp="#substDel1a_a30r" rend="hatching">In jeder Art</del> <del corresp="#substDel1b_a30r" rend="hatching">
-                        <del rend="hatching" instant="true">Art</del> Historie</del> <del corresp="#substDel1c_a30r" rend="hatching">ergiebt sich <metamark xml:id="srcD_metamark_a30r_add_d2e294" function="insertion" rend="inSpatium">
-                            <add place="above" corresp="#a30r_add_d2e294">
+                        <del rend="hatching" instant="true">Art</del> Historie</del> <del corresp="#substDel1c_a30r" rend="hatching">ergiebt sich <metamark xml:id="srcD_metamark_a30r_add_d2e294" function="insertion" rend="inSpatium" style="top:0.109375em;height:1.20313em;">
+                            <add place="above" corresp="#a30r_add_d2e294" style="left:0em;">
                                 <del corresp="#substDel1d_a30r" rend="strikethrough">nur</del>
                             </add>
                         </metamark> allmählich ein Gesichtspunkt</del>, <del corresp="#substDel1e_a30r" rend="hatching">der </del>
-                    <metamark xml:id="srcD_metamark_a30r_add_d2e304" function="insertion">
-                        <add place="above" corresp="#a30r_add_d2e304">
+                    <metamark xml:id="srcD_metamark_a30r_add_d2e304" function="insertion" style="top:0.109375em;height:1.20313em;">
+                        <add place="above" corresp="#a30r_add_d2e304" style="left:0em;">
                             <del corresp="#substDel1f_a30r" rend="hatching">gerade</del>
                         </add>
                     </metamark>
                     <del rend="hatching">an sich</del>
-                    <del corresp="#substDel1g_a30r" rend="hatching"> den intellektuellen <metamark xml:id="srcD_metamark_a30r_add_d2e311" function="insertion" rend="inSpatium">
-                            <add place="above" corresp="#a30r_add_d2e311">
+                    <del corresp="#substDel1g_a30r" rend="hatching"> den intellektuellen <metamark xml:id="srcD_metamark_a30r_add_d2e311" function="insertion" rend="inSpatium" style="top:0.109375em;height:1.20313em;">
+                            <add place="above" corresp="#a30r_add_d2e311" style="left:-0.15625em;">
                                 <del rend="hatching">modernen</del>
                             </add>
                         </metamark> Gewohnheiten </del>
                     <metamark xml:id="srcD_metamark_a30r_add_d2e318" function="insertion">
                         <add place="above" corresp="#a30r_add_d2e318">
-                            <del corresp="#substDel1h_a30r" rend="hatching">und</del> <del corresp="#substDel1i_a30r" rend="hatching">Wünschbarkeiten</del> <metamark xml:id="srcD_metamark_a30r_add_d2e325" function="insertion">
-                                <add place="above" corresp="#a30r_add_d2e325">
+                            <del corresp="#substDel1h_a30r" rend="hatching">und</del> <del corresp="#substDel1i_a30r" rend="hatching">Wünschbarkeiten</del> <metamark xml:id="srcD_metamark_a30r_add_d2e325" function="insertion" style="top:-0.253906em;height:1.58203em;">
+                                <add place="above" corresp="#a30r_add_d2e325" style="left:-5.56641em;">
                                     <del corresp="#substDel1j_a30r" rend="hatching">des modernen Menschen</del>
                                 </add>
                             </metamark>
@@ -234,15 +234,15 @@
                     </metamark>
                     <del rend="hatching">und Verwöhnungen</del>
                   </line>
-                <zone xml:id="srcD_zone_a30r_lb8" start="#a30r_lb8" type="add-zone">
-                    <line xml:id="srcD_line_a30r_lb8" style="top:8em;" start="#a30r_lb8" n="8">
+                <zone xml:id="srcD_zone_a30r_lb8" start="#a30r_lb8" type="add-zone" style="margin-left:67.1094em;">
+                    <line xml:id="srcD_line_a30r_lb8" start="#a30r_lb8" style="top:15.4688em;" n="8">
                         <add corresp="#substAdd1e_a30r" place="inline" prev="#substAdd1d_a30r">vielmehr giebt </add>
                   </line>
                 </zone>
                 <line xml:id="srcD_line_a30r_lb9" start="#a30r_lb9" n="9">
                     <del corresp="#substDel1k_a30r" rend="strikethrough">auf’s höchste zuwider geht – <del corresp="#substDel5a_a30r" rend="hatching">es ist</del>
-                        <metamark xml:id="srcD_metamark_substAdd5a_a30r" function="insertion" rend="afterWord">
-                            <add place="above" corresp="#substAdd5a_a30r">
+                        <metamark xml:id="srcD_metamark_substAdd5a_a30r" function="insertion" rend="afterWord" style="top:0.03125em;height:1.28125em;">
+                            <add place="above" corresp="#substAdd5a_a30r" style="left:-2.57813em;">
                                 <del corresp="#substDel1l_a30r" rend="hatching">sein Sieg wäre</del>
                             </add>
                         </metamark> vielleicht <metamark xml:id="srcD_metamark_substAdd5b_a30r" function="insertion">
@@ -259,10 +259,10 @@
                     <del corresp="#substDel1o_a30r" rend="hatching"> –:</del> <del corresp="#substDel1p_a30r" rend="hatching">daß näm<pc force="weak">-</pc>
                     </del>
                   </line>
-                <zone xml:id="srcD_zone_a30r_lb10" start="#a30r_lb10" type="add-zone">
-                    <line xml:id="srcD_line_a30r_lb10" style="top:10em;" start="#a30r_lb10" n="10">
-                        <add corresp="#substAdd1f_a30r" place="inline">es für alle Art Historie gar keinen wichtigeren Satz<metamark xml:id="srcD_metamark_substAdd1g_a30r" function="insertion" rend="beforePunctuation">
-                                <add place="above" corresp="#substAdd1g_a30r"> als jenen</add>
+                <zone xml:id="srcD_zone_a30r_lb10" start="#a30r_lb10" type="add-zone" style="margin-left:0.15625em;">
+                    <line xml:id="srcD_line_a30r_lb10" start="#a30r_lb10" style="top:19.6875em;" n="10">
+                        <add corresp="#substAdd1f_a30r" place="inline">es für alle Art Historie gar keinen wichtigeren Satz<metamark xml:id="srcD_metamark_substAdd1g_a30r" function="insertion" rend="beforePunctuation" style="top:0.429687em;height:0.898438em;">
+                                <add place="above" corresp="#substAdd1g_a30r" style="left:0.292969em;"> als jenen</add>
                             </metamark>, der mit solcher Mühe errungen ist, aber auch wirklich errungen <hi rend="underline">sein</hi> <hi rend="underline">sollte</hi> – daß nämlich</add>
                   </line>
                 </zone>
@@ -322,7 +322,7 @@
                         <add place="above" corresp="#a30r_add_d2e526">von Alters her</add>
                     </metamark>
                     <del rend="hatching">bisher</del> hatte man in dem nachweisbaren Zwecke<add place="inline" corresp="#a30r_add_d2e531">, <metamark xml:id="srcD_metamark_a30r_add_d2e533" function="insertion" rend="inSpatium">
-                            <add place="above" corresp="#a30r_add_d2e533">in der Nützlichkeit</add>
+                            <add place="above" instant="true" corresp="#a30r_add_d2e533">in der Nützlichkeit</add>
                         </metamark>
                     </add> eines Dings, <milestone unit="page" edRef="#Ed" n="68"/>einer Form, einer Einrichtung auch <metamark xml:id="srcD_metamark_a30r_add_d2e540" function="insertion">
                         <add place="above" corresp="#a30r_add_d2e540">deren</add>
@@ -371,8 +371,8 @@
                   </line>
                 <line xml:id="srcD_line_a30r_lb26" start="#a30r_lb26" n="26">ger ein logischer und kürzester, mit dem kleinsten Aufwand von Kraft und Kosten erreichter <hi rend="latin">progressus</hi>, – sondern die Auf<pc force="weak">-</pc>
                   </line>
-                <line xml:id="srcD_line_a30r_lb27" start="#a30r_lb27" n="27">einanderfolge von mehr oder minder tiefgehenden, mehr oder minder von einander unabhängigen <metamark xml:id="srcD_metamark_substAdd9_a30r" function="insertion" rend="inSpatium">
-                        <add place="above" corresp="#substAdd9_a30r">
+                <line xml:id="srcD_line_a30r_lb27" start="#a30r_lb27" n="27">einanderfolge von mehr oder minder tiefgehenden, mehr oder minder von einander unabhängigen <metamark xml:id="srcD_metamark_substAdd9_a30r" function="insertion" rend="inSpatium" style="top:-0.2em;height:1.5em;">
+                        <add place="above" corresp="#substAdd9_a30r" style="left:-18em;">
                             <add corresp="#substAdd11_a30r" place="inline" rend="insMExt">an ihm sich abspielenden<space unit="char" quantity="5"/>
                             </add> <del corresp="#substDel11a_a30r" rend="hatching">an irgend etwas Festerem und Widerstehenden </del>
                             <metamark xml:id="srcD_metamark_substAdd10_a30r" function="insertion">
@@ -381,21 +381,21 @@
                                 </add>
                             </metamark>
                             <del corresp="#substDel10a_a30r" rend="hatching">zu Stande</del>
-                            <add corresp="#a30r_add_d2e646" place="below">
+                            <add corresp="#a30r_add_d2e646" style="left:-7.375em;top:2.75em;" place="below" instant="true">
                                 <del corresp="#substDel10b_a30r" rend="hatching">gekommenen</del>
                             </add>
                         </add>
                     </metamark> Überwältigung<del rend="overwritten" cause="#a30r_add_d2e654">en</del>
                     <add place="superimposed" corresp="#a30r_add_d2e654">s-</add>
-                    <add corresp="#a30r_add_d2e656" place="below">-Prozessen</add>
+                    <add corresp="#a30r_add_d2e656" style="left:-5em;top:0.75em;" place="below">-Prozessen</add>
                     <add place="inline" corresp="#a30r_add_d2e660">,</add> <del rend="hatching">und Versu<pc force="weak">-</pc>
                     </del>
                   </line>
                 <line xml:id="srcD_line_a30r_lb28" start="#a30r_lb28" n="28">
                     <del rend="hatching">chen</del> <del rend="hatching">der Überwältigung</del>, hinzugerechnet die dagegen <metamark xml:id="srcD_metamark_substAdd12a_a30r" function="insertion" rend="inSpatium">
                         <add place="above" corresp="#substAdd12a_a30r">jedes Mal</add>
-                    </metamark> aufgewendeten Widerstände, die <metamark xml:id="srcD_metamark_substAdd12b_a30r" function="insertion" rend="inSpatium">
-                        <add place="above" corresp="#substAdd12b_a30r">jedesmaligen</add>
+                    </metamark> aufgewendeten Widerstände, die <metamark xml:id="srcD_metamark_substAdd12b_a30r" function="insertion" rend="inSpatium" style="top:0.3em;height:1em;">
+                        <add place="above" corresp="#substAdd12b_a30r" style="left:-2.5em;">jedesmaligen</add>
                     </metamark> Form-Verwandlungen zum Zweck der 
                   </line>
                 <line xml:id="srcD_line_a30r_lb29" start="#a30r_lb29" n="29">Vertheidigung und Reaktion, <metamark xml:id="srcD_metamark_a30r_add_d2e683" function="insertion" rend="inSpatium">
@@ -404,10 +404,10 @@
                     <add place="superimposed" corresp="#a30r_add_d2e689">.</add> <del corresp="#substDel14a_a30r" rend="hatching">von spontanen</del>
                     <del corresp="#substDel14b_a30r" rend="hatching">
                         <del rend="overwritten" cause="#a30r_add_d2e699">,</del>
-                        <add place="superimposed" corresp="#a30r_add_d2e699"> <del rend="hatching">A</del>
+                        <add place="superimposed" corresp="#a30r_add_d2e699" instant="true"> <del rend="hatching">A</del>
                         </add>ngriffen</del>
-                    <del corresp="#substDel14c_a30r" rend="hatching">, Eingriffen, Aneignungen</del>.<metamark xml:id="srcD_metamark_substAdd13a_a30r" function="insertion" rend="afterWord">
-                        <add place="above" corresp="#substAdd13a_a30r">
+                    <del corresp="#substDel14c_a30r" rend="hatching">, Eingriffen, Aneignungen</del>.<metamark xml:id="srcD_metamark_substAdd13a_a30r" function="insertion" rend="afterWord" style="top:-0.075em;height:1.375em;">
+                        <add place="above" corresp="#substAdd13a_a30r" style="left:-12.25em;">
                             <del corresp="#substDel14d_a30r" rend="hatching">seitens des Dings, das sich entwickelt</del>.</add>
                     </metamark>
                   </line>
@@ -461,29 +461,29 @@
                 <line xml:id="srcD_line_a30r_lb38" start="#a30r_lb38" n="38">ihm <metamark xml:id="srcD_metamark_a30r_add_d2e822" function="insertion" rend="inSpatium">
                         <add place="above" corresp="#a30r_add_d2e822">Alles</add>
                     </metamark> <hi rend="underline">geopfert</hi> werden mußte<del rend="overwritten" cause="#a30r_add_d2e831">.</del>
-                    <add place="superimposed" corresp="#a30r_add_d2e831">;</add> <metamark xml:id="srcD_metamark_a30r_add_d2e834" function="insertion">
-                        <add place="above" corresp="#a30r_add_d2e834">die Menschheit als Masse dem Gedeihen einer </add>
+                    <add place="superimposed" corresp="#a30r_add_d2e831">;</add> <metamark xml:id="srcD_metamark_a30r_add_d2e834" function="insertion" style="top:0.5em;height:0.8125em;">
+                        <add place="above" corresp="#a30r_add_d2e834" style="left:-11.25em;">die Menschheit als Masse dem Gedeihen einer </add>
                     </metamark>
-                    <metamark xml:id="srcD_metamark_a30r_add_d2e836" function="insertion" rend="inSpatium">
-                        <add place="below" corresp="#a30r_add_d2e836">einzelnen stärkeren <hi rend="latin">Species</hi> Mensch <metamark xml:id="srcD_metamark_a30r_add_d2e841" function="insertion" rend="inSpatium">
-                                <add place="above" corresp="#a30r_add_d2e841">geopfert</add>
+                    <metamark xml:id="srcD_metamark_a30r_add_d2e836" function="insertion" rend="inSpatium" style="height:1.25em;">
+                        <add place="below" corresp="#a30r_add_d2e836" style="left:-12.5782em;top:1.5625em;">einzelnen stärkeren <hi rend="latin">Species</hi> Mensch <metamark xml:id="srcD_metamark_a30r_add_d2e841" function="insertion" rend="inSpatium" style="top:0.527344em;height:0.800781em;">
+                                <add place="above" corresp="#a30r_add_d2e841" style="left:-3.90625em;">geopfert</add>
                             </metamark> – das <hi rend="underline">wäre</hi> ein Fortschritt…</add>
                     </metamark> – Ich hebe diesen <metamark xml:id="srcD_metamark_a30r_add_d2e848" function="insertion">
                         <add place="above" corresp="#a30r_add_d2e848">Haupt-</add>
-                    </metamark>Gesichtspunkt <metamark xml:id="srcD_metamark_a30r_add_d2e851" function="insertion" rend="inSpatium">
-                        <add place="above" corresp="#a30r_add_d2e851">der historischen Methodik</add>
-                    </metamark> hervor, <del rend="hatching">so sehr</del> <metamark xml:id="srcD_metamark_a30r_add_d2e859" function="insertion" rend="inSpatium">
-                        <add place="above" corresp="#a30r_add_d2e859">um so mehr als<add place="inline" corresp="#a30r_add_d2e861"> er</add>
+                    </metamark>Gesichtspunkt <metamark xml:id="srcD_metamark_a30r_add_d2e851" function="insertion" rend="inSpatium" style="top:0.421875em;height:0.890625em;">
+                        <add place="above" corresp="#a30r_add_d2e851" style="left:-3.75em;">der historischen Methodik</add>
+                    </metamark> hervor, <del rend="hatching">so sehr</del> <metamark xml:id="srcD_metamark_a30r_add_d2e859" function="insertion" rend="inSpatium" style="top:-0.4375em;height:1.75em;">
+                        <add place="above" corresp="#a30r_add_d2e859" style="left:-3.43766em;">um so mehr als<add place="inline" corresp="#a30r_add_d2e861"> er</add>
                         </add>
-                    </metamark> <del rend="hatching">er</del> <del rend="hatching">auch</del> <metamark xml:id="srcD_metamark_a30r_add_d2e870" function="insertion" rend="inSpatium">
-                        <add place="above" corresp="#a30r_add_d2e870">im Grunde <add corresp="#substAdd15_a30r" place="inline" rend="insMExt">dem gerade</add>
+                    </metamark> <del rend="hatching">er</del> <del rend="hatching">auch</del> <metamark xml:id="srcD_metamark_a30r_add_d2e870" function="insertion" rend="inSpatium" style="top:-0.046875em;height:1.35938em;">
+                        <add place="above" corresp="#a30r_add_d2e870" style="left:0em;">im Grunde <add corresp="#substAdd15_a30r" place="inline" rend="insMExt">dem gerade</add>
                         </add>
                     </metamark> <del corresp="#substDel15_a30r" rend="hatching">dem</del> herrschenden Instinkte <metamark xml:id="srcD_metamark_a30r_add_d2e881" function="insertion" rend="inSpatium">
                         <add place="above" corresp="#a30r_add_d2e881">und Zeitgeschmacke</add>
                     </metamark> entgegengeht, 
                   </line>
-                <line xml:id="srcD_line_a30r_lb39" start="#a30r_lb39" n="39">welcher lieber sich noch mit der absoluten Zufälligkeit, ja <metamark xml:id="srcD_metamark_a30r_add_d2e887" function="insertion" rend="inSpatium">
-                        <add place="above" corresp="#a30r_add_d2e887">mechanistischen</add>
+                <line xml:id="srcD_line_a30r_lb39" start="#a30r_lb39" n="39">welcher lieber sich noch mit der absoluten Zufälligkeit, ja <metamark xml:id="srcD_metamark_a30r_add_d2e887" function="insertion" rend="inSpatium" style="top:0.421875em;height:0.890625em;">
+                        <add place="above" corresp="#a30r_add_d2e887" style="left:0.3125em;">mechanistischen</add>
                     </metamark> Unsinnigkeit alles Geschehens <del instant="unknown">sich</del> vertragen würde als mit der The<pc force="weak">-</pc>
                   </line>
                 <line xml:id="srcD_line_a30r_lb40" start="#a30r_lb40" n="40">orie eines in allem Geschehen sich abspielenden <hi rend="underline">Macht-Willens</hi>. D<del rend="overwritten" cause="#a30r_add_d2e905">er</del>
@@ -492,13 +492,13 @@
                     </metamark>
                     <del rend="hatching">Haß</del> gegen alles, was herrscht und herrschen 
                   </line>
-                <line xml:id="srcD_line_a30r_lb41" start="#a30r_lb41" n="41">will, der moderne <hi rend="underline">Misarchismus</hi> <metamark xml:id="srcD_metamark_a30r_add_d2e919" function="insertion" rend="inSpatium">
-                        <add place="above" corresp="#a30r_add_d2e919">(um ein <del rend="overwritten" cause="#a30r_add_d2e924">neues</del>
+                <line xml:id="srcD_line_a30r_lb41" start="#a30r_lb41" n="41">will, der moderne <hi rend="underline">Misarchismus</hi> <metamark xml:id="srcD_metamark_a30r_add_d2e919" function="insertion" rend="inSpatium" style="top:-0.515625em;height:1.82813em;">
+                        <add place="above" corresp="#a30r_add_d2e919" style="left:-20.625em;">(um ein <del rend="overwritten" cause="#a30r_add_d2e924">neues</del>
                             <add place="superimposed" corresp="#a30r_add_d2e924">schlechtes</add> Wort für <del rend="overwritten" cause="#a30r_add_d2e930">diese</del>
                             <add place="superimposed" corresp="#a30r_add_d2e930">eine</add> <del rend="overwritten" cause="#a30r_add_d2e936">neue</del>
                             <add place="superimposed" corresp="#a30r_add_d2e936">schlechte</add> Sache zu bilden)</add>
-                    </metamark> hat sich <metamark xml:id="srcD_metamark_a30r_add_d2e941" function="insertion">
-                        <add place="above" corresp="#a30r_add_d2e941">
+                    </metamark> hat sich <metamark xml:id="srcD_metamark_a30r_add_d2e941" function="insertion" style="top:0.5em;height:0.8125em;">
+                        <add place="above" corresp="#a30r_add_d2e941" style="left:0em;">
                             <del rend="hatching">allmählich</del> <add place="inline" rend="insMExt" corresp="#a30r_add_d2e945">allmählich</add>
                         </add>
                     </metamark>
@@ -506,12 +506,12 @@
                         <add place="above" corresp="#a30r_add_d2e951">
                             <del rend="hatching">schon</del>
                         </add>
-                    </metamark> ins Geistige, Geistigste umgesetzt<metamark xml:id="srcD_metamark_a30r_add_d2e955" function="insertion" rend="beforePunctuation">
-                        <add place="above" corresp="#a30r_add_d2e955"> und verkleidet</add>
+                    </metamark> ins Geistige, Geistigste umgesetzt<metamark xml:id="srcD_metamark_a30r_add_d2e955" function="insertion" rend="beforePunctuation" style="top:0.5em;height:0.8125em;">
+                        <add place="above" corresp="#a30r_add_d2e955" style="left:-3.51563em;"> und verkleidet</add>
                     </metamark>, daß er <metamark xml:id="srcD_metamark_a30r_add_d2e958" function="insertion" rend="inSpatium">
                         <add place="above" corresp="#a30r_add_d2e958">heute</add>
-                    </metamark> <metamark xml:id="srcD_metamark_a30r_add_d2e962" function="insertion">
-                        <add place="above" corresp="#a30r_add_d2e962">
+                    </metamark> <metamark xml:id="srcD_metamark_a30r_add_d2e962" function="insertion" style="top:-0.75em;height:2.0625em;">
+                        <add place="above" corresp="#a30r_add_d2e962" style="left:-3.125em;">
                             <del rend="hatching">bereits</del>
                         </add>
                     </metamark>

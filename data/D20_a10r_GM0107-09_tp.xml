@@ -1,0 +1,201 @@
+<?teipublisher template="surface.html" odd="surface.odd" view="surface" media="pdf epub print"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+          <title>a10r</title>
+         </titleStmt>
+         <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div1 xml:space="preserve"><anchor xml:id="a10r_div1_d2e22"/>
+            <pb xml:id="a10r" corresp="#contents_a10r #folDesc_a10rv #addDesc_a10r #N_black1" facs="#D-20a_6" change="#GM01formerVersion #GM01finalVersion #GM01-02finalVersion"/>
+            <fw type="pageNumber" hand="#N_pencil" place="top-right" xml:id="a10r_fw_d2e26">6</fw> 
+            <fw type="pageNumber" hand="#N_red" place="top-right" xml:id="a10r_fw_d2e29">6</fw>
+            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="a10r_fw_d2e32">10</fw>
+            <div2><anchor xml:id="a10r_div2_d2e35"/>
+               <p>
+                  <lb n="1" xml:id="a10r_lb1"/>allein giebt es Seligkeit<add place="inline" xml:id="a10r_add_d2e42">,</add> – dagegen ihr, ihr Vornehmen und Gewaltigen, ihr seid in alle Ewigkeit die Bösen, die Grausamen,<note type="editorial" xml:id="a10r_note_d2e46">1: minimer Schriftverlust am rechten Rand</note> 
+                  <lb n="2" xml:id="a10r_lb2"/>die Lüsternen, die Unersättlichen, die Gottlosen, ihr werdet auch ewig die Unseligen, Verfluchten und Verdammten sein!“… 
+                  <lb n="3" xml:id="a10r_lb3"/>Man weiß, <hi rend="underline">wer</hi> die Erbschaft dieser jüdischen Umwerthung gemacht hat… Ich erinnere in Betreff der ungeheuren und 
+                  <lb n="4" xml:id="a10r_lb4"/>über alle Maaßen verhängnißvollen Initiative, welche die Juden mit dieser grundsätzlichsten aller Kriegserklärungen ge<pc force="weak">-</pc>
+                  <lb n="5" xml:id="a10r_lb5"/>geben haben, an den Satz, auf den ich bei einer andren Gelegenheit gekommen bin („<hi rend="latin">Jenseits von Gut und Böse</hi>“ <hi rend="latin">p.</hi> 118) 
+                  <lb n="6" xml:id="a10r_lb6"/>– daß nämlich mit den Juden <hi rend="underline">der</hi> <hi rend="underline">Sklavenaufstand</hi> <hi rend="underline">in</hi> <hi rend="underline">der</hi> <hi rend="underline">Moral</hi> beginnt: jener Aufstand, welcher eine zweitausendjährige 
+                  <lb n="7" xml:id="a10r_lb7"/>Geschichte hinter sich hat und der uns heute nur deshalb aus den Augen gerückt ist, weil er – siegreich gewesen 
+                  <lb n="8" xml:id="a10r_lb8"/>ist…</p>
+            </div2>
+            <div2 xml:id="GM0108"><anchor xml:id="a10r_div2_GM0108"/>
+               <head xml:id="a10r_head_d2e98">
+                  <lb n="9" xml:id="a10r_lb9"/><choice xml:id="a10r_choice_d2e101"><sic change="#GM01formerVersion">9.</sic><corr change="#GM01finalVersion">8.</corr></choice></head>
+               <p>
+                  <lb n="10" rend="indent" xml:id="a10r_lb10"/><add place="inline" xml:id="a10r_add_d2e110">– </add>Aber ihr versteht das nicht? Ihr habt keine Augen für Etwas, das zwei Jahrtausende gebraucht hat, um zum Siege zu kom<pc force="weak">-</pc>
+                  <lb n="11" xml:id="a10r_lb11"/>men?… Daran ist Nichts zum Verwundern: alle langen Dinge sind schwer zu sehn, zu übersehn. <hi rend="underline">Das</hi> aber ist das Ereigniß: 
+                  <lb n="12" xml:id="a10r_lb12"/>aus dem Stamme jene<retrace>s</retrace> Baums der Rache und des Hasses, des jüdischen Hasses – des tiefsten und sublimsten, nämlich Ideale 
+                  <lb n="13" xml:id="a10r_lb13"/>schaffenden, Werthe umschaffenden Hasses, <milestone unit="page" edRef="#Cb #Ed" n="14"/>dessen Gleichen nie auf Erden dagewesen ist – wuchs etwas ebenso Unvergleichliches 
+                  <lb n="14" xml:id="a10r_lb14"/>heraus, eine <hi rend="underline">neue</hi> <hi rend="underline">Liebe</hi>, die tiefste und sublimste aller Arten Liebe: – und aus welchem andren Stamme hätte sie auch 
+                  <lb n="15" xml:id="a10r_lb15"/>wachsen können?… Daß man aber ja nicht vermeine, sie sei etwa als die eigentliche Verneinung jenes Durstes nach Ra<pc force="weak">-</pc>
+                  <lb n="16" xml:id="a10r_lb16"/>che, als der Gegensatz des jüdischen Hasses emporgewachsen! Nein, das Umgekehrte ist die Wahrheit! Diese Liebe wuchs 
+                  <lb n="17" xml:id="a10r_lb17"/>aus ihm heraus, als seine Krone, als die triumphirende, in der reinsten Helle und Sonnenfülle sich breit und breiter entfalten<pc force="weak">-</pc>
+                  <lb n="18" xml:id="a10r_lb18"/>de Krone, welche mit demselben Drange gleichsam im Reiche des Lichts und der Höhe auf die Ziele jenes Hasses, auf Sieg, 
+                  <lb n="19" xml:id="a10r_lb19"/>auf Beute, auf Verführung aus war, mit dem die Wurzeln jenes Hasses sich immer gründlicher und begehrlicher in Alles, 
+                  <lb n="20" xml:id="a10r_lb20"/>was Tiefe hatte und böse war, hinunter senkten. Dieser Jesus von Nazareth, als das leibhafte Evangelium der Liebe, 
+                  <lb n="21" xml:id="a10r_lb21"/>dieser den Armen, den Kranken, den Sündern die Seligkeit und den Sieg bringende „Erlöser“ – war er nicht gerade die 
+                  <lb n="22" xml:id="a10r_lb22"/>Verführung in ihrer unheimlichsten und unwiderstehlichsten Form, die Verführung und der Umweg zu eben jenen <hi rend="underline">jüdischen</hi> 
+                  <lb n="23" xml:id="a10r_lb23"/>Werthen und Neuerungen des Ideals? Hat Israel nicht gerade auf dem Umwege dieses „Erlösers“, dieses scheinbaren 
+                  <lb n="24" xml:id="a10r_lb24"/>Widersachers und Auflösers Israel’s, das letzte Ziel seiner sublimen Rachsucht <hi rend="underline">erreicht</hi>? Gehört es nicht in die geheime 
+                  <lb n="25" xml:id="a10r_lb25"/>schwarze Kunst einer wahrhaft <hi rend="underline"><retrace>g</retrace>roßen</hi> Politik der Rache, einer weitsichtigen, unterirdischen, langsam-<retrace>g</retrace>reifenden und 
+                  <lb n="26" xml:id="a10r_lb26"/>vorausrechnenden Rache, daß Israel selber das <del rend="hatching" instant="true">W</del> eigentliche Werkzeug seiner Rache vor aller Welt wie etwas Todfeind<pc force="weak">-</pc>
+                  <lb n="27" xml:id="a10r_lb27"/>liches verleugnen und an’s Kreuz schlagen mußte, damit „alle Welt“, nämlich alle Gegner Israels unbedenklich ge<milestone unit="page" edRef="#Cb #Ed" n="15"/>rade 
+                  <lb n="28" xml:id="a10r_lb28"/>an diesen Köder einbeißen konnten? Und wüßte man sich andrerseits, aus allem Raffinement des Geistes heraus, 
+                  <lb n="29" xml:id="a10r_lb29"/>überhaupt noch einen <hi rend="underline">gefährlicheren</hi> Köder auszudenken? Etwas, das an verlockender berauschender betäubender verderben<pc force="weak">-</pc>
+                  <lb n="30" xml:id="a10r_lb30"/>der Kraft jenem Symbol des „heiligen Kreuzes“ gleichkäme, jener schauerlichen Paradoxie eines „Gottes am Kreuze“, 
+                  <lb n="31" xml:id="a10r_lb31"/>jenem Mysterium einer unausdenkbaren letzten äußersten Grausamkeit und Selbstkreuzigung Gottes <hi rend="underline">zum</hi> <hi rend="underline">Heile</hi> <hi rend="underline">des</hi> <hi rend="underline">Men</hi><pc force="weak">-</pc>
+                  <lb n="32" xml:id="a10r_lb32"/><hi rend="underline">schen</hi>?… Gewiß ist wenigstens, daß <hi rend="latin">sub hoc signo</hi> Israel mit seiner Rache und Umwerthung aller Werthe bisher über 
+                  <lb n="33" xml:id="a10r_lb33"/>alle anderen Ideale, über alle <hi rend="underline">vornehmeren</hi> Ideale immer wieder triumphirt hat. – –</p>
+            </div2>
+            <div2 xml:id="GM0109"><anchor xml:id="a10r_div2_GM0109"/>
+               <head xml:id="a10r_head_d2e241">
+                  <lb n="34" xml:id="a10r_lb34"/><choice xml:id="a10r_choice_d2e244"><sic change="#GM01formerVersion">10.</sic><corr change="#GM01finalVersion">9.</corr></choice></head>
+               <p>
+                  <lb n="35" xml:id="a10r_lb35"/>– „Aber was reden <subst xml:id="a10r_subst_d2e254"><del rend="overwritten">s</del><add place="superimposed" xml:id="a10r_add_d2e257">S</add></subst>ie noch von <hi rend="underline">vornehmeren</hi> Idealen! Fügen wir uns in die Thatsachen: das Volk hat gesiegt – oder „die 
+                  <lb n="36" xml:id="a10r_lb36"/>Sklaven“ oder „der Pöbel“ oder „die Heerde“ oder wie Sie es zu nennen belieben – wenn dies durch die Juden geschehn 
+                  <lb n="37" xml:id="a10r_lb37"/>ist, wohlan! so hatte nie ein Volk eine welthistorischere Mission. „Die Herren“ sind abgethan; die Moral des gemeinen 
+                  <lb n="38" xml:id="a10r_lb38"/>Mannes hat gesiegt. Man mag diesen Sieg zugleich als eine Blutvergiftung nehmen <add place="above" rend="insM" xml:id="a10r_add_d2e270">(er hat die Rassen durch einander gemengt)</add> – ich widerspreche nicht; unzweifel<pc force="weak">-</pc>
+                  <lb n="39" rend="flushRight" xml:id="a10r_lb39"/>haft </p>
+            </div2>
+         </div1>
+      </body>
+   </text>
+<sourceDoc>
+        <surface xml:id="srcD_surface_a10r" type="relative" start="#a10r" facs="#D-20a_6">
+            <zone xml:id="srcD_zone_a10r_div2_d2e35" start="#a10r_div2_d2e35" type="firstBlock" style="padding-top:5em;">
+                <zone xml:id="srcD_zone_a10r_fw_d2e26" type="fw-top-right" start="#a10r_fw_d2e26">
+                    <fw type="pageNumber" hand="#N_pencil" place="top-right" corresp="#a10r_fw_d2e26">6</fw>
+                </zone>
+                <zone xml:id="srcD_zone_a10r_fw_d2e29" type="fw-top-right" start="#a10r_fw_d2e29">
+                    <fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a10r_fw_d2e29">6</fw>
+                </zone>
+                <line xml:id="srcD_line_a10r_lb1" start="#a10r_lb1" n="1">allein giebt es Seligkeit<add place="inline" corresp="#a10r_add_d2e42">,</add> – dagegen ihr, ihr Vornehmen und Gewaltigen, ihr seid in alle Ewigkeit die Bösen, die Grausamen, 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb2" start="#a10r_lb2" n="2">die Lüsternen, die Unersättlichen, die Gottlosen, ihr werdet auch ewig die Unseligen, Verfluchten und Verdammten sein!“… 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb3" start="#a10r_lb3" n="3">Man weiß, <hi rend="underline">wer</hi> die Erbschaft dieser jüdischen Umwerthung gemacht hat… Ich erinnere in Betreff der ungeheuren und 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb4" start="#a10r_lb4" n="4">über alle Maaßen verhängnißvollen Initiative, welche die Juden mit dieser grundsätzlichsten aller Kriegserklärungen ge<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a10r_lb5" start="#a10r_lb5" n="5">geben haben, an den Satz, auf den ich bei einer andren Gelegenheit gekommen bin („<hi rend="latin">Jenseits von Gut und Böse</hi>“ <hi rend="latin">p.</hi> 118) 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb6" start="#a10r_lb6" n="6">– daß nämlich mit den Juden <hi rend="underline">der</hi> <hi rend="underline">Sklavenaufstand</hi> <hi rend="underline">in</hi> <hi rend="underline">der</hi> <hi rend="underline">Moral</hi> beginnt: jener Aufstand, welcher eine zweitausendjährige 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb7" start="#a10r_lb7" n="7">Geschichte hinter sich hat und der uns heute nur deshalb aus den Augen gerückt ist, weil er – siegreich gewesen 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb8" start="#a10r_lb8" n="8">ist…
+            
+            <anchor corresp="#a10r_div2_GM0108"/>
+               
+                  </line>
+                <zone xml:id="srcD_zone_a10r_note_d2e46" type="note-bottom" start="#a10r_note_d2e46"/>
+            </zone>
+            <zone xml:id="srcD_zone_a10r_div2_GM0108" start="#a10r_div2_GM0108" type="textBlock">
+                <line xml:id="srcD_line_a10r_head_d2e98_a10r_lb9" start="#a10r_lb9" n="9">
+                    <zone xml:id="srcD_zone_a10r_head_d2e98_a10r_lb9" type="head">
+                        <choice corresp="#a10r_choice_d2e101">
+                            <sic change="#GM01formerVersion">9.</sic>
+                            <corr change="#GM01finalVersion">8.</corr>
+                        </choice>
+               
+                  </zone>
+                </line>
+                <line xml:id="srcD_line_a10r_lb10" start="#a10r_lb10" rend="indent" n="10">
+                    <add place="inline" corresp="#a10r_add_d2e110">– </add>Aber ihr versteht das nicht? Ihr habt keine Augen für Etwas, das zwei Jahrtausende gebraucht hat, um zum Siege zu kom<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a10r_lb11" start="#a10r_lb11" n="11">men?… Daran ist Nichts zum Verwundern: alle langen Dinge sind schwer zu sehn, zu übersehn. <hi rend="underline">Das</hi> aber ist das Ereigniß: 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb12" start="#a10r_lb12" n="12">aus dem Stamme jene<retrace>s</retrace> Baums der Rache und des Hasses, des jüdischen Hasses – des tiefsten und sublimsten, nämlich Ideale 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb13" start="#a10r_lb13" n="13">schaffenden, Werthe umschaffenden Hasses, <milestone unit="page" edRef="#Cb #Ed" n="14"/>dessen Gleichen nie auf Erden dagewesen ist – wuchs etwas ebenso Unvergleichliches 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb14" start="#a10r_lb14" n="14">heraus, eine <hi rend="underline">neue</hi> <hi rend="underline">Liebe</hi>, die tiefste und sublimste aller Arten Liebe: – und aus welchem andren Stamme hätte sie auch 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb15" start="#a10r_lb15" n="15">wachsen können?… Daß man aber ja nicht vermeine, sie sei etwa als die eigentliche Verneinung jenes Durstes nach Ra<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a10r_lb16" start="#a10r_lb16" n="16">che, als der Gegensatz des jüdischen Hasses emporgewachsen! Nein, das Umgekehrte ist die Wahrheit! Diese Liebe wuchs 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb17" start="#a10r_lb17" n="17">aus ihm heraus, als seine Krone, als die triumphirende, in der reinsten Helle und Sonnenfülle sich breit und breiter entfalten<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a10r_lb18" start="#a10r_lb18" n="18">de Krone, welche mit demselben Drange gleichsam im Reiche des Lichts und der Höhe auf die Ziele jenes Hasses, auf Sieg, 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb19" start="#a10r_lb19" n="19">auf Beute, auf Verführung aus war, mit dem die Wurzeln jenes Hasses sich immer gründlicher und begehrlicher in Alles, 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb20" start="#a10r_lb20" n="20">was Tiefe hatte und böse war, hinunter senkten. Dieser Jesus von Nazareth, als das leibhafte Evangelium der Liebe, 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb21" start="#a10r_lb21" n="21">dieser den Armen, den Kranken, den Sündern die Seligkeit und den Sieg bringende „Erlöser“ – war er nicht gerade die 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb22" start="#a10r_lb22" n="22">Verführung in ihrer unheimlichsten und unwiderstehlichsten Form, die Verführung und der Umweg zu eben jenen <hi rend="underline">jüdischen</hi> 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb23" start="#a10r_lb23" n="23">Werthen und Neuerungen des Ideals? Hat Israel nicht gerade auf dem Umwege dieses „Erlösers“, dieses scheinbaren 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb24" start="#a10r_lb24" n="24">Widersachers und Auflösers Israel’s, das letzte Ziel seiner sublimen Rachsucht <hi rend="underline">erreicht</hi>? Gehört es nicht in die geheime 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb25" start="#a10r_lb25" n="25">schwarze Kunst einer wahrhaft <hi rend="underline">
+                        <retrace>g</retrace>roßen</hi> Politik der Rache, einer weitsichtigen, unterirdischen, langsam-<retrace>g</retrace>reifenden und 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb26" start="#a10r_lb26" n="26">vorausrechnenden Rache, daß Israel selber das <del rend="hatching" instant="true">W</del> eigentliche Werkzeug seiner Rache vor aller Welt wie etwas Todfeind<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a10r_lb27" start="#a10r_lb27" n="27">liches verleugnen und an’s Kreuz schlagen mußte, damit „alle Welt“, nämlich alle Gegner Israels unbedenklich ge<milestone unit="page" edRef="#Cb #Ed" n="15"/>rade 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb28" start="#a10r_lb28" n="28">an diesen Köder einbeißen konnten? Und wüßte man sich andrerseits, aus allem Raffinement des Geistes heraus, 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb29" start="#a10r_lb29" n="29">überhaupt noch einen <hi rend="underline">gefährlicheren</hi> Köder auszudenken? Etwas, das an verlockender berauschender betäubender verderben<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a10r_lb30" start="#a10r_lb30" n="30">der Kraft jenem Symbol des „heiligen Kreuzes“ gleichkäme, jener schauerlichen Paradoxie eines „Gottes am Kreuze“, 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb31" start="#a10r_lb31" n="31">jenem Mysterium einer unausdenkbaren letzten äußersten Grausamkeit und Selbstkreuzigung Gottes <hi rend="underline">zum</hi> <hi rend="underline">Heile</hi> <hi rend="underline">des</hi> <hi rend="underline">Men</hi>
+                    <pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a10r_lb32" start="#a10r_lb32" n="32">
+                    <hi rend="underline">schen</hi>?… Gewiß ist wenigstens, daß <hi rend="latin">sub hoc signo</hi> Israel mit seiner Rache und Umwerthung aller Werthe bisher über 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb33" start="#a10r_lb33" n="33">alle anderen Ideale, über alle <hi rend="underline">vornehmeren</hi> Ideale immer wieder triumphirt hat. – –
+            
+            <anchor corresp="#a10r_div2_GM0109"/>
+               
+                  </line>
+            </zone>
+            <zone xml:id="srcD_zone_a10r_div2_GM0109" start="#a10r_div2_GM0109" type="lastBlock" style="padding-bottom:5em;">
+                <line xml:id="srcD_line_a10r_head_d2e241_a10r_lb34" start="#a10r_lb34" n="34">
+                    <zone xml:id="srcD_zone_a10r_head_d2e241_a10r_lb34" type="head">
+                        <choice corresp="#a10r_choice_d2e244">
+                            <sic change="#GM01formerVersion">10.</sic>
+                            <corr change="#GM01finalVersion">9.</corr>
+                        </choice>
+               
+                  </zone>
+                </line>
+                <line xml:id="srcD_line_a10r_lb35" start="#a10r_lb35" n="35">– „Aber was reden <del rend="overwritten" cause="#a10r_add_d2e257">s</del>
+                    <add place="superimposed" corresp="#a10r_add_d2e257">S</add>ie noch von <hi rend="underline">vornehmeren</hi> Idealen! Fügen wir uns in die Thatsachen: das Volk hat gesiegt – oder „die 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb36" start="#a10r_lb36" n="36">Sklaven“ oder „der Pöbel“ oder „die Heerde“ oder wie Sie es zu nennen belieben – wenn dies durch die Juden geschehn 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb37" start="#a10r_lb37" n="37">ist, wohlan! so hatte nie ein Volk eine welthistorischere Mission. „Die Herren“ sind abgethan; die Moral des gemeinen 
+                  </line>
+                <line xml:id="srcD_line_a10r_lb38" start="#a10r_lb38" n="38">Mannes hat gesiegt. Man mag diesen Sieg zugleich als eine Blutvergiftung nehmen <metamark xml:id="srcD_metamark_a10r_add_d2e270" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a10r_add_d2e270">(er hat die Rassen durch einander gemengt)</add>
+                    </metamark> – ich widerspreche nicht; unzweifel<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a10r_lb39" start="#a10r_lb39" n="39">
+                    <zone xml:id="srcD_line_a10r_lb39_flushRight_zone" type="flushRight" style="left:-5.5em;">haft </zone>
+                </line>
+                <zone xml:id="srcD_zone_a10r_fw_d2e32" type="fw-bottom-left" start="#a10r_fw_d2e32">
+                    <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#a10r_fw_d2e32">10</fw>
+                </zone>
+            </zone>
+        </surface>
+    </sourceDoc>
+</TEI>

@@ -2,7 +2,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>a3r</title>
+            <title>a31r</title>
          </titleStmt>
          <publicationStmt>
             <p/>
@@ -14,202 +14,262 @@
    </teiHeader>
    <text>
       <body>
-         <div1 xml:space="preserve"><anchor xml:id="a3r_div1_d2e22"/>
-            <pb xml:id="a3r" corresp="#contents_a3r #folDesc_a3rv #addDesc_a3r #N_brown1" facs="#D-20a_V" change="#GMfrontRecord #GM01-02finalVersion #GMVorrede06-07belatedMod"/>
-            <fw type="pageNumber" hand="#N_red" place="top-right" xml:id="a3r_fw_d2e26">V.</fw>
-            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="a3r_fw_d2e29">3</fw>
-            <listTranspose><transpose><ptr target="#trans2_a3r"/><ptr target="#trans1_a3r"/></transpose></listTranspose>
-            <div2><anchor xml:id="a3r_div2_d2e37"/>
+         <div1 xml:space="preserve"><anchor xml:id="a31r_div1_d2e22"/>
+            <pb xml:id="a31r" corresp="#contents_a31r #folDesc_a31rv #addDesc_a31r #N_black1 #N_brown1" facs="#D-20a_25" change="#GM02abortedVersion #GM02revision #GM02completion #GM01-02finalVersion"/>
+            <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" xml:id="a31r_fw_d2e26"><subst xml:id="a31r_subst_d2e27"><del rend="erased">28</del><add place="superimposed" xml:id="a31r_add_d2e30">25</add></subst></fw>
+            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="a31r_fw_d2e33">31</fw>
+            <listTranspose><transpose><ptr target="#trans2_a31r"/><ptr target="#trans1_a31r"/></transpose></listTranspose>
+            <substJoin n="6" target="#subst1_a31r #substDel1_a31r"/>
+            <substJoin n="9" target="#substAdd2a_a31r #substAdd2b_a31r #substDel2_a31r"/>
+            <substJoin n="13-14" seq="1" target="#substAdd3a_a31r #substAdd3b_a31r #substDel3a_a31r #substDel3b_a31r #substDel3c_a31r #substDel3d_a31r"/>
+            <substJoin n="13-14" seq="2" target="#subst4_a31r #substAdd4_a31r #substDel4_a31r"/>
+            <substJoin n="30-31" target="#substAdd5a_a31r #substAdd5b_a31r"/>
+            <div2 xml:id="GM0213"><anchor xml:id="a31r_div2_GM0213"/>
+               <head xml:id="a31r_head_d2e54">
+                  <lb n="1" xml:id="a31r_lb1"/><subst xml:id="a31r_subst_d2e57"><del hand="#N_brown1">11.</del> <add hand="#N_brown1" place="inline" xml:id="a31r_add_d2e61">13.</add></subst></head>
                <p>
-               <lb n="1" xml:id="a3r_lb1"/>abliegt (in der <hi rend="latin">Dr. Rée</hi>, gleich allen englischen Moralgenealogen, die moralische Werthungsweise <hi rend="underline">an</hi> <hi rend="underline">sich</hi> sieht); ins<pc force="weak">-</pc>
-               <lb n="2" xml:id="a3r_lb2"/>gleichen S. <del>29</del>74. <hi rend="latin">Wand.</hi> S. 29. <add place="above" rend="insM" xml:id="a3r_add_d2e64"><hi rend="latin">Morgenr.</hi> S. 99</add> über die Herkunft der Gerechtigkeit als eines Ausgleichs zwischen ungefähr Gleich-
-               <lb n="3" xml:id="a3r_lb3"/>Mächtigen (Gleichgewicht als Voraussetzung aller Verträge, folglich alles Rechts); insgleichen über die Herkunft der Strafe 
-               <lb n="4" xml:id="a3r_lb4"/><hi rend="latin">Wand.</hi> S. 25. 34. für die der terroristische Zweck, <add place="above" rend="insM" xml:id="a3r_add_d2e76">weder ursprünglich,</add> wie <hi rend="latin">Dr. Rée</hi> meint, noch essentiell ist (– er ist ihr vielmehr erst 
-               <lb n="5" xml:id="a3r_lb5"/>eingelegt, unter bestimmten Umständen, und immer als ein Nebenbei, als etwas Hinzukommendes)</p>
-            </div2>
-            
-            <div2 xml:id="GMVorrede05"><anchor xml:id="a3r_div2_GMVorrede05"/>
-               <milestone unit="page" edRef="#Ed" n="IX"/>
-               <head xml:id="a3r_head_d2e93">
-                  <lb n="6" xml:id="a3r_lb6"/>5.</head>
+                  <lb n="2" xml:id="a31r_lb2"/><add place="inline" xml:id="a31r_add_d2e67">– </add>Man hat also, um zur Sache, nämlich zur <hi rend="underline">Strafe</hi> zurückzukehren, zweierlei an ihr zu unterscheiden: einmal das relativ 
+                  <lb n="3" xml:id="a31r_lb3"/><hi rend="underline">Dauerhafte</hi> an ihr, den Brauch, den Akt, das „Drama“, eine <add hand="#N_brown1" place="above" seq="2" xml:id="a31r_add_d2e77"><metamark function="transposition" target="#trans1_a31r">(2</metamark></add><seg xml:id="trans1_a31r">strenge</seg> <add place="above" rend="insM" seq="1" xml:id="a31r_add_d2e84"><add hand="#N_brown1" place="above" seq="2" xml:id="a31r_add_d2e85"><metamark function="transposition" target="#trans2_a31r">(1</metamark></add><seg xml:id="trans2_a31r">gewisse</seg></add> Abfolge von Prozeduren, andrerseits das <hi rend="underline">Flüssige</hi> 
+                  <lb n="4" xml:id="a31r_lb4"/>an ihr, den Sinn, den <retrace>Z</retrace>weck, die Erwartung, welche sich an die Ausführung solcher Prozeduren knüpft. Hierbei wird 
+                  <lb n="5" xml:id="a31r_lb5"/><add place="above" rend="insM" xml:id="a31r_add_d2e99">ohne Weiteres</add> vorausgesetzt, <hi rend="latin">per analogiam</hi>, <subst xml:id="a31r_subst_d2e106"><add place="above" rend="insM" seq="1" change="#version0" xml:id="a31r_add_d2e107">gemäß dem<add place="inline" rend="insMExt" seq="2" change="#version0" xml:id="a31r_add_d2e109"> eben entwickelten Hauptgesichtspunkte der historischen Methodik,<add place="inline" rend="insMExt" seq="3" instant="true" change="#version0" xml:id="a31r_add_d2e111"> daß die Prozedur selbst etwas Älte<pc force="weak">-</pc></add></add></add><del rend="hatching" seq="1">in Hinsicht auf das</del><del rend="hatching" seq="2">im vorigen Paragraphen <subst seq="1" xml:id="a31r_subst_d2e119"><del rend="overwritten">H</del><add place="superimposed" xml:id="a31r_add_d2e122">h</add></subst>ervorgehobene<add place="inline" seq="1" xml:id="a31r_add_d2e125">n</add> Hauptgesichtspunkte</del><del rend="strikethrough" seq="2">,</del></subst><space unit="char" quantity="5"/>
+                  <lb n="6" xml:id="a31r_lb6"/>res<add place="inline" xml:id="a31r_add_d2e134">, <add place="above" rend="insM" instant="true" xml:id="a31r_add_d2e136">Früheres</add></add> als <subst xml:id="subst1_a31r" seq="1"><add place="above" rend="insM" xml:id="a31r_add_d2e140">ihre Benützung zur</add><del rend="hatching">der ganze Begriff</del></subst> Strafe sein <subst xml:id="a31r_subst_d2e146"><add place="above" rend="insM" xml:id="a31r_add_d2e147">wird</add><del rend="hatching">muß</del></subst>, daß letztere<del xml:id="substDel1_a31r" rend="strikethrough" seq="1">r</del> erst in die <add place="above" rend="insM" xml:id="a31r_add_d2e155">(längst vorhandene, aber in einem anderen Sinne übliche)</add> Prozedur <hi rend="underline">hineingelegt</hi>, hineingedeutet worden ist, 
+                  <lb n="7" xml:id="a31r_lb7"/>kurz, daß es <hi rend="underline">nicht</hi> so steht, wie unsre naiven Moral- und Rechtsgenealogen bisher annahmen, welche sich <add place="above" rend="insM" xml:id="a31r_add_d2e167">allesammt</add> die Pro<pc force="weak">-</pc>
+                  <lb n="8" xml:id="a31r_lb8"/>zedur <hi rend="underline">erfunden</hi> <subst xml:id="a31r_subst_d2e178"><add place="above" rend="insM" xml:id="a31r_add_d2e179">dachten</add><del rend="hatching">denken</del></subst> <restore type="strikethrough"><hi rend="underline">zum</hi></restore> <restore type="strikethrough"><hi rend="underline">Zweck</hi></restore> <restore type="strikethrough"><hi rend="underline">der</hi></restore> <restore type="strikethrough"><hi rend="underline">Strafe</hi></restore>, so wie man sich ehe<milestone unit="page" edRef="#Ed" n="71"/>mals die Hand erfunden dachte zum Zweck des 
+                  <lb n="9" xml:id="a31r_lb9"/>Greifens. Was nun <subst xml:id="a31r_subst_d2e205"><add place="above" rend="insM" seq="1" xml:id="a31r_add_d2e206">jenes<add xml:id="substAdd2a_a31r" seq="2" place="inline" rend="insMExt"> andre</add></add><del rend="hatching" seq="1">das</del> <del xml:id="substDel2_a31r" rend="hatching">flüssige</del></subst> Element an der Strafe betrifft<add xml:id="substAdd2b_a31r" place="inline" seq="2">, <add seq="2" place="above" rend="insM" instant="true" xml:id="a31r_add_d2e219">das flüssige</add></add>, ihren „Sinn“, so stellt in einem sehr späten Zustan<pc force="weak">-</pc>
+                  <lb n="10" xml:id="a31r_lb10"/>de der Cultur (zum Beispiel im heutigen Europa) der Begriff <subst xml:id="a31r_subst_d2e227"><del rend="overwritten">d</del><add place="superimposed" instant="true" xml:id="a31r_add_d2e230">„S</add></subst>trafe“ in der That <add place="above" rend="insM" xml:id="a31r_add_d2e233">gar</add> nicht mehr Einen Sinn vor, sondern 
+                  <lb n="11" xml:id="a31r_lb11"/>eine <add place="above" rend="insM" xml:id="a31r_add_d2e239">ganze</add> Synthesis von „Sinnen“: die <subst xml:id="a31r_subst_d2e242"><add place="above" rend="insM" xml:id="a31r_add_d2e243">bisherige</add><del rend="hatching">ganze</del></subst> Geschichte der Strafe<add place="above" rend="insM" xml:id="a31r_add_d2e248"> überhaupt</add>, die Geschichte ihrer Ausnützung zu den verschiedensten Zwecken 
+                  <lb n="12" xml:id="a31r_lb12"/>krystallisirt sich zuletzt in eine Art von Einheit, welche schwer löslich, schwer zu analysiren und<add place="inline" xml:id="a31r_add_d2e253">, <add place="above" rend="insM" instant="true" xml:id="a31r_add_d2e255">was man hervorheben muß,</add></add> ganz und gar <hi rend="underline">unde<pc force="weak">-</pc>
+                  <lb n="13" xml:id="a31r_lb13"/>finirbar</hi> ist. <subst xml:id="a31r_subst_d2e267"><del xml:id="substDel3a_a31r" rend="hatching" seq="1">(</del><add xml:id="substAdd3a_a31r" place="above" rend="insM" seq="1"><retrace>(</retrace>Es ist heute <hi rend="underline">unmöglich</hi>, bestimmt zu sagen, <hi rend="underline">warum</hi> eigentlich <add place="above" rend="insM" seq="999" xml:id="a31r_add_d2e279">heute</add> gestraft wird<subst xml:id="subst4_a31r" seq="2"><del rend="overwritten">*.</del><add place="superimposed" xml:id="a31r_add_d2e285">:</add></subst><del rend="strikethrough" seq="2">)</del><add place="inline" rend="insMExt" seq="2" xml:id="a31r_add_d2e289"> alle</add></add><del xml:id="substDel4_a31r" rend="hatching" seq="2">Alle</del></subst> Begriffe, in denen <add xml:id="substAdd3b_a31r" place="below" rend="insM" seq="1">sich</add> ein ganzer Prozeß semiotisch zusammen<del xml:id="substDel3b_a31r" rend="hatching" seq="1">ge</del>faßt <del xml:id="substDel3c_a31r" rend="hatching" seq="1">wird</del>, entziehn sich der Defini<pc force="weak">-</pc>
+                  <lb n="14" xml:id="a31r_lb14"/>tion; definirbar ist nur das, was keine Geschichte hat.<add xml:id="substAdd4_a31r" seq="2" place="inline">)</add><del xml:id="substDel3d_a31r" rend="hatching" seq="1">)</del> In einem früheren Stadium erscheint dagegen jene Synthesis 
+                  <lb n="15" xml:id="a31r_lb15"/>von „Sinnen“ noch löslicher, auch noch verschiebbarer; man kann <add place="above" rend="insM" xml:id="a31r_add_d2e316">noch</add> wahrnehmen, wie für jeden einzelnen Fall die Elemen<pc force="weak">-</pc>
+                  <lb n="16" xml:id="a31r_lb16"/>te der Synthesis <del rend="hatching">noch</del> ihre Werthigkeit verändern und sich demgemäß umordnen, so daß bald dies, bald jenes Element 
+                  <lb n="17" xml:id="a31r_lb17"/>auf Kosten der übrigen hervortritt und dominirt, ja unter Umständen Ein Element (etwa der Zweck der Abschreckung) 
+                  <lb n="18" xml:id="a31r_lb18"/>den ganzen Rest von Elementen aufzuheben scheint. Um wenigstens eine Vorstellung davon zu geben, wie unsicher, 
+                  <lb n="19" xml:id="a31r_lb19"/>wie nachträglich, wie accidentiell „der Sinn“ der Strafe ist und wie ein und dieselbe Prozedur auf grundverschiedne Ab<pc force="weak">-</pc>
+                  <lb n="20" xml:id="a31r_lb20"/>sichten hin benützt, gedeutet, zurechtgemacht werden kann: so stehe hier das Schema, das sich mir selbst auf Grund 
+                  <lb n="21" xml:id="a31r_lb21"/>eines verhältnißmäßig kleinen und zufälligen Materials ergeben hat. Strafe als Unschädlichmachen, als Verhinderung wei<pc force="weak">-</pc>
+                  <lb n="22" xml:id="a31r_lb22"/>teren Schädigens. Strafe <milestone unit="page" edRef="#Ed" n="72"/>als Abzahlung des Schadens an den Geschädigten, in irgend einer Form (auch in der <subst xml:id="a31r_subst_d2e349"><add place="above" rend="insM" xml:id="a31r_add_d2e350">einer</add><del rend="hatching">der</del></subst> Affekt-
+                  <lb n="23" xml:id="a31r_lb23"/>Compensation) Strafe als Isolirung einer Gleichgewichts-Störung, um ein Weitergreifen der Störung zu verhüten. Strafe 
+                  <lb n="24" xml:id="a31r_lb24"/>als Furchteinflößen vor denen, welche die Strafe bestimmen und <choice xml:id="a31r_choice_d2e360"><sic>Exekutiren</sic><corr>exekutiren</corr></choice>. Strafe als eine Art Ausgleich für die Vortheile, 
+                  <lb n="25" xml:id="a31r_lb25"/>welche der Verbrecher bis dahin genossen hat (zum Beispiel wenn er als Bergwerkssklave nutzbar gemacht wird). Strafe 
+                  <lb n="26" xml:id="a31r_lb26"/>als Ausscheidung eines entartenden Elementes (unter Umständen eines ganzen Zweigs, wie nach chinesischem Rechte: 
+                  <lb n="27" xml:id="a31r_lb27"/>somit als Mittel zur Reinerhaltung der Rasse oder <add place="above" rend="insM" xml:id="a31r_add_d2e370">zur Festhaltung</add> eines socialen Typus). Strafe als Fest, nämlich als Verge<pc force="weak">-</pc>
+                  <lb n="28" xml:id="a31r_lb28"/>waltigung und Verhöhnung eines endlich niedergeworfnen Feindes. Strafe als ein Gedächtniß-machen, sei es für den, 
+                  <lb n="29" xml:id="a31r_lb29"/>der die Strafe erleidet – die sogenannte „Besserung“, sei es für die Zeugen der Exekution. Strafe als <subst xml:id="a31r_subst_d2e381"><add place="above" rend="insM" seq="1" xml:id="a31r_add_d2e382">Zahlung eines Honorars</add><del rend="hatching" seq="1">ein Lohn</del><add place="inline" seq="1" xml:id="a31r_add_d2e386">,</add> <del rend="overwritten" seq="1">an</del><add place="superimposed" seq="1" xml:id="a31r_add_d2e391"><del hand="#N_brown1" rend="hatching" seq="2">als</del></add>
+                  <lb n="30" xml:id="a31r_lb30"/><add place="above" rend="insM" seq="1" xml:id="a31r_add_d2e396"><del hand="#N_brown1" rend="hatching" seq="2">eine Vergütigung der Dankbarkeit gegen </del><add hand="#N_brown1" place="inline" rend="insMExt" seq="2" xml:id="a31r_add_d2e399">ausbedungen Seitens der</add></add><del hand="#N_brown1" rend="hatching" seq="2">die</del></subst> Macht, welche den Übelthäter vor den Ausschweifungen der Rache schützt<del rend="strikethrough">e</del>. <add place="above" rend="insM" change="#version0" xml:id="a31r_add_d2e407">Strafe als Compromiß mit<add xml:id="substAdd5a_a31r" place="inline" rend="insMExt"> dem Naturzustand<del rend="strikethrough">*e</del></add></add><note type="authorial" hand="#N_black1" xml:id="a31r_note_d2e414"><del rend="hatching">–</del> <del rend="hatching">Fortsetzung folgt</del>.</note><space unit="char" quantity="3"/>  der Rache, sofern 
+                  <lb n="31" xml:id="a31r_lb31"/>letztere<add xml:id="substAdd5b_a31r" place="inline">r</add> durch mächtige Geschlechter <add place="above" rend="insM" xml:id="a31r_add_d2e430">noch</add> aufrecht erhalten und als Privilegium in Anspruch <choice xml:id="a31r_choice_d2e434"><sic>genomen</sic><corr>genommen</corr></choice> wird. Strafe als Kriegserklärung <add place="above" rend="insM" xml:id="a31r_add_d2e439"><choice xml:id="a31r_choice_d2e440"><abbr>u</abbr><expan>und</expan></choice> Kriegsmaßregel</add> ge<pc force="weak">-</pc>
+                  <lb n="32" xml:id="a31r_lb32"/>gen einen Feind des <add hand="#N_brown1" place="above" rend="insM" xml:id="a31r_add_d2e450">Friedens, des</add> Gesetzes, der Ordnung, der Obrigkeit, den man als gefährlich für das Gemeinwesen, als vertragsbrüchig 
+                  <lb n="33" xml:id="a31r_lb33"/>in Hinsicht auf dessen Voraussetzungen, als einen Empörer, Verräther <choice xml:id="a31r_choice_d2e456"><abbr>u</abbr><expan>und</expan></choice> Friedensbrecher mit <subst xml:id="a31r_subst_d2e460"><add hand="#N_brown1" place="above" rend="insM" xml:id="a31r_add_d2e461">allen</add><del hand="#N_brown1" rend="hatching">den</del></subst> Mitteln bekämpft, die <del hand="#N_brown1" rend="hatching">nur</del>    
+                  <lb n="34" xml:id="a31r_lb34"/>der Krieg <subst xml:id="a31r_subst_d2e471"><add hand="#N_brown1" place="above" rend="insM" xml:id="a31r_add_d2e472">an die Hand giebt.<add hand="#N_brown1" place="inline" xml:id="a31r_add_d2e474"> –</add></add><del hand="#N_brown1" rend="hatching">erlaubt.</del></subst>
+               </p></div2>
+            <div2 xml:id="GM0214"><anchor xml:id="a31r_div2_GM0214"/>
+               <head xml:id="a31r_head_d2e482"><handShift new="#N_brown1"/>
+                  <lb n="35" xml:id="a31r_lb35"/>14.</head>
                <p>
-                  <lb n="7" rend="indent" xml:id="a3r_lb7"/>Im Grunde lag mir gerade damals etwas viel Wichtigeres am Herzen als eignes oder fremdes Hypothesenwesen über den 
-                  <lb n="8" xml:id="a3r_lb8"/>Ursprung der Moral (oder vielmehr: das letztere nur um eines Zweckes willen, zu dem es eins unter vielen Mit<pc force="weak">-</pc>
-                  <lb n="9" xml:id="a3r_lb9"/>teln war) Es handelte sich für mich um den <hi rend="underline">Werth</hi> der Moral, – und darüber hatte ich mich fast allein mit meinem 
-                  <lb n="10" xml:id="a3r_lb10"/>großen Lehrer Schopenhauer auseinanderzusetzen, an den wie an einen Gegenwärtigen jenes Buch, die Leidenschaft <choice xml:id="a3r_choice_d2e115"><sic>und 
-                  <lb n="11" xml:id="a3r_lb11"/>und</sic><corr>und</corr></choice> der geheime Widerspruch jenes Buchs sich wendet <add place="inline" xml:id="a3r_add_d2e122">(</add>– denn auch jenes Buch war eine „Streitschrift.“) Es handelte sich 
-                  <lb n="12" xml:id="a3r_lb12"/>in Sonderheit um den Werth des „Unegoistischen“, der Mitleids- Selbstverläugnungs- Selbstopferungs-Instinkte, welche 
-                  <lb n="13" xml:id="a3r_lb13"/>gerade Schopenhauer so lange vergoldet, vergöttlicht und verjenseitigt hatte, bis sie ihm schließlich als die „Werthe an 
-                  <lb n="14" xml:id="a3r_lb14"/>sich“ übrig blieben, auf Grund deren er zum Leben, auch zu sich selbst, <hi rend="underline">Nein</hi> <hi rend="underline">sagte</hi>. Aber gerade gegen <hi rend="underline">diese</hi> In<pc force="weak">-</pc>
-                  <lb n="15" xml:id="a3r_lb15"/>stinkte redete aus mir ein immer grundsätzlicherer Argwohn, eine immer tiefer grabende Skepsis! Gerade hier sah 
-                  <lb n="16" xml:id="a3r_lb16"/>ich die <hi rend="underline">große</hi> Gefahr der Menschheit, ihre <choice xml:id="a3r_choice_d2e152"><sic>sublimsten</sic><corr>sublimste</corr></choice> Lockung und Verführung – wohin doch? in’s Nichts? – gerade 
-                  <lb n="17" xml:id="a3r_lb17"/>hier sah ich den Anfang vom Ende, das Stehenbleiben, die nihilistische Müdigkeit, den Willen <hi rend="underline">gegen</hi> das Leben 
-                  <lb n="18" xml:id="a3r_lb18"/>sich wendend, die letzte Krankheit sich zärtlich und schwermüthig ankündigend: ich <subst xml:id="a3r_subst_d2e163"><add place="above" rend="insM" xml:id="a3r_add_d2e164">verstand</add><del rend="hatching">begriff</del></subst> die immer mehr um sich grei<pc force="weak">-</pc>
-                  <lb n="19" xml:id="a3r_lb19"/>fende Mitleids-Moral, welche selbst die Philosophen ergriff und krank machte, <milestone unit="page" edRef="#Ed" n="X"/>als das unheimlichste Symptom einer  
-                  <lb n="20" xml:id="a3r_lb20"/>unheimlich gewordnen europäischen Cultur, als ihren Umweg – zum Nihilismus?… Zu einem neuen Buddhis<pc force="weak">-</pc>
-                  <lb n="21" xml:id="a3r_lb21"/>mus, einem Zukunfts-Buddhismus?… Diese moderne Philosophen-Bevorzugung und Überschätzung des Mitlei<subst xml:id="a3r_subst_d2e185"><add place="above" rend="insM" xml:id="a3r_add_d2e186">dens</add><del rend="hatching">ds</del></subst> ist 
-                  <lb n="22" xml:id="a3r_lb22"/>nämlich etwas Neues: gerade über den <hi rend="underline">Unwerth</hi> des Mitleidens waren bisher die Philosophen übereingekommen. 
-                  <lb n="23" xml:id="a3r_lb23"/>Ich nenne nur Plato, Spinoza, <choice xml:id="a3r_choice_d2e198"><sic>La<subst xml:id="a3r_subst_d2e201"><del rend="overwritten">r</del><add place="superimposed" xml:id="a3r_add_d2e204">R</add></subst>ochefoucauld</sic><corr>La Rochefoucauld</corr></choice> und Kant, vier Geister so verschieden von einander als möglich, aber 
-                  <lb n="24" xml:id="a3r_lb24"/><seg xml:id="trans1_a3r">Eins</seg><metamark function="transposition" rend="transLine"/> <seg xml:id="trans2_a3r">in Einem</seg>: in der Geringschätzung des Mitleidens. –</p>
-               </div2>
-            
-            <div2 xml:id="GMVorrede06"><anchor xml:id="a3r_div2_GMVorrede06"/>
-               <head xml:id="a3r_head_d2e224">
-                  <lb n="25" xml:id="a3r_lb25"/>6.</head>
-               <p>
-                  <lb n="26" rend="indent" xml:id="a3r_lb26"/>Dies Problem vom <hi rend="underline">Werthe</hi> des Mitleids und der Mitleids-Moral <add place="above" rend="insM" seq="1" xml:id="a3r_add_d2e236">(– <subst change="#GMVorrede06-07belatedMod" xml:id="a3r_subst_d2e238"><add hand="#typesetter_black1" place="above" seq="3" xml:id="a3r_add_d2e239">ich bin ein Gegner der schändlichen modernen Gefühlsverweichlichung –</add><del hand="#typesetter_black1" rend="strikethrough" seq="3">in allen meinen Schriften, namentlich <add place="above" rend="insM" seq="2" xml:id="a3r_add_d2e243"><del hand="#typesetter_black1" rend="strikethrough" seq="3">in der</del></add> <hi rend="latin">Morgenr.</hi> und <add place="above" rend="insM" seq="2" xml:id="a3r_add_d2e250"><del hand="#typesetter_black1" rend="strikethrough" seq="3">der</del></add> <hi rend="latin">fröhl. Wiss.</hi> stark unter<pc force="weak">-</pc><add place="above" rend="insM" instant="true" seq="1" xml:id="a3r_add_d2e259"><del hand="#typesetter_black1" rend="strikethrough" seq="3">strichen –</del></add></del></subst><add place="above" instant="true" seq="1" xml:id="a3r_add_d2e262">)</add></add> scheint zunächst nur etwas Vereinzeltes, ein Frage<pc force="weak">-</pc>
-                  <lb n="27" xml:id="a3r_lb27"/>zeichen für sich; wer aber einmal hier hängen bleibt, hier fragen <hi rend="underline">lernt</hi>, dem wird es gehn, wie es mir ergangen ist – 
-                  <lb n="28" xml:id="a3r_lb28"/>eine ungeheure neue Aussicht thut sich ihm auf, eine Möglichkeit faßt ihn wie ein Schwindel, jede Art Mißtrauen, 
-                  <lb n="29" xml:id="a3r_lb29"/>Argwohn, Furcht springt hervor, der Glaube an die Moral, an alle Moral wankt, – endlich wird eine neue Forderung 
-                  <lb n="30" xml:id="a3r_lb30"/>laut. Sprechen wir sie aus, diese <hi rend="underline">neue</hi> <hi rend="underline">Forderung</hi>: wir haben eine <hi rend="underline">Kritik</hi> der moralischen Werthe nöthig, <hi rend="underline">der</hi> 
-                  <lb n="31" xml:id="a3r_lb31"/><hi rend="underline">Werth</hi> <hi rend="underline">dieser</hi> <hi rend="underline">Werthe</hi> <hi rend="underline">ist</hi> <hi rend="underline">selbst</hi> <hi rend="underline">erst</hi> <hi rend="underline">einmal</hi> <hi rend="underline">in</hi> <hi rend="underline">Frage</hi> <hi rend="underline">zu</hi> <hi rend="underline">stellen</hi> – und dazu thut eine Kenntniß der Bedingungen 
-                  <lb n="32" xml:id="a3r_lb32"/>und Umstände noth, aus denen sie gewachsen, unter denen sie sich ent<milestone unit="page" edRef="#Ed" n="XI"/>wickelt und verschoben haben (Moral als 
-                  <lb n="33" xml:id="a3r_lb33"/>Folge, als Symptom, als Maske, als Tartüfferie, als Krankheit, als Mißverständniß, aber auch Moral als Ursache, als 
-                  <lb n="34" xml:id="a3r_lb34"/>Heilmittel, als <hi rend="latin">Stimulans</hi>, als Hemmung, als Gift), wie eine solche Kenntniß weder bis jetzt da war, noch auch nur 
-                  <lb n="35" xml:id="a3r_lb35"/>begehrt worden ist. Man nahm den <hi rend="underline">Werth</hi> dieser „Werthe“ als gegeben, als thatsächlich, als jenseits aller In-Fra<pc force="weak">-</pc>
-                  <lb n="36" xml:id="a3r_lb36"/><subst xml:id="a3r_subst_d2e350"><add place="inline" xml:id="a3r_add_d2e351">ge-</add><del rend="strikethrough">ge</del><del rend="overwritten">st</del><add place="superimposed" xml:id="a3r_add_d2e357">St</add></subst>ellung; man hat bisher auch nicht im Entferntesten daran gezweifelt und geschwankt, <add place="inline" xml:id="a3r_add_d2e361">„</add>den <del rend="strikethrough">„</del>Guten“ <subst xml:id="a3r_subst_d2e367"><add place="above" rend="insM" xml:id="a3r_add_d2e368">für</add><del rend="hatching">als</del></subst> höherwerthig</p>
-            </div2>
-         </div1>
+                  <lb n="36" rend="indent" xml:id="a31r_lb36"/>Diese Liste ist gewiß nicht vollständig; ersichtlich ist die Strafe mit Nützlichkeiten aller Art überladen. <milestone unit="page" edRef="#Ed" n="73"/>Um so eher darf 
+                  <lb n="37" xml:id="a31r_lb37"/> man von ihr eine <hi rend="underline">vermeintliche</hi> Nützlichkeit in Abzug bringen, die allerdings im populären Bewußtsein als ihre wesentlich<pc force="weak">-</pc>
+                  <lb n="38" xml:id="a31r_lb38"/>ste gilt, – der Glaube an die Strafe, der heute aus mehreren Gründen wackelt, findet <del rend="hatching">heute</del> <add place="above" rend="insM" xml:id="a31r_add_d2e508">gerade</add> an ihr immer noch 
+                  <lb n="39" xml:id="a31r_lb39"/> seine kräftigste Stütze. Die Strafe soll den Werth haben, das <hi rend="underline">Gefühl</hi> <hi rend="underline">der</hi> <hi rend="underline">Schuld</hi> im Schuldigen aufzuwecken, man sucht in 
+               </p></div2></div1>
       </body>
    </text>
    <sourceDoc>
-      <surface xml:id="srcD_surface_a3r" type="relative" start="#a3r" facs="#D-20a_V">
-         <zone xml:id="srcD_zone_a3r_div2_d2e37" start="#a3r_div2_d2e37" type="firstBlock" style="padding-top:5em;">
-            <zone xml:id="srcD_zone_a3r_fw_d2e26" type="fw-top-right" start="#a3r_fw_d2e26">
-               <fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a3r_fw_d2e26">V.</fw>
+      <surface xml:id="srcD_surface_a31r" type="relative" start="#a31r" facs="#D-20a_25">
+         <zone xml:id="srcD_zone_a31r_div2_GM0213" start="#a31r_div2_GM0213" type="firstBlock" style="padding-top:5em;">
+            <zone xml:id="srcD_zone_a31r_fw_d2e26" type="fw-top-right" start="#a31r_fw_d2e26">
+               <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#a31r_fw_d2e26">
+                  <del rend="erased" cause="#a31r_add_d2e30">28</del>
+                  <add place="superimposed" corresp="#a31r_add_d2e30">25</add>
+               </fw>
             </zone>
-            <line xml:id="srcD_line_a3r_lb1" start="#a3r_lb1" n="1">abliegt (in der <hi rend="latin">Dr. Rée</hi>, gleich allen englischen Moralgenealogen, die moralische Werthungsweise <hi rend="underline">an</hi>
-               <hi rend="underline">sich</hi> sieht); ins<pc force="weak">-</pc>
+            <line xml:id="srcD_line_a31r_head_d2e54_a31r_lb1" start="#a31r_lb1" n="1">
+               <zone xml:id="srcD_zone_a31r_head_d2e54_a31r_lb1" type="head">
+                  <del hand="#N_brown1">11.</del>
+                  <add hand="#N_brown1" place="inline" corresp="#a31r_add_d2e61">13.</add>
+               </zone>
             </line>
-            <line xml:id="srcD_line_a3r_lb2" start="#a3r_lb2" n="2">gleichen S. <del>29</del>74. <hi rend="latin">Wand.</hi> S. 29. <add place="above" corresp="#a3r_add_d2e64">
-                  <hi rend="latin">Morgenr.</hi> S. 99</add> über die Herkunft der Gerechtigkeit als eines Ausgleichs zwischen ungefähr Gleich-
-               </line>
-            <line xml:id="srcD_line_a3r_lb3" start="#a3r_lb3" n="3">Mächtigen (Gleichgewicht als Voraussetzung aller Verträge, folglich alles Rechts); insgleichen über die Herkunft der Strafe 
-               </line>
-            <line xml:id="srcD_line_a3r_lb4" start="#a3r_lb4" n="4">
-               <hi rend="latin">Wand.</hi> S. 25. 34. für die der terroristische Zweck, <add place="above" corresp="#a3r_add_d2e76">weder ursprünglich,</add> wie <hi rend="latin">Dr. Rée</hi> meint, noch essentiell ist (– er ist ihr vielmehr erst 
-               </line>
-            <line xml:id="srcD_line_a3r_lb5" start="#a3r_lb5" n="5">eingelegt, unter bestimmten Umständen, und immer als ein Nebenbei, als etwas Hinzukommendes)
-            
-            <anchor corresp="#a3r_div2_GMVorrede05"/>
-               <milestone unit="page" edRef="#Ed" n="IX"/>
+            <line xml:id="srcD_line_a31r_lb2" start="#a31r_lb2" n="2">
+               <add place="inline" corresp="#a31r_add_d2e67">– </add>Man hat also, um zur Sache, nämlich zur <hi rend="underline">Strafe</hi> zurückzukehren, zweierlei an ihr zu unterscheiden: einmal das relativ 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb3" start="#a31r_lb3" n="3">
+               <hi rend="underline">Dauerhafte</hi> an ihr, den Brauch, den Akt, das „Drama“, eine <add corresp="#a31r_add_d2e77" place="above" hand="#N_brown1">
+                  <metamark function="transposition" target="#trans1_a31r">(2</metamark>
+               </add>
+               <seg corresp="#trans1_a31r">strenge</seg>
+               <add place="above" corresp="#a31r_add_d2e84">
+                  <add corresp="#a31r_add_d2e85" style="left:-1.66018em;top:0.488287em;" place="above" hand="#N_brown1">
+                     <metamark function="transposition" target="#trans2_a31r">(1</metamark>
+                  </add>
+                  <seg corresp="#trans2_a31r">gewisse</seg>
+               </add> Abfolge von Prozeduren, andrerseits das <hi rend="underline">Flüssige</hi>
             </line>
+            <line xml:id="srcD_line_a31r_lb4" start="#a31r_lb4" n="4">an ihr, den Sinn, den <retrace>Z</retrace>weck, die Erwartung, welche sich an die Ausführung solcher Prozeduren knüpft. Hierbei wird 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb5" start="#a31r_lb5" n="5">
+               <add place="above" corresp="#a31r_add_d2e99">ohne Weiteres</add> vorausgesetzt, <hi rend="latin">per analogiam</hi>, <add place="above" corresp="#a31r_add_d2e107">gemäß dem<add place="inline" rend="insMExt" change="#version0" corresp="#a31r_add_d2e109"> eben entwickelten Hauptgesichtspunkte der historischen Methodik,<add place="inline" rend="insMExt" instant="true" change="#version0" corresp="#a31r_add_d2e111"> daß die Prozedur selbst etwas Älte<pc force="weak">-</pc>
+                     </add>
+                  </add>
+               </add>
+               <del rend="hatching">in Hinsicht auf das</del>
+               <del rend="hatching">im vorigen Paragraphen <del rend="overwritten" cause="#a31r_add_d2e122">H</del>
+                  <add place="superimposed" corresp="#a31r_add_d2e122">h</add>ervorgehobene<add place="inline" corresp="#a31r_add_d2e125">n</add> Hauptgesichtspunkte</del>
+               <del rend="strikethrough">,</del>
+               <space unit="char" quantity="5"/>
+            </line>
+            <line xml:id="srcD_line_a31r_lb6" start="#a31r_lb6" n="6">res<add place="inline" corresp="#a31r_add_d2e134">, <add place="above" instant="true" corresp="#a31r_add_d2e136" style="left:-2.5em;">Früheres</add>
+               </add> als <add place="above" corresp="#a31r_add_d2e140">ihre Benützung zur</add>
+               <del rend="hatching">der ganze Begriff</del> Strafe sein <add place="above" corresp="#a31r_add_d2e147">wird</add>
+               <del rend="hatching">muß</del>, daß letztere<del corresp="#substDel1_a31r" rend="strikethrough">r</del> erst in die <add place="above" corresp="#a31r_add_d2e155">(längst vorhandene, aber in einem anderen Sinne übliche)</add> Prozedur <hi rend="underline">hineingelegt</hi>, hineingedeutet worden ist, 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb7" start="#a31r_lb7" n="7">kurz, daß es <hi rend="underline">nicht</hi> so steht, wie unsre naiven Moral- und Rechtsgenealogen bisher annahmen, welche sich <add place="above" corresp="#a31r_add_d2e167">allesammt</add> die Pro<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a31r_lb8" start="#a31r_lb8" n="8">zedur <hi rend="underline">erfunden</hi>
+               <add place="above" corresp="#a31r_add_d2e179">dachten</add>
+               <del rend="hatching">denken</del>
+               <restore type="strikethrough">
+                  <hi rend="underline">zum</hi>
+               </restore>
+               <restore type="strikethrough">
+                  <hi rend="underline">Zweck</hi>
+               </restore>
+               <restore type="strikethrough">
+                  <hi rend="underline">der</hi>
+               </restore>
+               <restore type="strikethrough">
+                  <hi rend="underline">Strafe</hi>
+               </restore>, so wie man sich ehe<milestone unit="page" edRef="#Ed" n="71"/>mals die Hand erfunden dachte zum Zweck des 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb9" start="#a31r_lb9" n="9">Greifens. Was nun <add place="above" corresp="#a31r_add_d2e206">jenes<add corresp="#substAdd2a_a31r" place="inline" rend="insMExt"> andre</add>
+               </add>
+               <del rend="hatching">das</del>
+               <del corresp="#substDel2_a31r" rend="hatching">flüssige</del> Element an der Strafe betrifft<add corresp="#substAdd2b_a31r" place="inline">, <add place="above" instant="true" corresp="#a31r_add_d2e219">das flüssige</add>
+               </add>, ihren „Sinn“, so stellt in einem sehr späten Zustan<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a31r_lb10" start="#a31r_lb10" n="10">de der Cultur (zum Beispiel im heutigen Europa) der Begriff <del rend="overwritten" cause="#a31r_add_d2e230">d</del>
+               <add place="superimposed" instant="true" corresp="#a31r_add_d2e230">„S</add>trafe“ in der That <add place="above" corresp="#a31r_add_d2e233">gar</add> nicht mehr Einen Sinn vor, sondern 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb11" start="#a31r_lb11" n="11">eine <add place="above" corresp="#a31r_add_d2e239">ganze</add> Synthesis von „Sinnen“: die <add place="above" corresp="#a31r_add_d2e243">bisherige</add>
+               <del rend="hatching">ganze</del> Geschichte der Strafe<add place="above" corresp="#a31r_add_d2e248"> überhaupt</add>, die Geschichte ihrer Ausnützung zu den verschiedensten Zwecken 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb12" start="#a31r_lb12" n="12">krystallisirt sich zuletzt in eine Art von Einheit, welche schwer löslich, schwer zu analysiren und<add place="inline" corresp="#a31r_add_d2e253">, <add place="above" instant="true" corresp="#a31r_add_d2e255">was man hervorheben muß,</add>
+               </add> ganz und gar <hi rend="underline">unde</hi>
+               <hi rend="underline">
+                  <pc force="weak">-</pc>
+               </hi>
+            </line>
+            <line xml:id="srcD_line_a31r_lb13" start="#a31r_lb13" n="13">
+               <hi rend="underline">finirbar</hi> ist. <del corresp="#substDel3a_a31r" rend="hatching">(</del>
+               <add place="above" corresp="#substAdd3a_a31r" style="left:0em;">
+                  <retrace>(</retrace>Es ist heute <hi rend="underline">unmöglich</hi>, bestimmt zu sagen, <hi rend="underline">warum</hi> eigentlich <add place="above" corresp="#a31r_add_d2e279" style="left:0em;">heute</add> gestraft wird<del rend="overwritten" cause="#a31r_add_d2e285">*.</del>
+                  <add place="superimposed" corresp="#a31r_add_d2e285">:</add>
+                  <del rend="strikethrough">)</del>
+                  <add place="inline" rend="insMExt" corresp="#a31r_add_d2e289"> alle</add>
+               </add>
+               <del corresp="#substDel4_a31r" rend="hatching">Alle</del> Begriffe, in denen <add place="below" corresp="#substAdd3b_a31r">sich</add> ein ganzer Prozeß semiotisch zusammen<del corresp="#substDel3b_a31r" rend="hatching">ge</del>faßt <del corresp="#substDel3c_a31r" rend="hatching">wird</del>, entziehn sich der Defini<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a31r_lb14" start="#a31r_lb14" n="14">tion; definirbar ist nur das, was keine Geschichte hat.<add corresp="#substAdd4_a31r" place="inline">)</add>
+               <del corresp="#substDel3d_a31r" rend="hatching">)</del> In einem früheren Stadium erscheint dagegen jene Synthesis 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb15" start="#a31r_lb15" n="15">von „Sinnen“ noch löslicher, auch noch verschiebbarer; man kann <add place="above" corresp="#a31r_add_d2e316">noch</add> wahrnehmen, wie für jeden einzelnen Fall die Elemen<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a31r_lb16" start="#a31r_lb16" n="16">te der Synthesis <del rend="hatching">noch</del> ihre Werthigkeit verändern und sich demgemäß umordnen, so daß bald dies, bald jenes Element 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb17" start="#a31r_lb17" n="17">auf Kosten der übrigen hervortritt und dominirt, ja unter Umständen Ein Element (etwa der Zweck der Abschreckung) 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb18" start="#a31r_lb18" n="18">den ganzen Rest von Elementen aufzuheben scheint. Um wenigstens eine Vorstellung davon zu geben, wie unsicher, 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb19" start="#a31r_lb19" n="19">wie nachträglich, wie accidentiell „der Sinn“ der Strafe ist und wie ein und dieselbe Prozedur auf grundverschiedne Ab<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a31r_lb20" start="#a31r_lb20" n="20">sichten hin benützt, gedeutet, zurechtgemacht werden kann: so stehe hier das Schema, das sich mir selbst auf Grund 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb21" start="#a31r_lb21" n="21">eines verhältnißmäßig kleinen und zufälligen Materials ergeben hat. Strafe als Unschädlichmachen, als Verhinderung wei<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a31r_lb22" start="#a31r_lb22" n="22">teren Schädigens. Strafe <milestone unit="page" edRef="#Ed" n="72"/>als Abzahlung des Schadens an den Geschädigten, in irgend einer Form (auch in der <add place="above" corresp="#a31r_add_d2e350">einer</add>
+               <del rend="hatching">der</del> Affekt-
+                  </line>
+            <line xml:id="srcD_line_a31r_lb23" start="#a31r_lb23" n="23">Compensation) Strafe als Isolirung einer Gleichgewichts-Störung, um ein Weitergreifen der Störung zu verhüten. Strafe 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb24" start="#a31r_lb24" n="24">als Furchteinflößen vor denen, welche die Strafe bestimmen und <choice corresp="#a31r_choice_d2e360">
+                  <sic>Exekutiren</sic>
+                  <corr>exekutiren</corr>
+               </choice>. Strafe als eine Art Ausgleich für die Vortheile, 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb25" start="#a31r_lb25" n="25">welche der Verbrecher bis dahin genossen hat (zum Beispiel wenn er als Bergwerkssklave nutzbar gemacht wird). Strafe 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb26" start="#a31r_lb26" n="26">als Ausscheidung eines entartenden Elementes (unter Umständen eines ganzen Zweigs, wie nach chinesischem Rechte: 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb27" start="#a31r_lb27" n="27">somit als Mittel zur Reinerhaltung der Rasse oder <add place="above" corresp="#a31r_add_d2e370">zur Festhaltung</add> eines socialen Typus). Strafe als Fest, nämlich als Verge<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a31r_lb28" start="#a31r_lb28" n="28">waltigung und Verhöhnung eines endlich niedergeworfnen Feindes. Strafe als ein Gedächtniß-machen, sei es für den, 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb29" start="#a31r_lb29" n="29">der die Strafe erleidet – die sogenannte „Besserung“, sei es für die Zeugen der Exekution. Strafe als <add place="above" corresp="#a31r_add_d2e382">Zahlung eines Honorars</add>
+               <del rend="hatching">ein Lohn</del>
+               <add place="inline" corresp="#a31r_add_d2e386">,</add>
+               <del rend="overwritten" cause="#a31r_add_d2e391">an</del>
+               <add place="superimposed" corresp="#a31r_add_d2e391">
+                  <del hand="#N_brown1" rend="hatching">als</del>
+               </add>
+            </line>
+            <line xml:id="srcD_line_a31r_lb30" start="#a31r_lb30" n="30">
+               <add place="above" corresp="#a31r_add_d2e396">
+                  <del hand="#N_brown1" rend="hatching">eine Vergütigung der Dankbarkeit gegen </del>
+                  <add hand="#N_brown1" place="inline" rend="insMExt" corresp="#a31r_add_d2e399">ausbedungen Seitens der</add>
+               </add>
+               <del hand="#N_brown1" rend="hatching">die</del> Macht, welche den Übelthäter vor den Ausschweifungen der Rache schützt<del rend="strikethrough">e</del>. <add place="above" corresp="#a31r_add_d2e407">Strafe als Compromiß mit<add corresp="#substAdd5a_a31r" place="inline" rend="insMExt"> dem Naturzustand<del rend="strikethrough">*e</del>
+                  </add>
+               </add>
+               <note type="authorial" hand="#N_black1" corresp="#a31r_note_d2e414">
+                  <del rend="hatching">–</del>
+                  <del rend="hatching">Fortsetzung folgt</del>.</note>
+               <space unit="char" quantity="3"/>  der Rache, sofern 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb31" start="#a31r_lb31" n="31">letztere<add corresp="#substAdd5b_a31r" place="inline">r</add> durch mächtige Geschlechter <add place="above" corresp="#a31r_add_d2e430">noch</add> aufrecht erhalten und als Privilegium in Anspruch <choice corresp="#a31r_choice_d2e434">
+                  <sic>genomen</sic>
+                  <corr>genommen</corr>
+               </choice> wird. Strafe als Kriegserklärung <add place="above" corresp="#a31r_add_d2e439" style="left:-4.375em;">
+                  <choice corresp="#a31r_choice_d2e440">
+                     <abbr>u</abbr>
+                     <expan>und</expan>
+                  </choice> Kriegsmaßregel</add> ge<pc force="weak">-</pc>
+            </line>
+            <line xml:id="srcD_line_a31r_lb32" start="#a31r_lb32" n="32">gen einen Feind des <add place="above" hand="#N_brown1" corresp="#a31r_add_d2e450">Friedens, des</add> Gesetzes, der Ordnung, der Obrigkeit, den man als gefährlich für das Gemeinwesen, als vertragsbrüchig 
+                  </line>
+            <line xml:id="srcD_line_a31r_lb33" start="#a31r_lb33" n="33">in Hinsicht auf dessen Voraussetzungen, als einen Empörer, Verräther <choice corresp="#a31r_choice_d2e456">
+                  <abbr>u</abbr>
+                  <expan>und</expan>
+               </choice> Friedensbrecher mit <add place="above" hand="#N_brown1" corresp="#a31r_add_d2e461">allen</add>
+               <del hand="#N_brown1" rend="hatching">den</del> Mitteln bekämpft, die <del hand="#N_brown1" rend="hatching">nur</del>
+            </line>
+            <line xml:id="srcD_line_a31r_lb34" start="#a31r_lb34" n="34">der Krieg <add place="above" hand="#N_brown1" corresp="#a31r_add_d2e472">an die Hand giebt.<add hand="#N_brown1" place="inline" corresp="#a31r_add_d2e474"> –</add>
+               </add>
+               <del hand="#N_brown1" rend="hatching">erlaubt.</del>
+               <anchor corresp="#a31r_div2_GM0214"/>
+               <handShift new="#N_brown1"/>
+            </line>
+            <zone xml:id="srcD_zone_a31r_note_d2e414" type="note-bottom" start="#a31r_note_d2e414" style="left:18em;top:108.125em;">
+               <note type="authorial" hand="#N_black1" corresp="#a31r_note_d2e414">
+                  <del rend="hatching">–</del>
+                  <del rend="hatching">Fortsetzung folgt</del>.</note>
+            </zone>
          </zone>
-         <zone xml:id="srcD_zone_a3r_div2_GMVorrede05" start="#a3r_div2_GMVorrede05" type="textBlock">
-            <line xml:id="srcD_line_a3r_head_d2e93_a3r_lb6" start="#a3r_lb6" n="6">
-               <zone xml:id="srcD_zone_a3r_head_d2e93_a3r_lb6" type="head">5.
+         <zone xml:id="srcD_zone_a31r_div2_GM0214" start="#a31r_div2_GM0214" type="lastBlock" style="padding-bottom:5em;">
+            <line xml:id="srcD_line_a31r_head_d2e482_a31r_lb35" start="#a31r_lb35" n="35" hand="#N_brown1">
+               <zone xml:id="srcD_zone_a31r_head_d2e482_a31r_lb35" type="head">14.
                   </zone>
             </line>
-            <line xml:id="srcD_line_a3r_lb7" start="#a3r_lb7" rend="indent" n="7">Im Grunde lag mir gerade damals etwas viel Wichtigeres am Herzen als eignes oder fremdes Hypothesenwesen über den 
+            <line xml:id="srcD_line_a31r_lb36" start="#a31r_lb36" rend="indent" hand="#N_brown1" n="36">Diese Liste ist gewiß nicht vollständig; ersichtlich ist die Strafe mit Nützlichkeiten aller Art überladen. <milestone unit="page" edRef="#Ed" n="73"/>Um so eher darf 
                   </line>
-            <line xml:id="srcD_line_a3r_lb8" start="#a3r_lb8" n="8">Ursprung der Moral (oder vielmehr: das letztere nur um eines Zweckes willen, zu dem es eins unter vielen Mit<pc force="weak">-</pc>
+            <line xml:id="srcD_line_a31r_lb37" start="#a31r_lb37" hand="#N_brown1" n="37"> man von ihr eine <hi rend="underline">vermeintliche</hi> Nützlichkeit in Abzug bringen, die allerdings im populären Bewußtsein als ihre wesentlich<pc force="weak">-</pc>
             </line>
-            <line xml:id="srcD_line_a3r_lb9" start="#a3r_lb9" n="9">teln war) Es handelte sich für mich um den <hi rend="underline">Werth</hi> der Moral, – und darüber hatte ich mich fast allein mit meinem 
+            <line xml:id="srcD_line_a31r_lb38" start="#a31r_lb38" hand="#N_brown1" n="38">ste gilt, – der Glaube an die Strafe, der heute aus mehreren Gründen wackelt, findet <del rend="hatching">heute</del>
+               <add place="above" corresp="#a31r_add_d2e508">gerade</add> an ihr immer noch 
                   </line>
-            <line xml:id="srcD_line_a3r_lb10" start="#a3r_lb10" n="10">großen Lehrer Schopenhauer auseinanderzusetzen, an den wie an einen Gegenwärtigen jenes Buch, die Leidenschaft <index indexName="choice" spanTo="#a3r_choice_d2e115_anchor" corresp="#a3r_choice_d2e115"/>und 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb11" start="#a3r_lb11" n="11">und<anchor xml:id="a3r_choice_d2e115_anchor"/> der geheime Widerspruch jenes Buchs sich wendet <add place="inline" corresp="#a3r_add_d2e122">(</add>– denn auch jenes Buch war eine „Streitschrift.“) Es handelte sich 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb12" start="#a3r_lb12" n="12">in Sonderheit um den Werth des „Unegoistischen“, der Mitleids- Selbstverläugnungs- Selbstopferungs-Instinkte, welche 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb13" start="#a3r_lb13" n="13">gerade Schopenhauer so lange vergoldet, vergöttlicht und verjenseitigt hatte, bis sie ihm schließlich als die „Werthe an 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb14" start="#a3r_lb14" n="14">sich“ übrig blieben, auf Grund deren er zum Leben, auch zu sich selbst, <hi rend="underline">Nein</hi>
-               <hi rend="underline">sagte</hi>. Aber gerade gegen <hi rend="underline">diese</hi> In<pc force="weak">-</pc>
-            </line>
-            <line xml:id="srcD_line_a3r_lb15" start="#a3r_lb15" n="15">stinkte redete aus mir ein immer grundsätzlicherer Argwohn, eine immer tiefer grabende Skepsis! Gerade hier sah 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb16" start="#a3r_lb16" n="16">ich die <hi rend="underline">große</hi> Gefahr der Menschheit, ihre <choice corresp="#a3r_choice_d2e152">
-                  <sic>sublimsten</sic>
-                  <corr>sublimste</corr>
-               </choice> Lockung und Verführung – wohin doch? in’s Nichts? – gerade 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb17" start="#a3r_lb17" n="17">hier sah ich den Anfang vom Ende, das Stehenbleiben, die nihilistische Müdigkeit, den Willen <hi rend="underline">gegen</hi> das Leben 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb18" start="#a3r_lb18" n="18">sich wendend, die letzte Krankheit sich zärtlich und schwermüthig ankündigend: ich <add place="above" corresp="#a3r_add_d2e164">verstand</add>
-               <del rend="hatching">begriff</del> die immer mehr um sich grei<pc force="weak">-</pc>
-            </line>
-            <line xml:id="srcD_line_a3r_lb19" start="#a3r_lb19" n="19">fende Mitleids-Moral, welche selbst die Philosophen ergriff und krank machte, <milestone unit="page" edRef="#Ed" n="X"/>als das unheimlichste Symptom einer  
-                  </line>
-            <line xml:id="srcD_line_a3r_lb20" start="#a3r_lb20" n="20">unheimlich gewordnen europäischen Cultur, als ihren Umweg – zum Nihilismus?… Zu einem neuen Buddhis<pc force="weak">-</pc>
-            </line>
-            <line xml:id="srcD_line_a3r_lb21" start="#a3r_lb21" n="21">mus, einem Zukunfts-Buddhismus?… Diese moderne Philosophen-Bevorzugung und Überschätzung des Mitlei<add place="above" corresp="#a3r_add_d2e186">dens</add>
-               <del rend="hatching">ds</del> ist 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb22" start="#a3r_lb22" n="22">nämlich etwas Neues: gerade über den <hi rend="underline">Unwerth</hi> des Mitleidens waren bisher die Philosophen übereingekommen. 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb23" start="#a3r_lb23" n="23">Ich nenne nur Plato, Spinoza, <choice corresp="#a3r_choice_d2e198">
-                  <sic>La<del rend="overwritten" cause="#a3r_add_d2e204">r</del>
-                     <add place="superimposed" corresp="#a3r_add_d2e204">R</add>ochefoucauld</sic>
-                  <corr>La Rochefoucauld</corr>
-               </choice> und Kant, vier Geister so verschieden von einander als möglich, aber 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb24" start="#a3r_lb24" n="24">
-               <seg corresp="#trans1_a3r">Eins</seg>
-               <metamark function="transposition" rend="transLine"/>
-               <seg corresp="#trans2_a3r">in Einem</seg>: in der Geringschätzung des Mitleidens. –
-            
-            <anchor corresp="#a3r_div2_GMVorrede06"/>
-            </line>
-         </zone>
-         <zone xml:id="srcD_zone_a3r_div2_GMVorrede06" start="#a3r_div2_GMVorrede06" type="lastBlock" style="padding-bottom:5em;">
-            <line xml:id="srcD_line_a3r_head_d2e224_a3r_lb25" start="#a3r_lb25" n="25">
-               <zone xml:id="srcD_zone_a3r_head_d2e224_a3r_lb25" type="head">6.
-                  </zone>
-            </line>
-            <line xml:id="srcD_line_a3r_lb26" start="#a3r_lb26" rend="indent" n="26">Dies Problem vom <hi rend="underline">Werthe</hi> des Mitleids und der Mitleids-Moral <add place="above" corresp="#a3r_add_d2e236" style="left:-8.125em;">(– <add corresp="#a3r_add_d2e239" style="left:0em;top:-3.0274em;" place="above" hand="#typesetter_black1">ich bin ein Gegner der schändlichen modernen Gefühlsverweichlichung –</add>
-                  <del hand="#typesetter_black1" rend="strikethrough">in allen meinen Schriften, namentlich <add place="above" corresp="#a3r_add_d2e243">
-                        <del hand="#typesetter_black1" rend="strikethrough">in der</del>
-                     </add>
-                     <hi rend="latin">Morgenr.</hi> und <add place="above" corresp="#a3r_add_d2e250">
-                        <del hand="#typesetter_black1" rend="strikethrough">der</del>
-                     </add>
-                     <hi rend="latin">fröhl. Wiss.</hi> stark unter<pc force="weak">-</pc>
-                     <add place="above" instant="true" corresp="#a3r_add_d2e259" style="left:-5em;">
-                        <del hand="#typesetter_black1" rend="strikethrough">strichen –</del>
-                     </add>
-                  </del>
-                  <add corresp="#a3r_add_d2e262" place="above" instant="true">)</add>
-               </add> scheint zunächst nur etwas Vereinzeltes, ein Frage<pc force="weak">-</pc>
-            </line>
-            <line xml:id="srcD_line_a3r_lb27" start="#a3r_lb27" n="27">zeichen für sich; wer aber einmal hier hängen bleibt, hier fragen <hi rend="underline">lernt</hi>, dem wird es gehn, wie es mir ergangen ist – 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb28" start="#a3r_lb28" n="28">eine ungeheure neue Aussicht thut sich ihm auf, eine Möglichkeit faßt ihn wie ein Schwindel, jede Art Mißtrauen, 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb29" start="#a3r_lb29" n="29">Argwohn, Furcht springt hervor, der Glaube an die Moral, an alle Moral wankt, – endlich wird eine neue Forderung 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb30" start="#a3r_lb30" n="30">laut. Sprechen wir sie aus, diese <hi rend="underline">neue</hi>
-               <hi rend="underline">Forderung</hi>: wir haben eine <hi rend="underline">Kritik</hi> der moralischen Werthe nöthig, <hi rend="underline">der</hi>
-            </line>
-            <line xml:id="srcD_line_a3r_lb31" start="#a3r_lb31" n="31">
-               <hi rend="underline">Werth</hi>
-               <hi rend="underline">dieser</hi>
-               <hi rend="underline">Werthe</hi>
-               <hi rend="underline">ist</hi>
-               <hi rend="underline">selbst</hi>
-               <hi rend="underline">erst</hi>
-               <hi rend="underline">einmal</hi>
-               <hi rend="underline">in</hi>
-               <hi rend="underline">Frage</hi>
-               <hi rend="underline">zu</hi>
-               <hi rend="underline">stellen</hi> – und dazu thut eine Kenntniß der Bedingungen 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb32" start="#a3r_lb32" n="32">und Umstände noth, aus denen sie gewachsen, unter denen sie sich ent<milestone unit="page" edRef="#Ed" n="XI"/>wickelt und verschoben haben (Moral als 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb33" start="#a3r_lb33" n="33">Folge, als Symptom, als Maske, als Tartüfferie, als Krankheit, als Mißverständniß, aber auch Moral als Ursache, als 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb34" start="#a3r_lb34" n="34">Heilmittel, als <hi rend="latin">Stimulans</hi>, als Hemmung, als Gift), wie eine solche Kenntniß weder bis jetzt da war, noch auch nur 
-                  </line>
-            <line xml:id="srcD_line_a3r_lb35" start="#a3r_lb35" n="35">begehrt worden ist. Man nahm den <hi rend="underline">Werth</hi> dieser „Werthe“ als gegeben, als thatsächlich, als jenseits aller In-Fra<pc force="weak">-</pc>
-            </line>
-            <line xml:id="srcD_line_a3r_lb36" start="#a3r_lb36" n="36">
-               <add place="inline" corresp="#a3r_add_d2e351">ge-</add>
-               <del rend="strikethrough">ge</del>
-               <del rend="overwritten" cause="#a3r_add_d2e357">st</del>
-               <add place="superimposed" corresp="#a3r_add_d2e357">St</add>ellung; man hat bisher auch nicht im Entferntesten daran gezweifelt und geschwankt, <add place="inline" corresp="#a3r_add_d2e361">„</add>den <del rend="strikethrough">„</del>Guten“ <add place="above" corresp="#a3r_add_d2e368">für</add>
-               <del rend="hatching">als</del> höherwerthig</line>
-            <zone xml:id="srcD_zone_a3r_fw_d2e29" type="fw-bottom-left" start="#a3r_fw_d2e29">
-               <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#a3r_fw_d2e29">3</fw>
+            <line xml:id="srcD_line_a31r_lb39" start="#a31r_lb39" hand="#N_brown1" n="39"> seine kräftigste Stütze. Die Strafe soll den Werth haben, das <hi rend="underline">Gefühl</hi>
+               <hi rend="underline">der</hi>
+               <hi rend="underline">Schuld</hi> im Schuldigen aufzuwecken, man sucht in 
+               </line>
+            <zone xml:id="srcD_zone_a31r_fw_d2e33" type="fw-bottom-left" start="#a31r_fw_d2e33">
+               <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#a31r_fw_d2e33">31</fw>
             </zone>
          </zone>
       </surface>

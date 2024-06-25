@@ -1,0 +1,235 @@
+<?teipublisher template="surface.html" odd="surface.odd" view="surface" media="pdf epub print"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+          <title>b7r</title>
+         </titleStmt>
+         <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div1 xml:space="preserve"><anchor xml:id="b7r_div1_d2e22"/>
+            <pb xml:id="b7r" corresp="#contents_b7r #folDesc_b7rv #addDesc_b7r #N_black2" facs="#D-20b_7" change="#GM03firstVersion #GM03completion #GM03finalVersion"/>
+            <fw type="pageNumber" hand="#N_pencil" place="top-left" xml:id="b7r_fw_d2e26">7</fw>
+            <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" xml:id="b7r_fw_d2e29"><del rend="erased">43</del></fw>
+            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="b7r_fw_d2e33">7</fw>
+            <substJoin n="7,25" target="#mark1a_b7r #mark1b_b7r #substAdd8a_b7r #substAdd8b_b7r"/>
+            <substJoin n="7-8" target="#subst1a_b7r #subst1b_b7r"/>
+            <substJoin n="8-9" target="#subst2_b7r #substDel2a_b7r #substDel2b_b7r"/>
+            <substJoin n="11" target="#subst3_b7r #substAdd3_b7r #substDel3_b7r"/>
+            <substJoin n="14-15" target="#substAdd4_b7r #substDel4_b7r"/>
+            <substJoin n="15" seq="1" target="#substAdd5_b7r #substDel5_b7r"/>
+            <substJoin n="15" seq="2" target="#subst6a_b7r #subst6b_b7r #subst6c_b7r #substAdd6a_b7r #substAdd6b_b7r"/>
+            <substJoin n="20" target="#subst7a_b7r #subst7b_b7r #subst7c_b7r #subst7d_b7r #substAdd7_b7r"/>
+            <div2 xml:id="GM0305"><anchor xml:id="b7r_div2_GM0305"/>
+               <p>
+               <lb n="1" xml:id="b7r_lb1"/>Schutzwehr, einen Rückhalt, eine bereits begründete Autorität: die Künstler stehen 
+               <lb n="2" xml:id="b7r_lb2"/>nie für sich, das Alleinstehn geht wi<del rend="strikethrough">e</del>der ihre tiefsten Instinkte. So nahm zum Bei<pc force="weak">-</pc>
+               <lb n="3" xml:id="b7r_lb3"/>spiel Richard Wagner den Philosophen Schopenhauer<subst xml:id="b7r_subst_d2e72"><del rend="strikethrough">,</del> <add place="above" rend="insM" xml:id="b7r_add_d2e76">als „die Zeit gekommen war“,</add></subst> zu seinem Vordermann, zu 
+               <lb n="4" xml:id="b7r_lb4"/>seiner Schutzwehr: – wer möchte es auch nur für <subst xml:id="b7r_subst_d2e82"><add place="above" rend="insM" xml:id="b7r_add_d2e83">denkbar</add><del rend="hatching">möglich</del></subst> halten, daß er den 
+               <lb n="5" xml:id="b7r_lb5"/><hi rend="underline">Muth</hi> zu einem asketischen Ideal gehabt hätte, ohne den Rückhalt, den ihm 
+               <lb n="6" xml:id="b7r_lb6"/>die Philosophie Schopenhauer’s bot, ohne die in den siebziger Jahren in Europa <hi rend="underline">zum</hi> 
+               <lb n="7" xml:id="b7r_lb7"/><hi rend="underline">Übergewicht</hi> <restore type="strikethrough"><hi rend="underline">gelangende</hi></restore> Autorität Schopenhauers? <add xml:id="substAdd8a_b7r" place="above" rend="insM">(dabei noch nicht in An<milestone unit="page" edRef="#Ed" n="104"/>schlag gebracht, ob im <hi rend="underline">neuen</hi> Deutschland <add place="inline" rend="red-marking" instant="true" xml:id="b7r_add_d2e113"><metamark xml:id="mark1a_b7r" target="#mark1b_b7r #substAdd8b_b7r">(+)</metamark></add></add> – Und damit sind wir <subst xml:id="subst1a_b7r" seq="1"><add place="above" rend="insM" xml:id="b7r_add_d2e118">bei der</add><del rend="hatching">auf die</del> 
+               <lb n="8" xml:id="b7r_lb8"/><add place="above" rend="insM" xml:id="b7r_add_d2e124">ernsthafteren</add><del rend="hatching">ernstere</del></subst> Frage <subst xml:id="subst1b_b7r" seq="1"><add place="above" rend="insM" xml:id="b7r_add_d2e131">angelangt</add><del rend="hatching">gekommen</del></subst>: was bedeutet es, wenn ein <add place="above" rend="insM" xml:id="b7r_add_d2e136">wirklicher</add> <hi rend="underline">Philosoph</hi> <del xml:id="substDel2a_b7r" rend="hatching" seq="1">wie Schopen<pc force="weak">-</pc></del> 
+               <lb n="9" xml:id="b7r_lb9"/><del xml:id="substDel2b_b7r" rend="hatching" seq="1">hauer</del> dem asketischen Ideale huldigt, ein wirklich auf sich gestellter Geist<subst xml:id="subst2_b7r" seq="1"><del rend="hatching">,</del> <add place="above" rend="insM" xml:id="b7r_add_d2e156">wie <hi rend="latin">Schopen</hi>hauer</add></subst> ein 
+               <lb n="10" xml:id="b7r_lb10"/>Mann und Ritter mit erzenem Blick, der den Muth zu sich selber hat<add place="inline" xml:id="b7r_add_d2e164">, <add place="above" rend="insM" instant="true" xml:id="b7r_add_d2e166">der allein zu stehn weiß</add></add> und 
+               <lb n="11" xml:id="b7r_lb11"/><subst xml:id="subst3_b7r" seq="1"><add place="above" rend="insM" xml:id="b7r_add_d2e171">nicht erst auf</add><del rend="hatching">keine</del></subst> Vordermänner <subst xml:id="b7r_subst_d2e176"><add xml:id="substAdd3_b7r" place="above" rend="insM" seq="1"><add place="inline" rend="insMExt" seq="2" xml:id="b7r_add_d2e178">und höhere Winke </add>wartet</add><del xml:id="substDel3_b7r" rend="hatching" seq="1">braucht</del></subst>? – Erwägen wir hier sofort die merkwürdige und für 
+               <lb n="12" xml:id="b7r_lb12"/>manche Art Mensch selbst fascinirende Stellung Schopenhauers zur <hi rend="underline">Kunst</hi>: denn sie 
+               <lb n="13" xml:id="b7r_lb13"/>ist es ersichtlich gewesen, um derentwillen <hi rend="underline">zunächst</hi> Richard Wagner zu Schopenhauern 
+               <lb n="14" xml:id="b7r_lb14"/>übertrat <add place="above" rend="insM" xml:id="b7r_add_d2e197">(überredet dazu durch einen Dichter, wie man weiß, durch Herwegh)</add> und dies bis <choice xml:id="b7r_choice_d2e201"><sic>zum</sic><corr>zu</corr></choice> dem Maaße, daß <add xml:id="substAdd4_b7r" place="above" rend="insM" seq="1">sich</add> damit ein vollkommner <restore type="hatching"><hi rend="underline">theoretischer</hi></restore> 
+               <lb n="15" xml:id="b7r_lb15"/>Widerspruch <del xml:id="substDel4_b7r" rend="hatching" seq="1">sich</del> zwischen seine<subst xml:id="subst6a_b7r" seq="2"><del rend="overwritten">r</del><add place="superimposed" xml:id="b7r_add_d2e220">m</add></subst> früheren <add xml:id="substAdd5_b7r" place="above" rend="insM" seq="1">und seine<subst xml:id="subst6b_b7r" seq="2"><del rend="overwritten">r</del><add place="superimposed" xml:id="b7r_add_d2e229">m</add></subst> späteren</add> aesthetischen <subst xml:id="subst6c_b7r" seq="2"><add place="above" rend="insM" xml:id="b7r_add_d2e235">Glauben</add><del rend="hatching">Theorie</del></subst> <del xml:id="substDel5_b7r" rend="hatching" seq="1">und seiner späteren</del> auf<pc force="weak">-</pc>
+               <lb n="16" xml:id="b7r_lb16"/>riß, – erstere<add xml:id="substAdd6a_b7r" place="inline" seq="2">r</add> zum Beispiel in „Oper und Drama“ ausgedrückt, letztere<add xml:id="substAdd6b_b7r" place="inline" seq="2">r</add> in den Schriften, 
+               <lb n="17" xml:id="b7r_lb17"/>die er von 1870 an <subst xml:id="b7r_subst_d2e257"><add place="above" rend="insM" xml:id="b7r_add_d2e258">herausgab.</add><del rend="hatching">herausgegeben hat.</del></subst> <subst xml:id="b7r_subst_d2e263"><add place="above" rend="insM" xml:id="b7r_add_d2e264">In Sonderheit</add><del rend="hatching">Namentlich</del></subst> änderte Wagner<add place="inline" xml:id="b7r_add_d2e269">, <add place="above" rend="insM" instant="true" xml:id="b7r_add_d2e271">was vielleicht am meisten befremdet</add></add> von da an 
+               <lb n="18" xml:id="b7r_lb18"/><add place="above" rend="insM" xml:id="b7r_add_d2e276">rücksichtslos </add>sein Urtheil über Werth und Stellung der <hi rend="underline">Musik</hi> selbst: was lag ihm daran, daß er 
+               <lb n="19" xml:id="b7r_lb19"/>bisher aus ihr ein Mittel, ein Medium, ein „Weib“ gemacht hatte, das schlech<pc force="weak">-</pc>
+               <lb n="20" xml:id="b7r_lb20"/>terdings <add xml:id="substAdd7_b7r" place="above" rend="insM" seq="1">eines Zwecks,</add> eine<subst xml:id="subst7a_b7r" seq="1"><del rend="overwritten">n</del><add place="superimposed" xml:id="b7r_add_d2e296">s</add></subst> „Mann<subst seq="1" xml:id="b7r_subst_d2e299"><del rend="overwritten">“</del><add place="superimposed" xml:id="b7r_add_d2e302">s</add></subst> <subst xml:id="subst7b_b7r" seq="1"><add place="above" rend="insM" xml:id="b7r_add_d2e306">bedürfe,</add><del rend="hatching">nöthig hat</del></subst><subst xml:id="b7r_subst_d2e310"><del rend="strikethrough" cause="insM">*,</del><add place="above" rend="insM" xml:id="b7r_add_d2e314"> um zu gedeihen –</add></subst><note type="editorial" xml:id="b7r_note_d2e316">20: bedürfe … gedeihen –] Abfolge der Textänderungen unklar</note> <del rend="hatching">einen Zweck</del> nämlich <del rend="strikethrough">„</del>d<subst xml:id="subst7c_b7r" seq="1"><del rend="overwritten">a</del><add place="superimposed" xml:id="b7r_add_d2e329">e</add></subst>s Drama<subst xml:id="subst7d_b7r" seq="1"><del rend="overwritten">“</del><add place="superimposed" xml:id="b7r_add_d2e335">s</add></subst><add place="inline" xml:id="b7r_add_d2e337"><del rend="strikethrough">“</del></add><subst xml:id="b7r_subst_d2e340"><add place="above" rend="insM" xml:id="b7r_add_d2e341">!</add><del rend="hatching">, –</del> <del rend="overwritten">e</del><add place="superimposed" xml:id="b7r_add_d2e348">E</add></subst>r begriff 
+               <lb n="21" xml:id="b7r_lb21"/>mit Einem Male, daß mit der Schopenhauerschen Theorie und Neuerung <hi rend="underline">mehr</hi> zu 
+               <lb n="22" xml:id="b7r_lb22"/>machen sei <hi rend="latin">in majorem musicae gloriam</hi>, – nämlich mit der <hi rend="underline">Souverainetät</hi> der Mu<pc force="weak">-</pc>
+               <lb n="23" xml:id="b7r_lb23"/>sik, so wie sie Schopenhauer begriff: die Musik abseits gestellt gegen alle übri<pc force="weak">-</pc>
+               <lb n="24" xml:id="b7r_lb24"/>gen Künste, <add place="above" rend="insM" xml:id="b7r_add_d2e378">die unabhängige Kunst an sich,</add> <hi rend="underline">nicht</hi>, wie diese, Abbilder der Phänomenalität <milestone unit="page" edRef="#Ed" n="105"/>bietend, vielmehr die 
+            </p>
+               <ab xml:id="b7r_ab_d2e387">
+                  <add xml:id="substAdd8b_b7r" place="bottom">
+                     <lb n="25" xml:id="b7r_lb25"/><add place="inline" rend="red-marking" instant="true" xml:id="b7r_add_d2e392"><metamark xml:id="mark1b_b7r" target="#mark1a_b7r">(+)</metamark></add> ein Künstler <del rend="strikethrough">„</del>ohne die Milch frommer, <restore type="strikethrough"><hi rend="underline">reichsfrommer</hi></restore> Denkungsart<del rend="strikethrough">“</del> überhaupt möglich <add place="above" rend="insM" xml:id="b7r_add_d2e406">gewesen</add> wäre)<del rend="strikethrough">.</del> –</add></ab>
+            </div2></div1>
+        </body>
+   </text>
+<sourceDoc>
+        <surface xml:id="srcD_surface_b7r" type="relative" start="#b7r" style="min-width:53em;" facs="#D-20b_7">
+            <zone xml:id="srcD_zone_b7r_div2_GM0305" start="#b7r_div2_GM0305" type="singleBlock" style="padding-top:5em;padding-bottom:5em;">
+                <zone xml:id="srcD_zone_b7r_fw_d2e26" type="fw-top-left" start="#b7r_fw_d2e26">
+                    <fw type="pageNumber" hand="#N_pencil" place="top-left" corresp="#b7r_fw_d2e26">7</fw>
+                </zone>
+                <zone xml:id="srcD_zone_b7r_fw_d2e29" type="fw-top-right" start="#b7r_fw_d2e29">
+                    <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#b7r_fw_d2e29">
+                        <del rend="erased">43</del>
+                    </fw>
+                </zone>
+                <line xml:id="srcD_line_b7r_lb1" start="#b7r_lb1" n="1">Schutzwehr, einen Rückhalt, eine bereits begründete Autorität: die Künstler stehen 
+               </line>
+                <line xml:id="srcD_line_b7r_lb2" start="#b7r_lb2" n="2">nie für sich, das Alleinstehn geht wi<del rend="strikethrough">e</del>der ihre tiefsten Instinkte. So nahm zum Bei<pc force="weak">-</pc>
+               </line>
+                <line xml:id="srcD_line_b7r_lb3" start="#b7r_lb3" n="3">spiel Richard Wagner den Philosophen Schopenhauer<del rend="strikethrough">,</del> <metamark xml:id="srcD_metamark_b7r_add_d2e76" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b7r_add_d2e76">als „die Zeit gekommen war“,</add>
+                    </metamark> zu seinem Vordermann, zu 
+               </line>
+                <line xml:id="srcD_line_b7r_lb4" start="#b7r_lb4" n="4">seiner Schutzwehr: – wer möchte es auch nur für <metamark xml:id="srcD_metamark_b7r_add_d2e83" function="insertion">
+                        <add place="above" corresp="#b7r_add_d2e83">denkbar</add>
+                    </metamark>
+                    <del rend="hatching">möglich</del> halten, daß er den 
+               </line>
+                <line xml:id="srcD_line_b7r_lb5" start="#b7r_lb5" n="5">
+                    <hi rend="underline">Muth</hi> zu einem asketischen Ideal gehabt hätte, ohne den Rückhalt, den ihm 
+               </line>
+                <line xml:id="srcD_line_b7r_lb6" start="#b7r_lb6" n="6">die Philosophie Schopenhauer’s bot, ohne die in den siebziger Jahren in Europa <hi rend="underline">zum</hi> 
+               </line>
+                <line xml:id="srcD_line_b7r_lb7" start="#b7r_lb7" n="7">
+                    <hi rend="underline">Übergewicht</hi> <restore type="strikethrough">
+                        <hi rend="underline">gelangende</hi>
+                    </restore> Autorität Schopenhauers? <metamark xml:id="srcD_metamark_substAdd8a_b7r" function="insertion" rend="inSpatium" style="top:-0.125em;height:1.4375em;">
+                        <add place="above" corresp="#substAdd8a_b7r" style="left:-20em;">(dabei noch nicht in An<milestone unit="page" edRef="#Ed" n="104"/>schlag gebracht, ob im <hi rend="underline">neuen</hi> Deutschland <add place="inline" rend="red-marking" instant="true" corresp="#b7r_add_d2e113">
+                                <metamark corresp="#mark1a_b7r" target="#mark1b_b7r #substAdd8b_b7r">(+)</metamark>
+                            </add>
+                        </add>
+                    </metamark> – Und damit sind wir <metamark xml:id="srcD_metamark_b7r_add_d2e118" function="insertion">
+                        <add place="above" corresp="#b7r_add_d2e118">bei der</add>
+                    </metamark>
+                    <del rend="hatching">auf die</del> 
+               </line>
+                <line xml:id="srcD_line_b7r_lb8" start="#b7r_lb8" n="8">
+                    <metamark xml:id="srcD_metamark_b7r_add_d2e124" function="insertion">
+                        <add place="above" corresp="#b7r_add_d2e124">ernsthafteren</add>
+                    </metamark>
+                    <del rend="hatching">ernstere</del> Frage <metamark xml:id="srcD_metamark_b7r_add_d2e131" function="insertion">
+                        <add place="above" corresp="#b7r_add_d2e131">angelangt</add>
+                    </metamark>
+                    <del rend="hatching">gekommen</del>: was bedeutet es, wenn ein <metamark xml:id="srcD_metamark_b7r_add_d2e136" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b7r_add_d2e136">wirklicher</add>
+                    </metamark> <hi rend="underline">Philosoph</hi> <del corresp="#substDel2a_b7r" rend="hatching">wie Schopen<pc force="weak">-</pc>
+                    </del> 
+               </line>
+                <line xml:id="srcD_line_b7r_lb9" start="#b7r_lb9" n="9">
+                    <del corresp="#substDel2b_b7r" rend="hatching">hauer</del> dem asketischen Ideale huldigt, ein wirklich auf sich gestellter Geist<del rend="hatching">,</del> <metamark xml:id="srcD_metamark_b7r_add_d2e156" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b7r_add_d2e156">wie <hi rend="latin">Schopen</hi>hauer</add>
+                    </metamark> ein 
+               </line>
+                <line xml:id="srcD_line_b7r_lb10" start="#b7r_lb10" n="10">Mann und Ritter mit erzenem Blick, der den Muth zu sich selber hat<add place="inline" corresp="#b7r_add_d2e164">, <metamark xml:id="srcD_metamark_b7r_add_d2e166" function="insertion" rend="inSpatium">
+                            <add place="above" instant="true" corresp="#b7r_add_d2e166">der allein zu stehn weiß</add>
+                        </metamark>
+                    </add> und 
+               </line>
+                <line xml:id="srcD_line_b7r_lb11" start="#b7r_lb11" n="11">
+                    <metamark xml:id="srcD_metamark_b7r_add_d2e171" function="insertion">
+                        <add place="above" corresp="#b7r_add_d2e171">nicht erst auf</add>
+                    </metamark>
+                    <del rend="hatching">keine</del> Vordermänner <metamark xml:id="srcD_metamark_substAdd3_b7r" function="insertion">
+                        <add place="above" corresp="#substAdd3_b7r">
+                            <add place="inline" rend="insMExt" corresp="#b7r_add_d2e178">und höhere Winke </add>wartet</add>
+                    </metamark>
+                    <del corresp="#substDel3_b7r" rend="hatching">braucht</del>? – Erwägen wir hier sofort die merkwürdige und für 
+               </line>
+                <line xml:id="srcD_line_b7r_lb12" start="#b7r_lb12" n="12">manche Art Mensch selbst fascinirende Stellung Schopenhauers zur <hi rend="underline">Kunst</hi>: denn sie 
+               </line>
+                <line xml:id="srcD_line_b7r_lb13" start="#b7r_lb13" n="13">ist es ersichtlich gewesen, um derentwillen <hi rend="underline">zunächst</hi> Richard Wagner zu Schopenhauern 
+               </line>
+                <line xml:id="srcD_line_b7r_lb14" start="#b7r_lb14" n="14">übertrat <metamark xml:id="srcD_metamark_b7r_add_d2e197" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b7r_add_d2e197">(überredet dazu durch einen Dichter, wie man weiß, durch Herwegh)</add>
+                    </metamark> und dies bis <choice corresp="#b7r_choice_d2e201">
+                        <sic>zum</sic>
+                        <corr>zu</corr>
+                    </choice> dem Maaße, daß <metamark xml:id="srcD_metamark_substAdd4_b7r" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#substAdd4_b7r">sich</add>
+                    </metamark> damit ein vollkommner <restore type="hatching">
+                        <hi rend="underline">theoretischer</hi>
+                    </restore> 
+               </line>
+                <line xml:id="srcD_line_b7r_lb15" start="#b7r_lb15" n="15">Widerspruch <del corresp="#substDel4_b7r" rend="hatching">sich</del> zwischen seine<del rend="overwritten" cause="#b7r_add_d2e220">r</del>
+                    <add place="superimposed" corresp="#b7r_add_d2e220">m</add> früheren <metamark xml:id="srcD_metamark_substAdd5_b7r" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#substAdd5_b7r">und seine<del rend="overwritten" cause="#b7r_add_d2e229">r</del>
+                            <add place="superimposed" corresp="#b7r_add_d2e229">m</add> späteren</add>
+                    </metamark> aesthetischen <metamark xml:id="srcD_metamark_b7r_add_d2e235" function="insertion">
+                        <add place="above" corresp="#b7r_add_d2e235">Glauben</add>
+                    </metamark>
+                    <del rend="hatching">Theorie</del> <del corresp="#substDel5_b7r" rend="hatching">und seiner späteren</del> auf<pc force="weak">-</pc>
+               </line>
+                <line xml:id="srcD_line_b7r_lb16" start="#b7r_lb16" n="16">riß, – erstere<add corresp="#substAdd6a_b7r" place="inline">r</add> zum Beispiel in „Oper und Drama“ ausgedrückt, letztere<add corresp="#substAdd6b_b7r" place="inline">r</add> in den Schriften, 
+               </line>
+                <line xml:id="srcD_line_b7r_lb17" start="#b7r_lb17" n="17">die er von 1870 an <metamark xml:id="srcD_metamark_b7r_add_d2e258" function="insertion">
+                        <add place="above" corresp="#b7r_add_d2e258">herausgab.</add>
+                    </metamark>
+                    <del rend="hatching">herausgegeben hat.</del> <metamark xml:id="srcD_metamark_b7r_add_d2e264" function="insertion">
+                        <add place="above" corresp="#b7r_add_d2e264">In Sonderheit</add>
+                    </metamark>
+                    <del rend="hatching">Namentlich</del> änderte Wagner<add place="inline" corresp="#b7r_add_d2e269">, <metamark xml:id="srcD_metamark_b7r_add_d2e271" function="insertion" rend="inSpatium">
+                            <add place="above" instant="true" corresp="#b7r_add_d2e271">was vielleicht am meisten befremdet</add>
+                        </metamark>
+                    </add> von da an 
+               </line>
+                <line xml:id="srcD_line_b7r_lb18" start="#b7r_lb18" n="18">
+                    <metamark xml:id="srcD_metamark_b7r_add_d2e276" function="insertion">
+                        <add place="above" corresp="#b7r_add_d2e276">rücksichtslos </add>
+                    </metamark>sein Urtheil über Werth und Stellung der <hi rend="underline">Musik</hi> selbst: was lag ihm daran, daß er 
+               </line>
+                <line xml:id="srcD_line_b7r_lb19" start="#b7r_lb19" n="19">bisher aus ihr ein Mittel, ein Medium, ein „Weib“ gemacht hatte, das schlech<pc force="weak">-</pc>
+               </line>
+                <line xml:id="srcD_line_b7r_lb20" start="#b7r_lb20" n="20">terdings <metamark xml:id="srcD_metamark_substAdd7_b7r" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#substAdd7_b7r">eines Zwecks,</add>
+                    </metamark> eine<del rend="overwritten" cause="#b7r_add_d2e296">n</del>
+                    <add place="superimposed" corresp="#b7r_add_d2e296">s</add> „Mann<del rend="overwritten" cause="#b7r_add_d2e302">“</del>
+                    <add place="superimposed" corresp="#b7r_add_d2e302">s</add> <metamark xml:id="srcD_metamark_b7r_add_d2e306" function="insertion">
+                        <add place="above" corresp="#b7r_add_d2e306">bedürfe,</add>
+                    </metamark>
+                    <del rend="hatching">nöthig hat</del>
+                    <del rend="strikethrough" cause="insM">*,</del>
+                    <metamark xml:id="srcD_metamark_b7r_add_d2e314" function="insertion" rend="inWord">
+                        <add place="above" corresp="#b7r_add_d2e314"> um zu gedeihen –</add>
+                    </metamark> <del rend="hatching">einen Zweck</del> nämlich <del rend="strikethrough">„</del>d<del rend="overwritten" cause="#b7r_add_d2e329">a</del>
+                    <add place="superimposed" corresp="#b7r_add_d2e329">e</add>s Drama<del rend="overwritten" cause="#b7r_add_d2e335">“</del>
+                    <add place="superimposed" corresp="#b7r_add_d2e335">s</add>
+                    <add place="inline" corresp="#b7r_add_d2e337">
+                        <del rend="strikethrough">“</del>
+                    </add>
+                    <metamark xml:id="srcD_metamark_b7r_add_d2e341" function="insertion" rend="beforePunctuation">
+                        <add place="above" corresp="#b7r_add_d2e341">!</add>
+                    </metamark>
+                    <del rend="hatching">, –</del> <del rend="overwritten" cause="#b7r_add_d2e348">e</del>
+                    <add place="superimposed" corresp="#b7r_add_d2e348">E</add>r begriff 
+               </line>
+                <line xml:id="srcD_line_b7r_lb21" start="#b7r_lb21" n="21">mit Einem Male, daß mit der Schopenhauerschen Theorie und Neuerung <hi rend="underline">mehr</hi> zu 
+               </line>
+                <line xml:id="srcD_line_b7r_lb22" start="#b7r_lb22" n="22">machen sei <hi rend="latin">in majorem musicae gloriam</hi>, – nämlich mit der <hi rend="underline">Souverainetät</hi> der Mu<pc force="weak">-</pc>
+               </line>
+                <line xml:id="srcD_line_b7r_lb23" start="#b7r_lb23" n="23">sik, so wie sie Schopenhauer begriff: die Musik abseits gestellt gegen alle übri<pc force="weak">-</pc>
+               </line>
+                <line xml:id="srcD_line_b7r_lb24" start="#b7r_lb24" n="24">gen Künste, <metamark xml:id="srcD_metamark_b7r_add_d2e378" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b7r_add_d2e378">die unabhängige Kunst an sich,</add>
+                    </metamark> <hi rend="underline">nicht</hi>, wie diese, Abbilder der Phänomenalität <milestone unit="page" edRef="#Ed" n="105"/>bietend, vielmehr die 
+            
+               
+                  
+                     </line>
+                <zone xml:id="srcD_zone_b7r_ab_d2e387_b7r_lb25" start="#b7r_lb25" type="ab-zone">
+                    <line xml:id="srcD_line_b7r_lb25" style="bottom:1em;" start="#b7r_lb25" n="25">
+                        <add place="bottom">
+                            <add place="inline" rend="red-marking" instant="true" corresp="#b7r_add_d2e392">
+                                <metamark corresp="#mark1b_b7r" target="#mark1a_b7r">(+)</metamark>
+                            </add> ein Künstler <del rend="strikethrough">„</del>ohne die Milch frommer, <restore type="strikethrough">
+                                <hi rend="underline">reichsfrommer</hi>
+                            </restore> Denkungsart<del rend="strikethrough">“</del> überhaupt möglich <metamark xml:id="srcD_metamark_b7r_add_d2e406" function="insertion" rend="inSpatium">
+                                <add place="above" corresp="#b7r_add_d2e406">gewesen</add>
+                            </metamark> wäre)<del rend="strikethrough">.</del> –</add>
+                    </line>
+                </zone>
+                <zone xml:id="srcD_zone_b7r_fw_d2e33" type="fw-bottom-left" start="#b7r_fw_d2e33">
+                    <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#b7r_fw_d2e33">7</fw>
+                </zone>
+            </zone>
+        </surface>
+    </sourceDoc>
+</TEI>
