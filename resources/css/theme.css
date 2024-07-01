@@ -1,8 +1,11 @@
 @import url("../fonts/font.css");
 
 div#content {
-  /*  margin-top: 200px;
-    position: fixed;*/
+  margin-top: 200px;
+    /*position: fixed;*/
+    width: 20%;
+    position: relative;
+    height: 100%;
 }
 .edRefLB {
     display: none;

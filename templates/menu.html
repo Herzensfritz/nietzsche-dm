@@ -44,7 +44,9 @@
         </paper-menu-button>
         <pb-restricted login="login">
             <paper-menu-button>
-                <a slot="dropdown-trigger"><pb-i18n key="menu.admin.title">Admin</pb-i18n></a>
+                <a slot="dropdown-trigger">
+                    <pb-i18n key="menu.admin.title">Admin</pb-i18n>
+                </a>
                 <paper-listbox slot="dropdown-content">
                     <paper-item data-template="pages:edit-odd-list"/>
                     <paper-item>
@@ -54,6 +56,9 @@
                     </paper-item>
                     <paper-item>
                         <a href="${app}/api.html" data-template="pages:parse-params" target="_blank">API Documentation</a>
+                    </paper-item>
+                     <paper-item>
+                        <a href="${app}/api.html" data-template="pages:parse-myparams" target="_blank">TopoTEI</a>
                     </paper-item>
                     <paper-item>
                         <a href="https://cdn.tei-publisher.com/" target="_blank">Webcomponents API</a>

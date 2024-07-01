@@ -1,0 +1,175 @@
+<?teipublisher template="surface.html" odd="surface.odd" view="surface" media="pdf epub print"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+          <title>b57r</title>
+         </titleStmt>
+         <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div1 xml:space="preserve"><anchor xml:id="b57r_div1_d2e22"/>
+            <pb xml:id="b57r" corresp="#contents_b57r #folDesc_b57rv #addDesc_b57r #N_black2" facs="#D-20b_56" change="#GM03completion #GM03finalVersion"/>
+            <fw type="pageNumber" hand="#N_pencil" place="top-left" xml:id="b57r_fw_d2e26">56</fw>
+            <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" xml:id="b57r_fw_d2e29"><del rend="erased">72</del></fw>
+            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="b57r_fw_d2e33">57</fw>
+            <div2><anchor xml:id="b57r_div2_d2e36"/>
+               <p>
+               <lb n="1" xml:id="b57r_lb1"/>insofern er diese „andre Welt“ bejaht, wie? muß er nicht eben damit ihr Gegenstück, diese 
+               <lb n="2" xml:id="b57r_lb2"/>Welt, <hi rend="underline">unsre</hi> Welt <add place="inline" xml:id="b57r_add_d2e48">–</add> verneinen?… Es ist immer noch ein <hi rend="underline">metaphysischer</hi> <hi rend="underline">Glaube</hi>, auf dem un<pc force="weak">-</pc>
+               <lb n="3" xml:id="b57r_lb3"/>ser Glaube an die Wissenschaft ruht, – auch wir Erkennenden von Heute, wir Gottlosen und 
+               <lb n="4" xml:id="b57r_lb4"/>Antimetaphysiker, auch wir nehmen <hi rend="underline">unser</hi> Feuer noch von jenem Brande, den ein Jahr<pc force="weak">-</pc>
+               <lb n="5" xml:id="b57r_lb5"/>tausende alter Glaube entzündet hat, jener Christen-Glaube, der auch der Glaube Plato’s 
+               <lb n="6" xml:id="b57r_lb6"/>war, daß Gott die Wahrheit ist, daß die Wahrheit <hi rend="underline">göttlich</hi> ist… Aber wie, wenn <subst xml:id="b57r_subst_d2e79"><add place="above" rend="insM" xml:id="b57r_add_d2e80">dies</add><del rend="hatching">Dies</del></subst> 
+               <lb n="7" xml:id="b57r_lb7"/>gerade immer mehr unglaubwürdig wird, wenn Nichts sich mehr als göttlich erweist, es sei 
+               <lb n="8" xml:id="b57r_lb8"/>denn der Irrthum, die Blindheit, die Lüge, – wenn Gott selbst sich als unsre <hi rend="underline">längste</hi> 
+               <lb n="9" xml:id="b57r_lb9"/><hi rend="underline">Lüge</hi> erweist?“ – – An dieser Stelle thut es Noth, Halt zu machen und sich lange zu be<pc force="weak">-</pc>
+               <lb n="10" xml:id="b57r_lb10"/>sinnen. Die Wissenschaft selber <hi rend="underline">bedarf</hi> nunmehr einer Rechtfertigung<subst xml:id="b57r_subst_d2e106"><del rend="strikethrough" cause="insM">.</del><add place="above" rend="insM" xml:id="b57r_add_d2e109"> (womit noch nicht einmal gesagt sein soll, daß es eine solche für sie giebt).</add> <del rend="hatching">Es gab bisher keine </del><add place="above" xml:id="b57r_add_d2e114">Man sehe sich auf </add> 
+               <lb n="11" xml:id="b57r_lb11"/><del rend="hatching">Philosophie, welche im Stande gewesen wäre, dies Bedürfniß, daß</del><add place="above" rend="insM" xml:id="b57r_add_d2e120">diese Frage die ältesten und die jüngsten Philosophien an: in ihnen allen fehlt ein Bewußtsein darüber, inwiefern</add></subst> der Wille zur Wahr<pc force="weak">-</pc>
+               <lb n="12" xml:id="b57r_lb12"/>heit <add place="above" rend="insM" xml:id="b57r_add_d2e128">selbst erst</add> einer <milestone unit="page" edRef="#Ed" n="170"/>Rechtfertigung bedarf, <del rend="hatching">zu begreifen<add place="inline" xml:id="b57r_add_d2e135">*;</add></del> <add place="above" rend="insM" xml:id="b57r_add_d2e139">hier ist eine Lücke in jeder Philosophie</add> – woher k<subst xml:id="b57r_subst_d2e142"><del rend="overwritten">a</del><add place="superimposed" xml:id="b57r_add_d2e145">o</add></subst>m<add place="inline" xml:id="b57r_add_d2e148">mt</add> das? Weil das asketische 
+               <lb n="13" xml:id="b57r_lb13"/>Ideal über alle Philosophie bisher <hi rend="underline">Herr</hi> war, weil Wahrheit als Sein, als Gott, als o<pc force="weak">-</pc>
+               <lb n="14" xml:id="b57r_lb14"/>berste Instanz selbst gesetzt wurde, weil Wahrheit gar nicht Problem sein <hi rend="underline">durfte</hi>. Ver<pc force="weak">-</pc>
+               <lb n="15" xml:id="b57r_lb15"/>steht man dies „durfte“? – Von dem Augenblick an, wo der Glaube an den Gott 
+               <lb n="16" xml:id="b57r_lb16"/>des asketischen Ideals verneint ist, <hi rend="underline">giebt</hi> <hi rend="underline">es</hi> <hi rend="underline">auch</hi> <hi rend="underline">ein</hi> <hi rend="underline">neues</hi> <hi rend="underline">Problem</hi>: das vom <hi rend="underline">Wer</hi><pc force="weak">-</pc>
+               <lb n="17" xml:id="b57r_lb17"/><hi rend="underline">the</hi> der Wahrheit. – Der Wille zur Wahrheit bedarf einer Kritik<subst xml:id="b57r_subst_d2e201"><del rend="strikethrough" cause="insM">,</del><add place="above" rend="insM" xml:id="b57r_add_d2e204"> – bestimmen wir hiermit unsre eigene Aufgabe –,</add></subst> der Werth der 
+               <lb n="18" xml:id="b57r_lb18"/>Wahrheit ist <add place="above" rend="insM" xml:id="b57r_add_d2e209">versuchsweise</add> einmal <hi rend="underline">in</hi> <hi rend="underline">Frage</hi> <hi rend="underline">zu</hi> <hi rend="underline">stellen</hi>… <subst xml:id="b57r_subst_d2e225"><add place="inline" seq="1" change="version0" xml:id="b57r_add_d2e226"><subst xml:id="b57r_subst_d2e227"><del rend="hatching" seq="2">(Ich bitte hierzu</del><add place="above" rend="insM" seq="2" xml:id="b57r_add_d2e230">(Wem dies zu kurz gesagt <subst xml:id="b57r_subst_d2e232"><del rend="overwritten" seq="3">ist,</del><add place="superimposed" seq="3" xml:id="b57r_add_d2e235">scheint,</add></subst> dem sei empfohlen, <add place="inline" rend="insMExt" seq="3" xml:id="b57r_add_d2e238">*jenen</add></add></subst> <del rend="hatching" seq="3">den</del> <del rend="hatching" seq="3">ganzen</del> Abschnitt </add>
+               <lb n="19" xml:id="b57r_lb19"/><add place="inline" seq="1" change="version0" xml:id="b57r_add_d2e249">der „fröhlichen Wissenschaft“ nachzulesen, <subst xml:id="b57r_subst_d2e251"><add place="above" rend="insM" seq="3" xml:id="b57r_add_d2e252">welcher</add><del rend="hatching" seq="3">der </del></subst></add><del rend="hatching" seq="1" change="version0"><seg type="head">25.</seg></del><add place="inline" seq="1" change="version0" xml:id="b57r_add_d2e259"> den Titel trägt: „Inwiefern auch wir noch </add>
+               <lb type="addLine" n="20" xml:id="b57r_lb20"/><add place="inline" seq="1" change="version0" xml:id="b57r_add_d2e263">fromm sind“<del rend="hatching">.</del> S. 260 ff.<subst xml:id="b57r_subst_d2e268"><del rend="hatching" seq="2">)</del> <add place="inline" seq="2" xml:id="b57r_add_d2e272"><add place="above" rend="insM" seq="3" xml:id="b57r_add_d2e273">am besten das ganze fünfte Buch des genannten Werks,</add> insgleichen die Vorrede zur „Morgenröthe“.)</add></subst></add></subst>
+               <lb/><lb/>
+                  </p></div2>
+            <div2 xml:id="GM0325"><anchor xml:id="b57r_div2_GM0325"/>
+               <head xml:id="b57r_head_d2e286">
+                  <lb n="21" xml:id="b57r_lb21"/>25.</head>
+               <p>
+                  <lb n="22" rend="indent" xml:id="b57r_lb22"/>Nein! Man komme mir nicht mit der Wissenschaft, wenn ich nach dem natürlichen Anta<pc force="weak">-</pc>
+                  <lb n="23" xml:id="b57r_lb23"/>gonisten des asketischen Ideals suche, wenn ich frage: „<hi rend="underline">wo</hi> ist der gegnerische Wille, in dem 
+                  <lb n="24" xml:id="b57r_lb24"/>sich sein <hi rend="underline">gegnerisches</hi> <hi rend="underline">Ideal</hi> ausdrückt?“ Dazu steht die Wissenschaft lange nicht genug 
+               </p></div2></div1>
+        </body>
+   </text>
+<sourceDoc>
+        <surface xml:id="srcD_surface_b57r" type="relative" start="#b57r" facs="#D-20b_56">
+            <zone xml:id="srcD_zone_b57r_div2_d2e36" start="#b57r_div2_d2e36" type="firstBlock" style="padding-top:5em;">
+                <zone xml:id="srcD_zone_b57r_fw_d2e26" type="fw-top-left" start="#b57r_fw_d2e26">
+                    <fw type="pageNumber" hand="#N_pencil" place="top-left" corresp="#b57r_fw_d2e26">56</fw>
+                </zone>
+                <zone xml:id="srcD_zone_b57r_fw_d2e29" type="fw-top-right" start="#b57r_fw_d2e29">
+                    <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#b57r_fw_d2e29">
+                        <del rend="erased">72</del>
+                    </fw>
+                </zone>
+                <line xml:id="srcD_line_b57r_lb1" start="#b57r_lb1" n="1">insofern er diese „andre Welt“ bejaht, wie? muß er nicht eben damit ihr Gegenstück, diese 
+               </line>
+                <line xml:id="srcD_line_b57r_lb2" start="#b57r_lb2" n="2">Welt, <hi rend="underline">unsre</hi> Welt <add place="inline" corresp="#b57r_add_d2e48">–</add> verneinen?… Es ist immer noch ein <hi rend="underline">metaphysischer</hi> <hi rend="underline">Glaube</hi>, auf dem un<pc force="weak">-</pc>
+               </line>
+                <line xml:id="srcD_line_b57r_lb3" start="#b57r_lb3" n="3">ser Glaube an die Wissenschaft ruht, – auch wir Erkennenden von Heute, wir Gottlosen und 
+               </line>
+                <line xml:id="srcD_line_b57r_lb4" start="#b57r_lb4" n="4">Antimetaphysiker, auch wir nehmen <hi rend="underline">unser</hi> Feuer noch von jenem Brande, den ein Jahr<pc force="weak">-</pc>
+               </line>
+                <line xml:id="srcD_line_b57r_lb5" start="#b57r_lb5" n="5">tausende alter Glaube entzündet hat, jener Christen-Glaube, der auch der Glaube Plato’s 
+               </line>
+                <line xml:id="srcD_line_b57r_lb6" start="#b57r_lb6" n="6">war, daß Gott die Wahrheit ist, daß die Wahrheit <hi rend="underline">göttlich</hi> ist… Aber wie, wenn <metamark xml:id="srcD_metamark_b57r_add_d2e80" function="insertion">
+                        <add place="above" corresp="#b57r_add_d2e80">dies</add>
+                    </metamark>
+                    <del rend="hatching">Dies</del> 
+               </line>
+                <line xml:id="srcD_line_b57r_lb7" start="#b57r_lb7" n="7">gerade immer mehr unglaubwürdig wird, wenn Nichts sich mehr als göttlich erweist, es sei 
+               </line>
+                <line xml:id="srcD_line_b57r_lb8" start="#b57r_lb8" n="8">denn der Irrthum, die Blindheit, die Lüge, – wenn Gott selbst sich als unsre <hi rend="underline">längste</hi> 
+               </line>
+                <line xml:id="srcD_line_b57r_lb9" start="#b57r_lb9" n="9">
+                    <hi rend="underline">Lüge</hi> erweist?“ – – An dieser Stelle thut es Noth, Halt zu machen und sich lange zu be<pc force="weak">-</pc>
+               </line>
+                <line xml:id="srcD_line_b57r_lb10" start="#b57r_lb10" n="10">sinnen. Die Wissenschaft selber <hi rend="underline">bedarf</hi> nunmehr einer Rechtfertigung<del rend="strikethrough" cause="insM">.</del>
+                    <metamark xml:id="srcD_metamark_b57r_add_d2e109" function="insertion" rend="afterWord" style="top:-0.125em;height:1.4375em;">
+                        <add place="above" corresp="#b57r_add_d2e109" style="left:-31.875em;"> (womit noch nicht einmal gesagt sein soll, daß es eine solche für sie giebt).</add>
+                    </metamark> <del rend="hatching">Es gab bisher keine </del>
+                    <add corresp="#b57r_add_d2e114" style="left:-8.125em;top:-1.48438em;" place="above">Man sehe sich auf </add> 
+               </line>
+                <line xml:id="srcD_line_b57r_lb11" start="#b57r_lb11" n="11">
+                    <del rend="hatching">Philosophie, welche im Stande gewesen wäre, dies Bedürfniß, daß</del>
+                    <metamark xml:id="srcD_metamark_b57r_add_d2e120" function="insertion" rend="afterWord" style="top:-0.125em;height:1.4375em;">
+                        <add place="above" corresp="#b57r_add_d2e120" style="left:-35.625em;">diese Frage die ältesten und die jüngsten Philosophien an: in ihnen allen fehlt ein Bewußtsein darüber, inwiefern</add>
+                    </metamark> der Wille zur Wahr<pc force="weak">-</pc>
+               </line>
+                <line xml:id="srcD_line_b57r_lb12" start="#b57r_lb12" n="12">heit <metamark xml:id="srcD_metamark_b57r_add_d2e128" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b57r_add_d2e128">selbst erst</add>
+                    </metamark> einer <milestone unit="page" edRef="#Ed" n="170"/>Rechtfertigung bedarf, <del rend="hatching">zu begreifen<add place="inline" corresp="#b57r_add_d2e135">*;</add>
+                    </del> <metamark xml:id="srcD_metamark_b57r_add_d2e139" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b57r_add_d2e139">hier ist eine Lücke in jeder Philosophie</add>
+                    </metamark> – woher k<del rend="overwritten" cause="#b57r_add_d2e145">a</del>
+                    <add place="superimposed" corresp="#b57r_add_d2e145">o</add>m<add place="inline" corresp="#b57r_add_d2e148">mt</add> das? Weil das asketische 
+               </line>
+                <line xml:id="srcD_line_b57r_lb13" start="#b57r_lb13" n="13">Ideal über alle Philosophie bisher <hi rend="underline">Herr</hi> war, weil Wahrheit als Sein, als Gott, als o<pc force="weak">-</pc>
+               </line>
+                <line xml:id="srcD_line_b57r_lb14" start="#b57r_lb14" n="14">berste Instanz selbst gesetzt wurde, weil Wahrheit gar nicht Problem sein <hi rend="underline">durfte</hi>. Ver<pc force="weak">-</pc>
+               </line>
+                <line xml:id="srcD_line_b57r_lb15" start="#b57r_lb15" n="15">steht man dies „durfte“? – Von dem Augenblick an, wo der Glaube an den Gott 
+               </line>
+                <line xml:id="srcD_line_b57r_lb16" start="#b57r_lb16" n="16">des asketischen Ideals verneint ist, <hi rend="underline">giebt</hi> <hi rend="underline">es</hi> <hi rend="underline">auch</hi> <hi rend="underline">ein</hi> <hi rend="underline">neues</hi> <hi rend="underline">Problem</hi>: das vom <hi rend="underline">Wer</hi>
+                    <pc force="weak">-</pc>
+               </line>
+                <line xml:id="srcD_line_b57r_lb17" start="#b57r_lb17" n="17">
+                    <hi rend="underline">the</hi> der Wahrheit. – Der Wille zur Wahrheit bedarf einer Kritik<del rend="strikethrough" cause="insM">,</del>
+                    <metamark xml:id="srcD_metamark_b57r_add_d2e204" function="insertion" rend="afterWord" style="top:-0.125em;height:1.4375em;">
+                        <add place="above" corresp="#b57r_add_d2e204" style="left:-10.625em;"> – bestimmen wir hiermit unsre eigene Aufgabe –,</add>
+                    </metamark> der Werth der 
+               </line>
+                <line xml:id="srcD_line_b57r_lb18" start="#b57r_lb18" n="18">Wahrheit ist <metamark xml:id="srcD_metamark_b57r_add_d2e209" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b57r_add_d2e209">versuchsweise</add>
+                    </metamark> einmal <hi rend="underline">in</hi> <hi rend="underline">Frage</hi> <hi rend="underline">zu</hi> <hi rend="underline">stellen</hi>… <add place="inline" change="version0" corresp="#b57r_add_d2e226">
+                        <del rend="hatching">(Ich bitte hierzu</del>
+                        <metamark xml:id="srcD_metamark_b57r_add_d2e230" function="insertion" rend="afterWord">
+                            <add place="above" corresp="#b57r_add_d2e230">(Wem dies zu kurz gesagt <del rend="overwritten" cause="#b57r_add_d2e235">ist,</del>
+                                <add place="superimposed" corresp="#b57r_add_d2e235">scheint,</add> dem sei empfohlen, <add place="inline" rend="insMExt" corresp="#b57r_add_d2e238">*jenen</add>
+                            </add>
+                        </metamark> <del rend="hatching">den</del> <del rend="hatching">ganzen</del> Abschnitt </add>
+               </line>
+                <line xml:id="srcD_line_b57r_lb19" start="#b57r_lb19" n="19">
+                    <add place="inline" change="version0" corresp="#b57r_add_d2e249">der „fröhlichen Wissenschaft“ nachzulesen, <metamark xml:id="srcD_metamark_b57r_add_d2e252" function="insertion">
+                            <add place="above" corresp="#b57r_add_d2e252">welcher</add>
+                        </metamark>
+                        <del rend="hatching">der </del>
+                    </add>
+                    <del rend="hatching" change="version0">
+                        <seg type="head">25.</seg>
+                    </del>
+                    <add place="inline" change="version0" corresp="#b57r_add_d2e259"> den Titel trägt: „Inwiefern auch wir noch </add>
+               </line>
+                <zone xml:id="srcD_zone_b57r_lb20" start="#b57r_lb20" type="add-zone" style="margin-left:16.25em;">
+                    <line xml:id="srcD_line_b57r_lb20" start="#b57r_lb20" style="bottom:-1.328em;" n="20">
+                        <add place="inline" change="version0" corresp="#b57r_add_d2e263">fromm sind“<del rend="hatching">.</del> S. 260 ff.<del rend="hatching">)</del> <add place="inline" corresp="#b57r_add_d2e272">
+                                <metamark xml:id="srcD_metamark_b57r_add_d2e273" function="insertion" rend="inSpatium">
+                                    <add place="above" corresp="#b57r_add_d2e273">am besten das ganze fünfte Buch des genannten Werks,</add>
+                                </metamark> insgleichen die Vorrede zur „Morgenröthe“.)</add>
+                        </add>
+                    </line>
+                </zone>
+                <line xml:id="srcD_line_empty_d4e278"/>
+            </zone>
+            <zone xml:id="srcD_zone_b57r_div2_GM0325" start="#b57r_div2_GM0325" type="lastBlock" style="padding-bottom:5em;">
+                <line xml:id="srcD_line_empty_d4e278"/>
+                <line xml:id="srcD_line_b57r_head_d2e286_b57r_lb21" start="#b57r_lb21" n="21">
+                    <zone xml:id="srcD_zone_b57r_head_d2e286_b57r_lb21" type="head">25.
+               
+                  </zone>
+                </line>
+                <line xml:id="srcD_line_b57r_lb22" start="#b57r_lb22" rend="indent" n="22">Nein! Man komme mir nicht mit der Wissenschaft, wenn ich nach dem natürlichen Anta<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_b57r_lb23" start="#b57r_lb23" n="23">gonisten des asketischen Ideals suche, wenn ich frage: „<hi rend="underline">wo</hi> ist der gegnerische Wille, in dem 
+                  </line>
+                <line xml:id="srcD_line_b57r_lb24" start="#b57r_lb24" n="24">sich sein <hi rend="underline">gegnerisches</hi> <hi rend="underline">Ideal</hi> ausdrückt?“ Dazu steht die Wissenschaft lange nicht genug 
+               </line>
+                <zone xml:id="srcD_zone_b57r_fw_d2e33" type="fw-bottom-left" start="#b57r_fw_d2e33">
+                    <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#b57r_fw_d2e33">57</fw>
+                </zone>
+            </zone>
+        </surface>
+    </sourceDoc>
+</TEI>

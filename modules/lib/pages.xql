@@ -52,6 +52,47 @@ declare function pages:parse-params($node as node(), $model as map(*)) {
     lib:parse-params($node, $model, "\$\{", "\}")
 };
 
+declare function pages:parse-myparams($node as node(), $model as map(*)) {
+    if ($model?doc) then (
+    let $file := replace($model?doc, '_tp','')
+    let $a := <a href="/exist/restxq/transform?file={$file}" target="topoTEI">topoTEI</a>
+    return $a  
+    ) else ($node)
+    
+};
+
+declare function pages:adapt-settings($node as node(), $model as map(*)) {
+    if ($model?template) then (
+        <div class="settings">
+            <h3>
+                <pb-i18n key="document.settings">Settings</pb-i18n>
+            </h3>
+          {
+            if ($model?template = 'surface.html') then (
+                <pb-toggle-feature emit="transcription" subscribe="transcription"  name="choice" on="on" off="off" default="on"> 
+                    <pb-i18n key="myapp.choice-underline">... Korrekturen ...</pb-i18n>
+                </pb-toggle-feature>,
+                <pb-toggle-feature emit="transcription" subscribe="transcription"  name="del" on="on" off="off" default="on"> 
+                    <pb-i18n key="myapp.deletion-popover">... Streichungen ...</pb-i18n>
+                </pb-toggle-feature>
+        
+            ) else (
+                <pb-toggle-feature emit="transcription" subscribe="transcription" name="edRef" selector=".edRefLB">
+                    <pb-i18n key="myapp.edref-lb">... KGW KSA Zeilenumbruch ...</pb-i18n>
+                </pb-toggle-feature>
+            )
+            
+            }
+            <pb-edit-xml src="document1">
+                <paper-button alt="Edit source">
+                    <iron-icon icon="icons:code"/> <pb-i18n key="menu.download.view-tei"/>
+                </paper-button>
+            </pb-edit-xml>
+        </div>
+    ) else ($node)
+    
+};
+
 declare function pages:pb-document($node as node(), $model as map(*), $odd as xs:string?) {
     let $oddParam := ($node/@odd, $model?odd, $odd)[1]
     let $data := config:get-document($model?doc)

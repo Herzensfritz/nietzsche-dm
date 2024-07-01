@@ -1,0 +1,124 @@
+<?teipublisher template="surface.html" odd="surface.odd" view="surface"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>a3r</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div1 xml:space="preserve"><anchor xml:id="a3r_div1_d2e22"/>
+            <pb xml:id="a3r" corresp="#contents_a3r #folDesc_a3rv #addDesc_a3r #N_brown1" facs="#D-20a_V" change="#GMfrontRecord #GM01-02finalVersion #GMVorrede06-07belatedMod"/>
+            <fw type="pageNumber" hand="#N_red" place="top-right" xml:id="a3r_fw_d2e26">V.</fw>
+            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="a3r_fw_d2e29">3</fw>
+            <listTranspose><transpose><ptr target="#trans2_a3r"/><ptr target="#trans1_a3r"/></transpose></listTranspose>
+            <div2><anchor xml:id="a3r_div2_d2e37"/>
+               <p>
+               <lb n="1" xml:id="a3r_lb1"/>abliegt (in der <hi rend="latin">Dr. Rée</hi>, gleich allen englischen Moralgenealogen, die moralische Werthungsweise <hi rend="underline">an</hi> <hi rend="underline">sich</hi> sieht); ins<pc force="weak">-</pc>
+               <lb n="2" xml:id="a3r_lb2"/>gleichen S. <del>29</del>74. <hi rend="latin">Wand.</hi> S. 29. <add place="above" rend="insM" xml:id="a3r_add_d2e64"><hi rend="latin">Morgenr.</hi> S. 99</add> über die Herkunft der Gerechtigkeit als eines Ausgleichs zwischen ungefähr Gleich-
+               <lb n="3" xml:id="a3r_lb3"/>Mächtigen (Gleichgewicht als Voraussetzung aller Verträge, folglich alles Rechts); insgleichen über die Herkunft der Strafe 
+               <lb n="4" xml:id="a3r_lb4"/><hi rend="latin">Wand.</hi> S. 25. 34. für die der terroristische Zweck, <add place="above" rend="insM" xml:id="a3r_add_d2e76">weder ursprünglich,</add> wie <hi rend="latin">Dr. Rée</hi> meint, noch essentiell ist (– er ist ihr vielmehr erst 
+               <lb n="5" xml:id="a3r_lb5"/>eingelegt, unter bestimmten Umständen, und immer als ein Nebenbei, als etwas Hinzukommendes)</p>
+            </div2>
+            
+            <div2 xml:id="GMVorrede05"><anchor xml:id="a3r_div2_GMVorrede05"/>
+               <milestone unit="page" edRef="#Ed" n="IX"/>
+               <head xml:id="a3r_head_d2e93">
+                  <lb n="6" xml:id="a3r_lb6"/>5.</head>
+               <p>
+                  <lb n="7" rend="indent" xml:id="a3r_lb7"/>Im Grunde lag mir gerade damals etwas viel Wichtigeres am Herzen als eignes oder fremdes Hypothesenwesen über den 
+                  <lb n="8" xml:id="a3r_lb8"/>Ursprung der Moral (oder vielmehr: das letztere nur um eines Zweckes willen, zu dem es eins unter vielen Mit<pc force="weak">-</pc>
+                  <lb n="9" xml:id="a3r_lb9"/>teln war) Es handelte sich für mich um den <hi rend="underline">Werth</hi> der Moral, – und darüber hatte ich mich fast allein mit meinem 
+                  <lb n="10" xml:id="a3r_lb10"/>großen Lehrer Schopenhauer auseinanderzusetzen, an den wie an einen Gegenwärtigen jenes Buch, die Leidenschaft <choice xml:id="a3r_choice_d2e115"><sic>und 
+                  <lb n="11" xml:id="a3r_lb11"/>und</sic><corr>und</corr></choice> der geheime Widerspruch jenes Buchs sich wendet <add place="inline" xml:id="a3r_add_d2e122">(</add>– denn auch jenes Buch war eine „Streitschrift.“) Es handelte sich 
+                  <lb n="12" xml:id="a3r_lb12"/>in Sonderheit um den Werth des „Unegoistischen“, der Mitleids- Selbstverläugnungs- Selbstopferungs-Instinkte, welche 
+                  <lb n="13" xml:id="a3r_lb13"/>gerade Schopenhauer so lange vergoldet, vergöttlicht und verjenseitigt hatte, bis sie ihm schließlich als die „Werthe an 
+                  <lb n="14" xml:id="a3r_lb14"/>sich“ übrig blieben, auf Grund deren er zum Leben, auch zu sich selbst, <hi rend="underline">Nein</hi> <hi rend="underline">sagte</hi>. Aber gerade gegen <hi rend="underline">diese</hi> In<pc force="weak">-</pc>
+                  <lb n="15" xml:id="a3r_lb15"/>stinkte redete aus mir ein immer grundsätzlicherer Argwohn, eine immer tiefer grabende Skepsis! Gerade hier sah 
+                  <lb n="16" xml:id="a3r_lb16"/>ich die <hi rend="underline">große</hi> Gefahr der Menschheit, ihre <choice xml:id="a3r_choice_d2e152"><sic>sublimsten</sic><corr>sublimste</corr></choice> Lockung und Verführung – wohin doch? in’s Nichts? – gerade 
+                  <lb n="17" xml:id="a3r_lb17"/>hier sah ich den Anfang vom Ende, das Stehenbleiben, die nihilistische Müdigkeit, den Willen <hi rend="underline">gegen</hi> das Leben 
+                  <lb n="18" xml:id="a3r_lb18"/>sich wendend, die letzte Krankheit sich zärtlich und schwermüthig ankündigend: ich <subst xml:id="a3r_subst_d2e163"><add place="above" rend="insM" xml:id="a3r_add_d2e164">verstand</add><del rend="hatching">begriff</del></subst> die immer mehr um sich grei<pc force="weak">-</pc>
+                  <lb n="19" xml:id="a3r_lb19"/>fende Mitleids-Moral, welche selbst die Philosophen ergriff und krank machte, <milestone unit="page" edRef="#Ed" n="X"/>als das unheimlichste Symptom einer  
+                  <lb n="20" xml:id="a3r_lb20"/>unheimlich gewordnen europäischen Cultur, als ihren Umweg – zum Nihilismus?… Zu einem neuen Buddhis<pc force="weak">-</pc>
+                  <lb n="21" xml:id="a3r_lb21"/>mus, einem Zukunfts-Buddhismus?… Diese moderne Philosophen-Bevorzugung und Überschätzung des Mitlei<subst xml:id="a3r_subst_d2e185"><add place="above" rend="insM" xml:id="a3r_add_d2e186">dens</add><del rend="hatching">ds</del></subst> ist 
+                  <lb n="22" xml:id="a3r_lb22"/>nämlich etwas Neues: gerade über den <hi rend="underline">Unwerth</hi> des Mitleidens waren bisher die Philosophen übereingekommen. 
+                  <lb n="23" xml:id="a3r_lb23"/>Ich nenne nur Plato, Spinoza, <choice xml:id="a3r_choice_d2e198"><sic>La<subst xml:id="a3r_subst_d2e201"><del rend="overwritten">r</del><add place="superimposed" xml:id="a3r_add_d2e204">R</add></subst>ochefoucauld</sic><corr>La Rochefoucauld</corr></choice> und Kant, vier Geister so verschieden von einander als möglich, aber 
+                  <lb n="24" xml:id="a3r_lb24"/><seg xml:id="trans1_a3r">Eins</seg><metamark function="transposition" rend="transLine"/> <seg xml:id="trans2_a3r">in Einem</seg>: in der Geringschätzung des Mitleidens. –</p>
+               </div2>
+            
+            <div2 xml:id="GMVorrede06"><anchor xml:id="a3r_div2_GMVorrede06"/>
+               <head xml:id="a3r_head_d2e224">
+                  <lb n="25" xml:id="a3r_lb25"/>6.</head>
+               <p>
+                  <lb n="26" rend="indent" xml:id="a3r_lb26"/>Dies Problem vom <hi rend="underline">Werthe</hi> des Mitleids und der Mitleids-Moral <add place="above" rend="insM" seq="1" xml:id="a3r_add_d2e236">(– <subst change="#GMVorrede06-07belatedMod" xml:id="a3r_subst_d2e238"><add hand="#typesetter_black1" place="above" seq="3" xml:id="a3r_add_d2e239">ich bin ein Gegner der schändlichen modernen Gefühlsverweichlichung –</add><del hand="#typesetter_black1" rend="strikethrough" seq="3">in allen meinen Schriften, namentlich <add place="above" rend="insM" seq="2" xml:id="a3r_add_d2e243"><del hand="#typesetter_black1" rend="strikethrough" seq="3">in der</del></add> <hi rend="latin">Morgenr.</hi> und <add place="above" rend="insM" seq="2" xml:id="a3r_add_d2e250"><del hand="#typesetter_black1" rend="strikethrough" seq="3">der</del></add> <hi rend="latin">fröhl. Wiss.</hi> stark unter<pc force="weak">-</pc><add place="above" rend="insM" instant="true" seq="1" xml:id="a3r_add_d2e259"><del hand="#typesetter_black1" rend="strikethrough" seq="3">strichen –</del></add></del></subst><add place="above" instant="true" seq="1" xml:id="a3r_add_d2e262">)</add></add> scheint zunächst nur etwas Vereinzeltes, ein Frage<pc force="weak">-</pc>
+                  <lb n="27" xml:id="a3r_lb27"/>zeichen für sich; wer aber einmal hier hängen bleibt, hier fragen <hi rend="underline">lernt</hi>, dem wird es gehn, wie es mir ergangen ist – 
+                  <lb n="28" xml:id="a3r_lb28"/>eine ungeheure neue Aussicht thut sich ihm auf, eine Möglichkeit faßt ihn wie ein Schwindel, jede Art Mißtrauen, 
+                  <lb n="29" xml:id="a3r_lb29"/>Argwohn, Furcht springt hervor, der Glaube an die Moral, an alle Moral wankt, – endlich wird eine neue Forderung 
+                  <lb n="30" xml:id="a3r_lb30"/>laut. Sprechen wir sie aus, diese <hi rend="underline">neue</hi> <hi rend="underline">Forderung</hi>: wir haben eine <hi rend="underline">Kritik</hi> der moralischen Werthe nöthig, <hi rend="underline">der</hi> 
+                  <lb n="31" xml:id="a3r_lb31"/><hi rend="underline">Werth</hi> <hi rend="underline">dieser</hi> <hi rend="underline">Werthe</hi> <hi rend="underline">ist</hi> <hi rend="underline">selbst</hi> <hi rend="underline">erst</hi> <hi rend="underline">einmal</hi> <hi rend="underline">in</hi> <hi rend="underline">Frage</hi> <hi rend="underline">zu</hi> <hi rend="underline">stellen</hi> – und dazu thut eine Kenntniß der Bedingungen 
+                  <lb n="32" xml:id="a3r_lb32"/>und Umstände noth, aus denen sie gewachsen, unter denen sie sich ent<milestone unit="page" edRef="#Ed" n="XI"/>wickelt und verschoben haben (Moral als 
+                  <lb n="33" xml:id="a3r_lb33"/>Folge, als Symptom, als Maske, als Tartüfferie, als Krankheit, als Mißverständniß, aber auch Moral als Ursache, als 
+                  <lb n="34" xml:id="a3r_lb34"/>Heilmittel, als <hi rend="latin">Stimulans</hi>, als Hemmung, als Gift), wie eine solche Kenntniß weder bis jetzt da war, noch auch nur 
+                  <lb n="35" xml:id="a3r_lb35"/>begehrt worden ist. Man nahm den <hi rend="underline">Werth</hi> dieser „Werthe“ als gegeben, als thatsächlich, als jenseits aller In-Fra<pc force="weak">-</pc>
+                  <lb n="36" xml:id="a3r_lb36"/><subst xml:id="a3r_subst_d2e350"><add place="inline" xml:id="a3r_add_d2e351">ge-</add><del rend="strikethrough">ge</del><del rend="overwritten">st</del><add place="superimposed" xml:id="a3r_add_d2e357">St</add></subst>ellung; man hat bisher auch nicht im Entferntesten daran gezweifelt und geschwankt, <add place="inline" xml:id="a3r_add_d2e361">„</add>den <del rend="strikethrough">„</del>Guten“ <subst xml:id="a3r_subst_d2e367"><add place="above" rend="insM" xml:id="a3r_add_d2e368">für</add><del rend="hatching">als</del></subst> höherwerthig</p>
+            </div2>
+         </div1>
+      </body>
+   </text>
+   <sourceDoc><surface xml:id="srcD_surface_a3r" type="relative" start="#a3r" facs="#D-20a_V"><zone xml:id="srcD_zone_a3r_div2_d2e37" start="#a3r_div2_d2e37" type="firstBlock" style="padding-top:5em;"><zone xml:id="srcD_zone_a3r_fw_d2e26" type="fw-top-right" start="#a3r_fw_d2e26"><fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a3r_fw_d2e26">V.</fw></zone><line xml:id="srcD_line_a3r_lb1" start="#a3r_lb1" n="1">abliegt (in der <hi rend="latin">Dr. Rée</hi>, gleich allen englischen Moralgenealogen, die moralische Werthungsweise <hi rend="underline">an</hi> <hi rend="underline">sich</hi> sieht); ins<pc force="weak">-</pc>
+               </line><line xml:id="srcD_line_a3r_lb2" start="#a3r_lb2" n="2">gleichen S. <del>29</del>74. <hi rend="latin">Wand.</hi> S. 29. <metamark xml:id="srcD_metamark_a3r_add_d2e64" function="insertion" rend="inSpatium"><add place="above" corresp="#a3r_add_d2e64"><hi rend="latin">Morgenr.</hi> S. 99</add></metamark> über die Herkunft der Gerechtigkeit als eines Ausgleichs zwischen ungefähr Gleich-
+               </line><line xml:id="srcD_line_a3r_lb3" start="#a3r_lb3" n="3">Mächtigen (Gleichgewicht als Voraussetzung aller Verträge, folglich alles Rechts); insgleichen über die Herkunft der Strafe 
+               </line><line xml:id="srcD_line_a3r_lb4" start="#a3r_lb4" n="4"><hi rend="latin">Wand.</hi> S. 25. 34. für die der terroristische Zweck, <metamark xml:id="srcD_metamark_a3r_add_d2e76" function="insertion" rend="inSpatium"><add place="above" corresp="#a3r_add_d2e76">weder ursprünglich,</add></metamark> wie <hi rend="latin">Dr. Rée</hi> meint, noch essentiell ist (– er ist ihr vielmehr erst 
+               </line><line xml:id="srcD_line_a3r_lb5" start="#a3r_lb5" n="5">eingelegt, unter bestimmten Umständen, und immer als ein Nebenbei, als etwas Hinzukommendes)
+            
+            
+            <anchor corresp="#a3r_div2_GMVorrede05"/>
+               <milestone unit="page" edRef="#Ed" n="IX"/>
+               
+                  </line></zone><zone xml:id="srcD_zone_a3r_div2_GMVorrede05" start="#a3r_div2_GMVorrede05" type="textBlock"><line xml:id="srcD_line_a3r_head_d2e93_a3r_lb6" start="#a3r_lb6" n="6"><zone xml:id="srcD_zone_a3r_head_d2e93_a3r_lb6" type="head">5.
+               
+                  </zone></line><line xml:id="srcD_line_a3r_lb7" start="#a3r_lb7" rend="indent" n="7">Im Grunde lag mir gerade damals etwas viel Wichtigeres am Herzen als eignes oder fremdes Hypothesenwesen über den 
+                  </line><line xml:id="srcD_line_a3r_lb8" start="#a3r_lb8" n="8">Ursprung der Moral (oder vielmehr: das letztere nur um eines Zweckes willen, zu dem es eins unter vielen Mit<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_a3r_lb9" start="#a3r_lb9" n="9">teln war) Es handelte sich für mich um den <hi rend="underline">Werth</hi> der Moral, – und darüber hatte ich mich fast allein mit meinem 
+                  </line><line xml:id="srcD_line_a3r_lb10" start="#a3r_lb10" n="10">großen Lehrer Schopenhauer auseinanderzusetzen, an den wie an einen Gegenwärtigen jenes Buch, die Leidenschaft <choice corresp="#a3r_choice_d2e115"><orig>und 
+                  </orig><sic>und 
+                  <lb n="11" xml:id="a3r_lb11"/>und</sic><corr>und</corr></choice></line><line xml:id="srcD_line_a3r_lb11" start="#a3r_lb11" n="11"><choice corresp="#a3r_choice_d2e115"><orig>und</orig><sic>und 
+                  <lb n="11" xml:id="a3r_lb11"/>und</sic><corr>und</corr></choice> der geheime Widerspruch jenes Buchs sich wendet <add place="inline" corresp="#a3r_add_d2e122">(</add>– denn auch jenes Buch war eine „Streitschrift.“) Es handelte sich 
+                  </line><line xml:id="srcD_line_a3r_lb12" start="#a3r_lb12" n="12">in Sonderheit um den Werth des „Unegoistischen“, der Mitleids- Selbstverläugnungs- Selbstopferungs-Instinkte, welche 
+                  </line><line xml:id="srcD_line_a3r_lb13" start="#a3r_lb13" n="13">gerade Schopenhauer so lange vergoldet, vergöttlicht und verjenseitigt hatte, bis sie ihm schließlich als die „Werthe an 
+                  </line><line xml:id="srcD_line_a3r_lb14" start="#a3r_lb14" n="14">sich“ übrig blieben, auf Grund deren er zum Leben, auch zu sich selbst, <hi rend="underline">Nein</hi> <hi rend="underline">sagte</hi>. Aber gerade gegen <hi rend="underline">diese</hi> In<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_a3r_lb15" start="#a3r_lb15" n="15">stinkte redete aus mir ein immer grundsätzlicherer Argwohn, eine immer tiefer grabende Skepsis! Gerade hier sah 
+                  </line><line xml:id="srcD_line_a3r_lb16" start="#a3r_lb16" n="16">ich die <hi rend="underline">große</hi> Gefahr der Menschheit, ihre <choice corresp="#a3r_choice_d2e152"><sic>sublimsten</sic><corr>sublimste</corr></choice> Lockung und Verführung – wohin doch? in’s Nichts? – gerade 
+                  </line><line xml:id="srcD_line_a3r_lb17" start="#a3r_lb17" n="17">hier sah ich den Anfang vom Ende, das Stehenbleiben, die nihilistische Müdigkeit, den Willen <hi rend="underline">gegen</hi> das Leben 
+                  </line><line xml:id="srcD_line_a3r_lb18" start="#a3r_lb18" n="18">sich wendend, die letzte Krankheit sich zärtlich und schwermüthig ankündigend: ich <metamark xml:id="srcD_metamark_a3r_add_d2e164" function="insertion"><add place="above" corresp="#a3r_add_d2e164">verstand</add></metamark><del rend="hatching">begriff</del> die immer mehr um sich grei<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_a3r_lb19" start="#a3r_lb19" n="19">fende Mitleids-Moral, welche selbst die Philosophen ergriff und krank machte, <milestone unit="page" edRef="#Ed" n="X"/>als das unheimlichste Symptom einer  
+                  </line><line xml:id="srcD_line_a3r_lb20" start="#a3r_lb20" n="20">unheimlich gewordnen europäischen Cultur, als ihren Umweg – zum Nihilismus?… Zu einem neuen Buddhis<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_a3r_lb21" start="#a3r_lb21" n="21">mus, einem Zukunfts-Buddhismus?… Diese moderne Philosophen-Bevorzugung und Überschätzung des Mitlei<metamark xml:id="srcD_metamark_a3r_add_d2e186" function="insertion" rend="inWord"><add place="above" corresp="#a3r_add_d2e186">dens</add></metamark><del rend="hatching">ds</del> ist 
+                  </line><line xml:id="srcD_line_a3r_lb22" start="#a3r_lb22" n="22">nämlich etwas Neues: gerade über den <hi rend="underline">Unwerth</hi> des Mitleidens waren bisher die Philosophen übereingekommen. 
+                  </line><line xml:id="srcD_line_a3r_lb23" start="#a3r_lb23" n="23">Ich nenne nur Plato, Spinoza, <choice corresp="#a3r_choice_d2e198"><sic>La<del rend="overwritten" cause="#a3r_add_d2e204">r</del><add place="superimposed" corresp="#a3r_add_d2e204">R</add>ochefoucauld</sic><corr>La Rochefoucauld</corr></choice> und Kant, vier Geister so verschieden von einander als möglich, aber 
+                  </line><line xml:id="srcD_line_a3r_lb24" start="#a3r_lb24" n="24"><seg corresp="#trans1_a3r">Eins</seg><metamark function="transposition" rend="transLine"/> <seg corresp="#trans2_a3r">in Einem</seg>: in der Geringschätzung des Mitleidens. –
+               
+            
+            <anchor corresp="#a3r_div2_GMVorrede06"/>
+               
+                  </line></zone><zone xml:id="srcD_zone_a3r_div2_GMVorrede06" start="#a3r_div2_GMVorrede06" type="lastBlock" style="padding-bottom:5em;"><line xml:id="srcD_line_a3r_head_d2e224_a3r_lb25" start="#a3r_lb25" n="25"><zone xml:id="srcD_zone_a3r_head_d2e224_a3r_lb25" type="head">6.
+               
+                  </zone></line><line xml:id="srcD_line_a3r_lb26" start="#a3r_lb26" rend="indent" n="26">Dies Problem vom <hi rend="underline">Werthe</hi> des Mitleids und der Mitleids-Moral <metamark xml:id="srcD_metamark_a3r_add_d2e236" function="insertion" rend="inSpatium" style="top:-0.125em;height:1.4375em;"><add place="above" corresp="#a3r_add_d2e236" style="left:-8.125em;">(– <add corresp="#a3r_add_d2e239" style="left:0em;top:-3.0274em;" place="above" hand="#typesetter_black1">ich bin ein Gegner der schändlichen modernen Gefühlsverweichlichung –</add><del hand="#typesetter_black1" rend="strikethrough">in allen meinen Schriften, namentlich <metamark xml:id="srcD_metamark_a3r_add_d2e243" function="insertion" rend="inSpatium"><add place="above" corresp="#a3r_add_d2e243"><del hand="#typesetter_black1" rend="strikethrough">in der</del></add></metamark> <hi rend="latin">Morgenr.</hi> und <metamark xml:id="srcD_metamark_a3r_add_d2e250" function="insertion" rend="inSpatium"><add place="above" corresp="#a3r_add_d2e250"><del hand="#typesetter_black1" rend="strikethrough">der</del></add></metamark> <hi rend="latin">fröhl. Wiss.</hi> stark unter<pc force="weak">-</pc><metamark xml:id="srcD_metamark_a3r_add_d2e259" function="insertion" rend="inWord" style="top:-0.15625em;height:1.48438em;"><add place="above" instant="true" corresp="#a3r_add_d2e259" style="left:-5em;"><del hand="#typesetter_black1" rend="strikethrough">strichen –</del></add></metamark></del><add corresp="#a3r_add_d2e262" place="above" instant="true">)</add></add></metamark> scheint zunächst nur etwas Vereinzeltes, ein Frage<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_a3r_lb27" start="#a3r_lb27" n="27">zeichen für sich; wer aber einmal hier hängen bleibt, hier fragen <hi rend="underline">lernt</hi>, dem wird es gehn, wie es mir ergangen ist – 
+                  </line><line xml:id="srcD_line_a3r_lb28" start="#a3r_lb28" n="28">eine ungeheure neue Aussicht thut sich ihm auf, eine Möglichkeit faßt ihn wie ein Schwindel, jede Art Mißtrauen, 
+                  </line><line xml:id="srcD_line_a3r_lb29" start="#a3r_lb29" n="29">Argwohn, Furcht springt hervor, der Glaube an die Moral, an alle Moral wankt, – endlich wird eine neue Forderung 
+                  </line><line xml:id="srcD_line_a3r_lb30" start="#a3r_lb30" n="30">laut. Sprechen wir sie aus, diese <hi rend="underline">neue</hi> <hi rend="underline">Forderung</hi>: wir haben eine <hi rend="underline">Kritik</hi> der moralischen Werthe nöthig, <hi rend="underline">der</hi> 
+                  </line><line xml:id="srcD_line_a3r_lb31" start="#a3r_lb31" n="31"><hi rend="underline">Werth</hi> <hi rend="underline">dieser</hi> <hi rend="underline">Werthe</hi> <hi rend="underline">ist</hi> <hi rend="underline">selbst</hi> <hi rend="underline">erst</hi> <hi rend="underline">einmal</hi> <hi rend="underline">in</hi> <hi rend="underline">Frage</hi> <hi rend="underline">zu</hi> <hi rend="underline">stellen</hi> – und dazu thut eine Kenntniß der Bedingungen 
+                  </line><line xml:id="srcD_line_a3r_lb32" start="#a3r_lb32" n="32">und Umstände noth, aus denen sie gewachsen, unter denen sie sich ent<milestone unit="page" edRef="#Ed" n="XI"/>wickelt und verschoben haben (Moral als 
+                  </line><line xml:id="srcD_line_a3r_lb33" start="#a3r_lb33" n="33">Folge, als Symptom, als Maske, als Tartüfferie, als Krankheit, als Mißverständniß, aber auch Moral als Ursache, als 
+                  </line><line xml:id="srcD_line_a3r_lb34" start="#a3r_lb34" n="34">Heilmittel, als <hi rend="latin">Stimulans</hi>, als Hemmung, als Gift), wie eine solche Kenntniß weder bis jetzt da war, noch auch nur 
+                  </line><line xml:id="srcD_line_a3r_lb35" start="#a3r_lb35" n="35">begehrt worden ist. Man nahm den <hi rend="underline">Werth</hi> dieser „Werthe“ als gegeben, als thatsächlich, als jenseits aller In-Fra<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_a3r_lb36" start="#a3r_lb36" n="36"><add place="inline" corresp="#a3r_add_d2e351">ge-</add><del rend="strikethrough">ge</del><del rend="overwritten" cause="#a3r_add_d2e357">st</del><add place="superimposed" corresp="#a3r_add_d2e357">St</add>ellung; man hat bisher auch nicht im Entferntesten daran gezweifelt und geschwankt, <add place="inline" corresp="#a3r_add_d2e361">„</add>den <del rend="strikethrough">„</del>Guten“ <metamark xml:id="srcD_metamark_a3r_add_d2e368" function="insertion"><add place="above" corresp="#a3r_add_d2e368">für</add></metamark><del rend="hatching">als</del> höherwerthig</line><zone xml:id="srcD_zone_a3r_fw_d2e29" type="fw-bottom-left" start="#a3r_fw_d2e29"><fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#a3r_fw_d2e29">3</fw></zone></zone></surface></sourceDoc>
+</TEI>

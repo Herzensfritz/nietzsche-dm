@@ -6,14 +6,24 @@
         "over": "over",
         "page": "Page",
         "erased": "erased",
+        "choice-underline": "show corrections on transcription",
+        "deletion-popover": "show popover for deletion/hatching",
         "edref-lb": "show KGW/KSA line breaks",
         "XXX_red": "unknown foreign hand",
         "typesetter_pencil": "typesetter: pencil",
+        "typesetter_red": "typesetter: red pen",
         "N-Archiv_red": "foreign hand: Nietzsche Archiv",
         "N_pencil": "Nietzsche: pencil",
         "N_red": "Nietzsche: red pen",
         "N_brown": "Nietzsche: brown pen",
         "N_brown1": "Nietzsche: brown pen",
-        "GSA_pencil": "foreign hand: GSA, pencil"
+        "GSA_pencil": "foreign hand: GSA, pencil",
+        "hatching": "hatching",
+        "hatching-N_brown": "hatching with brown pen",
+        "hatching-N_brown1": "hatching with brown pen",
+        "deleted-N_brown": "hatching with brown pen",
+        "deleted-N_brown1": "hatching with brown pen",
+        "strikethrough-N_brown1": "strikethrough with brown pen",
+        "strikethrough": "strikethrough"
     }
 }

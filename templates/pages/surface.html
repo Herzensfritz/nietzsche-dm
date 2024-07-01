@@ -48,11 +48,11 @@
         --typesetter_black: #373a3d;
         }
 
-        #view1 {
+       #view1 {
             flex: 1 1;
             display: flex;
             justify-content: center;
-        }
+        } 
          #facsimile {
             flex: 1 1;
             height: var(--pb-facsimile-height);
@@ -122,10 +122,12 @@
               
               
                          <pb-view id="view1" src="document1" column-separator=".tei-cb" view="surface" subscribe="transcription" emit="transcription">
-                            </pb-view>     
+                            </pb-view>  
+                    <div id="content">
                     <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-notes" subscribe="transcription">
                                                 <pb-param name="view" value="normalized"/>
                                             </pb-view>
+                    </div>
                           <!--  <pb-facsimile id="facsimile" default-zoom-level="0.7" show-full-page-control="true" show-home-control="true" emit="transcription" subscribe="transcription" type="iiif" show-navigation-control="show-navigation-control" show-navigator="show-navigator">
                                             </pb-facsimile> -->
                         

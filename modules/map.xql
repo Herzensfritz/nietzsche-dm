@@ -38,7 +38,7 @@ declare function mapping:nietzsche-notes($root as element(), $userParams as map(
             let $targetEnd := local:getLineTargets($root, $note/@xml:id, $note/text(), false())
             return if ($targetEnd) then (<note xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$note/@xml:id}" type="{$note/@type}" 
                             target="{$target}" targetEnd="{$targetEnd}">
-                            {local:parseNoteContent($note/text())}
+                            {local:parseNoteContent($note)}
                             </note>) 
                     else (
                        <note xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$note/@xml:id}" type="{$note/@type}" 
@@ -53,7 +53,7 @@ declare function mapping:nietzsche-notes($root as element(), $userParams as map(
 
 declare function local:getLineTargets($root, $id, $text, $isFirst) {
     if (matches($text, '.*[0-9]+-[0-9]+:')) then (
-        let $lineRef := substring-before($text, ':')    
+        let $lineRef := substring-before($text[1], ':')    
         let $firstId := substring-before($lineRef, '-')
         let $lastId := substring-after($lineRef, '-')
         return if ($isFirst) then (concat('#',root($root)//tei:text//tei:lb[@n = $firstId]/@xml:id)) else (concat('#',root($root)//tei:text//tei:lb[@n = $lastId]/@xml:id)) 
@@ -62,13 +62,13 @@ declare function local:getLineTargets($root, $id, $text, $isFirst) {
     )    
 };
 
-declare function local:parseNoteContent($text as xs:string*) {
-    if (contains($text, ']')) then (
-        <term xmlns="http://www.tei-c.org/ns/1.0" type="lem"> {local:parseNoteContent(substring-before($text, ']')) } </term>, substring-after($text, ']')
+declare function local:parseNoteContent($item as item()*) {
+    if (contains($item/text()[1], ']')) then (
+        <term xmlns="http://www.tei-c.org/ns/1.0" type="lem"> {local:parseNoteContent(substring-before($item/text()[1], ']')) } </term>, substring-after($item/text()[1], ']'), ($item/*|$item/text()[position() gt 1])
     ) else (
-        if (matches($text, '.*[0-9]:')) then (
-            substring-after($text, ':')    
-        ) else ($text)    
+        if (matches($item/text()[1], '.*[0-9]:')) then (
+            substring-after($item/text()[1], ':'), ($item/*|$item/text()[position() gt 1])    
+        ) else ($item)    
     )    
 };
 

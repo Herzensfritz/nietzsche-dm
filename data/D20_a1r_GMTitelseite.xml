@@ -1,0 +1,69 @@
+<?teipublisher template="surface.html" odd="surface.odd" view="surface"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+          <title>a1r</title>
+         </titleStmt>
+         <publicationStmt><p/></publicationStmt><sourceDesc><p/></sourceDesc></fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div1 xml:id="GMTitelblatt" xml:space="preserve"><anchor xml:id="a1r_div1_GMTitelblatt"/>
+            <pb xml:id="a1r" corresp="#contents_a1r #folDesc_a1rv #addDesc_a1r #N_brown1" facs="#D-20a_I" change="#GMfrontRecord #GM01-02finalVersion #proofreadingCb12Titel"/>
+            <fw type="pageNumber" hand="#N_red" place="top-right" xml:id="a1r_fw_d2e26"><subst instant="true" xml:id="a1r_subst_d2e27"><del rend="overwritten">1.</del><add place="superimposed" xml:id="a1r_add_d2e30">I.</add></subst></fw>
+            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="a1r_fw_d2e33">1</fw>
+            <milestone unit="section" type="signature" edRef="#Ed" n="Titelbogen"/>
+            <milestone unit="page" edRef="#Ed" n="I"/>
+            <div2 xml:id="GMTitelseite"><anchor xml:id="a1r_div2_GMTitelseite"/>
+               <p><handShift new="#N_brown1"/>
+                  <lb n="1" rend="centered" xml:id="a1r_lb1"/><hi rend="latin"><hi rend="underline">Zur</hi> 
+                  <lb n="2" rend="centered" xml:id="a1r_lb2"/><hi rend="doubleUnderline">Genealogie</hi> <hi rend="doubleUnderline">der</hi> <hi rend="doubleUnderline">Moral</hi>.
+                  <lb n="3" rend="centered" xml:id="a1r_lb3"/>Eine Streitschrift.
+                  <lb n="4" rend="centered" xml:id="a1r_lb4"/>Von 
+                  <lb n="5" rend="centered" xml:id="a1r_lb5"/>Friedrich Nietzsche.
+                  <lb n="6" rend="flushRight" xml:id="a1r_lb6"/>Tout comprendre c’est tout <add place="inline" xml:id="a1r_add_d2e70">–</add> <hi rend="underline">mépriser</hi>?…
+                  <lb n="7" rend="centered" xml:id="a1r_lb7"/>Leipzig
+                  <lb n="8" rend="centered" xml:id="a1r_lb8"/>Verlag von C. G. Naumann
+                  <lb n="9" rend="centered" xml:id="a1r_lb9"/>1887.</hi></p>
+            </div2>
+            <noteGrp>
+               <noteGrp place="margin-left" rend="bottom-to-top">
+                  <note type="non-authorial" hand="#Koeselitz_black" change="#proofreadingCb12Titel" xml:id="a1r_note_d2e89">
+                  <lb n="10" rend="centered" xml:id="a1r_lb10"/><ref target="#CbTitel">VIII
+                  <lb n="11" xml:id="a1r_lb11"/><hi rend="latin">Zweck weder essentiell noch ursprüngl. 
+                  <lb n="12" xml:id="a1r_lb12"/>ist (wie Dr Rée meint: – er ist</hi></ref><note type="editorial" xml:id="a1r_note_d2e99">10-12: vgl. <ref target="#a3r_lb4">a3r,4</ref> und <ref target="#Ed #GMVorrede04">Ed, VIII,25-26 (GM Vorrede 4)</ref></note></note>
+                  <note type="non-authorial" hand="#Koeselitz_black" change="#proofreadingCb12Titel" xml:id="a1r_note_d2e107"><delSpan type="delPassage" hand="#Koeselitz_blue" resp="#Koeselitz" spanTo="#delEnd1_a1r"/><certainty match="@resp" locus="value" cert="medium"/>
+                  <lb n="13" xml:id="a1r_lb13"/><ref target="#CbTitel">XIV statt wozu
+                  <lb n="14" xml:id="a1r_lb14"/><hi rend="underline">zu dem</hi><anchor xml:id="delEnd1_a1r"/></ref><note type="editorial" xml:id="a1r_note_d2e118">13-14: vgl. <ref target="#a4r_lb19">a4r,19</ref> und <ref target="#Ed #GMVorrede08">Ed, XIV,19 (GM Vorrede 8)</ref></note></note>
+            </noteGrp>
+               <note type="non-authorial" hand="#Koeselitz_black" place="margin-right" rend="bottom-to-top" change="#proofreadingCb12Titel" xml:id="a1r_note_d2e127">
+                  <lb n="15" xml:id="a1r_lb15"/><ref target="#CbTitel">X
+                  <lb n="16" xml:id="a1r_lb16"/><delSpan type="delPassage" hand="#Koeselitz_blue" resp="#Koeselitz" spanTo="#delEnd2_a1r"/><certainty match="@resp" locus="value" cert="medium"/>als ihren Umweg zu einem neuen 
+                  <lb n="17" xml:id="a1r_lb17"/>Buddhismus? zu einem Europäer-
+                  <lb n="18" xml:id="a1r_lb18"/>Buddhismus? zum – <hi rend="underline">Nihilismus</hi>?…<anchor xml:id="delEnd2_a1r"/></ref>
+                  <note type="editorial" xml:id="a1r_note_d2e146">15-18: vgl. <ref target="#a3r_lb20 #a3r_lb21">a3r,20-21</ref> und <ref target="#Ed #GMVorrede05">Ed, X,2-4 (GM Vorrede 5)</ref></note></note>
+               <note type="non-authorial" hand="#Koeselitz_black" place="margin-left" rend="bottom-to-top" change="#proofreadingCb12Titel" xml:id="a1r_note_d2e155">
+                  <lb n="19" xml:id="a1r_lb19"/><ref target="#Cb12"><add hand="#Koeselitz_red" place="inline" rend="centered" xml:id="a1r_add_d2e159">178</add>
+                  <lb n="20" xml:id="a1r_lb20"/><del hand="#Koeselitz_blue" cert="medium" rend="strikethrough">auf ein Werk, das ich vorbereite</del></ref>
+                  <note type="editorial" xml:id="a1r_note_d2e166">19-20: vgl. <ref target="#b66r_lb@" n="b66r,@">b66r,@</ref> und <ref target="#Ed #GM0327">Ed, 178,31 (GM III 27)</ref></note></note>
+            <noteGrp place="margin-right" rend="bottom-to-top">
+                <note type="non-authorial" hand="#Koeselitz_black" change="#proofreadingCb12Titel" xml:id="a1r_note_d2e176">
+                  <lb n="21" xml:id="a1r_lb21"/><delSpan type="delPassage" hand="#Koeselitz_blue" resp="#Koeselitz" spanTo="#delEnd3_a1r"/><certainty match="@resp" locus="value" cert="medium"/><hi rend="latin">Vorrede</hi> <ref target="#CbTitel">I<note type="editorial" xml:id="a1r_note_d2e186">21: Vorrede I] gemeint: Cb Titel, S. III</note> 11. Z. v. u.
+                  <lb n="22" xml:id="a1r_lb22"/>„nie“ (ist nicht) ungesperrt<anchor xml:id="delEnd3_a1r"/></ref><note type="editorial" xml:id="a1r_note_d2e192">21-22: vgl. <ref target="#a2r_lb8">a2r,8</ref> und <ref target="#Ed #GMVorrede01">Ed, III,15 (GM Vorrede 1)</ref>; in nicht erhalten gebliebenem Korrekturbogen Cb Titel war „nie“ offenbar versehentlich gesperrt gesetzt</note></note>
+                <note type="non-authorial" hand="#Koeselitz_black" change="#proofreadingCb12Titel" xml:id="a1r_note_d2e201">
+                  <lb n="23" xml:id="a1r_lb23"/><ref target="#CbTitel">XIV <del hand="#Koeselitz_blue" resp="#Koeselitz" rend="strikethrough"><certainty match="@resp" locus="value" cert="medium"/>ist damit, daß er abgelesen ist, noch nicht „entziffert.“</del></ref><note type="editorial" xml:id="a1r_note_d2e209">23: vgl. <ref target="#a4r_lb12">a4r,12</ref> und <ref target="#Ed #GMVorrede08">Ed, XIV,9 (GM Vorrede 8)</ref></note></note> 
+                <note type="non-authorial" hand="#Koeselitz_black" change="#proofreadingCb12Titel" xml:id="a1r_note_d2e217">
+                  <lb n="24" xml:id="a1r_lb24"/><ref target="#Cb12">177. <del hand="#Koeselitz_blue" resp="#Koeselitz" rend="strikethrough"><certainty match="@resp" locus="value" cert="medium"/>4. Z. v. u. <hi rend="latin">einer <hi rend="underline">unheilbaren</hi> Krankheit</hi></del></ref><note type="editorial" xml:id="a1r_note_d2e230">24: Korrektur zu nicht erhalten gebliebenem Korrekturbogen Cb 12, der Text lautete gemäß Satzvorlage <ref target="#b65r_lb@">„eine <hi rend="underline">unheilbare</hi> Krankheit“ (Ms-Nachtrag b65r,@)</ref>; die von Köselitz notierte Korrektur des Kasus wurde schließlich nicht übernommen, stattdessen formulierte N die Stelle um, vgl. <ref target="#b64r_lb@-@">Korrekturblatt b64r,@-@</ref></note>
+                  <lb n="25" xml:id="a1r_lb25"/><ref target="#Cb12">178 <del hand="#Koeselitz_blue" resp="#Koeselitz" rend="strikethrough"><certainty match="@resp" locus="value" cert="medium"/>Mitte <hi rend="latin">Zaunspfahl</hi></del></ref><note type="editorial" xml:id="a1r_note_d2e250">25: vgl. <ref target="#b66r_lb@">b66r,@</ref> und <ref target="#Ed #GM0326">Ed, 178,15 (GM III 26)</ref></note></note>
+            </noteGrp></noteGrp> 
+         </div1></body>
+   </text>
+<sourceDoc><surface xml:id="srcD_surface_a1r" type="relative" start="#a1r" style="min-width:53em;" facs="#D-20a_I"><zone xml:id="srcD_zone_a1r_div2_GMTitelseite" start="#a1r_div2_GMTitelseite" type="singleBlock" style="padding-top:5em;padding-bottom:5em;"><zone xml:id="srcD_zone_a1r_fw_d2e26" type="fw-top-right" start="#a1r_fw_d2e26"><fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a1r_fw_d2e26"><del rend="overwritten" cause="#a1r_add_d2e30">1.</del><add place="superimposed" corresp="#a1r_add_d2e30" instant="true">I.</add></fw></zone><line xml:id="srcD_line_a1r_lb1" start="#a1r_lb1" rend="centered" hand="#N_brown1" n="1"><hi rend="underline"><hi rend="latin">Zur</hi></hi> 
+                  </line><line xml:id="srcD_line_a1r_lb2" start="#a1r_lb2" rend="centered" hand="#N_brown1" n="2"><hi rend="latin"><hi rend="doubleUnderline">Genealogie</hi> <hi rend="doubleUnderline">der</hi> <hi rend="doubleUnderline">Moral</hi>.
+                  </hi></line><line xml:id="srcD_line_a1r_lb3" start="#a1r_lb3" rend="centered" hand="#N_brown1" n="3"><hi rend="latin">Eine Streitschrift.
+                  </hi></line><line xml:id="srcD_line_a1r_lb4" start="#a1r_lb4" rend="centered" hand="#N_brown1" n="4"><hi rend="latin">Von 
+                  </hi></line><line xml:id="srcD_line_a1r_lb5" start="#a1r_lb5" rend="centered" hand="#N_brown1" n="5"><hi rend="latin">Friedrich Nietzsche.
+                  </hi></line><line xml:id="srcD_line_a1r_lb6" start="#a1r_lb6" hand="#N_brown1" n="6"><zone xml:id="srcD_line_a1r_lb6_flushRight_zone" type="flushRight"><hi rend="latin">Tout comprendre c’est tout <add place="inline" corresp="#a1r_add_d2e70">–</add> <hi rend="underline">mépriser</hi>?…
+                  </hi></zone></line><line xml:id="srcD_line_a1r_lb7" start="#a1r_lb7" rend="centered" hand="#N_brown1" n="7"><hi rend="latin">Leipzig
+                  </hi></line><line xml:id="srcD_line_a1r_lb8" start="#a1r_lb8" rend="centered" hand="#N_brown1" n="8"><hi rend="latin">Verlag von C. G. Naumann
+                  </hi></line><line xml:id="srcD_line_a1r_lb9" start="#a1r_lb9" rend="centered" hand="#N_brown1" n="9"><hi rend="latin">1887.</hi></line><zone xml:id="srcD_zone_a1r_fw_d2e33" type="fw-bottom-left" start="#a1r_fw_d2e33"><fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#a1r_fw_d2e33">1</fw></zone></zone></surface></sourceDoc></TEI>

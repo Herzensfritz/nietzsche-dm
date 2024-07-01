@@ -1,0 +1,269 @@
+<?teipublisher template="surface.html" odd="surface.odd" view="surface" media="pdf epub print"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+          <title>b48r</title>
+         </titleStmt>
+         <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div1 xml:space="preserve"><anchor xml:id="b48r_div1_d2e22"/>
+            <pb xml:id="b48r" corresp="#contents_b48r #folDesc_b48rv #addDesc_b48r #N_black2" facs="#D-20b_47" change="#GM03firstVersion #GM03completion #GM03finalVersion"/>
+            <fw type="pageNumber" hand="#N_pencil" place="top-left" xml:id="b48r_fw_d2e26">47</fw>
+            <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" xml:id="b48r_fw_d2e29"><del rend="erased">83</del></fw>     
+            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="b48r_fw_d2e33">48</fw>
+            <substJoin n="7,26" target="#mark1a_b48r #mark1b_b48r #substAdd1_b48r"/>
+            <substJoin n="4-9" target="#subst2a_b48r #subst2b_b48r #subst2c_b48r #subst2d_b48r #subst2e_b48r #subst2f_b48r #subst2g_b48r #subst2h_b48r #subst2i_b48r #substAdd2a_b48r #substAdd2aa_b48r #substAdd2b_b48r #substAdd2c_b48r #substAdd2d_b48r #substAdd2e_b48r #substAdd2f_b48r #substAdd2g_b48r #substAdd2h_b48r #substDel2a_b48r #substDel2b_b48r'"/>
+            <substJoin n="10-11" target="#substAdd3a_b48r #substAdd3b_b48r"/>
+            <div2><anchor xml:id="b48r_div2_d2e43"/>
+               <p>
+                  <lb n="1" xml:id="b48r_lb1"/>die Agonie des gemarterten Herzens, <add place="above" rend="insM" xml:id="b48r_add_d2e50">die Krämpfe eines unbekannten Glücks,</add> der Schrei nach „Erlösung“. In der That, mit diesem 
+                  <lb n="2" xml:id="b48r_lb2"/>System von Prozeduren war die <add place="above" rend="insM" xml:id="b48r_add_d2e55">alte</add> Depression<add place="inline" rend="insM" seq="1" xml:id="b48r_add_d2e58">, <add place="above" rend="insM" seq="1" instant="true" xml:id="b48r_add_d2e60"><add place="inline" rend="insMExt" seq="2" xml:id="b48r_add_d2e61">Schwere </add><subst xml:id="b48r_subst_d2e63"><del rend="overwritten" seq="2">die</del><add place="superimposed" seq="2" xml:id="b48r_add_d2e66">und</add></subst> Müdigkeit<subst xml:id="b48r_subst_d2e69"><del rend="overwritten" seq="2">,</del><add place="superimposed" seq="2" xml:id="b48r_add_d2e72"> g</add><add place="inline" rend="insMExt" seq="2" xml:id="b48r_add_d2e74">ründlich</add></subst></add></add> <hi rend="underline">überwunden</hi><add place="inline" seq="1" xml:id="b48r_add_d2e80">,<add place="above" rend="insM" seq="1" instant="true" xml:id="b48r_add_d2e82"> das Leben <subst xml:id="b48r_subst_d2e84"><del rend="overwritten" seq="3">war</del><add place="superimposed" seq="3" xml:id="b48r_add_d2e87">wurde</add></subst> <add place="above" rend="insM" seq="2" xml:id="b48r_add_d2e90">wieder</add> <hi rend="underline">sehr</hi> interessant <del rend="hatching" seq="3">geworden</del></add></add>: wach, ewig wach, übernächtig, 
+                  <lb n="3" xml:id="b48r_lb3"/><add place="above" rend="insM" xml:id="b48r_add_d2e100">glühend, verkohlt, </add>erschöpft und doch nicht müde – so nahm sich der Mensch aus, <add place="above" rend="insM" xml:id="b48r_add_d2e103">„der Sünder“,</add> der in <hi rend="underline">diese</hi> Mysterien ein<pc force="weak">-</pc>
+                  <lb n="4" xml:id="b48r_lb4"/>geweiht war. Dieser <add place="above" rend="insM" xml:id="b48r_add_d2e115">alte</add> große Zauberer im Kampf mit der Unlust, der asketische Priester – <milestone unit="page" edRef="#Ed" n="157"/>er hat<del rend="strikethrough" seq="1">te</del><add xml:id="substAdd2a_b48r" place="below" seq="2">te</add> <add place="above" rend="insM" xml:id="b48r_add_d2e125">ersichtlich</add> 
+                  <lb n="5" xml:id="b48r_lb5"/>gesiegt<subst xml:id="b48r_subst_d2e131"><add place="inline" seq="1" xml:id="b48r_add_d2e132">,</add><del rend="strikethrough" cause="insM" seq="1">:</del><add place="above" rend="insM" seq="1" xml:id="b48r_add_d2e136"> <del xml:id="substDel2a_b48r" rend="strikethrough" seq="2">man sehe sich nur um</del><subst xml:id="subst2a_b48r"><del rend="overwritten" seq="2">:</del><add place="superimposed" seq="2" xml:id="b48r_add_d2e143"><hi rend="underline">s</hi></add></subst><add xml:id="substAdd2aa_b48r" place="inline" rend="insMExt" seq="2"><hi rend="underline">ein</hi> Reich war gekommen:</add></add></subst> schon klagt<add xml:id="substAdd2b_b48r" place="inline" seq="2">e</add> man nicht mehr <hi rend="underline">gegen</hi> den Schmerz, man <hi rend="underline">lechzt</hi><add xml:id="substAdd2c_b48r" place="inline" seq="2">e</add> nach dem Schmerz; „<hi rend="underline">mehr</hi> 
+                  <lb n="6" xml:id="b48r_lb6"/>Schmerz! <hi rend="underline">mehr</hi> Schmerz!“ so <subst xml:id="subst2b_b48r" seq="2"><add place="above" rend="insM" xml:id="b48r_add_d2e172">schrie</add><del rend="hatching">schreit</del></subst> das Verlangen <subst xml:id="b48r_subst_d2e177"><add place="above" rend="insM" xml:id="b48r_add_d2e178">seiner<add place="inline" rend="insMExt" xml:id="b48r_add_d2e180"> Jünger und</add></add><del rend="hatching">der</del></subst> Eingeweihten<subst xml:id="b48r_subst_d2e185"><add place="above" rend="insM" xml:id="b48r_add_d2e186"> Jahrhunderte lang.</add><del rend="strikethrough">.</del></subst> <restore type="hatching"><hi rend="underline">Jede</hi></restore> Ausschweifung des 
+                  <lb n="7" xml:id="b48r_lb7"/>Gefühls, die wehe th<restore type="dotUnderline" cert="unknown"><subst xml:id="subst2c_b48r" seq="2"><del rend="overwritten">u</del><add place="superimposed" xml:id="b48r_add_d2e202">a</add></subst></restore>t<add place="inline" xml:id="b48r_add_d2e206">,<add place="above" rend="insM" instant="true" xml:id="b48r_add_d2e208"> Alles was <add hand="#N_red" place="inline" xml:id="b48r_add_d2e210"><metamark xml:id="mark1a_b48r" target="#mark1b_b48r #substAdd1_b48r">+</metamark></add> zerbr<subst xml:id="subst2d_b48r" seq="2"><del rend="overwritten">icht</del><add place="superimposed" xml:id="b48r_add_d2e217">ach</add></subst>, umw<subst xml:id="subst2e_b48r" seq="2"><del rend="overwritten">irft</del><add place="superimposed" xml:id="b48r_add_d2e223">arf</add></subst>, zermalmt<add xml:id="substAdd2d_b48r" place="inline" seq="2">e</add>, entrückt<add xml:id="substAdd2e_b48r" place="inline" seq="2">e</add>*,<add place="inline" rend="insMExt" xml:id="b48r_add_d2e233"> verzückt<add xml:id="substAdd2f_b48r" place="inline" seq="2">e</add></add></add></add><del rend="hatching">: das h<subst xml:id="subst2f_b48r" seq="2"><del rend="overwritten">eißt</del><add place="superimposed" xml:id="b48r_add_d2e242">ieß</add></subst> nunmehr Wollust</del><subst instant="true" change="#version0" xml:id="b48r_subst_d2e246"><del rend="overwritten">.</del><add place="superimposed" xml:id="b48r_add_d2e249">,</add></subst> das Geheimniß der Folterstätten, die 
+                  <lb n="8" xml:id="b48r_lb8"/>Erfindsamkeit der Hölle <add place="above" rend="insM" xml:id="b48r_add_d2e255">selbst</add> – Alles <subst xml:id="subst2g_b48r" seq="2"><add place="above" rend="insM" xml:id="b48r_add_d2e259">war nunmehr</add><del rend="hatching">ist</del></subst> entdeckt<add place="above" rend="insM" xml:id="b48r_add_d2e264"> errathen, ausgenützt,</add>, Alles <subst xml:id="subst2h_b48r" seq="2"><add place="below" xml:id="b48r_add_d2e268">stand</add><del rend="hatching">steht</del></subst> dem Zauberer zu Diensten, Alles
+                  <lb n="9" xml:id="b48r_lb9"/>dient<add xml:id="substAdd2g_b48r" place="inline" seq="2">e</add> <add place="above" rend="insM" xml:id="b48r_add_d2e279"><subst xml:id="subst2i_b48r" seq="2"><del rend="hatching">*zuletzt</del> <add place="inline" rend="insMExt" xml:id="b48r_add_d2e285">fürderhin</add></subst></add> dem Siege seines Ideals, des asketischen Ideals… „Mein Reich<add place="inline" xml:id="b48r_add_d2e288">, <add place="above" rend="insM" instant="true" xml:id="b48r_add_d2e290"><del xml:id="substDel2b_b48r" rend="hatching" seq="2">hat er ein Recht zu sagen,</del></add></add> ist nicht von <hi rend="underline">dieser</hi> Welt“ *– 
+                  <lb n="10" xml:id="b48r_lb10"/><add xml:id="substAdd2h_b48r" place="above" rend="insM">redete er nach wie vor: </add>hatte er wirklich das Recht noch, so zu reden?… <add xml:id="substAdd3a_b48r" place="inline">Goethe hat behauptet, es gäbe nur sechs und <add place="above" rend="insM" instant="true" xml:id="b48r_add_d2e304">dreißig tragische Situationen: man erräth daraus, wenn man’s </add></add>
+                  <lb type="addLine" n="11" xml:id="b48r_lb11"/><add xml:id="substAdd3b_b48r" place="inline">sonst <del rend="hatching">es</del> nicht wüßte, daß er <hi rend="underline">kein</hi> asketischer Priester, daß er ein <hi rend="underline">Heide</hi> war. –</add>
+            </p></div2>
+            <div2 xml:id="GM0321"><anchor xml:id="b48r_div2_GM0321"/>
+               <head xml:id="b48r_head_d2e324">
+                  <lb n="12" xml:id="b48r_lb12"/>2<subst change="#GM03completion" xml:id="b48r_subst_d2e328"><del rend="overwritten">0.</del><add hand="#N_pencil" place="superimposed" xml:id="b48r_add_d2e331">1.</add></subst></head>
+               <p>
+                  <lb n="13" rend="indent" xml:id="b48r_lb13"/>In Hinsicht auf <hi rend="underline">diese</hi> <add place="above" rend="insM" xml:id="b48r_add_d2e341">ganze</add> Art der priesterlichen Medikation, die „schuldige“ Art, ist jedes Wort 
+                  <lb n="14" xml:id="b48r_lb14"/>Kritik zu viel. Daß eine solche Ausschweifung des Gefühls, wie sie in diesem Falle der 
+                  <lb n="15" xml:id="b48r_lb15"/>asketische Priester seinen Kranken zu verordnen pflegt (unter den heiligsten Namen, wie 
+                  <lb n="16" xml:id="b48r_lb16"/>sich von selbst versteht, insgleichen durchdrungen von der Heiligkeit <subst xml:id="b48r_subst_d2e351"><add place="above" rend="insM" xml:id="b48r_add_d2e352">seines</add><del rend="hatching">des</del></subst> Zwecks) irgend einem 
+                  <lb n="17" xml:id="b48r_lb17"/>Kranken wirklich <hi rend="underline">genützt</hi> habe, wer hätte wohl Lust, eine Behauptung der Art aufrecht zu 
+                  <lb n="18" xml:id="b48r_lb18"/>halten? Zum Mindesten sollte man sich über das Wort „nützen“ verstehn. Will man da<pc force="weak">-</pc>
+                  <lb n="19" xml:id="b48r_lb19"/>mit ausdrücken, ein solches System von Behandlung habe den Menschen <hi rend="underline">verbessert</hi>, so wider<pc force="weak">-</pc>
+                  <lb n="20" xml:id="b48r_lb20"/>spreche ich nicht: nur daß ich hinzufüge, was bei mir „verbessert“ heißt – ebenso viel wie 
+                  <lb n="21" xml:id="b48r_lb21"/>„ge<milestone unit="page" edRef="#Ed" n="158"/>zähmt“, „geschwächt“, „entmuthigt“, „raffinirt“, „verzärtlicht“, „entmannt“ (<add place="above" rend="insM" xml:id="b48r_add_d2e383">also </add>beinahe so viel als <del rend="strikethrough">„</del><hi rend="underline">geschä</hi><pc force="weak">-</pc>
+                  <lb n="22" xml:id="b48r_lb22"/><hi rend="underline">digt</hi><del rend="strikethrough">“</del>…) Wenn es sich aber <add place="above" rend="insM" xml:id="b48r_add_d2e399">in der Hauptsache</add> um Kranke, Verstimmte, Deprimirte handelt, so macht <choice xml:id="b48r_choice_d2e403"><sic>eine</sic><corr>ein</corr></choice> sol<pc force="weak">-</pc>
+                  <lb n="23" xml:id="b48r_lb23"/>ches System den Kranken <add place="above" rend="insM" xml:id="b48r_add_d2e412">gesetzt selbst, daß es ihn „besser“ machte, unter allen Umständen</add> <hi rend="underline">kränker</hi>; man frage nur die Irrenärzte, was eine methodi<pc force="weak">-</pc>
+                  <lb n="24" xml:id="b48r_lb24"/>sche Anwendung von Buß-Quälereien, Zerknirschungen und Erlösungskrämpfen<add place="inline" xml:id="b48r_add_d2e424"><del rend="hatching">,</del></add> <add place="above" rend="insM" xml:id="b48r_add_d2e428">immer</add> mit sich führt. 
+                  <lb n="25" xml:id="b48r_lb25"/>Insgleichen befrage man die Geschichte: überall, wo der asketische Priester diese Kranken<pc force="weak">-</pc>
+               </p>
+               <ab xml:id="b48r_ab_d2e438">
+                  <add xml:id="substAdd1_b48r" place="bottom-left" status="duplicate">
+                     <lb n="26" xml:id="b48r_lb26"/><add hand="#N_red" place="inline" xml:id="b48r_add_d2e443"><metamark xml:id="mark1b_b48r" target="mark1a_b48r">+</metamark></add> zerbrach, umwarf</add></ab>
+               </div2></div1>
+        </body>
+   </text>
+<sourceDoc>
+        <surface xml:id="srcD_surface_b48r" type="relative" start="#b48r" facs="#D-20b_47">
+            <zone xml:id="srcD_zone_b48r_div2_d2e43" start="#b48r_div2_d2e43" type="firstBlock" style="padding-top:5em;">
+                <zone xml:id="srcD_zone_b48r_fw_d2e26" type="fw-top-left" start="#b48r_fw_d2e26">
+                    <fw type="pageNumber" hand="#N_pencil" place="top-left" corresp="#b48r_fw_d2e26">47</fw>
+                </zone>
+                <zone xml:id="srcD_zone_b48r_fw_d2e29" type="fw-top-right" start="#b48r_fw_d2e29">
+                    <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#b48r_fw_d2e29">
+                        <del rend="erased">83</del>
+                    </fw>
+                </zone>
+                <line xml:id="srcD_line_b48r_lb1" start="#b48r_lb1" n="1">die Agonie des gemarterten Herzens, <metamark xml:id="srcD_metamark_b48r_add_d2e50" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b48r_add_d2e50">die Krämpfe eines unbekannten Glücks,</add>
+                    </metamark> der Schrei nach „Erlösung“. In der That, mit diesem 
+                  </line>
+                <line xml:id="srcD_line_b48r_lb2" start="#b48r_lb2" n="2">System von Prozeduren war die <metamark xml:id="srcD_metamark_b48r_add_d2e55" function="insertion" rend="inSpatium" style="top:-0.125em;height:1.4375em;">
+                        <add place="above" corresp="#b48r_add_d2e55" style="left:-1.25em;">alte</add>
+                    </metamark> Depression<add place="inline" rend="insM" corresp="#b48r_add_d2e58">, <metamark xml:id="srcD_metamark_b48r_add_d2e60" function="insertion" rend="inSpatium" style="top:0.390625em;height:0.9375em;">
+                            <add place="above" instant="true" corresp="#b48r_add_d2e60" style="left:-6.40629em;">
+                                <add place="inline" rend="insMExt" corresp="#b48r_add_d2e61">Schwere </add>
+                                <del rend="overwritten" cause="#b48r_add_d2e66">die</del>
+                                <add place="superimposed" corresp="#b48r_add_d2e66">und</add> Müdigkeit<del rend="overwritten" cause="#b48r_add_d2e72">,</del>
+                                <add place="superimposed" corresp="#b48r_add_d2e72"> g</add>
+                                <add place="inline" rend="insMExt" corresp="#b48r_add_d2e74">ründlich</add>
+                            </add>
+                        </metamark>
+                    </add> <hi rend="underline">überwunden</hi>
+                    <add place="inline" corresp="#b48r_add_d2e80">,<metamark xml:id="srcD_metamark_b48r_add_d2e82" function="insertion" rend="inWord">
+                            <add place="above" instant="true" corresp="#b48r_add_d2e82"> das Leben <del rend="overwritten" cause="#b48r_add_d2e87">war</del>
+                                <add place="superimposed" corresp="#b48r_add_d2e87">wurde</add> <metamark xml:id="srcD_metamark_b48r_add_d2e90" function="insertion" rend="inSpatium" style="top:0.624999em;height:0.703126em;">
+                                    <add place="above" corresp="#b48r_add_d2e90" style="left:-0.292969em;">wieder</add>
+                                </metamark> <hi rend="underline">sehr</hi> interessant <del rend="hatching">geworden</del>
+                            </add>
+                        </metamark>
+                    </add>: wach, ewig wach, übernächtig, 
+                  </line>
+                <line xml:id="srcD_line_b48r_lb3" start="#b48r_lb3" n="3">
+                    <metamark xml:id="srcD_metamark_b48r_add_d2e100" function="insertion">
+                        <add place="above" corresp="#b48r_add_d2e100">glühend, verkohlt, </add>
+                    </metamark>erschöpft und doch nicht müde – so nahm sich der Mensch aus, <metamark xml:id="srcD_metamark_b48r_add_d2e103" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b48r_add_d2e103">„der Sünder“,</add>
+                    </metamark> der in <hi rend="underline">diese</hi> Mysterien ein<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_b48r_lb4" start="#b48r_lb4" n="4">geweiht war. Dieser <metamark xml:id="srcD_metamark_b48r_add_d2e115" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b48r_add_d2e115">alte</add>
+                    </metamark> große Zauberer im Kampf mit der Unlust, der asketische Priester – <milestone unit="page" edRef="#Ed" n="157"/>er hat<del rend="strikethrough">te</del>
+                    <add corresp="#substAdd2a_b48r" place="below">te</add> <metamark xml:id="srcD_metamark_b48r_add_d2e125" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b48r_add_d2e125">ersichtlich</add>
+                    </metamark> 
+                  </line>
+                <line xml:id="srcD_line_b48r_lb5" start="#b48r_lb5" n="5">gesiegt<add place="inline" corresp="#b48r_add_d2e132">,</add>
+                    <del rend="strikethrough" cause="insM">:</del>
+                    <metamark xml:id="srcD_metamark_b48r_add_d2e136" function="insertion" rend="afterWord">
+                        <add place="above" corresp="#b48r_add_d2e136"> <del corresp="#substDel2a_b48r" rend="strikethrough">man sehe sich nur um</del>
+                            <del rend="overwritten" cause="#b48r_add_d2e143">:</del>
+                            <add place="superimposed" corresp="#b48r_add_d2e143">
+                                <hi rend="underline">s</hi>
+                            </add>
+                            <add corresp="#substAdd2aa_b48r" place="inline" rend="insMExt">
+                                <hi rend="underline">ein</hi> Reich war gekommen:</add>
+                        </add>
+                    </metamark> schon klagt<add corresp="#substAdd2b_b48r" place="inline">e</add> man nicht mehr <hi rend="underline">gegen</hi> den Schmerz, man <hi rend="underline">lechzt</hi>
+                    <add corresp="#substAdd2c_b48r" place="inline">e</add> nach dem Schmerz; „<hi rend="underline">mehr</hi> 
+                  </line>
+                <line xml:id="srcD_line_b48r_lb6" start="#b48r_lb6" n="6">Schmerz! <hi rend="underline">mehr</hi> Schmerz!“ so <metamark xml:id="srcD_metamark_b48r_add_d2e172" function="insertion">
+                        <add place="above" corresp="#b48r_add_d2e172">schrie</add>
+                    </metamark>
+                    <del rend="hatching">schreit</del> das Verlangen <metamark xml:id="srcD_metamark_b48r_add_d2e178" function="insertion">
+                        <add place="above" corresp="#b48r_add_d2e178">seiner<add place="inline" rend="insMExt" corresp="#b48r_add_d2e180"> Jünger und</add>
+                        </add>
+                    </metamark>
+                    <del rend="hatching">der</del> Eingeweihten<metamark xml:id="srcD_metamark_b48r_add_d2e186" function="insertion" rend="beforePunctuation">
+                        <add place="above" corresp="#b48r_add_d2e186"> Jahrhunderte lang.</add>
+                    </metamark>
+                    <del rend="strikethrough">.</del> <restore type="hatching">
+                        <hi rend="underline">Jede</hi>
+                    </restore> Ausschweifung des 
+                  </line>
+                <line xml:id="srcD_line_b48r_lb7" start="#b48r_lb7" n="7">Gefühls, die wehe th<restore type="dotUnderline" cert="unknown">
+                        <del rend="overwritten" cause="#b48r_add_d2e202">u</del>
+                        <add place="superimposed" corresp="#b48r_add_d2e202">a</add>
+                    </restore>t<add place="inline" corresp="#b48r_add_d2e206">,<metamark xml:id="srcD_metamark_b48r_add_d2e208" function="insertion" rend="inWord">
+                            <add place="above" instant="true" corresp="#b48r_add_d2e208"> Alles was <add hand="#N_red" place="inline" corresp="#b48r_add_d2e210">
+                                    <metamark corresp="#mark1a_b48r" target="#mark1b_b48r #substAdd1_b48r">+</metamark>
+                                </add> zerbr<del rend="overwritten" cause="#b48r_add_d2e217">icht</del>
+                                <add place="superimposed" corresp="#b48r_add_d2e217">ach</add>, umw<del rend="overwritten" cause="#b48r_add_d2e223">irft</del>
+                                <add place="superimposed" corresp="#b48r_add_d2e223">arf</add>, zermalmt<add corresp="#substAdd2d_b48r" place="inline">e</add>, entrückt<add corresp="#substAdd2e_b48r" place="inline">e</add>*,<add place="inline" rend="insMExt" corresp="#b48r_add_d2e233"> verzückt<add corresp="#substAdd2f_b48r" place="inline">e</add>
+                                </add>
+                            </add>
+                        </metamark>
+                    </add>
+                    <del rend="hatching">: das h<del rend="overwritten" cause="#b48r_add_d2e242">eißt</del>
+                        <add place="superimposed" corresp="#b48r_add_d2e242">ieß</add> nunmehr Wollust</del>
+                    <del rend="overwritten" cause="#b48r_add_d2e249">.</del>
+                    <add place="superimposed" corresp="#b48r_add_d2e249" instant="true">,</add> das Geheimniß der Folterstätten, die 
+                  </line>
+                <line xml:id="srcD_line_b48r_lb8" start="#b48r_lb8" n="8">Erfindsamkeit der Hölle <metamark xml:id="srcD_metamark_b48r_add_d2e255" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b48r_add_d2e255">selbst</add>
+                    </metamark> – Alles <metamark xml:id="srcD_metamark_b48r_add_d2e259" function="insertion">
+                        <add place="above" corresp="#b48r_add_d2e259">war nunmehr</add>
+                    </metamark>
+                    <del rend="hatching">ist</del> entdeckt<metamark xml:id="srcD_metamark_b48r_add_d2e264" function="insertion" rend="beforePunctuation">
+                        <add place="above" corresp="#b48r_add_d2e264"> errathen, ausgenützt,</add>
+                    </metamark>, Alles <add corresp="#b48r_add_d2e268" place="below">stand</add>
+                    <del rend="hatching">steht</del> dem Zauberer zu Diensten, Alles
+                  </line>
+                <line xml:id="srcD_line_b48r_lb9" start="#b48r_lb9" n="9">dient<add corresp="#substAdd2g_b48r" place="inline">e</add> <metamark xml:id="srcD_metamark_b48r_add_d2e279" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b48r_add_d2e279">
+                            <del rend="hatching">*zuletzt</del> <add place="inline" rend="insMExt" corresp="#b48r_add_d2e285">fürderhin</add>
+                        </add>
+                    </metamark> dem Siege seines Ideals, des asketischen Ideals… „Mein Reich<add place="inline" corresp="#b48r_add_d2e288">, <metamark xml:id="srcD_metamark_b48r_add_d2e290" function="insertion" rend="inSpatium">
+                            <add place="above" instant="true" corresp="#b48r_add_d2e290">
+                                <del corresp="#substDel2b_b48r" rend="hatching">hat er ein Recht zu sagen,</del>
+                            </add>
+                        </metamark>
+                    </add> ist nicht von <hi rend="underline">dieser</hi> Welt“ *– 
+                  </line>
+                <line xml:id="srcD_line_b48r_lb10" start="#b48r_lb10" n="10">
+                    <metamark xml:id="srcD_metamark_substAdd2h_b48r" function="insertion">
+                        <add place="above" corresp="#substAdd2h_b48r">redete er nach wie vor: </add>
+                    </metamark>hatte er wirklich das Recht noch, so zu reden?… <add corresp="#substAdd3a_b48r" place="inline">Goethe hat behauptet, es gäbe nur sechs und <metamark xml:id="srcD_metamark_b48r_add_d2e304" function="insertion" rend="inSpatium" style="top:-0.46875em;height:1.79688em;">
+                            <add place="above" instant="true" corresp="#b48r_add_d2e304" style="left:-18.2813em;">dreißig tragische Situationen: man erräth daraus, wenn man’s </add>
+                        </metamark>
+                    </add>
+                  </line>
+                <zone xml:id="srcD_zone_b48r_lb11" start="#b48r_lb11" type="add-zone" style="margin-left:-0.078125em;">
+                    <line xml:id="srcD_line_b48r_lb11" start="#b48r_lb11" style="top:43.9063em;" n="11">
+                        <add corresp="#substAdd3b_b48r" place="inline">sonst <del rend="hatching">es</del> nicht wüßte, daß er <hi rend="underline">kein</hi> asketischer Priester, daß er ein <hi rend="underline">Heide</hi> war. –</add>
+            
+            <anchor corresp="#b48r_div2_GM0321"/>
+               
+                  </line>
+                </zone>
+            </zone>
+            <zone xml:id="srcD_zone_b48r_div2_GM0321" start="#b48r_div2_GM0321" type="lastBlock" style="padding-bottom:5em;">
+                <line xml:id="srcD_line_b48r_head_d2e324_b48r_lb12" start="#b48r_lb12" n="12">
+                    <zone xml:id="srcD_zone_b48r_head_d2e324_b48r_lb12" type="head">2<del rend="overwritten" cause="#b48r_add_d2e331">0.</del>
+                        <add hand="#N_pencil" place="superimposed" corresp="#b48r_add_d2e331">1.</add>
+               
+                  </zone>
+                </line>
+                <line xml:id="srcD_line_b48r_lb13" start="#b48r_lb13" rend="indent" n="13">In Hinsicht auf <hi rend="underline">diese</hi> <metamark xml:id="srcD_metamark_b48r_add_d2e341" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b48r_add_d2e341">ganze</add>
+                    </metamark> Art der priesterlichen Medikation, die „schuldige“ Art, ist jedes Wort 
+                  </line>
+                <line xml:id="srcD_line_b48r_lb14" start="#b48r_lb14" n="14">Kritik zu viel. Daß eine solche Ausschweifung des Gefühls, wie sie in diesem Falle der 
+                  </line>
+                <line xml:id="srcD_line_b48r_lb15" start="#b48r_lb15" n="15">asketische Priester seinen Kranken zu verordnen pflegt (unter den heiligsten Namen, wie 
+                  </line>
+                <line xml:id="srcD_line_b48r_lb16" start="#b48r_lb16" n="16">sich von selbst versteht, insgleichen durchdrungen von der Heiligkeit <metamark xml:id="srcD_metamark_b48r_add_d2e352" function="insertion">
+                        <add place="above" corresp="#b48r_add_d2e352">seines</add>
+                    </metamark>
+                    <del rend="hatching">des</del> Zwecks) irgend einem 
+                  </line>
+                <line xml:id="srcD_line_b48r_lb17" start="#b48r_lb17" n="17">Kranken wirklich <hi rend="underline">genützt</hi> habe, wer hätte wohl Lust, eine Behauptung der Art aufrecht zu 
+                  </line>
+                <line xml:id="srcD_line_b48r_lb18" start="#b48r_lb18" n="18">halten? Zum Mindesten sollte man sich über das Wort „nützen“ verstehn. Will man da<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_b48r_lb19" start="#b48r_lb19" n="19">mit ausdrücken, ein solches System von Behandlung habe den Menschen <hi rend="underline">verbessert</hi>, so wider<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_b48r_lb20" start="#b48r_lb20" n="20">spreche ich nicht: nur daß ich hinzufüge, was bei mir „verbessert“ heißt – ebenso viel wie 
+                  </line>
+                <line xml:id="srcD_line_b48r_lb21" start="#b48r_lb21" n="21">„ge<milestone unit="page" edRef="#Ed" n="158"/>zähmt“, „geschwächt“, „entmuthigt“, „raffinirt“, „verzärtlicht“, „entmannt“ (<metamark xml:id="srcD_metamark_b48r_add_d2e383" function="insertion" rend="inWord">
+                        <add place="above" corresp="#b48r_add_d2e383">also </add>
+                    </metamark>beinahe so viel als <del rend="strikethrough">„</del>
+                    <hi rend="underline">geschä</hi>
+                    <pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_b48r_lb22" start="#b48r_lb22" n="22">
+                    <hi rend="underline">digt</hi>
+                    <del rend="strikethrough">“</del>…) Wenn es sich aber <metamark xml:id="srcD_metamark_b48r_add_d2e399" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b48r_add_d2e399">in der Hauptsache</add>
+                    </metamark> um Kranke, Verstimmte, Deprimirte handelt, so macht <choice corresp="#b48r_choice_d2e403">
+                        <sic>eine</sic>
+                        <corr>ein</corr>
+                    </choice> sol<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_b48r_lb23" start="#b48r_lb23" n="23">ches System den Kranken <metamark xml:id="srcD_metamark_b48r_add_d2e412" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b48r_add_d2e412">gesetzt selbst, daß es ihn „besser“ machte, unter allen Umständen</add>
+                    </metamark> <hi rend="underline">kränker</hi>; man frage nur die Irrenärzte, was eine methodi<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_b48r_lb24" start="#b48r_lb24" n="24">sche Anwendung von Buß-Quälereien, Zerknirschungen und Erlösungskrämpfen<add place="inline" corresp="#b48r_add_d2e424">
+                        <del rend="hatching">,</del>
+                    </add> <metamark xml:id="srcD_metamark_b48r_add_d2e428" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#b48r_add_d2e428">immer</add>
+                    </metamark> mit sich führt. 
+                  </line>
+                <line xml:id="srcD_line_b48r_lb25" start="#b48r_lb25" n="25">Insgleichen befrage man die Geschichte: überall, wo der asketische Priester diese Kranken<pc force="weak">-</pc>
+               
+               
+                  
+                     </line>
+                <zone xml:id="srcD_zone_b48r_ab_d2e438_b48r_lb26" start="#b48r_lb26" type="ab-zone" style="margin-left:20.9375em;">
+                    <line xml:id="srcD_line_b48r_lb26" start="#b48r_lb26" style="bottom:3.625em;" n="26">
+                        <add place="bottom-left" status="duplicate">
+                            <add hand="#N_red" place="inline" corresp="#b48r_add_d2e443">
+                                <metamark corresp="#mark1b_b48r" target="mark1a_b48r">+</metamark>
+                            </add> zerbrach, umwarf</add>
+                    </line>
+                </zone>
+                <zone xml:id="srcD_zone_b48r_fw_d2e33" type="fw-bottom-left" start="#b48r_fw_d2e33">
+                    <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#b48r_fw_d2e33">48</fw>
+                </zone>
+            </zone>
+        </surface>
+    </sourceDoc>
+</TEI>
