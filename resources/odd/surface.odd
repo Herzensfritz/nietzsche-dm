@@ -426,10 +426,22 @@
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><pb-highlight key="[[target]]" highlight-self="highlight-self" duration="5000">[[content]]</pb-highlight></pb:template>
         </model></elementSpec>
-                <elementSpec ident="term" mode="add"><model behaviour="pass-through">
+                <elementSpec ident="term" mode="add"><model predicate="@type='lem' and @target" behaviour="pass-through">
+            <param name="id" value="substring-after(@target, '#')"/>
+            <param name="content" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><span class="term highlightTarget"><pb-highlight key="[[id]]" highlight-self="highlight-self" duration="5000">[[content]]</pb-highlight> ]</span></pb:template>
+        </model><model predicate="@type='lem'" behaviour="pass-through">
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><span class="term">[[content]] ]</span></pb:template>
-        </model></elementSpec>
+        </model><model predicate="@target" behaviour="pass-through">
+            <param name="id" value="substring-after(@target, '#')"/>
+            <param name="content" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><pb-highlight key="[[id]]" highlight-self="highlight-self" duration="5000"><span class="term highlightTarget">[[content]]</span></pb-highlight></pb:template>
+        </model><model predicate="@corresp" behaviour="pass-through">
+            <param name="id" value="substring-after(@corresp, '#')"/>
+            <param name="content" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><pb-highlight key="[[id]]" duration="5000">[[content]]</pb-highlight></pb:template>
+        </model><model behaviour="inline" cssClass="term"/></elementSpec>
             </schemaSpec>
         </body>
     </text></TEI>

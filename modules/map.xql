@@ -34,9 +34,10 @@ declare function mapping:nietzsche-notes($root as element(), $userParams as map(
         root($root)//tei:text//tei:note[@type="editorial" and preceding::tei:pb[@xml:id = $pbId]]    
     )
     let $div := <div xmlns="http://www.tei-c.org/ns/1.0" type="noteDiv">{ for $note in $notes
-            let $target := local:getLineTargets($root, $note/@xml:id, $note/text(), true())
-            let $targetEnd := local:getLineTargets($root, $note/@xml:id, $note/text(), false())
-            return if ($targetEnd) then (<note xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$note/@xml:id}" type="{$note/@type}" 
+            return if ($note/@target and $note/tei:term) then ($note) else (
+                let $target := if ($note/@target) then ($note/@target) else (local:getLineTargets($root, $note/@xml:id, $note/text(), true()))
+                let $targetEnd := if ($note/@targetEnd) then ($note/@targetEnd) else (local:getLineTargets($root, $note/@xml:id, $note/text(), false()))
+                return if ($targetEnd) then (<note xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$note/@xml:id}" type="{$note/@type}" 
                             target="{$target}" targetEnd="{$targetEnd}">
                             {local:parseNoteContent($note)}
                             </note>) 
@@ -46,6 +47,7 @@ declare function mapping:nietzsche-notes($root as element(), $userParams as map(
                             {local:parseNoteContent($note)}
                             </note>
                      )
+            )
     }</div>
     let $log := console:log($div)
     return $div
@@ -68,7 +70,7 @@ declare function local:parseNoteContent($item as item()*) {
     ) else (
         if (matches($item/text()[1], '.*[0-9]:')) then (
             substring-after($item/text()[1], ':'), ($item/*|$item/text()[position() gt 1])    
-        ) else ($item)    
+        ) else ($item/(*|text()))    
     )    
 };
 

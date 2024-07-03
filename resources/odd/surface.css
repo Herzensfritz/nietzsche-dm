@@ -18,6 +18,9 @@ body {
 .note .term {
     font-style: normal;
 }
+.term.highlightTarget {
+    color:  var(--blue, blue);
+}
 .retrace {
     font-weight: 1000;
 }
