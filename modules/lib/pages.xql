@@ -33,6 +33,7 @@ import module namespace pm-config="http://www.tei-c.org/tei-simple/pm-config" at
 import module namespace tpu="http://www.tei-c.org/tei-publisher/util" at "lib/util.xql";
 import module namespace lib="http://exist-db.org/xquery/html-templating/lib";
 import module namespace console="http://exist-db.org/xquery/console";
+declare namespace http="http://expath.org/ns/http-client";
 
 declare variable $pages:EXIDE :=
     let $pkg := collection(repo:get-root())//expath:package[@name = "http://exist-db.org/apps/eXide"]
@@ -57,6 +58,15 @@ declare function pages:parse-myparams($node as node(), $model as map(*)) {
     let $file := replace($model?doc, '_tp','')
     let $a := <a href="/exist/restxq/transform?file={$file}" target="topoTEI">topoTEI</a>
     return $a  
+    ) else ($node)
+    
+};
+declare function pages:check-toc($node as node(), $model as map(*)) {
+    let $uri := concat('http://localhost:8080/exist/apps/nietzsche-dm/api/document/',$model?doc,'/contents')
+    return if ($model?doc and count(doc($uri)//li) eq 0) then (
+       let $file := replace($model?doc, '_tp','')
+       let $a := <a href="/exist/restxq/transform?file={$file}" target="topoTEI">topoTEI</a>
+        return $a  
     ) else ($node)
     
 };

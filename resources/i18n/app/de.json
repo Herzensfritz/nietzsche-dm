@@ -5,12 +5,13 @@
         "over": "auf",
         "overwritten": "überschrieben",
         "page": "Seite",
-        "choice-underline": "Korrekturen auf Transkription visualisieren",
+        "choice-underline": "Korrekturen auf Transkription unterwellen",
         "deletion-popover": "Popover bei Streichungen/Schraffuren anzeigen",
         "edref-lb": "KGW/KSA Zeilenumbruch anzeigen",
         "erased": "radiert",
         "XXX_red": "unbekannte fremde Hand",
         "typesetter_pencil": "Schriftsetzer: Bleistift",
+        "typesetter_blue": "Schriftsetzer: blauer Stift",
         "typesetter_red": "Schriftsetzer: roter Stift",
         "N-Archiv_red": "fremde Hand: Nietzsche Archiv",
         "N_pencil": "Nietzsche: Bleistift",
@@ -24,6 +25,7 @@
         "deleted-N_brown": "mit braunem Stift schraffiert",
         "deleted-N_brown1": "mit braunem Stift schraffiert",
         "strikethrough-N_brown1": "mit braunem Stift gestrichen",
+        "strikethrough-typesetter_black1": "vom Schriftsetzer gestrichen",
         "strikethrough": "gestrichen"
     }
 }

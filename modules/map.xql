@@ -43,7 +43,7 @@ declare function mapping:nietzsche-notes($root as element(), $userParams as map(
                     else (
                        <note xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$note/@xml:id}" type="{$note/@type}" 
                             target="{$target}">
-                            {local:parseNoteContent($note/text())}
+                            {local:parseNoteContent($note)}
                             </note>
                      )
     }</div>
@@ -64,7 +64,7 @@ declare function local:getLineTargets($root, $id, $text, $isFirst) {
 
 declare function local:parseNoteContent($item as item()*) {
     if (contains($item/text()[1], ']')) then (
-        <term xmlns="http://www.tei-c.org/ns/1.0" type="lem"> {local:parseNoteContent(substring-before($item/text()[1], ']')) } </term>, substring-after($item/text()[1], ']'), ($item/*|$item/text()[position() gt 1])
+        <term xmlns="http://www.tei-c.org/ns/1.0" type="lem"> {substring-after(substring-before($item/text()[1], ']'), ':') } </term>, substring-after($item/text()[1], ']'), ($item/*|$item/text()[position() gt 1])
     ) else (
         if (matches($item/text()[1], '.*[0-9]:')) then (
             substring-after($item/text()[1], ':'), ($item/*|$item/text()[position() gt 1])    

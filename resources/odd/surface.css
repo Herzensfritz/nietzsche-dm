@@ -32,11 +32,14 @@ body {
     position: inline-block;
     height: 3.5em;
 }
-.choice .overwrittenSic {
+.choiceParent .overwrittenSic {
     display: none;
 }
 .typesetter_red {
     color: var(--red);
+}
+.typesetter_blue {
+    color: var(--blue, blue);
 }
 .typesetter_black, .strikethrough-typesetter_black1 {
     color: var(--typesetter_black);

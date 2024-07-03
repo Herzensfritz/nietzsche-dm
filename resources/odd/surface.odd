@@ -144,29 +144,23 @@
             <param name="hand" value="@hand"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]" data-debug="add1"><span class="[[hand]]">[[content]]</span></span></pb:template>
-        </model><model predicate="@place = 'superimposed' and add[@place='superimposed']" behaviour="pass-through">
-            <param name="style" value="if (preceding-sibling::del[1]/@cause = @corresp and ((preceding-sibling::del[1]/preceding::*[1]/preceding-sibling::text()[1] = preceding-sibling::del[1]/preceding-sibling::text()[1] and not(matches(preceding-sibling::del[1]/preceding-sibling::*[1]/., '.*\s$')))) or ((count(preceding-sibling::del[1]/preceding-sibling::*) eq 0 or preceding-sibling::del[1]/preceding-sibling::*[1]/following-sibling::text()[1] = preceding-sibling::del[1]/preceding-sibling::text()[1]) and not(matches(preceding-sibling::del[1]/preceding-sibling::text()[1], '.*\s$')))) then ('margin-left: -0.2em;') else ()"/>
-            <param name="content" value="."/>
-            <pb:template xmlns="" xml:space="preserve"><span style="[[style]]">[[content]]</span></pb:template>
-        </model><model predicate="@place = 'superimposed'" behaviour="pass-through">
+        </model><model predicate="@place = 'superimposed' and add[@place='superimposed']" behaviour="inline"/><model predicate="@place = 'superimposed'" behaviour="pass-through">
             <param name="id" value="if (@xml:id) then (@xml:id) else (substring-after(@corresp, '#'))"/>
             <param name="hand" value="substring-after(@hand, '#')"/>
             <param name="content" value="."/>
             <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/>
-            <param name="style" value="if (parent::subst) then () else (if (preceding-sibling::del[1]/@cause = @corresp and ((preceding-sibling::del[1]/preceding::*[1]/preceding-sibling::text()[1] = preceding-sibling::del[1]/preceding-sibling::text()[1] and not(matches(preceding-sibling::del[1]/preceding-sibling::*[1]/., '.*\s$')))) or ((count(preceding-sibling::del[1]/preceding-sibling::*) eq 0 or preceding-sibling::del[1]/preceding-sibling::*[1]/following-sibling::text()[1] = preceding-sibling::del[1]/preceding-sibling::text()[1]) and not(matches(preceding-sibling::del[1]/preceding-sibling::text()[1], '.*\s$')))) then ('margin-left: -0.2em;') else ())"/>
-            <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" style="[[style]]" id="[[id]]" data-debug="[[debug]]"><span class="inline [[hand]] [[instant]]">[[content]]</span></span></pb:template>
+            <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]" data-debug="[[debug]]"><span class="inline [[hand]] [[instant]]">[[content]]</span></span></pb:template>
         </model><model predicate="parent::metamark[following-sibling::del/@cause = concat('#', @xml:id) or preceding-sibling::del/@cause = concat('#', @xml:id)] and (@place='above' or @place='below')" behaviour="pass-through">
             <param name="metamarkClass" value="if (parent::metamark/@rend) then (concat(parent::metamark/@rend, 'insertion-', @place)) else (concat('insMinsertion-', @place))"/>
             <param name="metamarkStyle" value="parent::metamark/@style"/>
             <param name="hand" value="substring-after(@hand, '#')"/>
             <param name="class" value="@place"/>
-            <param name="style" value="if (preceding-sibling::del[1]/@cause = @corresp and ((preceding-sibling::del[1]/preceding::*[1]/preceding-sibling::text()[1] = preceding-sibling::del[1]/preceding-sibling::text()[1] and not(matches(preceding-sibling::del[1]/preceding-sibling::*[1]/., '.*\s$')))) or ((count(preceding-sibling::del[1]/preceding-sibling::*) eq 0 or preceding-sibling::del[1]/preceding-sibling::*[1]/following-sibling::text()[1] = preceding-sibling::del[1]/preceding-sibling::text()[1]) and not(matches(preceding-sibling::del[1]/preceding-sibling::text()[1], '.*\s$')))) then ('margin-left: -0.2em;') else ()"/>
             <param name="content" value="."/>
             <param name="id" value="parent::metamark/@xml:id"/>
             <param name="overwritten" value="if(parent::metamark/following-sibling::del[1]/@cause = concat('#', parent::metamark/@xml:id)) then (parent::metamark/following-sibling::del[1]/text()) else (parent::metamark/preceding-sibling::del[1]/text())"/>
             <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/>
             <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]">[[overwritten]]</span><span class="[[metamarkClass]] [[hand]]" style="[[metamarkStyle]]">
-  <span class="[[class]] [[instant]]" style="[[style]]">[[content]]</span>
+  <span class="[[class]] [[instant]]">[[content]]</span>
 </span></pb:template>
         </model><model predicate="parent::metamark and (@place='above' or @place='below')" behaviour="pass-through">
             <param name="metamarkClass" value="if (parent::metamark/@rend) then (concat(parent::metamark/@rend, 'insertion-', @place)) else (concat('insMinsertion-', @place))"/>
@@ -391,7 +385,7 @@
             <param name="corr" value="corr[1]"/>
             <param name="choiceCls" value="if ($parameters?choice = 'off') then () else ('choice')"/>
             <pb:template xmlns="" xml:space="preserve"><pb-popover theme="material">
-  <span slot="default" class="[[choiceCls]]">[[sic]]</span>
+  <span slot="default" class="[[choiceCls]] choiceParent">[[sic]]</span>
   <template slot="alternate"><p class="sicCor">[[sic]] &gt; [[corr]]</p></template>
 </pb-popover></pb:template>
         </model><model predicate="sic and cor" behaviour="pass-through">

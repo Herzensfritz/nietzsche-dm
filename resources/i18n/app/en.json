@@ -11,6 +11,7 @@
         "edref-lb": "show KGW/KSA line breaks",
         "XXX_red": "unknown foreign hand",
         "typesetter_pencil": "typesetter: pencil",
+        "typesetter_blue": "typesetter: blue pen",
         "typesetter_red": "typesetter: red pen",
         "N-Archiv_red": "foreign hand: Nietzsche Archiv",
         "N_pencil": "Nietzsche: pencil",
@@ -24,6 +25,7 @@
         "deleted-N_brown": "hatching with brown pen",
         "deleted-N_brown1": "hatching with brown pen",
         "strikethrough-N_brown1": "strikethrough with brown pen",
+        "strikethrough-typesetter_black1": "strikethrough by the typesetter",
         "strikethrough": "strikethrough"
     }
 }
