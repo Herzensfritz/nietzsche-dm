@@ -1,4 +1,4 @@
-<?teipublisher template="surface.html" odd="surface.odd" view="surface"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+<?teipublisher template="surface.html" odd="surface.odd" view="surface" media="print"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
