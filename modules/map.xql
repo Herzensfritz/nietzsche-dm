@@ -26,6 +26,42 @@ declare function mapping:nietzsche-page($root as element(), $userParams as map(*
  : For the Nietzsche Druckmanuskript: find the notes  corresponding
  : to the surface shown in the diplomatic transcription.
  :)
+declare function mapping:nietzsche-apps($root as element(), $userParams as map(*)) {
+    if (empty(root($root)//tei:text//tei:app/tei:note[@type="editorial"]) and count(root($root)//tei:text//tei:note[@type="editorial"]) gt 0) then (
+        mapping:nietzsche-notes($root, $userParams)    
+    ) else (
+        let $pbId := substring-after($root/@start, '#')
+        let $apps := if (root($root)//tei:surface[@xml:id = $root/@xml:id]/following-sibling::tei:surface) then (
+            root($root)//tei:text//tei:app[tei:note[@type="editorial"] and preceding::tei:pb[1][@xml:id = $pbId] and following::tei:pb[preceding::tei:pb[1][@xml:id = $pbId]] ]
+        ) else (
+            root($root)//tei:text//tei:app[tei:note[@type="editorial"] and preceding::tei:pb[@xml:id = $pbId]]    
+        )
+        let $div := <div xmlns="http://www.tei-c.org/ns/1.0" type="noteDiv">{ for $app in $apps
+                return if ($app/@target) then ($app) else (
+                   element { node-name($app) } {
+                        $app/@*,
+                        local:parseLoc($root, $app/@loc),
+                        $app/(tei:lem|tei:note)
+                    }
+                )
+        }</div>
+        let $log := console:log($div)
+        return $div
+    )
+};
+declare function local:parseLoc($root as node(), $loc as xs:string?) as attribute()* {
+    let $locTok := tokenize($loc, '-')
+    return if (count($locTok) gt 1) then (
+        local:createTargetAttribute($root, substring-after($locTok[1], ','),'from'), local:createTargetAttribute($root, $locTok[2],'to')
+    ) else (
+        local:createTargetAttribute($root, substring-after($locTok[1], ','),'from')    
+    )
+};
+declare function local:createTargetAttribute($root as node(), $n as xs:string, $attrName as xs:string) {
+    attribute {$attrName} {
+        concat('#',root($root)//tei:text//tei:lb[@n = $n]/@xml:id)          
+    }    
+};
 declare function mapping:nietzsche-notes($root as element(), $userParams as map(*)) {
     let $pbId := substring-after($root/@start, '#')
     let $notes := if (root($root)//tei:surface[@xml:id = $root/@xml:id]/following-sibling::tei:surface) then (

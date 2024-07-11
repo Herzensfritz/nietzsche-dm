@@ -426,9 +426,25 @@
         </model>
                     <model predicate="parent::body or parent::front or parent::back" behaviour="section"/>
                     <model behaviour="block"/>
-                </elementSpec>
-                <elementSpec ident="app" mode="add">
-                    <model behaviour="pass-through">
+        </elementSpec>
+        <elementSpec ident="app" mode="add">
+            <model predicate="@from and @to and lem and note" behaviour="pass-through">
+                <param name="target" value="substring-after(@from, '#')"/>
+                <param name="targetEnd" value="substring-after(@to, '#')"/>
+                <param name="line" value="id(substring-after(@from, '#'), $parameters?root)/@n"/>
+                <param name="lineEnd" value="id(substring-after(@to, '#'), $parameters?root)/@n"/>
+                <param name="lem" value="lem[1]"/>
+                <param name="note" value="note[1]/text()"/>
+                <pb:template xmlns="" xml:space="preserve"><div><pb-highlight key="[[target]]" highlight-self="highlight-self" duration="5000"><span style="color: blue;">[[line]]</span></pb-highlight>-<pb-highlight key="[[targetEnd]]" highlight-self="highlight-self" duration="5000"><span style="color: blue;">[[lineEnd]]</span></pb-highlight>: <span style="margin-left: 2px;">[[lem]]</span><span style="margin-right: 0.5em;">]</span><span class="note">[[note]]</span> </div></pb:template>
+        </model>
+            <model predicate="@from and lem and note" behaviour="pass-through">
+                <param name="target" value="substring-after(@from, '#')"/>
+                <param name="line" value="id(substring-after(@from, '#'), $parameters?root)/@n"/>
+                <param name="lem" value="lem[1]"/>
+                <param name="note" value="note[1]/text()"/>
+                <pb:template xmlns="" xml:space="preserve"><div><pb-highlight key="[[target]]" highlight-self="highlight-self" duration="5000"><span style="color: blue;">[[line]]</span></pb-highlight>: <span style="margin-left: 2px;">[[lem]]</span><span style="margin-right: 0.5em;">]</span><span class="note">[[note]]</span> </div></pb:template>
+        </model>
+        <model behaviour="pass-through">
             <param name="target" value="substring-after(rdg[@wit='#Dm']/@source, '#')"/>
             <param name="line" value="rdg[@wit='#Dm']/@n"/>
             <param name="rdg" value="rdg[@wit='#Dm']/(*|text())"/>
@@ -437,11 +453,7 @@
         </model>
                 </elementSpec>
                 <elementSpec ident="lem" mode="add">
-                    <model behaviour="pass-through">
-            <param name="content" value="."/>
-            <param name="ref" value="if (parent::app/@n) then (concat('Ed ', parent::app/@n)) else ('Ed')"/>
-            <pb:template xmlns="" xml:space="preserve"><span style="margin-right: 0.5em;">[[content]] ([[ref]])</span></pb:template>
-        </model>
+                    <model behaviour="inline"/>
                 </elementSpec>
                 <elementSpec ident="rdg" mode="add">
                     <model behaviour="pass-through">
@@ -487,14 +499,7 @@
                 </elementSpec>
                 <elementSpec ident="sic" mode="change">
                     <model predicate="parent::choice and count(parent::*/*) gt 1" behaviour="inline"/>
-                    <model behaviour="inline">
-            <outputRendition xml:space="preserve" scope="before">
-            content: '{';
-            </outputRendition>
-            <outputRendition xml:space="preserve" scope="after">
-            content: '}';
-            </outputRendition>
-        </model>
+                    <model behaviour="inline" cssClass="sic"/>
                 </elementSpec>
                 <elementSpec ident="element()" mode="add"/>
                 <elementSpec ident="anchor" mode="change">
