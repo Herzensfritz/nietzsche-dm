@@ -47,8 +47,8 @@ body {
 .typesetter_blue {
     color: var(--blue, blue);
 }
-.typesetter_black, .strikethrough-typesetter_black1 {
-    color: var(--typesetter_black);
+.typesetter_black, .typesetter_black1 {
+    color: var(--typesetter_black, black);
     font-weight: 600;
 }
 .N_black2 {
@@ -137,11 +137,11 @@ body {
      .top-left { text-align: left }
      .bottom-left { text-align: left }
      .top-right { margin-left: 60%; }
-     .afterWordinsertion-above, .beforePunctuationinsertion-above, .inWordinsertion-above, .inSpatiuminsertion-above, .insMinsertion-above, .Ezinsertion-above, .insertion-above { 
+     .afterWordinsertion-above, .beforePunctuationinsertion-above,.endOfLineinsertion-above, .inWordinsertion-above, .inSpatiuminsertion-above, .insMinsertion-above, .Ezinsertion-above, .insertion-above { 
          position:relative; top: -2px;height: 100%; width: 100%; }
-     .inSpatiuminsertion-above { padding-left: -3.5px;}
+    .inSpatiuminsertion-above { padding-left: -0.1em;}
      .beforePunctuationinsertion-above { padding-left: 3px;}
-     .afterWordinsertion-above:before, .beforePunctuationinsertion-above:before, .inWordinsertion-above:before, .inSpatiuminsertion-above:before, .insMinsertion-above:before, .Ezinsertion-above:before { 
+     .afterWordinsertion-above:before, .beforePunctuationinsertion-above:before, .endOfLineinsertion-above:before,.inWordinsertion-above:before, .inSpatiuminsertion-above:before, .insMinsertion-above:before, .Ezinsertion-above:before { 
         position: absolute;
         content: "";
         left: -2px;
@@ -161,8 +161,8 @@ body {
     pb-popover .Ezinsertion-above:before {
         border: 0;
     }
-    .inSpatiuminsertion-above:before { left: -3.5px; }
-    .afterWordinsertion-above:before { left: 1px;   }
+    .inSpatiuminsertion-above:before { left: -0.1em; }
+    .afterWordinsertion-above:before, .endOfLineinsertion-above:before { left: 0.05em;   }
     .inWordinsertion-above:before { left: -0.5px; }
     .beforePunctuationinsertion-above:before {  left: 2px;  }
      .below { 
@@ -232,8 +232,12 @@ body {
         .superimposed { color: green;}
     .strikethrough, .strikethrough1,.strikethrough2 , .strikethrough-typesetter_black1, .strikethrough-N_brown1 { text-decoration: line-through; }
     .strikethrough-N_brown1 {
-        text-decoration-color: var(--nbrown);
+        text-decoration-color: var(--nbrown, brown);
         text-decoration-thickness: 3px;
+    }
+    .strikethrough-typesetter_black1 {
+        text-decoration-color:var(--typesetter_black, black);
+        text-decoration-thickness: 0.1em;
     }
         .overwritten-punctuation { position: relative; color: red; }
         .overwritten-punctuation:before {

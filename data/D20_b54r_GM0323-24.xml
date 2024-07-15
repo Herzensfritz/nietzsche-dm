@@ -1,0 +1,85 @@
+<?teipublisher template="surface.html" odd="surface.odd" view="surface" media="print"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+          <title>b54r</title>
+         </titleStmt>
+         <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div1 xml:space="preserve"><anchor xml:id="b54r_div1_d2e22"/>
+            <pb xml:id="b54r" corresp="#contents_b54r #folDesc_b54rv #addDesc_b54r #N_black2" facs="#D-20b_53" change="#GM03firstVersion #GM03completion #GM03finalVersion #proofreadingCb11"/>
+            <fw type="pageNumber" hand="#N_pencil" place="top-left" xml:id="b54r_fw_d2e26">53</fw>
+            <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" xml:id="b54r_fw_d2e29"><del rend="erased">89</del></fw>
+            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="b54r_fw_d2e33">54</fw>
+            <substJoin n="b54r,12" target="#substAdd1_b54r #substDel1_b54r"/>
+            <div2><anchor xml:id="b54r_div2_d2e39"/>
+               <p>
+               <lb n="1" xml:id="b54r_lb1"/>daß die Wissenschaft als Ganzes heute ein Ziel, einen Willen, ein Ideal, eine Leidenschaft 
+               <lb n="2" xml:id="b54r_lb2"/>des großen Glaubens habe. Das Gegentheil, wie gesagt, ist der Fall: wo sie nicht die jüngste 
+               <lb n="3" xml:id="b54r_lb3"/>Erscheinungsform des asketischen Ideals ist, – es handelt sich da um zu seltne, vornehme, aus<pc force="weak">-</pc>
+               <lb n="4" xml:id="b54r_lb4"/>gesuchte Fälle, als daß damit das Gesammturtheil umgebogen werden könnte – ist die Wissenschaft 
+               <lb n="5" xml:id="b54r_lb5"/>heute ein <hi rend="underline">Versteck</hi> für alle Art Mißmuth, Unglauben, Nagewurm, <hi rend="latin">despectio sui</hi>, schlechtes Ge<pc force="weak">-</pc>
+               <lb n="6" xml:id="b54r_lb6"/>wissen, – sie ist die <hi rend="underline">Unruhe</hi> der Ideallosigkeit selbst, das Leiden am <hi rend="underline">Mangel</hi> der großen 
+               <lb n="7" xml:id="b54r_lb7"/>Liebe, das Ungenügen an einer <hi rend="underline">unfreiwilligen</hi> Genügsamkeit. Oh was verbirgt heute nicht 
+               <lb n="8" xml:id="b54r_lb8"/>Alles Wissenschaft! wie viel <hi rend="underline">soll</hi> sie mindestens verbergen! Die Tüchtigkeit unsrer besten 
+               <lb n="9" xml:id="b54r_lb9"/>Gelehrten, ihr besinnungsloser Fleiß, ihr Tag und Nacht rauchender Kopf, ihre Handwerks-Mei<pc force="weak">-</pc>
+               <lb n="10" xml:id="b54r_lb10"/>sterschaft selbst – wie oft hat das Alles seinen eigentlichen Sinn darin, <add place="above" rend="insM" xml:id="b54r_add_d2e94">sich selbst</add> irgend Etwas nicht <add place="above" rend="insM" xml:id="b54r_add_d2e97">mehr</add> 
+               <lb n="11" xml:id="b54r_lb11"/>sichtbar werden zu lassen! Die Wissenschaft als Mittel der Selbst-Betäubung: <hi rend="underline">kennt</hi> <hi rend="underline">ihr</hi> 
+               <lb n="12" xml:id="b54r_lb12"/><hi rend="underline">das</hi>?… Man verwundet <add place="above" rend="insM" seq="1" xml:id="b54r_add_d2e113"><add xml:id="substAdd1_b54r" place="inline" rend="insMExt" seq="2">sie </add>– <subst xml:id="b54r_subst_d2e117"><del rend="overwritten">j</del><add place="superimposed" xml:id="b54r_add_d2e120">J</add></subst>eder erfährt es, der mit Gelehrten umgeht –</add> mitunter durch ein harmloses Wort <add place="above" rend="insM" xml:id="b54r_add_d2e124"><del xml:id="substDel1_b54r" rend="hatching" seq="2">sie</del></add> bis auf d<subst xml:id="b54r_subst_d2e128"><del rend="overwritten">ie</del><add place="superimposed" xml:id="b54r_add_d2e131">en</add></subst> Knochen, man er<pc force="weak">-</pc>
+               <lb n="13" xml:id="b54r_lb13"/>bittert <subst xml:id="b54r_subst_d2e141"><add place="above" rend="insM" xml:id="b54r_add_d2e142">seine gelehrten Freunde</add><del rend="hatching">Menschen</del></subst> gegen sich, <subst xml:id="b54r_subst_d2e147"><add place="above" rend="insM" xml:id="b54r_add_d2e148">im Augenblick, wo man sie zu ehren meint,</add><del rend="hatching">indem man sie ehrt</del></subst>, man bringt sie außer Rand und Band, bloß 
+               <lb n="14" xml:id="b54r_lb14"/>weil man zu grob war, um zu errathen, mit wem man es eigentlich zu thun hat<del rend="hatching">te</del>, mit <hi rend="underline">Lei</hi><pc force="weak">-</pc>
+               <lb n="15" xml:id="b54r_lb15"/><hi rend="underline">denden</hi>, die es sich selbst nicht eingestehn wollen, was sie sind, mit Betäubten und Besinnungs<pc force="weak">-</pc>
+               <lb n="16" xml:id="b54r_lb16"/>losen, die nur Eins fürchten: <hi rend="underline">zum</hi> <hi rend="underline">Bewußtsein</hi> <hi rend="underline">zu</hi> <hi rend="underline">kommen</hi>…
+            </p></div2>
+            <div2 xml:id="GM0324"><anchor xml:id="b54r_div2_GM0324"/>
+               <head xml:id="b54r_head_d2e189">
+                  <lb n="17" xml:id="b54r_lb17"/><milestone unit="page" edRef="#Ed" n="166"/>24.</head>
+               <p>
+                  <lb n="18" rend="indent" xml:id="b54r_lb18"/>– Und nun sehe man sich dagegen jene seltneren Fälle an, von denen ich sprach, die letzten 
+                  <lb n="19" xml:id="b54r_lb19"/>Idealisten, die es heute unter Philosophen und Gelehrten giebt: hat man in ihnen vielleicht 
+                  <lb n="20" xml:id="b54r_lb20"/>die <add place="above" rend="insM" xml:id="b54r_add_d2e203">gesuchten</add> <hi rend="underline">Gegner</hi> des asketischen Ideals, seine <hi rend="underline">Gegen-Idealisten</hi>? In der That, sie <hi rend="underline">glauben</hi> sich 
+                  <lb n="21" xml:id="b54r_lb21"/>als solche, diese „Ungläubigen“ (denn das sind sie allesammt), es scheint gerade das ihr letzte<subst xml:id="b54r_subst_d2e218"><del rend="overwritten">r</del><add place="superimposed" xml:id="b54r_add_d2e221">s</add> <add place="above" rend="insM" xml:id="b54r_add_d2e224">Stück</add></subst>  
+                  <lb n="22" xml:id="b54r_lb22"/>Glaube, <subst xml:id="b54r_subst_d2e229"><add place="above" rend="insM" xml:id="b54r_add_d2e230">Gegner dieses Ideals zu sein, so ernsthaft sind sie an dieser Stelle, so leidenschaftlich wird da gerade ihr Wort, ihre Gebärde:</add><del rend="hatching">so ernsthaft ist er, so leidenschaftlich äußert er sich mitunter</del></subst> – brauchte e<subst xml:id="b54r_subst_d2e236"><del rend="overwritten">r</del><add place="superimposed" xml:id="b54r_add_d2e239">s</add></subst>  deshalb schon 
+                  <lb n="23" xml:id="b54r_lb23"/><hi rend="underline">wahr</hi> zu sein<add place="inline" xml:id="b54r_add_d2e248">, <add place="above" rend="insM" instant="true" xml:id="b54r_add_d2e250">was sie glauben</add></add>?… Wir „Erkennenden“ sind <add place="above" rend="insM" xml:id="b54r_add_d2e253">nachgerade</add> mißtrauisch gegen alle Art Gläubige; unser Miß<pc force="weak">-</pc>
+                  <lb n="24" xml:id="b54r_lb24"/>trauen hat <subst xml:id="b54r_subst_d2e262"><add place="above" rend="insM" xml:id="b54r_add_d2e263">uns</add><del rend="hatching">sich</del></subst> allmählich darauf eingeübt, umgekehrt zu schließen, als man ehedem schloß: 
+               </p></div2></div1>
+        </body>
+   </text>
+<sourceDoc><surface xml:id="srcD_surface_b54r" type="relative" start="#b54r" style="min-width:55em;" facs="#D-20b_53"><zone xml:id="srcD_zone_b54r_div2_d2e39" start="#b54r_div2_d2e39" type="firstBlock" style="padding-top:5em;"><zone xml:id="srcD_zone_b54r_fw_d2e26" type="fw-top-left" start="#b54r_fw_d2e26"><fw type="pageNumber" hand="#N_pencil" place="top-left" corresp="#b54r_fw_d2e26">53</fw></zone><zone xml:id="srcD_zone_b54r_fw_d2e29" type="fw-top-right" start="#b54r_fw_d2e29"><fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#b54r_fw_d2e29"><del rend="erased">89</del></fw></zone><line xml:id="srcD_line_b54r_lb1" start="#b54r_lb1" n="1">daß die Wissenschaft als Ganzes heute ein Ziel, einen Willen, ein Ideal, eine Leidenschaft 
+               </line><line xml:id="srcD_line_b54r_lb2" start="#b54r_lb2" n="2">des großen Glaubens habe. Das Gegentheil, wie gesagt, ist der Fall: wo sie nicht die jüngste 
+               </line><line xml:id="srcD_line_b54r_lb3" start="#b54r_lb3" n="3">Erscheinungsform des asketischen Ideals ist, – es handelt sich da um zu seltne, vornehme, aus<pc force="weak">-</pc>
+               </line><line xml:id="srcD_line_b54r_lb4" start="#b54r_lb4" n="4">gesuchte Fälle, als daß damit das Gesammturtheil umgebogen werden könnte – ist die Wissenschaft 
+               </line><line xml:id="srcD_line_b54r_lb5" start="#b54r_lb5" n="5">heute ein <hi rend="underline">Versteck</hi> für alle Art Mißmuth, Unglauben, Nagewurm, <hi rend="latin">despectio sui</hi>, schlechtes Ge<pc force="weak">-</pc>
+               </line><line xml:id="srcD_line_b54r_lb6" start="#b54r_lb6" n="6">wissen, – sie ist die <hi rend="underline">Unruhe</hi> der Ideallosigkeit selbst, das Leiden am <hi rend="underline">Mangel</hi> der großen 
+               </line><line xml:id="srcD_line_b54r_lb7" start="#b54r_lb7" n="7">Liebe, das Ungenügen an einer <hi rend="underline">unfreiwilligen</hi> Genügsamkeit. Oh was verbirgt heute nicht 
+               </line><line xml:id="srcD_line_b54r_lb8" start="#b54r_lb8" n="8">Alles Wissenschaft! wie viel <hi rend="underline">soll</hi> sie mindestens verbergen! Die Tüchtigkeit unsrer besten 
+               </line><line xml:id="srcD_line_b54r_lb9" start="#b54r_lb9" n="9">Gelehrten, ihr besinnungsloser Fleiß, ihr Tag und Nacht rauchender Kopf, ihre Handwerks-Mei<pc force="weak">-</pc>
+               </line><line xml:id="srcD_line_b54r_lb10" start="#b54r_lb10" n="10">sterschaft selbst – wie oft hat das Alles seinen eigentlichen Sinn darin, <metamark xml:id="srcD_metamark_b54r_add_d2e94" function="insertion" rend="inSpatium"><add place="above" corresp="#b54r_add_d2e94">sich selbst</add></metamark> irgend Etwas nicht <metamark xml:id="srcD_metamark_b54r_add_d2e97" function="insertion" rend="endOfLine"><add place="above" corresp="#b54r_add_d2e97">mehr</add></metamark> 
+               </line><line xml:id="srcD_line_b54r_lb11" start="#b54r_lb11" n="11">sichtbar werden zu lassen! Die Wissenschaft als Mittel der Selbst-Betäubung: <hi rend="underline">kennt</hi> <hi rend="underline">ihr</hi> 
+               </line><line xml:id="srcD_line_b54r_lb12" start="#b54r_lb12" n="12"><hi rend="underline">das</hi>?… Man verwundet <metamark xml:id="srcD_metamark_b54r_add_d2e113" function="insertion" rend="inSpatium" style="top:-0.125em;height:1.4375em;"><add place="above" corresp="#b54r_add_d2e113" style="left:-2.5em;"><add corresp="#substAdd1_b54r" place="inline" rend="insMExt">sie </add>– <del rend="overwritten" cause="#b54r_add_d2e120">j</del><add place="superimposed" corresp="#b54r_add_d2e120">J</add>eder erfährt es, der mit Gelehrten umgeht –</add></metamark> mitunter durch ein harmloses Wort <metamark xml:id="srcD_metamark_b54r_add_d2e124" function="insertion" rend="inSpatium"><add place="above" corresp="#b54r_add_d2e124"><del corresp="#substDel1_b54r" rend="hatching">sie</del></add></metamark> bis auf d<del rend="overwritten" cause="#b54r_add_d2e131">ie</del><add place="superimposed" corresp="#b54r_add_d2e131">en</add> Knochen, man er<pc force="weak">-</pc>
+               </line><line xml:id="srcD_line_b54r_lb13" start="#b54r_lb13" n="13">bittert <metamark xml:id="srcD_metamark_b54r_add_d2e142" function="insertion"><add place="above" corresp="#b54r_add_d2e142">seine gelehrten Freunde</add></metamark><del rend="hatching">Menschen</del> gegen sich, <metamark xml:id="srcD_metamark_b54r_add_d2e148" function="insertion"><add place="above" corresp="#b54r_add_d2e148">im Augenblick, wo man sie zu ehren meint,</add></metamark><del rend="hatching">indem man sie ehrt</del>, man bringt sie außer Rand und Band, bloß 
+               </line><line xml:id="srcD_line_b54r_lb14" start="#b54r_lb14" n="14">weil man zu grob war, um zu errathen, mit wem man es eigentlich zu thun hat<del rend="hatching">te</del>, mit <hi rend="underline">Lei</hi><pc force="weak">-</pc>
+               </line><line xml:id="srcD_line_b54r_lb15" start="#b54r_lb15" n="15"><hi rend="underline">denden</hi>, die es sich selbst nicht eingestehn wollen, was sie sind, mit Betäubten und Besinnungs<pc force="weak">-</pc>
+               </line><line xml:id="srcD_line_b54r_lb16" start="#b54r_lb16" n="16">losen, die nur Eins fürchten: <hi rend="underline">zum</hi> <hi rend="underline">Bewußtsein</hi> <hi rend="underline">zu</hi> <hi rend="underline">kommen</hi>…
+            
+            <anchor corresp="#b54r_div2_GM0324"/>
+               
+                  </line></zone><zone xml:id="srcD_zone_b54r_div2_GM0324" start="#b54r_div2_GM0324" type="lastBlock" style="padding-bottom:5em;"><line xml:id="srcD_line_b54r_head_d2e189_b54r_lb17" start="#b54r_lb17" n="17"><zone xml:id="srcD_zone_b54r_head_d2e189_b54r_lb17" type="head"><milestone unit="page" edRef="#Ed" n="166"/>24.
+               
+                  </zone></line><line xml:id="srcD_line_b54r_lb18" start="#b54r_lb18" rend="indent" n="18">– Und nun sehe man sich dagegen jene seltneren Fälle an, von denen ich sprach, die letzten 
+                  </line><line xml:id="srcD_line_b54r_lb19" start="#b54r_lb19" n="19">Idealisten, die es heute unter Philosophen und Gelehrten giebt: hat man in ihnen vielleicht 
+                  </line><line xml:id="srcD_line_b54r_lb20" start="#b54r_lb20" n="20">die <metamark xml:id="srcD_metamark_b54r_add_d2e203" function="insertion" rend="inSpatium"><add place="above" corresp="#b54r_add_d2e203">gesuchten</add></metamark> <hi rend="underline">Gegner</hi> des asketischen Ideals, seine <hi rend="underline">Gegen-Idealisten</hi>? In der That, sie <hi rend="underline">glauben</hi> sich 
+                  </line><line xml:id="srcD_line_b54r_lb21" start="#b54r_lb21" n="21">als solche, diese „Ungläubigen“ (denn das sind sie allesammt), es scheint gerade das ihr letzte<del rend="overwritten" cause="#b54r_add_d2e221">r</del><add place="superimposed" corresp="#b54r_add_d2e221">s</add> <metamark xml:id="srcD_metamark_b54r_add_d2e224" function="insertion" rend="endOfLine"><add place="above" corresp="#b54r_add_d2e224">Stück</add></metamark>  
+                  </line><line xml:id="srcD_line_b54r_lb22" start="#b54r_lb22" n="22">Glaube, <metamark xml:id="srcD_metamark_b54r_add_d2e230" function="insertion"><add place="above" corresp="#b54r_add_d2e230">Gegner dieses Ideals zu sein, so ernsthaft sind sie an dieser Stelle, so leidenschaftlich wird da gerade ihr Wort, ihre Gebärde:</add></metamark><del rend="hatching">so ernsthaft ist er, so leidenschaftlich äußert er sich mitunter</del> – brauchte e<del rend="overwritten" cause="#b54r_add_d2e239">r</del><add place="superimposed" corresp="#b54r_add_d2e239">s</add>  deshalb schon 
+                  </line><line xml:id="srcD_line_b54r_lb23" start="#b54r_lb23" n="23"><hi rend="underline">wahr</hi> zu sein<add place="inline" corresp="#b54r_add_d2e248">, <metamark xml:id="srcD_metamark_b54r_add_d2e250" function="insertion" rend="beforePunctuation"><add place="above" instant="true" corresp="#b54r_add_d2e250">was sie glauben</add></metamark></add>?… Wir „Erkennenden“ sind <metamark xml:id="srcD_metamark_b54r_add_d2e253" function="insertion" rend="inSpatium"><add place="above" corresp="#b54r_add_d2e253">nachgerade</add></metamark> mißtrauisch gegen alle Art Gläubige; unser Miß<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_b54r_lb24" start="#b54r_lb24" n="24">trauen hat <metamark xml:id="srcD_metamark_b54r_add_d2e263" function="insertion"><add place="above" corresp="#b54r_add_d2e263">uns</add></metamark><del rend="hatching">sich</del> allmählich darauf eingeübt, umgekehrt zu schließen, als man ehedem schloß: 
+               </line><zone xml:id="srcD_zone_b54r_fw_d2e33" type="fw-bottom-left" start="#b54r_fw_d2e33"><fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#b54r_fw_d2e33">54</fw></zone></zone></surface></sourceDoc>
+</TEI>
