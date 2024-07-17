@@ -36,11 +36,21 @@ declare function mapping:nietzsche-apps($root as element(), $userParams as map(*
         ) else (
             root($root)//tei:text//tei:app[tei:note[@type="editorial"] and preceding::tei:pb[@xml:id = $pbId]]    
         )
+        let $pbN := root($root)//tei:text//tei:pb[@xml:id = $pbId]/@xml:id
         let $div := <div xmlns="http://www.tei-c.org/ns/1.0" type="noteDiv">{ for $app in $apps
-                return if ($app/@target) then ($app) else (
+                return if ($app/@from) then ($app) else (
                    element { node-name($app) } {
-                        $app/@*,
-                        local:parseLoc($root, $app/@loc),
+                        $app/@*[local-name() != 'loc' and local-name() != 'corresp'],
+                        attribute loc {
+                            normalize-space(substring-after($app/@loc, $pbN))   
+                        },
+                        if (count(tokenize($app/@corresp)) gt 1) then (
+                            local:parseLoc($root, $app/@loc, $app/@corresp)
+                        ) else (
+                            attribute corresp {
+                                $app/@corresp    
+                            }    
+                        ),
                         $app/(tei:lem|tei:note)
                     }
                 )
@@ -49,12 +59,37 @@ declare function mapping:nietzsche-apps($root as element(), $userParams as map(*
         return $div
     )
 };
-declare function local:parseLoc($root as node(), $loc as xs:string?) as attribute()* {
-    let $locTok := tokenize($loc, '-')
-    return if (count($locTok) gt 1) then (
-        local:createTargetAttribute($root, substring-after($locTok[1], ','),'from'), local:createTargetAttribute($root, $locTok[2],'to')
+declare function local:parseLoc($root as node(), $loc as xs:string?, $corresp as xs:string*) as attribute()* {
+    if ($corresp) then (
+        let $correspTok := tokenize($corresp)
+        let $tokLength := count($correspTok)
+        return if ($tokLength gt 2) then (
+            attribute corresp {
+                $correspTok[1]    
+            },
+            attribute from {
+                $correspTok[2]    
+            },
+            attribute to {
+                $correspTok[$tokLength]
+            }
+        ) else (
+            attribute corresp {
+                $correspTok[1]    
+            },
+            attribute from {
+                $correspTok[2]    
+            }
+        )    
     ) else (
-        local:createTargetAttribute($root, substring-after($locTok[1], ','),'from')    
+        if (contains($loc, ',')) then (
+            let $locTok := tokenize($loc, '-')
+            return if (count($locTok) gt 1) then (
+                local:createTargetAttribute($root, substring-after($locTok[1], ','),'from'), local:createTargetAttribute($root, $locTok[2],'to')
+            ) else (
+                local:createTargetAttribute($root, substring-after($locTok[1], ','),'from')    
+            )
+        ) else ()
     )
 };
 declare function local:createTargetAttribute($root as node(), $n as xs:string, $attrName as xs:string) {

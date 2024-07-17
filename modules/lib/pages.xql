@@ -62,13 +62,14 @@ declare function pages:parse-myparams($node as node(), $model as map(*)) {
     
 };
 declare function pages:check-toc($node as node(), $model as map(*)) {
-    let $uri := concat('http://localhost:8080/exist/apps/nietzsche-dm/api/document/',$model?doc,'/contents')
-    return if ($model?doc and count(doc($uri)//li) eq 0) then (
+    let $uri := concat($config:data-root,'/', $model?doc)
+    return if ($model?doc and count(doc($uri)//tei:surface) eq 1) then (
        let $file := replace($model?doc, '_tp','')
        let $a := <a href="/exist/restxq/transform?file={$file}" target="topoTEI">topoTEI</a>
         return $a  
-    ) else ($node)
-    
+    ) else (
+        pages:parse-params($node, $model)
+    )
 };
 
 declare function pages:adapt-settings($node as node(), $model as map(*)) {
