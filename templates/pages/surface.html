@@ -60,7 +60,7 @@
         }
         
         ._pb_panel {
-            height: height: var(--pb-facsimile-height);
+            height: var(--pb-facsimile-height);
         }
 
         #view1 pb-view {
@@ -125,9 +125,12 @@
                          <pb-view id="view1" src="document1" column-separator=".tei-cb" view="surface" subscribe="transcription" emit="transcription">
                             </pb-view>  
                     <div id="content">
-                    <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-apps" subscribe="transcription">
+                        <div id="appNotes">
+                            
+                            <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-apps" subscribe="transcription">
                                                 <pb-param name="view" value="normalized"/>
-                                            </pb-view>
+                            </pb-view>
+                        </div>
                     </div>
                           <!--  <pb-facsimile id="facsimile" default-zoom-level="0.7" show-full-page-control="true" show-home-control="true" emit="transcription" subscribe="transcription" type="iiif" show-navigation-control="show-navigation-control" show-navigator="show-navigator">
                                             </pb-facsimile> -->

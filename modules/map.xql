@@ -37,7 +37,9 @@ declare function mapping:nietzsche-apps($root as element(), $userParams as map(*
             root($root)//tei:text//tei:app[tei:note[@type="editorial"] and preceding::tei:pb[@xml:id = $pbId]]    
         )
         let $pbN := root($root)//tei:text//tei:pb[@xml:id = $pbId]/@xml:id
-        let $div := <div xmlns="http://www.tei-c.org/ns/1.0" type="noteDiv">{ for $app in $apps
+        let $div := <div xmlns="http://www.tei-c.org/ns/1.0" type="noteDiv">
+           
+            { for $app in $apps
                 return if ($app/@from) then ($app) else (
                    element { node-name($app) } {
                         $app/@*[local-name() != 'loc' and local-name() != 'corresp'],
