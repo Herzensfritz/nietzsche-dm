@@ -1,7 +1,8 @@
 {
     "myapp": {
     	"menu": {
-    		"appNotes": "Anmerkungen"	
+    		"appNotes": "Anmerkungen",
+    		"pageInfo": "Seiteninformationen"
     	},
         "title": "Nietzsche Druckmanuskripte",
         "facsimile": "Faksimile",

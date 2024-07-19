@@ -21,7 +21,41 @@ declare function mapping:nietzsche-page($root as element(), $userParams as map(*
     let $pbId := substring-after($root/@start, '#')
     return root($root)//tei:text//tei:pb[@xml:id = $pbId]
 };
-                                    
+   
+   (:~
+ : For the Nietzsche Druckmanuskript: find the page information  corresponding
+ : to the surface shown in the diplomatic transcription.
+ :)
+declare function mapping:nietzsche-page-info($root as element(), $userParams as map(*)) {
+    let $pbId := substring-after($root/@start, '#')
+    let $div := <div xmlns="http://www.tei-c.org/ns/1.0" type="pageInfo">{
+        for $id in  root($root)//tei:text//tei:pb[@xml:id = $pbId]/tokenize(@corresp, ' ')
+            let $content := root($root)//*[@xml:id = substring-after($id, '#') ]
+            return if ($content) then ( 
+                element {node-name($content/ancestor::*[local-name() != 'p'][1])} {
+                    $content    
+                }
+            ) else ()
+    }
+    </div>
+    let $log := console:log($div)
+    return $div
+};    
+declare %private function local:getCorrContents($root as element(), $corresp as xs:string?, $userParams as map(*)){
+    if($corresp and contains($corresp, '#')) then (
+        let $first := substring-after(substring-before($corresp[1], ' '), '#')
+        let $content := root($root)//*[@xml:id = $first ]
+        return 
+            element {node-name($content/ancestor::*[local-name() != 'p'][1])} {
+                $content    
+            },
+            let $rest := substring-after($corresp, ' ')
+            return if ($rest) then (
+                local:getCorrContents($root, $rest, $userParams)
+            ) else ()  
+    ) else ()    
+};
+
 (:~
  : For the Nietzsche Druckmanuskript: find the notes  corresponding
  : to the surface shown in the diplomatic transcription.

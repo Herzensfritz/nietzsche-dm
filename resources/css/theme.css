@@ -7,8 +7,8 @@ div#content {
     height: 100%;
     
 }
-#appNotes {
-  
+#fixedContent {
+  position: fixed;
 }
 
 .edRefLB {

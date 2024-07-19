@@ -7,7 +7,7 @@ body {
          --red: #dc3545;
 }
 .noteDiv {
-    position: fixed;
+  /*  position: fixed;*/
 }
 .note, .editor {
     font-style: italic;

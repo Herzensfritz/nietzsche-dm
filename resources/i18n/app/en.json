@@ -1,7 +1,8 @@
 {
     "myapp": {
     	"menu": {
-    		"appNotes": "Editor Notes"	
+    		"appNotes": "Editor Notes",
+    		"pageInfo": "Page Information"	
     	},
         "title": "Foo",
         "facsimile": "Facsimile",
