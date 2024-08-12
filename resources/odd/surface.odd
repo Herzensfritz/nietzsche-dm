@@ -224,7 +224,7 @@
             <param name="hand" value="substring-after(@hand, '#')"/>
             <param name="content" value="."/>
             <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/>
-            <pb:template xmlns="" xml:space="preserve"><span class="[[hand]]">[[content]]</span></pb:template>
+            <pb:template xmlns="" xml:space="preserve"><span class="[[hand]] inline [[instant]]">[[content]]</span></pb:template>
         </model></elementSpec>
                 <elementSpec ident="subst" mode="add"/>
             <elementSpec ident="metamark" mode="add"><model predicate="@target and @corresp" behaviour="pass-through">
@@ -521,8 +521,6 @@
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><pb-highlight key="[[id]]" duration="5000">[[content]]</pb-highlight></pb:template>
         </model><model behaviour="inline" cssClass="term"/></elementSpec>
-            <elementSpec ident="msContents" mode="add"><model behaviour="listItem"/></elementSpec><elementSpec ident="physDesc" mode="add"><model behaviour="listItem"/></elementSpec><elementSpec ident="additions" mode="add"><model behaviour="listItem"/></elementSpec><elementSpec ident="handNotes" mode="add">
-        <model behaviour="listItem"/>
-    </elementSpec></schemaSpec>
+            <elementSpec ident="msContents" mode="add"><model behaviour="listItem"/></elementSpec><elementSpec ident="physDesc" mode="add"><model behaviour="listItem"/></elementSpec><elementSpec ident="additions" mode="add"><model behaviour="listItem"/></elementSpec><elementSpec ident="handNotes" mode="add"><model behaviour="listItem"/></elementSpec></schemaSpec>
         </body>
     </text></TEI>

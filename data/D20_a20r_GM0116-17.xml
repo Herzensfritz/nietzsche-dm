@@ -4,29 +4,731 @@
          <titleStmt>
           <title>a20r</title>
          </titleStmt>
-         <publicationStmt><p/></publicationStmt><sourceDesc><p/></sourceDesc></fileDesc>
-   </teiHeader>
+         <publicationStmt><p/></publicationStmt><sourceDesc><msDesc>
+             <msIdentifier>
+                <repository>Goethe- und Schiller-Archiv, Weimar</repository>
+               <idno type="GSA-Signatur">71/27,1, 71/27,2</idno>
+               <idno type="Mette-Signatur">D 20</idno>
+               <idno type="N-Archiv-Signatur">D XII</idno>
+               <idno type="DFGA-Sigle">D-20a, D-20b</idno>
+               <idno type="SpN-Sigle">D 20a, D 20b</idno>
+              </msIdentifier>
+             <msContents>
+               <ab type="descHead">
+                 1. Inhaltsbeschreibung</ab>
+               <p>Druckmanuskript zu Zur Genealogie der Moral. Eine Streitschrift. C. G. Naumann, Leipzig 1887.</p>
+               <ab type="descHead">
+                 1.1 Inhaltsverzeichnis</ab>
+               <p>
+                            <locus>a1r</locus>: <desc xml:id="contents_a1r">Druckvorlage GM Titelseite; Notizen von Köselitz die Korrektur von Bogen 12 und Titelbogen betreffend</desc>
+                        </p><!-- zu Notizen von Kö vgl. b59v --><!-- alles noch zu überprüfen! -->
+               <p>
+                            <locus>a1v</locus>: <desc xml:id="contents_a1v">Druckvorlage GM Titelrückseite</desc>
+                        </p>
+               <p>
+                            <locus>a2r</locus>: <desc xml:id="contents_a2r">Druckvorlage GM Vorrede 1-3</desc>
+                        </p>
+               <p>
+                            <locus>a2v</locus>: <desc xml:id="contents_a2v">Druckvorlage GM Vorrede 3-4</desc>
+                        </p>
+               <p>
+                            <locus>a3r</locus>: <desc xml:id="contents_a3r">Druckvorlage GM Vorrede 4-6</desc>
+                        </p>
+               <p>
+                            <locus>a3v</locus>: <desc xml:id="contents_a3v">Druckvorlage GM Vorrede 6-7</desc>
+                        </p>
+               <p>
+                            <locus>a4r</locus>: <desc xml:id="contents_a4r">Druckvorlage GM Vorrede 8</desc>
+                        </p>
+               <p>
+                            <locus>a5r</locus>: <desc xml:id="contents_a5r">Druckvorlage GM I 1</desc>
+                        </p>
+               <p>
+                            <locus>a6r</locus>: <desc xml:id="contents_a6r">Druckvorlage GM I 2-3</desc>
+                        </p>
+               <p>
+                            <locus>a7r</locus>: <desc xml:id="contents_a7r">Druckvorlage GM I 3-5</desc>
+                        </p>
+               <p>
+                            <locus>a8r</locus>: <desc xml:id="contents_a8r">Druckvorlage GM I 5-6</desc>
+                        </p>
+               <p>
+                            <locus>a9r</locus>: <desc xml:id="contents_a9r">Druckvorlage GM I 6-7</desc>
+                        </p>
+               <p>
+                            <locus>a10r</locus>: <desc xml:id="contents_a10r">Druckvorlage GM I 7-9</desc>
+                        </p>
+               <p>
+                            <locus>a11r</locus>: <desc xml:id="contents_a11r">Druckvorlage GM I 9-10</desc>
+                        </p>
+               <p>
+                            <locus>a12r</locus>: <desc xml:id="contents_a12r">Druckvorlage GM I 10-11</desc>
+                        </p>
+               <p>
+                            <locus>a13r</locus>: <desc xml:id="contents_a13r">Druckvorlage GM I 11</desc>
+                        </p>
+               <p>
+                            <locus>a14r</locus>: <desc xml:id="contents_a14r">Druckvorlage GM I 11-13</desc>
+                        </p>
+               <p>
+                            <locus>a15r</locus>: <desc xml:id="contents_a15r">Druckvorlage GM I 13-14</desc>
+                        </p>
+               <p>
+                            <locus>a16r</locus>: <desc xml:id="contents_a16r">Druckvorlage GM I 14-15</desc>
+                        </p>
+               <p>
+                            <locus>a17r</locus>: <desc xml:id="contents_a17r">Druckvorlage GM I 15</desc>
+                        </p>
+               <p>
+                            <locus>a18r</locus>: <desc xml:id="contents_a18r">Druckvorlage GM I 15</desc>
+                        </p>
+               <p>
+                            <locus>a18v</locus>: <desc xml:id="contents_a18v">Druckvorlage GM I 15</desc>
+                        </p>
+               <p>
+                            <locus>a19r</locus>: <desc xml:id="contents_a19r">Druckvorlage GM I 16</desc>
+                        </p>
+               <p>
+                            <locus>a20r</locus>: <desc xml:id="contents_a20r">Druckvorlage GM I 16-17</desc>
+                        </p>
+               <p>
+                            <locus>a20v</locus>: <desc xml:id="contents_a20v">Notiz Ns</desc>
+                        </p>
+               <p>
+                            <locus>a21r</locus>: <desc xml:id="contents_a21r">Druckvorlage GM II 1-2</desc>
+                        </p>
+               <p>
+                            <locus>a21v</locus>: <desc xml:id="contents_a21v">Notiz Ns</desc>
+                        </p>
+               <p>
+                            <locus>a22r</locus>: <desc xml:id="contents_a22r">Druckvorlage GM II 3</desc>
+                        </p>
+               <p>
+                            <locus>a23r</locus>: <desc xml:id="contents_a23r">Druckvorlage GM II 3-5</desc>
+                        </p>
+               <p>
+                            <locus>a24r</locus>: <desc xml:id="contents_a24r">Druckvorlage GM II 5-6</desc>
+                        </p>
+               <p>
+                            <locus>a25r</locus>: <desc xml:id="contents_a25r">Druckvorlage GM II 6-7</desc>
+                        </p>
+               <p>
+                            <locus>a26r</locus>: <desc xml:id="contents_a26r">Druckvorlage GM II 7</desc>
+                        </p>
+               <p>
+                            <locus>a27r</locus>: <desc xml:id="contents_a27r">Druckvorlage GM II 8</desc>
+                        </p>
+               <p>
+                            <locus>a28r</locus>: <desc xml:id="contents_a28r">Druckvorlage GM II 9-10</desc>
+                        </p>
+               <p>
+                            <locus>a29r</locus>: <desc xml:id="contents_a29r">Druckvorlage GM II 11</desc>
+                        </p>
+               <p>
+                            <locus>a29v</locus>: <desc xml:id="contents_a29v">Vorstufen zu GM II 1 und 2</desc>
+                        </p>
+               <p>
+                            <locus>a30r</locus>: <desc xml:id="contents_a30r">Druckvorlage GM II 12</desc>
+                        </p>
+               <p>
+                            <locus>a31r</locus>: <desc xml:id="contents_a31r">Druckvorlage GM II 13-14</desc>
+                        </p>
+               <p>
+                            <locus>a32r</locus>: <desc xml:id="contents_a32r">Druckvorlage GM II 14-15</desc>
+                        </p>
+               <p>
+                            <locus>a33r</locus>: <desc xml:id="contents_a33r">Druckvorlage GM II 15-16</desc>
+                        </p>
+               <p>
+                            <locus>a34r</locus>: <desc xml:id="contents_a34r">Druckvorlage GM II 16-17</desc>
+                        </p>
+               <p>
+                            <locus>a35r</locus>: <desc xml:id="contents_a35r">Druckvorlage GM II 18-19</desc>
+                        </p>
+               <p>
+                            <locus>a36r</locus>: <desc xml:id="contents_a36r">Druckvorlage GM II 19-20</desc>
+                        </p>
+               <p>
+                            <locus>a37r</locus>: <desc xml:id="contents_a37r">Druckvorlage GM II 21-22</desc>
+                        </p>
+               <p>
+                            <locus>a38r</locus>: <desc xml:id="contents_a38r">Druckvorlage GM II 22-24</desc>
+                        </p>
+               <p>
+                            <locus>a39r</locus>: <desc xml:id="contents_a39r">Druckvorlage GM II 24</desc>
+                        </p>
+               <p>
+                            <locus>a40r</locus>: <desc xml:id="contents_a40r">Druckvorlage GM II 11 (Ms-Nachtrag)</desc>
+                        </p>
+               <p>
+                            <locus>a40v</locus>: <desc xml:id="contents_a40v">Druckvorlage GM II 24 (Ms-Nachtrag)</desc>
+                        </p>
+               <p>
+                            <locus>a41r</locus>: <desc xml:id="contents_a41r">Druckvorlage GM II 25 (Ms-Nachtrag)</desc>
+                        </p>
+               <p>
+                            <locus>b1r</locus>: <desc xml:id="contents_b1r">Druckvorlage GM III 1</desc>
+                        </p>
+               <p>
+                            <locus>b2r</locus>: <desc xml:id="contents_b2r">Druckvorlage GM III 2</desc>
+                        </p>
+               <p>
+                            <locus>b3r</locus>: <desc xml:id="contents_b3r">Druckvorlage GM III 2-3</desc>
+                        </p>
+               <p>
+                            <locus>b4r</locus>: <desc xml:id="contents_b4r">Druckvorlage GM III 3</desc>
+                        </p>
+               <p>
+                            <locus>b5r</locus>: <desc xml:id="contents_b5r">Druckvorlage GM III 3-4</desc>
+                        </p>
+               <p>
+                            <locus>b6r</locus>: <desc xml:id="contents_b6r">Druckvorlage GM III 4-5</desc>
+                        </p>
+               <p>
+                            <locus>b7r</locus>: <desc xml:id="contents_b7r">Druckvorlage GM III 5</desc>
+                        </p>
+               <p>
+                            <locus>b8r</locus>: <desc xml:id="contents_b8r">Druckvorlage GM III 5-6</desc>
+                        </p>
+               <p>
+                            <locus>b9r</locus>: <desc xml:id="contents_b9r">Druckvorlage GM III 6</desc>
+                        </p>
+               <p>
+                            <locus>b10r</locus>: <desc xml:id="contents_b10r">Druckvorlage GM III 6</desc>
+                        </p>
+               <p>
+                            <locus>b11r</locus>: <desc xml:id="contents_b11r">Druckvorlage GM III 7</desc>
+                        </p>
+               <p>
+                            <locus>b12r</locus>: <desc xml:id="contents_b12r">Druckvorlage GM III 7</desc>
+                        </p>
+               <p>
+                            <locus>b13r</locus>: <desc xml:id="contents_b13r">Druckvorlage GM III 7-8</desc>
+                        </p>
+               <p>
+                            <locus>b14r</locus>: <desc xml:id="contents_b14r">Druckvorlage GM III 8</desc>
+                        </p>
+               <p>
+                            <locus>b15r</locus>: <desc xml:id="contents_b15r">Druckvorlage GM III 8</desc>
+                        </p>
+               <p>
+                            <locus>b16r</locus>: <desc xml:id="contents_b16r">Druckvorlage GM III 8</desc>
+                        </p>
+               <p>
+                            <locus>b17r</locus>: <desc xml:id="contents_b17r">Druckvorlage GM III 8-9</desc>
+                        </p>
+               <p>
+                            <locus>b18r</locus>: <desc xml:id="contents_b18r">Druckvorlage GM III 9</desc>
+                        </p>
+               <p>
+                            <locus>b19r</locus>: <desc xml:id="contents_b19r">Druckvorlage GM III 9 (Korrektur Bogen 8 betreffend)</desc>
+                        </p>
+               <p>
+                            <locus>b20r</locus>: <desc xml:id="contents_b20r">Druckvorlage GM III 9</desc>
+                        </p>
+               <p>
+                            <locus>b21r</locus>: <desc xml:id="contents_b21r">Druckvorlage GM III 9-10</desc>
+                        </p>
+               <p>
+                            <locus>b22r</locus>: <desc xml:id="contents_b22r">Druckvorlage GM III 10</desc>
+                        </p>
+               <p>
+                            <locus>b23r</locus>: <desc xml:id="contents_b23r">Druckvorlage GM III 10-11</desc>
+                        </p>
+               <p>
+                            <locus>b24r</locus>: <desc xml:id="contents_b24r">Druckvorlage GM III 11</desc>
+                        </p>
+               <p>
+                            <locus>b25r</locus>: <desc xml:id="contents_b25r">Druckvorlage GM III 11-12</desc>
+                        </p>
+               <p>
+                            <locus>b26r</locus>: <desc xml:id="contents_b26r">Druckvorlage GM III 12</desc>
+                        </p>
+               <p>
+                            <locus>b27r</locus>: <desc xml:id="contents_b27r">Druckvorlage GM III 12-13</desc>
+                        </p>
+               <p>
+                            <locus>b28r</locus>: <desc xml:id="contents_b28r">Druckvorlage GM III 13</desc>
+                        </p>
+               <p>
+                            <locus>b29r</locus>: <desc xml:id="contents_b29r">Druckvorlage GM III 14</desc>
+                        </p>
+               <p>
+                            <locus>b30r</locus>: <desc xml:id="contents_b30r">Druckvorlage GM III 14</desc>
+                        </p>
+               <p>
+                            <locus>b31r</locus>: <desc xml:id="contents_b31r">Druckvorlage GM III 14</desc>
+                        </p>
+               <p>
+                            <locus>b32r</locus>: <desc xml:id="contents_b32r">Druckvorlage GM III 14</desc>
+                        </p>
+               <p>
+                            <locus>b33r</locus>: <desc xml:id="contents_b33r">Druckvorlage GM III 15</desc>
+                        </p>
+               <p>
+                            <locus>b34r</locus>: <desc xml:id="contents_b34r">Druckvorlage GM III 15</desc>
+                        </p>
+               <p>
+                            <locus>b35r</locus>: <desc xml:id="contents_b35r">Druckvorlage GM III 15-16</desc>
+                        </p>
+               <p>
+                            <locus>b36r</locus>: <desc xml:id="contents_b36r">Druckvorlage GM III 16</desc>
+                        </p>
+               <p>
+                            <locus>b37r</locus>: <desc xml:id="contents_b37r">Druckvorlage GM III 16-17</desc>
+                        </p>
+               <p>
+                            <locus>b38r</locus>: <desc xml:id="contents_b38r">Druckvorlage GM III 17</desc>
+                        </p>
+               <p>
+                            <locus>b39r</locus>: <desc xml:id="contents_b39r">Druckvorlage GM III 17</desc>
+                        </p>
+               <p>
+                            <locus>b40r</locus>: <desc xml:id="contents_b40r">Druckvorlage GM III 17-18</desc>
+                        </p>
+               <p>
+                            <locus>b41r</locus>: <desc xml:id="contents_b41r">Druckvorlage GM III 18</desc>
+                        </p>
+               <p>
+                            <locus>b42r</locus>: <desc xml:id="contents_b42r">Druckvorlage GM III 18</desc>
+                        </p>
+               <p>
+                            <locus>b43r</locus>: <desc xml:id="contents_b43r">Druckvorlage GM III 18-19</desc>
+                        </p>
+               <p>
+                            <locus>b44r</locus>: <desc xml:id="contents_b44r">Druckvorlage GM III 19</desc>
+                        </p>
+               <p>
+                            <locus>b45r</locus>: <desc xml:id="contents_b45r">Druckvorlage GM III 19-20</desc>
+                        </p>
+               <p>
+                            <locus>b46r</locus>: <desc xml:id="contents_b46r">Druckvorlage GM III 20</desc>
+                        </p>
+               <p>
+                            <locus>b47r</locus>: <desc xml:id="contents_b47r">Druckvorlage GM III 20</desc>
+                        </p>
+               <p>
+                            <locus>b48r</locus>: <desc xml:id="contents_b48r">Druckvorlage GM III 20-21</desc>
+                        </p>
+               <p>
+                            <locus>b49r</locus>: <desc xml:id="contents_b49r">Druckvorlage GM III 21-22</desc>
+                        </p>
+               <p>
+                            <locus>b50r</locus>: <desc xml:id="contents_b50r">Druckvorlage GM III 22</desc>
+                        </p>
+               <p>
+                            <locus>b51r</locus>: <desc xml:id="contents_b51r">Druckvorlage GM III 22</desc>
+                        </p>
+               <p>
+                            <locus>b52r</locus>: <desc xml:id="contents_b52r">Druckvorlage GM III 22-23</desc>
+                        </p>
+               <p>
+                            <locus>b53r</locus>: <desc xml:id="contents_b53r">Druckvorlage GM III 23</desc>
+                        </p>
+               <p>
+                            <locus>b54r</locus>: <desc xml:id="contents_b54r">Druckvorlage GM III 23-24</desc>
+                        </p>
+               <p>
+                            <locus>b55r</locus>: <desc xml:id="contents_b55r">Druckvorlage GM III 24</desc>
+                        </p>
+               <p>
+                            <locus>b56r</locus>: <desc xml:id="contents_b56r">Druckvorlage GM III 24</desc>
+                        </p>
+               <p>
+                            <locus>b57r</locus>: <desc xml:id="contents_b57r">Druckvorlage GM III 24-25</desc>
+                        </p>
+<p>
+                            <locus>b58r</locus>: <desc xml:id="contents_b58r">Druckvorlage GM III 25</desc>
+                        </p>
+               <p>
+                            <locus>b59r</locus>: <desc xml:id="contents_b59r">Druckvorlage GM III 25</desc>
+                        </p>
+               <p>
+                            <locus>b59v</locus>: <desc xml:id="contents_b59v">Notiz von Köselitz Bogen 11 betreffend</desc>
+                        </p>
+               <p>
+                            <locus>b60r</locus>: <desc xml:id="contents_b60r">Druckvorlage GM III 25</desc>
+                        </p>
+               <p>
+                            <locus>b61r</locus>: <desc xml:id="contents_b61r">Druckvorlage GM III 26</desc>
+                        </p>
+               <p>
+                            <locus>b62r</locus>: <desc xml:id="contents_b62r">Druckvorlage GM III 26</desc>
+                        </p>
+               <p>
+                            <locus>b63r</locus>: <desc xml:id="contents_b63r">Druckvorlage GM III 26 (Ms-Nachtrag)</desc>
+                        </p>
+               <p>
+                            <locus>b64r</locus>: <desc xml:id="contents_b64r">Druckvorlage GM III 26 und 27 (Korrekturen Bogen 12 betreffend)</desc>
+                        </p>
+               <p>
+                            <locus>b65r</locus>: <desc xml:id="contents_b65r">Druckvorlage GM III 26 (Ms-Nachtrag)</desc>
+                        </p>
+               <p>
+                            <locus>b66r</locus>: <desc xml:id="contents_b66r">Druckvorlage GM III 26-27</desc>
+                        </p>
+               <p>
+                            <locus>b67r</locus>: <desc xml:id="contents_b67r">Druckvorlage GM III 27</desc>
+                        </p>
+               <p>
+                            <locus>b68r</locus>: <desc xml:id="contents_b68r">Druckvorlage GM III 27-28</desc>
+                        </p>
+               <p>
+                            <locus>b69r</locus>: <desc xml:id="contents_b69r">Druckvorlage GM III 28</desc>
+                        </p>
+               <p>
+                            <locus>b70r</locus>: <desc xml:id="contents_b70r">Druckvorlage GM Inhaltsverzeichis</desc>
+                        </p>
+             </msContents>
+             <physDesc>
+               <ab type="descHead">
+                 2. Frühere Manuskriptbeschreibung (H. J. Mette)</ab>
+               <p>„D 20: Eigenhändiges Dm. zu E 40 (auf den Seiten V-VII sowie den Seiten 27 und 33 der ersten Gruppe finden sich offenbar von Nietzsche angeordnete Korrekturen von fremder Hand); 34 einseitig, 4 doppelseitig beschriebene, z. T. aus mehreren Blättern zusammengeklebte Foliobogen (Format im allgemeinen 23×36) und 67 einseitig beschriebene Quartblätter (17,5×21,5), mit der Paginierung I-VII, 1-13, 13a-c, 14-33, 1-66.“ (<ref target="#Mette1933">Mette 1933</ref>, XLIVf.)</p>
+               <ab type="descHead">3. Manuskriptbeschreibung</ab>
+               <p>Zwei Teilmanuskripte, 41+70 Bl.; D 20[a]: 38 Folioblätter, teils beschnitten, teils zusammengeklebt, 1 Quartblatt (ursprünglich Heftblatt), 2 Zusatzblätter; D 20[b]: 66 Quartblätter (ursprünglich Heftblätter), 4 Zusatzblätter.</p>
+               <ab type="descHead">
+                 3.1 Manuskriptblätter</ab>
+               <p><locus>a1rv</locus>: <desc xml:id="folDesc_a1rv"><material>Folioblatt</material>, <width>23</width>×<height>35,9</height>, liniiert.</desc></p>
+               <p><locus>a2rv</locus>: <desc xml:id="folDesc_a2rv"><material>Folioblatt</material>, <width>23</width>×<height>35,9</height>, liniiert.</desc></p>
+               <p><locus>a3rv</locus>: <desc xml:id="folDesc_a3rv"><material>Folioblatt</material>, <width>23</width>×<height>35,9</height>, liniiert.</desc></p>
+               <p><locus>a4rv</locus>: <desc xml:id="folDesc_a4rv"><material>Quartblatt</material>, <width>17,5</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto links. Verso vakat.</desc></p>
+               <p><locus>a5rv</locus>: <desc xml:id="folDesc_a5rv"><material>Folioblatt</material>, ca. <width>22,8</width>×<height>21,8</height>, liniiert, Trennkante oben. Verso vakat.</desc></p>
+               <p><locus>a6rv</locus>: <desc xml:id="folDesc_a6rv"><material>Folioblatt</material>, <width>22,8</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a7rv</locus>: <desc xml:id="folDesc_a7rv"><material>Folioblatt</material>, <width>22,8</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a8rv</locus>: <desc xml:id="folDesc_a8rv"><material>Folioblatt</material>, <width>22,8</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a9rv</locus>: <desc xml:id="folDesc_a9rv"><material>Folioblatt</material>, <width>22,8</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a10rv</locus>: <desc xml:id="folDesc_a10rv"><material>Folioblatt</material>, <width>22,8</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a11rv</locus>: <desc xml:id="folDesc_a11rv"><material>Folioblatt</material>, <width>22,9</width>×<height>35,9</height>, liniiert. Verso vakat. Für Bogenkorrektur auseinandergeschnitten, nachträglich auf unterlegtem Papierstreifen wieder zusammengeklebt; Papierstreifen Makulatur, auf Klebeseite mit Maschine beschrieben.</desc></p>
+               <p><locus>a12rv</locus>: <desc xml:id="folDesc_a12rv"><material>Folioblatt</material>, <width>22,9</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a13rv</locus>: <desc xml:id="folDesc_a13rv"><material>Folioblatt</material>, <width>22,9</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a14rv</locus>: <desc xml:id="folDesc_a14rv"><material>Folioblatt</material>, <width>22,9</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a15rv</locus>: <desc xml:id="folDesc_a15rv"><material>Folioblatt</material>, <width>22,9</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a16rv</locus>: <desc xml:id="folDesc_a16rv"><material>Folioblatt</material>, <width>23</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a17rv</locus>: <desc xml:id="folDesc_a17rv"><material>Folioblatt</material>, ca. <width>23</width>×<height>12,2</height>, liniiert, Trennkante unten. Verso vakat. Rekto und Verso geringfügige Eindruckspuren einer Heftklammer (Anheftung von a18rv). Ursprünglich unterer Blattteil: a19rv.</desc></p>
+               <p><locus>a18rv</locus>: <desc xml:id="folDesc_a18rv"><material>Folioblatt</material>, <width>23,2</width>×<height>15,2</height>, liniiert, Trennkante unten. Rekto und Verso geringfügige Eindruckspuren einer Heftklammer (Anheftung an a17rv). Ursprünglich Zusatzblatt zum Blatt 17rv/19rv.</desc></p>
+               <p><locus>a19rv</locus>: <desc xml:id="folDesc_a19rv"><material>Folioblatt</material>, ca. <width>23</width>×<height>24,2</height>, liniiert, Trennkante oben. Verso vakat. Ursprünglich oberer Blatteil: a17rv.</desc></p>
+               <p><locus>a20rv</locus>: <desc xml:id="folDesc_a20rv"><material>Folioblatt</material>, <width>23</width>×<height>35,9</height>, liniiert.</desc></p>
+               <p><locus>a21rv</locus>: <desc xml:id="folDesc_a21rv"><material>Folioblatt</material>, ca. <width>23</width>×<height>54,4</height>, liniiert. Zwei Teile unterschiedlichen Formats zusammengeklebt.</desc></p>
+               <p><locus>a22rv</locus>: <desc xml:id="folDesc_a22rv"><material>Folioblatt</material>, ca. <width>22,8</width>×<height>30,6</height>, liniiert, Trennkante oben. Verso vakat. Ursprünglich oberer Blattteil: Teil 1 von a29vr.</desc></p>
+               <p><locus>a23rv</locus>: <desc xml:id="folDesc_a23rv"><material>Folioblatt</material>, ca. <width>22,8</width>×<height>36</height>, liniiert. Verso vakat. Für Bogenkorrektur auseinandergeschnitten, nachträglich auf unterlegtem Papierstreifen wieder zusammengeklebt; Papierstreifen Makulatur, auf Klebeseite mit Maschine beschrieben.</desc></p>
+               <p><locus>a24rv</locus>: <desc xml:id="folDesc_a24rv"><material>Folioblatt</material>, <width>22,8</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a25rv</locus>: <desc xml:id="folDesc_a25rv"><material>Folioblatt</material>, <width>23,1</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a26rv</locus>: <desc xml:id="folDesc_a26rv"><material>Folioblatt</material>, <width>23,1</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a27rv</locus>: <desc xml:id="folDesc_a27rv"><material>Folioblatt</material>, ca. <width>23,3</width>×<height>18</height>, liniiert, Trennkante unten. Verso vakat. Ursprünglich unterer Blattteil: Teil 2 von a29rv.</desc></p>
+<p><locus>a28rv</locus>: <desc xml:id="folDesc_a28rv"><material>Folioblatt</material>, <width>23</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a29rv</locus>: <desc xml:id="folDesc_a29rv"><material>Folioblatt</material>, ca. <width>23,3</width>×<height>51,9</height>, liniiert. Vier Teile unterschiedlichen Formats zusammengeklebt, Teile 3 und 4 auf zusätzlich unterlegten Blattteil aufgeklebt; Teil 1 und unterlegter Blattteil Makulatur mit Textresten von Ns Hand. Für Bogenkorrektur auseinandergeschnitten, nachträglich auf unterlegtem Papierstreifen wieder zusammengeklebt. Verso Rostspuren einer Heftklammer (Anheftung von a40rv, vermutlich zusammen mit a41vr). Ursprünglich unterer Blattteil von Teil 1: a22vr. Ursprünglich oberer Blattteil von Teil 2: a27rv.</desc></p>
+               <p><locus>a30rv</locus>: <desc xml:id="folDesc_a30rv"><material>Folioblatt</material>, <width>23,1</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a31rv</locus>: <desc xml:id="folDesc_a31rv"><material>Folioblatt</material>, <width>23,1</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a32rv</locus>: <desc xml:id="folDesc_a32rv"><material>Folioblatt</material>, <width>23,1</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a33rv</locus>: <desc xml:id="folDesc_a33rv"><material>Folioblatt</material>, <width>23,2</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a34rv</locus>: <desc xml:id="folDesc_a34rv"><material>Folioblatt</material>, <width>23,2</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a35rv</locus>: <desc xml:id="folDesc_a35rv"><material>Folioblatt</material>, <width>23,1</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a36rv</locus>: <desc xml:id="folDesc_a36rv"><material>Folioblatt</material>, <width>23,1</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a37rv</locus>: <desc xml:id="folDesc_a37rv"><material>Folioblatt</material>, <width>23</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a38rv</locus>: <desc xml:id="folDesc_a38rv"><material>Folioblatt</material>, <width>22,9</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a39rv</locus>: <desc xml:id="folDesc_a39rv"><material>Folioblatt</material>, <width>23,3</width>×<height>35,9</height>, liniiert. Verso vakat.</desc></p>
+               <p><locus>a40rv</locus>: <desc xml:id="folDesc_a40rv"><material>Blatt</material>, ca. <width>12,7</width>×<height>10</height>, unliniiert, Trennkante unten. Rekto Rostspuren einer Heftklammer (Anheftung, vermutlich zusammen mit a41vr, an a29rv). Rekto und Verso Mitte unten zwei Einstichlöcher von Stecknadel (Anheftung von a41vr). Zusatzblatt zu a29r und a39r.</desc></p>
+               <p><locus>a41rv</locus>: <desc xml:id="folDesc_a41rv"><material>Blatt</material>, ca. <width>12,7</width>×<height>10,5</height>, unliniiert, Risskante unten. Verso vakat. Papier mit Wasserzeichen. Rekto und Verso Mitte oben zwei Einstichlöcher von Stecknadel (Anheftung an a40vr). Zusatzblatt zu a40v.</desc></p><!-- Wasserzeichen wo? -->
+               <p><locus>b1rv</locus>: <desc xml:id="folDesc_b1rv"><material>Quartblatt</material>, ca. <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p><!-- Text- oder Schriftverlust? fehlt(?) nur ein Trennstrich – besser als note "minimer Schriftverlust durch Beschnitt" -->
+               <p><locus>b2rv</locus>: <desc xml:id="folDesc_b2rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b3rv</locus>: <desc xml:id="folDesc_b3rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b4rv</locus>: <desc xml:id="folDesc_b4rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b5rv</locus>: <desc xml:id="folDesc_b5rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b6rv</locus>: <desc xml:id="folDesc_b6rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b7rv</locus>: <desc xml:id="folDesc_b7rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b8rv</locus>: <desc xml:id="folDesc_b8rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b9rv</locus>: <desc xml:id="folDesc_b9rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b10rv</locus>: <desc xml:id="folDesc_b10rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b11rv</locus>: <desc xml:id="folDesc_b11rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b12rv</locus>: <desc xml:id="folDesc_b12rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b13rv</locus>: <desc xml:id="folDesc_b13rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b14rv</locus>: <desc xml:id="folDesc_b14rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b15rv</locus>: <desc xml:id="folDesc_b15rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b16rv</locus>: <desc xml:id="folDesc_b16rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b17rv</locus>: <desc xml:id="folDesc_b17rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+                <p><locus>b18rv</locus>: <desc xml:id="folDesc_b18rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b19rv</locus>: <desc xml:id="folDesc_b19rv"><material>Blatt</material>, <width>12,6</width>×<height>7,9</height>, liniiert, Trennkante Rekto rechts und unten. Verso vakat. Papier mit Wasserzeichen. Mit oberer linker Ecke auf b20r geklebt. Zusatzblatt zur Bogenkorrektur, Cb 8, 119.</desc></p>
+               <p><locus>b20rv</locus>: <desc xml:id="folDesc_b20rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat. Rekto links oben b19rv angeklebt.</desc></p><!-- ohne den eingeschlagenen Papierrest an der Trennkante gemessen; insgesamt eigentlich 17,8 -->
+               <p><locus>b21rv</locus>: <desc xml:id="folDesc_b21rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p><!-- hier ohne den eingeschlagenen Papierrest an der Trennkante gemessen; insgesamt eigentlich 17,8 -->
+               <p><locus>b22rv</locus>: <desc xml:id="folDesc_b22rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b23rv</locus>: <desc xml:id="folDesc_b23rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b24rv</locus>: <desc xml:id="folDesc_b24rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b25rv</locus>: <desc xml:id="folDesc_b25rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b26rv</locus>: <desc xml:id="folDesc_b26rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b27rv</locus>: <desc xml:id="folDesc_b27rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b28rv</locus>: <desc xml:id="folDesc_b28rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b29rv</locus>: <desc xml:id="folDesc_b29rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b30rv</locus>: <desc xml:id="folDesc_b30rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b31rv</locus>: <desc xml:id="folDesc_b31rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b32rv</locus>: <desc xml:id="folDesc_b32rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b33rv</locus>: <desc xml:id="folDesc_b33rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b34rv</locus>: <desc xml:id="folDesc_b34rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b35rv</locus>: <desc xml:id="folDesc_b35rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b36rv</locus>: <desc xml:id="folDesc_b36rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b37rv</locus>: <desc xml:id="folDesc_b37rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b38rv</locus>: <desc xml:id="folDesc_b38rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b39rv</locus>: <desc xml:id="folDesc_b39rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b40rv</locus>: <desc xml:id="folDesc_b40rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b41rv</locus>: <desc xml:id="folDesc_b41rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b42rv</locus>: <desc xml:id="folDesc_b42rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b43rv</locus>: <desc xml:id="folDesc_b43rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b44rv</locus>: <desc xml:id="folDesc_b44rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b45rv</locus>: <desc xml:id="folDesc_b45rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b46rv</locus>: <desc xml:id="folDesc_b46rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b47rv</locus>: <desc xml:id="folDesc_b47rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b48rv</locus>: <desc xml:id="folDesc_b48rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b49rv</locus>: <desc xml:id="folDesc_b49rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b50rv</locus>: <desc xml:id="folDesc_b50rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b51rv</locus>: <desc xml:id="folDesc_b51rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b52rv</locus>: <desc xml:id="folDesc_b52rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b53rv</locus>: <desc xml:id="folDesc_b53rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b54rv</locus>: <desc xml:id="folDesc_b54rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b55rv</locus>: <desc xml:id="folDesc_b55rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b56rv</locus>: <desc xml:id="folDesc_b56rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b57rv</locus>: <desc xml:id="folDesc_b57rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b58rv</locus>: <desc xml:id="folDesc_b58rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b59rv</locus>: <desc xml:id="folDesc_b59rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. </desc></p>
+               <p><locus>b60rv</locus>: <desc xml:id="folDesc_b60rv"><material>Quartblatt</material>, <width>17,3</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b61rv</locus>: <desc xml:id="folDesc_b61rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat; Rostspuren von Heftklammern (Anheftung von @@@).</desc></p>
+               <p><locus>b62rv</locus>: <desc xml:id="folDesc_b62rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat; Rostspuren von Heftklammern (Anheftung von @@@).</desc></p>
+               <p><locus>b63rv</locus>: <desc xml:id="folDesc_b63rv"><material>Blatt</material>, <width>12,6</width>×<height>20,2</height>, unliniiert, Trennkante Rekto links. Verso vakat. Papier mit Wasserzeichen. Rekto und Verso Rostspuren von Heftklammern (Anheftung an @@@). Zusatzblatt zu b61r und b62r.</desc></p><!-- Wasserzeichen wo? -->
+               <p><locus>b64rv</locus>: <desc xml:id="folDesc_b64rv"><material>Blatt</material>, <width>13,5</width>×<height>21</height>, unliniiert, Trennkante Rekto rechts. Verso vakat. Rekto und Verso Rostspuren von Heftklammern (Anheftung an @@@). Zusatzblatt zur Bogenkorrektur, Cb 12, 177, 179.</desc></p>
+               <p><locus>b65rv</locus>: <desc xml:id="folDesc_b65rv"><material>Blatt</material>, ca. <width>12,8</width>×<height>20,3</height>, unliniiert, Trennkante Rekto links. Verso vakat. Papier mit Wasserzeichen. Rekto und Verso Rostspuren von Heftklammer (Anheftung an @@@). Zusatzblatt zu b62r und b66r.</desc></p><!-- Wasserzeichen wo? -->
+               <p><locus>b66rv</locus>: <desc xml:id="folDesc_b66rv"><material>Quartblatt</material>, <width>17,5</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat; Rostspuren einer Heftklammer (Anheftung von @@@).</desc></p>
+               <p><locus>b67rv</locus>: <desc xml:id="folDesc_b67rv"><material>Quartblatt</material>, <width>17,5</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b68rv</locus>: <desc xml:id="folDesc_b68rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b69rv</locus>: <desc xml:id="folDesc_b69rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto rechts. Verso vakat.</desc></p>
+               <p><locus>b70rv</locus>: <desc xml:id="folDesc_b70rv"><material>Quartblatt</material>, <width>17,4</width>×<height>21,7</height>, liniiert, roter Farbschnitt, Trennkante Rekto links. Verso vakat.</desc></p>
+               <ab type="descHead">
+                 3.2 Paginierung, Foliierung</ab>
+               <p>Paginierung, von Ns Hand: D 20a Rekto sowie a1v und a3v oben rechts, a2v oben links; D 20b Rekto oben links. a1r-a3v und a5r-a12r: „I.“ bis „VI.“ und „1.“ bis „8“, <ref target="#N_red">Rotstift</ref>; a6r-a17r: „2“ bis „13“, <ref target="#N_pencil">Bleistift</ref>; a20r: „14.“, <ref target="#N_black1">schwarze Tinte</ref>; a22r: „16“, unten rechts, <ref target="#N_red">Rotstift</ref>. b1r: „1.“, <ref target="#N_black2">schwarze Tinte</ref>, b2r-b18r: „2“ bis „18“, <ref target="#N_pencil">Bleistift</ref>, b19r: „19.“,<ref target="#N_black4">schwarze Tinte</ref>, b20r-b61r: „19“ (überklebt) bis „60“, <ref target="#N_pencil">Bleistift</ref>, b62r, b66r-b68r: „61“ bis „64“, <ref target="#N_black2">schwarze Tinte</ref>, b69r-b70r: „65“ bis „66“, <ref target="#N_pencil">Bleistift</ref>.</p>
+               <p>Paginierung, von fremder Hand: D 20a, D 20b Rekto sowie a18v oben rechts, a18r oben links. Durchgehend <ref target="#N-Archiv_red">Rotstift</ref>. a4r: „VII“; a18r, a18v, a19r: „13a“, „13b“, „13c“; a20r-a39r: „14.“ bis „33.“. Radierte frühere Paginierung: a18r-a39r, b1r-b18r, b20r-b62r, b65r, b67r-b70r: „14“ bis „102“; b66r: „98“ nicht radiert.</p>
+               <p>Foliierung: Archivfoliierung, Rekto unten links, b49r höher, <ref target="#GSA_pencil">Bleistift (GSA)</ref>. Radierte frühere Foliierung: a40v, a41r: „33a“, „33b“, 
+                <ref target="#GSA_pencil2">Bleistift (GSA?)</ref>.</p><!-- √juli23, tr -->
+            <additions>
+              <ab type="descHead">
+                   3.3 Bearbeitungsspuren von fremder Hand</ab>
+                 <note type="msDesc">Als Bearbeitungsspuren werden sämtliche Ms-Eintragungen von fremder Hand verzeichnet, sofern sie nicht von N angeordnete Textänderungen oder Korrekturen betreffen und als solche in der Ts wiedergegeben sind.</note><!-- so? oder alles inkl. Setzer-Redaktionen angeben + "siehe Ts"? -->
+                 <p><locus>a1r</locus>: <desc xml:id="addDesc_a1r">Abgrenzungslinien, <ref target="#N-Archiv_pencil">Bleistift (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>a2r</locus>: <desc xml:id="addDesc_a2r">Markierung Seitenumbrüche Cb/Ed: III|IV, IV|V, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Zeilenkalkulationen („30“, „38“), <ref target="#typesetter_black1">schwarze Tinte, N.N. (Druckerei)</ref>; vereinzelte Verdeutlichungskorrekturen (?), <ref target="#typesetter_black1">schwarze Tinte, N.N. (Druckerei)</ref>.</desc></p>
+                 <p><locus>a2v</locus>: <desc xml:id="addDesc_a2v">Markierung Seitenumbrüche Cb/Ed: V|VI, VI|VII, VII|VIII, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Zeilenkalkulation („50“), <ref target="#typesetter_black1">schwarze Tinte, N.N. (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>a3r</locus>: <desc xml:id="addDesc_a3r">Markierung Seitenumbrüche Cb/Ed: IX|X, X|XI, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Zeilenkalkulation („46“, „38“), <ref target="#typesetter_black1">schwarze Tinte, N.N. (Druckerei)</ref>; Umstellung („2“, „1“), Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a3v</locus>: <desc xml:id="addDesc_a3v">Markierung Seitenumbruch Cb/Ed: XI|XII, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Zeilenkalkulation („40“), <ref target="#typesetter_black1">schwarze Tinte, N.N. (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a4r</locus>: <desc xml:id="addDesc_a4r">Markierung Seitenumbruch Cb/Ed: XIII|XIV, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a5r</locus>: <desc xml:id="addDesc_a5r">Markierung Seitenumbruch Cb/Ed: 1|2, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>.</desc></p>
+                 <p><locus>a6r</locus>: <desc xml:id="addDesc_a6r">Anmerkung (Z. 1 „!“, „NB: fehlt Aph. 2 / Sdl.“ [A. Seidl, Mitarbeiter N-Archiv]) und Korrektur zu Abschnittsnummerierung („3“ statt 4.), Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>a7r</locus>: <desc xml:id="addDesc_a7r">Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a8r</locus>: <desc xml:id="addDesc_a8r">Markierung Seitenumbrüche Cb/Ed: 7|8, 8|9, 9|10, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Korrektur zu Abschnittsnummerierung („6.“ statt 7.), Umstellung („2“, „1“), Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>a9r</locus>: <desc xml:id="addDesc_a9r">Markierung Seitenumbruch Cb/Ed: 11|12, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Korrektur zu Abschnittsnummerierung („7“ statt 8.), Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a10r</locus>: <desc xml:id="addDesc_a10r">Markierung Seitenumbrüche Cb/Ed: 13|14 („14“), 14|15 („15“), <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Korrekturen zu Abschnittsnummerierung („8“ statt 9., „9“ statt 10.), Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a11r</locus>: <desc xml:id="addDesc_a11r">Markierung Seitenumbrüche Cb: 15|16, Cb/Ed: 17|18 („18“), <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung Bogenbeginn Cb/Ed: |Bogen 2 (16|17), <ref target="#typesetter_pencil">Bleistift (Druckerei)</ref>; Korrektur zu Abschnittsnummerierung („10.“ statt 11.), Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p><!-- so? -->
+                 <p><locus>a12r</locus>: <desc xml:id="addDesc_a12r">Markierung Seitenumbrüche Cb/Ed: 18|19 („19“), <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>, Cb/Ed: 19|20 („20“), 20|21 („21“) <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>a13r</locus>: <desc xml:id="addDesc_a13r">Markierung Seitenumbrüche Cb/Ed: 21|22 („22“), 22|23 („23“), 23|24 („24“), <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a14r</locus>: <desc xml:id="addDesc_a14r">Markierung Seitenumbruch Cb/Ed: 25|26 („26“), <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen (Setzerkürzel?: „M.“(?), „M.“(?), durchgestrichen), Korrektur zu Abschnittsnummerierung („13“ statt 14.), <ref target="#typesetter_pencil">Bleistift (Druckerei)</ref>; Korrektur zu Abschnittsnummerierung („13“ statt 14.), Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p><!-- neu gedeutet als Setzerkürzel, vgl. Dm GT passim! -->
+                 <p><locus>a15r</locus>: <desc xml:id="addDesc_a15r">Markierung Seitenumbrüche Cb/Ed: 26|27 („27“), 27|28 („28“), 28|29 („29“), <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Korrektur zu Abschnittsnummerierung („14.“ statt 15.), Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a16r</locus>: <desc xml:id="addDesc_a16r">Markierung Seitenumbrüche Cb/Ed: 29|30 („30“), 30|31 („31“), <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Korrektur zu Abschnittsnummerierung („15.“ statt 16.), Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>a17r</locus>: <desc xml:id="addDesc_a17r">Markierung Seitenumbruch Cb/Ed: 31|32 („32“), <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a18r</locus>: <desc xml:id="addDesc_a18r">Markierung Bogenbeginn Cb/Ed: |Bogen 3 (32|33), dazu Hinweis („33/3“) oben links, <ref target="#typesetter_pencil">Bleistift (Druckerei)</ref>, zusätzliche Markierung, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a18v</locus>: <desc xml:id="addDesc_a18v">Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a19r</locus>: <desc xml:id="addDesc_a19r">Markierung Seitenumbruch Cb/Ed: 34|35 („35“), <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#typesetter_pencil">Bleistift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p><!-- bzgl. 13a so?? -->
+                 <p><locus>a20r</locus>: <desc xml:id="addDesc_a20r">Markierung Seitenumbruch Cb/Ed: 35|36, Hinweis („Titel steht[beginnt] auf Seite 39.“) unten rechts, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p>
+                <p><locus>a21r</locus>: <desc xml:id="addDesc_a21r">Hinweis („41“) zu Seitenumbruch Cb/Ed: 40|41, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>, dazu Hinweis zu Titelseite („(Titel 39.)“), <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>, beides oben Mitte; Markierung Seitenumbrüche Cb/Ed: 41|42 („42“), 42|43 („43“), 43|44 („44“), 44|45 („45“) <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_pencil">Bleistift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p><!-- beide Bleistiftanstreichungen von N-Archiv, oder?? -->
+                 <p><locus>a22r</locus>: <desc xml:id="addDesc_a22r">Markierung Seitenumbrüche Cb/Ed: 45|46 („46“), 46|47 („47“), <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>a23r</locus>: <desc xml:id="addDesc_a23r">Markierung Seitenumbrüche Cb/Ed: 47|48 („48“), 49|50 <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung Bogenbeginn Cb/Ed: |Bogen 4 (48|49), <ref target="#typesetter_pencil">Bleistift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a24r</locus>: <desc xml:id="addDesc_a24r">Markierung Seitenumbrüche Cb/Ed: 51|52, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>, Cb/Ed: 52|53, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Z. 27 Streichung, <ref target="#typesetter_blue">Blaustift (Druckerei?)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv?)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>a25r</locus>: <desc xml:id="addDesc_a25r">Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>a26r</locus>: <desc xml:id="addDesc_a26r">Markierung Seitenumbrüche Cb/Ed: 55|56 („56“), 56|57 („57“), 57|58 <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a27r</locus>: <desc xml:id="addDesc_a27r">Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p><!-- stilisiertes Fragezeichen mit Blaustift extra mitteilen? vgl. auch a29r -->
+                 <p><locus>a28r</locus>: <desc xml:id="addDesc_a28r">Markierung Seitenumbrüche Cb/Ed: 59|60, 61|62 <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>a29r</locus>: <desc xml:id="addDesc_a29r">Markierung Bogenbeginn Cb/Ed: |Bogen 5 (64|65), Markierung Seitenumbruch Cb/Ed: 65|66 („66“), <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Markierungen, Anmerkung zu Einfügungszeichen (Z. 36 „NB vgl. Zettel am Schlusse d. Abhandlung.“, Schreiber N-Archiv-Mitarbeiter A. Seidl?), <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_pencil">Bleistift (N-Archiv)</ref>.</desc></p><!-- Einfügungszeichen mit typesetter-black und Anstreichung dazu mit typesetter-blue auch hier vermerken? wenns im Text codiert bleibt, nicht (sonst müsste man Entsprechendes auch für andere Stellen nachtragen)??? --><!-- stilisiertes Fragezeichen mit Violettstift extra mitteilen? vgl. auch a27r, a33r -->
+                 <p><locus>a29v</locus>: <desc xml:id="addDesc_a29v">Anmerkung (am oberen Rand „Schluß von Nr. 2 der zweiten Abhandlung.“), <ref target="#Koeselitz_redInk">rote Tinte, vermutlich Köselitz</ref>.</desc></p>
+                 <p><locus>a30r</locus>: <desc xml:id="addDesc_a30r">Markierung Seitenumbrüche Cb/Ed: 67|68 („68“), <ref target="#typesetter_red">Rotstift (Druckerei)</ref>,  68|69 („69“), 69|70 („70“), <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_pencil">Bleistift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a31r</locus>: <desc xml:id="addDesc_a31r">Markierung Seitenumbrüche Cb/Ed: 71|72 („72“, „72“), <ref target="#typesetter_red">Rotstift (Druckerei)</ref> und <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>, 72|73, <ref target="#typesetter_pencil">Bleistift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_pencil">Bleistift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a32r</locus>: <desc xml:id="addDesc_a32r">Markierung Seitenumbrüche Cb/Ed: 73|74 („74“) <ref target="#typesetter_red">Rotstift (Druckerei)</ref> und <ref target="#typesetter_black2">schwarze Tinte (Druckerei)</ref>, 74|75 <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_pencil">Bleistift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a33r</locus>: <desc xml:id="addDesc_a33r">Markierung Seitenumbrüche Cb/Ed: 75|76 („76“), 76|77 („77“), 77|78 („78“) <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_pencil">Bleistift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>a34r</locus>: <desc xml:id="addDesc_a34r">Markierung Seitenumbrüche Cb/Ed: 78|79 („79“), 79|80 („80“), <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung Bogenbeginn Cb/Ed: |Bogen 6 (80|81), dazu Hinweis („81/6.“) unten links, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>, zusätzliche Markierung, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a35r</locus>: <desc xml:id="addDesc_a35r">Markierung Seitenumbrüche Cb/Ed: 81|82 („82“), 82|83 („83“), <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a36r</locus>: <desc xml:id="addDesc_a36r">Markierung Seitenumbrüche Cb/Ed: 83|84 („84“), <ref target="#typesetter_red">Rotstift (Druckerei)</ref>, 85|86 („86“), <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>a37r</locus>: <desc xml:id="addDesc_a37r">Markierung Seitenumbrüche Cb/Ed: 86|87 („87“), 88|89 („89“), <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a38r</locus>: <desc xml:id="addDesc_a38r">Markierung Seitenumbruch Cb/Ed: 89|90, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p>
+                <p><locus>a39r</locus>: <desc xml:id="addDesc_a39r">Markierung Seitenumbruch Cb/Ed: 92|93, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>a40r</locus>: <desc xml:id="addDesc_a40r">Z. 7-10 Streichung, <ref target="#typesetter_black2">schwarze Tinte (Druckerei)</ref>.</desc></p>
+                 <p><locus>a40v</locus>: <desc xml:id="addDesc_a40v">Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>a41r</locus>: <desc xml:id="addDesc_a41r">Z. 1-5 Streichung, Markierung <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b1r</locus>: <desc xml:id="addDesc_b1r">Keine Bearbeitungsspuren.</desc></p>
+                 <p><locus>b2r</locus>: <desc xml:id="addDesc_b2r">Markierung Seitenumbruch Cb/Ed: 97|98, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b3r</locus>: <desc xml:id="addDesc_b3r">Markierung Seitenumbrüche Cb/Ed: 98|99, 99|100, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b4r</locus>: <desc xml:id="addDesc_b4r">Markierung Seitenumbruch Cb/Ed: 100|101, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b5r</locus>: <desc xml:id="addDesc_b5r">Markierung Seitenumbruch Cb/Ed: 101|102, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b6r</locus>: <desc xml:id="addDesc_b6r">Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b7r</locus>: <desc xml:id="addDesc_b7r">Keine Bearbeitungsspuren.</desc></p>
+                 <p><locus>b8r</locus>: <desc xml:id="addDesc_b8r">Markierung Seitenumbruch Cb/Ed: 105|106, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b9r</locus>: <desc xml:id="addDesc_b9r">Markierung Seitenumbruch Cb/Ed: 106|107, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b10r</locus>: <desc xml:id="addDesc_b10r">Markierung Seitenumbruch Cb/Ed: 107|108, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>.</desc></p>
+                 <p><locus>b11r</locus>: <desc xml:id="addDesc_b11r">Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b12r</locus>: <desc xml:id="addDesc_b12r">Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, Tintenflecke <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p><!-- Tintenflecke so hier aufnehmen? -->
+                 <p><locus>b13r</locus>: <desc xml:id="addDesc_b13r">Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Stiftproben (N-Archiv).</desc></p><!-- Stiftproben so? -->
+                 <p><locus>b14r</locus>: <desc xml:id="addDesc_b14r">Markierung Bogenbeginn Cb/Ed: |Bogen 8 (112|113), dazu Hinweis („113/8“) oben links, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b15r</locus>: <desc xml:id="addDesc_b15r">Markierung Seitenumbrüche Cb/Ed: 113|114, 114|115, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_orangeBrown">Orangebraunstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p><!-- wg. Kreuz/Plus in Z. 2 in GSA nachgefragt 020524 -->
+                 <p><locus>b16r</locus>: <desc xml:id="addDesc_b16r">Markierung Seitenumbruch Cb/Ed: 114|115, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b17r</locus>: <desc xml:id="addDesc_b17r">Markierungen, <ref target="#N-Archiv_orangeBrown">Orangebraunstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b18r</locus>: <desc xml:id="addDesc_b18r">Markierung Seitenumbruch Cb/Ed: 117|118, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_orangeBrown">Orangebraunstift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b19r</locus>: <desc xml:id="addDesc_b19r">Keine Bearbeitungsspuren.</desc></p>
+                 <p><locus>b20r</locus>: <desc xml:id="addDesc_b20r">Markierung Seitenumbruch Cb/Ed: 119|120, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Z. 4-6 Streichung, Markierung, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>;Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Anmerkungen zu Zitatabweichungen (Z. 23 „welches“, „en“; vgl. Morgenröthe §18), <ref target="#N-Archiv_pencil">Bleistift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b21r</locus>: <desc xml:id="addDesc_b21r">Markierung Seitenumbruch Cb/Ed: 120|121, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Anmerkungen zu Zitatabweichungen (Z. 1 „gesperrt!“, Z. 5 „del“, Z. 7 „nicht gesperrt!“; vgl. Morgenröthe §18), <ref target="#N-Archiv_pencil">Bleistift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_orangeBrown">Orangebraunstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b22r</locus>: <desc xml:id="addDesc_b22r">Keine Bearbeitungsspuren.</desc></p>
+                 <p><locus>b23r</locus>: <desc xml:id="addDesc_b23r">Markierung Seitenumbruch Cb/Ed: 122|123, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b24r</locus>: <desc xml:id="addDesc_b24r">Markierung Seitenumbrüche Cb/Ed: 123|124, 124|125, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>.</desc></p>
+                 <p><locus>b25r</locus>: <desc xml:id="addDesc_b25r">Markierung Seitenumbruch Cb/Ed: 125|126, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b26r</locus>: <desc xml:id="addDesc_b26r">Markierung Seitenumbruch Cb/Ed: 126|127, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                <p><locus>b27r</locus>: <desc xml:id="addDesc_b27r">Markierung Seitenumbruch Cb/Ed: 127|128, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b28r</locus>: <desc xml:id="addDesc_b28r">Markierung Bogenbeginn Cb/Ed: |Bogen 9 (128|129), dazu Hinweis („129/9“) unten Mitte, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Markierung Seitenumbruch Cb/Ed: 129|130, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>.</desc></p>
+                 <p><locus>b29r</locus>: <desc xml:id="addDesc_b29r">Markierung Seitenumbruch Cb/Ed: 130|131, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b30r</locus>: <desc xml:id="addDesc_b30r">Markierung Seitenumbruch Cb/Ed: 131|132, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>.</desc></p>
+                 <p><locus>b31r</locus>: <desc xml:id="addDesc_b31r">Markierung Seitenumbruch Cb/Ed: 132|133, <ref target="#typesetter_pencil">Bleistift (Druckerei)</ref>, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_orangeBrown">Orangebraunstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b32r</locus>: <desc xml:id="addDesc_b32r">Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b33r</locus>: <desc xml:id="addDesc_b33r">Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b34r</locus>: <desc xml:id="addDesc_b34r">Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b35r</locus>: <desc xml:id="addDesc_b35r">Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b36r</locus>: <desc xml:id="addDesc_b36r">Markierung Seitenumbruch Cb/Ed: 139|140, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b37r</locus>: <desc xml:id="addDesc_b37r">Markierung Seitenumbruch Cb/Ed: 141|142, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_orangeBrown">Orangebraunstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b38r</locus>: <desc xml:id="addDesc_b38r">Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b39r</locus>: <desc xml:id="addDesc_b39r">Markierung Seitenumbruch Cb/Ed: 143|144, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung Bogenbeginn Cb/Ed: |Bogen 10 (144|145), dazu Hinweis („145/10.“) unten rechts, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>, zusätzliche Markierung, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_pencil">Bleistift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b40r</locus>: <desc xml:id="addDesc_b40r">Markierung Seitenumbruch Cb/Ed: 145|146, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_pencil">Bleistift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b41r</locus>: <desc xml:id="addDesc_b41r">Markierung Seitenumbruch Cb/Ed: 147|148, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>.</desc></p>
+                 <p><locus>b42r</locus>: <desc xml:id="addDesc_b42r">Markierung Seitenumbruch Cb/Ed: 148|149, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung (?), <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p><!-- Violettstrich so aufnehmen? --><!-- Frage an GSA offen: b41r,11: darunter eine Bleistiftanstreichung? -->
+                 <p><locus>b43r</locus>: <desc xml:id="addDesc_b43r">Markierung Seitenumbruch Cb/Ed: 150|151, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_pencil">Bleistift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b44r</locus>: <desc xml:id="addDesc_b44r">Markierung Seitenumbruch Cb/Ed: 151|152, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b45r</locus>: <desc xml:id="addDesc_b45r">Markierung Seitenumbruch Cb/Ed: 152|153, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>, zusätzliche Markierung, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b46r</locus>: <desc xml:id="addDesc_b46r">Markierung Seitenumbrüche Cb/Ed: 153|154, 154|155, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>.</desc></p>
+                 <p><locus>b47r</locus>: <desc xml:id="addDesc_b47r">Markierung Seitenumbruch Cb/Ed: 155|156 („156“), <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Redaktionen, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref> (siehe Ts); Markierungen, <ref target="#N-Archiv_pencil">Bleistift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p><!-- so?? "Redaktionen Blaustift (siehe Ts)"? ggf. b20r, b62r, b66r (weitere Fälle? ja, Setzer-Metamarks a29r, a39r, a40v, a41r, b61r, b62r, b65r sowie a3r, a3v, a4r, a33r) auch so? -->
+                 <p><locus>b48r</locus>: <desc xml:id="addDesc_b48r">Markierung Seitenumbruch Cb/Ed: 156|157, 157|158, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_pencil">Bleistift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b49r</locus>: <desc xml:id="addDesc_b49r">Markierung Seitenumbruch Cb/Ed: 158|159, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b50r</locus>: <desc xml:id="addDesc_b50r">Markierung Seitenumbruch Cb/Ed: 159|160, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung Bogenbeginn Cb/Ed: |Bogen 11 (160|161), dazu Hinweis („161/11.“) unten Mitte, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b51r</locus>: <desc xml:id="addDesc_b51r">Markierung Seitenumbruch Cb/Ed: 161|162, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b52r</locus>: <desc xml:id="addDesc_b52r">Markierung Seitenumbruch Cb/Ed: 162|163, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                <p><locus>b53r</locus>: <desc xml:id="addDesc_b53r">Markierung Seitenumbruch Cb/Ed: 163|164, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b54r</locus>: <desc xml:id="addDesc_b54r">Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b55r</locus>: <desc xml:id="addDesc_b55r">Markierung Seitenumbruch Cb(?)/Ed: 166|167, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b56r</locus>: <desc xml:id="addDesc_b56r">Markierung Seitenumbruch Cb/Ed: 167|168, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b57r</locus>: <desc xml:id="addDesc_b57r">Markierung Seitenumbruch Cb/Ed: 169|170, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b58r</locus>: <desc xml:id="addDesc_b58r">Markierung Seitenumbruch Cb/Ed: 170|171, Cb: 171|172, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierung, <ref target="#N-Archiv_orangeBrown">Orangebraunstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b59r</locus>: <desc xml:id="addDesc_b59r">Markierung Seitenumbruch Cb/Ed: 172|173, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>.</desc></p>
+                 <p><locus>b59v</locus>: <desc xml:id="addDesc_b59v">Markierung, <ref target="#N-Archiv_orangeBrown">Orangebraunstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b60r</locus>: <desc xml:id="addDesc_b60r">Markierung, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b61r</locus>: <desc xml:id="addDesc_b61r">Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p><!-- ggf. Setzer-Red. "siehe Ts" -->
+                 <p><locus>b62r</locus>: <desc xml:id="addDesc_b62r">Markierung Seitenumbruch Cb/Ed: 176|177, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Z. 24-25 Streichung, Markierung („+“) und Hinweis („einschalten“), <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p><!-- ggf. Setzer-Red. "siehe Ts" -->
+                 <p><locus>b63r</locus>: <desc xml:id="addDesc_b63r">Markierungen, Z. 5-10 und 14-20 Streichungen, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b64r</locus>: <desc xml:id="addDesc_b64r">Keine Bearbeitungsspuren.</desc></p>
+                 <p><locus>b65r</locus>: <desc xml:id="addDesc_b65r">Markierung Seitenumbruch Cb: 177|178, Hinweis („Seite 61“ [=b62r]), <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_orangeBrown">Orangebraunstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b66r</locus>: <desc xml:id="addDesc_b66r">Markierung Seitenumbruch Cb: 178|179, Markierungen, <ref target="#typesetter_blue">Blaustift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>; Markierungen, <ref target="#N-Archiv_orangeBrown">Orangebraunstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b67r</locus>: <desc xml:id="addDesc_b67r">Markierung Seitenumbruch Cb/Ed: 179|180, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Markierungen, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b68r</locus>: <desc xml:id="addDesc_b68r">Markierung Seitenumbruch Cb/Ed: 181|182, <ref target="#typesetter_red">Rotstift (Druckerei)</ref>; Anmerkung (Z. 16 „?“), <ref target="#N-Archiv_redInk">rote Tinte (N-Archiv?)</ref>.</desc></p>
+                 <p><locus>b69r</locus>: <desc xml:id="addDesc_b69r">Markierung, <ref target="#N-Archiv_violet">Violettstift (N-Archiv)</ref>; Markierung, <ref target="#N-Archiv_blue">Blaustift (N-Archiv)</ref>.</desc></p>
+                 <p><locus>b70r</locus>: <desc xml:id="addDesc_b70r">Keine Bearbeitungsspuren.</desc></p>
+
+               </additions>
+             </physDesc>
+             <history>
+               <ab type="descHead">
+                 4. Entstehungsgeschichte</ab>
+               <p>Hier ausführlicher Text, von Vs bis Ed mit Schwerpunkt Dm; im Folgenden Kurzversion Antrag:</p>
+               <p>Im Juli und August 1887 entstanden. Über die Entstehungsgeschichte von Zur Genealogie der Moral ist wenig bekannt, die Vorarbeiten sind weitgehend verloren gegangen, laut N wurde die Schrift „rasch beschlossen, begonnen und fertig gemacht“ (<ref target="#apdx1887-08-08*">N an H. Köselitz, 8.8.1887</ref>); zunächst waren nur zwei Abhandlungen zum Druck vorgesehen, im Laufe des August folgte eine dritte Abhandlung, Korrektur und Druck dauerten bis Mitte Oktober.</p>
+               <p>Vs: Überlieferung nur sehr lückenhaft, vereinzelte Vs in KGW IX: N VII 3, W I 8, Mp XV, Mp XVI, Mp XVII.</p>
+               <p>Cb: K 11 (Mette-Signatur): Bogen 1, in doppelter Ausführung überliefert, Korrekturen von Ns und Köselitz’ Hand; Bogen 10, ohne Korrekturen.</p>
+               <p xml:id="CbTitel">Cb Titel, S. [I]-[XVI] (Titelei, Vorrede 1-8, Titelblatt GM I), nicht überliefert</p>
+               <p xml:id="Cb1">Cb 1, S. 1-16 (GM I 1-10), in doppelter Ausführung überliefert (Cb 1a, Cb 1b)</p>
+               <p>usw.</p>
+               <p>Ed: E 40 (Mette-Signatur): Zur Genealogie der Moral. Eine Streitschrift. Leipzig: C. G. Naumann 1887.</p>
+             </history>
+           </msDesc></sourceDesc></fileDesc>
+   <profileDesc>
+       <creation>
+         <listChange ordered="true">
+          <change xml:id="preliminaryContext">Entstehungskontext: Enttäuschende Verkaufszahlen von JGB, mitgeteilt von C. G. Naumann, vermutlich <date notAfter="1887-06-05">Anfang Juni 1887</date>; biographische Nachfragen zu Ns Großmutter väterlicherseits durch die Weimarer Goethe-Forschung, <date when="1887-07-06">6.7.1887</date>.</change>
+           <change xml:id="version0">Der ersten Niederschrift einer Seite zugehörend.</change><!-- passt hier ganz schlecht rein! -->
+           <change xml:id="GM01beginning">Beginn der Arbeiten an GM laut N ca. <date when="1887-07-10">am 10. Juli 1887</date>.</change>
+           <change xml:id="GM01redivision">Im Zug der ersten Niederschrift Zwischenrevision von GM I 4-7: Vereinigung von §5 und 6 zu §5 (später GM I 4), Umnummerierung von §7-9 zu 6-8 (später GM I 5-7), Fortsetzung mit §9ff. (später GM I 8ff.), vermutlich <date notBefore="1887-07-10" notAfter="1887-07-15">kurz vor oder um Mitte Juli 1887</date>.</change>
+           <change xml:id="GM01formerVersion">Erste Dm-Fassung, ca. vom 10. bis 17. Juli 1887 entstanden, <date when="1887-07-17">am 17. Juli 1887</date> an Druckerei geschickt. Abhandlung in 18 Abschnitten, Titel vermutlich „Jenseits von Gut und Schlecht? Eine philosophische Streitschrift“; Titelblatt und §1 nicht erhalten geblieben, §2-18 weitgehend GM I 1-17 entsprechend. Von der Druckerei unbearbeitet geblieben, da von N drei Tage später bereits zurückverlangt.</change>
+           <change xml:id="GM01MsBack">Dm (erste Dm-Fassung vom 17. Juli 1887) <date when="1887-07-20">am 20. Juli 1887</date> telegraphisch von der Druckerei zurückverlangt.</change>
+           <change xml:id="TertullianPassage">Nachtrag der Tertullian-Stelle in GM I 15, <date notBefore="1887-07-20" notAfter="1887-07-29">nach dem 20. Juli, vor Ende Juli 1887</date>. In der ersten, am 17. Juli an die Druckerei geschickten Dm-Fassung mit Hinweis für den Setzer (a17r: „<hi rend="underline">Lücke</hi>.“) ausgelassen, da N den Tertullian-Text nicht zur Hand hatte. Mit Brief vom 17. Juli bei F. Overbeck um den Text nachgefragt und diesen wahrscheinlich nur wenige Tage später zugeschickt bekommen. Ns Abschrift daraufhin von ihm selbst als eingelegtes Blatt (a18rv) dem Dm, das er am 20. Juli von der Druckerei zurückverlangt hatte, hinzugefügt.</change>
+           <change xml:id="GM01finalVersion">Finale Version von GM I, <date notBefore="1887-07-20" notAfter="1887-07-29">nach dem 20. Juli, vor Ende Juli 1887</date>. Entfernung von ursprünglichem Titelblatt und §1 der ersten Dm-Fassung, nicht erhalten geblieben; Umnummerierung von §2-18 zu GM I 1-17, im Dm nur bei der ersten Nummer eigenhändig ausgeführt.</change>
+           <change xml:id="GM02abortedVersion">Erste Version von GM II, nach §1-11 abgebrochen, <date notBefore="1887-07-20" notAfter="1887-07-29">nach dem 20. Juli, vor Ende Juli 1887</date>. Nur fragmentarisch erhalten geblieben, in Teilen GM II 1-8 und 11-13 entsprechend.</change>
+           <change xml:id="GMdefiniteTitle">Erstmalige Erwähnung des definitiven Titels „[Z]ur Genealogie der Moral. Eine Streitschrift“ in einer Postkarte an H. Köselitz vom <date when="1887-07-24">24. Juli 1887</date>.</change>
+           <change xml:id="GM02revision">Um- und Ausarbeitung von §1-11 der abgebrochenen ersten Version zu GM II 1-13, gegen <date notBefore="1887-07-20" notAfter="1887-07-29">Ende Juli 1887</date>. Ersetzung von §1, §2 und §7 durch GM II 1, 2 und 7, Erweiterungen, Ergänzungen und ggf. Umnummerierungen von §6 (GM II 6), §9 (GM II 11) und §10 (GM II 12), zwei neue Abschnitte eingefügt mit GM II 9-10.</change>
+           <change xml:id="GM02completion">Niederschrift von GM II 14-24 nach Umabrbeitung von GM II 1-13, gegen <date notBefore="1887-07-20" notAfter="1887-07-29">Ende Juli 1887</date>.</change>
+           <change xml:id="GMfrontRecord">Niederschrift von GM Vorrede 1-7 und Titelblatt, nach oder während der Vollendung von GM II 1-24, gegen <date notBefore="1887-07-20" notAfter="1887-07-29">Ende Juli 1887</date>.</change><!-- GSA?! Vorrede/Titelblatt sieht doch deutlich weniger braun aus als das übrige Braun2!? -->
+           <change xml:id="GM01-02finalVersion">Dm von GM I-II <date when="1887-07-30">am 30. Juli 1887</date> an Druckerei geschickt. Titelblatt, Vorrede 1-7, GM I-II (exklusive der nachträglichen Textänderungen zu GM II und Vorrede).</change><!-- gem. 8.8. an Kö: am 30.7. verschickt! Br an CGN aber 29.7. -->
+           <change xml:id="GM02addenda">Nachträgliche Textänderungen zu GM II, teilweise von Druckerei-Mitarbeiter in Dm eingetragen; Ns schriftliche Anordnungen nur zum Teil überliefert. Genauer Zeitpunkt nicht ermittelt, <date notBefore="1887-07-31" notAfter="1887-09-30">frühestens Ende Juli, spätestens Anfang September 1887</date>.</change>
+           <change xml:id="GMVorrede06-07addenda">Nachträgliche Textänderungen zu GM Vorrede 6-7, von Druckerei-Mitarbeiter in Dm eingetragen; Ns Anordnungen nicht überliefert. Genauer Zeitpunkt nicht ermittelt, <date notBefore="1887-07-31" notAfter="1887-10-15">frühestens Ende Juli, spätestens Anfang/Mitte Oktober 1887</date>.</change>
+           <change xml:id="proofreading">Bogenkorrekturen zu GM I-II, GM III und Titelei <date from="1887-08-09" to="1887-10-19">vom 9. August bis 19. Oktober 1887</date>: 12½ Bogen, Korrektur gelesen von N in Sils und Köselitz in Venedig, die letzten 5½ Bogen Ende September bis Mitte Oktober gemeinsam in Venedig.</change>
+           <change xml:id="GM03firstVersion">Erste Version von GM III in 22 Abschnitten (später GM III 2-23) <date notBefore="1887-08-01" notAfter="1887-08-20">Anfang/Mitte August 1887</date>.</change>
+           <change xml:id="GM03completion">Ergänzung und Erweiterung der ersten Version von GM III zur finalen Version von GM III, gegen <date notBefore="1887-08-15" notAfter="1887-08-28">Ende August 1887</date>. Neuer Anfangsabschnitt GM III 1, Umnummerierung von §1-22 zu GM III 2-23, fünf neue Abschnitte GM III 24-28, Inhaltsverzeichnis zu GM I-III.</change>
+           <change xml:id="GMVorrede08record">Niederschrift von GM Vorrede 8,  gegen <date notBefore="1887-08-15" notAfter="1887-08-28">Ende August 1887</date>.</change>
+           <change xml:id="GM03finalVersion">Dm von GM III <date when="1887-08-28">am 28. August 1887</date> an Druckerei geschickt: GM III, Vorrede 8, Inhaltsverzeichnis.</change>
+           <change xml:id="GMVorrede08Addendum">Nachträgliche Textänderung zu GM Vorrede 8, von Druckerei-Mitarbeiter in Dm eingetragen; Ns Anordnung nicht überliefert. Genauer Zeitpunkt nicht ermittelt, <date notBefore="1887-08-01" notAfter="1887-10-15">frühestens Ende August, spätestens Anfang/Mitte Oktober 1887</date>.</change>
+           <change xml:id="proofreadingCb12Titel">Notizen von Köselitz zur Korrektur der letzten beiden Bogen, Cb 12 und Cb Titel, nicht überliefert, <date notBefore="1887-10-15" notAfter="1887-10-18">Mitte Oktober 1887</date>.</change>
+           <change xml:id="proofreadingCbTitel">Nachtrag zur Korrektur des Titelbogens, von Köselitz in Dm eingetragen, vermutlich <date when="1887-10-18">am 18. Oktober 1887</date>. Vgl. <ref target="#KGB_KSB" n="III5/8, Nr. 928">N an Naumann, 18.10.1887 (in KGB/KSB mit Fehllesung „hundertartige“, recte: „hundertactige“)</ref>.</change>
+           <change xml:id="distribution">Die ersten fertigen Exemplare am <date when="1887-11-10">10. November 1887</date> von der Druckerei an N und H. Köselitz verschickt.</change>
+
+           <!-- usw. -->
+       </listChange>
+       </creation>
+       <handNotes>
+         <handNote xml:id="N_black1" scribe="N" medium="black ink" scope="major" change="#GMformerVersion #GM02firstVersion">Schwarze Tinte (1), egh</handNote>
+         <handNote xml:id="N_brown1" scribe="N" medium="brown ink" scope="major" change="#GM0201-13revision #GM0214-24record #GMfrontRecord">Braune Tinte (1), egh</handNote>
+         <handNote xml:id="N_black2" scribe="N" medium="black ink" scope="major" change="#GM03firstVersion #GM03finalVersion #GM03Vorrede8record">Schwarze Tinte (2), egh</handNote>
+         <handNote xml:id="N_pencil" scribe="N" medium="pencil" scope="minor">Bleistift, egh</handNote>
+         <handNote xml:id="N_red" scribe="N" medium="red pencil" scope="minor">Rotstift, egh</handNote>
+         <handNote xml:id="N_blue" scribe="N" medium="blue pencil" scope="minor">Blaustift, egh</handNote>
+         <handNote xml:id="Koeselitz_black" scribe="Koeselitz" medium="black ink" scope="minor">schwarze Tinte, Köselitz</handNote>
+         <handNote xml:id="Koeselitz_pencil" scribe="Koeselitz" medium="pencil" scope="minor">Bleistift, Köselitz</handNote>
+         <handNote xml:id="Koeselitz_red" scribe="Koeselitz" medium="red pencil" scope="minor">Rotstift, Köselitz</handNote>
+         <handNote xml:id="Koeselitz_blue" scribe="Koeselitz" medium="red pencil" scope="minor">Blaustift, Köselitz</handNote>
+         <handNote xml:id="typesetter_black" scribe="typesetter" medium="black ink" scope="minor">Schwarze Tinte, fHd (N.N., Druckerei)<note type="msDesc">In einer dem Dm beiliegenden Archivnotiz fälschlicherweise wegen ähnlicher Handschrift Louise Röder-Wiederhold zugeschrieben.</note>
+                </handNote>
+         <handNote xml:id="typesetter_red" scribe="typesetter" medium="red pencil" scope="minor">Rotstift, fHd (Druckerei)<note type="msDesc">Satztechnische Markierungen und Hinweise von Mitarbeitern der Druckerei.</note>
+                </handNote>
+         <handNote xml:id="typesetter_blue" scribe="typesetter" medium="red pencil" scope="minor">Blaustift, fHd (Druckerei)<note type="msDesc">Satztechnische Markierungen und Hinweise von Mitarbeitern der Druckerei.</note>
+                </handNote>
+         <handNote xml:id="N-Archiv_red" scribe="N-Archiv" medium="red pencil" scope="minor">Rotstift, fHd (N-Archiv)<note type="msDesc">Paginierung(en) sowie editorische Markierungen und Anmerkungen von Mitarbeitern des Weimarer Nietzsche-Archivs.</note>
+                </handNote>
+         <handNote xml:id="N-Archiv_blue" scribe="N-Archiv" medium="blue pencil" scope="minor">Blaustift, fHd (N-Archiv)<note type="msDesc">Editorische Markierungen und Anmerkungen von Mitarbeitern des Weimarer Nietzsche-Archivs.</note>
+                </handNote>
+         <handNote xml:id="N-Archiv_pencil" scribe="N-Archiv" medium="pencil" scope="minor">
+                    <certainty match="@scribe" locus="value" cert="medium"/>Bleistift, fHd (N-Archiv?)<note type="msDesc">a1r: Abgrenzungslinien.</note>
+                </handNote><!-- so? oder so seitenspezifische notes besser auf der entsprechenden Seite selbst geben?! -->
+         <handNote xml:id="N-Archiv_redInk" scribe="N-Archiv" medium="red ink" scope="minor">
+                    <certainty match="@scribe" locus="value" cert="medium"/>Rote Tinte, fHd (N-Archiv?)<note type="msDesc">Markierung orthographischer Unregelmäßigkeiten und Fehler.</note>
+                </handNote>
+         <handNote xml:id="GSA_pencil" scribe="GSA" medium="pencil" scope="minor">Bleistift, fHd (GSA)<note type="msDesc">Foliierung durch Mitarbeiter:in des Goethe- und Schiller-Archivs.</note>
+                </handNote>
+         <handNote xml:id="notIdentified_black" scribe="notIdentified" medium="black ink" scope="minor">Schwarze Tinte (3), Zuordnung unklar<note type="msDesc">b19r: Schraffurstreichung und Pagina in differenter schwarzer Tinte, egh oder fHd?</note>
+                </handNote><!-- so? oder so seitenspezifische notes besser auf der entsprechenden Seite selbst geben?! -->
+         <!-- usw. -->
+       </handNotes>
+     </profileDesc></teiHeader>
    <text>
       <body>
          <div1 xml:space="preserve"><anchor xml:id="a20r_div1_d2e22"/>
-            <pb xml:id="a20r" corresp="#contents_a20r #folDesc_a20rv #addDesc_a20r #N_black1" facs="#D-20a_14" change="#GM01formerVersion #GM01finalVersion #GM01-02finalVersion"/>
+            <pb xml:id="a20r" corresp="#contents_a20r #folDesc_a20rv #addDesc_a20r #N_black1" facs="#D-20a_14" change="#GM01formerVersion #GM01finalVersion #GM01-02finalVersion #proofreadingCb3"/>
             <fw type="pageNumber" hand="#N_brown1" place="top-right" xml:id="a20r_fw_d2e26">14.</fw>
             <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" xml:id="a20r_fw_d2e29"><subst xml:id="a20r_subst_d2e30"><del rend="overwritten"><del rend="erased">17</del></del><add place="superimposed" xml:id="a20r_add_d2e34">14.</add></subst></fw>
             <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="a20r_fw_d2e37">20</fw>
-            <substJoin n="4" seq="1" target="#substAdd9a_a20r #substAdd9b_a20r"/>
-            <substJoin n="4" seq="2" target="#subst10_a20r #substAdd10a_a20r #substAdd10b_a20r #substAdd10c_a20r #substDel10a_a20r #substDel10b_a20r"/>
-            <substJoin n="1-2,4" seq="3" target="#mark1a_a20r #mark1b_a20r #substAdd11a_a20r #substDel11a_a20r #substDel11b_a20r #substDel11c_a20r"/>
-            <substJoin n="5-6" target="#subst1a_a20r #subst1b_a20r #subst1c_a20r #subst1d_a20r #substAdd1_a20r #substDel1_a20r"/>
-            <substJoin n="11-12" target="#substAdd2_a20r #substDel2_a20r"/>
-            <substJoin n="11-13" target="#substAdd3a_a20r #substAdd3b_a20r"/>
-            <substJoin n="13" target="#subst4_a20r #substAdd4_a20r"/>
-            <substJoin n="14-15" seq="1" target="#subst5a_a20r #subst5b_a20r #substAdd5a_a20r #substAdd5b_a20r #substAdd5c_a20r #substDel5a_a20r #substDel5b_a20r #substRestore5a_a20r #substRestore5b_a20r"/>
-            <substJoin n="13-14" seq="2" target="#substAdd6a_a20r #substAdd6b_a20r #substDel6a_a20r #substDel6b_a20r"/>
-            <substJoin n="14-15" seq="3" target="#substAdd7a_a20r #substAdd7b_a20r #substAdd7c_a20r #substDel7a_a20r"/>
-            <substJoin n="14-15" seq="4" target="#subst8_a20r #substAdd8_a20r"/>
+            <substJoin n="a20r,4" seq="1" target="#substAdd9a_a20r #substAdd9b_a20r"/>
+            <substJoin n="a20r,4" seq="2" target="#subst10_a20r #substAdd10a_a20r #substAdd10b_a20r #substAdd10c_a20r #substDel10a_a20r #substDel10b_a20r"/>
+            <substJoin n="a20r,1-2,4" seq="3" target="#mark1a_a20r #mark1b_a20r #substAdd11a_a20r #substDel11a_a20r #substDel11b_a20r #substDel11c_a20r"/>
+            <substJoin n="a20r,5-6" target="#subst1a_a20r #subst1b_a20r #subst1c_a20r #subst1d_a20r #substAdd1_a20r #substDel1_a20r"/>
+            <substJoin n="a20r,11-12" target="#substAdd2_a20r #substDel2_a20r"/>
+            <substJoin n="a20r,11-13" target="#substAdd3a_a20r #substAdd3b_a20r"/>
+            <substJoin n="a20r,13" target="#subst4_a20r #substAdd4_a20r"/>
+            <substJoin n="a20r,14-15" seq="1" target="#subst5a_a20r #subst5b_a20r #substAdd5a_a20r #substAdd5b_a20r #substAdd5c_a20r #substDel5a_a20r #substDel5b_a20r #substRestore5a_a20r #substRestore5b_a20r"/>
+            <substJoin n="a20r,13-14" seq="2" target="#substAdd6a_a20r #substAdd6b_a20r #substDel6a_a20r #substDel6b_a20r"/>
+            <substJoin n="a20r,14-15" seq="3" target="#substAdd7a_a20r #substAdd7b_a20r #substAdd7c_a20r #substDel7a_a20r"/>
+            <substJoin n="a20r,14-15" seq="4" target="#subst8_a20r #substAdd8_a20r"/>
             <div2><anchor xml:id="a20r_div2_d2e64"/>
                <ab xml:id="a20r_ab_d2e66">
-                  <add xml:id="substAdd11a_a20r" hand="#N_brown1" place="top-center" seq="3">
+                  <add xml:id="substAdd11a_a20r" hand="#N_brown1" seq="3">
                      <lb n="1" xml:id="a20r_lb1"/><add hand="#N_brown1" place="inline" rend="red-marking" seq="3" instant="true" xml:id="a20r_add_d2e71"><metamark xml:id="mark1b_a20r" target="#mark1a_a20r">(+)</metamark></add> judaisirten Rom, das den Aspekt einer <choice xml:id="a20r_choice_d2e75"><sic>ökomenischen</sic><corr>ökumenischen</corr></choice> <hi rend="latin">Synagoge</hi> darbot und
                      <lb n="2" rend="flushRight" xml:id="a20r_lb2"/>„Kirche“ hieß:</add></ab>
                <p>
@@ -34,31 +736,31 @@
                   <lb n="4" xml:id="a20r_lb4"/>todter unter dem Druck des <add xml:id="substAdd9a_a20r" place="above" rend="insM" seq="1"><add xml:id="substAdd10a_a20r" place="inline" rend="insMExt" seq="2">neuen, </add>darüberge<subst xml:id="subst10_a20r" seq="2"><del rend="overwritten">legten</del><add place="superimposed" xml:id="a20r_add_d2e121">bauten</add></subst><add hand="#N_brown1" place="above" seq="3" xml:id="a20r_add_d2e123"><metamark xml:id="mark1a_a20r" target="#mark1b_a20r #substAdd11a_a20r">(+)</metamark></add><add xml:id="substAdd10b_a20r" place="inline" rend="insMExt" seq="2"><del xml:id="substDel11a_a20r" hand="#N_brown1" rend="hatching" seq="3">, eine ökumenische Synagoge darstellenden</del></add></add> <del xml:id="substDel10a_a20r" rend="hatching" seq="2">falschen Roms, des verjüdelten, verchristlichten</del><add xml:id="substAdd9b_a20r" place="above" rend="insM" seq="1"><del rend="hatching" seq="2"> verpöbelten</del><add place="inline" rend="insMExt" seq="2" xml:id="a20r_add_d2e135"><del xml:id="substDel11b_a20r" hand="#N_brown1" rend="hatching" seq="3"> judaisirenden</del><add xml:id="substAdd10c_a20r" place="inline" rend="insMExt" seq="2"><del xml:id="substDel11c_a20r" hand="#N_brown1" rend="hatching" seq="3"> Roms</del></add></add></add> <del xml:id="substDel10b_a20r" rend="hatching" seq="2">Roms</del>: aber sofort triumphirte wie<pc force="weak">-</pc>                                   
                   <lb n="5" xml:id="a20r_lb5"/>der Judaea, Dank <subst xml:id="a20r_subst_d2e151"><del rend="strikethrough" seq="1">de<retrace>r</retrace></del><add place="above" rend="insM" seq="1" xml:id="a20r_add_d2e155"><subst xml:id="a20r_subst_d2e156"><del xml:id="substDel1_a20r" rend="strikethrough" seq="2"><add place="inline" seq="2" xml:id="a20r_add_d2e158">j</add>einer</del><add xml:id="substAdd1_a20r" place="inline" rend="insMExt" seq="2">jener</add></subst></add></subst> gründlich pöbelhaften (deutschen und englischen) <subst xml:id="a20r_subst_d2e164"><del rend="hatching">Gegen</del><add place="above" rend="insM" xml:id="a20r_add_d2e167">Ressentiments-</add><del rend="overwritten">b</del><add place="superimposed" xml:id="a20r_add_d2e171">B</add></subst>ewegung, <subst xml:id="subst1a_a20r" seq="2"><add place="above" rend="insM" xml:id="a20r_add_d2e175">welche man die Reformation nennt</add><del rend="hatching">der sogenannten Reformation</del></subst>, <subst xml:id="subst1b_a20r" seq="2"><del rend="hatching">und</del>  
                   <lb n="6" xml:id="a20r_lb6"/><add place="above" rend="insM" xml:id="a20r_add_d2e185">hinzugerechnet,</add><del rend="hatching">somit dem</del></subst>, was aus ihr folgen mußte, <subst xml:id="subst1c_a20r" seq="2"><add place="above" rend="insM" xml:id="a20r_add_d2e191">die</add><del rend="hatching"><subst xml:id="a20r_subst_d2e194"><del rend="overwritten">der</del><add place="superimposed" xml:id="a20r_add_d2e197">die</add></subst></del></subst> Wiederherstellung der <del rend="hatching">alten</del> Kirche – <subst xml:id="subst1d_a20r" seq="2"><add place="above" rend="insM" xml:id="a20r_add_d2e205">die</add><del rend="hatching">der</del></subst> Wiederherstellung <add place="above" rend="insM" xml:id="a20r_add_d2e210">auch</add> der alten 
-                  <lb n="7" xml:id="a20r_lb7"/>Grabesruhe <add place="above" rend="insM" xml:id="a20r_add_d2e215">des klassischen</add> Rom<del rend="hatching" seq="2">’s</del>. In einem <subst xml:id="a20r_subst_d2e221"><add place="above" rend="insM" seq="1" xml:id="a20r_add_d2e222">sogar <add place="inline" rend="insMExt" seq="2" xml:id="a20r_add_d2e224">entscheidenderen und</add></add><del rend="hatching" seq="1">noch</del> <del rend="hatching" seq="2">viel</del></subst> tieferen Sinne <add place="above" rend="insM" xml:id="a20r_add_d2e234">als damals</add> kam Judaea noch einmal mit der französischen Revolution zum 
-                  <lb n="8" xml:id="a20r_lb8"/>Siege<add place="above" rend="insM" xml:id="a20r_add_d2e239"> über das klassische Ideal</add>: die letzte politische Vornehmheit, die es in Europa gab, die des siebzehnten und achtzehnten <hi rend="underline">französischen</hi> Jahr<pc force="weak">-</pc>
+                  <lb n="7" xml:id="a20r_lb7"/>Grabesruhe <add place="above" rend="insM" xml:id="a20r_add_d2e215">des klassischen</add> Rom<del rend="hatching" seq="2">’s</del>. In einem <add place="above" rend="insM" seq="1" xml:id="a20r_add_d2e221">sogar <add place="inline" rend="insMExt" seq="2" xml:id="a20r_add_d2e223">entscheidenderen und</add></add><del rend="hatching">noch</del> <del rend="hatching">viel</del> tieferen Sinne <add place="above" rend="insM" xml:id="a20r_add_d2e232">als damals</add> kam Judaea noch einmal mit der französischen Revolution zum 
+                  <lb n="8" xml:id="a20r_lb8"/>Siege<add place="above" rend="insM" xml:id="a20r_add_d2e237"> über das klassische Ideal</add>: die letzte politische Vornehmheit, die es in Europa gab, die des siebzehnten und achtzehnten <hi rend="underline">französischen</hi> Jahr<pc force="weak">-</pc>
                   <lb n="9" xml:id="a20r_lb9"/>hunderts brach unter den volksthümlichen Ressentiments-Instinkten zusammen – es wurde niemals auf Erden ein 
-                  <lb n="10" xml:id="a20r_lb10"/>größerer Jubel<add place="inline" xml:id="a20r_add_d2e253">, <add place="above" rend="insM" instant="true" xml:id="a20r_add_d2e255">eine lärmendere Begeisterung</add></add> gehört! Zwar geschah mitten darin das Ungeheuerste<add place="inline" xml:id="a20r_add_d2e258">, <add place="above" rend="insM" instant="true" xml:id="a20r_add_d2e260">das Unerwartetste</add></add>: das antike Ideal <add place="above" rend="insM" xml:id="a20r_add_d2e263">selbst</add> trat <hi rend="underline">leibhaft</hi> <add place="above" rend="insM" xml:id="a20r_add_d2e269">und mit unerhörter Pracht</add> vor Auge und Ge<pc force="weak">-</pc>
+                  <lb n="10" xml:id="a20r_lb10"/>größerer Jubel<add place="inline" xml:id="a20r_add_d2e251">, <add place="above" rend="insM" instant="true" xml:id="a20r_add_d2e253">eine lärmendere Begeisterung</add></add> gehört! Zwar geschah mitten darin das Ungeheuerste<add place="inline" xml:id="a20r_add_d2e256">, <add place="above" rend="insM" instant="true" xml:id="a20r_add_d2e258">das Unerwartetste</add></add>: das antike Ideal <add place="above" rend="insM" xml:id="a20r_add_d2e261">selbst</add> trat <hi rend="underline">leibhaft</hi> <add place="above" rend="insM" xml:id="a20r_add_d2e268">und mit unerhörter Pracht</add> vor Auge und Ge<pc force="weak">-</pc>
                   <lb n="11" xml:id="a20r_lb11"/>wissen der Menschheit – und <add xml:id="substAdd2_a20r" place="above" rend="insM" seq="1">noch einmal, stärker, einfacher, eindringlicher als je, erscholl,</add> gegenüber der alten Lügen-Losung des Ressentiment<del rend="strikethrough">s</del> <add xml:id="substAdd3a_a20r" place="above" rend="insM" seq="1">vom <hi rend="underline">Vorrecht</hi> <hi rend="underline">der</hi> <hi rend="underline">Meisten</hi></add>, gegenüber dem Willen zur Nie<pc force="weak">-</pc>
                   <lb n="12" xml:id="a20r_lb12"/>derung, zur Erniedrigung, zur Ausgleichung, zum Abwärts und Abendwärts des Menschen <del xml:id="substDel2_a20r" rend="hatching" seq="1">erscholl</del> die furchtbare und 
-                  <lb n="13" xml:id="a20r_lb13"/>entzückende Gegenlosung <add xml:id="substAdd3b_a20r" place="above" rend="insM" seq="1">vom <hi rend="underline">Vorrecht</hi> <hi rend="underline">der</hi> <hi rend="underline">Wenigsten</hi><add xml:id="substAdd4_a20r" place="inline" seq="2">!</add></add><subst xml:id="subst4_a20r" seq="2"><del rend="hatching">:</del> <del rend="overwritten">w</del><add place="superimposed" xml:id="a20r_add_d2e324">W</add></subst>ie ein letzter Fingerzeig zum <hi rend="underline">andren</hi> Wege erschien <add xml:id="substAdd6a_a20r" place="above" rend="insM" seq="2"><hi rend="latin">Napoleon</hi>,</add> jener einzelnste und spätestgeborne 
-                  <lb n="14" xml:id="a20r_lb14"/>Mensch, den es jemals gab, <del xml:id="substDel6a_a20r" rend="hatching" seq="2"><hi rend="latin">Napoleon</hi>,</del> und in ihm das fleischgewordne Problem <subst xml:id="a20r_subst_d2e345"><add xml:id="substAdd5a_a20r" place="above" rend="insM" seq="1">des</add><del rend="hatching">vom</del></subst> <hi rend="underline">vornehmen</hi> <restore xml:id="substRestore5a_a20r" type="hatching" seq="1"><hi rend="underline">Ideal<subst xml:id="subst5a_a20r" seq="1"><del rend="overwritten">e</del><add place="superimposed" xml:id="a20r_add_d2e361">s</add></subst></hi></restore><add xml:id="substAdd5b_a20r" place="above" rend="insM" seq="1"> selbst</add>, <subst xml:id="a20r_subst_d2e366"><del xml:id="substDel5a_a20r" rend="hatching" seq="1">von</del> <add xml:id="substAdd5c_a20r" place="above" rend="insM" seq="1"><subst xml:id="a20r_subst_d2e371"><del xml:id="substDel6b_a20r" rend="hatching" seq="2">– als *der</del><add xml:id="substAdd6b_a20r" place="below" rend="insM" seq="2"><subst xml:id="a20r_subst_d2e375"><del xml:id="substDel7a_a20r" rend="hatching" seq="3">– <hi rend="latin">Napoleon</hi>, die</del><add xml:id="substAdd7a_a20r" place="below" rend="insMExt" seq="3">– man überlege wohl, <hi rend="underline">was</hi> es für ein <add xml:id="substAdd7b_a20r" place="below" instant="true" seq="3"><subst xml:id="subst8_a20r" seq="4"><add place="inline" rend="insMExt" xml:id="a20r_add_d2e388">Problem</add><del rend="hatching">Ideal</del></subst> ist: <milestone unit="page" edRef="#Ed" n="37"/><hi rend="latin">Napoleon</hi>,</add></add></subst></add></subst></add> <del xml:id="substDel5b_a20r" rend="hatching" seq="1"><hi rend="underline">der</hi></del>
-                  <lb n="15" xml:id="a20r_lb15"/><add xml:id="substAdd7c_a20r" place="above" rend="insM" seq="3">die<add xml:id="substAdd8_a20r" place="inline" rend="insMExt" seq="4">se</add></add></subst> <restore type="hatching"><hi rend="underline">Synthesis</hi></restore> <subst xml:id="subst5b_a20r" seq="1"><add place="above" rend="insM" xml:id="a20r_add_d2e413">von</add><del rend="hatching"><hi rend="underline">zwischen</hi></del></subst> <hi rend="underline">Unmensch</hi> <restore xml:id="substRestore5b_a20r" type="hatching" seq="1"><hi rend="underline">und</hi></restore> <hi rend="underline">Übermensch</hi>…   
+                  <lb n="13" xml:id="a20r_lb13"/>entzückende Gegenlosung <add xml:id="substAdd3b_a20r" place="above" rend="insM" seq="1">vom <hi rend="underline">Vorrecht</hi> <hi rend="underline">der</hi> <hi rend="underline">Wenigsten</hi><add xml:id="substAdd4_a20r" place="inline" seq="2">!</add></add><subst xml:id="subst4_a20r" seq="2"><del rend="hatching">:</del> <del rend="overwritten">w</del><add place="superimposed" xml:id="a20r_add_d2e323">W</add></subst>ie ein letzter Fingerzeig zum <hi rend="underline">andren</hi> Wege erschien <add xml:id="substAdd6a_a20r" place="above" rend="insM" seq="2"><hi rend="latin">Napoleon</hi>,</add> jener einzelnste und spätestgeborne 
+                  <lb n="14" xml:id="a20r_lb14"/>Mensch, den es jemals gab, <del xml:id="substDel6a_a20r" rend="hatching" seq="2"><hi rend="latin">Napoleon</hi>,</del> und in ihm das fleischgewordne Problem <subst xml:id="a20r_subst_d2e344"><add xml:id="substAdd5a_a20r" place="above" rend="insM" seq="1">des</add><del rend="hatching">vom</del></subst> <hi rend="underline">vornehmen</hi> <restore xml:id="substRestore5a_a20r" type="hatching" seq="1"><hi rend="underline">Ideal<subst xml:id="subst5a_a20r" seq="1"><del rend="overwritten">e</del><add place="superimposed" xml:id="a20r_add_d2e359">s</add></subst></hi></restore><add xml:id="substAdd5b_a20r" place="above" rend="insM" seq="1"> selbst</add>, <subst xml:id="a20r_subst_d2e364"><del xml:id="substDel5a_a20r" rend="hatching" seq="1">von</del> <add xml:id="substAdd5c_a20r" place="above" rend="insM" seq="1"><subst xml:id="a20r_subst_d2e369"><del xml:id="substDel6b_a20r" rend="hatching" seq="2">– als *der</del><add xml:id="substAdd6b_a20r" place="below" rend="insM" seq="2"><subst xml:id="a20r_subst_d2e373"><del xml:id="substDel7a_a20r" rend="hatching" seq="3">– <hi rend="latin">Napoleon</hi>, die</del><add xml:id="substAdd7a_a20r" place="below" rend="insMExt" seq="3">– man überlege wohl, <hi rend="underline">was</hi> es für ein <add xml:id="substAdd7b_a20r" place="below" instant="true" seq="3"><subst xml:id="subst8_a20r" seq="4"><add place="inline" rend="insMExt" xml:id="a20r_add_d2e386">Problem</add><del rend="hatching">Ideal</del></subst> ist: <milestone unit="page" edRef="#Ed" n="37"/><hi rend="latin">Napoleon</hi>,</add></add></subst></add></subst></add> <del xml:id="substDel5b_a20r" rend="hatching" seq="1"><hi rend="underline">der</hi></del>
+                  <lb n="15" xml:id="a20r_lb15"/><add xml:id="substAdd7c_a20r" place="above" rend="insM" seq="3">die<add xml:id="substAdd8_a20r" place="inline" rend="insMExt" seq="4">se</add></add></subst> <restore type="hatching"><hi rend="underline">Synthesis</hi></restore> <subst xml:id="subst5b_a20r" seq="1"><add place="above" rend="insM" xml:id="a20r_add_d2e412">von</add><del rend="hatching"><hi rend="underline">zwischen</hi></del></subst> <hi rend="underline">Unmensch</hi> <restore xml:id="substRestore5b_a20r" type="hatching" seq="1"><hi rend="underline">und</hi></restore> <hi rend="underline">Übermensch</hi>…   
                </p>
             </div2>
             <div2 xml:id="GM0117"><anchor xml:id="a20r_div2_GM0117"/>
-               <lb n="16" xml:id="a20r_lb16"/><head xml:id="a20r_head_d2e435"><choice xml:id="a20r_choice_d2e436"><sic change="#GM01formerVersion">18.</sic><corr change="#GM01finalVersion">17.</corr></choice></head>
+               <lb n="16" xml:id="a20r_lb16"/><head xml:id="a20r_head_d2e433"><choice xml:id="a20r_choice_d2e434"><sic change="#GM01formerVersion">18.</sic><corr change="#GM01finalVersion">17.</corr></choice></head>
                <p>
-                  <lb n="17" xml:id="a20r_lb17"/><add place="inline" xml:id="a20r_add_d2e445">– </add>War es damit vorbei? Wurde jener größte aller Ideal-Gegensätze damit für alle Zeiten <hi rend="latin">ad acta</hi> gelegt? Oder 
+                  <lb n="17" xml:id="a20r_lb17"/><add place="inline" xml:id="a20r_add_d2e443">– </add>War es damit vorbei? Wurde jener größte aller Ideal-Gegensätze damit für alle Zeiten <hi rend="latin">ad acta</hi> gelegt? Oder 
                   <lb n="18" xml:id="a20r_lb18"/>nur vertagt, auf lange vertagt?… Sollte es nicht irgendwann einmal ein noch viel furchtbareres, viel länger vor<pc force="weak">-</pc>
                   <lb n="19" xml:id="a20r_lb19"/>bereitetes Auflodern des alten Brandes geben müssen? Mehr noch: wäre nicht gerade <hi rend="underline">das</hi> aus allen Kräften
-                  <lb n="20" xml:id="a20r_lb20"/>zu wünschen? <subst xml:id="a20r_subst_d2e464"><del rend="overwritten">S</del><add place="superimposed" xml:id="a20r_add_d2e467">s</add></subst>elbst zu wollen? selbst zu fördern?… Wer an dieser Stelle anfängt, gleich meinen Lesern, nach<pc force="weak">-</pc>
+                  <lb n="20" xml:id="a20r_lb20"/>zu wünschen? <subst xml:id="a20r_subst_d2e462"><del rend="overwritten">S</del><add place="superimposed" xml:id="a20r_add_d2e465">s</add></subst>elbst zu wollen? selbst zu fördern?… Wer an dieser Stelle anfängt, gleich meinen Lesern, nach<pc force="weak">-</pc>
                   <lb n="21" xml:id="a20r_lb21"/>zudenken, weiter zu denken, der wird schwerlich bald damit zu Ende kommen – Grund genug für mich, selbst zu Ende 
-                  <lb n="22" xml:id="a20r_lb22"/>zu kommen, vorausgesetzt, daß es <subst xml:id="a20r_subst_d2e478"><add place="above" rend="insM" xml:id="a20r_add_d2e479">längst</add><del rend="hatching">wenigstens</del></subst> zur Genüge klar geworden ist, was ich <hi rend="underline">will</hi>, was ich gerade mit 
-                  <lb n="23" xml:id="a20r_lb23"/>jener <add place="above" rend="insM" xml:id="a20r_add_d2e489">gefährlichen</add> Losung will, welche meinem letzten Buche auf den Leib geschrieben ist „<hi rend="underline">Jenseits</hi> <hi rend="underline">von</hi> <hi rend="underline">Gut</hi> <hi rend="underline">und</hi> <choice xml:id="a20r_choice_d2e505"><sic><hi rend="underline">Böse</hi></sic><corr><hi rend="underline">Böse</hi>“</corr></choice>… 
+                  <lb n="22" xml:id="a20r_lb22"/>zu kommen, vorausgesetzt, daß es <subst xml:id="a20r_subst_d2e476"><add place="above" rend="insM" xml:id="a20r_add_d2e477">längst</add><del rend="hatching">wenigstens</del></subst> zur Genüge klar geworden ist, was ich <hi rend="underline">will</hi>, was ich gerade mit 
+                  <lb n="23" xml:id="a20r_lb23"/>jener <add place="above" rend="insM" xml:id="a20r_add_d2e487">gefährlichen</add> Losung will, welche meinem letzten Buche auf den Leib geschrieben ist „<hi rend="underline">Jenseits</hi> <hi rend="underline">von</hi> <hi rend="underline">Gut</hi> <hi rend="underline">und</hi> <choice xml:id="a20r_choice_d2e503"><sic><hi rend="underline">Böse</hi></sic><corr><hi rend="underline">Böse</hi>“</corr></choice>… 
                   <lb n="24" xml:id="a20r_lb24"/>Dies heißt zum Mindesten <hi rend="underline">nicht</hi> „Jenseits von Gut und Schlecht“. – –
-                  <lb n="25" xml:id="a20r_lb25"/>x x x
+                  <lb n="25" rend="centered" xml:id="a20r_lb25"/>x x x
                </p>
-               <note type="authorial" hand="#N_black1" place="bottom-right" xml:id="a20r_note_d2e524">
+               <note type="authorial" hand="#N_black1" place="bottom-right" xml:id="a20r_note_d2e522">
                   <lb n="26" xml:id="a20r_lb26"/>Hierauf ein leeres <hi rend="underline">Blatt</hi>, auf dem nur die 
                   <lb n="27" xml:id="a20r_lb27"/>Worte stehn:
                   <lb n="28" xml:id="a20r_lb28"/><hi rend="latin"><hi rend="underline">Zweite</hi> <hi rend="underline">Abhandlung</hi>:
@@ -67,36 +769,36 @@
          </div1>
       </body>
    </text>
-<sourceDoc><surface xml:id="srcD_surface_a20r" type="relative" start="#a20r" facs="#D-20a_14"><zone xml:id="srcD_zone_a20r_div2_d2e64" start="#a20r_div2_d2e64" type="firstBlock" style="padding-top:5em;"><zone xml:id="srcD_zone_a20r_fw_d2e26" type="fw-top-right" start="#a20r_fw_d2e26"><fw type="pageNumber" hand="#N_brown1" place="top-right" corresp="#a20r_fw_d2e26">14.</fw></zone><zone xml:id="srcD_zone_a20r_fw_d2e29" type="fw-top-right" start="#a20r_fw_d2e29"><fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#a20r_fw_d2e29"><del rend="overwritten" cause="#a20r_add_d2e34"><del rend="erased">17</del></del><add place="superimposed" corresp="#a20r_add_d2e34">14.</add></fw></zone><zone xml:id="srcD_zone_a20r_ab_d2e66_a20r_lb1" start="#a20r_lb1" type="ab-zone"><line xml:id="srcD_line_a20r_lb1" style="top:1em;" start="#a20r_lb1" n="1"><add hand="#N_brown1" place="top-center" seq="3"><add hand="#N_brown1" place="inline" rend="red-marking" instant="true" corresp="#a20r_add_d2e71"><metamark corresp="#mark1b_a20r" target="#mark1a_a20r">(+)</metamark></add> judaisirten Rom, das den Aspekt einer <choice corresp="#a20r_choice_d2e75"><sic>ökomenischen</sic><corr>ökumenischen</corr></choice> <hi rend="latin">Synagoge</hi> darbot und
-                     </add></line></zone><zone xml:id="srcD_zone_a20r_ab_d2e66_a20r_lb2" start="#a20r_lb2" type="ab-zone"><line xml:id="srcD_line_a20r_lb2" style="top:2em;" start="#a20r_lb2" n="2"><add hand="#N_brown1" place="top-center" seq="3">„Kirche“ hieß:</add>
+<sourceDoc><surface xml:id="srcD_surface_a20r" type="relative" start="#a20r" facs="#D-20a_14"><zone xml:id="srcD_zone_a20r_div2_d2e64" start="#a20r_div2_d2e64" type="firstBlock" style="padding-top:5em;"><zone xml:id="srcD_zone_a20r_fw_d2e26" type="fw-top-right" start="#a20r_fw_d2e26"><fw type="pageNumber" hand="#N_brown1" place="top-right" corresp="#a20r_fw_d2e26">14.</fw></zone><zone xml:id="srcD_zone_a20r_fw_d2e29" type="fw-top-right" start="#a20r_fw_d2e29"><fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#a20r_fw_d2e29"><del rend="overwritten" cause="#a20r_add_d2e34"><del rend="erased">17</del></del><add place="superimposed" corresp="#a20r_add_d2e34">14.</add></fw></zone><zone xml:id="srcD_zone_a20r_ab_d2e66_a20r_lb1" start="#a20r_lb1" type="ab-zone"><line xml:id="srcD_line_a20r_lb1" style="top:1em;" start="#a20r_lb1" n="1"><add hand="#N_brown1" seq="3"><add hand="#N_brown1" place="inline" rend="red-marking" instant="true" corresp="#a20r_add_d2e71"><metamark corresp="#mark1b_a20r" target="#mark1a_a20r">(+)</metamark></add> judaisirten Rom, das den Aspekt einer <choice corresp="#a20r_choice_d2e75"><sic>ökomenischen</sic><corr>ökumenischen</corr></choice> <hi rend="latin">Synagoge</hi> darbot und
+                     </add></line></zone><zone xml:id="srcD_zone_a20r_ab_d2e66_a20r_lb2" start="#a20r_lb2" type="ab-zone"><line xml:id="srcD_line_a20r_lb2" style="top:2em;" start="#a20r_lb2" n="2"><add hand="#N_brown1" seq="3">„Kirche“ hieß:</add>
                
                   </line></zone><line xml:id="srcD_line_a20r_lb3" start="#a20r_lb3" n="3">ein <metamark xml:id="srcD_metamark_a20r_add_d2e91" function="insertion"><add place="above" corresp="#a20r_add_d2e91">glanz</add></metamark><del rend="hatching">pracht</del>voll-unheimliches Wiederaufwachen des klassischen Ideals<add place="inline" corresp="#a20r_add_d2e97">, </add><metamark xml:id="srcD_metamark_a20r_add_d2e99" function="insertion"><add place="above" corresp="#a20r_add_d2e99">der vornehmen Werthungsweise aller <milestone unit="page" edRef="#Ed" n="36"/>Dinge</add></metamark><del rend="strikethrough" cause="insM">:</del><add place="inline" corresp="#a20r_add_d2e105">:</add> Rom selber bewegte sich wie ein aufgeweckter Schein<pc force="weak">-</pc>                  
-                  </line><line xml:id="srcD_line_a20r_lb4" start="#a20r_lb4" n="4">todter unter dem Druck des <metamark xml:id="srcD_metamark_substAdd9a_a20r" function="insertion" rend="inSpatium" style="top:0.5em;height:0.8125em;"><add place="above" corresp="#substAdd9a_a20r" style="left:-1.25em;"><add corresp="#substAdd10a_a20r" place="inline" rend="insMExt">neuen, </add>darüberge<del rend="overwritten" cause="#a20r_add_d2e121">legten</del><add place="superimposed" corresp="#a20r_add_d2e121">bauten</add><add corresp="#a20r_add_d2e123" style="left:-0.78125em;top:-0.976562em;" place="above" hand="#N_brown1"><metamark corresp="#mark1a_a20r" target="#mark1b_a20r #substAdd11a_a20r">(+)</metamark></add><add corresp="#substAdd10b_a20r" place="inline" rend="insMExt"><del corresp="#substDel11a_a20r" hand="#N_brown1" rend="hatching">, eine ökumenische Synagoge darstellenden</del></add></add></metamark> <del corresp="#substDel10a_a20r" rend="hatching">falschen Roms, des verjüdelten, verchristlichten</del><metamark xml:id="srcD_metamark_substAdd9b_a20r" function="insertion" rend="afterWord"><add place="above" corresp="#substAdd9b_a20r"><del rend="hatching"> verpöbelten</del><add place="inline" rend="insMExt" corresp="#a20r_add_d2e135"><del corresp="#substDel11b_a20r" hand="#N_brown1" rend="hatching"> judaisirenden</del><add corresp="#substAdd10c_a20r" place="inline" rend="insMExt"><del corresp="#substDel11c_a20r" hand="#N_brown1" rend="hatching"> Roms</del></add></add></add></metamark> <del corresp="#substDel10b_a20r" rend="hatching">Roms</del>: aber sofort triumphirte wie<pc force="weak">-</pc>                                   
+                  </line><line xml:id="srcD_line_a20r_lb4" start="#a20r_lb4" n="4">todter unter dem Druck des <metamark xml:id="srcD_metamark_substAdd9a_a20r" function="insertion" rend="inSpatium"><add place="above" corresp="#substAdd9a_a20r"><add corresp="#substAdd10a_a20r" place="inline" rend="insMExt">neuen, </add>darüberge<del rend="overwritten" cause="#a20r_add_d2e121">legten</del><add place="superimposed" corresp="#a20r_add_d2e121">bauten</add><add corresp="#a20r_add_d2e123" place="above" hand="#N_brown1"><metamark corresp="#mark1a_a20r" target="#mark1b_a20r #substAdd11a_a20r">(+)</metamark></add><add corresp="#substAdd10b_a20r" place="inline" rend="insMExt"><del corresp="#substDel11a_a20r" hand="#N_brown1" rend="hatching">, eine ökumenische Synagoge darstellenden</del></add></add></metamark> <del corresp="#substDel10a_a20r" rend="hatching">falschen Roms, des verjüdelten, verchristlichten</del><metamark xml:id="srcD_metamark_substAdd9b_a20r" function="insertion" rend="afterWord"><add place="above" corresp="#substAdd9b_a20r"><del rend="hatching"> verpöbelten</del><add place="inline" rend="insMExt" corresp="#a20r_add_d2e135"><del corresp="#substDel11b_a20r" hand="#N_brown1" rend="hatching"> judaisirenden</del><add corresp="#substAdd10c_a20r" place="inline" rend="insMExt"><del corresp="#substDel11c_a20r" hand="#N_brown1" rend="hatching"> Roms</del></add></add></add></metamark> <del corresp="#substDel10b_a20r" rend="hatching">Roms</del>: aber sofort triumphirte wie<pc force="weak">-</pc>                                   
                   </line><line xml:id="srcD_line_a20r_lb5" start="#a20r_lb5" n="5">der Judaea, Dank <del rend="strikethrough">de<retrace>r</retrace></del><metamark xml:id="srcD_metamark_a20r_add_d2e155" function="insertion" rend="afterWord"><add place="above" corresp="#a20r_add_d2e155"><del corresp="#substDel1_a20r" rend="strikethrough"><add place="inline" corresp="#a20r_add_d2e158">j</add>einer</del><add corresp="#substAdd1_a20r" place="inline" rend="insMExt">jener</add></add></metamark> gründlich pöbelhaften (deutschen und englischen) <del rend="hatching">Gegen</del><metamark xml:id="srcD_metamark_a20r_add_d2e167" function="insertion" rend="inWord"><add place="above" corresp="#a20r_add_d2e167">Ressentiments-</add></metamark><del rend="overwritten" cause="#a20r_add_d2e171">b</del><add place="superimposed" corresp="#a20r_add_d2e171">B</add>ewegung, <metamark xml:id="srcD_metamark_a20r_add_d2e175" function="insertion"><add place="above" corresp="#a20r_add_d2e175">welche man die Reformation nennt</add></metamark><del rend="hatching">der sogenannten Reformation</del>, <del rend="hatching">und</del>  
-                  </line><line xml:id="srcD_line_a20r_lb6" start="#a20r_lb6" n="6"><metamark xml:id="srcD_metamark_a20r_add_d2e185" function="insertion"><add place="above" corresp="#a20r_add_d2e185">hinzugerechnet,</add></metamark><del rend="hatching">somit dem</del>, was aus ihr folgen mußte, <metamark xml:id="srcD_metamark_a20r_add_d2e191" function="insertion"><add place="above" corresp="#a20r_add_d2e191">die</add></metamark><del rend="hatching"><del rend="overwritten" cause="#a20r_add_d2e197">der</del><add place="superimposed" corresp="#a20r_add_d2e197">die</add></del> Wiederherstellung der <del rend="hatching">alten</del> Kirche – <metamark xml:id="srcD_metamark_a20r_add_d2e205" function="insertion"><add place="above" corresp="#a20r_add_d2e205">die</add></metamark><del rend="hatching">der</del> Wiederherstellung <metamark xml:id="srcD_metamark_a20r_add_d2e210" function="insertion" rend="inSpatium"><add place="above" corresp="#a20r_add_d2e210">auch</add></metamark> der alten 
-                  </line><line xml:id="srcD_line_a20r_lb7" start="#a20r_lb7" n="7">Grabesruhe <metamark xml:id="srcD_metamark_a20r_add_d2e215" function="insertion" rend="inSpatium"><add place="above" corresp="#a20r_add_d2e215">des klassischen</add></metamark> Rom<del rend="hatching">’s</del>. In einem <metamark xml:id="srcD_metamark_a20r_add_d2e222" function="insertion"><add place="above" corresp="#a20r_add_d2e222">sogar <add place="inline" rend="insMExt" corresp="#a20r_add_d2e224">entscheidenderen und</add></add></metamark><del rend="hatching">noch</del> <del rend="hatching">viel</del> tieferen Sinne <metamark xml:id="srcD_metamark_a20r_add_d2e234" function="insertion" rend="inSpatium"><add place="above" corresp="#a20r_add_d2e234">als damals</add></metamark> kam Judaea noch einmal mit der französischen Revolution zum 
-                  </line><line xml:id="srcD_line_a20r_lb8" start="#a20r_lb8" n="8">Siege<metamark xml:id="srcD_metamark_a20r_add_d2e239" function="insertion" rend="inWord"><add place="above" corresp="#a20r_add_d2e239"> über das klassische Ideal</add></metamark>: die letzte politische Vornehmheit, die es in Europa gab, die des siebzehnten und achtzehnten <hi rend="underline">französischen</hi> Jahr<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_a20r_lb6" start="#a20r_lb6" n="6"><metamark xml:id="srcD_metamark_a20r_add_d2e185" function="insertion"><add place="above" corresp="#a20r_add_d2e185">hinzugerechnet,</add></metamark><del rend="hatching">somit dem</del>, was aus ihr folgen mußte, <metamark xml:id="srcD_metamark_a20r_add_d2e191" function="insertion"><add place="above" corresp="#a20r_add_d2e191">die</add></metamark><del rend="hatching"><del rend="overwritten" cause="#a20r_add_d2e197">der</del><add place="superimposed" corresp="#a20r_add_d2e197">die</add></del> Wiederherstellung der <del rend="hatching">alten</del> Kirche – <metamark xml:id="srcD_metamark_a20r_add_d2e205" function="insertion"><add place="above" corresp="#a20r_add_d2e205">die</add></metamark><del rend="hatching">der</del> Wiederherstellung <metamark xml:id="srcD_metamark_a20r_add_d2e210" function="insertion"><add place="above" corresp="#a20r_add_d2e210">auch</add></metamark> der alten 
+                  </line><line xml:id="srcD_line_a20r_lb7" start="#a20r_lb7" n="7">Grabesruhe <metamark xml:id="srcD_metamark_a20r_add_d2e215" function="insertion" rend="inSpatium"><add place="above" corresp="#a20r_add_d2e215">des klassischen</add></metamark> Rom<del rend="hatching">’s</del>. In einem <metamark xml:id="srcD_metamark_a20r_add_d2e221" function="insertion"><add place="above" corresp="#a20r_add_d2e221">sogar <add place="inline" rend="insMExt" corresp="#a20r_add_d2e223">entscheidenderen und</add></add></metamark><del rend="hatching">noch</del> <del rend="hatching">viel</del> tieferen Sinne <metamark xml:id="srcD_metamark_a20r_add_d2e232" function="insertion"><add place="above" corresp="#a20r_add_d2e232">als damals</add></metamark> kam Judaea noch einmal mit der französischen Revolution zum 
+                  </line><line xml:id="srcD_line_a20r_lb8" start="#a20r_lb8" n="8">Siege<metamark xml:id="srcD_metamark_a20r_add_d2e237" function="insertion" rend="inWord"><add place="above" corresp="#a20r_add_d2e237"> über das klassische Ideal</add></metamark>: die letzte politische Vornehmheit, die es in Europa gab, die des siebzehnten und achtzehnten <hi rend="underline">französischen</hi> Jahr<pc force="weak">-</pc>
                   </line><line xml:id="srcD_line_a20r_lb9" start="#a20r_lb9" n="9">hunderts brach unter den volksthümlichen Ressentiments-Instinkten zusammen – es wurde niemals auf Erden ein 
-                  </line><line xml:id="srcD_line_a20r_lb10" start="#a20r_lb10" n="10">größerer Jubel<add place="inline" corresp="#a20r_add_d2e253">, <metamark xml:id="srcD_metamark_a20r_add_d2e255" function="insertion" rend="inSpatium"><add place="above" instant="true" corresp="#a20r_add_d2e255">eine lärmendere Begeisterung</add></metamark></add> gehört! Zwar geschah mitten darin das Ungeheuerste<add place="inline" corresp="#a20r_add_d2e258">, <metamark xml:id="srcD_metamark_a20r_add_d2e260" function="insertion"><add place="above" instant="true" corresp="#a20r_add_d2e260">das Unerwartetste</add></metamark></add>: das antike Ideal <metamark xml:id="srcD_metamark_a20r_add_d2e263" function="insertion" rend="inSpatium"><add place="above" corresp="#a20r_add_d2e263">selbst</add></metamark> trat <hi rend="underline">leibhaft</hi> <metamark xml:id="srcD_metamark_a20r_add_d2e269" function="insertion" rend="inSpatium"><add place="above" corresp="#a20r_add_d2e269">und mit unerhörter Pracht</add></metamark> vor Auge und Ge<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_a20r_lb10" start="#a20r_lb10" n="10">größerer Jubel<add place="inline" corresp="#a20r_add_d2e251">, <metamark xml:id="srcD_metamark_a20r_add_d2e253" function="insertion" rend="inSpatium"><add place="above" instant="true" corresp="#a20r_add_d2e253">eine lärmendere Begeisterung</add></metamark></add> gehört! Zwar geschah mitten darin das Ungeheuerste<add place="inline" corresp="#a20r_add_d2e256">, <metamark xml:id="srcD_metamark_a20r_add_d2e258" function="insertion"><add place="above" instant="true" corresp="#a20r_add_d2e258">das Unerwartetste</add></metamark></add>: das antike Ideal <metamark xml:id="srcD_metamark_a20r_add_d2e261" function="insertion" rend="inSpatium"><add place="above" corresp="#a20r_add_d2e261">selbst</add></metamark> trat <hi rend="underline">leibhaft</hi> <metamark xml:id="srcD_metamark_a20r_add_d2e268" function="insertion" rend="inSpatium"><add place="above" corresp="#a20r_add_d2e268">und mit unerhörter Pracht</add></metamark> vor Auge und Ge<pc force="weak">-</pc>
                   </line><line xml:id="srcD_line_a20r_lb11" start="#a20r_lb11" n="11">wissen der Menschheit – und <metamark xml:id="srcD_metamark_substAdd2_a20r" function="insertion" rend="inSpatium"><add place="above" corresp="#substAdd2_a20r">noch einmal, stärker, einfacher, eindringlicher als je, erscholl,</add></metamark> gegenüber der alten Lügen-Losung des Ressentiment<del rend="strikethrough">s</del> <metamark xml:id="srcD_metamark_substAdd3a_a20r" function="insertion" rend="beforePunctuation"><add place="above" corresp="#substAdd3a_a20r">vom <hi rend="underline">Vorrecht</hi> <hi rend="underline">der</hi> <hi rend="underline">Meisten</hi></add></metamark>, gegenüber dem Willen zur Nie<pc force="weak">-</pc>
                   </line><line xml:id="srcD_line_a20r_lb12" start="#a20r_lb12" n="12">derung, zur Erniedrigung, zur Ausgleichung, zum Abwärts und Abendwärts des Menschen <del corresp="#substDel2_a20r" rend="hatching">erscholl</del> die furchtbare und 
-                  </line><line xml:id="srcD_line_a20r_lb13" start="#a20r_lb13" n="13">entzückende Gegenlosung <metamark xml:id="srcD_metamark_substAdd3b_a20r" function="insertion"><add place="above" corresp="#substAdd3b_a20r">vom <hi rend="underline">Vorrecht</hi> <hi rend="underline">der</hi> <hi rend="underline">Wenigsten</hi><add corresp="#substAdd4_a20r" place="inline">!</add></add></metamark><del rend="hatching">:</del> <del rend="overwritten" cause="#a20r_add_d2e324">w</del><add place="superimposed" corresp="#a20r_add_d2e324">W</add>ie ein letzter Fingerzeig zum <hi rend="underline">andren</hi> Wege erschien <metamark xml:id="srcD_metamark_substAdd6a_a20r" function="insertion" rend="inSpatium"><add place="above" corresp="#substAdd6a_a20r"><hi rend="latin">Napoleon</hi>,</add></metamark> jener einzelnste und spätestgeborne 
-                  </line><line xml:id="srcD_line_a20r_lb14" start="#a20r_lb14" n="14">Mensch, den es jemals gab, <del corresp="#substDel6a_a20r" rend="hatching"><hi rend="latin">Napoleon</hi>,</del> und in ihm das fleischgewordne Problem <metamark xml:id="srcD_metamark_substAdd5a_a20r" function="insertion"><add place="above" corresp="#substAdd5a_a20r">des</add></metamark><del rend="hatching">vom</del> <hi rend="underline">vornehmen</hi> <restore corresp="#substRestore5a_a20r" type="hatching"><hi rend="underline">Ideal<del rend="overwritten" cause="#a20r_add_d2e361">e</del><add place="superimposed" corresp="#a20r_add_d2e361">s</add></hi></restore><metamark xml:id="srcD_metamark_substAdd5b_a20r" function="insertion" rend="beforePunctuation"><add place="above" corresp="#substAdd5b_a20r"> selbst</add></metamark>, <del corresp="#substDel5a_a20r" rend="hatching">von</del> <metamark xml:id="srcD_metamark_substAdd5c_a20r" function="insertion" rend="inSpatium"><add place="above" corresp="#substAdd5c_a20r"><del corresp="#substDel6b_a20r" rend="hatching">– als *der</del><metamark xml:id="srcD_metamark_substAdd6b_a20r" function="insertion" rend="afterWord"><add place="below" corresp="#substAdd6b_a20r"><del corresp="#substDel7a_a20r" rend="hatching">– <hi rend="latin">Napoleon</hi>, die</del><metamark xml:id="srcD_metamark_substAdd7a_a20r" function="insertion" rend="afterWord" style="height:3.02734em;"><add place="below" corresp="#substAdd7a_a20r" style="left:-14.2822em;top:3.78418em;">– man überlege wohl, <hi rend="underline">was</hi> es für ein <add corresp="#substAdd7b_a20r" style="left:-10.9863em;top:1.58691em;" place="below" instant="true"><add place="inline" rend="insMExt" corresp="#a20r_add_d2e388">Problem</add><del rend="hatching">Ideal</del> ist: <milestone unit="page" edRef="#Ed" n="37"/><hi rend="latin">Napoleon</hi>,</add></add></metamark></add></metamark></add></metamark> <del corresp="#substDel5b_a20r" rend="hatching"><hi rend="underline">der</hi></del>
-                  </line><line xml:id="srcD_line_a20r_lb15" start="#a20r_lb15" n="15"><metamark xml:id="srcD_metamark_substAdd7c_a20r" function="insertion"><add place="above" corresp="#substAdd7c_a20r">die<add corresp="#substAdd8_a20r" place="inline" rend="insMExt">se</add></add></metamark> <restore type="hatching"><hi rend="underline">Synthesis</hi></restore> <metamark xml:id="srcD_metamark_a20r_add_d2e413" function="insertion"><add place="above" corresp="#a20r_add_d2e413">von</add></metamark><del rend="hatching"><hi rend="underline">zwischen</hi></del> <hi rend="underline">Unmensch</hi> <restore corresp="#substRestore5b_a20r" type="hatching"><hi rend="underline">und</hi></restore> <hi rend="underline">Übermensch</hi>…   
+                  </line><line xml:id="srcD_line_a20r_lb13" start="#a20r_lb13" n="13">entzückende Gegenlosung <metamark xml:id="srcD_metamark_substAdd3b_a20r" function="insertion"><add place="above" corresp="#substAdd3b_a20r">vom <hi rend="underline">Vorrecht</hi> <hi rend="underline">der</hi> <hi rend="underline">Wenigsten</hi><add corresp="#substAdd4_a20r" place="inline">!</add></add></metamark><del rend="hatching">:</del> <del rend="overwritten" cause="#a20r_add_d2e323">w</del><add place="superimposed" corresp="#a20r_add_d2e323">W</add>ie ein letzter Fingerzeig zum <hi rend="underline">andren</hi> Wege erschien <metamark xml:id="srcD_metamark_substAdd6a_a20r" function="insertion"><add place="above" corresp="#substAdd6a_a20r"><hi rend="latin">Napoleon</hi>,</add></metamark> jener einzelnste und spätestgeborne 
+                  </line><line xml:id="srcD_line_a20r_lb14" start="#a20r_lb14" n="14">Mensch, den es jemals gab, <del corresp="#substDel6a_a20r" rend="hatching"><hi rend="latin">Napoleon</hi>,</del> und in ihm das fleischgewordne Problem <metamark xml:id="srcD_metamark_substAdd5a_a20r" function="insertion"><add place="above" corresp="#substAdd5a_a20r">des</add></metamark><del rend="hatching">vom</del> <hi rend="underline">vornehmen</hi> <restore corresp="#substRestore5a_a20r" type="hatching"><hi rend="underline">Ideal<del rend="overwritten" cause="#a20r_add_d2e359">e</del><add place="superimposed" corresp="#a20r_add_d2e359">s</add></hi></restore><metamark xml:id="srcD_metamark_substAdd5b_a20r" function="insertion" rend="beforePunctuation"><add place="above" corresp="#substAdd5b_a20r"> selbst</add></metamark>, <del corresp="#substDel5a_a20r" rend="hatching">von</del> <metamark xml:id="srcD_metamark_substAdd5c_a20r" function="insertion" rend="inSpatium"><add place="above" corresp="#substAdd5c_a20r"><del corresp="#substDel6b_a20r" rend="hatching">– als *der</del><metamark xml:id="srcD_metamark_substAdd6b_a20r" function="insertion" rend="afterWord"><add place="below" corresp="#substAdd6b_a20r"><del corresp="#substDel7a_a20r" rend="hatching">– <hi rend="latin">Napoleon</hi>, die</del><metamark xml:id="srcD_metamark_substAdd7a_a20r" function="insertion" rend="afterWord"><add place="below" corresp="#substAdd7a_a20r">– man überlege wohl, <hi rend="underline">was</hi> es für ein <add corresp="#substAdd7b_a20r" place="below" instant="true"><add place="inline" rend="insMExt" corresp="#a20r_add_d2e386">Problem</add><del rend="hatching">Ideal</del> ist: <milestone unit="page" edRef="#Ed" n="37"/><hi rend="latin">Napoleon</hi>,</add></add></metamark></add></metamark></add></metamark> <del corresp="#substDel5b_a20r" rend="hatching"><hi rend="underline">der</hi></del>
+                  </line><line xml:id="srcD_line_a20r_lb15" start="#a20r_lb15" n="15"><metamark xml:id="srcD_metamark_substAdd7c_a20r" function="insertion"><add place="above" corresp="#substAdd7c_a20r">die<add corresp="#substAdd8_a20r" place="inline" rend="insMExt">se</add></add></metamark> <restore type="hatching"><hi rend="underline">Synthesis</hi></restore> <metamark xml:id="srcD_metamark_a20r_add_d2e412" function="insertion"><add place="above" corresp="#a20r_add_d2e412">von</add></metamark><del rend="hatching"><hi rend="underline">zwischen</hi></del> <hi rend="underline">Unmensch</hi> <restore corresp="#substRestore5b_a20r" type="hatching"><hi rend="underline">und</hi></restore> <hi rend="underline">Übermensch</hi>…   
                
             
             <anchor corresp="#a20r_div2_GM0117"/>
-               </line></zone><zone xml:id="srcD_zone_a20r_div2_GM0117" start="#a20r_div2_GM0117" type="lastBlock" style="padding-bottom:5em;"><line xml:id="srcD_line_a20r_head_d2e435_a20r_lb16" start="#a20r_lb16" n="16"><zone xml:id="srcD_zone_a20r_head_d2e435_a20r_lb16" type="head"><choice corresp="#a20r_choice_d2e436"><sic change="#GM01formerVersion">18.</sic><corr change="#GM01finalVersion">17.</corr></choice>
+               </line></zone><zone xml:id="srcD_zone_a20r_div2_GM0117" start="#a20r_div2_GM0117" type="lastBlock" style="padding-bottom:5em;"><line xml:id="srcD_line_a20r_head_d2e433_a20r_lb16" start="#a20r_lb16" n="16"><zone xml:id="srcD_zone_a20r_head_d2e433_a20r_lb16" type="head"><choice corresp="#a20r_choice_d2e434"><sic change="#GM01formerVersion">18.</sic><corr change="#GM01finalVersion">17.</corr></choice>
                
-                  </zone></line><line xml:id="srcD_line_a20r_lb17" start="#a20r_lb17" n="17"><add place="inline" corresp="#a20r_add_d2e445">– </add>War es damit vorbei? Wurde jener größte aller Ideal-Gegensätze damit für alle Zeiten <hi rend="latin">ad acta</hi> gelegt? Oder 
+                  </zone></line><line xml:id="srcD_line_a20r_lb17" start="#a20r_lb17" n="17"><add place="inline" corresp="#a20r_add_d2e443">– </add>War es damit vorbei? Wurde jener größte aller Ideal-Gegensätze damit für alle Zeiten <hi rend="latin">ad acta</hi> gelegt? Oder 
                   </line><line xml:id="srcD_line_a20r_lb18" start="#a20r_lb18" n="18">nur vertagt, auf lange vertagt?… Sollte es nicht irgendwann einmal ein noch viel furchtbareres, viel länger vor<pc force="weak">-</pc>
                   </line><line xml:id="srcD_line_a20r_lb19" start="#a20r_lb19" n="19">bereitetes Auflodern des alten Brandes geben müssen? Mehr noch: wäre nicht gerade <hi rend="underline">das</hi> aus allen Kräften
-                  </line><line xml:id="srcD_line_a20r_lb20" start="#a20r_lb20" n="20">zu wünschen? <del rend="overwritten" cause="#a20r_add_d2e467">S</del><add place="superimposed" corresp="#a20r_add_d2e467">s</add>elbst zu wollen? selbst zu fördern?… Wer an dieser Stelle anfängt, gleich meinen Lesern, nach<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_a20r_lb20" start="#a20r_lb20" n="20">zu wünschen? <del rend="overwritten" cause="#a20r_add_d2e465">S</del><add place="superimposed" corresp="#a20r_add_d2e465">s</add>elbst zu wollen? selbst zu fördern?… Wer an dieser Stelle anfängt, gleich meinen Lesern, nach<pc force="weak">-</pc>
                   </line><line xml:id="srcD_line_a20r_lb21" start="#a20r_lb21" n="21">zudenken, weiter zu denken, der wird schwerlich bald damit zu Ende kommen – Grund genug für mich, selbst zu Ende 
-                  </line><line xml:id="srcD_line_a20r_lb22" start="#a20r_lb22" n="22">zu kommen, vorausgesetzt, daß es <metamark xml:id="srcD_metamark_a20r_add_d2e479" function="insertion"><add place="above" corresp="#a20r_add_d2e479">längst</add></metamark><del rend="hatching">wenigstens</del> zur Genüge klar geworden ist, was ich <hi rend="underline">will</hi>, was ich gerade mit 
-                  </line><line xml:id="srcD_line_a20r_lb23" start="#a20r_lb23" n="23">jener <metamark xml:id="srcD_metamark_a20r_add_d2e489" function="insertion" rend="inSpatium"><add place="above" corresp="#a20r_add_d2e489">gefährlichen</add></metamark> Losung will, welche meinem letzten Buche auf den Leib geschrieben ist „<hi rend="underline">Jenseits</hi> <hi rend="underline">von</hi> <hi rend="underline">Gut</hi> <hi rend="underline">und</hi> <choice corresp="#a20r_choice_d2e505"><sic><hi rend="underline">Böse</hi></sic><corr><hi rend="underline">Böse</hi>“</corr></choice>… 
+                  </line><line xml:id="srcD_line_a20r_lb22" start="#a20r_lb22" n="22">zu kommen, vorausgesetzt, daß es <metamark xml:id="srcD_metamark_a20r_add_d2e477" function="insertion"><add place="above" corresp="#a20r_add_d2e477">längst</add></metamark><del rend="hatching">wenigstens</del> zur Genüge klar geworden ist, was ich <hi rend="underline">will</hi>, was ich gerade mit 
+                  </line><line xml:id="srcD_line_a20r_lb23" start="#a20r_lb23" n="23">jener <metamark xml:id="srcD_metamark_a20r_add_d2e487" function="insertion" rend="inSpatium"><add place="above" corresp="#a20r_add_d2e487">gefährlichen</add></metamark> Losung will, welche meinem letzten Buche auf den Leib geschrieben ist „<hi rend="underline">Jenseits</hi> <hi rend="underline">von</hi> <hi rend="underline">Gut</hi> <hi rend="underline">und</hi> <choice corresp="#a20r_choice_d2e503"><sic><hi rend="underline">Böse</hi></sic><corr><hi rend="underline">Böse</hi>“</corr></choice>… 
                   </line><line xml:id="srcD_line_a20r_lb24" start="#a20r_lb24" n="24">Dies heißt zum Mindesten <hi rend="underline">nicht</hi> „Jenseits von Gut und Schlecht“. – –
-                  </line><line xml:id="srcD_line_a20r_lb25" start="#a20r_lb25" n="25">x x x
+                  </line><line xml:id="srcD_line_a20r_lb25" start="#a20r_lb25" rend="centered" n="25">x x x
                
                
                   </line><zone xml:id="srcD_zone_a20r_lb26" start="#a20r_lb26" type="note-zone"><line xml:id="srcD_line_a20r_lb26" style="bottom:4em;" start="#a20r_lb26" hand="#N_black1" n="26">Hierauf ein leeres <hi rend="underline">Blatt</hi>, auf dem nur die 
