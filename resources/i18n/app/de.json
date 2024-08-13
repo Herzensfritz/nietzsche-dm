@@ -2,7 +2,9 @@
     "myapp": {
     	"menu": {
     		"appNotes": "Anmerkungen",
-    		"pageInfo": "Seiteninformationen"
+    		"pageInfo": "Seiteninformationen",
+    		"toggleFacsimile": "Faksimile ein/ausblenden",
+    		"toggleInfo": "Seiteninformation ein/ausblenden"
     	},
         "title": "Nietzsche Druckmanuskripte",
         "facsimile": "Faksimile",

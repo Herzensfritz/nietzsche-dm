@@ -15,6 +15,10 @@
     </pb-restricted>
     <pb-zoom emit="transcription" direction="in" icon="icons:zoom-in"/>
     <pb-zoom emit="transcription" direction="out" icon="icons:zoom-out"/>
+    <span>
+        <paper-icon-button id="toggleFacsimile" class="mynav" icon="image:photo" data-i18n="[title]myapp.menu.toggleFacsimile" data-target="#facsimile"/>
+        <paper-icon-button id="toggleInfo" class="mynav" icon="icons:description" data-i18n="[title]myapp.menu.toggleInfo" data-target="#pageInfo"/>
+    </span>
     <pb-navigation emit="transcription" keyboard="left" subscribe="transcription" direction="backward" unit="page">
         <paper-icon-button icon="icons:chevron-left"/>
     </pb-navigation>

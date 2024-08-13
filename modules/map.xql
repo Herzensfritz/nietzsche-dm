@@ -134,6 +134,9 @@ declare function local:createTargetAttribute($root as node(), $n as xs:string, $
     }    
 };
 declare function mapping:nietzsche-notes($root as element(), $userParams as map(*)) {
+    let $ED := doc($config:data-root || "/GM_Ed_incl.xml")
+    let $rdgs := for $line in $root//tei:line/@start
+                    return local:extendApp($ED//tei:rdg[@wit="#Dm" and @source=$line]/parent::tei:app, $ED)
     let $pbId := substring-after($root/@start, '#')
     let $notes := if (root($root)//tei:surface[@xml:id = $root/@xml:id]/following-sibling::tei:surface) then (
         root($root)//tei:text//tei:note[@type="editorial" and preceding::tei:pb[1][@xml:id = $pbId] and  following::tei:pb[preceding::tei:pb[1][@xml:id = $pbId] ]]
@@ -155,6 +158,8 @@ declare function mapping:nietzsche-notes($root as element(), $userParams as map(
                             </note>
                      )
             )
+    }{    for $rdg in $rdgs
+                return $rdg
     }</div>
     let $log := console:log($div)
     return $div

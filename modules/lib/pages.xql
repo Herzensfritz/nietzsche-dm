@@ -45,6 +45,11 @@ declare variable $pages:EXIDE :=
     let $path := string-join((request:get-context-path(), request:get-attribute("$exist:prefix"), $appLink, "index.html"), "/")
     return
         replace($path, "/+", "/");
+        
+declare function pages:test($node as node(), $model as map(*)) {
+    let $log := console:log($node/@data-doc)  
+    return $node
+};
 
 (:~
  : Needed for backwards compatibility with TEI Publisher 7.0
@@ -63,7 +68,7 @@ declare function pages:parse-myparams($node as node(), $model as map(*)) {
 };
 declare function pages:check-toc($node as node(), $model as map(*)) {
     let $uri := concat($config:data-root,'/', $model?doc)
-    return if ($model?doc and count(doc($uri)//tei:surface) eq 1) then (
+    return if ($model?doc and count(doc($uri)//tei:sourceDoc/tei:surface) eq 1) then (
        let $file := replace($model?doc, '_tp','')
        let $a := <a href="/exist/restxq/transform?file={$file}" target="topoTEI">topoTEI</a>
         return $a  
@@ -350,10 +355,6 @@ declare function pages:if-supported($node as node(), $model as map(*), $media as
             $node/@*,
             templates:process($node/node(), $model)
         }
-};
-declare function pages:test($node as node(), $model as map(*)) {
-    let $log := console:log($model?config?view)
-    return $node
 };
 
 declare function pages:pb-page($node as node(), $model as map(*)) {

@@ -2,7 +2,9 @@
     "myapp": {
     	"menu": {
     		"appNotes": "Editor Notes",
-    		"pageInfo": "Page Information"	
+    		"pageInfo": "Page Information",
+    		"toggleFacsimile": "toggle facsimile",
+    		"toggleInfo": "toggle page information"	
     	},
         "title": "Foo",
         "facsimile": "Facsimile",
