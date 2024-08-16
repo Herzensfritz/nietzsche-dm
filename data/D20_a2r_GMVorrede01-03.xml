@@ -2,7 +2,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-          <title>a11r</title>
+          <title>a2r</title>
          </titleStmt>
          <publicationStmt><p/></publicationStmt><sourceDesc><msDesc>
              <msIdentifier>
@@ -509,67 +509,69 @@
        </handNotes>
      </profileDesc></teiHeader>
    <text>
-      <body>
-         <div1 xml:space="preserve"><anchor xml:id="a11r_div1_d2e22"/>
-            <pb xml:id="a11r" corresp="#contents_a11r #folDesc_a11rv #addDesc_a11r #N_black1" facs="#D-20a_7" change="#GM01formerVersion #GM01finalVersion #GM01-02finalVersion #proofreadingCb1 #proofreadingCb2"/>
-            <fw type="pageNumber" hand="#N_pencil" place="top-right" xml:id="a11r_fw_d2e26">7</fw> 
-            <fw type="pageNumber" hand="#N_red" place="top-right" xml:id="a11r_fw_d2e29">7</fw>
-            <fw type="pageNumber" hand="#typesetter_blue" place="bottom-left" xml:id="a11r_fw_d2e32">7<hi rend="superscript">a</hi></fw>
-            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="a11r_fw_d2e37">11</fw>
-            <app loc="a11r,14" corresp="#appAnchor_a11r14 #a11r_lb14">
-               <lem>-</lem>
-               <note type="editorial" xml:id="a11r_note_d2e45">falsch gesetzter Trennstrich?</note>
-            </app>
-            <substJoin n="a11r,12" target="#subst1_a11r #substDel1_a11r"/>
-            <div2><anchor xml:id="a11r_div2_d2e51"/>
+      <body>            
+         <div1 xml:id="GMVorrede" xml:space="preserve"><anchor xml:id="a2r_div1_GMVorrede"/>
+            <pb xml:id="a2r" corresp="#contents_a2r #folDesc_a2rv #addDesc_a2r #N_brown1" facs="#D-20a_III" change="#GMfrontRecord #GM01-02finalVersion #proofreadingCb12Titel"/>
+            <fw type="pageNumber" hand="#N_red" place="top-right" xml:id="a2r_fw_d2e26">III.</fw>
+            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="a2r_fw_d2e29">2</fw>
+            <milestone unit="page" edRef="#Ed" n="III"/>
+            <head xml:id="a2r_head_d2e34">
+               <lb n="1" xml:id="a2r_lb1"/><add place="inline" xml:id="a2r_add_d2e37"><hi rend="underline">Vorrede</hi>.</add>
+            </head>
+            <div2 xml:id="GMVorrede01"><anchor xml:id="a2r_div2_GMVorrede01"/>
+               <head xml:id="a2r_head_d2e46">
+                  <lb n="2" xml:id="a2r_lb2"/><add place="inline" xml:id="a2r_add_d2e49">1.</add>
+               </head>
                <p>
-                  <lb n="1" xml:id="a11r_lb1"/>ist aber diese Intoxikation <hi rend="underline">gelungen</hi>! Die „Erlösung“ des Menschengeschlechts <add place="above" rend="insM" xml:id="a11r_add_d2e61">(nämlich von „den Herren“)</add> ist auf dem besten Wege; Alles verjüdelt oder ver<pc force="weak">-</pc>
-                  <lb n="2" xml:id="a11r_lb2"/>christlicht oder verpöbelt sich zusehends (was liegt an Worten!) Der Gang dieser Vergiftung, durch den ganzen Leib der Mensch<pc force="weak">-</pc>
-                  <lb n="3" xml:id="a11r_lb3"/>heit hindurch, scheint unaufhaltsam, ihr <hi rend="latin">tempo</hi> und Schritt darf sogar von nun an immer langsamer, feiner, unhörbarer, be<pc force="weak">-</pc>
-                  <lb n="4" xml:id="a11r_lb4"/>sonnener <milestone unit="page" edRef="#Ed" n="16"/>sein – man hat ja Zeit… Kommt der Kirche in die<milestone unit="page" edRef="#Cb" n="16"/>ser Absicht heute noch eine <hi rend="underline">nothwendige</hi> Aufgabe, überhaupt noch 
-                  <lb n="5" xml:id="a11r_lb5"/>ein Recht auf Dasein zu? Oder könnte man ihrer entrathen? <hi rend="latin">Quaeritur</hi>. Es scheint, daß sie jenen Gang eher hemmt und zu<pc force="weak">-</pc>
-                  <lb n="6" xml:id="a11r_lb6"/>rückhält, <del rend="hatching" instant="true">als</del> statt ihn zu beschleunigen? Nun, eben das könnte ihre Nützlichkeit sein… Sicherlich ist sie nachgerade Etwas Gröb<pc force="weak">-</pc>
-                  <lb n="7" xml:id="a11r_lb7"/>liches und Bäurisches, das einer zarteren Intelligenz, einem eigentlich modernen Geschmacke widersteht. Sollte sie sich zum 
-                  <lb n="8" xml:id="a11r_lb8"/>Mindesten nicht etwas raffinieren?… Sie entfremdet heute mehr als daß sie verführte… Wer von uns würde wohl Freigeist 
-                  <lb n="9" xml:id="a11r_lb9"/>sein, wenn es nicht die Kirche gäbe? Die Kirche widersteht uns, <hi rend="underline">nicht</hi> ihr Gift… Von der Kirche abgesehn lieben auch wir 
-                  <lb n="10" xml:id="a11r_lb10"/>das Gift…“ – Dies der Epilog eines „Freigeistes“ zu meiner Rede, eines ehrlichen Thiers, wie er reichlich verrathen hat, 
-                  <lb n="11" xml:id="a11r_lb11"/>überdies eines Demokraten; er hatte mir bis dahin zugehört und hielt es nicht aus, mich schweigen zu hören. Für mich 
-                  <lb n="12" xml:id="a11r_lb12"/>nämlich giebt es an dieser Stelle <subst xml:id="subst1_a11r" seq="1"><add place="above" rend="insM" xml:id="a11r_add_d2e125">viel</add><del rend="hatching">Viel</del></subst> zu <del xml:id="substDel1_a11r" rend="hatching" seq="1">ver</del>schweigen. –</p>
-            </div2>
-            <div2 xml:id="GM0110"><anchor xml:id="a11r_div2_GM0110"/>
-               <head xml:id="a11r_head_d2e137">
-                  <lb n="13" xml:id="a11r_lb13"/><choice xml:id="a11r_choice_d2e140"><sic change="#GM01formerVersion">11.</sic><corr change="#GM01finalVersion">10.</corr></choice></head>
+                  <lb n="3" rend="indent" xml:id="a2r_lb3"/>Wir sind uns unbekannt, wir Erkennenden, wir selbst uns selbst: das hat seinen guten Grund. Wir haben nie 
+                  <lb n="4" xml:id="a2r_lb4"/>nach uns gesucht, – wie sollte es geschehn, daß wir eines Tags uns <hi rend="underline">fänden</hi>? Mit Recht hat man gesagt: „wo euer 
+                  <lb n="5" xml:id="a2r_lb5"/>Schatz ist, da ist auch euer Herz“; <hi rend="underline">unser</hi> Schatz ist, wo die Bienenkörbe unsrer Erkenntniß stehn. Wir sind immer 
+                  <lb n="6" xml:id="a2r_lb6"/>dazu unterwegs, als geborne Flügelthiere und Honigsammler des Geistes, wir kümmern uns von Herzen eigentlich 
+                  <lb n="7" xml:id="a2r_lb7"/>nur um Eins – etwas „heimzubringen“. Was das Leben sonst, die sogenannten „Erlebnisse“ angeht, – wer von uns 
+                  <lb n="8" xml:id="a2r_lb8"/>hat dafür auch nur Ernst genug? Oder Zeit genug? Bei solchen Sachen waren wir, fürchte ich, nie recht „bei 
+                  <lb n="9" xml:id="a2r_lb9"/>der Sache“: wir haben eben unser Herz nicht dort<subst xml:id="a2r_subst_d2e76"><del rend="overwritten"><del rend="strikethrough">,</del></del><add place="superimposed" xml:id="a2r_add_d2e80"> –</add></subst> und nicht einmal unser Ohr! Vielmehr wie ein Göttlich-
+                  <lb n="10" xml:id="a2r_lb10"/>Zerstreuter und In-sich-Versenkter, dem die Glocke eben mit aller Macht ihre zwölf Schläge des Mittags in’s 
+                  <lb n="11" xml:id="a2r_lb11"/>Ohr gedröhnt hat, mit Einem Male aufwacht und sich fragt „was hat es da eigentlich geschlagen?“ so reiben 
+                  <lb n="12" xml:id="a2r_lb12"/>auch wir uns mitunter <hi rend="underline">hinterdrein</hi> die Ohren und fragen, ganz erstaunt, ganz betreten „was haben wir da 
+                  <lb n="13" xml:id="a2r_lb13"/>eigentlich erlebt? mehr noch: wer <hi rend="underline">sind</hi> wir eigentlich?“ und zählen nach, hinterdrein, wie gesagt, alle <milestone unit="page" edRef="#Ed" n="IV"/>die 
+                  <lb n="14" xml:id="a2r_lb14"/>zitternden zwölf Glockenschläge unsres Erlebnisses, unsres Lebens, unsres <hi rend="underline">Seins</hi> – ach! und verzählen uns da<pc force="weak">-</pc>
+                  <lb n="15" xml:id="a2r_lb15"/>bei… Wir bleiben uns eben nothwendig fremd, wir verstehn uns nicht, wir <hi rend="underline">müssen</hi> uns verwechseln, für 
+                  <lb n="16" xml:id="a2r_lb16"/>uns heißt der Satz in alle Ewigkeit „Jeder ist sich selbst der Fernste“, – für uns sind wir keine „Erkennen<pc force="weak">-</pc>
+                  <lb n="17" xml:id="a2r_lb17"/>den“…</p>
+               </div2>
+            <div2 xml:id="GMVorrede02"><anchor xml:id="a2r_div2_GMVorrede02"/>
+               <head xml:id="a2r_head_d2e126">
+                  <lb n="18" xml:id="a2r_lb18"/>2.</head>
                <p>
-                  <lb n="14" xml:id="a11r_lb14"/>– Der Sklavenaufstand in der Moral beginnt damit, daß das <hi rend="underline"><hi rend="latin">Ressentiment</hi></hi> selbst schöpferisch wird und Werthe gebiert: das <del rend="strikethrough" instant="true">-<anchor xml:id="appAnchor_a11r14"/></del>
-                  <lb n="15" xml:id="a11r_lb15"/><hi rend="latin">Ressentiment</hi> solcher Wesen, denen die eigentliche <hi rend="latin">Reaction</hi>, die durch die That, versagt ist und sich durch eine imaginäre Rache schad<pc force="weak">-</pc>
-                  <lb n="16" xml:id="a11r_lb16"/>los halten. Während alle vornehme Moral aus einem triumphirenden Ja-sagen zu sich selber herauswächst, sagt die Sklaven-Moral 
-                  <lb n="17" xml:id="a11r_lb17"/>von vornherein Nein zu<del rend="strikethrough" instant="true">m</del> einem „Außerhalb“, zu einem „Anders“, zu einem „Nicht-selbst“: und <hi rend="underline">dies</hi> Nein ist ihre schöpferi<pc force="weak">-</pc>
-                  <lb n="18" xml:id="a11r_lb18"/>sche That. Diese Umkehrung des werthe-setzenden Blicks – diese <hi rend="underline">nothwendige</hi> Richtung nach <subst xml:id="a11r_subst_d2e188"><del rend="overwritten">a</del><add place="superimposed" xml:id="a11r_add_d2e191">A</add></subst>ußen statt zurück auf sich <milestone unit="section" type="signature" edRef="#Ed" n="Bogen2"/><milestone unit="page" edRef="#Ed" n="17"/>selber – 
-                  <lb n="19" xml:id="a11r_lb19"/>gehört eben zum <hi rend="latin">Ressentiment</hi>: die Sklaven-Moral bedarf, um zu entstehn, immer zuerst einer Gegen- und Auß<retrace>en</retrace>welt, sie 
-                  <lb n="20" xml:id="a11r_lb20"/>bedarf, physiologisch gesprochen, äußerer Reize, um überhaupt zu agiren – ihre Aktion ist von Grund aus Reaktion. Das 
-                  <lb n="21" xml:id="a11r_lb21"/>Umgekehrte ist bei der Vornehmen Werthungsweise der Fall: sie <add place="above" rend="insM" xml:id="a11r_add_d2e209">agirt und</add> wächst spontan, sie sucht ihren Gegensatz nur auf, um 
-                  <lb n="22" xml:id="a11r_lb22"/>zu sich selber noch dankbarer, noch frohlockender Ja zu sagen – ihr negativer Begriff „niedrig“ „gemein“ „schlecht“ ist nur ein 
-                  <lb n="23" xml:id="a11r_lb23"/>nachgebornes blasses Contrastbild im Verhältniß zu ihrem positiven, durch und durch mit Leben und Leidenschaft durchtränk<pc force="weak">-</pc>
-                  <lb n="24" xml:id="a11r_lb24"/>ten Grundbegriff „wir Vornehmen, wir Guten, wir Schönen, wir Glücklichen!“ Wenn die vornehme Werthungsweise sich 
-                  <lb n="25" xml:id="a11r_lb25"/>vergreift und an der Realität versündigt, so geschieht dies in Bezug auf die Sphäre, welche ihr <hi rend="underline">nicht</hi> genügend bekannt 
-                  <lb n="26" xml:id="a11r_lb26"/>ist, <subst instant="true" xml:id="a11r_subst_d2e230"><del rend="overwritten">ge</del><add place="superimposed" xml:id="a11r_add_d2e233">ja</add></subst> gegen deren wirkliches Kennen sie sich spröde zur Wehre setzt: sie verkennt unter Umständen die von ihr verach<pc force="weak">-</pc>
-                  <lb n="27" xml:id="a11r_lb27"/>tete Sphäre, die des gemeinen Manns, des niedren Volks; andrerseits erwäge man, daß jedenfalls der Affekt der Verachtung, 
-                  <lb n="28" xml:id="a11r_lb28"/>des Herabblickens, des Überlegen-Blickens, gesetzt, daß er das Bild des Verachteten <hi rend="underline">fälscht</hi>, bei weitem hinter der Fälschung 
-                  <lb n="29" xml:id="a11r_lb29"/>zurückbleiben wird, mit der der zurückgetretene Haß, die Rache des Ohnmächtigen sich an seinem Gegner – <hi rend="latin">in effigie</hi> 
-                  <lb n="30" xml:id="a11r_lb30"/>natürlich – vergreifen wird. In der That ist in der Verachtung zu viel Nachlässigkeit, zu viel Leicht-Nehmen, zu viel 
-                  <lb n="31" xml:id="a11r_lb31"/>Wegblicken und Ungeduld mit eingemischt, selbst zu viel eignes Frohgefühl, als daß sie im Stande wäre, ihr Objekt zum 
-                  <lb n="32" xml:id="a11r_lb32"/>eigentlichen Zerrbild und Scheusal umzuwandeln. Man überhöre doch die beinahe wohlwollenden <hi rend="latin">nuances</hi> nicht, welche zum 
-                  <lb n="33" xml:id="a11r_lb33"/>Beispiel der griechische Adel <milestone unit="page" edRef="#Ed" n="18"/>in alle Worte legt, mit denen er das niedere Volk von sich abhebt; wie sich fortwährend eine 
-                  <lb n="34" xml:id="a11r_lb34"/>Art Bedauern, Rücksicht, Nachsicht einmischt und anzuckert, bis zu dem Ende, daß fast alle Worte, die dem gemeinen Man<pc force="weak">-</pc>
-                  <lb n="35" xml:id="a11r_lb35"/>ne zukommen, schließlich als Ausdrücke für „unglücklich“ „bedauernswürdig“ übrig geblieben sind (vergleiche <foreign xml:lang="grc"><reg>δειλός</reg></foreign> <foreign xml:lang="grc"><reg>δείλαιος</reg></foreign> 
-                  <lb n="36" xml:id="a11r_lb36"/><foreign xml:lang="grc"><reg>πονηρός</reg></foreign>, <foreign xml:lang="grc"><reg>μοχϑηρός</reg></foreign>, letztere zwei eigentlich den gemeinen Mann als Arbeitssklaven und Lastthier kennzeichnend) – und wie andrer<pc force="weak">-</pc>
-                  <lb n="37" xml:id="a11r_lb37"/>seits „schlecht“ „niedrig“ „unglücklich“ nie wieder aufgehört haben, für das griechische Ohr in Einen Ton auszuklingen<add place="inline" xml:id="a11r_add_d2e292">, <add place="above" rend="insM" instant="true" xml:id="a11r_add_d2e294">mit einer Klangfarbe, in der „unglücklich“ überwiegt</add></add>: dies als 
-                  <lb n="38" xml:id="a11r_lb38"/>Erbstück der alten <add place="above" rend="insM" xml:id="a11r_add_d2e300">edlen</add> aristokratischen Werthungsweise, die sich auch im Verachten nicht verleugnet (– Philologen seien daran erin<pc force="weak">-</pc>
-                  <lb n="39" rend="flushRight" xml:id="a11r_lb39"/>nert, 
-               </p>
+                  <lb n="19" xml:id="a2r_lb19"/>– Meine Gedanken über die <hi rend="underline">Herkunft</hi> unsrer moralischen Vorurtheile – denn um sie handelt es sich in dieser Streit<pc force="weak">-</pc>
+                  <lb n="20" xml:id="a2r_lb20"/>schrift – haben ihren ersten, sparsamen und vorläufigen Ausdruck in jener Aphorismen-Sammlung erhalten, die den 
+                  <lb n="21" xml:id="a2r_lb21"/>Titel trägt „Menschliches, Allzumenschliches. Ein Buch für freie Geister<del rend="strikethrough" cert="high">.</del>“ und deren Niederschrift in Sorrent begonnen 
+                  <lb n="22" xml:id="a2r_lb22"/>wurde, während eines Winters, welcher es mir erlaubte, Halt zu machen wie ein Wandrer Halt macht, und das weite 
+                  <lb n="23" xml:id="a2r_lb23"/>und gefährliche Land zu überschauen, durch das mein Geist bis dahin gewandert war. Dies geschah im Winter 1876
+                  <lb n="24" xml:id="a2r_lb24"/>-77; die Gedanken selbst sind älter. Es waren in der Hauptsache schon die gleichen Gedanken, die ich in den 
+                  <lb n="25" xml:id="a2r_lb25"/>vorliegenden Abhandlungen wieder aufnehme: – hoffen wir, daß die lange Zwischenzeit ihnen gut gethan hat, 
+                  <lb n="26" xml:id="a2r_lb26"/>daß sie reifer, heller, stärker, vollkommner geworden sind! <hi rend="underline">Daß</hi> ich aber heute noch an ihnen festhalte, daß sie 
+                  <lb n="27" xml:id="a2r_lb27"/>sich selber inzwischen immer fester an einander gehalten haben, ja in einander gewachsen und verwachsen sind, das 
+                  <lb n="28" xml:id="a2r_lb28"/>stärkt in mir die frohe Zuversichtlichkeit, sie möchten von Anfang an in mir nicht einzeln, <milestone unit="page" edRef="#Ed" n="V"/>nicht beliebig, nicht spo<pc force="weak">-</pc>
+                  <lb n="29" xml:id="a2r_lb29"/>radisch entstanden sein, sondern aus einer gemeinsamen Wurzel heraus, aus einem in der Tiefe gebietenden, im<pc force="weak">-</pc>
+                  <lb n="30" xml:id="a2r_lb30"/>mer bestimmter redenden, immer Bestimmteres verlangenden <hi rend="underline">Grundwillen</hi> der Erkenntniß. So allein nämlich ge<pc force="weak">-</pc>
+                  <lb n="31" xml:id="a2r_lb31"/>ziemt es sich bei einem Philosophen. Wir haben kein Recht darauf, irgend worin <hi rend="underline">einzeln</hi> zu sein: wir dürfen weder 
+                  <lb n="32" xml:id="a2r_lb32"/>einzeln irren, noch einzeln die Wahrheit treffen. Vielmehr mit der Nothwendigkeit, mit der ein Baum seine 
+                  <lb n="33" xml:id="a2r_lb33"/>Früchte trägt, wachsen aus uns unsre Gedanken, unsre Werthe, un<retrace>s</retrace>re Ja’s und Nein’s und Wenn’s und Ob’s – 
+                  <lb n="34" xml:id="a2r_lb34"/>verwandt und bezüglich allesammt unter einander und Zeugnisse Eines Willens, Einer Gesundheit, Eines Erd<pc force="weak">-</pc>
+                  <lb n="35" xml:id="a2r_lb35"/>reichs, Einer Sonne. – Ob sie <hi rend="underline">euch</hi> schmecken, diese unsre Früchte? – Aber was geht das die Bäume an! 
+                  <lb n="36" xml:id="a2r_lb36"/>Was geht das <hi rend="underline">uns</hi> an, uns Philosophen!…</p>
             </div2>
-         </div1>
-      </body>
+            
+            <div2 xml:id="GMVorrede03"><anchor xml:id="a2r_div2_GMVorrede03"/>
+               <head xml:id="a2r_head_d2e222">
+                  <lb n="37" xml:id="a2r_lb37"/>3.
+               </head>
+               <p>
+                  <lb n="38" xml:id="a2r_lb38"/>Bei einer mir eignen Bedenklichkeit, die ich ungern eingestehe – sie bezieht sich nämlich auf die <hi rend="underline">Moral</hi>, 
+                  <lb n="39" xml:id="a2r_lb39"/>auf Alles, was bisher auf Erden als Moral gefeiert worden ist –, einer Bedenklichkeit, <del rend="hatching">die</del> welche in meinem </p>
+            </div2>
+         </div1></body>
    </text>
 <facsimile>
       <surface lrx="907.0" lry="1401.8" n="9v" ulx="37.1" uly="39.7" xml:id="D-20a_5v">
@@ -1238,47 +1240,57 @@
       <surface lrx="711.5" lry="874.6" n="25v" ulx="48.5" uly="47.0" xml:id="D-20b_24v">
          <graphic height="915.68pt" width="1023.52pt" corresp="http://www.nietzschesource.org/DFGAapi/api/page/download/D-20b,24v" url="https://ores.klassik-stiftung.de/digilib/Scaler/IIIF/gsa!Arbeitskopie!71!75097!75097_50/full/full/0/default.jpg"/>
       </surface>
-     </facsimile><sourceDoc><surface xml:id="srcD_surface_a11r" type="relative" start="#a11r" facs="#D-20a_7"><zone xml:id="srcD_zone_a11r_div2_d2e51" start="#a11r_div2_d2e51" type="firstBlock" style="padding-top:5em;"><zone xml:id="srcD_zone_a11r_fw_d2e26" type="fw-top-right" start="#a11r_fw_d2e26"><fw type="pageNumber" hand="#N_pencil" place="top-right" corresp="#a11r_fw_d2e26">7</fw></zone><zone xml:id="srcD_zone_a11r_fw_d2e29" type="fw-top-right" start="#a11r_fw_d2e29"><fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a11r_fw_d2e29">7</fw></zone><line xml:id="srcD_line_a11r_lb1" start="#a11r_lb1" n="1">ist aber diese Intoxikation <hi rend="underline">gelungen</hi>! Die „Erlösung“ des Menschengeschlechts <metamark xml:id="srcD_metamark_a11r_add_d2e61" function="insertion" rend="inSpatium"><add place="above" corresp="#a11r_add_d2e61">(nämlich von „den Herren“)</add></metamark> ist auf dem besten Wege; Alles verjüdelt oder ver<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a11r_lb2" start="#a11r_lb2" n="2">christlicht oder verpöbelt sich zusehends (was liegt an Worten!) Der Gang dieser Vergiftung, durch den ganzen Leib der Mensch<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a11r_lb3" start="#a11r_lb3" n="3">heit hindurch, scheint unaufhaltsam, ihr <hi rend="latin">tempo</hi> und Schritt darf sogar von nun an immer langsamer, feiner, unhörbarer, be<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a11r_lb4" start="#a11r_lb4" n="4">sonnener <milestone unit="page" edRef="#Ed" n="16"/>sein – man hat ja Zeit… Kommt der Kirche in die<milestone unit="page" edRef="#Cb" n="16"/>ser Absicht heute noch eine <hi rend="underline">nothwendige</hi> Aufgabe, überhaupt noch 
-                  </line><line xml:id="srcD_line_a11r_lb5" start="#a11r_lb5" n="5">ein Recht auf Dasein zu? Oder könnte man ihrer entrathen? <hi rend="latin">Quaeritur</hi>. Es scheint, daß sie jenen Gang eher hemmt und zu<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a11r_lb6" start="#a11r_lb6" n="6">rückhält, <del rend="hatching" instant="true">als</del> statt ihn zu beschleunigen? Nun, eben das könnte ihre Nützlichkeit sein… Sicherlich ist sie nachgerade Etwas Gröb<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a11r_lb7" start="#a11r_lb7" n="7">liches und Bäurisches, das einer zarteren Intelligenz, einem eigentlich modernen Geschmacke widersteht. Sollte sie sich zum 
-                  </line><line xml:id="srcD_line_a11r_lb8" start="#a11r_lb8" n="8">Mindesten nicht etwas raffinieren?… Sie entfremdet heute mehr als daß sie verführte… Wer von uns würde wohl Freigeist 
-                  </line><line xml:id="srcD_line_a11r_lb9" start="#a11r_lb9" n="9">sein, wenn es nicht die Kirche gäbe? Die Kirche widersteht uns, <hi rend="underline">nicht</hi> ihr Gift… Von der Kirche abgesehn lieben auch wir 
-                  </line><line xml:id="srcD_line_a11r_lb10" start="#a11r_lb10" n="10">das Gift…“ – Dies der Epilog eines „Freigeistes“ zu meiner Rede, eines ehrlichen Thiers, wie er reichlich verrathen hat, 
-                  </line><line xml:id="srcD_line_a11r_lb11" start="#a11r_lb11" n="11">überdies eines Demokraten; er hatte mir bis dahin zugehört und hielt es nicht aus, mich schweigen zu hören. Für mich 
-                  </line><line xml:id="srcD_line_a11r_lb12" start="#a11r_lb12" n="12">nämlich giebt es an dieser Stelle <metamark xml:id="srcD_metamark_a11r_add_d2e125" function="insertion"><add place="above" corresp="#a11r_add_d2e125">viel</add></metamark><del rend="hatching">Viel</del> zu <del corresp="#substDel1_a11r" rend="hatching">ver</del>schweigen. –
+     </facsimile><sourceDoc><surface xml:id="srcD_surface_a2r" type="relative" start="#a2r" facs="#D-20a_III"><zone xml:id="srcD_zone_a2r_div2_GMVorrede01" start="#a2r_div2_GMVorrede01" type="firstBlock" style="padding-top:5em;"><zone xml:id="srcD_zone_a2r_fw_d2e26" type="fw-top-right" start="#a2r_fw_d2e26"><fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a2r_fw_d2e26">III.</fw></zone><zone xml:id="srcD_head_a2r_head_d2e34" type="head-zone" start="#a2r_head_d2e34"><line xml:id="srcD_line_a2r_head_d2e34_a2r_lb1" start="#a2r_lb1" style="top:-0.5em;" n="1"><zone xml:id="srcD_zone_a2r_head_d2e34_a2r_lb1" type="head" style="margin-left:11.5573em;"><add place="inline" corresp="#a2r_add_d2e37"><hi rend="underline">Vorrede</hi>.</add>
             
-            <anchor corresp="#a11r_div2_GM0110"/>
+            <anchor corresp="#a2r_div2_GMVorrede01"/>
                
-                  </line></zone><zone xml:id="srcD_zone_a11r_div2_GM0110" start="#a11r_div2_GM0110" type="lastBlock" style="padding-bottom:5em;"><line xml:id="srcD_line_a11r_head_d2e137_a11r_lb13" start="#a11r_lb13" n="13"><zone xml:id="srcD_zone_a11r_head_d2e137_a11r_lb13" type="head"><choice corresp="#a11r_choice_d2e140"><sic change="#GM01formerVersion">11.</sic><corr change="#GM01finalVersion">10.</corr></choice>
+                  </zone></line></zone><zone xml:id="srcD_zone_a2r_lb2" start="#a2r_lb2" type="add-zone" style="margin-left:16.25em;"><line xml:id="srcD_line_a2r_lb2" start="#a2r_lb2" style="top:3.28125em;" n="2"><add place="inline" corresp="#a2r_add_d2e49">1.</add>
                
-                  </zone></line><line xml:id="srcD_line_a11r_lb14" start="#a11r_lb14" n="14">– Der Sklavenaufstand in der Moral beginnt damit, daß das <hi rend="underline"><hi rend="latin">Ressentiment</hi></hi> selbst schöpferisch wird und Werthe gebiert: das <del rend="strikethrough" instant="true">-<anchor corresp="#appAnchor_a11r14"/></del>
-                  </line><line xml:id="srcD_line_a11r_lb15" start="#a11r_lb15" n="15"><hi rend="latin">Ressentiment</hi> solcher Wesen, denen die eigentliche <hi rend="latin">Reaction</hi>, die durch die That, versagt ist und sich durch eine imaginäre Rache schad<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a11r_lb16" start="#a11r_lb16" n="16">los halten. Während alle vornehme Moral aus einem triumphirenden Ja-sagen zu sich selber herauswächst, sagt die Sklaven-Moral 
-                  </line><line xml:id="srcD_line_a11r_lb17" start="#a11r_lb17" n="17">von vornherein Nein zu<del rend="strikethrough" instant="true">m</del> einem „Außerhalb“, zu einem „Anders“, zu einem „Nicht-selbst“: und <hi rend="underline">dies</hi> Nein ist ihre schöpferi<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a11r_lb18" start="#a11r_lb18" n="18">sche That. Diese Umkehrung des werthe-setzenden Blicks – diese <hi rend="underline">nothwendige</hi> Richtung nach <del rend="overwritten" cause="#a11r_add_d2e191">a</del><add place="superimposed" corresp="#a11r_add_d2e191">A</add>ußen statt zurück auf sich <milestone unit="section" type="signature" edRef="#Ed" n="Bogen2"/><milestone unit="page" edRef="#Ed" n="17"/>selber – 
-                  </line><line xml:id="srcD_line_a11r_lb19" start="#a11r_lb19" n="19">gehört eben zum <hi rend="latin">Ressentiment</hi>: die Sklaven-Moral bedarf, um zu entstehn, immer zuerst einer Gegen- und Auß<retrace>en</retrace>welt, sie 
-                  </line><line xml:id="srcD_line_a11r_lb20" start="#a11r_lb20" n="20">bedarf, physiologisch gesprochen, äußerer Reize, um überhaupt zu agiren – ihre Aktion ist von Grund aus Reaktion. Das 
-                  </line><line xml:id="srcD_line_a11r_lb21" start="#a11r_lb21" n="21">Umgekehrte ist bei der Vornehmen Werthungsweise der Fall: sie <metamark xml:id="srcD_metamark_a11r_add_d2e209" function="insertion"><add place="above" corresp="#a11r_add_d2e209">agirt und</add></metamark> wächst spontan, sie sucht ihren Gegensatz nur auf, um 
-                  </line><line xml:id="srcD_line_a11r_lb22" start="#a11r_lb22" n="22">zu sich selber noch dankbarer, noch frohlockender Ja zu sagen – ihr negativer Begriff „niedrig“ „gemein“ „schlecht“ ist nur ein 
-                  </line><line xml:id="srcD_line_a11r_lb23" start="#a11r_lb23" n="23">nachgebornes blasses Contrastbild im Verhältniß zu ihrem positiven, durch und durch mit Leben und Leidenschaft durchtränk<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a11r_lb24" start="#a11r_lb24" n="24">ten Grundbegriff „wir Vornehmen, wir Guten, wir Schönen, wir Glücklichen!“ Wenn die vornehme Werthungsweise sich 
-                  </line><line xml:id="srcD_line_a11r_lb25" start="#a11r_lb25" n="25">vergreift und an der Realität versündigt, so geschieht dies in Bezug auf die Sphäre, welche ihr <hi rend="underline">nicht</hi> genügend bekannt 
-                  </line><line xml:id="srcD_line_a11r_lb26" start="#a11r_lb26" n="26">ist, <del rend="overwritten" cause="#a11r_add_d2e233">ge</del><add place="superimposed" corresp="#a11r_add_d2e233" instant="true">ja</add> gegen deren wirkliches Kennen sie sich spröde zur Wehre setzt: sie verkennt unter Umständen die von ihr verach<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a11r_lb27" start="#a11r_lb27" n="27">tete Sphäre, die des gemeinen Manns, des niedren Volks; andrerseits erwäge man, daß jedenfalls der Affekt der Verachtung, 
-                  </line><line xml:id="srcD_line_a11r_lb28" start="#a11r_lb28" n="28">des Herabblickens, des Überlegen-Blickens, gesetzt, daß er das Bild des Verachteten <hi rend="underline">fälscht</hi>, bei weitem hinter der Fälschung 
-                  </line><line xml:id="srcD_line_a11r_lb29" start="#a11r_lb29" n="29">zurückbleiben wird, mit der der zurückgetretene Haß, die Rache des Ohnmächtigen sich an seinem Gegner – <hi rend="latin">in effigie</hi> 
-                  </line><line xml:id="srcD_line_a11r_lb30" start="#a11r_lb30" n="30">natürlich – vergreifen wird. In der That ist in der Verachtung zu viel Nachlässigkeit, zu viel Leicht-Nehmen, zu viel 
-                  </line><line xml:id="srcD_line_a11r_lb31" start="#a11r_lb31" n="31">Wegblicken und Ungeduld mit eingemischt, selbst zu viel eignes Frohgefühl, als daß sie im Stande wäre, ihr Objekt zum 
-                  </line><line xml:id="srcD_line_a11r_lb32" start="#a11r_lb32" n="32">eigentlichen Zerrbild und Scheusal umzuwandeln. Man überhöre doch die beinahe wohlwollenden <hi rend="latin">nuances</hi> nicht, welche zum 
-                  </line><line xml:id="srcD_line_a11r_lb33" start="#a11r_lb33" n="33">Beispiel der griechische Adel <milestone unit="page" edRef="#Ed" n="18"/>in alle Worte legt, mit denen er das niedere Volk von sich abhebt; wie sich fortwährend eine 
-                  </line><line xml:id="srcD_line_a11r_lb34" start="#a11r_lb34" n="34">Art Bedauern, Rücksicht, Nachsicht einmischt und anzuckert, bis zu dem Ende, daß fast alle Worte, die dem gemeinen Man<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a11r_lb35" start="#a11r_lb35" n="35">ne zukommen, schließlich als Ausdrücke für „unglücklich“ „bedauernswürdig“ übrig geblieben sind (vergleiche <hi rend="grc">δειλός</hi> <hi rend="grc">δείλαιος</hi> 
-                  </line><line xml:id="srcD_line_a11r_lb36" start="#a11r_lb36" n="36"><hi rend="grc">πονηρός</hi>, <hi rend="grc">μοχϑηρός</hi>, letztere zwei eigentlich den gemeinen Mann als Arbeitssklaven und Lastthier kennzeichnend) – und wie andrer<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a11r_lb37" start="#a11r_lb37" n="37">seits „schlecht“ „niedrig“ „unglücklich“ nie wieder aufgehört haben, für das griechische Ohr in Einen Ton auszuklingen<add place="inline" corresp="#a11r_add_d2e292">, <metamark xml:id="srcD_metamark_a11r_add_d2e294" function="insertion" rend="endOfLine" style="top:-0.15625em;height:1.48438em;"><add place="above" instant="true" corresp="#a11r_add_d2e294" style="left:-16.875em;">mit einer Klangfarbe, in der „unglücklich“ überwiegt</add></metamark></add>: dies als 
-                  </line><line xml:id="srcD_line_a11r_lb38" start="#a11r_lb38" n="38">Erbstück der alten <metamark xml:id="srcD_metamark_a11r_add_d2e300" function="insertion" rend="inSpatium"><add place="above" corresp="#a11r_add_d2e300">edlen</add></metamark> aristokratischen Werthungsweise, die sich auch im Verachten nicht verleugnet (– Philologen seien daran erin<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a11r_lb39" start="#a11r_lb39" n="39"><zone xml:id="srcD_line_a11r_lb39_flushRight_zone" type="flushRight" style="left:-3em;">nert, 
-               </zone></line><zone xml:id="srcD_zone_a11r_fw_d2e32" type="fw-bottom-left" start="#a11r_fw_d2e32"><fw type="pageNumber" hand="#typesetter_blue" place="bottom-left" corresp="#a11r_fw_d2e32">7<hi rend="superscript">a</hi></fw></zone><zone xml:id="srcD_zone_a11r_fw_d2e37" type="fw-bottom-left" start="#a11r_fw_d2e37" style="left:3.0625em;top:85.5em;"><fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#a11r_fw_d2e37">11</fw></zone></zone></surface></sourceDoc></TEI>
+               
+                  </line></zone><line xml:id="srcD_line_a2r_lb3" start="#a2r_lb3" rend="indent" n="3">Wir sind uns unbekannt, wir Erkennenden, wir selbst uns selbst: das hat seinen guten Grund. Wir haben nie 
+                  </line><line xml:id="srcD_line_a2r_lb4" start="#a2r_lb4" n="4">nach uns gesucht, – wie sollte es geschehn, daß wir eines Tags uns <hi rend="underline">fänden</hi>? Mit Recht hat man gesagt: „wo euer 
+                  </line><line xml:id="srcD_line_a2r_lb5" start="#a2r_lb5" n="5">Schatz ist, da ist auch euer Herz“; <hi rend="underline">unser</hi> Schatz ist, wo die Bienenkörbe unsrer Erkenntniß stehn. Wir sind immer 
+                  </line><line xml:id="srcD_line_a2r_lb6" start="#a2r_lb6" n="6">dazu unterwegs, als geborne Flügelthiere und Honigsammler des Geistes, wir kümmern uns von Herzen eigentlich 
+                  </line><line xml:id="srcD_line_a2r_lb7" start="#a2r_lb7" n="7">nur um Eins – etwas „heimzubringen“. Was das Leben sonst, die sogenannten „Erlebnisse“ angeht, – wer von uns 
+                  </line><line xml:id="srcD_line_a2r_lb8" start="#a2r_lb8" n="8">hat dafür auch nur Ernst genug? Oder Zeit genug? Bei solchen Sachen waren wir, fürchte ich, nie recht „bei 
+                  </line><line xml:id="srcD_line_a2r_lb9" start="#a2r_lb9" n="9">der Sache“: wir haben eben unser Herz nicht dort<del rend="overwritten" cause="#a2r_add_d2e80"><del rend="strikethrough">,</del></del><add place="superimposed" corresp="#a2r_add_d2e80"> –</add> und nicht einmal unser Ohr! Vielmehr wie ein Göttlich-
+                  </line><line xml:id="srcD_line_a2r_lb10" start="#a2r_lb10" n="10">Zerstreuter und In-sich-Versenkter, dem die Glocke eben mit aller Macht ihre zwölf Schläge des Mittags in’s 
+                  </line><line xml:id="srcD_line_a2r_lb11" start="#a2r_lb11" n="11">Ohr gedröhnt hat, mit Einem Male aufwacht und sich fragt „was hat es da eigentlich geschlagen?“ so reiben 
+                  </line><line xml:id="srcD_line_a2r_lb12" start="#a2r_lb12" n="12">auch wir uns mitunter <hi rend="underline">hinterdrein</hi> die Ohren und fragen, ganz erstaunt, ganz betreten „was haben wir da 
+                  </line><line xml:id="srcD_line_a2r_lb13" start="#a2r_lb13" n="13">eigentlich erlebt? mehr noch: wer <hi rend="underline">sind</hi> wir eigentlich?“ und zählen nach, hinterdrein, wie gesagt, alle <milestone unit="page" edRef="#Ed" n="IV"/>die 
+                  </line><line xml:id="srcD_line_a2r_lb14" start="#a2r_lb14" n="14">zitternden zwölf Glockenschläge unsres Erlebnisses, unsres Lebens, unsres <hi rend="underline">Seins</hi> – ach! und verzählen uns da<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_a2r_lb15" start="#a2r_lb15" n="15">bei… Wir bleiben uns eben nothwendig fremd, wir verstehn uns nicht, wir <hi rend="underline">müssen</hi> uns verwechseln, für 
+                  </line><line xml:id="srcD_line_a2r_lb16" start="#a2r_lb16" n="16">uns heißt der Satz in alle Ewigkeit „Jeder ist sich selbst der Fernste“, – für uns sind wir keine „Erkennen<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_a2r_lb17" start="#a2r_lb17" n="17">den“…
+               
+            <anchor corresp="#a2r_div2_GMVorrede02"/>
+               
+                  </line></zone><zone xml:id="srcD_zone_a2r_div2_GMVorrede02" start="#a2r_div2_GMVorrede02" type="textBlock"><line xml:id="srcD_line_a2r_head_d2e126_a2r_lb18" start="#a2r_lb18" n="18"><zone xml:id="srcD_zone_a2r_head_d2e126_a2r_lb18" type="head">2.
+               
+                  </zone></line><line xml:id="srcD_line_a2r_lb19" start="#a2r_lb19" n="19">– Meine Gedanken über die <hi rend="underline">Herkunft</hi> unsrer moralischen Vorurtheile – denn um sie handelt es sich in dieser Streit<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_a2r_lb20" start="#a2r_lb20" n="20">schrift – haben ihren ersten, sparsamen und vorläufigen Ausdruck in jener Aphorismen-Sammlung erhalten, die den 
+                  </line><line xml:id="srcD_line_a2r_lb21" start="#a2r_lb21" n="21">Titel trägt „Menschliches, Allzumenschliches. Ein Buch für freie Geister<del rend="strikethrough" cert="high">.</del>“ und deren Niederschrift in Sorrent begonnen 
+                  </line><line xml:id="srcD_line_a2r_lb22" start="#a2r_lb22" n="22">wurde, während eines Winters, welcher es mir erlaubte, Halt zu machen wie ein Wandrer Halt macht, und das weite 
+                  </line><line xml:id="srcD_line_a2r_lb23" start="#a2r_lb23" n="23">und gefährliche Land zu überschauen, durch das mein Geist bis dahin gewandert war. Dies geschah im Winter 1876
+                  </line><line xml:id="srcD_line_a2r_lb24" start="#a2r_lb24" n="24">-77; die Gedanken selbst sind älter. Es waren in der Hauptsache schon die gleichen Gedanken, die ich in den 
+                  </line><line xml:id="srcD_line_a2r_lb25" start="#a2r_lb25" n="25">vorliegenden Abhandlungen wieder aufnehme: – hoffen wir, daß die lange Zwischenzeit ihnen gut gethan hat, 
+                  </line><line xml:id="srcD_line_a2r_lb26" start="#a2r_lb26" n="26">daß sie reifer, heller, stärker, vollkommner geworden sind! <hi rend="underline">Daß</hi> ich aber heute noch an ihnen festhalte, daß sie 
+                  </line><line xml:id="srcD_line_a2r_lb27" start="#a2r_lb27" n="27">sich selber inzwischen immer fester an einander gehalten haben, ja in einander gewachsen und verwachsen sind, das 
+                  </line><line xml:id="srcD_line_a2r_lb28" start="#a2r_lb28" n="28">stärkt in mir die frohe Zuversichtlichkeit, sie möchten von Anfang an in mir nicht einzeln, <milestone unit="page" edRef="#Ed" n="V"/>nicht beliebig, nicht spo<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_a2r_lb29" start="#a2r_lb29" n="29">radisch entstanden sein, sondern aus einer gemeinsamen Wurzel heraus, aus einem in der Tiefe gebietenden, im<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_a2r_lb30" start="#a2r_lb30" n="30">mer bestimmter redenden, immer Bestimmteres verlangenden <hi rend="underline">Grundwillen</hi> der Erkenntniß. So allein nämlich ge<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_a2r_lb31" start="#a2r_lb31" n="31">ziemt es sich bei einem Philosophen. Wir haben kein Recht darauf, irgend worin <hi rend="underline">einzeln</hi> zu sein: wir dürfen weder 
+                  </line><line xml:id="srcD_line_a2r_lb32" start="#a2r_lb32" n="32">einzeln irren, noch einzeln die Wahrheit treffen. Vielmehr mit der Nothwendigkeit, mit der ein Baum seine 
+                  </line><line xml:id="srcD_line_a2r_lb33" start="#a2r_lb33" n="33">Früchte trägt, wachsen aus uns unsre Gedanken, unsre Werthe, un<retrace>s</retrace>re Ja’s und Nein’s und Wenn’s und Ob’s – 
+                  </line><line xml:id="srcD_line_a2r_lb34" start="#a2r_lb34" n="34">verwandt und bezüglich allesammt unter einander und Zeugnisse Eines Willens, Einer Gesundheit, Eines Erd<pc force="weak">-</pc>
+                  </line><line xml:id="srcD_line_a2r_lb35" start="#a2r_lb35" n="35">reichs, Einer Sonne. – Ob sie <hi rend="underline">euch</hi> schmecken, diese unsre Früchte? – Aber was geht das die Bäume an! 
+                  </line><line xml:id="srcD_line_a2r_lb36" start="#a2r_lb36" n="36">Was geht das <hi rend="underline">uns</hi> an, uns Philosophen!…
+            
+            
+            <anchor corresp="#a2r_div2_GMVorrede03"/>
+               
+                  </line></zone><zone xml:id="srcD_zone_a2r_div2_GMVorrede03" start="#a2r_div2_GMVorrede03" type="lastBlock" style="padding-bottom:5em;"><line xml:id="srcD_line_a2r_head_d2e222_a2r_lb37" start="#a2r_lb37" n="37"><zone xml:id="srcD_zone_a2r_head_d2e222_a2r_lb37" type="head">3.
+               
+               
+                  </zone></line><line xml:id="srcD_line_a2r_lb38" start="#a2r_lb38" n="38">Bei einer mir eignen Bedenklichkeit, die ich ungern eingestehe – sie bezieht sich nämlich auf die <hi rend="underline">Moral</hi>, 
+                  </line><line xml:id="srcD_line_a2r_lb39" start="#a2r_lb39" n="39">auf Alles, was bisher auf Erden als Moral gefeiert worden ist –, einer Bedenklichkeit, <del rend="hatching">die</del> welche in meinem </line><zone xml:id="srcD_zone_a2r_fw_d2e29" type="fw-bottom-left" start="#a2r_fw_d2e29"><fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#a2r_fw_d2e29">2</fw></zone></zone></surface></sourceDoc></TEI>

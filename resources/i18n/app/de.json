@@ -3,6 +3,7 @@
     	"menu": {
     		"appNotes": "Anmerkungen",
     		"pageInfo": "Seiteninformationen",
+    		"toggleED": "Erstdruck ein/ausblenden",
     		"toggleFacsimile": "Faksimile ein/ausblenden",
     		"toggleInfo": "Seiteninformation ein/ausblenden"
     	},

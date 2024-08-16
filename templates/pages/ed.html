@@ -16,19 +16,8 @@
     <script src="resources/scripts/myfunctions.js"/>
     <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
     <style>
-        @font-face {
-                font-family: "MyFont";
-                src: url("https://fonts.cdnfonts.com/s/15884/SourceSerifPro-Light.woff");
-        }
-      
-        @font-face {
-                font-family: "MyLatin";
-                src: url("https://fonts.cdnfonts.com/s/12183/SourceSansPro-Light.woff");}
-        .latin {
-            font-family: MyLatin;    
-        }
         
-    
+       
         pb-page[unresolved] {
             display: none;
         }
@@ -48,14 +37,12 @@
         --typesetter_black: #373a3d;
         --blue: blue;
         }
-       #edView {
-           margin: auto;
-       }
 
        #view1 {
             flex: 1 1;
             display: flex;
             justify-content: center;
+            min-width: 50%;
         } 
          #facsimile {
             flex: 1 1;
@@ -124,17 +111,11 @@
                     </pb-view>
                 </section>
                 <main class="content-body">
-              
-              
-                 <pb-view id="view1" src="document1" column-separator=".tei-cb" view="surface" subscribe="transcription" emit="transcription">
-                            </pb-view>  
-                 <pb-view id="edView" src="document1" column-separator=".tei-cb" map="nietzsche-ed-for-dm" odd="nietzsche-ed" subscribe="transcription">
-                                </pb-view>
-                  <div id="pageInfo">
+                    <pb-view id="view1" src="document1" column-separator=".tei-cb" append-footnotes="append-footnotes" subscribe="transcription" emit="transcription"/>
+                    <div id="pageInfo">
                         <div id="fixedContent">
-                                <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-page-info" subscribe="transcription">
-                                </pb-view>
-                                <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-apps" subscribe="transcription">
+                              <h2>Test</h2>
+                              <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-dm-for-ed" subscribe="transcription">
                                 </pb-view>
                             
                         </div>

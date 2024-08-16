@@ -83,14 +83,21 @@
                 <elementSpec ident="pc" mode="add"><model predicate="@source=&#34;#KGW #KSA&#34;" behaviour="pass-through">
             <pb:template xmlns="" xml:space="preserve"><span style="margin-left: -0.3em"/></pb:template>
         </model></elementSpec>
-                <elementSpec ident="pb" mode="change"><model predicate="@edRef" behaviour="pass-through" useSourceRendition="true">
+                <elementSpec ident="pb" mode="change"><model predicate="ancestor::*[@ed and @source]" behaviour="inline">
             <param name="page" value="@n"/>
-            <param name="edRef" value="replace(replace(@edRef, '#',''), ' ', '/')"/>
-            <pb:template xmlns="" xml:space="preserve"><span style="display: block; margin-left: 7pt; color: grey; float: right; font-size: 70%">[[[edRef]]: [[page]]]</span></pb:template>
-        </model><model behaviour="pass-through" useSourceRendition="true">
+            <param name="url" value="concat(ancestor::*/@ed, '?root=', ancestor::*/@source)"/>
+            <pb:template xmlns="" xml:space="preserve"><a href="[[url]]" style="display: block; margin-left: 4pt; color: blue; float: right;"> [[[page]]]</a></pb:template>
+        </model><model predicate="@ed and @source" behaviour="inline">
             <param name="page" value="@n"/>
-            <param name="key" value="concat('myapp.', 'overwritten')"/>
-            <pb:template xmlns="" xml:space="preserve"><span style="display: block; margin-left: 4pt; color: var(--paper-fab-background); float: right;">
+            <param name="url" value="concat(@ed, '?root=', @source)"/>
+            <pb:template xmlns="" xml:space="preserve"><a href="[[url]]" style="display: block; margin-left: 4pt; color: blue; float: right;"> [[[page]]]</a></pb:template>
+        </model><model predicate="@facs" behaviour="inline">
+            <param name="page" value="@n"/>
+            <param name="url" value="id(substring-after(@facs,'#'), root($parameters?root))/graphic/@url"/>
+            <pb:template xmlns="" xml:space="preserve"><pb-facs-link emit="transcription" facs="[[url]]"> [[page]]</pb-facs-link></pb:template>
+        </model><model predicate="@edRef" behaviour="omit" useSourceRendition="true"/><model behaviour="pass-through" useSourceRendition="true">
+            <param name="page" value="@n"/>
+            <pb:template xmlns="" xml:space="preserve"><span style="display: block; margin-left: 4pt; color: lightcoral; float: right;" title="pb ohne @facs">
   [[page]]
 </span></pb:template>
         </model></elementSpec>
@@ -126,21 +133,42 @@
         </model><model predicate="orig and reg" behaviour="alternate">
             <param name="default" value="reg[1]"/>
             <param name="alternate" value="orig[1]"/>
-        </model></elementSpec><elementSpec ident="anchor" mode="change"><model behaviour="pass-through">
+        </model></elementSpec>
+                <elementSpec ident="anchor" mode="change"><model behaviour="pass-through">
             <desc>following::app/@to = concat('#', @xml:id)</desc>
             <param name="id" value="@xml:id"/>
             <param name="count" value="count(preceding::anchor)+1"/>
             <param name="rdg" value="following::app[@to=concat('#', @xml:id)]/rdg/@wit"/>
             <pb:template xmlns="" xml:space="preserve"><span class="popover trigger" id="[[id]]"><sup>[[count]]</sup></span>
 </pb:template>
-        </model></elementSpec><elementSpec ident="rdg" mode="add"><model behaviour="pass-through">
+        </model></elementSpec>
+                <elementSpec ident="rdg" mode="add"><model behaviour="pass-through">
             <param name="rdg" value="."/>
             <param name="wit" value="if (@n) then (concat(replace(substring-after(@wit, '#'), ' #', '/'), ' ', @n)) else (replace(substring-after(@wit, '#'), ' #', '/'))"/>
             <pb:template xmlns="" xml:space="preserve"><p><span>[[rdg]] ([[wit]])</span></p></pb:template>
-        </model></elementSpec><elementSpec ident="note" mode="change">
-        <model behaviour="inline" cssClass="note">
+        </model></elementSpec>
+                <elementSpec ident="note" mode="change"><model behaviour="inline" cssClass="note">
             <desc>type="annotation"</desc>
-        </model>
-    </elementSpec></schemaSpec>
+        </model></elementSpec>
+            <elementSpec ident="head" mode="change"><model predicate="$parameters?header='short'" behaviour="inline">
+            <param name="content" value="replace(string-join(.//text()[not(parent::ref)]), '^(.*?)[^\w]*$', '$1')"/>
+        </model><model predicate="parent::figure" behaviour="block">
+            <outputRendition xml:space="preserve">
+            font-style: italic;
+            </outputRendition>
+        </model><model predicate="parent::table" behaviour="block">
+            <outputRendition xml:space="preserve">
+            font-style: italic;
+            </outputRendition>
+        </model><model predicate="parent::lg" behaviour="block">
+            <outputRendition xml:space="preserve">
+            font-style: italic;
+            </outputRendition>
+        </model><model predicate="parent::list" behaviour="block">
+            <outputRendition xml:space="preserve">
+            font-weight: bold;
+            </outputRendition>
+        </model><model behaviour="block" cssClass="head"/></elementSpec>
+            </schemaSpec>
         </body>
     </text></TEI>

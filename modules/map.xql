@@ -21,6 +21,59 @@ declare function mapping:nietzsche-page($root as element(), $userParams as map(*
     let $pbId := substring-after($root/@start, '#')
     return root($root)//tei:text//tei:pb[@xml:id = $pbId]
 };
+declare function mapping:nietzsche-dm-for-ed($root as element(), $userParams as map(*)) {
+    let $next := $root/following::tei:pb[1]
+    let $milestones := root($root)//tei:text//tei:milestone[preceding::tei:pb[@n = $root/@n] and following::tei:pb[@n = $next/@n]] 
+    let $surfaces := for $milestone in $milestones
+                        let $start := concat('#', $milestone/@n)
+                        return $config:newest-dm//tei:sourceDoc/tei:surface[@start = $start] 
+    let $file := util:document-name($config:newest-dm)
+    return <div xmlns="http://www.tei-c.org/ns/1.0" type="corresp">
+            {   for $surface in $surfaces
+                    return element pb {
+                        attribute n {substring-after($surface/@start, '#')},
+                        attribute ed {$file},
+                        attribute source { util:node-id($surface)}    
+                    }
+                        
+            }
+        </div>
+};
+(:~
+ : For the Nietzsche Druckmanuskript: find the ed text corresponding
+ : to the surface shown in the diplomatic transcription.
+ :)
+declare function mapping:nietzsche-ed-for-dm($root as element(), $userParams as map(*)) {
+    let $pb := substring-after($root/@start, '#')
+    let $milestone := $config:newest-ed//tei:text//tei:milestone[@unit="page" and @source="#Dm" and @n=$pb ]
+    return if (exists($milestone)) then (
+        let $nextMilestone := $milestone/following::tei:milestone[@unit="page" and @source="#Dm"][1]
+        let $content := if (exists($nextMilestone)) then (
+            local:filterNodes(($milestone/following::node() intersect $nextMilestone/preceding::node()), util:document-name($config:newest-ed))
+        ) else (
+            local:filterNodes($milestone/following::node()[ancestor::tei:text and not(ancestor::*/preceding::tei:milestone = $milestone)], util:document-name($config:newest-ed))
+        )
+        let $log := console:log($content)
+        let $div := <div xmlns="http://www.tei-c.org/ns/1.0">
+            {   $content }
+        </div>
+        return $div
+    ) else ()
+};
+declare function local:filterNodes($nodes, $file){
+    let $filteredNodes := for $node in $nodes
+                                return if(count($node/parent::* intersect $nodes) gt 0) then () else (
+                                    if ($node instance of element(tei:pb) or $node instance of element(tei:div2)) then (
+                                        element {node-name($node)} {
+                                            $node/@* except $node/@facs,
+                                            attribute ed {$file},
+                                            attribute source { util:node-id($node)},
+                                            $node/node()
+                                        }
+                                    ) else ($node)
+                                )
+    return $filteredNodes    
+};
    
    (:~
  : For the Nietzsche Druckmanuskript: find the page information  corresponding
@@ -92,6 +145,7 @@ declare function mapping:nietzsche-apps($root as element(), $userParams as map(*
                 )
         }</div>
         let $log := console:log($div)
+        let $test := $config:newest-ed
         return $div
     )
 };

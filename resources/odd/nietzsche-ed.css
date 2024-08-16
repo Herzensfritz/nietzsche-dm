@@ -1,4 +1,12 @@
-
+ pb-facs-link {
+            display: block;
+            margin-left: 7pt;
+            color: grey;
+            float: right;
+}
+.head {
+    text-align: center;
+}
 .edRefLB  {
     display: none;
 }

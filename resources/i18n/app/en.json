@@ -3,6 +3,7 @@
     	"menu": {
     		"appNotes": "Editor Notes",
     		"pageInfo": "Page Information",
+    		"toggleED": "toggle first edition",
     		"toggleFacsimile": "toggle facsimile",
     		"toggleInfo": "toggle page information"	
     	},

@@ -9,6 +9,7 @@ module namespace config="http://www.tei-c.org/tei-simple/config";
 import module namespace http="http://expath.org/ns/http-client" at "java:org.exist.xquery.modules.httpclient.HTTPClientModule";
 import module namespace nav="http://www.tei-c.org/tei-simple/navigation" at "navigation.xql";
 import module namespace tpu="http://www.tei-c.org/tei-publisher/util" at "lib/util.xql";
+import module namespace console="http://exist-db.org/xquery/console";
 
 declare namespace templates="http://exist-db.org/xquery/html-templating";
 
@@ -16,6 +17,7 @@ declare namespace repo="http://exist-db.org/xquery/repo";
 declare namespace expath="http://expath.org/ns/pkg";
 declare namespace jmx="http://exist-db.org/jmx";
 declare namespace tei="http://www.tei-c.org/ns/1.0";
+
 
 (:~~
  : The version of the pb-components webcomponents library to be used by this app.
@@ -334,6 +336,23 @@ declare variable $config:default-odd :="surface.odd";
  : module for transformations (modules/pm-config.xql).
  :)
 declare variable $config:odd-available :=("surface.odd","nietzsche-ed.odd");
+
+(:~
+ : Newest version of "Genealogie der Moral. Erstdruck E 40"
+ :)
+declare variable $config:newest-ed := config:get-newest-doc-with-title('Zur Genealogie der Moral. Erstdruck E 40');
+(:~
+ : Newest version of "Zur Genealogie der Moral. Druckmanuskript D 20"
+ :)
+declare variable $config:newest-dm := config:get-newest-doc-with-title('Zur Genealogie der Moral. Druckmanuskript D 20');
+ 
+declare function config:get-newest-doc-with-title($title as xs:string) as document-node() {
+    let $docs := for $doc in collection($config:data-root)//tei:titleStmt/tei:title
+                        where $doc/text() = $title
+                        order by xmldb:last-modified($config:data-root, util:document-name($doc)) descending
+                        return root($doc)
+    return if (count($docs) gt 0) then ($docs[1]) else ()
+};
 
 (:~
  : List of ODD files which are used internally only, i.e. not for displaying information
