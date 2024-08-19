@@ -59,7 +59,7 @@ body {
 .metamark { cursor: pointer;}
 .small { color: black; padding: 3px; }
 .fw-box { background-color: #add8e6;}
-.popover { background-color: #F5F5F5; cursor: context-menu; color: black;}
+.popover { background-color: #F5F5F5; cursor: context-menu; color: inherit;}
     .box, .editorCorrection { background-color: #F5F5F5; width: max-content; text-align: start;}
     .box .tooltip {
        display: none;

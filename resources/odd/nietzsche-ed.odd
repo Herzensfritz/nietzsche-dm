@@ -169,6 +169,10 @@
             font-weight: bold;
             </outputRendition>
         </model><model behaviour="block" cssClass="head"/></elementSpec>
-            </schemaSpec>
+            <elementSpec ident="hi" mode="change"><model predicate="@rend='italic' and @type='editor'" behaviour="inline"/><model behaviour="inline" useSourceRendition="true">
+            <outputRendition xml:space="preserve">
+            font-style: italic;
+            </outputRendition>
+        </model></elementSpec></schemaSpec>
         </body>
     </text></TEI>

@@ -53,10 +53,24 @@ declare function mapping:nietzsche-ed-for-dm($root as element(), $userParams as 
         ) else (
             local:filterNodes($milestone/following::node()[ancestor::tei:text and not(ancestor::*/preceding::tei:milestone = $milestone)], util:document-name($config:newest-ed))
         )
-        let $log := console:log($content)
+        (:  :let $log := console:log($content) :)
+        let $firstLB := if ($milestone/following-sibling::*[1]/local-name() != 'lb') then (
+            $milestone/preceding::tei:lb[1]    
+        ) else ()
+        let $omitText := if (count($firstLB/following::node() intersect $milestone/preceding::node()) gt 0) then (
+            <hi xmlns="http://www.tei-c.org/ns/1.0" rend="italic" type="editor">[...]</hi>    
+        ) else ()
+        let $omitTextAfter := if (exists($nextMilestone) and $nextMilestone/following::tei:lb[1]/ancestor::tei:div2 = $nextMilestone/ancestor::tei:div2 
+                and count($nextMilestone/following::node() intersect $nextMilestone/following::tei:lb[1]/preceding::node()) gt 0) then (
+            <hi xmlns="http://www.tei-c.org/ns/1.0" rend="italic" type="editor">[...]</hi>    
+        ) else ()
         let $div := <div xmlns="http://www.tei-c.org/ns/1.0">
-            {   $content }
+            {   $firstLB,
+                $omitText,
+                $content,
+                $omitTextAfter}
         </div>
+        let $log := console:log($div)
         return $div
     ) else ()
 };
@@ -215,7 +229,6 @@ declare function mapping:nietzsche-notes($root as element(), $userParams as map(
     }{    for $rdg in $rdgs
                 return $rdg
     }</div>
-    let $log := console:log($div)
     return $div
 };
 
@@ -243,7 +256,6 @@ declare function local:parseNoteContent($item as item()*) {
 declare function local:extendApp($node as node()*, $ED){
 
     let $seg := if (count($node/@from) > 1) then ($ED//tei:seg[@xml:id=substring-after($node[1]/@from, '#')]) else ($ED//tei:seg[@xml:id=substring-after($node/@from, '#')])
-    let $log := console:log($seg)
     return if ($seg) then (
         element { node-name($node) } {
                             $node/@* except $node/@exist:id,
