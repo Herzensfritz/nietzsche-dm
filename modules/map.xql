@@ -46,6 +46,7 @@ declare function mapping:nietzsche-dm-for-ed($root as element(), $userParams as 
 declare function mapping:nietzsche-ed-for-dm($root as element(), $userParams as map(*)) {
     let $pb := substring-after($root/@start, '#')
     let $milestone := $config:newest-ed//tei:text//tei:milestone[@unit="page" and @source="#Dm" and @n=$pb ]
+    let $log := console:log($milestone)
     return if (exists($milestone)) then (
         let $nextMilestone := $milestone/following::tei:milestone[@unit="page" and @source="#Dm"][1]
         let $content := if (exists($nextMilestone)) then (
@@ -72,7 +73,9 @@ declare function mapping:nietzsche-ed-for-dm($root as element(), $userParams as 
         </div>
         let $log := console:log($div)
         return $div
-    ) else ()
+    ) else (
+        <div>{concat('Kein Milestone in ', util:document-name($config:newest-ed),' für ', $pb)} </div>    
+    )
 };
 declare function local:filterNodes($nodes, $file){
     let $filteredNodes := for $node in $nodes
