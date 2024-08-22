@@ -218,6 +218,7 @@ declare function pages:process-content($xml as node()*, $root as node()*, $confi
                 "view": $config?view
             },
             $userParams))
+    let $log := console:log($xml)
 	let $html := $pm-config:web-transform($xml, $params, $config?odd)
     let $class := if ($html//*[@class = ('margin-note')]) then "margin-right" else ()
     let $body := pages:clean-footnotes($html)
@@ -286,7 +287,6 @@ declare function pages:toc-div($node, $model as map(*), $target as xs:string?,
         {
             for $div in $divs
             let $headings := nav:get-section-heading($model?config, $div)/node()
-             let $log := console:log($headings)
             let $html :=
                 if ($headings/*) then
                     $pm-config:web-transform($headings, map { "mode": "toc", "root": $div }, $model?config?odd)

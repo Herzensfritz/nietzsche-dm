@@ -16,9 +16,23 @@
 .edRefLB  {
     display: none;
 }
+.underline {
+    text-decoration: underline;
+}
 
+.doubleUnderline {
+            text-decoration-line: underline;
+            text-decoration-style: double;
+        }
 .edRefLB.toggle {
     display: inline-block;
+}
+.timelineEntry {
+    padding: 1em;
+   /* padding-top: 1em;*/
+}
+.myhighlight {
+    background: var(--pb-toolbar-background-color);
 }
 .popoverTarget {
     text-decoration: var(--pb-toolbar-background-color) wavy underline;

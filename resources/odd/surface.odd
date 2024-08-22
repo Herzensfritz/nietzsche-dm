@@ -52,14 +52,14 @@
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><span class="latin">[[content]]</span></pb:template>
         </model>
-                </elementSpec>
-                <elementSpec ident="note" mode="change">
-                    <model predicate="@type = 'authorial'" behaviour="pass-through">
+    </elementSpec>
+    <elementSpec ident="note" mode="change">
+        <model predicate="@type = 'authorial'" behaviour="pass-through">
             <param name="hand" value="substring-after(@hand, '#')"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><span class="[[hand]]">[[content]]</span></pb:template>
         </model>
-                    <model predicate="@type = 'editorial' and @targetEnd" behaviour="pass-through">
+        <model predicate="@type = 'editorial' and @targetEnd" behaviour="pass-through">
             <param name="startLine" value="id(substring-after(@target, '#'), root($parameters?root))/@n"/>
             <param name="content" value="."/>
             <param name="startTarget" value="substring-after(@target, '#')"/>
@@ -67,7 +67,7 @@
             <param name="endTarget" value="substring-after(@targetEnd, '#')"/>
             <pb:template xmlns="" xml:space="preserve"><div><pb-highlight key="[[startTarget]]" highlight-self="highlight-self" duration="5000"><span style="color: blue;">[[startLine]]</span></pb-highlight>-<pb-highlight key="[[endTarget]]" highlight-self="highlight-self" duration="5000"><span style="color: blue;">[[endLine]]</span></pb-highlight>: <span class="note" style="margin-left: 2px;">[[content]]</span> </div></pb:template>
         </model>
-                    <model predicate="@type = 'editorial'" behaviour="pass-through">
+        <model predicate="@type = 'editorial'" behaviour="pass-through">
             <param name="line" value="id(substring-after(@target, '#'), root($parameters?root))/@n"/>
             <param name="content" value="."/>
             <param name="target" value="substring-after(@target, '#')"/>
@@ -175,7 +175,7 @@
 </div></pb:template>
         </model>
                 </elementSpec>
-            <elementSpec ident="add" mode="change">
+    <elementSpec ident="add" mode="change">
                     <model predicate="@place = 'superimposed' and (parent::fw)" behaviour="omit">
             <param name="id" value="replace(@corresp, '#', '')"/>
             <param name="hand" value="@hand"/>
@@ -277,7 +277,7 @@
             <param name="rend" value="@rend"/>
             <pb:template xmlns="" xml:space="preserve"><pb-highlight key="[[highlightKey]]" duration="5000"><span class="inline [[instant]] [[hand]] [[rend]]">[[content]]</span></pb-highlight></pb:template>
         </model>
-                    <model predicate="@place = 'inline'" behaviour="pass-through">
+                    <model predicate="@place = 'inline' or empty(@place)" behaviour="pass-through">
             <param name="hand" value="substring-after(@hand, '#')"/>
             <param name="content" value="."/>
             <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/>
@@ -525,7 +525,7 @@
             <param name="target" value="substring-after(@from, '#')"/>
             <param name="line" value="id(substring-after(@from, '#'), $parameters?root)/@n"/>
             <param name="lem" value="lem[1]"/>
-            <param name="note" value="note[1]/text()"/>
+            <param name="note" value="note[1]/node()"/>
             <pb:template xmlns="" xml:space="preserve"><div><pb-highlight key="[[target]]" highlight-self="highlight-self" duration="5000"><span style="color: blue;">[[line]]</span></pb-highlight>: <span style="margin-left: 2px;">[[lem]]</span><span style="margin-right: 0.5em;">]</span><span class="note">[[note]]</span> </div></pb:template>
         </model>
                     <model predicate="@corresp and @loc and lem and note" behaviour="pass-through">
@@ -565,7 +565,7 @@
                 </elementSpec>
         <elementSpec ident="node()" mode="add"/>
         <elementSpec ident="choice" mode="change">
-        <model predicate="@corresp and sic and orig" behaviour="pass-through">
+                    <model predicate="@corresp and sic and orig" behaviour="pass-through">
             <param name="sic" value="sic[1]"/>
             <param name="corr" value="corr[1]"/>
             <param name="orig" value="orig[1]"/>
@@ -575,7 +575,7 @@
   <template slot="alternate"><p>[[sic]] &gt; [[corr]]</p></template>
 </pb-popover></pb:template>
         </model>
-        <model predicate="@corresp and sic and corr" behaviour="pass-through">
+                    <model predicate="@corresp and sic and corr" behaviour="pass-through">
             <param name="sic" value="sic[1]"/>
             <param name="corr" value="corr[1]"/>
             <param name="choiceCls" value="if ($parameters?choice = 'off') then () else ('choice')"/>
@@ -584,7 +584,7 @@
   <template slot="alternate"><p class="sicCor">[[sic]] &gt; [[corr]]</p></template>
 </pb-popover></pb:template>
         </model>
-        <model predicate="sic and cor" behaviour="pass-through">
+                    <model predicate="sic and cor" behaviour="pass-through">
             <param name="corr" value="corr[1]"/>
             <param name="sic" value="sic[1]"/>
             <pb:template xmlns="" xml:space="preserve"><p class="test">[[sic]] &gt; [[corr]]</p></pb:template>
@@ -666,6 +666,15 @@
             <param name="marginStyle" value="let $quantity := number(@quantity) div 4 return concat('margin-right: ', $quantity, 'em;')"/>
             <pb:template xmlns="" xml:space="preserve"><span style="[[marginStyle]]"/></pb:template>
         </model>
+                </elementSpec>
+            <elementSpec ident="ref" mode="change">
+                    <model predicate="@target" behaviour="pass-through">
+            <param name="id" value="substring-after(@target, '#')"/>
+            <param name="content" value="."/>
+            <param name="url" value="substring-before(@target, '#')"/>
+            <pb:template xmlns="" xml:space="preserve"><pb-link xml-id="[[id]]" path="[[url]]">[[content]]</pb-link></pb:template>
+        </model>
+            <model behaviour="inline"/>
                 </elementSpec>
             </schemaSpec>
         </body>

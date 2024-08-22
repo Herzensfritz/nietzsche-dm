@@ -162,7 +162,6 @@ declare function mapping:nietzsche-apps($root as element(), $userParams as map(*
                 )
         }</div>
         let $log := console:log($div)
-        let $test := $config:newest-ed
         return $div
     )
 };
