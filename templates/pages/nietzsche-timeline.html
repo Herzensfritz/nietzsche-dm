@@ -56,6 +56,7 @@
     <body>
         <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="./resources/i18n/{{ns}}/{{lng}}.json" locale-fallback-ns="app common">
             <pb-document id="document1" data-template="pages:pb-document"/>
+            
             <app-drawer-layout force-narrow="force-narrow">
                 <app-drawer data-template="lib:include" data-template-path="templates/drawer.html"/>
                 <app-header-layout>
@@ -88,18 +89,5 @@
             </app-drawer-layout>
         </pb-page>
         <div class="splash"/>
-        <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            pbEvents.subscribe("pb-update", "transcription", (ev) =&gt; {
-                const id = document.location.hash
-                const target = ev.detail.root.querySelector(id);
-                console.log(id, target)
-                if (target){
-                    target.classList.add("myhighlight");
-                }    
-            
-            });
-        });
-        </script>
     </body>
 </html>

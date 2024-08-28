@@ -89,7 +89,185 @@
 					}
 				}
     		}
-    	}
+    	},
+    	"/api/page4change/{id}" : {
+    		"get": {
+    		"summary": "Retrieve pages for change id",
+				"operationId": "custom:page4change",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"schema": {
+							"type": "string",
+							"example": "GM01-02finalVersion"
+						},
+						"required": false
+					},
+					{
+						"name": "doc",
+						"in": "query",
+						"schema": {
+							"type": "string",
+							"example": "Druckmanuskript_D20_20240823.xml"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Change data",
+						"content": {
+							"application/xml": {
+								"schema": {
+									"type": "object"
+								}
+							}
+						}
+					}
+				}
+    		}
+    	},
+    	"/api/change/{id}" : {
+    		"get": {
+    		"summary": "Retrieve change data",
+				"operationId": "custom:change",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"schema": {
+							"type": "string",
+							"example": "apdx1887-06-24"
+						},
+						"required": false
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Change data",
+						"content": {
+							"application/xml": {
+								"schema": {
+									"type": "object"
+								}
+							}
+						}
+					}
+				}
+    		}
+    	},
+    	"/api/letters/{id}" : {
+    		"get": {
+    		"summary": "Retrieve letters containing a change id",
+				"operationId": "custom:letters",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"schema": {
+							"type": "string",
+							"example": "preliminaryContext1"
+						},
+						"required": false
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Change data",
+						"content": {
+							"application/xml": {
+								"schema": {
+									"type": "object"
+								}
+							}
+						}
+					}
+				}
+    		}
+    	},
+		"/api/customtoc/{id}/contents": {
+			"get": {
+				"summary": "Retrieve a formatted table of contents for the document",
+				"description": "Retrieve a formatted table of contents for the document, transformed via ODD",
+				"tags": ["documents"],
+				"operationId": "dapi:table-of-contents",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"schema": {
+							"type": "string",
+							"example": "test/kant_rvernunft_1781.TEI-P5.xml"
+						}
+					},
+					{
+						"name": "template",
+						"in": "query",
+						"schema": {
+							"type": "string",
+							"example": "timeline.html"
+						}
+					},
+					{
+						"name": "view",
+						"in": "query",
+						"schema": {
+							"type": "string",
+							"enum": ["page", "div", "single"]
+						},
+						"example": "div",
+						"description": "The view type used by the main view which displays the document, e.g. 'page' or 'div'. This has an influence on the generated links, which need to differ when linking to a page rather than a section."
+					},
+					{
+						"name": "target",
+						"in": "query",
+						"schema": {
+							"type": "string"
+						},
+						"description": "The target channel into which link selection events should be send (if the user clicks on a link)"
+					},
+					{
+						"name": "icons",
+						"in": "query",
+						"schema": {
+							"type": "boolean",
+							"default": true
+						},
+						"description": "Should an expand/collapse icon be displayed next to headings having nested child sections?"
+					},
+					{
+						"name": "If-Modified-Since",
+						"in": "header",
+						"schema": {
+							"type": "string"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Returns the formatted table of contents as HTML",
+						"content": {
+							"text/html": {
+								"schema": {
+									"type": "string"
+								}
+							}
+						}
+					},
+					"404": {
+						"description": "Document not found",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object"
+								}
+							}
+						}
+					}
+				}
+			}
+		}
     },
     "security": [
         {

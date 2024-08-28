@@ -565,15 +565,21 @@ declare %private function dapi:extract-footnotes($html as element()*) {
 declare function dapi:table-of-contents($request as map(*)) {
     let $doc := xmldb:decode-uri($request?parameters?id)
     let $documents := config:get-document($doc)
+    let $log := console:log('template '|| $request?parameters?template)
     return
         if($documents)
         then (
             cutil:check-last-modified($request, $documents, function($request as map(*), $documents as node()*) {
                 let $xml := pages:load-xml($documents, $request?parameters?view, (), $doc)
+                
                 return
                 if (exists($xml)) then
                     if ($xml?config?view = 'surface') then (
-                        pages:toc-ms-contents(root($xml?data), $xml, $request?parameters?target, $request?parameters?icons)
+                        if ($request?parameters?template = 'timeline.html') then (
+                            pages:toc-timeline(root($xml?data), $xml, $request?parameters?target, $request?parameters?icons)
+                        ) else (
+                            pages:toc-ms-contents(root($xml?data), $xml, $request?parameters?target, $request?parameters?icons)
+                        )
                     ) else (pages:toc-div(root($xml?data), $xml, $request?parameters?target, $request?parameters?icons))
                 else
                     error($errors:NOT_FOUND, "Document " || $doc || " not found")

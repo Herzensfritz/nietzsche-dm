@@ -6,6 +6,26 @@ body {
          --nbrown: #5C4033;
          --red: #dc3545;
 }
+ul.letters, ul.pages {
+    color: grey;
+    font-size: 80%;
+    list-style-type: '- ';
+}
+.mycollapse-trigger {
+    font-weight: bold;
+    font-size: 85%;
+}
+.changeInfo {
+    padding: 1em;
+}
+.change {
+    min-width: 45em;
+    text-align: justify;
+}
+.change:hover {
+   background: var(--pb-toolbar-background-color);
+}
+
 .noteDiv {
   /*  position: fixed;*/
 }

@@ -52,14 +52,14 @@
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><span class="latin">[[content]]</span></pb:template>
         </model>
-    </elementSpec>
+                </elementSpec>
     <elementSpec ident="note" mode="change">
-        <model predicate="@type = 'authorial'" behaviour="pass-through">
+                    <model predicate="@type = 'authorial'" behaviour="pass-through">
             <param name="hand" value="substring-after(@hand, '#')"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><span class="[[hand]]">[[content]]</span></pb:template>
         </model>
-        <model predicate="@type = 'editorial' and @targetEnd" behaviour="pass-through">
+                    <model predicate="@type = 'editorial' and @targetEnd" behaviour="pass-through">
             <param name="startLine" value="id(substring-after(@target, '#'), root($parameters?root))/@n"/>
             <param name="content" value="."/>
             <param name="startTarget" value="substring-after(@target, '#')"/>
@@ -67,7 +67,7 @@
             <param name="endTarget" value="substring-after(@targetEnd, '#')"/>
             <pb:template xmlns="" xml:space="preserve"><div><pb-highlight key="[[startTarget]]" highlight-self="highlight-self" duration="5000"><span style="color: blue;">[[startLine]]</span></pb-highlight>-<pb-highlight key="[[endTarget]]" highlight-self="highlight-self" duration="5000"><span style="color: blue;">[[endLine]]</span></pb-highlight>: <span class="note" style="margin-left: 2px;">[[content]]</span> </div></pb:template>
         </model>
-        <model predicate="@type = 'editorial'" behaviour="pass-through">
+                    <model predicate="@type = 'editorial'" behaviour="pass-through">
             <param name="line" value="id(substring-after(@target, '#'), root($parameters?root))/@n"/>
             <param name="content" value="."/>
             <param name="target" value="substring-after(@target, '#')"/>
@@ -674,8 +674,71 @@
             <param name="url" value="substring-before(@target, '#')"/>
             <pb:template xmlns="" xml:space="preserve"><pb-link xml-id="[[id]]" path="[[url]]">[[content]]</pb-link></pb:template>
         </model>
-            <model behaviour="inline"/>
+                    <model behaviour="inline"/>
                 </elementSpec>
+    <elementSpec ident="title" mode="change">
+                    <model predicate="$parameters?header='short' and $parameters?type='timeline'" behaviour="pass-through">
+            <param name="title" value="substring-before(., '.')"/>
+            <pb:template xmlns="" xml:space="preserve"><h5 class="tei-title1"><pb-i18n style="font-style: italic;" key="myapp.menu.timeline">...Zeitstrahl...</pb-i18n>: [[title]]</h5></pb:template>
+        </model>
+                    <model predicate="$parameters?header='short'" behaviour="heading">
+            <param name="level" value="5"/>
+        </model>
+                    <modelSequence predicate="parent::titleStmt/parent::fileDesc">
+            <model predicate="preceding-sibling::title" behaviour="text">
+                <param name="content" value="' — '"/>
+            </model>
+            <model behaviour="inline"/>
+        </modelSequence>
+                    <model predicate="not(@level) and parent::bibl" behaviour="inline"/>
+                    <modelSequence predicate="@level='m' or not(@level)">
+            <model behaviour="inline">
+                <outputRendition xml:space="preserve">
+                font-style: italic;
+                </outputRendition>
+            </model>
+            <model predicate="ancestor::biblFull" behaviour="text">
+                <param name="content" value="', '"/>
+            </model>
+        </modelSequence>
+                    <modelSequence predicate="@level='s' or @level='j'">
+            <model behaviour="inline">
+                <outputRendition xml:space="preserve">
+                font-style: italic;
+                </outputRendition>
+            </model>
+            <model predicate="following-sibling::* and     (  ancestor::biblFull)" behaviour="text">
+                <param name="content" value="', '"/>
+            </model>
+        </modelSequence>
+                    <modelSequence predicate="@level='u' or @level='a'">
+            <model behaviour="inline">
+                <outputRendition xml:space="preserve">
+                font-style: italic;
+                </outputRendition>
+            </model>
+            <model predicate="following-sibling::* and     (    ancestor::biblFull)" behaviour="text">
+                <param name="content" value="'. '"/>
+            </model>
+        </modelSequence>
+                    <model behaviour="inline">
+            <outputRendition xml:space="preserve">
+            font-style: italic;
+            </outputRendition>
+        </model>
+                </elementSpec>
+            <elementSpec ident="change" mode="add">
+                    <model behaviour="pass-through">
+            <param name="id" value="@xml:id"/>
+            <param name="content" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="change">
+    <div class="changeContent">[[content]]</div>
+    <pb-load src="document1" url="api/letters/[[id]]" auto="auto"/>
+    <pb-load src="document1" url="api/page4change/[[id]]" auto="auto"/>
+</div></pb:template>
+        </model>
+                </elementSpec>
+                <elementSpec ident="div1" mode="add"/>
             </schemaSpec>
         </body>
     </text>

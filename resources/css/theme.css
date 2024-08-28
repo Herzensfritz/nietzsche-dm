@@ -1,4 +1,13 @@
 @import url("../fonts/font.css");
+.myhighlight {
+    background: var(--pb-toolbar-background-color);
+}
+
+ul.letters, ul.pages {
+    color: grey;
+    font-size: 80%;
+    list-style-type: '- ';
+}
 
 div#pageInfo {
   margin-top: 30px;

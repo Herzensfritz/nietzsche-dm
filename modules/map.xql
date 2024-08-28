@@ -13,6 +13,12 @@ import module namespace console="http://exist-db.org/xquery/console";
 import module namespace util="http://exist-db.org/xquery/util";
 import module namespace config="http://www.tei-c.org/tei-simple/config" at "config.xqm";
 
+
+declare function mapping:nietzsche-test($root as element(), $userParams as map(*)) {
+     let $log := console:log($root) 
+     return
+     <div xmlns="http://www.tei-c.org/ns/1.0" type="test"/>
+};
 (:~
  : For the Nietzsche Druckmanuskript: find the page break  corresponding
  : to the surface shown in the diplomatic transcription.

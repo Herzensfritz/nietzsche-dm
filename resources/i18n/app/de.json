@@ -3,9 +3,19 @@
     	"menu": {
     		"appNotes": "Anmerkungen",
     		"pageInfo": "Seiteninformationen",
+    		"showTimeline": "Zeitstrahl anzeigen",
+    		"timeline": "Zeitstrahl",
     		"toggleED": "Erstdruck ein/ausblenden",
     		"toggleFacsimile": "Faksimile ein/ausblenden",
     		"toggleInfo": "Seiteninformation ein/ausblenden"
+    	},
+    	"months": {
+    		"06": "Juni",
+    		"07": "Juli",
+    		"08": "August",
+    		"09": "September",
+    		"10": "Oktober",
+    		"11": "November"
     	},
         "title": "Nietzsche Druckmanuskripte",
         "facsimile": "Faksimile",

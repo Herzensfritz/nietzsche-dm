@@ -13,7 +13,7 @@
     <meta name="description" content="Surface"/>
     <link rel="stylesheet" href="resources/css/theme.css"/>
     <link rel="stylesheet" href="resources/css/mystyle.css"/>
-    <script src="resources/scripts/debug.js"/>
+    <script src="resources/scripts/myfunctions.js"/>
     <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
     <style>
     
@@ -39,32 +39,25 @@
             display: flex;
             justify-content: center;
             padding: 0 20px;
+            padding-bottom: 20px;
         }
         
          pb-page[unresolved] pb-facsimile {
             display: none;
         } 
-
-        .content-body pb-facsimile {
-           flex: 1 1;
-          // --pb-facsimile-height: calc(var(--pb-view-height) - 22px);
-           
+        
+        h1.year {
+            margin-left: 20px;
+            margin-right: 50px;
+            margin-top: 0px;
         }
         
-      
-       .test {
-           width: content-width;
-           height: 100%;
-           resize: both;
-           background: grey;
-       }
-       
-
-        @media (max-width: 769px) {
-            pb-facsimile {
-                display: none;
-            }
-        } 
+        pb-view {
+            width: 50em;
+        }
+        .month {
+            vertical-align: top;
+        }
         
     </style>
 </head>
@@ -82,9 +75,9 @@
                 <pb-drawer toggle="tocToggle" class="toc" emit="toc" subscribe="transcription">
                     <div class="drawer-content">
                         <h3>
-                            <pb-i18n key="document.contents">Contents</pb-i18n>
+                            <pb-i18n key="myapp.menu.timeline">...Zeitstrahl...</pb-i18n>
                         </h3>
-                        <pb-load id="toc" url="api/document/{doc}/contents?target=transcription&amp;icons=true" expand="expand" src="document1" subscribe="toc" load-once="load-once">
+                        <pb-load id="toc" url="api/customtoc/{doc}/contents?target=transcription&amp;icons=true&amp;template=timeline.html" expand="expand" src="document1" subscribe="toc" load-once="load-once">
                                 <pb-i18n key="dialogs.loading">Loading</pb-i18n>
                             </pb-load>
                     </div>
@@ -92,11 +85,12 @@
                 <section class="breadcrumbs">
                     <pb-view id="title-view1" src="document1" xpath="//teiHeader/fileDesc/titleStmt/title" view="single" disable-history="">
                         <pb-param name="header" value="short"/>
+                         <pb-param name="type" value="timeline"/>
                     </pb-view>
                 </section>
                   <main class="content-body">
-                        <h1>Hello World</h1>
-                       <pb-view src="document1" xpath="//teiHeader/profileDesc/creation/listChange" view="single"/>
+                       <pb-view src="document1" xpath="//teiHeader/profileDesc/creation/listChange" view="single" data-template="pages:timeline"/>
+                       
                 </main>
                
             </app-header-layout>

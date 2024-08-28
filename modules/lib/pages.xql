@@ -46,9 +46,76 @@ declare variable $pages:EXIDE :=
     return
         replace($path, "/+", "/");
         
-declare function pages:test($node as node(), $model as map(*)) {
-    let $log := console:log($node/@data-doc)  
-    return $node
+declare function pages:timeline($node as node(), $model as map(*)) {
+    let $document := doc(concat($config:data-root, '/', $model?doc))
+    let $namespace := namespace-uri-from-QName(node-name(root($document)/*))
+    let $xquery := "declare default element namespace '" || $namespace || "'; $document" || $node/@xpath
+    let $data := util:eval($xquery)
+    let $map := local:yearMaps($data//tei:change, 1)
+    return if (count($map) eq 0) then ($node) else (
+             <h1 id="{concat('year-', $map?year)}" class="year"> { $map?year }</h1>,<table class="months"> {
+                    for $month in $map?months
+                        let $monthKey := concat('myapp.months.', $month?month)
+                        return <tr><td id="{concat($map?year, '-', $month?month)}" class="month"><pb-i18n key="{$monthKey}">{ $month?month }</pb-i18n></td><td>
+                            { for $key in $month?keys 
+                                return element { node-name($node)} {
+                                        $node/@* except $node/(@xpath|@data-template),
+                                        attribute xpath { concat($node/@xpath, "/change[@xml:id='", $key, "']")},
+                                        attribute id { $key }
+                                    }
+                            }
+                       </td></tr>
+                }
+                </table>
+    )
+};
+
+declare function local:yearMaps($changes, $index){
+    let $years := for $year in  (distinct-values(for $change in $changes
+                                        return substring-before($change/tei:date/(@when|@notAfter|@notBefore)[1], '-')))
+                            where $year != ''
+                            return $year
+    let $log := console:log($years)
+    let $currentYearMonths := for $change in $changes
+                    where $change/tei:date/starts-with((@when|@notAfter|@notBefore)[1], $years[$index])
+                    return $change
+    let $months := local:monthMaps($years[$index], $currentYearMonths, 1)
+    let $currentYearMap := map { "year": $years[$index], "months": $months }
+    return if (count($years) gt $index) then (
+        $currentYearMap, local:yearMaps($changes, $index+1)       
+    ) else (
+        $currentYearMap
+    )
+};
+declare function local:monthMaps($year, $changes, $index){
+    let $prefix := concat($year,'-')
+    let $months := for $month in (distinct-values(for $change in $changes
+                                        return substring-before(substring-after($change/tei:date/(@when|@notAfter|@notBefore)[1], $prefix), '-')))
+                                where $month != ''
+                                return $month
+    let $currentPrefix := concat($prefix, $months[$index])
+    let $keys := for $change in $changes
+                    where $change/tei:date/starts-with((@when|@notAfter|@notBefore)[1], $currentPrefix)
+                    return $change/string(@xml:id)
+    let $currentMonthMap := map {"month": $months[$index], "keys": $keys}
+    return if (count($months) gt $index) then (
+        $currentMonthMap, local:monthMaps($year, $changes, $index+1)       
+    ) else (
+        $currentMonthMap
+    )
+};
+
+declare function pages:timeline-link($node as node(), $model as map(*)) {
+    if ($model?template != 'timeline.html') then (
+        let $file := if ($model?doc and doc(concat($config:data-root,'/', $model?doc))//tei:profileDesc/tei:creation/tei:listChange/tei:change) 
+                    then ($model?doc) else (util:document-name($config:newest-dm))
+        return element { node-name($node) } {
+            $node/@* except $node/@data-template,
+            attribute href { concat($file, '?template=timeline.html') },
+            $node/node()
+        }
+    ) else ()
+
 };
 
 (:~
@@ -113,11 +180,11 @@ declare function pages:pb-document($node as node(), $model as map(*), $odd as xs
     let $oddParam := ($node/@odd, $model?odd, $odd)[1]
     let $data := config:get-document($model?doc)
     let $config := tpu:parse-pi(root($data), $model?view, $oddParam)
-    return
-        <pb-document path="{$model?doc}" root-path="{$config:data-root}" view="{$config?view}" odd="{replace($config?odd, '^(.*)\.odd', '$1')}"
-            source-view="{$pages:EXIDE}">
-            { $node/@id }
-        </pb-document>
+    return  <pb-document path="{$model?doc}" root-path="{$config:data-root}" view="{$config?view}" odd="{replace($config?odd, '^(.*)\.odd', '$1')}"
+                source-view="{$pages:EXIDE}">
+                { $node/@id }
+            </pb-document>
+       
 };
 
 (:~
@@ -218,7 +285,7 @@ declare function pages:process-content($xml as node()*, $root as node()*, $confi
                 "view": $config?view
             },
             $userParams))
-    let $log := console:log($xml)
+
 	let $html := $pm-config:web-transform($xml, $params, $config?odd)
     let $class := if ($html//*[@class = ('margin-note')]) then "margin-right" else ()
     let $body := pages:clean-footnotes($html)
@@ -274,6 +341,47 @@ declare function pages:toc-ms-contents($node, $model as map(*), $target as xs:st
                 let $xmlId := $root/@xml:id
                 return <li><pb-link  node-id="{$nodeId}" emit="{$target}" subscribe="{$target}">{$locus}: {$desc}</pb-link></li>
             }
+    </ul>
+};
+
+declare function pages:toc-timeline($node, $model as map(*), $target as xs:string?, $icons as xs:boolean?) {
+    <ul>
+        {
+        for $map in local:yearMaps($node//tei:teiHeader/tei:profileDesc/tei:creation/tei:listChange/tei:change, 1)
+            return 
+        <li>
+            <pb-collapse>
+                <span slot="collapse-trigger">
+                    <pb-link emit="{$target}" subscribe="{$target}" xml-id="{concat('year-', $map?year)}">{$map?year}</pb-link>
+                </span>
+                <span slot="collapse-content">
+                    <ul>
+                    {
+                    for $month in $map?months
+                        let $monthKey := concat('myapp.months.', $month?month)
+                        return <li><pb-collapse>
+                                    <span slot="collapse-trigger">
+                                        <pb-link emit="{$target}" subscribe="{$target}" xml-id="{concat($map?year,'-', $month?month)}">
+                                            <pb-i18n key="{$monthKey}">{ $month?month }</pb-i18n>
+                                        </pb-link>
+                                    </span>
+                                    <span slot="collapse-content">
+                                        <ul>
+                                            {   for $key in $month?keys
+                                                    let $date := $node//tei:change[@xml:id = $key]//tei:date/text()
+                                                    return <li><pb-link emit="{$target}" subscribe="{$target}" xml-id="{$key}">{$date}</pb-link></li>
+                                                
+                                            }
+                                        </ul>
+                                    </span>
+                                </pb-collapse>
+                            </li>
+                    }
+                    </ul>
+                </span>
+            </pb-collapse>
+        </li>
+        }
     </ul>
 };
 

@@ -3,9 +3,19 @@
     	"menu": {
     		"appNotes": "Editor Notes",
     		"pageInfo": "Page Information",
+    		"showTimeline": "show timeline",
+    		"timeline": "Timeline",
     		"toggleED": "toggle first edition",
     		"toggleFacsimile": "toggle facsimile",
     		"toggleInfo": "toggle page information"	
+    	},
+    	"months": {
+    		"06": "June",
+    		"07": "July",
+    		"08": "August",
+    		"09": "September",
+    		"10": "October",
+    		"11": "November"
     	},
         "title": "Foo",
         "facsimile": "Facsimile",

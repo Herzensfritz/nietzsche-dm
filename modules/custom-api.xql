@@ -33,4 +33,110 @@ declare function api:lookup($name as xs:string, $arity as xs:integer) {
     }
 };
 
+declare function api:timeline($request as map(*)){
+    let $dates := $config:newest-dm//tei:profileDesc/tei:creation/tei:listChange/tei:change//tei:date/string(@when|@notAfter)
+    let $years := (distinct-values(for $date in $dates
+                                        return substring-before($date, '-')))
+    let $array := []
+    let $output := local:getYears($years, $dates, $array)
+    let $log := console:log($output)
+    let $data := map:merge((
+        map:entry( 'test', $output )
+    ))
+    let $log := console:log($data)
+    return $data
+};
+declare function local:getYears($years, $dates, $array) {
+    let $year := $years[1]
+    return if ($year != '') then (
+        let $entry := map:entry($year, map:merge((local:getMonths($year, $dates)))) 
+        return if (count($years) gt 1) then () else (array:append($array, $entry))
+    ) else ()
+
+        
+};
+declare function local:getMonths($year, $dates){
+    for $month in distinct-values(for $date in $dates
+                                                where starts-with($date, $year)
+                                                let $datePart := substring-after($date, concat($year, '-'))
+                                                return substring-before($datePart, '-')
+                                        ) 
+        return map:entry(
+            $month, map { 'test': 'ok'}    
+        )
+};
+declare function api:letters($request as map(*)){
+    let $id := $request?parameters?id
+    let $appendixFile := util:document-name($config:newest-annex)
+    let $letters := for $letterId in distinct-values($config:newest-annex//*[@change=concat('#', $id)]/ancestor::tei:div2/@xml:id)
+                        let $div2 := $config:newest-annex//*[@xml:id = $letterId]
+                        return <pb-popover theme="material">
+                                <span slot="default">
+                                    <a href="{ concat($appendixFile, '?template=nietzsche-timeline.html#', $div2/@xml:id) }">
+                                       { $div2/tei:head/text() }
+                                    </a>
+                                </span>
+                                <template slot="alternate">{$div2/tei:p}</template>
+                        </pb-popover>
+    return 
+    <div class="appendix">
+     { if (count($letters) gt 0) then (
+        <pb-collapse class="changeInfo">
+             <span class="mycollapse-trigger" slot="collapse-trigger">
+                Dokumente zur Entstehungs- und Druckgeschichte
+            </span>
+            <span slot="collapse-content">
+                <ul class="letters">{
+                    for $letter in $letters
+                    return <li>{ $letter} </li>
+                }</ul>
+            </span>
+        </pb-collapse>
+        ) else ()    }
+    </div>
+};
+declare function api:change($request as map(*)){
+    let $id := $request?parameters?id
+    let $source := collection($config:data-root)//*[@xml:id=$id]
+    let $change := for $changeId in $source//*[@change]/substring-after(@change, '#')
+                        return $config:newest-dm//*[@xml:id = $changeId]
+    let $log := console:log($change)
+    return 
+    <listChange namespace="http://www.tei-c.org/ns/1.0" ordered="true">
+    {
+        $change    
+    }
+    </listChange>
+};
+
+declare function api:page4change($request as map(*)){
+    let $xmlId := concat('#',$request?parameters?id)
+    let $file := $request?parameters?doc
+    let $document := doc(concat($config:data-root, '/',$file))
+    let $pbs := $document//tei:pb[contains(@change, $xmlId)]
+    return 
+    <div class="pages">
+    {
+        if (count($pbs) gt 0) then (
+            <pb-collapse class="changeInfo">
+             <span class="mycollapse-trigger" slot="collapse-trigger">
+                Bearbeitete Seiten
+            </span>
+            <span slot="collapse-content">
+                <ul class="pages">{
+                    for $pb in $pbs
+                    let $surfaceId := util:node-id($document//tei:sourceDoc/tei:surface[@start=concat('#', $pb/@xml:id)])
+                    let $n := string($pb/@xml:id)
+                    let $path := concat($file, '?template=surface.html&amp;root=', $surfaceId)
+                    return <li><a href="{$path}">
+                        {$n}
+                    </a></li>
+                }</ul>
+            </span>
+        </pb-collapse>    
+        ) else ()    
+    }
+    </div>
+};
+
 
