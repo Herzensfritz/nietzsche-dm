@@ -98,15 +98,28 @@ declare function api:letters($request as map(*)){
 declare function api:change($request as map(*)){
     let $id := $request?parameters?id
     let $source := collection($config:data-root)//*[@xml:id=$id]
-    let $change := for $changeId in $source//*[@change]/substring-after(@change, '#')
+    let $changes := for $changeId in $source//*[@change]/substring-after(@change, '#')
                         return $config:newest-dm//*[@xml:id = $changeId]
-    let $log := console:log($change)
+    let $file := util:document-name($config:newest-dm)
     return 
-    <listChange namespace="http://www.tei-c.org/ns/1.0" ordered="true">
+    <div class="changes">
     {
-        $change    
+        if (count($changes) gt 0) then (
+             <pb-collapse class="changeInfo">
+             <span class="mycollapse-trigger" slot="collapse-trigger">
+                Bearbeitungen
+            </span>
+            <span slot="collapse-content">
+                <ul class="letters">{
+                    for $change in $changes
+                        let $path := concat($file, '?template=timeline.html#', $change/@xml:id)
+                    return <li><a href="{$path}">{ $change/node()}</a> </li>
+                }</ul>
+            </span>
+        </pb-collapse>
+        ) else ()
     }
-    </listChange>
+    </div>
 };
 
 declare function api:page4change($request as map(*)){

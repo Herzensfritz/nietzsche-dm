@@ -164,8 +164,7 @@
             <param name="id" value="@xml:id"/>
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="tei-div2 timelineEntry">
   [[content]]
-  <pb-load url="api/change/[[id]]" src="document1" auto="auto">
-  </pb-load>
+  <pb-load url="api/change/[[id]]" src="document1" auto="auto"/>
 </div></pb:template>
         </model></elementSpec>
     <elementSpec ident="head" mode="change"><model predicate="$parameters?mode='timeline' and parent::div1" behaviour="pass-through">
@@ -208,6 +207,6 @@
             <param name="content" value="@target"/>
             <param name="uri" value="@target"/>
         </model><model behaviour="inline"/></elementSpec>
-            </schemaSpec>
+            <elementSpec ident="seg" mode="change"/></schemaSpec>
         </body>
     </text></TEI>

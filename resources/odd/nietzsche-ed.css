@@ -3,6 +3,18 @@
     margin-right: 1em;
     margin-left: 1em;
 }
+ul.letters, ul.pages {
+    color: grey;
+    font-size: 80%;
+    list-style-type: '- ';
+}
+.mycollapse-trigger {
+    font-weight: bold;
+    font-size: 85%;
+}
+.changeInfo {
+    padding: 1em;
+}
 
  pb-facs-link {
             display: block;
