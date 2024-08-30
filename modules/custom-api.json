@@ -140,6 +140,14 @@
 							"example": "apdx1887-06-24"
 						},
 						"required": false
+					},
+					{
+						"name": "doc",
+						"in": "query",
+						"schema": {
+							"type": "string",
+							"example": "D20_xAppendix.xml.xml"
+						}
 					}
 				],
 				"responses": {

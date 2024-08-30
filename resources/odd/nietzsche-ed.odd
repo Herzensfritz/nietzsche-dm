@@ -207,6 +207,10 @@
             <param name="content" value="@target"/>
             <param name="uri" value="@target"/>
         </model><model behaviour="inline"/></elementSpec>
-            <elementSpec ident="seg" mode="change"/></schemaSpec>
+            <elementSpec ident="seg" mode="change"><model predicate="@type=&#34;passage&#34; and $parameters?mode='timeline'" behaviour="pass-through" useSourceRendition="true">
+            <param name="key" value="substring-after(@change, '#')"/>
+            <param name="content" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><pb-highlight key="[[key]]" duration="3000">[[content]]</pb-highlight></pb:template>
+        </model></elementSpec></schemaSpec>
         </body>
     </text></TEI>

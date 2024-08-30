@@ -97,7 +97,8 @@ declare function api:letters($request as map(*)){
 };
 declare function api:change($request as map(*)){
     let $id := $request?parameters?id
-    let $source := collection($config:data-root)//*[@xml:id=$id]
+    let $document := if ($request?parameters?doc) then (doc(concat($config:data-root, '/', $request?parameters?doc))) else ($config:newest-annex)
+    let $source := $document//*[@xml:id=$id]
     let $changes := for $changeId in $source//*[@change]/substring-after(@change, '#')
                         return $config:newest-dm//*[@xml:id = $changeId]
     let $file := util:document-name($config:newest-dm)
@@ -107,13 +108,14 @@ declare function api:change($request as map(*)){
         if (count($changes) gt 0) then (
              <pb-collapse class="changeInfo">
              <span class="mycollapse-trigger" slot="collapse-trigger">
-                Bearbeitungen
+                Relevante Bearbeitungsstufen
             </span>
             <span slot="collapse-content">
                 <ul class="letters">{
                     for $change in $changes
                         let $path := concat($file, '?template=timeline.html#', $change/@xml:id)
-                    return <li><a href="{$path}">{ $change/node()}</a> </li>
+                        let $key := $change/@xml:id
+                    return <li><pb-highlight key="{$key}" highlight-self="highlight-self" duration="3000"><a href="{$path}">{ $change/node()}</a></pb-highlight> </li>
                 }</ul>
             </span>
         </pb-collapse>
