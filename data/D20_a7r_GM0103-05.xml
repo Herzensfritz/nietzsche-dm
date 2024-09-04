@@ -2,7 +2,7 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-          <title>a1r</title>
+          <title>a7r</title>
          </titleStmt>
          <publicationStmt>
                 <p/>
@@ -1345,89 +1345,69 @@
     </teiHeader>
    <text>
       <body>
-         <div1 xml:id="GMTitelblatt" xml:space="preserve"><anchor xml:id="a1r_div1_GMTitelblatt"/>
-            <pb xml:id="a1r" corresp="#contents_a1r #folDesc_a1rv #addDesc_a1r #N_brown1" facs="#D-20a_I" change="#GMfrontRecord #GM01-02finalVersion #proofreadingCb12Titel"/>
-            <fw type="pageNumber" hand="#N_red" place="top-right" xml:id="a1r_fw_d2e26"><subst instant="true" xml:id="a1r_subst_d2e27"><del rend="overwritten">1.</del><add place="superimposed" xml:id="a1r_add_d2e30">I.</add></subst></fw>
-            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="a1r_fw_d2e33">1</fw>
-            <app loc="a1r,10-12" corresp="#appAnchor_a1r12 #a1r_lb10 #a1r_lb11 #a1r_lb12">
-               <lem>VIII … ist</lem>
-               <note type="editorial" xml:id="a1r_note_d2e40">vgl. <ref target="#a3r_lb4">a3r,4</ref> und <ref target="E40.xml#Ed_VIII">Ed VIII,25-26 (GM Vorrede 4)</ref></note></app>
-            <app loc="a1r,13-14" corresp="#appAnchor_a1r14 #a1r_lb13 #a1r_lb14">
-               <lem>XIV … dem</lem>
-               <note type="editorial" xml:id="a1r_note_d2e52">vgl. <ref target="#a4r_lb19">a4r,19</ref> und <ref target="E40.xml#Ed_XIV">Ed XIV,19 (GM Vorrede 8)</ref></note></app>
-            <app loc="a1r,15-18" corresp="#appAnchor_a1r18 #a1r_lb15 #a1r_lb16 #a1r_lb17 #a1r_lb18">
-               <lem>X … Nihilismus?…</lem>
-               <note type="editorial" xml:id="a1r_note_d2e65">vgl. <ref target="#a3r_lb20 #a3r_lb21">a3r,20-21</ref> und <ref target="E40.xml#Ed_X">Ed X,2-4 (GM Vorrede 5)</ref></note></app>
-            <app loc="a1r,19-20" corresp="#appAnchor_a1r20 #a1r_lb19 #a1r_lb20">
-               <lem>178 … vorbereite</lem>
-               <note type="editorial" xml:id="a1r_note_d2e77">vgl. <ref target="#b66r_lb14 #b66r_lb15">b66r,14-15</ref> und <ref target="E40.xml#Ed_178">Ed 178,31 (GM III 27)</ref></note></app>
-            <app loc="a1r,21" corresp="#appAnchor_a1r21 #a1r_lb21">
-               <lem>Vorrede I</lem>
-               <note type="editorial" xml:id="a1r_note_d2e89">gemeint: Abschnitt 1 der Vorrede auf Seite III von Cb/Ed</note></app>
-            <app loc="a1r,21-22" corresp="#appAnchor_a1r22 #a1r_lb21 #a1r_lb22">
-               <lem>Vorrede … ungesperrt</lem>
-               <note type="editorial" xml:id="a1r_note_d2e96">vgl. <ref target="#a2r_lb8">a2r,8</ref> und <ref target="E40.xml#Ed_III">Ed III,15 (GM Vorrede 1)</ref>; offenbar war im entsprechenden Korrekturbogen „nie“ fälschlicherweise gesperrt gesetzt</note></app>
-            <app loc="a1r,23" corresp="#appAnchor_a1r23 #a1r_lb23">
-               <lem>XIV … entziffert.“</lem>
-               <note type="editorial" xml:id="a1r_note_d2e109">vgl. <ref target="#a4r_lb12">a4r,12</ref> und <ref target="E40.xml#Ed_XIV">Ed XIV,9 (GM Vorrede 8)</ref></note></app>
-            <app loc="a1r,24" corresp="#appAnchor_a1r24 #a1r_lb24">
-               <lem>177 … Krankheit</lem>
-               <note type="editorial" xml:id="a1r_note_d2e121">Korrektur zu Bogen 12; die Stelle muss im Korrekturbogen wie in der Satzvorlage „eine <hi rend="underline">unheilbare</hi> Krankheit“ gelautet haben, vgl. <ref target="#b65r_lb8">Ms-Nachtrag b65r,8</ref>; die von Köselitz in a1r notierte Korrektur („einer unheilbaren“ statt „eine unheilbare“) findet sich in Ed jedoch nicht umgesetzt, da N schließlich den ganzen Satz umformuliert hat, vgl. <ref target="#b64r_lb4 #b64r_lb5 #b64r_lb6 #b64r_lb7 #b64r_lb8">Korrektur-Nachtrag b64r,4-8</ref></note></app>
-            <app loc="a1r,25" corresp="#appAnchor_a1r25 #a1r_lb25">
-               <lem>178 … Zaunspfahl</lem>
-               <note type="editorial" xml:id="a1r_note_d2e137">vgl. <ref target="#b66r_lb7">b66r,7</ref> und <ref target="E40.xml#Ed_178">Ed, 178,15 (GM III 26)</ref></note>
+         <div1 xml:space="preserve"><anchor xml:id="a7r_div1_d2e22"/>
+            <pb xml:id="a7r" corresp="#contents_a7r #folDesc_a7rv #addDesc_a7r #N_black1" facs="#D-20a_3" change="#GM01redivision #GM01formerVersion #GM01finalVersion #GM01-02finalVersion #proofreadingCb1"/>
+            <fw type="pageNumber" hand="#N_pencil" place="top-right" xml:id="a7r_fw_d2e26">3</fw>
+            <fw type="pageNumber" hand="#N_red" place="top-right" xml:id="a7r_fw_d2e29">3</fw>
+            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="a7r_fw_d2e32">7</fw>
+            <app loc="a7r,29,31" corresp="#appAnchor_a7r29 #appAnchor_a7r31 #a7r_lb29 #a7r_lb31">
+               <lem>gebräuchlichen. … – Dies</lem>
+               <note type="editorial" xml:id="a7r_note_d2e39">nach Streichung von Z. 22 „6.“ Anschlusslinie von Z. 21 nach Z. 23</note>
             </app>
-            <milestone unit="section" type="signature" edRef="#Ed" n="Titelbogen"/>
-            <milestone unit="page" edRef="#Ed" n="I"/>
-            <div2 xml:id="GMTitelseite"><anchor xml:id="a1r_div2_GMTitelseite"/>
-               <p><handShift new="#N_brown1"/>
-                  <lb n="1" rend="centered" xml:id="a1r_lb1"/><hi rend="latin"><hi rend="underline">Zur</hi> 
-                  <lb n="2" rend="centered" xml:id="a1r_lb2"/><hi rend="doubleUnderline">Genealogie</hi> <hi rend="doubleUnderline">der</hi> <hi rend="doubleUnderline">Moral</hi>.
-                  <lb n="3" rend="centered" xml:id="a1r_lb3"/>Eine Streitschrift.
-                  <lb n="4" rend="centered" xml:id="a1r_lb4"/>Von 
-                  <lb n="5" rend="centered" xml:id="a1r_lb5"/>Friedrich Nietzsche.
-                  <lb n="6" rend="flushRight" xml:id="a1r_lb6"/>Tout comprendre c’est tout <add place="inline" xml:id="a1r_add_d2e179">–</add> <hi rend="underline">mépriser</hi>?…
-                  <lb n="7" rend="centered" xml:id="a1r_lb7"/>Leipzig
-                  <lb n="8" rend="centered" xml:id="a1r_lb8"/>Verlag von C. G. Naumann
-                  <lb n="9" rend="centered" xml:id="a1r_lb9"/>1887.</hi></p>
+            <substJoin n="a7r,4" target="#subst1a_a7r #subst1b_a7r"/>
+            <substJoin n="a7r,20" target="#substAdd2_a7r #substDel2a_a7r #substDel2b_a7r"/>
+            <substJoin n="a7r,28-29" target="#substAdd3_a7r #substDel3_a7r"/>
+            <div2><anchor xml:id="a7r_div2_d2e50"/>
+               <p>
+                  <lb n="1" xml:id="a7r_lb1"/>der Ursprung ihres Lobes sein, und dieser Ursprung soll <hi rend="underline">vergessen</hi> <add place="above" rend="insM" xml:id="a7r_add_d2e60">worden</add> sein: – wie ist dies Vergessen <add place="above" rend="insM" xml:id="a7r_add_d2e63">auch nur</add> <hi rend="underline">möglich</hi>? Hat vielleicht 
+                  <lb n="2" xml:id="a7r_lb2"/>die Nützlichkeit solcher Handlungen irgendwann einmal aufgehört? Das Gegentheil ist der Fall: diese Nützlichkeit 
+                  <lb n="3" xml:id="a7r_lb3"/>ist vielmehr die Alltagserfahrung zu allen Zeiten gewesen, Etwas also, das fortwährend immer neu unterstrichen 
+                  <lb n="4" xml:id="a7r_lb4"/>wurde<subst xml:id="subst1a_a7r" seq="1"><add place="inline" xml:id="a7r_add_d2e77">;</add><del rend="strikethrough" cause="insM">,</del><add place="above" rend="insM" xml:id="a7r_add_d2e81"> folglich,</add></subst> statt aus dem Bewußtsein zu verschwinden, statt vergeßbar zu werden<subst xml:id="subst1b_a7r" seq="1"><del rend="overwritten">.</del><add place="superimposed" xml:id="a7r_add_d2e87">,</add></subst> sich dem Bewußtsein mit immer größe<pc force="weak">-</pc>
+                  <lb n="5" xml:id="a7r_lb5"/>rer Deutlichkeit darstellen mußte. Um wie viel vernünftiger ist jene entgegengesetzte Theorie (sie ist deshalb nicht 
+                  <lb n="6" xml:id="a7r_lb6"/>wahrer –) welche zum Beispiel von <hi rend="latin">Herbert Spencer</hi> vertreten wird: der den Begriff „gut“ <del rend="hatching">geradezu</del> als wesensgleich 
+                  <lb n="7" xml:id="a7r_lb7"/>mit dem Begriff „nützlich“, „zweckmäßig“ ansetzt, so daß in den Urtheilen „gut“ und „schlecht“ die Menschheit gerade 
+                  <lb n="8" xml:id="a7r_lb8"/>ihre <hi rend="underline">unvergeßnen</hi> und <hi rend="underline">unvergeßbaren</hi> Erfahrungen über nützlich-zweckmäßig, <del rend="hatching">und</del> über schädlich-unzweckmäßig auf<pc force="weak">-</pc>
+                  <lb n="9" xml:id="a7r_lb9"/>summirt und sanktionirt habe. Gut ist, nach dieser Theorie, was sich von jeher als nützlich bewiesen hat: damit darf 
+                  <lb n="10" xml:id="a7r_lb10"/>es als „werthvoll im höchsten Grade“, als „werthvoll an sich“ Geltung behaupten. Auch dieser Weg der Erklärung ist, 
+                  <lb n="11" xml:id="a7r_lb11"/>wie gesagt, falsch, aber wenigstens ist die Erklärung selbst in sich vernünftig und <add place="above" rend="insM" xml:id="a7r_add_d2e128">psychologisch</add> haltbar. –</p>
             </div2>
-            <noteGrp>
-               <noteGrp place="margin-left" rend="bottom-to-top">
-                  <note type="non-authorial" hand="#Koeselitz_black" change="#proofreadingCb12Titel" xml:id="a1r_note_d2e198">
-                  <lb n="10" rend="centered" xml:id="a1r_lb10"/><ref target="#CbTitel">VIII
-                  <lb n="11" xml:id="a1r_lb11"/><hi rend="latin">Zweck weder essentiell noch ursprüngl. 
-                  <lb n="12" xml:id="a1r_lb12"/>ist (wie Dr Rée meint: – er ist</hi><anchor xml:id="appAnchor_a1r12"/></ref>
-                  </note>
-                  <note type="non-authorial" hand="#Koeselitz_black" change="#proofreadingCb12Titel" xml:id="a1r_note_d2e211"><delSpan type="delPassage" hand="#Koeselitz_blue" resp="#Koeselitz" spanTo="#delEnd1_a1r"/><certainty match="@resp" locus="value" cert="medium"/>
-                  <lb n="13" xml:id="a1r_lb13"/><ref target="#CbTitel">XIV statt wozu
-                  <lb n="14" xml:id="a1r_lb14"/><hi rend="underline">zu dem</hi><anchor xml:id="appAnchor_a1r14"/><anchor xml:id="delEnd1_a1r"/></ref>
-                  </note>
-            </noteGrp>
-               <note type="non-authorial" hand="#Koeselitz_black" place="margin-right" rend="bottom-to-top" change="#proofreadingCb12Titel" xml:id="a1r_note_d2e226">
-                  <lb n="15" xml:id="a1r_lb15"/><ref target="#CbTitel">X
-                  <lb n="16" xml:id="a1r_lb16"/><delSpan type="delPassage" hand="#Koeselitz_blue" resp="#Koeselitz" spanTo="#delEnd2_a1r"/><certainty match="@resp" locus="value" cert="medium"/>als ihren Umweg zu einem neuen 
-                  <lb n="17" xml:id="a1r_lb17"/>Buddhismus? zu einem Europäer-
-                  <lb n="18" xml:id="a1r_lb18"/>Buddhismus? zum – <hi rend="underline">Nihilismus</hi>?…<anchor xml:id="appAnchor_a1r18"/><anchor xml:id="delEnd2_a1r"/></ref>
-                  </note>
-               <note type="non-authorial" hand="#Koeselitz_black" place="margin-left" rend="bottom-to-top" change="#proofreadingCb12Titel" xml:id="a1r_note_d2e247">
-                  <lb n="19" xml:id="a1r_lb19"/><ref target="#Cb12"><add hand="#Koeselitz_red" place="inline" rend="centered" xml:id="a1r_add_d2e251">178</add>
-                  <lb n="20" xml:id="a1r_lb20"/><del hand="#Koeselitz_blue" cert="medium" rend="strikethrough">auf ein Werk, das ich vorbereite</del></ref>
-                  </note>
-            <noteGrp place="margin-right" rend="bottom-to-top">
-                <note type="non-authorial" hand="#Koeselitz_black" change="#proofreadingCb12Titel" xml:id="a1r_note_d2e261">
-                  <lb n="21" xml:id="a1r_lb21"/><delSpan type="delPassage" hand="#Koeselitz_blue" resp="#Koeselitz" spanTo="#delEnd3_a1r"/><certainty match="@resp" locus="value" cert="medium"/><hi rend="latin">Vorrede</hi> <ref target="#CbTitel">I<anchor xml:id="appAnchor_a1r21"/> 11. Z. v. u.
-                  <lb n="22" xml:id="a1r_lb22"/>„nie“ (ist nicht) ungesperrt<anchor xml:id="appAnchor_a1r22"/><anchor xml:id="delEnd3_a1r"/></ref>
-                </note>
-                <note type="non-authorial" hand="#Koeselitz_black" change="#proofreadingCb12Titel" xml:id="a1r_note_d2e279">
-                  <lb n="23" xml:id="a1r_lb23"/><ref target="#CbTitel">XIV <del hand="#Koeselitz_blue" resp="#Koeselitz" rend="strikethrough"><certainty match="@resp" locus="value" cert="medium"/>ist damit, daß er abgelesen ist, noch nicht „entziffert.“<anchor xml:id="appAnchor_a1r23"/></del></ref>
-                </note> 
-                <note type="non-authorial" hand="#Koeselitz_black" change="#proofreadingCb12Titel" xml:id="a1r_note_d2e290">
-                  <lb n="24" xml:id="a1r_lb24"/><ref target="#Cb12">177. <del hand="#Koeselitz_blue" resp="#Koeselitz" rend="strikethrough"><certainty match="@resp" locus="value" cert="medium"/>4. Z. v. u. <hi rend="latin">einer <hi rend="underline">unheilbaren</hi> Krankheit</hi><anchor xml:id="appAnchor_a1r24"/></del></ref>
-                  <lb n="25" xml:id="a1r_lb25"/><ref target="#Cb12">178 <del hand="#Koeselitz_blue" resp="#Koeselitz" rend="strikethrough"><certainty match="@resp" locus="value" cert="medium"/>Mitte <hi rend="latin">Zaunspfahl</hi><anchor xml:id="appAnchor_a1r25"/></del></ref>
-                </note>
-            </noteGrp></noteGrp> 
+            <div2 xml:id="GM0104"><anchor xml:id="a7r_div2_GM0104"/>
+               <head xml:id="a7r_head_d2e135">
+                  <lb n="12" xml:id="a7r_lb12"/><milestone unit="page" edRef="#Cb #Ed" n="6"/><choice xml:id="a7r_choice_d2e139"><sic change="#GM01formerVersion">5.</sic><corr change="#GM01finalVersion">4.</corr></choice></head>
+               <p>
+                  <lb n="13" xml:id="a7r_lb13"/><add place="inline" xml:id="a7r_add_d2e148">– </add>Den Fingerzeig zum <hi rend="underline">rechten</hi> Wege gab mir die Frage, was eigentlich die von den verschiednen Sprachen ausgeprägten Be<pc force="weak">-</pc>
+                  <lb n="14" xml:id="a7r_lb14"/>zeichnungen des „Guten“ in etymologischer Hinsicht zu bedeuten haben: <del rend="hatching">–</del> und da fand ich, daß sie allesammt auf 
+                  <lb n="15" xml:id="a7r_lb15"/>die <hi rend="underline">gleiche</hi> <hi rend="underline">Begriffs</hi>-<hi rend="underline">Verwandlung</hi> zurückleiten, <subst xml:id="a7r_subst_d2e174"><del rend="strikethrough">so</del><add place="inline" xml:id="a7r_add_d2e177">–</add></subst> daß überall „vornehm“ „edel“ im ständischen Sinne der Grundbegriff 
+                  <lb n="16" xml:id="a7r_lb16"/>ist, aus dem sich „gut“ im Sinne von <add place="above" rend="insM" xml:id="a7r_add_d2e183">seelisch-</add>„vornehm“ „edel“, <subst xml:id="a7r_subst_d2e186"><del rend="hatching">das heißt</del><add place="above" xml:id="a7r_add_d2e189">von</add></subst> „seelisch-hochgeartet“, „seelisch-privilegirt“ mit No<subst instant="true" xml:id="a7r_subst_d2e192"><del rend="overwritten">h</del><add place="superimposed" xml:id="a7r_add_d2e195">t</add></subst>h<pc force="weak">-</pc>
+                  <lb n="17" xml:id="a7r_lb17"/>wendigkeit heraus entwickelt: eine Entwicklung, die immer parallel mit jener anderen läuft, welche „gemein“ „pöbel<pc force="weak">-</pc>
+                  <lb n="18" xml:id="a7r_lb18"/>haft“ „niedrig“ <add place="above" rend="insM" xml:id="a7r_add_d2e209">schließlich</add> in den Begriff „schlecht“ übergehn macht. <del rend="hatching">(</del>Das beredteste Beispiel für das Letztere ist das deutsche 
+                  <lb n="19" xml:id="a7r_lb19"/>Wort „schlecht“ selber: als welches mit „schlicht“ identisch ist – vergleiche „schlechtweg“ „schlechterdings – und ursprünglich 
+                  <lb n="20" xml:id="a7r_lb20"/>den schlichten, den gemeinen Mann <add place="above" rend="insM" seq="1" xml:id="a7r_add_d2e219"><del xml:id="substDel2a_a7r" rend="hatching" seq="3">einfach </del><add place="inline" rend="insMExt" seq="2" xml:id="a7r_add_d2e222"><del xml:id="substDel2b_a7r" rend="hatching" seq="3">und</del> noch ohne einen verdächtigenden Seitenblick <add xml:id="substAdd2_a7r" place="inline" rend="insMExt" seq="3">einfach</add></add></add> im Gegensatz zum Vornehmen bezeichnet<retrace>e.</retrace> Um die Zeit des dreißigjährigen Kriegs 
+                  <lb n="21" xml:id="a7r_lb21"/>ungefähr<add place="inline" xml:id="a7r_add_d2e234">, <add place="above" rend="insM" instant="true" xml:id="a7r_add_d2e236">also spät genug</add></add> verschiebt sich dieser Sinn in den jetzt gebräuchlichen.<del rend="hatching">)</del><anchor xml:id="appAnchor_a7r21"/>
+                  <lb n="22" xml:id="a7r_lb22"/><seg type="head"><del rend="hatching" change="#GM01redivision">6</del>.</seg>
+                  <lb n="23" xml:id="a7r_lb23"/><add place="inline" xml:id="a7r_add_d2e251">– </add>Dies<anchor xml:id="appAnchor_a7r23"/> scheint mir <add place="above" rend="insM" xml:id="a7r_add_d2e256">in Betreff der Moral-Genealogie</add> eine <hi rend="underline">wesentliche</hi> Einsicht; daß sie so spät erst gefunden <subst xml:id="a7r_subst_d2e262"><add place="above" rend="insM" xml:id="a7r_add_d2e263">wird</add><del rend="hatching">ist</del></subst>, liegt an dem <add place="above" rend="insM" xml:id="a7r_add_d2e269">hemmenden</add> Einfluß, den das 
+                  <lb n="24" xml:id="a7r_lb24"/>demokratische Vorurtheil innerhalb der modernen Welt in Hinsicht auf alle Fragen der Herkunft ausübt<subst xml:id="a7r_subst_d2e274"><add place="inline" xml:id="a7r_add_d2e275">.</add><del rend="hatching">,</del> <del rend="overwritten">u</del><add place="superimposed" xml:id="a7r_add_d2e282">U</add></subst>nd dies 
+                  <lb n="25" xml:id="a7r_lb25"/>bis in das <add place="above" rend="insM" xml:id="a7r_add_d2e287">anscheinend objektivste</add> Gebiet der Naturwissenschaft und Physiologie hinein<subst xml:id="a7r_subst_d2e290"><del rend="overwritten" seq="1">.</del><add place="superimposed" seq="1" xml:id="a7r_add_d2e293">:</add> <add place="above" rend="insM" seq="1" xml:id="a7r_add_d2e296">wie hier nur angedeutet werden <subst seq="2" xml:id="a7r_subst_d2e298"><del rend="hatching">kann.</del><add place="inline" xml:id="a7r_add_d2e301">soll.</add></subst></add></subst> Welchen Unfug <add place="above" rend="insM" xml:id="a7r_add_d2e306">aber</add> dieses Vorurtheil, einmal 
+                  <lb n="26" xml:id="a7r_lb26"/>bis zum Haß entzügelt, in Sonderheit <subst xml:id="a7r_subst_d2e311"><add place="above" rend="insM" xml:id="a7r_add_d2e312">für Moral und Historie</add><del rend="hatching">in der Historie</del></subst> anrichten kann, zeigt der berüchtigte Fall <hi rend="latin">Buckle</hi><subst xml:id="a7r_subst_d2e319"><del rend="overwritten" seq="1">.</del><add place="superimposed" seq="1" xml:id="a7r_add_d2e322"><del rend="overwritten" seq="2">;</del><add place="superimposed" seq="2" xml:id="a7r_add_d2e325"><hi rend="latin">’s</hi>;</add></add> 
+                     <lb n="27" xml:id="a7r_lb27"/><del rend="overwritten" seq="1">D</del><add place="superimposed" seq="1" xml:id="a7r_add_d2e333">d</add></subst>er <hi rend="underline">Plebejismus</hi> des mo<milestone unit="page" edRef="#Cb #Ed" n="7"/>dernen Geistes, der englischer Abkunft ist, brach da einmal wieder auf seinem heimischen 
+                  <lb n="28" xml:id="a7r_lb28"/>Boden heraus, heftig wie ein schlammichter Vulkan und mit jener versalzten <add place="above" rend="insM" seq="1" xml:id="a7r_add_d2e344">überlauten <add place="inline" rend="insMExt" seq="2" xml:id="a7r_add_d2e346">gemeinen</add></add> Beredtsamkeit, mit der <add xml:id="substAdd3_a7r" place="above" rend="insM" seq="1">bisher</add>alle Vul<pc force="weak">-</pc>
+                  <lb n="29" xml:id="a7r_lb29"/>kane <add place="above" rend="insM" xml:id="a7r_add_d2e358"><del xml:id="substDel3_a7r" rend="hatching" seq="1">bisher</del></add> <subst xml:id="a7r_subst_d2e362"><del rend="hatching">reden</del><del rend="overwritten">.</del><add place="superimposed" xml:id="a7r_add_d2e367"> g</add><add place="inline" xml:id="a7r_add_d2e369">eredet haben. –</add></subst></p>
+            </div2>
+            <div2 xml:id="GM0105"><anchor xml:id="a7r_div2_GM0105"/>
+               <head xml:id="a7r_head_d2e375">
+                  <lb n="30" xml:id="a7r_lb30"/><choice xml:id="a7r_choice_d2e378"><sic><subst change="#GM01redivision #GM01formerVersion" xml:id="a7r_subst_d2e380"><add place="inline" xml:id="a7r_add_d2e381">6.</add><del rend="strikethrough">7</del></subst>.</sic><corr change="#GM01finalVersion">5.</corr></choice></head>
+               <p>
+                  <lb n="31" xml:id="a7r_lb31"/>In Hinsicht auf <hi rend="underline">unser</hi> Problem, das aus guten Gründen ein <hi rend="underline">stilles</hi> Problem genannt werden kann und sich <add place="above" rend="insM" xml:id="a7r_add_d2e399">wählerisch</add> nur 
+                  <lb n="32" xml:id="a7r_lb32"/>an wenige Ohren wendet, ist es von keinem kleinen Interesse, festzustellen, daß vielfach noch in jenen Worten und 
+                  <lb n="33" xml:id="a7r_lb33"/>Wurzeln, die „gut“ bezeichnen, die Hauptnuance durchschimmert, auf welche hin die Vornehmen sich eben als Menschen 
+                  <lb n="34" xml:id="a7r_lb34"/>höheren Ranges fühlten. Zwar benennen si<subst instant="true" xml:id="a7r_subst_d2e409"><del rend="overwritten">ch</del><add place="superimposed" xml:id="a7r_add_d2e412">e</add></subst> sich vielleicht in den häufigsten Fällen einfach nach ihrer Überlegen<pc force="weak">-</pc>
+                  <lb n="35" xml:id="a7r_lb35"/>heit an Macht (<add place="above" rend="insM" xml:id="a7r_add_d2e420">als </add>„die Mächtigen“, „die Herren“ „die Gebietenden“) oder nach dem sichtbarsten Abzeichen dieser Überlegen<pc force="weak">-</pc>
+                  <lb n="36" xml:id="a7r_lb36"/>heit, zum Beispiel als „die Reichen“, „die Besitzenden“ (das ist der Sinn von <hi rend="latin">arya</hi>; und entsprechend im <hi rend="latin">Eranischen</hi>, 
+                  <lb n="37" xml:id="a7r_lb37"/><subst xml:id="a7r_subst_d2e436"><add place="above" rend="insM" xml:id="a7r_add_d2e437">und</add><del rend="hatching">auch mehrfach im</del></subst> <hi rend="latin">Slavischen</hi>) Aber auch nach einem <hi rend="underline">typischen</hi> <hi rend="underline">Charakterzuge</hi>: und dies ist der Fall, der uns hier 
+                  <lb n="38" xml:id="a7r_lb38"/>angeht. Sie heißen sich zum Beispiel „die Wahrhaftigen“<subst instant="true" xml:id="a7r_subst_d2e454"><del rend="overwritten">.</del><add place="superimposed" xml:id="a7r_add_d2e457">;</add></subst> voran der <choice xml:id="a7r_choice_d2e460"><sic>griechischen</sic><corr>griechische</corr></choice> Adel, dessen Mundstück <add place="above" rend="insM" xml:id="a7r_add_d2e465">der Megarische Dichter</add> <hi rend="latin">Theognis</hi> ist.</p>
+            </div2>
          </div1>
-        </body>
+      </body>
    </text>
 <facsimile>
       <surface lrx="907.0" lry="1401.8" n="9v" ulx="37.1" uly="39.7" xml:id="D-20a_5v">
@@ -2098,55 +2078,209 @@
       </surface>
      </facsimile>
     <sourceDoc>
-        <surface xml:id="srcD_surface_a1r" type="relative" start="#a1r" style="min-width:52em;" facs="#D-20a_I">
-            <zone xml:id="srcD_zone_a1r_div2_GMTitelseite" start="#a1r_div2_GMTitelseite" type="singleBlock" style="padding-top:5em;padding-bottom:5em;">
-                <zone xml:id="srcD_zone_a1r_fw_d2e26" type="fw-top-right" start="#a1r_fw_d2e26">
-                    <fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a1r_fw_d2e26">
-                        <del rend="overwritten" cause="#a1r_add_d2e30" type="SOW">1.</del>
-                        <add place="superimposed" corresp="#a1r_add_d2e30" instant="true">I.</add>
-                    </fw>
+        <surface xml:id="srcD_surface_a7r" type="relative" start="#a7r" facs="#D-20a_3">
+            <zone xml:id="srcD_zone_a7r_div2_d2e50" start="#a7r_div2_d2e50" type="firstBlock" style="padding-top:5em;">
+                <zone xml:id="srcD_zone_a7r_fw_d2e26" type="fw-top-right" start="#a7r_fw_d2e26">
+                    <fw type="pageNumber" hand="#N_pencil" place="top-right" corresp="#a7r_fw_d2e26">3</fw>
                 </zone>
-                <line xml:id="srcD_line_a1r_lb1" start="#a1r_lb1" rend="centered" hand="#N_brown1" n="1">
-                    <hi rend="underline">
-                        <hi rend="latin">Zur</hi>
-                    </hi> 
+                <zone xml:id="srcD_zone_a7r_fw_d2e29" type="fw-top-right" start="#a7r_fw_d2e29">
+                    <fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a7r_fw_d2e29">3</fw>
+                </zone>
+                <line xml:id="srcD_line_a7r_lb1" start="#a7r_lb1" n="1">der Ursprung ihres Lobes sein, und dieser Ursprung soll <hi rend="underline">vergessen</hi> <metamark xml:id="srcD_metamark_a7r_add_d2e60" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a7r_add_d2e60">worden</add>
+                    </metamark> sein: – wie ist dies Vergessen <metamark xml:id="srcD_metamark_a7r_add_d2e63" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a7r_add_d2e63">auch nur</add>
+                    </metamark> <hi rend="underline">möglich</hi>? Hat vielleicht 
                   </line>
-                <line xml:id="srcD_line_a1r_lb2" start="#a1r_lb2" rend="centered" hand="#N_brown1" n="2">
-                    <hi rend="latin">
-                        <hi rend="doubleUnderline">Genealogie</hi> <hi rend="doubleUnderline">der</hi> <hi rend="doubleUnderline">Moral</hi>.
-                  </hi>
+                <line xml:id="srcD_line_a7r_lb2" start="#a7r_lb2" n="2">die Nützlichkeit solcher Handlungen irgendwann einmal aufgehört? Das Gegentheil ist der Fall: diese Nützlichkeit 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb3" start="#a7r_lb3" n="3">ist vielmehr die Alltagserfahrung zu allen Zeiten gewesen, Etwas also, das fortwährend immer neu unterstrichen 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb4" start="#a7r_lb4" n="4">wurde<add place="inline" corresp="#a7r_add_d2e77">;</add>
+                    <del rend="strikethrough" cause="insM">,</del>
+                    <metamark xml:id="srcD_metamark_a7r_add_d2e81" function="insertion" rend="afterWord">
+                        <add place="above" corresp="#a7r_add_d2e81"> folglich,</add>
+                    </metamark> statt aus dem Bewußtsein zu verschwinden, statt vergeßbar zu werden<del rend="overwritten" cause="#a7r_add_d2e87" type="EOW">.</del>
+                    <add place="superimposed" corresp="#a7r_add_d2e87">,</add> sich dem Bewußtsein mit immer größe<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a7r_lb5" start="#a7r_lb5" n="5">rer Deutlichkeit darstellen mußte. Um wie viel vernünftiger ist jene entgegengesetzte Theorie (sie ist deshalb nicht 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb6" start="#a7r_lb6" n="6">wahrer –) welche zum Beispiel von <hi rend="latin">Herbert Spencer</hi> vertreten wird: der den Begriff „gut“ <del rend="hatching">geradezu</del> als wesensgleich 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb7" start="#a7r_lb7" n="7">mit dem Begriff „nützlich“, „zweckmäßig“ ansetzt, so daß in den Urtheilen „gut“ und „schlecht“ die Menschheit gerade 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb8" start="#a7r_lb8" n="8">ihre <hi rend="underline">unvergeßnen</hi> und <hi rend="underline">unvergeßbaren</hi> Erfahrungen über nützlich-zweckmäßig, <del rend="hatching">und</del> über schädlich-unzweckmäßig auf<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a7r_lb9" start="#a7r_lb9" n="9">summirt und sanktionirt habe. Gut ist, nach dieser Theorie, was sich von jeher als nützlich bewiesen hat: damit darf 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb10" start="#a7r_lb10" n="10">es als „werthvoll im höchsten Grade“, als „werthvoll an sich“ Geltung behaupten. Auch dieser Weg der Erklärung ist, 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb11" start="#a7r_lb11" n="11">wie gesagt, falsch, aber wenigstens ist die Erklärung selbst in sich vernünftig und <metamark xml:id="srcD_metamark_a7r_add_d2e128" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a7r_add_d2e128">psychologisch</add>
+                    </metamark> haltbar. –
+            
+            <anchor corresp="#a7r_div2_GM0104"/>
+               
+                  </line>
+            </zone>
+            <zone xml:id="srcD_zone_a7r_div2_GM0104" start="#a7r_div2_GM0104" type="textBlock">
+                <line xml:id="srcD_line_a7r_head_d2e135_a7r_lb12" start="#a7r_lb12" n="12">
+                    <zone xml:id="srcD_zone_a7r_head_d2e135_a7r_lb12" type="head">
+                        <milestone unit="page" edRef="#Cb #Ed" n="6"/>
+                        <choice corresp="#a7r_choice_d2e139">
+                            <sic change="#GM01formerVersion">5.</sic>
+                            <corr change="#GM01finalVersion">4.</corr>
+                        </choice>
+               
+                  </zone>
                 </line>
-                <line xml:id="srcD_line_a1r_lb3" start="#a1r_lb3" rend="centered" hand="#N_brown1" n="3">
-                    <hi rend="latin">Eine Streitschrift.
-                  </hi>
+                <line xml:id="srcD_line_a7r_lb13" start="#a7r_lb13" n="13">
+                    <add place="inline" corresp="#a7r_add_d2e148">– </add>Den Fingerzeig zum <hi rend="underline">rechten</hi> Wege gab mir die Frage, was eigentlich die von den verschiednen Sprachen ausgeprägten Be<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a7r_lb14" start="#a7r_lb14" n="14">zeichnungen des „Guten“ in etymologischer Hinsicht zu bedeuten haben: <del rend="hatching">–</del> und da fand ich, daß sie allesammt auf 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb15" start="#a7r_lb15" n="15">die <hi rend="underline">gleiche</hi> <hi rend="underline">Begriffs</hi>-<hi rend="underline">Verwandlung</hi> zurückleiten, <del rend="strikethrough">so</del>
+                    <add place="inline" corresp="#a7r_add_d2e177">–</add> daß überall „vornehm“ „edel“ im ständischen Sinne der Grundbegriff 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb16" start="#a7r_lb16" n="16">ist, aus dem sich „gut“ im Sinne von <metamark xml:id="srcD_metamark_a7r_add_d2e183" function="insertion">
+                        <add place="above" corresp="#a7r_add_d2e183">seelisch-</add>
+                    </metamark>„vornehm“ „edel“, <del rend="hatching">das heißt</del>
+                    <add corresp="#a7r_add_d2e189" place="above">von</add> „seelisch-hochgeartet“, „seelisch-privilegirt“ mit No<del rend="overwritten" cause="#a7r_add_d2e195" type="MOW">h</del>
+                    <add place="superimposed" corresp="#a7r_add_d2e195" instant="true">t</add>h<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a7r_lb17" start="#a7r_lb17" n="17">wendigkeit heraus entwickelt: eine Entwicklung, die immer parallel mit jener anderen läuft, welche „gemein“ „pöbel<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a7r_lb18" start="#a7r_lb18" n="18">haft“ „niedrig“ <metamark xml:id="srcD_metamark_a7r_add_d2e209" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a7r_add_d2e209">schließlich</add>
+                    </metamark> in den Begriff „schlecht“ übergehn macht. <del rend="hatching">(</del>Das beredteste Beispiel für das Letztere ist das deutsche 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb19" start="#a7r_lb19" n="19">Wort „schlecht“ selber: als welches mit „schlicht“ identisch ist – vergleiche „schlechtweg“ „schlechterdings – und ursprünglich 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb20" start="#a7r_lb20" n="20">den schlichten, den gemeinen Mann <metamark xml:id="srcD_metamark_a7r_add_d2e219" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a7r_add_d2e219">
+                            <del corresp="#substDel2a_a7r" rend="hatching">einfach </del>
+                            <add place="inline" rend="insMExt" corresp="#a7r_add_d2e222">
+                                <del corresp="#substDel2b_a7r" rend="hatching">und</del> noch ohne einen verdächtigenden Seitenblick <add corresp="#substAdd2_a7r" place="inline" rend="insMExt">einfach</add>
+                            </add>
+                        </add>
+                    </metamark> im Gegensatz zum Vornehmen bezeichnet<retrace>e.</retrace> Um die Zeit des dreißigjährigen Kriegs 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb21" start="#a7r_lb21" n="21">ungefähr<add place="inline" corresp="#a7r_add_d2e234">, <metamark xml:id="srcD_metamark_a7r_add_d2e236" function="insertion" rend="inSpatium">
+                            <add place="above" instant="true" corresp="#a7r_add_d2e236">also spät genug</add>
+                        </metamark>
+                    </add> verschiebt sich dieser Sinn in den jetzt gebräuchlichen.<del rend="hatching">)</del>
+                    <anchor corresp="#appAnchor_a7r21"/>
+                  </line>
+                <line xml:id="srcD_line__a7r_lb22" start="#a7r_lb22" n="22">
+                    <zone xml:id="srcD_zone__a7r_lb22" type="head">
+                        <seg type="head">
+                            <del rend="hatching" change="#GM01redivision">6</del>.</seg>
+                  </zone>
                 </line>
-                <line xml:id="srcD_line_a1r_lb4" start="#a1r_lb4" rend="centered" hand="#N_brown1" n="4">
-                    <hi rend="latin">Von 
-                  </hi>
+                <line xml:id="srcD_line_a7r_lb23" start="#a7r_lb23" n="23">
+                    <add place="inline" corresp="#a7r_add_d2e251">– </add>Dies<anchor corresp="#appAnchor_a7r23"/> scheint mir <metamark xml:id="srcD_metamark_a7r_add_d2e256" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a7r_add_d2e256">in Betreff der Moral-Genealogie</add>
+                    </metamark> eine <hi rend="underline">wesentliche</hi> Einsicht; daß sie so spät erst gefunden <metamark xml:id="srcD_metamark_a7r_add_d2e263" function="insertion">
+                        <add place="above" corresp="#a7r_add_d2e263">wird</add>
+                    </metamark>
+                    <del rend="hatching">ist</del>, liegt an dem <metamark xml:id="srcD_metamark_a7r_add_d2e269" function="insertion">
+                        <add place="above" corresp="#a7r_add_d2e269">hemmenden</add>
+                    </metamark> Einfluß, den das 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb24" start="#a7r_lb24" n="24">demokratische Vorurtheil innerhalb der modernen Welt in Hinsicht auf alle Fragen der Herkunft ausübt<add place="inline" corresp="#a7r_add_d2e275">.</add>
+                    <del rend="hatching">,</del> <del rend="overwritten" cause="#a7r_add_d2e282">u</del>
+                    <add place="superimposed" corresp="#a7r_add_d2e282">U</add>nd dies 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb25" start="#a7r_lb25" n="25">bis in das <metamark xml:id="srcD_metamark_a7r_add_d2e287" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a7r_add_d2e287">anscheinend objektivste</add>
+                    </metamark> Gebiet der Naturwissenschaft und Physiologie hinein<del rend="overwritten" cause="#a7r_add_d2e293" type="EOW">.</del>
+                    <add place="superimposed" corresp="#a7r_add_d2e293">:</add> <metamark xml:id="srcD_metamark_a7r_add_d2e296" function="insertion" rend="inSpatium" style="top:-0.125em;height:1.4375em;">
+                        <add place="above" corresp="#a7r_add_d2e296" style="left:-11.25em;">wie hier nur angedeutet werden <del rend="hatching">kann.</del>
+                            <add place="inline" corresp="#a7r_add_d2e301">soll.</add>
+                        </add>
+                    </metamark> Welchen Unfug <metamark xml:id="srcD_metamark_a7r_add_d2e306" function="insertion">
+                        <add place="above" corresp="#a7r_add_d2e306">aber</add>
+                    </metamark> dieses Vorurtheil, einmal 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb26" start="#a7r_lb26" n="26">bis zum Haß entzügelt, in Sonderheit <metamark xml:id="srcD_metamark_a7r_add_d2e312" function="insertion">
+                        <add place="above" corresp="#a7r_add_d2e312">für Moral und Historie</add>
+                    </metamark>
+                    <del rend="hatching">in der Historie</del> anrichten kann, zeigt der berüchtigte Fall <hi rend="latin">Buckle</hi>
+                    <del rend="overwritten" cause="#a7r_add_d2e322" type="EOW">.</del>
+                    <add place="superimposed" corresp="#a7r_add_d2e322">
+                        <del rend="overwritten" cause="#a7r_add_d2e325">;</del>
+                        <add place="superimposed" corresp="#a7r_add_d2e325">
+                            <hi rend="latin">’s</hi>;</add>
+                    </add> 
+                     </line>
+                <line xml:id="srcD_line_a7r_lb27" start="#a7r_lb27" n="27">
+                    <del rend="overwritten" cause="#a7r_add_d2e333" type="SOW">D</del>
+                    <add place="superimposed" corresp="#a7r_add_d2e333">d</add>er <hi rend="underline">Plebejismus</hi> des mo<milestone unit="page" edRef="#Cb #Ed" n="7"/>dernen Geistes, der englischer Abkunft ist, brach da einmal wieder auf seinem heimischen 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb28" start="#a7r_lb28" n="28">Boden heraus, heftig wie ein schlammichter Vulkan und mit jener versalzten <metamark xml:id="srcD_metamark_a7r_add_d2e344" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a7r_add_d2e344">überlauten <add place="inline" rend="insMExt" corresp="#a7r_add_d2e346">gemeinen</add>
+                        </add>
+                    </metamark> Beredtsamkeit, mit der <metamark xml:id="srcD_metamark_substAdd3_a7r" function="insertion">
+                        <add place="above" corresp="#substAdd3_a7r">bisher</add>
+                    </metamark>alle Vul<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a7r_lb29" start="#a7r_lb29" n="29">kane <metamark xml:id="srcD_metamark_a7r_add_d2e358" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a7r_add_d2e358">
+                            <del corresp="#substDel3_a7r" rend="hatching">bisher</del>
+                        </add>
+                    </metamark> <del rend="hatching">reden</del>
+                    <del rend="overwritten" cause="#a7r_add_d2e367" type="MOW">.</del>
+                    <add place="superimposed" corresp="#a7r_add_d2e367"> g</add>
+                    <add place="inline" corresp="#a7r_add_d2e369">eredet haben. –</add>
+            
+            <anchor corresp="#a7r_div2_GM0105"/>
+               
+                  </line>
+            </zone>
+            <zone xml:id="srcD_zone_a7r_div2_GM0105" start="#a7r_div2_GM0105" type="lastBlock" style="padding-bottom:5em;">
+                <line xml:id="srcD_line_a7r_head_d2e375_a7r_lb30" start="#a7r_lb30" n="30">
+                    <zone xml:id="srcD_zone_a7r_head_d2e375_a7r_lb30" type="head">
+                        <choice corresp="#a7r_choice_d2e378">
+                            <sic>
+                                <add place="inline" corresp="#a7r_add_d2e381">6.</add>
+                                <del rend="strikethrough">7</del>.</sic>
+                            <corr change="#GM01finalVersion">5.</corr>
+                        </choice>
+               
+                  </zone>
                 </line>
-                <line xml:id="srcD_line_a1r_lb5" start="#a1r_lb5" rend="centered" hand="#N_brown1" n="5">
-                    <hi rend="latin">Friedrich Nietzsche.
-                  </hi>
-                </line>
-                <line xml:id="srcD_line_a1r_lb6" start="#a1r_lb6" hand="#N_brown1" n="6">
-                    <zone xml:id="srcD_line_a1r_lb6_flushRight_zone" type="flushRight">
-                        <hi rend="latin">Tout comprendre c’est tout <add place="inline" corresp="#a1r_add_d2e179">–</add> <hi rend="underline">mépriser</hi>?…
-                  </hi>
-                    </zone>
-                </line>
-                <line xml:id="srcD_line_a1r_lb7" start="#a1r_lb7" rend="centered" hand="#N_brown1" n="7">
-                    <hi rend="latin">Leipzig
-                  </hi>
-                </line>
-                <line xml:id="srcD_line_a1r_lb8" start="#a1r_lb8" rend="centered" hand="#N_brown1" n="8">
-                    <hi rend="latin">Verlag von C. G. Naumann
-                  </hi>
-                </line>
-                <line xml:id="srcD_line_a1r_lb9" start="#a1r_lb9" rend="centered" hand="#N_brown1" n="9">
-                    <hi rend="latin">1887.</hi>
-                </line>
-                <zone xml:id="srcD_zone_a1r_fw_d2e33" type="fw-bottom-left" start="#a1r_fw_d2e33">
-                    <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#a1r_fw_d2e33">1</fw>
+                <line xml:id="srcD_line_a7r_lb31" start="#a7r_lb31" n="31">In Hinsicht auf <hi rend="underline">unser</hi> Problem, das aus guten Gründen ein <hi rend="underline">stilles</hi> Problem genannt werden kann und sich <metamark xml:id="srcD_metamark_a7r_add_d2e399" function="insertion">
+                        <add place="above" corresp="#a7r_add_d2e399">wählerisch</add>
+                    </metamark> nur 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb32" start="#a7r_lb32" n="32">an wenige Ohren wendet, ist es von keinem kleinen Interesse, festzustellen, daß vielfach noch in jenen Worten und 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb33" start="#a7r_lb33" n="33">Wurzeln, die „gut“ bezeichnen, die Hauptnuance durchschimmert, auf welche hin die Vornehmen sich eben als Menschen 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb34" start="#a7r_lb34" n="34">höheren Ranges fühlten. Zwar benennen si<del rend="overwritten" cause="#a7r_add_d2e412">ch</del>
+                    <add place="superimposed" corresp="#a7r_add_d2e412" instant="true">e</add> sich vielleicht in den häufigsten Fällen einfach nach ihrer Überlegen<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a7r_lb35" start="#a7r_lb35" n="35">heit an Macht (<metamark xml:id="srcD_metamark_a7r_add_d2e420" function="insertion" rend="inWord">
+                        <add place="above" corresp="#a7r_add_d2e420">als </add>
+                    </metamark>„die Mächtigen“, „die Herren“ „die Gebietenden“) oder nach dem sichtbarsten Abzeichen dieser Überlegen<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a7r_lb36" start="#a7r_lb36" n="36">heit, zum Beispiel als „die Reichen“, „die Besitzenden“ (das ist der Sinn von <hi rend="latin">arya</hi>; und entsprechend im <hi rend="latin">Eranischen</hi>, 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb37" start="#a7r_lb37" n="37">
+                    <metamark xml:id="srcD_metamark_a7r_add_d2e437" function="insertion">
+                        <add place="above" corresp="#a7r_add_d2e437">und</add>
+                    </metamark>
+                    <del rend="hatching">auch mehrfach im</del> <hi rend="latin">Slavischen</hi>) Aber auch nach einem <hi rend="underline">typischen</hi> <hi rend="underline">Charakterzuge</hi>: und dies ist der Fall, der uns hier 
+                  </line>
+                <line xml:id="srcD_line_a7r_lb38" start="#a7r_lb38" n="38">angeht. Sie heißen sich zum Beispiel „die Wahrhaftigen“<del rend="overwritten" cause="#a7r_add_d2e457">.</del>
+                    <add place="superimposed" corresp="#a7r_add_d2e457" instant="true">;</add> voran der <choice corresp="#a7r_choice_d2e460">
+                        <sic>griechischen</sic>
+                        <corr>griechische</corr>
+                    </choice> Adel, dessen Mundstück <metamark xml:id="srcD_metamark_a7r_add_d2e465" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a7r_add_d2e465">der Megarische Dichter</add>
+                    </metamark> <hi rend="latin">Theognis</hi> ist.</line>
+                <zone xml:id="srcD_zone_a7r_fw_d2e32" type="fw-bottom-left" start="#a7r_fw_d2e32">
+                    <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#a7r_fw_d2e32">7</fw>
                 </zone>
             </zone>
         </surface>

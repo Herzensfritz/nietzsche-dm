@@ -14,6 +14,7 @@ import module namespace pm-config="http://www.tei-c.org/tei-simple/pm-config" at
 import module namespace custom="http://teipublisher.com/api/custom" at "../../custom-api.xql";
 import module namespace query="http://www.tei-c.org/tei-simple/query" at "../query.xql";
 import module namespace nav="http://www.tei-c.org/tei-simple/navigation" at "../navigation.xql";
+import module namespace console="http://exist-db.org/xquery/console";
 
 declare function capi:list($request as map(*)) {
     let $path := if ($request?parameters?path) then xmldb:decode($request?parameters?path) else ()
@@ -137,6 +138,7 @@ declare %private function capi:upload($root, $paths, $payloads) {
                             xmldb:store($collectionPath, xmldb:encode($path), $data)
                     else
                         error($errors:NOT_FOUND, "Collection not found: " || $collectionPath)
+        let $log := console:log($data)   
         return
             map {
                 "name": $path,

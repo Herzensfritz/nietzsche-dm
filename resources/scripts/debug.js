@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
+    console.log("HELLO WORLD")
+    
+    pbEvents.subscribe('pb-search-resubmit', 'search', (ev) =>{
+        console.log(ev);
+    });
    
     const viewer = document.querySelector('pb-facsimile');
     

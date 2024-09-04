@@ -2,6 +2,7 @@
     "myapp": {
     	"menu": {
     		"appNotes": "Editor Notes",
+    		"changes": "Changes",
     		"pageInfo": "Page Information",
     		"showTimeline": "show timeline",
     		"timeline": "Timeline",

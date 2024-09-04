@@ -75,7 +75,6 @@ declare function local:yearMaps($changes, $index){
                                         return substring-before($change/tei:date/(@when|@notAfter|@notBefore)[1], '-')))
                             where $year != ''
                             return $year
-    let $log := console:log($years)
     let $currentYearMonths := for $change in $changes
                     where $change/tei:date/starts-with((@when|@notAfter|@notBefore)[1], $years[$index])
                     return $change

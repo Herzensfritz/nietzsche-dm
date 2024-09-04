@@ -77,7 +77,6 @@ declare function mapping:nietzsche-ed-for-dm($root as element(), $userParams as 
                 $content,
                 $omitTextAfter}
         </div>
-        let $log := console:log($div)
         return $div
     ) else (
         <div>{concat('Kein Milestone in ', util:document-name($config:newest-ed),' für ', $pb)} </div>    
@@ -114,9 +113,23 @@ declare function mapping:nietzsche-page-info($root as element(), $userParams as 
             ) else ()
     }
     </div>
-    let $log := console:log($div)
     return $div
 };    
+   (:~
+ : For the Nietzsche Druckmanuskript: find the change information of the page  corresponding
+ : to the surface shown in the diplomatic transcription.
+ :)
+declare function mapping:nietzsche-change-info($root as element(), $userParams as map(*)) {
+    let $pbId := substring-after($root/@start, '#')
+    let $div := <div xmlns="http://www.tei-c.org/ns/1.0" type="changeInfo">{
+        for $id in  root($root)//tei:text//tei:pb[@xml:id = $pbId]/tokenize(@change, ' ')
+            let $xmlId := substring-after($id, '#')
+            return root($root)//tei:profileDesc/tei:creation/tei:listChange/tei:change[@xml:id = $xmlId ]
+
+    }
+    </div>
+    return $div
+};   
 declare %private function local:getCorrContents($root as element(), $corresp as xs:string?, $userParams as map(*)){
     if($corresp and contains($corresp, '#')) then (
         let $first := substring-after(substring-before($corresp[1], ' '), '#')

@@ -2,6 +2,7 @@
     "myapp": {
     	"menu": {
     		"appNotes": "Anmerkungen",
+    		"changes": "Bearbeitungsschritte",
     		"pageInfo": "Seiteninformationen",
     		"showTimeline": "Zeitstrahl anzeigen",
     		"timeline": "Zeitstrahl",
