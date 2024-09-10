@@ -1,75 +1,102 @@
-function myScrollIntoView(target){
-    target.scrollIntoView(true);  
-    let scrolledY = window.scrollY;
+const NUM_COLLAPSE = 3;
+var headerHeight = 128;
+var toggleCollapse = false;
+var updating = [];
 
-     if(scrolledY){
-        window.scroll(0, scrolledY - 128);
-    }
-    console.log('scrolled', target)
+
+function checkCollapse(currentMap){
+       let height = currentMap['collapse'].reduce((total, current) => total + current.getBoundingClientRect().height, 0)
+        if( currentMap['toggleCollapse'] || height > (window.innerHeight - headerHeight)) {
+            currentMap['collapse'].forEach(c =>{
+                c.opened = false; 
+            }); 
+            currentMap['toggleCollapse'] = true;
+        } 
+        console.log('check Collapse ', currentMap);
+
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-     const facsimile = document.querySelector('pb-facsimile');
-     if (facsimile) {
+    const facsimile = document.querySelector('pb-facsimile');
+    const appHeader = document.querySelector('app-header');
+    const map = {};
+    let currentNode = null;
+    headerHeight = (appHeader) ? appHeader.getBoundingClientRect().height : headerHeight;
+    if (facsimile) {
         pbEvents.subscribe('pb-facsimile-status', 'transcription', (ev) => {
-                    if (ev.detail.status !== 'fail') {
-                        facsimile.style.visibility = 'visible';
-                    } else {
-                        facsimile.style.visibility = 'hidden';
-                    }
-                }); 
-   }
+            if (ev.detail.status !== 'fail') {
+                facsimile.style.visibility = 'visible';
+            } else {
+                facsimile.style.visibility = 'hidden';
+            }
+        }); 
+    }
     
     document.querySelectorAll('[data-target]').forEach((link) => {
-            const target = document.querySelector(link.dataset.target);
-            if (target){
-                target.classList.add('noDisplay');
-                link.addEventListener('click', (ev) => {
-                    pbEvents.emit('toggle-event', null, ev)
-                });
-            } else {
-                delete link.dataset.target;
-                link.classList.add('noDisplay');
-            }
+        const target = document.querySelector(link.dataset.target);
+        if (target){
+            target.classList.add('noDisplay');
+            link.addEventListener('click', (ev) => {
+                pbEvents.emit('toggle-event', null, ev)
+            });
+        } else {
+            delete link.dataset.target;
+            link.classList.add('noDisplay');
+        }
     });
+  
     pbEvents.subscribe('toggle-event', null, function(ev){
         const eventTarget = ev.detail.target;
         document.querySelectorAll('[data-target]').forEach((link) => {
             const target = document.querySelector(link.dataset.target);
             if (link === eventTarget) {
                 target.classList.toggle('noDisplay');
+                if(target.id == 'pageInfo' && target.checkVisibility() && currentNode){
+                    checkCollapse(map[currentNode]);    
+                }
             } else {
                 target.classList.add('noDisplay');
             }
         });
     });
+    pbEvents.subscribe("pb-start-update", "pageInfo", (ev) => {
+       updating.push(ev.target);
+    });
+   pbEvents.subscribe("pb-update", "pageInfo", (ev) => {
+       currentNode = ev.detail.data.rootNode
+       const index = updating.indexOf(ev.target);
+       if (index > -1){
+           updating.splice(index, 1)
+       }
+       const target = ev.detail.root.querySelector('pb-collapse');
+       if (target && currentNode){
+           if (map.hasOwnProperty(currentNode)){
+               if (!map[currentNode]['collapse'].includes(target)){
+                    map[currentNode]['collapse'].push(target);
+                    map[currentNode]['finished'] = (updating.length == 0)
+               }
+           } else {
+               map[currentNode] = { toggleCollapse: false, collapse: [ target ], finished: (updating.length == 0) };
+           }
+           if (target.checkVisibility() && map[currentNode]['finished']){
+                checkCollapse(map[currentNode]);
+           }
+       }
+   });
+   pbEvents.subscribe("pb-navigate", "transcription", (ev) => {
+        if (currentNode) {
+            map[currentNode]['finished'] = map[currentNode]['collapse'].length > 0;
+        }
+        currentNode = null;
+   });
+   pbEvents.subscribe("pb-collapse-open", "transcription", (ev) => {
+        if (currentNode && map[currentNode]['toggleCollapse']) {
+            map[currentNode]['collapse'].forEach(c =>{
+                if (c !== ev.originalTarget){
+                    c.opened = false;
+                }
+            });
+        }
+   });
    
-    pbEvents.subscribe("pb-update", "transcription", (ev) => {
-                const id = document.location.hash
-                console.log('my pb-update', id)
-                if (id){
-                    const target = ev.detail.root.querySelector(id);
-                    console.log(id, target);
-                    if (target){
-                        myScrollIntoView(target);
-                        target.classList.add("myhighlight");
-                        console.log('added', target)
-                    }    
-                }
-    });
-            
-    pbEvents.subscribe("pb-refresh", "transcription", (ev) => {
-        const id = document.location.hash.substring(1)
-        if (id){  
-            const target = document.getElementById(id);
-            console.log(id, target);
-            if (target){
-                myScrollIntoView(target);
-                if (target.classList.contains('noscroll')){
-                    console.log('noscroll:',target);
-                    target.classList.add("myhighlight");
-                }
-            }    
-        } 
-    });
 });

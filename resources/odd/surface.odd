@@ -40,17 +40,17 @@
             <schemaSpec start="TEI teiCorpus" ident="surface" source="teipublisher.odd"> 
         <elementSpec ident="pb" mode="change"/>
         <elementSpec ident="hi" mode="change">
-        <model predicate="@rend and parent::restore" behaviour="pass-through">
+                    <model predicate="@rend and parent::restore" behaviour="pass-through">
             <param name="rend" value="@rend"/>
             <param name="restore" value="concat('restoreBy',parent::restore/@type)"/>
             <param name="content" value="."/>
-            <pb:template xmlns="" xml:space="">
+            <pb:template xmlns="" xml:space="preserve">
                             <span class="[[rend]] [[restore]]">[[content]]</span>
                         </pb:template>
         </model>
-        <model predicate="@rend='underline'" behaviour="inline"/>
-        <model predicate="@rend='doubleUnderline'" behaviour="inline"/>
-        <model predicate="@rend='latin'" behaviour="pass-through">
+                    <model predicate="@rend='underline'" behaviour="inline"/>
+                    <model predicate="@rend='doubleUnderline'" behaviour="inline"/>
+                    <model predicate="@rend='latin'" behaviour="pass-through">
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><span class="latin">[[content]]</span></pb:template>
         </model>
@@ -178,14 +178,14 @@
         </model>
                 </elementSpec>
     <elementSpec ident="add" mode="change">
-        <model predicate="@place = 'superimposed' and (parent::fw)" behaviour="omit">
+                    <model predicate="@place = 'superimposed' and (parent::fw)" behaviour="omit">
             <param name="id" value="replace(@corresp, '#', '')"/>
             <param name="hand" value="@hand"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]" data-debug="add1"><span class="[[hand]]">[[content]]</span></span></pb:template>
         </model>
-        <model predicate="@place = 'superimposed' and add[@place='superimposed']" behaviour="inline"/>
-        <model predicate="@place = 'superimposed' and parent::del[@rend and @hand]" behaviour="pass-through">
+                    <model predicate="@place = 'superimposed' and add[@place='superimposed']" behaviour="inline"/>
+                    <model predicate="@place = 'superimposed' and parent::del[@rend and @hand]" behaviour="pass-through">
             <param name="id" value="if (@xml:id) then (@xml:id) else (substring-after(@corresp, '#'))"/>
             <param name="deleteCls" value="concat(parent::del/@rend, replace(parent::del/@hand, '#', '-'))"/>
             <param name="hand" value="substring-after(@hand, '#')"/>
@@ -194,7 +194,7 @@
             <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]" data-debug="add2">
                 <span class="inline [[hand]] [[instant]] [[deleteCls]]">[[content]]</span></span></pb:template>
         </model>
-        <model predicate="@place = 'superimposed' and parent::del[@rend]" behaviour="pass-through">
+                    <model predicate="@place = 'superimposed' and parent::del[@rend]" behaviour="pass-through">
             <param name="id" value="if (@xml:id) then (@xml:id) else (substring-after(@corresp, '#'))"/>
             <param name="deleteCls" value="parent::del/@rend"/>
             <param name="hand" value="substring-after(@hand, '#')"/>
@@ -203,14 +203,14 @@
             <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]" data-debug="add3">
                 <span class="inline [[hand]] [[instant]] [[deleteCls]]">[[content]]</span></span></pb:template>
         </model>
-        <model predicate="@place = 'superimposed'" behaviour="pass-through">
+                    <model predicate="@place = 'superimposed'" behaviour="pass-through">
             <param name="id" value="if (@xml:id) then (@xml:id) else (substring-after(@corresp, '#'))"/>
             <param name="hand" value="substring-after(@hand, '#')"/>
             <param name="content" value="."/>
             <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/>
             <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]" data-debug="add4"><span class="inline [[hand]] [[instant]]">[[content]]</span></span></pb:template>
         </model>
-        <model predicate="parent::metamark[following-sibling::del/@cause = concat('#', @xml:id) or preceding-sibling::del/@cause = concat('#', @xml:id)] and (@place='above' or @place='below')" behaviour="pass-through">
+                    <model predicate="parent::metamark[following-sibling::del/@cause = concat('#', @xml:id) or preceding-sibling::del/@cause = concat('#', @xml:id)] and (@place='above' or @place='below')" behaviour="pass-through">
             <param name="metamarkClass" value="if (parent::metamark/@rend) then (concat(parent::metamark/@rend, 'insertion-', @place)) else (concat('insMinsertion-', @place))"/>
             <param name="metamarkStyle" value="parent::metamark/@style"/>
             <param name="hand" value="substring-after(@hand, '#')"/>
@@ -307,9 +307,9 @@
         </model>
                 </elementSpec>
     <elementSpec ident="del" mode="change">
-        <model predicate=" (@rend = 'erased' or @rend = 'overwritten') and parent::fw[not(add)]" behaviour="inline"/>
-        <model predicate=" (@rend = 'erased' or @rend = 'overwritten') and parent::subst" behaviour="omit"/>
-        <model predicate=" (@rend = 'erased' or @rend = 'overwritten') and parent::fw[add[@place=&#34;superimposed&#34;]]" behaviour="pass-through" cssClass="popover">
+                    <model predicate=" (@rend = 'erased' or @rend = 'overwritten') and parent::fw[not(add)]" behaviour="inline"/>
+                    <model predicate=" (@rend = 'erased' or @rend = 'overwritten') and parent::subst" behaviour="omit"/>
+                    <model predicate=" (@rend = 'erased' or @rend = 'overwritten') and parent::fw[add[@place=&#34;superimposed&#34;]]" behaviour="pass-through" cssClass="popover">
             <param name="id" value="replace(@cause, '#', '')"/>
             <param name="key" value="concat('myapp.',@rend)"/>
             <param name="alternate" value="."/>
@@ -331,7 +331,7 @@
                           </pb-i18n>:</span>
                         <span class="transkriptionField small [[hand]]">[[alternate]]</span></p></pb-popover></pb:template>
         </model>
-        <model predicate=" (@rend = 'erased' or @rend = 'overwritten') and parent::add[@place='superimposed']" behaviour="pass-through" cssClass="popover">
+                    <model predicate=" (@rend = 'erased' or @rend = 'overwritten') and parent::add[@place='superimposed']" behaviour="pass-through" cssClass="popover">
             <param name="id" value="replace(@cause, '#', '')"/>
             <param name="key" value="concat('myapp.',@rend)"/>
             <param name="alternate" value="."/>
@@ -349,7 +349,7 @@
  
 </p></pb-popover></pb:template>
         </model>
-        <model predicate=" (@rend = 'erased' or @rend = 'overwritten') and parent::sic" behaviour="pass-through">
+                    <model predicate=" (@rend = 'erased' or @rend = 'overwritten') and parent::sic" behaviour="pass-through">
             <param name="id" value="replace(@cause, '#', '')"/>
             <param name="key" value="concat('myapp.',@rend)"/>
             <param name="alternate" value="."/>
@@ -360,7 +360,7 @@
                           </pb-i18n>:</span>
                         <span class="transkriptionField small [[hand]]">[[alternate]]</span></span></span></pb:template>
         </model>
-        <model predicate=" (@rend = 'erased' or @rend = 'overwritten')" behaviour="pass-through" cssClass="popover">
+                    <model predicate=" (@rend = 'erased' or @rend = 'overwritten')" behaviour="pass-through" cssClass="popover">
             <param name="id" value="replace(@cause, '#', '')"/>
             <param name="key" value="concat('myapp.',@rend)"/>
             <param name="alternate" value="."/>
@@ -372,7 +372,7 @@
                             überschrieben
                           </pb-i18n>:</span>
                         <span class="transkriptionField small [[hand]]">[[alternate]]</span></p></pb-popover></pb:template>
-                    </model>
+        </model>
                     <model predicate="@rend and @hand" behaviour="pass-through">
             <param name="content" value="."/>
             <param name="deleteCls" value="concat(@rend, replace(@hand, '#', '-'))"/>
@@ -488,12 +488,12 @@
                       </p>
           </pb-popover></pb:template>
         </model>
-                </elementSpec>
+    </elementSpec>
     <elementSpec ident="div" mode="change">
         <model predicate="@type='changeInfo' and change" behaviour="pass-through">
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><div class="changeInfoPage"> 
-            <pb-collapse opened="opened">
+            <pb-collapse opened="opened" emit="transcription">
                     <span slot="collapse-trigger">
                 <h2><pb-i18n key="myapp.menu.changes">Bearbeitungsschritte</pb-i18n></h2>
                 </span>
@@ -504,10 +504,10 @@
                 </div>
             </pb:template>
         </model>
-        <model predicate="@type='pageInfo' and (msContents or physDesc or additions or handNotes)" behaviour="pass-through" cssClass="pageInfo">
+                    <model predicate="@type='pageInfo' and (msContents or physDesc or additions or handNotes)" behaviour="pass-through" cssClass="pageInfo">
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><div class="pageInfo">
-                <pb-collapse opened="opened">
+                <pb-collapse opened="opened" emit="transcription">
                     <span slot="collapse-trigger">
                         <h2><pb-i18n key="myapp.menu.pageInfo">Seiteninformationen</pb-i18n></h2>
                     </span>
@@ -517,10 +517,10 @@
                 </pb-collapse>
             </div></pb:template>
         </model>
-        <model predicate="@type='noteDiv' and app" behaviour="pass-through" cssClass="noteDiv">
+                    <model predicate="@type='noteDiv' and app" behaviour="pass-through" cssClass="noteDiv">
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><div class="noteDiv"> 
-              <pb-collapse opened="opened">
+              <pb-collapse opened="opened" emit="transcription">
                     <span slot="collapse-trigger">
                 <h2><pb-i18n key="myapp.menu.appNotes">Anmerkungen</pb-i18n></h2>
                  </span>
@@ -694,7 +694,16 @@
             <pb:template xmlns="" xml:space="preserve"><span style="[[marginStyle]]"/></pb:template>
         </model>
                 </elementSpec>
-            <elementSpec ident="ref" mode="change">
+    <elementSpec ident="ref" mode="change">
+        <model predicate="@target and parent::desc" behaviour="pass-through">
+            <param name="id" value="substring-after(@target, '#')"/>
+            <param name="content" value="."/>
+            <param name="note" value="id(substring-after(@target, '#'), root($parameters?root))/note/node()"/>
+             <param name="style" value="if (contains(@target, 'black') or contains(@target, 'brown')) then ('background-color: white;') else ()"/>
+            <pb:template xmlns="" xml:space="preserve"><span id="[[id]]" class="info trigger popover">[[content]]</span><pb-popover for="[[id]]" theme="material">
+            <span class="[[id]]" style="[[style]]">[[content]]</span>
+            <p>[[note]]</p></pb-popover></pb:template>
+        </model>
                     <model predicate="@target" behaviour="pass-through">
             <param name="id" value="substring-after(@target, '#')"/>
             <param name="content" value="."/>
@@ -753,9 +762,9 @@
             font-style: italic;
             </outputRendition>
         </model>
-    </elementSpec>
+                </elementSpec>
     <elementSpec ident="change" mode="add">
-        <model predicate="parent::div[@type='changeInfo']" behaviour="pass-through">
+                    <model predicate="parent::div[@type='changeInfo']" behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <param name="content" value="."/>
             <param name="date" value="date/text()"/>
@@ -766,7 +775,7 @@
                 </pb-popover></li>
             </pb:template>
         </model>
-        <model behaviour="pass-through">
+                    <model behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="change">
@@ -777,6 +786,21 @@
         </model>
                 </elementSpec>
                 <elementSpec ident="div1" mode="add"/>
+            <elementSpec ident="handNote" mode="add">
+        <model behaviour="pass-through">
+            <param name="content" value="."/>
+            <param name="id" value="@xml:id"/>
+            <param name="style" value="if (contains(@xml:id, 'black') or contains(@xml:id, 'brown')) then ('background-color: white;') else ()"/>
+            <param name="note" value="note[1]"/>
+            <pb:template xmlns="" xml:space="preserve">
+                <span id="[[id]]" class="trigger popover">[[content]]</span>
+                <pb-popover theme="material" for="[[id]]">
+                    <span class="[[id]]" style="[[style]]">[[content]]</span>
+                    <p>[[note]]</p>
+                </pb-popover>
+            </pb:template>
+        </model>
+    </elementSpec>
             </schemaSpec>
         </body>
     </text>

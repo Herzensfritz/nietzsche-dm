@@ -113,6 +113,7 @@ declare function mapping:nietzsche-page-info($root as element(), $userParams as 
             ) else ()
     }
     </div>
+    let $log := console:log($div)
     return $div
 };    
    (:~
@@ -150,15 +151,18 @@ declare %private function local:getCorrContents($root as element(), $corresp as 
  : to the surface shown in the diplomatic transcription.
  :)
 declare function mapping:nietzsche-apps($root as element(), $userParams as map(*)) {
-    if (empty(root($root)//tei:text//tei:app/tei:note[@type="editorial"]) and count(root($root)//tei:text//tei:note[@type="editorial"]) gt 0) then (
+   (:  : if (empty(root($root)//tei:text//tei:app/tei:note[@type="editorial"]) and count(root($root)//tei:text//tei:note[@type="editorial"]) gt 0) then (
         mapping:nietzsche-notes($root, $userParams)    
-    ) else (
+    ) else () :)
         let $pbId := substring-after($root/@start, '#')
-        let $apps := if (root($root)//tei:surface[@xml:id = $root/@xml:id]/following-sibling::tei:surface) then (
-            root($root)//tei:text//tei:app[tei:note[@type="editorial"] and preceding::tei:pb[1][@xml:id = $pbId] and following::tei:pb[preceding::tei:pb[1][@xml:id = $pbId]] ]
+        let $apps := if (root($root)//tei:surface[@xml:id = $root/@xml:id]/following-sibling::tei:surface[1]) then (
+            let $nextPbId := substring-after(root($root)//tei:surface[@xml:id = $root/@xml:id]/following-sibling::tei:surface[1]/@start, '#')
+            return root($root)//tei:text//tei:pb[@xml:id = $pbId]/following::tei:app[tei:note[@type="editorial"] and following::tei:pb[@xml:id = $nextPbId] ]
         ) else (
             root($root)//tei:text//tei:app[tei:note[@type="editorial"] and preceding::tei:pb[@xml:id = $pbId]]    
         )
+        
+        let $log := console:log($apps)
         let $pbN := root($root)//tei:text//tei:pb[@xml:id = $pbId]/@xml:id
         let $div := <div xmlns="http://www.tei-c.org/ns/1.0" type="noteDiv">
            
@@ -180,35 +184,27 @@ declare function mapping:nietzsche-apps($root as element(), $userParams as map(*
                     }
                 )
         }</div>
-        let $log := console:log($div)
         return $div
-    )
+    
 };
 declare function local:parseLoc($root as node(), $loc as xs:string?, $corresp as xs:string*) as attribute()* {
-    if ($corresp) then (
-        let $correspTok := tokenize($corresp)
-        let $tokLength := count($correspTok)
-        return if ($tokLength gt 2) then (
-            attribute corresp {
-                $correspTok[1]    
-            },
+    let $corrMap := local:parseCorresp($root, $corresp, map {})
+    return if ($corresp and $corrMap?from) then (
             attribute from {
-                $correspTok[2]    
-            },
-            attribute to {
-                $correspTok[$tokLength]
-            }
-        ) else (
-            attribute corresp {
-                $correspTok[1]    
-            },
-            attribute from {
-                $correspTok[2]    
-            }
-        )    
+                $corrMap?from
+            },if ($corrMap?corresp) then (
+                attribute corresp {
+                $corrMap?corresp
+                }
+            ) else (), 
+            if ($corrMap?to) then (
+                attribute to {
+                $corrMap?to
+                }
+            ) else ()    
     ) else (
         if (contains($loc, ',')) then (
-            let $locTok := tokenize($loc, '-')
+            let $locTok := if (contains($loc, '-')) then (tokenize($loc, '-')) else (tokenize($loc, ','))
             return if (count($locTok) gt 1) then (
                 local:createTargetAttribute($root, substring-after($locTok[1], ','),'from'), local:createTargetAttribute($root, $locTok[2],'to')
             ) else (
@@ -217,10 +213,49 @@ declare function local:parseLoc($root as node(), $loc as xs:string?, $corresp as
         ) else ()
     )
 };
+declare function local:parseCorresp($root as node(), $corresp as xs:string*, $corrMap as map(*)) as map(*) {
+    let $corrToks := tokenize(normalize-space($corresp))
+    return if (count($corrToks) gt 0) then (
+        let $currentTok := $corrToks[1]
+        let $type := root($root)//*[@xml:id = substring-after($currentTok, '#')]/local-name()
+        return if ($type = 'anchor') then (
+            let $newMap := map:merge(($corrMap, map {
+                    'corresp': concat($corrMap?corresp, ' ', $currentTok) 
+                }
+            ))
+            return local:parseCorresp($root, substring-after($corresp, $currentTok), $newMap)
+               
+        ) else (
+            if ($type = 'lb') then (
+                let $newMap := if ($corrMap?from) then (
+                    map:merge(($corrMap, map {
+                        'to': $currentTok
+                    }))
+                ) else (
+                   map:merge(($corrMap, map {
+                        'from': $currentTok
+                    })) 
+                )   
+                return local:parseCorresp($root, substring-after($corresp, $currentTok), $newMap)
+            ) else (
+                local:parseCorresp($root, substring-after($corresp, $currentTok), $corrMap)
+            )
+        )
+    ) else (
+        $corrMap    
+    )
+};
 declare function local:createTargetAttribute($root as node(), $n as xs:string, $attrName as xs:string) {
-    attribute {$attrName} {
-        concat('#',root($root)//tei:text//tei:lb[@n = $n]/@xml:id)          
-    }    
+    let $id := root($root)//tei:text//tei:lb[@n = $n]/@xml:id/string()
+    return if (count($id) eq 1) then (
+        attribute {$attrName} {
+        concat('#',$id)          
+        } 
+    ) else (
+        let $log := console:log($n)
+        let $log1 := console:log($attrName)
+        return ()
+    )   
 };
 declare function mapping:nietzsche-notes($root as element(), $userParams as map(*)) {
     let $ED := doc($config:data-root || "/GM_Ed_incl.xml")
