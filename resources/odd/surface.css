@@ -6,10 +6,10 @@ body {
          --nbrown: #5C4033;
          --red: #dc3545;
 }
-ul.letters, ul.pages {
+ul.letters, ul.pages, ul.handNotes {
     color: grey;
     font-size: 80%;
-    list-style-type: '- ';
+    list-style-type: ' ';
 }
 .mycollapse-trigger {
     font-weight: bold;
@@ -76,7 +76,7 @@ ul.letters, ul.pages {
 .N_black2 {
     color: var(--nblack2);
 }
-.transkriptionField {background-color: #CED5CE; padding-right: 20px; padding-left: 5px; padding-top: 10px; padding-bottom: 10px;margin-top: 3em; margin-left: 30px; width: max-content;}
+.transkriptionField {background-color: var(--tpField, #CED5CE); padding-right: 20px; padding-left: 5px; padding-top: 10px; padding-bottom: 10px;margin-top: 3em; margin-left: 30px; width: max-content;}
 .highlight, .metamark:hover { background-color: var(--highlight); }
 .metamark { cursor: pointer;}
 .small { color: black; padding: 3px; }
@@ -120,6 +120,12 @@ ul.letters, ul.pages {
    .N-Archiv_red { color: #b8390e;font-weight: bold;}
    .N_pencil { color: gray; font-weight: bold;}
    .N_brown1, .N_brown { color: var(--nbrown);}
+   div.hand.toggle span.lnr ~ span:not(.hand), div.hand.toggle span.lnr ~ span span, span.hand.toggle, span.hand.toggle span {
+        background: var(--highlight, yellow);
+    }
+    div.hand.toggle .hand:not(.toggle),  div.hand.toggle .hand:not(.toggle) span  {
+         background: var(--tpField, #CED5CE);
+    }
    .red-marking:before { 
       color: var(--red-marking);
       position: relative;
@@ -132,7 +138,7 @@ ul.letters, ul.pages {
    .indent { margin-left: 1em;}
    *[draggable] { cursor: grab; }
     .deleted, .deleted-000, .hatching { cursor: context-menu; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAX/GZH4/4FsRpgAmAOSBBFwDkgAAIKuBATRTAAZAAAAAElFTkSuQmCC ) repeat; }
-    .red-deleted { cursor: context-menu; background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='2000' stroke='red' stroke-dasharray='1.2 1.8 1.2' d='M1,1 1500,1500'/></svg>") repeat; }
+    span.N_red .hatching, .red-deleted { cursor: context-menu; background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='2000' stroke='red' stroke-dasharray='1.2 1.8 1.2' d='M1,1 1500,1500'/></svg>") repeat; }
     .hex-deleted { background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='240' stroke='%23750606' stroke-dasharray='1' d='M1,1 150,150'/></svg>") repeat; }
     .new-deleted { background:url("https://upload.wikimedia.org/wikipedia/commons/7/73/Schraffur_fein_diagonal_hoch.svg") repeat; }
    .deleted-N_brown1, .hatching-N_brown1 { cursor: context-menu; background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='2000' stroke='%235C4033' stroke-dasharray='0.1 0.2 0.1 0.2' d='M1,1 1500,1500'/></svg>") repeat; }
@@ -162,6 +168,9 @@ ul.letters, ul.pages {
      .top-left { text-align: left }
      .bottom-left { text-align: left }
      .top-right { margin-left: 60%; }
+    .afterWordinsertion-above.toggle .above, .beforePunctuationinsertion-above.toggle .above, .insertion-above.toggle .above {
+        background: var(--highlight, yellow);
+     } 
      .afterWordinsertion-above, .beforePunctuationinsertion-above,.endOfLineinsertion-above, .inWordinsertion-above, .inSpatiuminsertion-above, .insMinsertion-above, .Ezinsertion-above, .insertion-above { 
          position:relative; top: -2px;height: 100%; width: 100%; }
     .inSpatiuminsertion-above { padding-left: -0.1em;}

@@ -70,7 +70,7 @@ declare function api:letters($request as map(*)){
     let $appendixFile := util:document-name($config:newest-annex)
     let $letters := for $letterId in distinct-values($config:newest-annex//*[@change=concat('#', $id)]/ancestor::tei:div2/@xml:id)
                         let $div2 := $config:newest-annex//*[@xml:id = $letterId]
-                        return <pb-popover theme="material">
+                        return <pb-popover theme="material" placement="right">
                                 <span slot="default">
                                     <a href="{ concat($appendixFile, '?template=nietzsche-timeline.html#', $div2/@xml:id) }">
                                        { $div2/tei:head/text() }
@@ -152,6 +152,31 @@ declare function api:page4change($request as map(*)){
         ) else ()    
     }
     </div>
+};
+
+declare function api:handNote4change($request as map(*)){
+    let $xmlId := concat('#',$request?parameters?id)
+    let $file := $request?parameters?doc
+    let $document := if ($file) then (doc(concat($config:data-root, '/',$file))) else ($config:newest-dm)
+    let $sourceDoc := if ($request?parameters?source) then ($document//tei:sourceDoc/tei:surface[@xml:id = $request?parameters?source]) else ()
+    let $pb := if ($sourceDoc) then ($document//tei:pb[@xml:id = substring-after($sourceDoc/@start, '#')]) else ()
+    let $log := console:log($request?parameters?source)
+    return 
+    <ul class="handNotes">
+    {
+       for $handNote in $document//tei:handNote[contains(@change, $xmlId)]
+            where local:filterHand($handNote, $document, $sourceDoc, $pb)
+            return <li><pb-toggle-feature data-type="handNote" subscribe="transcription" emit="transcription" name="{$handNote/@xml:id}" default="off" selector=".{$handNote/@xml:id}, .strikethrough-{$handNote/@xml:id}, .deleted-{$handNote/@xml:id}, .hatching-{$handNote/@xml:id}">{$handNote/text()}</pb-toggle-feature></li>
+    }
+    </ul>
+};
+
+declare function local:filterHand($handNote, $document, $sourceDoc as node()?, $pb as node()?) as xs:boolean {
+    if ($sourceDoc and $pb) then (
+        (count($sourceDoc//*[@hand=concat('#', $handNote/@xml:id)]) gt 0) or (contains($pb/@corresp, $handNote/@xml:id))
+    ) else (
+        true()    
+    )    
 };
 
 

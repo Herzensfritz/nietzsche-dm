@@ -56,12 +56,12 @@
         </model>
                 </elementSpec>
     <elementSpec ident="note" mode="change">
-                    <model predicate="@type = 'authorial'" behaviour="pass-through">
-            <param name="hand" value="substring-after(@hand, '#')"/>
+        <model predicate="@type = 'authorial'" behaviour="pass-through">
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><span class="[[hand]]">[[content]]</span></pb:template>
         </model>
-                    <model predicate="@type = 'editorial' and @targetEnd" behaviour="pass-through">
+        <model predicate="@type = 'editorial' and @targetEnd" behaviour="pass-through">
             <param name="startLine" value="id(substring-after(@target, '#'), root($parameters?root))/@n"/>
             <param name="content" value="."/>
             <param name="startTarget" value="substring-after(@target, '#')"/>
@@ -69,7 +69,7 @@
             <param name="endTarget" value="substring-after(@targetEnd, '#')"/>
             <pb:template xmlns="" xml:space="preserve"><div><pb-highlight key="[[startTarget]]" highlight-self="highlight-self" duration="5000"><span style="color: blue;">[[startLine]]</span></pb-highlight>-<pb-highlight key="[[endTarget]]" highlight-self="highlight-self" duration="5000"><span style="color: blue;">[[endLine]]</span></pb-highlight>: <span class="note" style="margin-left: 2px;">[[content]]</span> </div></pb:template>
         </model>
-                    <model predicate="@type = 'editorial'" behaviour="pass-through">
+        <model predicate="@type = 'editorial'" behaviour="pass-through">
             <param name="line" value="id(substring-after(@target, '#'), root($parameters?root))/@n"/>
             <param name="content" value="."/>
             <param name="target" value="substring-after(@target, '#')"/>
@@ -88,14 +88,14 @@
                 <elementSpec ident="text" mode="change"/>
                 <elementSpec ident="div2" mode="add"/>
                 <elementSpec ident="body" mode="change"/>
-                <elementSpec ident="surface" mode="add">
-                    <model predicate="@type='relative'" behaviour="body">
+        <elementSpec ident="surface" mode="add">
+            <model predicate="@type='relative'" behaviour="body">
             <param name="content" value="."/>
             <param name="id" value="@xml:id"/>
             <param name="pb" value="replace(@start, '#', '')"/>
             <param name="style" value="@style"/>
             <param name="url" value="substring-before(id(substring-after(@facs,'#'), root($parameters?root))/graphic/@url,'/full')"/>
-            <param name="hand" value="let $pbCorresp := id(substring-after(@start,'#'), root($parameters?root))/@corresp  let $correspTok := if($pbCorresp) then (tokenize($pbCorresp)) else () let $tokLength := count($correspTok) let $lastTok := if($tokLength gt 0) then ($correspTok[$tokLength]) else () let $handNote := if ($lastTok) then (id(substring-after($lastTok, '#'), root($parameters?root))) else () return if ($handNote and $handNote/local-name() = 'handNote') then (substring-after($lastTok, '#')) else ()"/>
+            <param name="hand" value="let $pbCorresp := id(substring-after(@start,'#'), root($parameters?root))/@corresp  let $correspTok := if($pbCorresp) then (tokenize($pbCorresp)) else () let $tokLength := count($correspTok) let $lastTok := if($tokLength gt 0) then ($correspTok[$tokLength]) else () let $handNote := if ($lastTok) then (id(substring-after($lastTok, '#'), root($parameters?root))) else () return if ($handNote and $handNote/local-name() = 'handNote') then (concat('hand ',substring-after($lastTok, '#'))) else ()"/>
             <pb:template xmlns="" xml:space="preserve">
                             <pb-facs-link emit="transcription" facs="[[url]]" style="float: right; margin-top: -2em;">[[pb]]</pb-facs-link>                           
                             <div id="[[id]]" class="transkriptionField [[hand]]" style="[[style]]">
@@ -103,13 +103,13 @@
                             </div>
                         </pb:template>
         </model>
-                </elementSpec>
-                <elementSpec ident="line" mode="add">
-                    <model predicate="ends-with(parent::zone/@type, 'Block') and parent::zone/parent::surface and @start" behaviour="pass-through">
+    </elementSpec>
+    <elementSpec ident="line" mode="add">
+        <model predicate="ends-with(parent::zone/@type, 'Block') and parent::zone/parent::surface and @start" behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <param name="style" value="@style"/>
             <param name="n" value="@n"/>
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="rend" value="@rend"/>
             <param name="target" value="substring-after(@start, '#')"/>
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="line" style="[[style]]">
@@ -117,19 +117,19 @@
   <span class="[[hand]] [[rend]]" style="[[spanStyle]]">[[content]]</span>
 </div></pb:template>
         </model>
-                    <model predicate="ends-with(parent::zone/@type, 'Block') and parent::zone/parent::surface and not(@start)" behaviour="pass-through">
+    <model predicate="ends-with(parent::zone/@type, 'Block') and parent::zone/parent::surface and not(@start)" behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="line empty">
 </div></pb:template>
         </model>
-                    <model predicate="parent::zone/parent::zone and not(ends-with(parent::zone/@type, 'Block'))" behaviour="pass-through">
+        <model predicate="parent::zone/parent::zone and not(ends-with(parent::zone/@type, 'Block'))" behaviour="pass-through">
             <param name="n" value="@n"/>
             <param name="style" value="@style"/>
             <param name="id" value="@xml:id"/>
             <param name="content" value="."/>
             <param name="isMarginLeft" value="if (contains(parent::zone/@type, 'zone')) then ('marginLeft') else ()"/>
             <param name="spanStyle" value="parent::zone/@style"/>
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="rend" value="@rend"/>
             <param name="target" value="substring-after(@start, '#')"/>
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="zoneLine" style="[[style]]">
@@ -154,7 +154,7 @@
             <param name="class" value="if (ends-with(@type,'Block') and not(starts-with(@type, 'text'))) then (concat(@type, ' textBlock')) else (@type)"/>
             <param name="content" value="."/>
             <param name="id" value="@xml:id"/>
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" style="[[style]]" class="[[class]] [[hand]]" debug-msg="test" data-debug="1">
   [[content]]
 </div></pb:template>
@@ -188,7 +188,7 @@
                     <model predicate="@place = 'superimposed' and parent::del[@rend and @hand]" behaviour="pass-through">
             <param name="id" value="if (@xml:id) then (@xml:id) else (substring-after(@corresp, '#'))"/>
             <param name="deleteCls" value="concat(parent::del/@rend, replace(parent::del/@hand, '#', '-'))"/>
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="content" value="."/>
             <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/>
             <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]" data-debug="add2">
@@ -197,7 +197,7 @@
                     <model predicate="@place = 'superimposed' and parent::del[@rend]" behaviour="pass-through">
             <param name="id" value="if (@xml:id) then (@xml:id) else (substring-after(@corresp, '#'))"/>
             <param name="deleteCls" value="parent::del/@rend"/>
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="content" value="."/>
             <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/>
             <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]" data-debug="add3">
@@ -205,7 +205,7 @@
         </model>
                     <model predicate="@place = 'superimposed'" behaviour="pass-through">
             <param name="id" value="if (@xml:id) then (@xml:id) else (substring-after(@corresp, '#'))"/>
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="content" value="."/>
             <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/>
             <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]" data-debug="add4"><span class="inline [[hand]] [[instant]]">[[content]]</span></span></pb:template>
@@ -213,7 +213,7 @@
                     <model predicate="parent::metamark[following-sibling::del/@cause = concat('#', @xml:id) or preceding-sibling::del/@cause = concat('#', @xml:id)] and (@place='above' or @place='below')" behaviour="pass-through">
             <param name="metamarkClass" value="if (parent::metamark/@rend) then (concat(parent::metamark/@rend, 'insertion-', @place)) else (concat('insMinsertion-', @place))"/>
             <param name="metamarkStyle" value="parent::metamark/@style"/>
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="class" value="@place"/>
             <param name="content" value="."/>
             <param name="id" value="parent::metamark/@xml:id"/>
@@ -227,7 +227,7 @@
             <param name="highlightKey" value="substring-after(anchor[1]/@corresp, '#')"/>
             <param name="metamarkClass" value="if (parent::metamark/@rend) then (concat(parent::metamark/@rend, 'insertion-', @place)) else (concat('insMinsertion-', @place))"/>
             <param name="metamarkStyle" value="parent::metamark/@style"/>
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="class" value="@place"/>
             <param name="style" value="@style"/>
             <param name="content" value="."/>
@@ -239,7 +239,7 @@
                     <model predicate="parent::metamark and (@place='above' or @place='below')" behaviour="pass-through">
             <param name="metamarkClass" value="if (parent::metamark/@rend) then (concat(parent::metamark/@rend, 'insertion-', @place)) else (concat('insMinsertion-', @place))"/>
             <param name="metamarkStyle" value="parent::metamark/@style"/>
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="class" value="@place"/>
             <param name="style" value="@style"/>
             <param name="content" value="."/>
@@ -250,7 +250,7 @@
         </model>
                     <model predicate="not(parent::metamark) and (@place='above' or @place='below') and anchor[@corresp]" behaviour="pass-through">
             <param name="highlightKey" value="substring-after(anchor[1]/@corresp, '#')"/>
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="parentClass" value="concat('insertion-', @place)"/>
             <param name="class" value="@place"/>
             <param name="style" value="@style"/>
@@ -261,7 +261,7 @@
 </span></pb-highlight></pb:template>
         </model>
                     <model predicate="not(parent::metamark) and (@place='above' or @place='below')" behaviour="pass-through">
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="parentClass" value="concat('insertion-', @place)"/>
             <param name="class" value="@place"/>
             <param name="style" value="@style"/>
@@ -273,21 +273,21 @@
         </model>
                     <model predicate="@place = 'inline'  and anchor[@corresp]" behaviour="pass-through">
             <param name="highlightKey" value="substring-after(anchor[1]/@corresp, '#')"/>
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="content" value="."/>
             <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/>
             <param name="rend" value="@rend"/>
             <pb:template xmlns="" xml:space="preserve"><pb-highlight key="[[highlightKey]]" duration="5000"><span class="inline [[instant]] [[hand]] [[rend]]">[[content]]</span></pb-highlight></pb:template>
         </model>
                     <model predicate="@place = 'inline' or empty(@place)" behaviour="pass-through">
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="content" value="."/>
             <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/>
             <param name="rend" value="@rend"/>
             <pb:template xmlns="" xml:space="preserve"><span class="inline [[instant]] [[hand]] [[rend]]">[[content]]</span></pb:template>
         </model>
                     <model predicate="@hand" behaviour="pass-through">
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="content" value="."/>
             <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/>
             <pb:template xmlns="" xml:space="preserve"><span class="[[hand]] inline [[instant]]">[[content]]</span></pb:template>
@@ -430,7 +430,7 @@
                 <elementSpec ident="fw" mode="change">
                     <model predicate="del and not(del[@cause])" behaviour="inline">
             <param name="place" value="@place"/>
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="id" value="substring-after(@corresp, '#')"/>
             <param name="key" value="concat(&#34;myapp.hand.&#34;, substring-after(@hand, '#'))"/>
             <param name="content" value="."/>
@@ -453,7 +453,7 @@
         </model>
                     <model predicate="not(del) and anchor[@corresp]" behaviour="inline">
             <param name="place" value="@place"/>
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="highlightKey" value="substring-after(anchor[1]/@corresp, '#')"/>
             <param name="id" value="replace(@corresp, '#','')"/>
             <param name="key" value="concat(&#34;myapp.hand.&#34;, replace(@hand, '#',''))"/>
@@ -642,7 +642,7 @@
                 </elementSpec>
             <elementSpec ident="retrace" mode="add">
                     <model behaviour="pass-through">
-            <param name="hand" value="substring-after(@hand, '#')"/>
+            <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><span class="retrace [[hand]]">[[content]]</span></pb:template>
         </model>
@@ -700,7 +700,7 @@
             <param name="content" value="."/>
             <param name="note" value="id(substring-after(@target, '#'), root($parameters?root))/note/node()"/>
              <param name="style" value="if (contains(@target, 'black') or contains(@target, 'brown')) then ('background-color: white;') else ()"/>
-            <pb:template xmlns="" xml:space="preserve"><span id="[[id]]" class="info trigger popover">[[content]]</span><pb-popover for="[[id]]" theme="material">
+            <pb:template xmlns="" xml:space="preserve"><span id="[[id]]" class="info trigger popover">[[content]]</span><pb-popover for="[[id]]" theme="material" placement="left">
             <span class="[[id]]" style="[[style]]">[[content]]</span>
             <p>[[note]]</p></pb-popover></pb:template>
         </model>
@@ -764,18 +764,20 @@
         </model>
                 </elementSpec>
     <elementSpec ident="change" mode="add">
-                    <model predicate="parent::div[@type='changeInfo']" behaviour="pass-through">
+        <model predicate="parent::div[@type='changeInfo']" behaviour="pass-through">
             <param name="id" value="@xml:id"/>
+            <param name="source" value="substring-after(parent::div/@source, '#')"/>
             <param name="content" value="."/>
             <param name="date" value="date/text()"/>
             <pb:template xmlns="" xml:space="preserve">
-                <li><pb-popover theme="material">
-                    <span slot="default"><a href="?template=timeline.html#[[id]]">[[date]]</a></span>
+                <li><pb-popover theme="material" placement="left" data-debug="0">
+                    <span slot="default"><a href="?template=timeline.html#[[id]]">[[date]]</a> <pb-load src="document1" url="api/handNote4change/[[id]]/[[source]]" silent="silent" auto="auto" emit="transcription" load-once="load-once"/></span>
                     <span slot="alternate">[[content]]</span>
                 </pb-popover></li>
             </pb:template>
         </model>
-                    <model behaviour="pass-through">
+       
+        <model behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="change">
@@ -786,7 +788,7 @@
         </model>
                 </elementSpec>
                 <elementSpec ident="div1" mode="add"/>
-            <elementSpec ident="handNote" mode="add">
+    <elementSpec ident="handNote" mode="add">
         <model behaviour="pass-through">
             <param name="content" value="."/>
             <param name="id" value="@xml:id"/>
@@ -794,7 +796,7 @@
             <param name="note" value="note[1]"/>
             <pb:template xmlns="" xml:space="preserve">
                 <span id="[[id]]" class="trigger popover">[[content]]</span>
-                <pb-popover theme="material" for="[[id]]">
+                <pb-popover theme="material" for="[[id]]" placement="left">
                     <span class="[[id]]" style="[[style]]">[[content]]</span>
                     <p>[[note]]</p>
                 </pb-popover>

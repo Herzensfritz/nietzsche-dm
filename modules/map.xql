@@ -122,7 +122,7 @@ declare function mapping:nietzsche-page-info($root as element(), $userParams as 
  :)
 declare function mapping:nietzsche-change-info($root as element(), $userParams as map(*)) {
     let $pbId := substring-after($root/@start, '#')
-    let $div := <div xmlns="http://www.tei-c.org/ns/1.0" type="changeInfo">{
+    let $div := <div xmlns="http://www.tei-c.org/ns/1.0" type="changeInfo"  source="#{$root/@xml:id}">{
         for $id in  root($root)//tei:text//tei:pb[@xml:id = $pbId]/tokenize(@change, ' ')
             let $xmlId := substring-after($id, '#')
             return root($root)//tei:profileDesc/tei:creation/tei:listChange/tei:change[@xml:id = $xmlId ]

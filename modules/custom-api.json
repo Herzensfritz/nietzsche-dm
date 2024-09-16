@@ -90,6 +90,89 @@
 				}
     		}
     	},
+    		"/api/handNote4change/{id}" : {
+    		"get": {
+    		"summary": "Retrieve handNotes for change id",
+				"operationId": "custom:handNote4change",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"schema": {
+							"type": "string",
+							"example": "GM01-02finalVersion"
+						},
+						"required": false
+					},
+					{
+						"name": "doc",
+						"in": "query",
+						"schema": {
+							"type": "string",
+							"example": "Druckmanuskript_D20_20240823.xml"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Change data",
+						"content": {
+							"application/xml": {
+								"schema": {
+									"type": "object"
+								}
+							}
+						}
+					}
+				}
+    		}
+    	},
+    		"/api/handNote4change/{id}/{source}" : {
+    		"get": {
+    		"summary": "Retrieve handNotes for change id",
+				"operationId": "custom:handNote4change",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"schema": {
+							"type": "string",
+							"example": "GM01-02finalVersion"
+						},
+						"required": false
+					},
+					{
+						"name": "source",
+						"in": "path",
+						"schema": {
+							"type": "string",
+							"example": "srcD_surface_a1r"
+						},
+						"required": false
+					},
+					{
+						"name": "doc",
+						"in": "query",
+						"schema": {
+							"type": "string",
+							"example": "Druckmanuskript_D20_20240823.xml"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Change data",
+						"content": {
+							"application/xml": {
+								"schema": {
+									"type": "object"
+								}
+							}
+						}
+					}
+				}
+    		}
+    	},
     	"/api/page4change/{id}" : {
     		"get": {
     		"summary": "Retrieve pages for change id",
