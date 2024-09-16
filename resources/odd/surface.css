@@ -119,12 +119,16 @@ ul.letters, ul.pages, ul.handNotes {
    .XXX_red, .N_red { color: #dc4731;}
    .N-Archiv_red { color: #b8390e;font-weight: bold;}
    .N_pencil { color: gray; font-weight: bold;}
+   .Koeselitz_pencil { color: var(--Koeselitz_pencil, gray); }
    .N_brown1, .N_brown { color: var(--nbrown);}
    div.hand.toggle span.lnr ~ span:not(.hand), div.hand.toggle span.lnr ~ span span, span.hand.toggle, span.hand.toggle span {
         background: var(--highlight, yellow);
     }
     div.hand.toggle .hand:not(.toggle),  div.hand.toggle .hand:not(.toggle) span  {
          background: var(--tpField, #CED5CE);
+    }
+    .strikethrough-typesetter_black1.toggle, .strikethrough-Koeselitz_pencil.toggle, .strikethrough-N_brown1.toggle, .strikethrough-N_red.toggle  {
+        background: var(--highlight, yellow);
     }
    .red-marking:before { 
       color: var(--red-marking);
@@ -264,10 +268,14 @@ ul.letters, ul.pages, ul.handNotes {
     }
     .overwritten { text-decoration: line-through; color: red;}
         .superimposed { color: green;}
-    .strikethrough, .strikethrough1,.strikethrough2 , .strikethrough-typesetter_black1, .strikethrough-N_brown1 { text-decoration: line-through; }
+    .strikethrough, .strikethrough1,.strikethrough2 , .strikethrough-typesetter_black1, .strikethrough-Koeselitz_pencil, .strikethrough-N_brown1 { text-decoration: line-through; }
     .strikethrough-N_brown1 {
         text-decoration-color: var(--nbrown, brown);
         text-decoration-thickness: 3px;
+    }
+    .strikethrough-Koeselitz_pencil {
+        text-decoration-color:var(--Koeselitz_pencil, gray);
+        text-decoration-thickness: 0.1em;
     }
     .strikethrough-typesetter_black1 {
         text-decoration-color:var(--typesetter_black, black);

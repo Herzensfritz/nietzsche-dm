@@ -160,8 +160,9 @@ declare function api:handNote4change($request as map(*)){
     let $document := if ($file) then (doc(concat($config:data-root, '/',$file))) else ($config:newest-dm)
     let $sourceDoc := if ($request?parameters?source) then ($document//tei:sourceDoc/tei:surface[@xml:id = $request?parameters?source]) else ()
     let $pb := if ($sourceDoc) then ($document//tei:pb[@xml:id = substring-after($sourceDoc/@start, '#')]) else ()
-    let $log := console:log($request?parameters?source)
-    return 
+    let $log := console:log($xmlId)
+    let $log2 := console:log($document//tei:handNote[contains(@change, $xmlId)])
+    let $handNote :=  
     <ul class="handNotes">
     {
        for $handNote in $document//tei:handNote[contains(@change, $xmlId)]
@@ -169,6 +170,8 @@ declare function api:handNote4change($request as map(*)){
             return <li><pb-toggle-feature data-type="handNote" subscribe="transcription" emit="transcription" name="{$handNote/@xml:id}" default="off" selector=".{$handNote/@xml:id}, .strikethrough-{$handNote/@xml:id}, .deleted-{$handNote/@xml:id}, .hatching-{$handNote/@xml:id}">{$handNote/text()}</pb-toggle-feature></li>
     }
     </ul>
+    let $log := console:log($handNote)
+    return $handNote
 };
 
 declare function local:filterHand($handNote, $document, $sourceDoc as node()?, $pb as node()?) as xs:boolean {
