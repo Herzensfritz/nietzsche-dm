@@ -61,6 +61,44 @@
 				}
     		}
     	},
+    	"/api/id/{id}" : {
+    		"get": {
+    		"summary": "Retrieve node id",
+				"operationId": "custom:node-id",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"schema": {
+							"type": "string",
+							"example": "srcD_surface_a11r"
+						},
+						"required": false
+					},
+					{
+						"name": "doc",
+						"in": "query",
+						"schema": {
+							"type": "string",
+							"example": "Druckmanuskript_D20_20240823.xml"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Node id",
+						"content": {
+							"text/html": {
+								"schema": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+    		}
+    	}
+    	,
     	"/api/timeline/{id}" : {
     		"get": {
     		"summary": "Retrieve timeline data",

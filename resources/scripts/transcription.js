@@ -1,6 +1,6 @@
 var updating = [];
 
-function checkCollapse(currentMap){
+function checkCollapse(currentMap, counter = 0){
        let height = currentMap['collapse'].reduce((total, current) => total + current.getBoundingClientRect().height, 0)
         if( currentMap['toggleCollapse'] || height > (window.innerHeight - headerHeight)) {
             currentMap['collapse'].forEach(c =>{
@@ -9,8 +9,8 @@ function checkCollapse(currentMap){
             currentMap['toggleCollapse'] = true;
         } 
         console.log('check Collapse ', currentMap);
-        if (!currentMap['finished']){
-            setTimeout(checkCollapse(currentMap), 1000);    
+        if (!currentMap['finished'] && counter < 10){
+            setTimeout(checkCollapse(currentMap, counter++), 1000);    
         }
 
 }
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
     pbEvents.subscribe("pb-start-update", "pageInfo", (ev) => {
        updating.push(ev.target);
     });
-    
+   
      
    pbEvents.subscribe("pb-update", "pageInfo", (ev) => {
        currentNode = ev.detail.data.rootNode
@@ -53,6 +53,8 @@ document.addEventListener('DOMContentLoaded', function () {
             map[currentNode]['finished'] = (updating.length == 0);
         }
         currentNode = null;
+        pbRegistry['lastNavigation'] = ev.detail.direction;
+        console.log(ev.detail)
    });
    pbEvents.subscribe("pb-collapse-open", "transcription", (ev) => {
         if (currentNode && map[currentNode]['toggleCollapse']) {
@@ -83,15 +85,41 @@ document.addEventListener('DOMContentLoaded', function () {
         }
        
    });
+   pbEvents.subscribe("pb-update", "transcription", (ev) => {
+       if (pbRegistry.lastNavigation !== undefined && pbRegistry.lastId == ev.detail.data.id) {
+           pbEvents.emit('pb-navigate', 'transcription', { direction: pbRegistry.lastNavigation })
+       } else {
+           pbRegistry.lastId = ev.detail.data.id;
+       }
+   });
 
    
 });
 window.onload = function() {
     let params = new URLSearchParams(document.location.search);
     if (params.has('selectors')){
-        params.delete('selectors')
+        params.delete('selectors');
         console.log('reloading .........');
-        history.replaceState(null, null, document.location.pathname + "?" + params.toString());
+        history.replaceState(null, null, document.location.pathname + "?" + params.toString() + window.location.hash);
         window.location.reload(true);
+    } else if (window.location.hash != ''){
+        const host = (window.location.port != '') ? window.location.hostname + ':' + window.location.port : window.location.hostname;
+        const doc = (pbRegistry && pbRegistry.state.path) ? '?doc=' + pbRegistry.state.path : '';
+        const url = window.location.protocol + '//' + host + '/exist/apps/nietzsche-dm/api/id/' + window.location.hash.substring(1) + doc;
+        fetch(url).then((response) => {
+            // Our handler throws an error if the request did not succeed.
+            if (!response.ok) {
+                throw new Error(`HTTP error: ${response.status}`);
+            }
+            return response.text();
+        }).then((nodeId) => {
+            console.log('reloading with node .........');
+            history.replaceState(null, null, document.location.pathname + "?" + params.toString() + '&root=' + nodeId);
+            window.location.reload(true);
+        }).catch((error) => {
+            console.error(`Could not fetch id: ${error} on URL ${url}`);
+        });
+        
     }
+    
 };

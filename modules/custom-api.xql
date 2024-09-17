@@ -33,6 +33,13 @@ declare function api:lookup($name as xs:string, $arity as xs:integer) {
     }
 };
 
+declare function api:node-id($request as map(*)){
+    let $file := $request?parameters?doc
+    let $document := if ($file) then (doc(concat($config:data-root, '/',$file))) else ($config:newest-dm)
+    let $surface := $document//tei:sourceDoc/tei:surface[@xml:id = $request?parameters?id]
+    return if ($surface) then (util:node-id($surface)) else ()
+};
+
 declare function api:timeline($request as map(*)){
     let $dates := $config:newest-dm//tei:profileDesc/tei:creation/tei:listChange/tei:change//tei:date/string(@when|@notAfter)
     let $years := (distinct-values(for $date in $dates

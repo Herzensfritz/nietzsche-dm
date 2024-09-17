@@ -243,7 +243,9 @@ declare function pages:load-xml($data as node()*, $view as xs:string?, $root as 
                             let $node := util:node-by-id($data, $root)
                             return $node
                         else
-                            nav:get-first-surface-start($config, $data)
+                            let $node := nav:get-first-surface-start($config, $data)
+                            
+                            return $node
                     default return
                         if ($root) then
                             util:node-by-id($data, $root)

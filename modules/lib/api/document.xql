@@ -407,6 +407,7 @@ declare function dapi:get-fragment($request as map(*)) {
 
 declare function dapi:get-fragment($request as map(*), $docs as node()*, $path as xs:string) {
     let $view := head(($request?parameters?view, $config:default-view))
+    let $log := console:log($request?parameters?root || " " || $request?parameters?id)
     let $xml :=
         if ($request?parameters?xpath) then
             for $document in $docs
@@ -565,7 +566,6 @@ declare %private function dapi:extract-footnotes($html as element()*) {
 declare function dapi:table-of-contents($request as map(*)) {
     let $doc := xmldb:decode-uri($request?parameters?id)
     let $documents := config:get-document($doc)
-    let $log := console:log('template '|| $request?parameters?template)
     return
         if($documents)
         then (
