@@ -3,6 +3,8 @@
     	"menu": {
     		"appNotes": "Editor Notes",
     		"changes": "Changes",
+    		"concordance": "Concordance",
+    		"genesis": "Textgenetic Versions",
     		"pageInfo": "Page Information",
     		"showTimeline": "show timeline",
     		"timeline": "Timeline",

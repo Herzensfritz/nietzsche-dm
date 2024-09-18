@@ -129,7 +129,7 @@ ul.letters, ul.pages, ul.handNotes {
     }
     .strikethrough-typesetter_black1.toggle, .strikethrough-Koeselitz_pencil.toggle, .strikethrough-N_brown1.toggle, .strikethrough-N_red.toggle, .hatching-N_brown1.toggle, .hatching-N_brown2.toggle, .deleted-N_brown1.toggle, 
     .deleted-N_brown2.toggle   {
-        background: var(--highlight, yellow);
+        background: var(--delHighlight, gray);
     }
    .red-marking:before { 
       color: var(--red-marking);

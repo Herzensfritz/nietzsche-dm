@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+        <link rel="shortcut icon" type="image/x-icon" href="resources/images/favicon.ico"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicon-16.png" sizes="16x16"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicon-24.png" sizes="24x24"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicon-32.png" sizes="32x32"/>
+        <link rel="shortcut icon" type="image/png" href="resources/images/favicon-64.png" sizes="64x64"/>
+
+        <title data-template="config:app-title"/>
+        <meta name="description" content="Timeline for the Nietzsche appendix data"/>
+        <meta name="pb-template" content="nietzsche-timeline.html"/>
+
+        <link rel="stylesheet" href="resources/css/theme.css"/>
+    <link rel="stylesheet" href="resources/css/mystyle.css"/>
+    <script src="resources/scripts/myfunctions.js"/>
+    <script src="resources/scripts/myscroll.js"/>
+        <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+        <style>
+            @media (min-width: 769px) {
+                .toolbar pb-navigation {
+                    display: none;
+                }
+            }
+            body {
+                --pb-view-scroll-margin-top: 0;
+            }
+            :target {
+                background-color: yellow;
+                color: red;
+            }
+           
+
+         /*   .content-body {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                max-width: 60em;
+            } */
+        #view1 {
+            flex: 1 1;
+            display: flex;
+            align-self: center;
+            max-width: 60em;
+        } 
+        .content-body {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding: 0 20px;
+        }
+          
+        </style>
+    </head>
+
+    <body>
+        <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="./resources/i18n/{{ns}}/{{lng}}.json" locale-fallback-ns="app common">
+            <pb-document id="document1" data-template="pages:pb-document"/>
+            
+            <app-drawer-layout force-narrow="force-narrow">
+                <app-drawer data-template="lib:include" data-template-path="templates/drawer.html"/>
+                <app-header-layout>
+                    <app-header slot="header" reveals="reveals" fixed="fixed" effects="waterfall">
+                        <app-toolbar data-template="lib:include" data-template-path="templates/menu.html"/>
+                        <app-toolbar data-template="lib:include" data-template-path="templates/toolbar.html"/>
+                    </app-header>
+
+                    <pb-drawer toggle="tocToggle" class="toc" emit="toc" subscribe="transcription">
+                        <div class="drawer-content">
+                            <h3>
+                                <pb-i18n key="document.contents">Contents</pb-i18n>
+                            </h3>
+                            <pb-load id="toc" url="api/document/{doc}/contents?target=transcription&amp;icons=true" expand="expand" src="document1" subscribe="toc" load-once="load-once">
+                                <pb-i18n key="dialogs.loading">Loading</pb-i18n>
+                            </pb-load>
+                        </div>
+                    </pb-drawer>
+                    <section class="breadcrumbs">
+                        <pb-view id="title-view1" src="document1" xpath="//teiHeader/fileDesc/titleStmt/title[1]" view="single">
+                            <pb-param name="header" value="short"/>
+                        </pb-view>
+                    </section> 
+                    <main class="content-body">
+                        <pb-view id="view1" no-scroll="no-scroll" src="document1" xpath="//text/body" column-separator=".tei-cb" subscribe="transcription" emit="transcription">
+                            <pb-param name="mode" value="querverweis"/>
+                        </pb-view>
+                    </main>
+                </app-header-layout>
+            </app-drawer-layout>
+        </pb-page>
+        <div class="splash"/>
+    </body>
+</html>
