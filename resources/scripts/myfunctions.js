@@ -8,7 +8,9 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('[data-target]').forEach((link) => {
         const target = document.querySelector(link.dataset.target);
         if (target){
-            target.classList.add('noDisplay');
+            if (target.id != 'pageInfo'){
+                target.classList.add('noDisplay');
+            }
             link.addEventListener('click', (ev) => {
                 pbEvents.emit('toggle-event', null, ev)
             });

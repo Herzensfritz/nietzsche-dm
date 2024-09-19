@@ -187,6 +187,22 @@ declare function mapping:nietzsche-apps($root as element(), $userParams as map(*
         return $div
     
 };
+declare function mapping:nietzsche-qv($root as element(), $userParams as map(*)) {
+        let $pbId :=$root/@start
+        let $qvs := <div xmlns="http://www.tei-c.org/ns/1.0" type="qvDiv">
+                       { for $ref in $config:newest-qv//tei:div3//tei:ref[contains(@target, $pbId)]
+                            let $div := $ref/ancestor::tei:div3[1]
+                            return  <p xmlns="http://www.tei-c.org/ns/1.0" type="{$div/@type}">
+                                        {
+                                        $div/tei:ab
+                                    }
+                                    </p>
+                                }
+                        </div>
+        let $log := console:log($qvs)
+        return $qvs
+    
+};
 declare function local:parseLoc($root as node(), $loc as xs:string?, $corresp as xs:string*) as attribute()* {
     let $corrMap := local:parseCorresp($root, $corresp, map {})
     return if ($corresp and $corrMap?from) then (

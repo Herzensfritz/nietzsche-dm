@@ -20,6 +20,8 @@ div#pageInfo {
 }
 #fixedContent {
   position: fixed;
+  overflow-y: scroll;
+  height: 60%;
 }
 
 .edRefLB {

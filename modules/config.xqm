@@ -346,9 +346,14 @@ declare variable $config:newest-ed := config:get-newest-doc-with-title('Zur Gene
  :)
 declare variable $config:newest-dm := config:get-newest-doc-with-title('Zur Genealogie der Moral. Druckmanuskript D 20');
 (:~
- : Newest version of "Zur Genealogie der Moral. Druckmanuskript D 20"
+ : Newest version of "Zur Genealogie der Moral. Anhang: Dokumente zur Entstehungs- und Druckgeschichte"
  :)
 declare variable $config:newest-annex := config:get-newest-doc-with-title('Zur Genealogie der Moral. Anhang: Dokumente zur Entstehungs- und Druckgeschichte');
+
+(:~
+ : Newest version of "Zur Genealogie der Moral. Anhang: Dokumente zur Entstehungs- und Druckgeschichte"
+ :)
+declare variable $config:newest-qv := config:get-newest-doc-with-title('Zur Genealogie der Moral. Querverweise');
  
 declare function config:get-newest-doc-with-title($title as xs:string) as document-node() {
     let $docs := for $doc in collection($config:data-root)//tei:titleStmt/tei:title

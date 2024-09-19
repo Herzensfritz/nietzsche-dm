@@ -6,6 +6,12 @@ body {
          --nbrown: #5C4033;
          --red: #dc3545;
 }
+.QV .title {
+    font-weight: bold;
+}
+.QV .target {
+    margin-left: 1ch;
+}
 ul.letters, ul.pages, ul.handNotes {
     color: grey;
     font-size: 80%;
