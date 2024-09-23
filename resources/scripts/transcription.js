@@ -1,24 +1,7 @@
 var updating = [];
 
-function checkCollapse(currentMap, counter = 0){
-       let height = currentMap['collapse'].reduce((total, current) => total + current.getBoundingClientRect().height, 0)
-        if( currentMap['toggleCollapse'] || height > (window.innerHeight - headerHeight)) {
-            currentMap['collapse'].forEach(c =>{
-                c.opened = false; 
-            }); 
-            currentMap['toggleCollapse'] = true;
-        } 
-        console.log('check Collapse ', currentMap);
-        if (!currentMap['finished'] && counter < 10){
-            setTimeout(checkCollapse(currentMap, counter++), 1000);    
-        }
-
-}
-function createMap(finished){
-    return  { toggleCollapse: false, collapse: [], finished: finished };
-}
 document.addEventListener('DOMContentLoaded', function () {
-    const map = {};
+    const collapseConfig = {  };
     let currentNode = null;
   
     
@@ -34,41 +17,25 @@ document.addEventListener('DOMContentLoaded', function () {
            updating.splice(index, 1)
        }
        const target = ev.detail.root.querySelector('pb-collapse');
-       if (target && currentNode){
-           if (map.hasOwnProperty(currentNode)){
-               if (!map[currentNode]['collapse'].includes(target)){
-                    map[currentNode]['collapse'].push(target);
-                    map[currentNode]['finished'] = (updating.length == 0)
-               }
-           } else {
-               map[currentNode] = createMap((updating.length == 0));
+       if (target && ev.target['map']){
+           if(!collapseConfig.hasOwnProperty(ev.target.map)){
+               collapseConfig[ev.target.map] = false;
            }
-           if (target.checkVisibility() && map[currentNode]['finished']){
-                checkCollapse(map[currentNode]);
-           }
+           target.dataset.key = ev.target.map;
+           target.addEventListener('click', (ev) => {
+                pbEvents.emit('collapse-toggle', 'transcription', ev);
+            });
+           target.opened = collapseConfig[ev.target.map];  
        }
+  
    });
    pbEvents.subscribe("pb-navigate", "transcription", (ev) => {
-        if (currentNode) {
-            map[currentNode]['finished'] = (updating.length == 0);
-        }
-        currentNode = null;
         pbRegistry['lastNavigation'] = ev.detail.direction;
-        console.log(ev.detail)
+        console.log(ev.detail, ev.target.hasOwnProperty('map'))
    });
-   pbEvents.subscribe("pb-collapse-open", "transcription", (ev) => {
-        if (currentNode && map[currentNode]['toggleCollapse']) {
-            map[currentNode]['collapse'].forEach(c =>{
-                if (c !== ev.originalTarget){
-                    c.opened = false;
-                }
-            });
-        }
-   });
-   pbEvents.subscribe("check-collapse", null, (ev) => {
-       if (currentNode){
-           checkCollapse(map[currentNode]); 
-       }
+   pbEvents.subscribe("collapse-toggle", "transcription", (ev) => {
+       const collapse = ev.detail.target;
+        collapseConfig[collapse.dataset.key] = collapse.opened;
    });
    pbEvents.subscribe("pb-toggle", "transcription", (ev) => {
        const source = ev.detail._source;

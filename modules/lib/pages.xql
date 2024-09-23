@@ -386,6 +386,7 @@ declare function pages:toc-timeline($node, $model as map(*), $target as xs:strin
     </ul>
 };
 
+
 declare function pages:toc-div($node, $model as map(*), $target as xs:string?,
     $icons as xs:boolean?) {
     let $view := $model?config?view

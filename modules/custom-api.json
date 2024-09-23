@@ -99,6 +99,59 @@
     		}
     	}
     	,
+    	"/api/link4id/{id}" : {
+    		"get": {
+    		"summary": "Retrieve link for ref @target",
+				"operationId": "custom:get-link-for-target",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"schema": {
+							"type": "string",
+							"example": "srcD_surface_a11r"
+						},
+						"required": true
+					},
+					{
+						"name": "content",
+						"in": "query",
+						"schema": {
+							"type": "string",
+							"example": "Dm%20a11r"
+						}
+					},
+					{
+						"name": "doc",
+						"in": "query",
+						"schema": {
+							"type": "string",
+							"example": "D20.xml"
+						}
+					},
+					{
+						"name": "refDoc",
+						"in": "query",
+						"schema": {
+							"type": "string",
+							"example": "D20.xml"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "HTML <a> or <pb-link> for the target",
+						"content": {
+							"text/html": {
+								"schema": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+    		}
+    	},
     	"/api/timeline/{id}" : {
     		"get": {
     		"summary": "Retrieve timeline data",
@@ -371,6 +424,64 @@
 						"schema": {
 							"type": "string"
 						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Returns the formatted table of contents as HTML",
+						"content": {
+							"text/html": {
+								"schema": {
+									"type": "string"
+								}
+							}
+						}
+					},
+					"404": {
+						"description": "Document not found",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"/api/metatoc/{id}/contents": {
+			"get": {
+				"summary": "Retrieve a formatted table of contents for the meta data of the document",
+				"description": "Retrieve a formatted table of contents for the document, transformed via ODD",
+				"tags": ["documents"],
+				"operationId": "custom:get-meta-toc",
+				"parameters": [
+					{
+						"name": "id",
+						"in": "path",
+						"required": true,
+						"schema": {
+							"type": "string",
+							"example": "D20.xml"
+						}
+					},
+					{
+						"name": "target",
+						"in": "query",
+						"schema": {
+							"type": "string"
+						},
+						"description": "The target channel into which link selection events should be send (if the user clicks on a link)"
+					},
+					{
+						"name": "icons",
+						"in": "query",
+						"schema": {
+							"type": "boolean",
+							"default": true
+						},
+						"description": "Should an expand/collapse icon be displayed next to headings having nested child sections?"
 					}
 				],
 				"responses": {

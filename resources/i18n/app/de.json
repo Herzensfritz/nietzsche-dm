@@ -13,6 +13,20 @@
     		"toggleFacsimile": "Faksimile ein/ausblenden",
     		"toggleInfo": "Seiteninformation ein/ausblenden"
     	},
+    	"meta": {
+    		"author": "Autor",
+    		"editor": "Editoren",
+    		"date": "Datum",
+    		"msDesc": "Manuskriptbeschreibung",
+    		"msIdentifier": "Manuskriptidentifikation",
+    		"publicationStmt": "Publikation",
+    		"publisher": "Publisher",
+    		"repository": "Archiv",
+    		"seriesStmt": "Serie",
+    		"sourceDesc": "Quellenbeschreibung",
+    		"titleStmt": "Titelbeschreibung",
+    		"title": "Titel"
+    	},
     	"months": {
     		"06": "Juni",
     		"07": "Juli",

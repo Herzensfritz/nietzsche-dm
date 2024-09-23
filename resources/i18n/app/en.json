@@ -13,6 +13,20 @@
     		"toggleFacsimile": "toggle facsimile",
     		"toggleInfo": "toggle page information"	
     	},
+    	"meta": {
+    		"author": "Author",
+    		"editor": "Editors",
+    		 "date": "Datum",
+    		 "msDesc": "Manuscript Description",
+    		 "msIdentifier": "Manuscript Identification",
+    		"publicationStmt": "Publikation",
+    		"seriesStmt": "Series Statement",
+    		"publisher": "Publisher",
+    		"repository": "Repository",
+    		"sourceDesc": "Source Description",
+    		"titleStmt": "Title Statement",
+    		"title": "Title"
+    	},
     	"months": {
     		"06": "June",
     		"07": "July",

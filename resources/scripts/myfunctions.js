@@ -1,4 +1,5 @@
 var headerHeight = 128;
+var DEBUG = 'pageInfo';
 
 document.addEventListener('DOMContentLoaded', function () {
     const appHeader = document.querySelector('app-header');
@@ -8,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('[data-target]').forEach((link) => {
         const target = document.querySelector(link.dataset.target);
         if (target){
-            if (target.id != 'pageInfo'){
+            if (target.id != DEBUG){
                 target.classList.add('noDisplay');
             }
             link.addEventListener('click', (ev) => {
@@ -26,9 +27,6 @@ document.addEventListener('DOMContentLoaded', function () {
             const target = document.querySelector(link.dataset.target);
             if (link === eventTarget) {
                 target.classList.toggle('noDisplay');
-                if(target.id == 'pageInfo' && target.checkVisibility()){
-                   pbEvents.emit('check-collapse', null, target);
-                }
             } else {
                 target.classList.add('noDisplay');
             }

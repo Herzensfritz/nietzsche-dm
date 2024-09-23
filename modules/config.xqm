@@ -338,6 +338,10 @@ declare variable $config:default-odd :="surface.odd";
 declare variable $config:odd-available :=("surface.odd","nietzsche-ed.odd");
 
 (:~
+ : What should be shown in meta.html
+ :)
+declare variable $config:meta-entries := [ 'teiHeader/fileDesc'];
+(:~
  : Newest version of "Genealogie der Moral. Erstdruck E 40"
  :)
 declare variable $config:newest-ed := config:get-newest-doc-with-title('Zur Genealogie der Moral. Erstdruck E 40');

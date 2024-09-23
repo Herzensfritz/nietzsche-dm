@@ -141,7 +141,9 @@
                                 </pb-view>
                                 <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-apps" subscribe="transcription" emit="pageInfo">
                                 </pb-view>
-                            
+                                <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-qv" subscribe="transcription" emit="pageInfo">
+                                    <pb-param name="mode" value="querverweis"/>
+                                </pb-view>
                         </div>
                     </div>
                     <pb-facsimile id="facsimile" default-zoom-level="0.7" show-full-page-control="true" show-home-control="true" emit="transcription" subscribe="transcription" type="iiif" show-navigation-control="show-navigation-control" show-navigator="show-navigator">

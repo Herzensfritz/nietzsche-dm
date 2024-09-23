@@ -189,4 +189,52 @@ declare function local:filterHand($handNote, $document, $sourceDoc as node()?, $
     )    
 };
 
+declare function api:get-link-for-target($request as map(*))  {
+    let $targetId := $request?parameters?id
+    let $content := replace($request?parameters?content, '%20', ' ')
+    let $targetDoc := if ($request?parameters?refDoc) then ($request?parameters?refDoc) else ($request?parameters?doc)
+    let $targetFile := concat($config:data-root, '/', $targetDoc)
+    return if ($targetDoc and doc-available($targetFile)) then (
+        let $targetElement := doc($targetFile)//*[@xml:id=$targetId]
+        let $log := if ($targetElement) then (console:log($targetElement)) else (console:log($targetId))
+        return if ($targetElement) then (
+            let $parent := $targetElement/ancestor::*[local-name() = 'text' or local-name() = 'sourceDoc' or local-name() = 'teiHeader']
+            return typeswitch($parent)
+                case element(tei:text) return 
+                    if ($targetElement instance of element(tei:pb)) then (
+                        let $surface := doc($targetFile)//tei:sourceDoc/tei:surface[@start=concat('#', $targetId)]
+                        return <pb-link emit="transcription" subscribe="transcription" node-id="{util:node-id($surface)}">{$content}</pb-link>
+                    ) else ( 
+                        <span class="noLink0">{ $content }</span>
+                    )
+                case element(tei:sourceDoc) return <pb-link node-id="{util:node-id($targetElement)}">{$content}</pb-link>
+                case element(tei:teiHeader) return <a href="?template=meta.html#{$targetId}">{$content}</a>
+                default return <pb-link emit="transcription" subscribe="transcription" xml-id="{$targetId}">{$content}</pb-link>
+        ) else (
+            <span class="noLink1">{ $content }</span>
+        )
+    ) else (
+         <span class="noLink2">{ $content }</span>
+    )
+};
+
+declare function api:get-meta-toc($request as map(*)){
+    let $document := doc(concat($config:data-root, '/', $request?parameters?id))
+    let $namespace := namespace-uri-from-QName(node-name(root($document)/*))
+    let $target := $request?parameters?target
+    return
+    <ul>
+        {
+        for $entry in $config:meta-entries
+            let $xquery := "declare default element namespace '" || $namespace || "'; $document//" || $entry
+            let $log := console:log($xquery)
+            let $xmlId := util:eval($xquery)/local-name()
+            return 
+        <li>
+             <pb-link emit="{$target}" subscribe="{$target}" xml-id="{$xmlId}">{$xmlId}</pb-link>
+        </li>
+        }
+    </ul> 
+};
+
 

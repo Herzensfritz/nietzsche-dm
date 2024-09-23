@@ -407,7 +407,6 @@ declare function dapi:get-fragment($request as map(*)) {
 
 declare function dapi:get-fragment($request as map(*), $docs as node()*, $path as xs:string) {
     let $view := head(($request?parameters?view, $config:default-view))
-    let $log := console:log($request?parameters?root || " " || $request?parameters?id)
     let $xml :=
         if ($request?parameters?xpath) then
             for $document in $docs

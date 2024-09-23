@@ -6,6 +6,10 @@ body {
          --nbrown: #5C4033;
          --red: #dc3545;
 }
+pb-link[emit='nowhere'] a {
+    text-decoration: none;
+    color: inherit;
+}
 .QV .title {
     font-weight: bold;
 }
