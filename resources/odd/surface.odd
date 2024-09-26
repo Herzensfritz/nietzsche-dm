@@ -75,7 +75,8 @@
             <param name="target" value="substring-after(@target, '#')"/>
             <pb:template xmlns="" xml:space="preserve"><div><pb-highlight key="[[target]]" highlight-self="highlight-self" duration="5000"><span style="color: blue;">[[line]]</span></pb-highlight>: <span class="note" style="margin-left: 2px;">[[content]]</span> </div></pb:template>
         </model>
-                    <model behaviour="omit"/>
+         <model predicate="parent::handNote" behaviour="block"/>
+            <model behaviour="omit"/>
                 </elementSpec>
                 <elementSpec ident="noteGrp" mode="add"/>
             <elementSpec ident="lb" mode="change">
@@ -83,16 +84,38 @@
             <pb:template xmlns="" xml:space="preserve"><span>¶</span></pb:template>
         </model>
      </elementSpec>
+      <elementSpec ident="list" mode="change">
+      <model predicate="$parameters?mode='querverweis' and parent::div[@type='qvDiv']" behaviour="pass-through">
+            <param name="content" value="item"/>
+            <param name="head" value="head[1]/text()"/>
+            <pb:template xmlns="" xml:space="preserve"><div class="QV">
+                <h3>[[head]]</h3>
+                <p>[[content]]</p>
+                </div>
+            </pb:template>
+        </model>
+      </elementSpec>
+       <elementSpec ident="item" mode="change">
+      <model predicate="$parameters?mode='querverweis' and parent::list[@type='qvDiv2']" behaviour="pass-through">
+            <param name="key" value="concat('myapp.menu.',normalize-space(@type))"/>
+            <param name="content" value="ab[@n != '0']"/>
+            <param name="target" value="ab[@n='0']/text()"/>
+            <pb:template xmlns="" xml:space="preserve">
+                <span class="title"><pb-i18n key="[[key]]">...key missing ...[[key]]</pb-i18n> <span class="target">[[target]]</span>:</span>
+                <ol>[[content]]</ol>
+            </pb:template>
+        </model>
+      </elementSpec>
      <elementSpec ident="p" mode="change">
         <model predicate="$parameters?mode='meta' and (parent::msContents or parent::physDesc or parent::additions or parent::history)" behaviour="block"/>
-        <model predicate="$parameters?mode='querverweis' and parent::div[@type='qvDiv']" behaviour="pass-through">
+          
+        <model predicate="parent::div[@type='qvDiv2']" behaviour="pass-through">
             <param name="key" value="concat('myapp.menu.',@type)"/>
             <param name="content" value="ab[@n != '0']"/>
             <param name="target" value="ab[@n='0']/text()"/>
-            <pb:template xmlns="" xml:space="preserve"><div class="QV">
+            <pb:template xmlns="" xml:space="preserve">
                 <span class="title"><pb-i18n key="[[key]]">...key missing ...[[key]]</pb-i18n> <span class="target">[[target]]</span>:</span>
                 <ol>[[content]]</ol>
-                </div>
             </pb:template>
         </model>
                 </elementSpec>
@@ -450,6 +473,16 @@
         <model output="web" predicate="$parameters?header='short'" behaviour="block"/>
         
     </elementSpec>
+  
+    <elementSpec ident="profileDesc" mode="change">
+    <model predicate="$parameters?mode='meta'" behaviour="pass-through">
+        <param name="handNotes" value="handNotes"/>
+        <pb:template xmlns="" xml:space="preserve">
+            <div>[[handNotes]]</div>
+      </pb:template>
+        </model>
+        <model behaviour="omit"/>
+    </elementSpec>
     <elementSpec ident="fileDesc" mode="change">
         <model predicate="$parameters?mode='meta'" behaviour="pass-through">
         <param name="content" value="."/>
@@ -542,7 +575,7 @@
         <model predicate="@n" behaviour="listItem"/>
     </elementSpec>
     <elementSpec ident="div" mode="change">
-        <model predicate="@type='qvDiv' and p" behaviour="pass-through">
+        <model predicate="@type='qvDiv' and list" behaviour="pass-through">
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><div id="qvInfoPage" class="infoPage"> 
             <pb-collapse opened="opened" emit="transcription">
@@ -759,6 +792,13 @@
                     <model behaviour="listItem"/>
                 </elementSpec>
                 <elementSpec ident="handNotes" mode="add">
+                 <model predicate="$parameters?mode='meta'" behaviour="pass-through">
+                    <param name="content" value="handNote"/>
+                    <pb:template xmlns="" xml:space="preserve">
+                    <h3 id="handNotes"><pb-i18n key="myapp.meta.handNotes">...handNotes...</pb-i18n></h3>
+                    <div>[[content]]</div>
+                    </pb:template>
+                    </model>
                     <model predicate="$parameters?mode='meta'" behaviour="block"/>
                     <model behaviour="listItem"/>
                 </elementSpec>
@@ -980,7 +1020,7 @@
             <param name="uri" value="concat('?template=timeline.html#', @xml:id)"/>
             <pb:template xmlns="" xml:space="preserve">
                 <li>
-                    <span class="changePreview"><a href="[[path]]">[[content]]</a> <pb-load src="document1" url="api/handNote4change/[[id]]/[[source]]" silent="silent" auto="auto" emit="transcription" load-once="load-once"/></span>
+                    <span class="changePreview"><a href="[[uri]]">[[content]]</a> <pb-load src="document1" url="api/handNote4change/[[id]]/[[source]]" silent="silent" auto="auto" emit="transcription" load-once="load-once"/></span>
                     </li>
             </pb:template>
         </model>
@@ -997,6 +1037,17 @@
                 </elementSpec>
                 <elementSpec ident="div1" mode="add"/>
     <elementSpec ident="handNote" mode="add">
+        <model predicate="$parameters?mode='meta'" behaviour="pass-through">
+            <param name="id" value="@xml:id"/>
+            <param name="name" value="text()"/>
+            <param name="note" value="note"/>
+            <pb:template xmlns="" xml:space="preserve">
+            <div id="[[id]]" class="handNote">
+                <h4 class="[[id]]">[[name]]</h4>
+                <span class="note">[[note]]</span>
+            </div>
+            </pb:template>
+        </model>
         <model behaviour="link">
             <param name="content" value="."/>
             <param name="uri" value="concat($parameters?doc,'?template=meta.html#', @xml:id)"/>

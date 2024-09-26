@@ -16,10 +16,16 @@ pb-link[emit='nowhere'] a {
 .QV .target {
     margin-left: 1ch;
 }
+.myhighlight {
+    background: var(--pb-toolbar-background-color, gray);
+}
 ul.letters, ul.pages, ul.handNotes {
     color: grey;
     font-size: 80%;
     list-style-type: ' ';
+}
+div.handNote span.note {
+    font-family: italic;
 }
 .mycollapse-trigger {
     font-weight: bold;

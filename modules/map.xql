@@ -194,9 +194,36 @@ declare function mapping:nietzsche-qv($root as element(), $userParams as map(*))
                             let $div := $ref/ancestor::tei:div3[1]
                             return  <p xmlns="http://www.tei-c.org/ns/1.0" type="{$div/@type}">
                                         {
+                                        $div/preceding-sibling::tei:head[1],
                                         $div/tei:ab
                                     }
                                     </p>
+                                }
+                        </div>
+        let $log := console:log($qvs)
+        return $qvs
+    
+};
+declare function mapping:nietzsche-qv-head($root as element(), $userParams as map(*)) {
+        let $pbId :=$root/@start
+        let $div2Ids:= distinct-values(for $ref in $config:newest-qv//tei:div3//tei:ref[contains(@target, $pbId)]
+                            let $div := $ref/ancestor::tei:div2[1]
+                            return $div/@xml:id)
+        let $qvs := <div xmlns="http://www.tei-c.org/ns/1.0" type="qvDiv" corresp="{$pbId}">
+                       { for $id in $div2Ids
+                            let $div := $config:newest-qv//tei:div2[@xml:id=$id ]
+                            return  <list xmlns="http://www.tei-c.org/ns/1.0" type="qvDiv2" corresp="{concat('#', $id)}">
+                                        {
+                                        $div/tei:head[1],
+                                        for $div3 in $div/tei:div3
+                                            where $div3//tei:ref[contains(@target, $pbId)]
+                                            return <item xmlns="http://www.tei-c.org/ns/1.0" type="{$div3/@type}">
+                                            {
+                                                $div3/tei:ab
+                                                }
+                                            </item>
+                                    }
+                                    </list>
                                 }
                         </div>
         let $log := console:log($qvs)

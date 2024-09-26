@@ -5,6 +5,7 @@
     		"changes": "Changes",
     		"concordance": "Concordance",
     		"genesis": "Textgenetic Versions",
+    		
     		"querverweise": "Cross References",
     		"pageInfo": "Page Information",
     		"showTimeline": "show timeline",
@@ -17,6 +18,7 @@
     		"author": "Author",
     		"editor": "Editors",
     		 "date": "Datum",
+    		 "handNotes": "Hands and Instruments",
     		 "msDesc": "Manuscript Description",
     		 "msIdentifier": "Manuscript Identification",
     		"publicationStmt": "Publikation",

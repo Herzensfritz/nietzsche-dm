@@ -4,110 +4,51 @@
          <titleStmt>
             <title>Zur Genealogie der Moral. Querverweise</title>
             <author xml:id="N">Friedrich Nietzsche</author>
-            <editor xml:id="editors">
-                    <name>Beat Röllin</name>, <name>Christian Steiner</name>, <name>René Stockmar</name>
-                </editor>
+            <editor xml:id="editors"><name>Beat Röllin</name>, <name>Christian Steiner</name>, <name>René Stockmar</name></editor>
             <respStmt>
-               <resp>Projektleiter: </resp>
-                    <name>Hubert Thüring</name>
+               <resp>Projektleiter: </resp><name>Hubert Thüring</name>
             </respStmt>
          </titleStmt>
          <publicationStmt>
-            <publisher>Nietzsche-Edition, Universität Basel</publisher>
-                <date>tba</date>
+            <publisher>Nietzsche-Edition, Universität Basel</publisher><date>tba</date>
          </publicationStmt>
          <seriesStmt>
             <title>Der späte Nietzsche. Digitale Edition der Druckdokumente</title>
          </seriesStmt>
-         <sourceDesc>
-                <p/>
-            </sourceDesc>
-        </fileDesc>
+         <sourceDesc><p/>
+            </sourceDesc></fileDesc>
    </teiHeader>
    <text>
       <body>
-         <!-- <div1 xml:id="GMXX">
-            <head>GM @</head>
-            <div2 xml:id="GMXXXX">
-               <head>GM @</head>
-               <div3 xml:id="QV1_GMXXXX" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
-               </div3> <ab n="2"><ref target="K11.xml#Cb_a@ K11.xml#Cb_b@">Cb1ab @</ref></ab> + next ab n=3! 
-               <div3 xml:id="QV2_GMXXXX" type="genesis">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#@_@">@, @</ref>
-                        </ab>
-               </div3>
-               <div3 xml:id="QV2_GMXXX" type="genesis">
-                  <ab>keine Vs überliefert</ab>
-               </div3>
-            </div2>
-         </div1> -->
-         
          <div1 xml:id="GMTitelblatt">
             <head>GM Titelblatt</head>
             <div2 xml:id="GMTitelseite">
                <head>GM Titelseite</head>
                <div3 xml:id="QV1_GMTitelseite" type="concordance">
-                  <ab n="0">KGW/KSA 258[a]/257,1-2</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_I">Ed [I]</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a1r">Dm a1r</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 258[a]/245,1-2</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_I">Ed I</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a1r">Dm a1r</ref></ab>
                </div3>
                <div3 xml:id="QV2_GMTitelseite" type="genesis">
-                  <ab n="0">KGW/KSA 258[a]/257,1-2</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_I">Ed [I]</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a1r">Dm a1r</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#NVII3_32">N VII 3, 32,8-44</ref>, <ref target="KGWIX.xml#NVII3_34">34,2-18</ref>, <ref target="KGWIX.xml#NVII3_154">154</ref>
-                        </ab>
-                  <ab n="4">
-                            <ref target="KGWIX.xml#BW272_2v">BW 272, 2v</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 258[a]/245,1-2</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_I">Ed I</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a1r">Dm a1r</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#NVII3_32">N VII 3, 32,8-44</ref>, <ref target="KGWIX.xml#NVII3_34">34,2-18</ref>, <ref target="KGWIX.xml#NVII3_154">154</ref></ab>
+                  <ab n="4"><ref target="KGWIX.xml#BW272_2v">BW 272, 2v</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GMTitelrueckseite">
                <head>GM Titelrückseite</head>
                <div3 xml:id="QV1_GMTitelrueckseite" type="concordance">
-                  <ab n="0">KSA 14, 377</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_II">Ed [II]</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a1v">Dm a1v</ref>
-                        </ab>
+                  <ab n="0">vgl. KSA 14, 377</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_II">Ed II</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a1v">Dm a1v</ref></ab>
                </div3>
                <div3 xml:id="QV2_GMTitelrueckseite" type="genesis">
-                  <ab n="0">KSA 14, 377</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_II">Ed [II]</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a1v">Dm a1v</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#BW272_2v">BW 272, 2v,7</ref>
-                        </ab>
+                  <ab n="0">vgl. KSA 14, 377</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_II">Ed II</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a1v">Dm a1v</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#BW272_2v">BW 272, 2v,7</ref></ab>
                </div3>
             </div2>
          </div1>
@@ -118,12 +59,8 @@
                <head>GM Vorrede 1</head>
                <div3 xml:id="QV1_GMVorrede01" type="concordance">
                   <ab n="0">KGW/KSA 259/247,1-260/248,3</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_III E40.xml#Ed_IV">Ed [III],1-IV,7</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a2r">Dm a2r,1-17</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_III E40.xml#Ed_IV">Ed III,1-IV,7</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a2r">Dm a2r,1-17</ref></ab>
                </div3>
                <div3 xml:id="QV2_GMVorrede01" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -133,12 +70,8 @@
                <head>GM Vorrede 2</head>
                <div3 xml:id="QV1_GMVorrede02" type="concordance">
                   <ab n="0">KGW/KSA 260/248,4-261/249,4</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_IV E40.xml#Ed_V">Ed IV,8-V,16</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a2r">Dm a2r,18-36</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_IV E40.xml#Ed_V">Ed IV,8-V,16</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a2r">Dm a2r,18-36</ref></ab>
                </div3>
                <div3 xml:id="QV2_GMVorrede02" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -148,23 +81,14 @@
                <head>GM Vorrede 3</head>
                <div3 xml:id="QV1_GMVorrede03" type="concordance">
                   <ab n="0">KGW/KSA 261/249,5-262/250,15</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_V E40.xml#Ed_VI E40.xml#Ed_VII">Ed V,17-VII,8</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a2r D20.xml#a2v">Dm a2r,37-39, a2v,1-21</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_V E40.xml#Ed_VI E40.xml#Ed_VII">Ed V,17-VII,8</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a2r D20.xml#a2v">Dm a2r,37-39, a2v,1-21</ref></ab>
                </div3>
                <div3 xml:id="QV2_GMVorrede03" type="genesis">
                   <ab n="0">KGW/KSA 261/249,6-21</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_V E40.xml#Ed_VI">Ed V,18-VI,8</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a2r D20.xml#a2v">Dm a2r,38-39, a2v,1-7</ref>
-                        </ab>
-                  <ab n="3" cert="unknown">
-                            <ref target="KGWIX.xml#MpXVI_47r">Mp XVI, 47r,2-24</ref> (?)</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_V E40.xml#Ed_VI">Ed V,18-VI,8</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a2r D20.xml#a2v">Dm a2r,38-39, a2v,1-7</ref></ab>
+                  <ab n="3" cert="unknown"><ref target="KGWIX.xml#MpXVI_47r">Mp XVI, 47r,2-24</ref> (?)</ab>
                   <ab n="4" cert="unknown">W I 2, 44 (KGW VII/KSA 11 26[390]) (?)</ab>
                </div3>
             </div2>
@@ -172,168 +96,94 @@
                <head>GM Vorrede 4</head>
                <div3 xml:id="QV1_GMVorrede04" type="concordance">
                   <ab n="0">KGW/KSA 262/250,16-263/251,25</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_VII E40.xml#Ed_VIII">Ed VII,9-VIII,28</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a2v D20.xml#a3r">Dm a2v,22-38, a3r,1-5</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_VII E40.xml#Ed_VIII">Ed VII,9-VIII,28</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a2v D20.xml#a3r">Dm a2v,22-38, a3r,1-5</ref></ab>
                </div3>
                <div3 xml:id="QV2_GMVorrede04" type="genesis">
                   <ab n="0">KGW/KSA 262/250,26-28</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_VII">Ed VII,20-23</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a2v">Dm a2v,27-29</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#MpXVI_21r">Mp XVI, 21r,6-10</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_VII">Ed VII,20-23</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a2v">Dm a2v,27-29</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVI_21r">Mp XVI, 21r,6-10</ref></ab>
                </div3>
                <div3 xml:id="QV3_GMVorrede04" type="genesis">
                   <ab n="0">KGW/KSA 263/251,22-23</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_VIII">Ed VIII,25-26</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a1r">Dm a1r,11-12</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a3r">Dm a3r,4</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_VIII">Ed VIII,25-26</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a1r">Dm a1r,11-12</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a3r">Dm a3r,4</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GMVorrede05">
                <head>GM Vorrede 5</head>
                <div3 xml:id="QV1_GMVorrede05" type="concordance">
                   <ab n="0">KGW/KSA 263/251,26-264/252,28</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_IX E40.xml#Ed_X">Ed IX,1-X,11</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a3r">Dm a3r,6-24</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_IX E40.xml#Ed_X">Ed IX,1-X,11</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a3r">Dm a3r,6-24</ref></ab>
                </div3>
                <div3 xml:id="QV2_GMVorrede05" type="genesis">
                   <ab n="0">KGW/KSA 264/252,20-22</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_X">Ed X,2-4</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a1r">Dm a1r,16-18</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a3r">Dm a3r,20-21</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_X">Ed X,2-4</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a1r">Dm a1r,16-18</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a3r">Dm a3r,20-21</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GMVorrede06">
                <head>GM Vorrede 6</head>
                <div3 xml:id="QV1_GMVorrede06" type="concordance">
                   <ab n="0">KGW/KSA 264/252,29-265/253,32</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_X E40.xml#Ed_XI">Ed X,12-XI,23</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a3r D20.xml#a3v">Dm a3r,25-36, a3v,1-6</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_X E40.xml#Ed_XI">Ed X,12-XI,23</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a3r D20.xml#a3v">Dm a3r,25-36, a3v,1-6</ref></ab>
                </div3>
                <div3 xml:id="QV2_GMVorrede06" type="genesis">
                   <ab n="0">KGW/KSA 264/252,31-32</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_X">Ed X,14-15</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a3r">Dm a3r,26</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#NVII3_35"> N VII 3, 35,20-22</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_X">Ed X,14-15</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a3r">Dm a3r,26</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#NVII3_35"> N VII 3, 35,20-22</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GMVorrede07">
                <head>GM Vorrede 7</head>
                <div3 xml:id="QV1_GMVorrede07" type="concordance">
                   <ab n="0">KGW/KSA 266/254,1-267/255,11</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_XI E40.xml#Ed_XII E40.xml#Ed_XIII">Ed XI,24-XIII,17</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a3v">Dm a3v,7-34</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_XI E40.xml#Ed_XII E40.xml#Ed_XIII">Ed XI,24-XIII,17</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a3v">Dm a3v,7-34</ref></ab>
                </div3>
                <div3 xml:id="QV2_GMVorrede07" type="genesis">
                   <ab n="0">KGW/KSA 266/254,24-267/255,11</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_XII E40.xml#Ed_XIII">Ed XII,22-XIII,17</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a3v">Dm a3v,19-31</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#NVII3_91 KGWIX.xml#NVII3_92">N VII 3, 91,6-38, 92,20-26</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_XII E40.xml#Ed_XIII">Ed XII,22-XIII,17</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a3v">Dm a3v,19-31</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#NVII3_91 KGWIX.xml#NVII3_92">N VII 3, 91,6-38, 92,20-26</ref></ab>
                </div3>
                <div3 xml:id="QV3_GMVorrede07" type="genesis">
                   <ab n="0">KGW/KSA 266/254,26-27</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_XII">Ed XII,24-26</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a3v">Dm a3v,21-34</ref>
-                        </ab> <!-- ZZ? -->
-                  <ab n="3">
-                            <ref target="KGWIX.xml#NVII3_35">N VII 3, 35,14-16</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_XII">Ed XII,24-26</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a3v">Dm a3v,21-34</ref></ab> <!-- ZZ? -->
+                  <ab n="3"><ref target="KGWIX.xml#NVII3_35">N VII 3, 35,14-16</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GMVorrede08">
                <head>GM Vorrede 8</head>
                <div3 xml:id="QV1_GMVorrede08" type="concordance ">
                   <ab n="0">KGW/KSA 267/255,12-268/256,9</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_XIII E40.xml#Ed_XIV">Ed XIII,18-XIV,23</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a4r">Dm a4r,2-28</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_XIII E40.xml#Ed_XIV">Ed XIII,18-XIV,23</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a4r">Dm a4r,2-28</ref></ab>
                </div3>
                <div3 xml:id="QV2_GMVorrede08" type="genesis">
                   <ab n="0">KGW/KSA 267/255,21-25</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_XIV">Ed XIV,1-5</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a4r">Dm a4r,23-26</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#NVII3_35 KGWIX.xml#NVII3_36">N VII 3, 35,38-44, 36,44-48</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_XIV">Ed XIV,1-5</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a4r">Dm a4r,23-26</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#NVII3_35 KGWIX.xml#NVII3_36">N VII 3, 35,38-44, 36,44-48</ref></ab>
                </div3>
                <div3 xml:id="QV3_GMVorrede08" type="genesis">
                   <ab n="0">KGW/KSA 267/255,28-29</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_XIV">Ed XIV,9</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a1r">Dm a1r,23</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a4r">Dm a4r,12</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_XIV">Ed XIV,9</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a1r">Dm a1r,23</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a4r">Dm a4r,12</ref></ab>
                </div3>
                <div3 xml:id="QV4_GMVorrede08" type="genesis">
                   <ab n="0">KGW/KSA 268/256,6</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_XIV">Ed XIV,19</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a1r">Dm a1r,13-14</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a4r">Dm a4r,19</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_XIV">Ed XIV,19</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a1r">Dm a1r,13-14</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a4r">Dm a4r,19</ref></ab>
                </div3>
             </div2>
          </div1>
@@ -344,37 +194,23 @@
                <head>GM I Titelseite</head>
                <div3 xml:id="QV1_GM01Titelseite" type="concordance">
                   <ab n="0">KGW/KSA 269/257,1-2</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_XV">Ed [XV]</ref>
-                        </ab>
-                  <ab n="2">vgl. <ref target="D20.xml#a3v">Dm a3v,35-38</ref>
-                        </ab><!-- mit vgl.!!! -->
+                  <ab n="1"><ref target="E40.xml#Ed_XV">Ed XV</ref></ab>
+                  <ab n="2">vgl. <ref target="D20.xml#a3v">Dm a3v,35-38</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM01Titelseite" type="genesis">
                   <ab n="0">KGW/KSA 269/257,1-2</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_XV">Ed [XV]</ref>
-                        </ab>
-                  <ab n="2">vgl. <ref target="D20.xml#a3v">Dm a3v,35-38</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#NVII3_154">N VII 3, 154</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_XV">Ed XV</ref></ab>
+                  <ab n="2">vgl. <ref target="D20.xml#a3v">Dm a3v,35-38</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#NVII3_154">N VII 3, 154</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0101">
                <head>GM I 1</head>
                <div3 xml:id="QV1_GM0101" type="concordance">
                   <ab n="0">KGW/KSA 271,1-272,19/257,3-258,19</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_1 E40.xml#Ed_2">Ed [1],1-2,22</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="K11.xml#Cb_a1 K11.xml#Cb_b1 K11.xml#Cb_a2 K11.xml#Cb_b2">Cb1ab [1],1-2,22</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a5r">Dm a5r,2-25</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_1 E40.xml#Ed_2">Ed 1,1-2,22</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_a1 K11.xml#Cb_b1 K11.xml#Cb_a2 K11.xml#Cb_b2">Cb1ab 1,1-2,22</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a5r">Dm a5r,2-25</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0101" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -384,45 +220,25 @@
                <head>GM I 2</head>
                <div3 xml:id="QV1_GM0102" type="concordance">
                   <ab n="0">KGW/KSA 272/258,20-274/260,21</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_2 E40.xml#Ed_3 E40.xml#Ed_4 E40.xml#Ed_5">Ed 2,23-5,2</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="K11.xml#Cb_a2 K11.xml#Cb_b2 K11.xml#Cb_a3 K11.xml#Cb_b3 K11.xml#Cb_a4 K11.xml#Cb_b4 K11.xml#Cb_a5 K11.xml#Cb_b5">Cb1ab 2,23-5,2</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a6r">Dm a6r,1-36</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_2 E40.xml#Ed_3 E40.xml#Ed_4 E40.xml#Ed_5">Ed 2,23-5,2</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_a2 K11.xml#Cb_b2 K11.xml#Cb_a3 K11.xml#Cb_b3 K11.xml#Cb_a4 K11.xml#Cb_b4 K11.xml#Cb_a5 K11.xml#Cb_b5">Cb1ab 2,23-5,2</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a6r">Dm a6r,1-36</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0102" type="genesis">
                   <ab n="0">KGW/KSA 274/260,1-5</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_4">Ed 4,12-17</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="K11.xml#Cb_a4 K11.xml#Cb_b4">Cb1ab 4,12-17</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a6r">Dm a6r,25-28</ref>
-                        </ab>
-                  <ab n="4">
-                            <ref target="KGWIX.xml#WI8_73">W I 8, 73,34-38</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_4">Ed 4,12-17</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_a4 K11.xml#Cb_b4">Cb1ab 4,12-17</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a6r">Dm a6r,25-28</ref></ab>
+                  <ab n="4"><ref target="KGWIX.xml#WI8_73">W I 8, 73,34-38</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0103">
                <head>GM I 3</head>
                <div3 xml:id="QV1_GM0103" type="concordance">
                   <ab n="0">KGW/KSA 274/260,22-275/261,16</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_5">Ed 5,3-33</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="K11.xml#Cb_a5 K11.xml#Cb_b5">Cb1ab 5,3-33</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a6r D20.xml#a7r">Dm a6r,37-40, a7r,1-11</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_5">Ed 5,3-33</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_a5 K11.xml#Cb_b5">Cb1ab 5,3-33</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a6r D20.xml#a7r">Dm a6r,37-40, a7r,1-11</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0103" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -432,15 +248,9 @@
                <head>GM I 4</head>
                <div3 xml:id="QV1_GM0104" type="concordance">
                   <ab n="0">KGW/KSA 275/261,17-276/262,17</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_6 E40.xml#Ed_7">Ed 6,1-7,5</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="K11.xml#Cb_a6 K11.xml#Cb_b6 K11.xml#Cb_a7 K11.xml#Cb_b7">Cb1ab 6,1-7,5</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a7r">Dm a7r,12-29</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_6 E40.xml#Ed_7">Ed 6,1-7,5</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_a6 K11.xml#Cb_b6 K11.xml#Cb_a7 K11.xml#Cb_b7">Cb1ab 6,1-7,5</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a7r">Dm a7r,12-29</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0104" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -450,15 +260,9 @@
                <head>GM I 5</head>
                <div3 xml:id="QV1_GM0105" type="concordance">
                   <ab n="0">KGW/KSA 276/262,18-278/264,19</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_7 E40.xml#Ed_8 E40.xml#Ed_9">Ed 7,6-9,18</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="K11.xml#Cb_a7 K11.xml#Cb_b7 K11.xml#Cb_a8 K11.xml#Cb_b8 K11.xml#Cb_a9 K11.xml#Cb_b9">Cb1ab 7,6-9,18</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a7r D20.xml#a8r">Dm a7r,30-38, a8r,1-26</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_7 E40.xml#Ed_8 E40.xml#Ed_9">Ed 7,6-9,18</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_a7 K11.xml#Cb_b7 K11.xml#Cb_a8 K11.xml#Cb_b8 K11.xml#Cb_a9 K11.xml#Cb_b9">Cb1ab 7,6-9,18</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a7r D20.xml#a8r">Dm a7r,30-38, a8r,1-26</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0105" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -468,15 +272,9 @@
                <head>GM I 6</head>
                <div3 xml:id="QV1_GM0106" type="concordance">
                   <ab n="0">KGW/KSA 278/264,20-280/266,15</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_9 E40.xml#Ed_10 E40.xml#Ed_11">Ed 9,19-11,23</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="K11.xml#Cb_a9 K11.xml#Cb_b9 K11.xml#Cb_a10 K11.xml#Cb_b10 K11.xml#Cb_a11 K11.xml#Cb_b11">Cb1ab 9,19-11,23</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a8r D20.xml#a9r">Dm a8r,27-39, a9r,1-17</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_9 E40.xml#Ed_10 E40.xml#Ed_11">Ed 9,19-11,23</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_a9 K11.xml#Cb_b9 K11.xml#Cb_a10 K11.xml#Cb_b10 K11.xml#Cb_a11 K11.xml#Cb_b11">Cb1ab 9,19-11,23</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a8r D20.xml#a9r">Dm a8r,27-39, a9r,1-17</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0106" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -486,15 +284,9 @@
                <head>GM I 7</head>
                <div3 xml:id="QV1_GM0107" type="concordance">
                   <ab n="0">KGW/KSA 280/266,16-282/268,5</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_11 E40.xml#Ed_12 E40.xml#Ed_13">Ed 11,24-13,23</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="K11.xml#Cb_a11 K11.xml#Cb_b11 K11.xml#Cb_a12 K11.xml#Cb_b12 K11.xml#Cb_a13 K11.xml#Cb_b13">Cb1ab 11,24-13,23</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a9r D20.xml#a10r">Dm a9r,18-38, a10r,1-8</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_11 E40.xml#Ed_12 E40.xml#Ed_13">Ed 11,24-13,23</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_a11 K11.xml#Cb_b11 K11.xml#Cb_a12 K11.xml#Cb_b12 K11.xml#Cb_a13 K11.xml#Cb_b13">Cb1ab 11,24-13,23</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a9r D20.xml#a10r">Dm a9r,18-38, a10r,1-8</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0107" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -504,15 +296,9 @@
                <head>GM I 8</head>
                <div3 xml:id="QV1_GM0108" type="concordance">
                   <ab n="0">KGW/KSA 282/268,6-283/269,21</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_13 E40.xml#Ed_14 E40.xml#Ed_15">Ed 13,24-15,13</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="K11.xml#Cb_a13 K11.xml#Cb_b13 K11.xml#Cb_a14 K11.xml#Cb_b14 K11.xml#Cb_a15 K11.xml#Cb_b15">Cb1ab 13,24-15,13</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a10r">Dm a10r,9-33</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_13 E40.xml#Ed_14 E40.xml#Ed_15">Ed 13,24-15,13</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_a13 K11.xml#Cb_b13 K11.xml#Cb_a14 K11.xml#Cb_b14 K11.xml#Cb_a15 K11.xml#Cb_b15">Cb1ab 13,24-15,13</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a10r">Dm a10r,9-33</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0108" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -522,15 +308,9 @@
                <head>GM I 9</head>
                <div3 xml:id="QV1_GM0109" type="concordance">
                   <ab n="0">KGW/KSA 283/269,22-284/270,23</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_15 E40.xml#Ed_16">Ed 15,14-16,20</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="K11.xml#Cb_a15 K11.xml#Cb_b15 K11.xml#Cb_a16 K11.xml#Cb_b16">Cb1ab 15,14-16,19</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a10r D20.xml#a11r">Dm a10r,34-39, a11r,1-12</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_15 E40.xml#Ed_16">Ed 15,14-16,20</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_a15 K11.xml#Cb_b15 K11.xml#Cb_a16 K11.xml#Cb_b16">Cb1ab 15,14-16,19</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a10r D20.xml#a11r">Dm a10r,34-39, a11r,1-12</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0109" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -540,114 +320,62 @@
                <head>GM I 10</head>
                <div3 xml:id="QV1_GM0110" type="concordance">
                   <ab n="0">KGW/KSA 284/270,24-288/274,4</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_16 E40.xml#Ed_17 E40.xml#Ed_18 E40.xml#Ed_19 E40.xml#Ed_20">Ed 16,21-20,20</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="K11.xml#Cb_a16 K11.xml#Cb_b16">Cb1ab 16,20-32</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a11r D20.xml#a12r">Dm a11r,13-39, a12r,1-28</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_16 E40.xml#Ed_17 E40.xml#Ed_18 E40.xml#Ed_19 E40.xml#Ed_20">Ed 16,21-20,20</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_a16 K11.xml#Cb_b16">Cb1ab 16,20-32</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a11r D20.xml#a12r">Dm a11r,13-39, a12r,1-28</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0110" type="genesis">
                   <ab n="0">KGW/KSA 284/270,25-30</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_16">Ed 16,22-28</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="K11.xml#Cb_a16 K11.xml#Cb_b16">Cb1ab 16,21-27</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a11r">Dm a11r,14-16</ref>
-                        </ab>
-                  <ab n="4">
-                            <ref target="KGWIX.xml#MpXVII_116">Mp XVII, 116r,2-8</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_16">Ed 16,22-28</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_a16 K11.xml#Cb_b16">Cb1ab 16,21-27</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a11r">Dm a11r,14-16</ref></ab>
+                  <ab n="4"><ref target="KGWIX.xml#MpXVII_116">Mp XVII, 116r,2-8</ref></ab>
                </div3>
                <div3 xml:id="QV3_GM0110" type="genesis">
                   <ab n="0">KGW/KSA 286/272,13-287/273,12</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_18 E40.xml#Ed_19">Ed 18,18-19,23</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a12r">Dm a12r,2-16</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#MpXVII_60v">Mp XVII, 60v,2-30,36-48,56-60</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_18 E40.xml#Ed_19">Ed 18,18-19,23</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a12r">Dm a12r,2-16</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_60v">Mp XVII, 60v,2-30,36-48,56-60</ref></ab>
                </div3>
                <div3 xml:id="QV4_GM0110" type="genesis">
                   <ab n="0">KGW/KSA 287/273,6-8</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_19">Ed 19,16-18</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a12r">Dm a12r,15</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#WI8_1">W I 8, 1</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_19">Ed 19,16-18</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a12r">Dm a12r,15</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#WI8_1">W I 8, 1</ref></ab>
                </div3>
                <div3 xml:id="QV5_GM0110" type="genesis">
                   <ab n="0">KGW/KSA 287/273,34-288/274,4</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_20">Ed 20,15-20</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a12r">Dm a12r,25-28</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#MpXVII_89v">Mp XVII, 89v,53-60</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_20">Ed 20,15-20</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a12r">Dm a12r,25-28</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_89v">Mp XVII, 89v,53-60</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0111">
                <head>GM I 11</head>
                <div3 xml:id="QV1_GM0111" type="concordance">
                   <ab n="0">KGW/KSA 288/274,5-291/277,22</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_20 E40.xml#Ed_21 E40.xml#Ed_22 E40.xml#Ed_23 E40.xml#Ed_24">Ed 20,21-24,25</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a12r D20.xml#a13r D20.xml#a14r">Dm a12r,29-38, a13r,1-38, a14r,1-8</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_20 E40.xml#Ed_21 E40.xml#Ed_22 E40.xml#Ed_23 E40.xml#Ed_24">Ed 20,21-24,25</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a12r D20.xml#a13r D20.xml#a14r">Dm a12r,29-38, a13r,1-38, a14r,1-8</ref></ab>
                </div3>
                <div3 xml:id="QV2_GMX0111" type="genesis">
                   <ab n="0">KGW/KSA 288/274,6-21</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_20 E40.xml#Ed_21">Ed 20,22-21,7</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a12r">Dm a12r,30-36</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#MpXVII_89v">Mp XVII, 89v,2-12,16-21</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_20 E40.xml#Ed_21">Ed 20,22-21,7</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a12r">Dm a12r,30-36</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_89v">Mp XVII, 89v,2-12,16-21</ref></ab>
                </div3>
                <div3 xml:id="QV3_GM0111" type="genesis">
                   <ab n="0">KGW/KSA 289/275,18-23</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_22">Ed 22,7-14</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a13r">Dm a13r,13-16</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#NVII3_122">N VII 3, 122,2-12</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_22">Ed 22,7-14</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a13r">Dm a13r,13-16</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#NVII3_122">N VII 3, 122,2-12</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0112">
                <head>GM I 12</head>
                <div3 xml:id="QV1_GM0112" type="concordance">
                   <ab n="0">KGW/KSA 291/277,23-292/278,26</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_24 E40.xml#Ed_25">Ed 24,26-25,33</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a14r">Dm a14r,9-26</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_24 E40.xml#Ed_25">Ed 24,26-25,33</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a14r">Dm a14r,9-26</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0112" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -657,12 +385,8 @@
                <head>GM I 13</head>
                <div3 xml:id="QV1_GM0113" type="concordance">
                   <ab n="0">KGW/KSA 292/278,27-295/281,5</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_26 E40.xml#Ed_27 E40.xml#Ed_28">Ed 26,1-28,26</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a14r D20.xml#a15r">Dm a14r,28-40, a15r,1-29</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_26 E40.xml#Ed_27 E40.xml#Ed_28">Ed 26,1-28,26</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a14r D20.xml#a15r">Dm a14r,28-40, a15r,1-29</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0113" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -672,48 +396,30 @@
                <head>GM I 14</head>
                <div3 xml:id="QV1_GM0114" type="concordance">
                   <ab n="0">KGW/KSA 295/281,6-297/283,17</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_28 E40.xml#Ed_29 E40.xml#Ed_30 E40.xml#Ed_31">Ed 28,27-31,17</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a15r D20.xml#a16r">Dm a15r,30-38, a16r,1-36</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_28 E40.xml#Ed_29 E40.xml#Ed_30 E40.xml#Ed_31">Ed 28,27-31,17</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a15r D20.xml#a16r">Dm a15r,30-38, a16r,1-36</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0114" type="genesis">
                   <ab n="0">KGW/KSA 295/281,6-297/283,17 passim</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_28 E40.xml#Ed_29 E40.xml#Ed_30 E40.xml#Ed_31">Ed 28,27-31,17 passim</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a15r D20.xml#a16r">Dm a15r,30-38, a16r,1-36 passim</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#MpXVII_116r">Mp XVII, 116r,20-46</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_28 E40.xml#Ed_29 E40.xml#Ed_30 E40.xml#Ed_31">Ed 28,27-31,17 passim</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a15r D20.xml#a16r">Dm a15r,30-38, a16r,1-36 passim</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_116r">Mp XVII, 116r,20-46</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0115">
                <head>GM I 15</head>
                <div3 xml:id="QV1_GM0115" type="concordance">
                   <ab n="0">KGW/KSA 297/283,18-299/285,23</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_31 E40.xml#Ed_32 E40.xml#Ed_33 E40.xml#Ed_34">Ed 31,18-34,2</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a16r D20.xml#a17r D20.xml#a18r D20.xml#a18v">Dm a16r,37-38, a17r,1-10, a18r,2-16, a18v,1-13</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_31 E40.xml#Ed_32 E40.xml#Ed_33 E40.xml#Ed_34">Ed 31,18-34,2</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a16r D20.xml#a17r D20.xml#a18r D20.xml#a18v">Dm a16r,37-38, a17r,1-10, a18r,2-16, a18v,1-13</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0116">
                <head>GM I 16</head>
                <div3 xml:id="QV1_GM0116" type="concordance">
                   <ab n="0">KGW/KSA 299/285,24-302/288,8</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_34 E40.xml#Ed_35 E40.xml#Ed_36 E40.xml#Ed_37">Ed 34,3-37,2</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a19r D20.xml#a20r">Dm a19r,1-28, a20r,1-15</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_34 E40.xml#Ed_35 E40.xml#Ed_36 E40.xml#Ed_37">Ed 34,3-37,2</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a19r D20.xml#a20r">Dm a19r,1-28, a20r,1-15</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0116" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -723,12 +429,8 @@
                <head>GM I 17</head>
                <div3 xml:id="QV1_GM0117" type="concordance">
                   <ab n="0">KGW/KSA 302/288,9-24</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_37">Ed 37,3-20</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a20r">Dm a20r,16-24</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_37">Ed 37,3-20</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a20r">Dm a20r,16-24</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0117" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -737,29 +439,24 @@
             <div2 xml:id="GM01Anmerkung">
                <head>GM I Anmerkung</head>
                <div3 xml:id="QV1_GM01Anmerkung" type="concordance">
-                  <ab n="0">KGW/KSA 302/288,25-393/289,32</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_37 E40.xml#Ed_38">Ed 37,21-38,33</ref>
-                        </ab>
-                  <ab n="2">fehlt in Dm</ab>
+                  <ab n="0">KGW/KSA 302/288,25-303/289,32</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_37 E40.xml#Ed_38">Ed 37,21-38,33</ref></ab>
+                  <ab n="2">nicht in Dm</ab>
                </div3>
                <div3 xml:id="QV2_GM01Anmerkung" type="genesis">
                   <ab>keine Vs überliefert</ab>
                </div3>
             </div2>
          </div1>
+         
          <div1 xml:id="GM02">
             <head>GM II</head>
             <div2 xml:id="GM02Titelseite">
                <head>GM II Titelseite</head>
                <div3 xml:id="QV1_GM02Titelseite" type="concordance">
                   <ab n="0">KGW/KSA 305/291,1-3</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_39">Ed [39]</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_39">Ed 39</ref></ab>
+                  <ab n="2"><ref target="D20.xml#@">Dm @</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM02Titelseite" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -769,12 +466,8 @@
                <head>GM II 1</head>
                <div3 xml:id="QV1_GM0201" type="concordance">
                   <ab n="0">KGW/KSA 307,1-308,33/291,4-392,33</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_41 E40.xml#Ed_42 E40.xml#Ed_43">Ed [41],1-43,4</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a21r">Dm a21r,3-31</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_41 E40.xml#Ed_42 E40.xml#Ed_43">Ed 41,1-43,4</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a21r">Dm a21r,3-31</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0201" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -784,12 +477,8 @@
                <head>GM II 2</head>
                <div3 xml:id="QV1_GM0202" type="concordance">
                   <ab n="0">KGW/KSA 309/293,1-310/294,26</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_43 E40.xml#Ed_44 E40.xml#Ed_45">Ed 43,5-45,7</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a21r">Dm a21r,32-62</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_43 E40.xml#Ed_44 E40.xml#Ed_45">Ed 43,5-45,7</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a21r">Dm a21r,32-62</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0202" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -799,12 +488,8 @@
                <head>GM II 3</head>
                <div3 xml:id="QV1_GM0203" type="concordance">
                   <ab n="0">KGW/KSA 309/293,27-313/297,10</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_45 E40.xml#Ed_46 E40.xml#Ed_47 E40.xml#Ed_48">Ed 45,8-48,5</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a22r D20.xml#a23r">Dm a22r,1-35, a23r,1-8</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_45 E40.xml#Ed_46 E40.xml#Ed_47 E40.xml#Ed_48">Ed 45,8-48,5</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a22r D20.xml#a23r">Dm a22r,1-35, a23r,1-8</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0203" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -814,35 +499,22 @@
                <head>GM II 4</head>
                <div3 xml:id="QV1_GM0204" type="concordance">
                   <ab n="0">KGW/KSA 313/297,11-314/298,26</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_48 E40.xml#Ed_49">Ed 48,6-49,28</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a23r">Dm a23r,9-30</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_48 E40.xml#Ed_49">Ed 48,6-49,28</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a23r">Dm a23r,9-30</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0204" type="genesis">
                   <ab n="0">KGW/KSA 314/298,1-9</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_48 E40.xml#Ed_49">Ed 48,32-49,9</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a23r">Dm a23r,19-23</ref>
-                        </ab>
-                  <ab n="3" cert="unknown">
-                            <ref target="KGWIX.xml#@_@">Mp XVI, 48v,14-16</ref> (?)</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_48 E40.xml#Ed_49">Ed 48,32-49,9</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a23r">Dm a23r,19-23</ref></ab>
+                  <ab n="3" cert="unknown"><ref target="KGWIX.xml#MpXVI_48v">Mp XVI, 48v,14-16</ref> (?)</ab>
                </div3>
             </div2>
             <div2 xml:id="GM0205">
                <head>GM II 5</head>
                <div3 xml:id="QV1_GM0205" type="concordance">
                   <ab n="0">KGW/KSA 314/298,27-316/300,13</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_49 E40.xml#Ed_50 E40.xml#Ed_51">Ed 49,29-51,25</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a23r D20.xml#a24r">Dm a23r,31-38, a24r,1-20</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_49 E40.xml#Ed_50 E40.xml#Ed_51">Ed 49,29-51,25</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a23r D20.xml#a24r">Dm a23r,31-38, a24r,1-20</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0205" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -852,12 +524,8 @@
                <head>GM II 6</head>
                <div3 xml:id="QV1_GM0206" type="concordance">
                   <ab n="0">KGW/KSA 316/300,14-318/302,11</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_51 E40.xml#Ed_52 E40.xml#Ed_53">Ed 51,26-53,33</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a24r D20.xml#a25r">Dm a24r,21-39, a25r,1-12</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_51 E40.xml#Ed_52 E40.xml#Ed_53">Ed 51,26-53,33</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a24r D20.xml#a25r">Dm a24r,21-39, a25r,1-12</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0206" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -867,36 +535,22 @@
                <head>GM II 7</head>
                <div3 xml:id="QV1_GM0207" type="concordance">
                   <ab n="0">KGW/KSA 318/302,12-321/305,26</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_54 E40.xml#Ed_55 E40.xml#Ed_56 E40.xml#Ed_57 E40.xml#Ed_58">Ed 54,1-58,2</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a25r D20.xml#a26r">Dm a25r,13-40, a26r,1-32</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_54 E40.xml#Ed_55 E40.xml#Ed_56 E40.xml#Ed_57 E40.xml#Ed_58">Ed 54,1-58,2</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a25r D20.xml#a26r">Dm a25r,13-40, a26r,1-32</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0207" type="genesis">
                   <ab n="0">KGW/KSA 318/302,12-321/305,26</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_54 E40.xml#Ed_55 E40.xml#Ed_56 E40.xml#Ed_57 E40.xml#Ed_58">Ed 54,1-58,2</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a25r D20.xml#a26r">Dm a25r,13-40, a26r,1-32</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#MpXVII_104v">Mp XVII, 104v</ref>, <ref target="KGWIX.xml#MpXVII_105v">105v</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_54 E40.xml#Ed_55 E40.xml#Ed_56 E40.xml#Ed_57 E40.xml#Ed_58">Ed 54,1-58,2</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a25r D20.xml#a26r">Dm a25r,13-40, a26r,1-32</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_104v">Mp XVII, 104v</ref>, <ref target="KGWIX.xml#MpXVII_105v">105v</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0208">
                <head>GM II 8</head>
                <div3 xml:id="QV1_GM0208" type="concordance">
                   <ab n="0">KGW/KSA 321/305,27-323/307,2</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_58 E40.xml#Ed_59">Ed 58,3-59,18</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a27r">Dm a27r,1-21</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_58 E40.xml#Ed_59">Ed 58,3-59,18</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a27r">Dm a27r,1-21</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0208" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -906,12 +560,8 @@
                <head>GM II 9</head>
                <div3 xml:id="QV1_GM0209" type="concordance">
                   <ab n="0">KGW/KSA 323/307,3-324/308,10</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_59 E40.xml#Ed_60">Ed 59,19-60,32</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a28r">Dm a28r,1-21</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_59 E40.xml#Ed_60">Ed 59,19-60,32</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a28r">Dm a28r,1-21</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0209" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -921,12 +571,8 @@
                <head>GM II 10</head>
                <div3 xml:id="QV1_GM0210" type="concordance">
                   <ab n="0">KGW/KSA 324/308,11-325/309,19</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_61 E40.xml#Ed_62">Ed 61,1-62,13</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a28r">Dm a28r,22-42</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_61 E40.xml#Ed_62">Ed 61,1-62,13</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a28r">Dm a28r,22-42</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0210" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -936,12 +582,8 @@
                <head>GM II 11</head>
                <div3 xml:id="QV1_GM0211" type="concordance">
                   <ab n="0">KGW/KSA 325/309,20-329/313,12</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_62 E40.xml#Ed_63 E40.xml#Ed_64 E40.xml#Ed_65 E40.xml#Ed_66">Ed 62,14-66,28</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a29r D20.xml#a40r">Dm a29r,1-60, a40r,7-10</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_62 E40.xml#Ed_63 E40.xml#Ed_64 E40.xml#Ed_65 E40.xml#Ed_66">Ed 62,14-66,28</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a29r D20.xml#a40r">Dm a29r,1-60, a40r,7-10</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0211" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -951,12 +593,8 @@
                <head>GM II 12</head>
                <div3 xml:id="QV1_GM0212" type="concordance">
                   <ab n="0">KGW/KSA 329/313,13-332/316,15</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_66 E40.xml#Ed_67 E40.xml#Ed_68 E40.xml#Ed_69 E40.xml#Ed_70">Ed 66,29-70,14</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a30r">Dm a30r,1-46</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_66 E40.xml#Ed_67 E40.xml#Ed_68 E40.xml#Ed_69 E40.xml#Ed_70">Ed 66,29-70,14</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a30r">Dm a30r,1-46</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0212" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -966,12 +604,8 @@
                <head>GM II 13</head>
                <div3 xml:id="QV1_GM0213" type="concordance">
                   <ab n="0">KGW/KSA 332/316,16-334/318,20</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_70 E40.xml#Ed_71 E40.xml#Ed_72">Ed 70,15-72,30</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a31r">Dm a31r,1-34</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_70 E40.xml#Ed_71 E40.xml#Ed_72">Ed 70,15-72,30</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a31r">Dm a31r,1-34</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0213" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -981,12 +615,8 @@
                <head>GM II 14</head>
                <div3 xml:id="QV1_GM0214" type="concordance">
                   <ab n="0">KGW/KSA 334/318,21-336/320,12</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_72 E40.xml#Ed_73 E40.xml#Ed_74">Ed 72,31-74,30</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a31r D20.xml#a32r">Dm a31r,35-39, a32r,1-25</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_72 E40.xml#Ed_73 E40.xml#Ed_74">Ed 72,31-74,30</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a31r D20.xml#a32r">Dm a31r,35-39, a32r,1-25</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0214" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -996,133 +626,75 @@
                <head>GM II 15</head>
                <div3 xml:id="QV1_GM0215" type="concordance">
                   <ab n="0">KGW/KSA 336/320,13-337/321,23</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_74 E40.xml#Ed_75 E40.xml#Ed_76">Ed 74,31-76,13</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a32r D20.xml#a33r">Dm a32r,26-39, a33r,1-9</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_74 E40.xml#Ed_75 E40.xml#Ed_76">Ed 74,31-76,13</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a32r D20.xml#a33r">Dm a32r,26-39, a33r,1-9</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0215" type="genesis">
                   <ab n="0">KGW/KSA 336/320,17-20</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_75">Ed 75,3-6</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a32r">Dm a32r,28-30</ref>
-                        </ab>
-                  <ab n="3" cert="unknown">
-                            <ref target="KGWIX.xml#MpVII_97v">Mp XVII, 97v</ref> (?)</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_75">Ed 75,3-6</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a32r">Dm a32r,28-30</ref></ab>
+                  <ab n="3" cert="unknown"><ref target="KGWIX.xml#MpVII_97v">Mp XVII, 97v</ref> (?)</ab>
                </div3>
                <div3 xml:id="QV3_GM0215" type="genesis">
                   <ab n="0">KGW/KSA 336/320,19-20,29-32</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_75">Ed 75,4-6,16-20</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a32r">Dm a32r,29-30,34-36</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#MpXVII_67v">Mp XVII, 67v,14-28</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_75">Ed 75,4-6,16-20</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a32r">Dm a32r,29-30,34-36</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_67v">Mp XVII, 67v,14-28</ref></ab>
                </div3>
                <div3 xml:id="QV4_GM0215" type="genesis">
                   <ab n="0">KGW/KSA 336/320,23-25</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_75">Ed 75,9-12</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a32r">Dm a32r,31-33</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#MpXVII_67r">Mp XVII, 67r,14-22</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_75">Ed 75,9-12</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a32r">Dm a32r,31-33</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_67r">Mp XVII, 67r,14-22</ref></ab>
                </div3>
                <div3 xml:id="QV5_GM0215" type="genesis">
                   <ab n="0">KGW/KSA 337/321,21-23</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_76">Ed 76,10-13</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a33r">Dm a33r,8-9</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#NVII2_10">N VII 2, 10,2-6</ref>
-                        </ab>
-                  <ab n="4" cert="unknown">
-                            <ref target="KGWIX.xml#BW177_8v">BW 177, 8v,2-6</ref> (?)</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_76">Ed 76,10-13</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a33r">Dm a33r,8-9</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#NVII2_10">N VII 2, 10,2-6</ref></ab>
+                  <ab n="4" cert="unknown"><ref target="KGWIX.xml#BW177_8v">BW 177, 8v,2-6</ref> (?)</ab>
                </div3>
                <div3 xml:id="QV6_GM0215" type="genesis">
                   <ab n="0">KGW/KSA 337/321,22-23</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_76">Ed 76,12-13</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a33r">Dm a33r,9</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#MpXVI_21r">Mp XVI, 21r,2-4</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_76">Ed 76,12-13</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a33r">Dm a33r,9</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVI_21r">Mp XVI, 21r,2-4</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0216">
                <head>GM II 16</head>
                <div3 xml:id="QV1_GM0216" type="concordance">
                   <ab n="0">KGW/KSA 337/321,24-340/324,4</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_76 E40.xml#Ed_77 E40.xml#Ed_78 E40.xml#Ed_79">Ed 76,14-79,8</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a33r D20.xml#a34r">Dm a33r,16-39, a34r,1-12</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_76 E40.xml#Ed_77 E40.xml#Ed_78 E40.xml#Ed_79">Ed 76,14-79,8</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a33r D20.xml#a34r">Dm a33r,16-39, a34r,1-12</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0216" type="genesis">
                   <ab n="0">KGW/KSA 337/321,24-340/324,4 passim</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_76 E40.xml#Ed_77 E40.xml#Ed_78 E40.xml#Ed_79">Ed 76,14-79,8 passim</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a33r D20.xml#a34r">Dm a33r,16-39, a34r,1-12 passim</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#MpXVII_116v">Mp XVII, 116v,2-10</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_76 E40.xml#Ed_77 E40.xml#Ed_78 E40.xml#Ed_79">Ed 76,14-79,8 passim</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a33r D20.xml#a34r">Dm a33r,16-39, a34r,1-12 passim</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_116v">Mp XVII, 116v,2-10</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0217">
                <head>GM II 17</head>
                <div3 xml:id="QV1_GM0217" type="concordance">
                   <ab n="0">KGW/KSA 340/324,5-341/325,25</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_79 E40.xml#Ed_80 E40.xml#Ed_81">Ed 79,9-81,3</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a34r">Dm a34r,13-38</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_79 E40.xml#Ed_80 E40.xml#Ed_81">Ed 79,9-81,3</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a34r">Dm a34r,13-38</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0217" type="genesis">
-                  <ab n="0">KGW/KSA 340,6-341,15</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_79 E40.xml#Ed_80">Ed 79,9-80,25</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a34r">Dm a34r,13-34</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#MpXVII_72v">Mp XVII, 72v</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 340/324,6-341/325,15</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_79 E40.xml#Ed_80">Ed 79,9-80,25</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a34r">Dm a34r,13-34</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_72v">Mp XVII, 72v</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0218">
                <head>GM II 18</head>
                <div3 xml:id="QV1_GM0218" type="concordance">
                   <ab n="0">KGW/KSA 341/325,26-343/327,2</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_81 E40.xml#Ed_82">Ed 81,4-82,18</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a35r">Dm a35r,1-19</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_81 E40.xml#Ed_82">Ed 81,4-82,18</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a35r">Dm a35r,1-19</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0218" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -1132,84 +704,48 @@
                <head>GM II 19</head>
                <div3 xml:id="QV1_GM0219" type="concordance">
                   <ab n="0">KGW/KSA 343/327,3-345/329,6</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_82 E40.xml#Ed_83 E40.xml#Ed_84">Ed 82,19-84,33</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a35r D20.xml#a36r">Dm a35r,20-39, a36r,1-17</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_82 E40.xml#Ed_83 E40.xml#Ed_84">Ed 82,19-84,33</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a35r D20.xml#a36r">Dm a35r,20-39, a36r,1-17</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0219" type="genesis">
-                  <ab n="0">KGW/KSA 343,11-344,1</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_82 E40.xml#Ed_83">Ed 82,29-83,22</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a35r">Dm a35r,25-35</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#NVII3_70">N VII 3, 70</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 343/327,11-344/328,1</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_82 E40.xml#Ed_83">Ed 82,29-83,22</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a35r">Dm a35r,25-35</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#NVII3_70">N VII 3, 70</ref></ab>
                </div3>
                <div3 xml:id="QV3_GM0219" type="genesis">
-                  <ab n="0">KGW/KSA 344,1-31</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_83 E40.xml#Ed_84">Ed 83,22-84,23</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a35r D20.xml#a36r">Dm a35r,35-39, a36r,1-12</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#NVII3_65">N VII 3, 65,2-24</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 344/328,1-31</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_83 E40.xml#Ed_84">Ed 83,22-84,23</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a35r D20.xml#a36r">Dm a35r,35-39, a36r,1-12</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#NVII3_65">N VII 3, 65,2-24</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0220">
                <head>GM II 20</head>
                <div3 xml:id="QV1_GM0220" type="concordance">
                   <ab n="0">KGW/KSA 345/329,7-346/330,15</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_85 E40.xml#Ed_86">Ed 85,1-86,14</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a36r">Dm a36r,18-37</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_85 E40.xml#Ed_86">Ed 85,1-86,14</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a36r">Dm a36r,18-37</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0220" type="genesis">
                   <ab n="0">KGW/KSA 345/329,8-17</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_85">Ed 85,2-12</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a36r">Dm a36r,19-23</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#NVII3_65">N VII 3, 65,24-27</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_85">Ed 85,2-12</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a36r">Dm a36r,19-23</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#NVII3_65">N VII 3, 65,24-27</ref></ab>
                </div3>
                <div3 xml:id="QV3_GM0220" type="genesis">
                   <ab n="0">KGW/KSA 345/329,21-25, 346/330,2-13</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_85 E40.xml#Ed_86">Ed 85,18-22, 85,32-86,13</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a36r">Dm a36r,25-27,31-37</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#NVII3_66">N VII 3, 66</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_85 E40.xml#Ed_86">Ed 85,18-22, 85,32-86,13</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a36r">Dm a36r,25-27,31-37</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#NVII3_66">N VII 3, 66</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0221">
                <head>GM II 21</head>
                <div3 xml:id="QV1_GM0221" type="concordance">
                   <ab n="0">KGW/KSA 346/330,16-347/331,29</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_86 E40.xml#Ed_87">Ed 86,15-87,33</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a37r">Dm a37r,1-22</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_86 E40.xml#Ed_87">Ed 86,15-87,33</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a37r">Dm a37r,1-22</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0221" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -1218,13 +754,9 @@
             <div2 xml:id="GM0222">
                <head>GM II 22</head>
                <div3 xml:id="QV1_GM0222" type="concordance">
-                  <ab n="0">KGW/KSA 347/331,30-346/333,14</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_88 E40.xml#Ed_89">Ed 88,1-89,25</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a37r D20.xml#a38r">Dm a37r,23-39, a38r,1-7</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 347/331,30-349/333,14</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_88 E40.xml#Ed_89">Ed 88,1-89,25</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a37r D20.xml#a38r">Dm a37r,23-39, a38r,1-7</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0222" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -1233,13 +765,9 @@
             <div2 xml:id="GM0223">
                <head>GM II 23</head>
                <div3 xml:id="QV1_GM02123" type="concordance">
-                  <ab n="0">KGW/KSA 346/333,15-351/335,2</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_89 E40.xml#Ed_90 E40.xml#Ed_91">Ed 89,26-91,19</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a38r">Dm a38r,8-34</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 349/333,15-351/335,2</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_89 E40.xml#Ed_90 E40.xml#Ed_91">Ed 89,26-91,19</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a38r">Dm a38r,8-34</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0223" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -1249,126 +777,78 @@
                <head>GM II 24</head>
                <div3 xml:id="QV1_GM0224" type="concordance">
                   <ab n="0">KGW/KSA 351/335,3-352/336,32</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_91 E40.xml#Ed_92 E40.xml#Ed_93">Ed 91,20-93,25</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a38r D20.xml#a39r D20.xml#a40v">Dm a38r,35-38, a39r,1-29, a40v,1-9</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_91 E40.xml#Ed_92 E40.xml#Ed_93">Ed 91,20-93,25</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a38r D20.xml#a39r D20.xml#a40v">Dm a38r,35-38, a39r,1-29, a40v,1-9</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0224" type="genesis">
-                  <ab n="0">KGW/KSA 351,6-11</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_91">Ed 91,24-29</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a38r">Dm a38r,36-38, a39r,1</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#MpXVII_64v">Mp XVII, 64v,34-38</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 351/335,6-11</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_91">Ed 91,24-29</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a38r">Dm a38r,36-38, a39r,1</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_64v">Mp XVII, 64v,34-38</ref></ab>
                </div3>
                <div3 xml:id="QV3_GM0224" type="genesis">
-                  <ab n="0">KGW/KSA 351,14-27</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_91 E40.xml#Ed_92">Ed 91,32-92,15</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a39r">Dm a39r,2-9</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#WI8_53">W I 8, 53,26-34</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 351/335,14-27</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_91 E40.xml#Ed_92">Ed 91,32-92,15</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a39r">Dm a39r,2-9</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#WI8_53">W I 8, 53,26-34</ref></ab>
                </div3>
                <div3 xml:id="QV4_GM0224" type="genesis">
-                  <ab n="0">KGW/KSA 351,15</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_92">Ed 92,1-2</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="KGWIX.xml#NVII3_36">N VII 3, 36,4-6</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a39r">Dm a39r,3</ref>
-                        </ab>
-                  <ab n="4">
-                            <ref target="KGWIX.xml#WI8_53">W I 8, 53,26</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 351/335,15</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_92">Ed 92,1-2</ref></ab>
+                  <ab n="2"><ref target="KGWIX.xml#NVII3_36">N VII 3, 36,4-6</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a39r">Dm a39r,3</ref></ab>
+                  <ab n="4"><ref target="KGWIX.xml#WI8_53">W I 8, 53,26</ref></ab>
                </div3>
                <div3 xml:id="QV5_GM0224" type="genesis">
-                  <ab n="0">KGW/KSA 351,30-352,3</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_92">Ed 92,19-25</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a39r">Dm a39r,12-14</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#WI8_84">W I 8, 64,24-28</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 351/335,30-352/336,3</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_92">Ed 92,19-25</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a39r">Dm a39r,12-14</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#WI8_84">W I 8, 64,24-28</ref></ab>
                </div3>
                <div3 xml:id="QV6_GM0224" type="genesis">
-                  <ab n="0">KGW/KSA 352,5-11</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_92 E40.xml#Ed_93">Ed 92,27-93,1</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a39r">Dm a39r,15-19</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="KGWIX.xml#WI8_67">W I 8, 67,24-28</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 352/336,5-11</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_92 E40.xml#Ed_93">Ed 92,27-93,1</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a39r">Dm a39r,15-19</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#WI8_67">W I 8, 67,24-28</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0225">
                <head>GM II 25</head>
                <div3 xml:id="QV1_GM0225" type="concordance">
                   <ab n="0">KGW/KSA 353/337,1-6</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_93">Ed 93,26-32</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a41r">Dm a41r,5-9</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_93">Ed 93,26-32</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a41r">Dm a41r,5-9</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0225" type="genesis">
                   <ab n="0">KGW/KSA 353/337,2-3</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_93">Ed 93,27-29</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="KGWIX.xml#NVII3_36">N VII 3, 36,10-15</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#a41r">Dm a41r,5-7</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_93">Ed 93,27-29</ref></ab>
+                  <ab n="2"><ref target="KGWIX.xml#NVII3_36">N VII 3, 36,10-15</ref></ab>
+                  <ab n="3"><ref target="D20.xml#a41r">Dm a41r,5-7</ref></ab>
                </div3>
             </div2>
          </div1>
+         
          <div1 xml:id="GM03">
             <head>GM III</head>
             <div2 xml:id="GM03Titelseite">
                <head>GM III Titelseite</head>
                <div3 xml:id="QV1_GM03Titelseite" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
-               </div3><!-- GM III Motto! -->
+                  <ab n="0">KGW/KSA 355/339,1-7</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_95">Ed 95,1-7</ref></ab>
+                  <ab n="2">fehlt in Dm</ab>
+               </div3>
+               <div3 xml:id="QV2_GM03Titelseite" type="genesis">
+                  <ab n="0">KGW/KSA 355/339,3-7</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_95">Ed 95,3-7</ref></ab>
+                  <ab n="2"><ref target="KGWIX.xml#NVII3_32">N VII 3, 32,28-36</ref><ref target="KGWIX.xml#NVII3_34">34,12-18</ref><ref target="KGWIX.xml#NVII3_35">35,2-12</ref></ab>
+               </div3>
             </div2>
             <div2 xml:id="GM0301">
                <head>GM III 1</head>
                <div3 xml:id="QV1_GM0301" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 357,1-23/339,8-30</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_97">Ed 97,1-25</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b1r">Dm b1r,3-18</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0301" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -1377,49 +857,57 @@
             <div2 xml:id="GM0302">
                <head>GM III 2</head>
                <div3 xml:id="QV1_GM0302" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 358/340,1-359/341,21</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_97 E40.xml#Ed_98  E40.xml#Ed_99">Ed 97,26-99,26</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b2r">Dm b2r,1-22</ref>, <ref target="D20.xml#b3r">b3r,1-16</ref></ab>
+               </div3>
+               <div3 xml:id="QV2_GM0302" type="genesis">
+                  <ab n="0">KGW/KSA 358/340,2-23</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_97 E40.xml#Ed_98">Ed 97,27-98,23</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b2r">Dm b2r,2-16</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#NVII3_74">N VII 3, 74,8-24</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0303">
                <head>GM III 3</head>
                <div3 xml:id="QV1_GM0303" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 359/341,22-361/343,6</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_99 E40.xml#Ed_100 E40.xml#Ed_101">Ed 99,27-101,18</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b3r">Dm b3r,17-24</ref>, <ref target="D20.xml#b4r">b4r,1-24</ref>, <ref target="D20.xml#b5r">b5r,1-5</ref></ab>
+               </div3>
+               <div3 xml:id="QV2_GM0303" type="genesis">
+                  <ab n="0">KGW/KSA 360/342,26-27</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_101">Ed 101,3</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b4r">Dm b4r,19</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_67v">Mp XVII, 67v,2</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0304">
                <head>GM III 4</head>
                <div3 xml:id="QV1_GM0304" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 361/343,7-362/344,21</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_101 E40.xml#Ed_102 E40.xml#Ed_103">Ed 101,19-103,6</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b5r">Dm b5r,6-25</ref>, <ref target="D20.xml#b6r">b6r,1-15</ref></ab>
+               </div3>
+               <div3 xml:id="QV2_GM0304" type="genesis">
+                  <ab n="0">KGW/KSA 361/343,8-31</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_101 E40.xml#Ed_102">Ed 101,20-102,14</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b5r">Dm b5r,7-23</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#NVII3_73 KGWIX.xml#NVII3_74">N VII 3, 73, 74,26-32</ref></ab>
+               </div3>
+               <div3 xml:id="QV3_GM0304" type="genesis">
+                  <ab n="0">KGW/KSA 361/343,21-23</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_102">Ed 102,3-5</ref></ab>
+                  <ab n="2"><ref target="KGWIX.xml#NVII3_35 KGWIX.xml#NVII3_36">N VII 3, 35,21-22,32-36, 36,17-21</ref></ab>
+                  <ab n="3"><ref target="D20.xml#@">Dm b5r,17-18</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0305">
                <head>GM III 5</head>
                <div3 xml:id="QV1_GM0305" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 362/344,22-364/346,17</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_103 E40.xml#Ed_104 E40.xml#Ed_105">Ed 103,7-105,13</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b6r">Dm b6r,16-24</ref>, <ref target="D20.xml#b7r">b7r,1-25</ref>, <ref target="D20.xml#b8r">b8r,1-6</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0305" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -1428,25 +916,23 @@
             <div2 xml:id="GM0306">
                <head>GM III 6</head>
                <div3 xml:id="QV1_GM0306" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 364/346,18-367/349,14</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_105 E40.xml#Ed_106 E40.xml#Ed_107 E40.xml#Ed_108">Ed 105,14-108,26</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b8r">Dm b8r,7-24</ref>, <ref target="D20.xml#b9r">b9r,1-24</ref>, <ref target="D20.xml#b10r">b10r,1-26</ref></ab>
+               </div3>
+               <div3 xml:id="QV2_GM0306" type="genesis">
+                  <ab n="0">KGW/KSA 364/346,32-365/347,6, 365/347,15-367/349,10</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_105 E40.xml#Ed_106 E40.xml#Ed_107 E40.xml#Ed_108">Ed 105,30-106,3, 106,14-108,22</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b8r">Dm b8r,17-21</ref>, <ref target="D20.xml#b9r">b9r,3-24</ref>, <ref target="D20.xml#b10r">b10r,1-21,25-26</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_90v">Mp XVII, 90v</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0307">
                <head>GM III 7</head>
                <div3 xml:id="QV1_GM0307" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 367/349,15-369/351,27</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_108 E40.xml#Ed_109 E40.xml#Ed_110 E40.xml#Ed_111">Ed 108,27-111,20</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b11r">Dm b11r,1-25</ref>, <ref target="D20.xml#b12r">Dm b12r,1-24</ref>, <ref target="D20.xml#b13r">Dm b13r,1-9</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0307" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -1455,25 +941,22 @@
             <div2 xml:id="GM0308">
                <head>GM III 8</head>
                <div3 xml:id="QV1_GM0308" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 369/351,28-374/356,14</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_111 E40.xml#Ed_112 E40.xml#Ed_113 E40.xml#Ed_114 E40.xml#Ed_115 E40.xml#Ed_116 E40.xml#Ed_117">Ed 111,21-117,3</ref></ab>
+                  <ab n="2"><ref target="D20.xml#@">Dm b13r,10-24</ref>, <ref target="D20.xml#b14r">b14r,1-26</ref>, <ref target="D20.xml#b15r">b15r,1-24</ref>, <ref target="D20.xml#b16r">b16r,1-24</ref>, <ref target="D20.xml#b17r">b17r,1-13</ref></ab>
+               </div3>
+               <div3 xml:id="QV2_GM0308" type="genesis">
+                  <ab n="0">KGW/KSA 370/352,9</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_112">Ed 112,3-4</ref></ab>
+                  <ab n="2"><ref target="KGWIX.xml#NVII3_35">N VII 3, 35,23</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0309">
-               <head>GM IIIm9</head>
+               <head>GM III 9</head>
                <div3 xml:id="QV1_GM0309" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 374/356,15-377/359,13</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_117 E40.xml#Ed_118 E40.xml#Ed_119 E40.xml#Ed_120">Ed 117,4-120,21</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b17r">Dm b17r,14-24</ref>, <ref target="D20.xml#b18r">b18r,1-26</ref>, <ref target="D20.xml#b19r">b19r,2-7</ref>, <ref target="D20.xml#b20r">b20r,1-25</ref>, <ref target="D20.xml#b21r">b21r,1-8</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0309" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -1482,37 +965,37 @@
             <div2 xml:id="GM0310">
                <head>GM III 10</head>
                <div3 xml:id="QV1_GM0310" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 377/359,14-379/361,11</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_120 E40.xml#Ed_121 E40.xml#Ed_122">Ed 120,22-122,29</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b21r">Dm b21r,9-24</ref>, <ref target="D20.xml#b22r">b22r,1-24</ref>, <ref target="D20.xml#b23r">b23r,1-3</ref></ab>
+               </div3>
+               <div3 xml:id="QV2_GM0310" type="genesis">
+                  <ab n="0">KGW/KSA 377/359,21-31, 378/360,15-33</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_120 E40.xml#Ed_121 E40.xml#Ed_122">Ed 120,31-121,9, 121,29-122,16</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b21r">Dm b21r,15-21</ref>, <ref target="D20.xml#b22r">b22r,10-21</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_74v">Mp XVII, 74v,18-42</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0311">
                <head>GM III 11</head>
                <div3 xml:id="QV1_GM0311" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 379/361,12-381/363,30</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_122 E40.xml#Ed_123 E40.xml#Ed_124 E40.xml#Ed_125">Ed 122,30-125,29</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b23r">Dm b23r,4-24</ref>, <ref target="D20.xml#b24r">b24r,1-24</ref>, <ref target="D20.xml#b25r">b25r,1-12</ref></ab>
+               </div3>
+               <div3 xml:id="QV2_GM0311" type="genesis">
+                  <ab n="0">KGW/KSA 379/361,13-16</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_122 E40.xml#Ed_123">Ed 122,31-123,2</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b23r">Dm b23r,5-6</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_74v">Mp XVII, 74v,44-46</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0312">
                <head>GM III 12</head>
                <div3 xml:id="QV1_GM0312" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 381/363,31-383/365,21</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_125 E40.xml#Ed_126 E40.xml#Ed_127">Ed 125,30-127,29</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b25r">Dm b25r,13-24</ref>, <ref target="D20.xml#b26r">b26r,1-24</ref>, <ref target="D20.xml#b27r">b27r,1-2</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0312" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -1521,13 +1004,9 @@
             <div2 xml:id="GM0313">
                <head>GM III 13</head>
                <div3 xml:id="QV1_GM0313" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 383/365,22-385/367,23</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_127 E40.xml#Ed_128 E40.xml#Ed_129 E40.xml#Ed_130">Ed 127,30-130,9</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b27r">Dm b27r,3-25</ref>, <ref target="D20.xml#b28r">b28r,1-25</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0313" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -1536,13 +1015,9 @@
             <div2 xml:id="GM0314">
                <head>GM III 14</head>
                <div3 xml:id="QV1_GM0314" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 385/367,24-390/372,2</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_130 E40.xml#Ed_131 E40.xml#Ed_132 E40.xml#Ed_133 E40.xml#Ed_134 E40.xml#Ed_135">Ed 130,10-135,11</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b29r">Dm b29r,1-24</ref>, <ref target="D20.xml#b30r">b30r,1-24</ref>, <ref target="D20.xml#b31r">b31r,1-24</ref>, <ref target="D20.xml#b32r">b32r,1-23</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0314" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -1551,49 +1026,67 @@
             <div2 xml:id="GM0315">
                <head>GM III 15</head>
                <div3 xml:id="QV1_GM0315" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 390/372,3-393/375,16</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_135 E40.xml#Ed_136 E40.xml#Ed_137 E40.xml#Ed_138 E40.xml#Ed_139">Ed 135,12-139,11</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b33r">Dm b33r,1-24</ref>, <ref target="D20.xml#b34r">b34r,1-24</ref>, <ref target="D20.xml#b35r">b35r,1-16</ref></ab>
+               </div3>
+               <div3 xml:id="QV2_GM0315" type="genesis">
+                  <ab n="0">KGW/KSA 390/372,31-391/373,1, 391/373,30-392/374,23</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_136 E40.xml#Ed_137 E40.xml#Ed_138">Ed 136,13-14, 137,15-138,12</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b33r">Dm b33r,18-19</ref>, <ref target="D20.xml#b34r">b34r,9-24</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_117r">Mp XVII, 117r</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0316">
                <head>GM III 16</head>
                <div3 xml:id="QV1_GM0316" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 393/375,17-395/377,9</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_139 E40.xml#Ed_140 E40.xml#Ed_141">Ed 139,12-141,12</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b35r">Dm b35r,17-26</ref>, <ref target="D20.xml#b36r">b36r,1-24</ref>, <ref target="D20.xml#b37r">b37r,1-6</ref></ab>
+               </div3>
+               <div3 xml:id="QV2_GM0316" type="genesis">
+                  <ab n="0">KGW/KSA 395/377,1-4</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_141">Ed 141,4-7</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b37r">Dm b37r,1-3</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_83v">Mp XVII, 83v,9-12</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0317">
                <head>GM III 17</head>
-               <div3 xml:id="QV1_GM0317" type="concordance"><!-- Cb auch aufnehmen? s.o. Cb1 für GM I 1-10! -->
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+               <div3 xml:id="QV1_GM0317" type="concordance">
+                  <ab n="0">KGW/KSA 395/377,10-400/382,7</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_141 E40.xml#Ed_142 E40.xml#Ed_143 E40.xml#Ed_144 E40.xml#Ed_145 E40.xml#Ed_146 E40.xml#Ed_147">Ed 141,13-147,5</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_145 K11.xml#Cb_146 K11.xml#Cb_147">Cb10 145,1-147,5</ref></ab>
+                  <ab n="3"><ref target="D20.xml#b37r">Dm b37r,7-25</ref>, <ref target="D20.xml#b38r">b38r,1-25</ref>, <ref target="D20.xml#b39r">b39r,1-24</ref>, <ref target="D20.xml#b40r">b40r,1-22</ref></ab>
                </div3>
+               <div3 xml:id="QV2_GM0317" type="genesis">
+                  <ab n="0">KGW/KSA 398/380,19-20</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_145">Ed 145,6-8</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_145">Cb10 145,6-8</ref></ab>
+                  <ab n="3"><ref target="D20.xml#b39r">Dm b39r,21-22</ref></ab>
+                  <ab n="4"><ref target="KGWIX.xml#MpXVII_114v">Mp XVII, 114v,18-20</ref></ab>
+               </div3>
+               <div3 xml:id="QV3_GM0317" type="genesis">
+                  <ab n="0">KGW/KSA 399/381,10-11</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_146">Ed 146,3-4</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_146">Cb10 146,3-4</ref></ab>
+                  <ab n="3"><ref target="D20.xml#b40r">Dm b40r,11-12</ref></ab>
+                  <ab n="4"><ref target="KGWIX.xml#NVII3_38">N VII 3, 38,2-6</ref></ab>
+               </div3>
+               <div3 xml:id="QV4_GM0317" type="genesis">
+                  <ab n="0">KGW/KSA 399/381,14-22</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_146">Ed 146,6-16</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_146">Cb10 146,6-16</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#NVII3_37">N VII 3, 37,2-18</ref></ab>
+               </div3>            
             </div2>
             <div2 xml:id="GM0318">
                <head>GM III 18</head>
                <div3 xml:id="QV1_GM0318" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 400/382,8-402/384,24</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_147 E40.xml#Ed_148 E40.xml#Ed_149 E40.xml#Ed_150">Ed 147,6-150,4</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_147 K11.xml#Cb_148 K11.xml#Cb_149 E40.xml#Ed_150">Cb10 147,6-150,4</ref></ab>
+                  <ab n="3"><ref target="D20.xml#b40r">Dm b40r,23-24</ref>, <ref target="D20.xml#b41r">b41r,1-24</ref>, <ref target="D20.xml#b42r">b42r,1-24</ref>, <ref target="D20.xml#b43r">b43r,1-5</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0318" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -1602,13 +1095,10 @@
             <div2 xml:id="GM0319">
                <head>GM III 19</head>
                <div3 xml:id="QV1_GM0319" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 402/384,25-405/387,18</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_150 E40.xml#Ed_151 E40.xml#Ed_152 E40.xml#Ed_153">Ed 150,5-153,14</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_150 K11.xml#Cb_151 K11.xml#Cb_152 K11.xml#Cb_153">Cb10 150,5-153,14</ref></ab>
+                  <ab n="3"><ref target="D20.xml#b43r">Dm b43r,6-25</ref>, <ref target="D20.xml#b44r">b44r,1-24</ref>, <ref target="D20.xml#b45r">b45r,1-17</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0319" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -1617,13 +1107,10 @@
             <div2 xml:id="GM0320">
                <head>GM III 20</head>
                <div3 xml:id="QV1_GM0320" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 405/387,19-408/390,33</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_153 E40.xml#Ed_154 E40.xml#Ed_155 E40.xml#Ed_156 E40.xml#Ed_157">Ed 153,15-157,18</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_153 K11.xml#Cb_154 K11.xml#Cb_155 K11.xml#Cb_156 K11.xml#Cb_157">Cb10 153,15-157,18</ref></ab>
+                  <ab n="3"><ref target="D20.xml#b45r">Dm b45r,18-24</ref>, <ref target="D20.xml#b46r">b46r,1-24</ref>, <ref target="D20.xml#b47r">b47r,1-25</ref>, <ref target="D20.xml#b48r">b48r,1-11,26</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0320" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -1632,13 +1119,10 @@
             <div2 xml:id="GM0321">
                <head>GM III 21</head>
                <div3 xml:id="QV1_GM0321" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 409/391,1-410/392,29</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_157 E40.xml#Ed_158 E40.xml#Ed_159">Ed 157,19-159,26</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_157 K11.xml#Cb_158 K11.xml#Cb_159">Cb10 157,19-159,26</ref></ab>
+                  <ab n="3"><ref target="D20.xml#b48r">Dm b48r,12-25</ref>, <ref target="D20.xml#b49r">b49r,1-22,25-26</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0321" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -1647,37 +1131,52 @@
             <div2 xml:id="GM0322">
                <head>GM III 22</head>
                <div3 xml:id="QV1_GM0322" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 410/392,30-413/395,9</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_159 E40.xml#Ed_160 E40.xml#Ed_161 E40.xml#Ed_162">Ed 159,27-162,23</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_159 K11.xml#Cb_160">Ed 159,27-160,33</ref></ab>
+                  <ab n="3"><ref target="D20.xml#b49r">Dm b49r,23-24</ref>, <ref target="D20.xml#b50r">b50r,1-24</ref>, <ref target="D20.xml#b51r">b51r,1-24</ref>, <ref target="D20.xml#b52r">b52r,1-3</ref></ab>
+               </div3>
+               <div3 xml:id="QV2_GM0322" type="genesis">
+                  <ab n="0">KGW/KSA 410/392,31-412/394,20</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_159 E40.xml#Ed_160 E40.xml#Ed_161">Ed 159,28-161,29</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_159 K11.xml#Cb_160">Cb10 159,28-160,33</ref></ab>
+                  <ab n="3"><ref target="D20.xml#b49r">Dm b49r,24</ref>, <ref target="D20.xml#b50r">b50r,1-24</ref>, <ref target="D20.xml#b51r">b51r,1-14</ref></ab>
+                  <ab n="4"><ref target="KGWIX.xml#MpXVII_33v">Mp XVII, 33v</ref></ab>
+               </div3>
+               <div3 xml:id="QV3_GM0322" type="genesis">
+                  <ab n="0">KGW/KSA  411/393,4-5, 412/394,16</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_160 E40.xml#Ed_161">Ed 160,2-4, 161,24</ref></ab>
+                  <ab n="2"><ref target="K11.xml#Cb_160">Cb10 160,2-4</ref></ab>
+                  <ab n="3"><ref target="D20.xml#b50r">Dm b50r,3-4</ref>, <ref target="D20.xml#b51r">b51r,12</ref></ab>
+                  <ab n="4"><ref target="KGWIX.xml#MpXV_113r">Mp XV, 113r,13,43</ref></ab>
+               </div3>
+               <div3 xml:id="QV4_GM0322" type="genesis">
+                  <ab n="0">KGW/KSA 412/394,21-413/395,9</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_161 E40.xml#Ed_162">Ed 161,29-162,23</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b51r">Dm b51r,14-24</ref>, <ref target="D20.xml#b52r">b52r,1-3</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXV_113r">Mp XV, 113r,2-20,30-36,43</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0323">
                <head>GM III 23</head>
                <div3 xml:id="QV1_GM0323" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 413/395,10-416/398,2</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_162 E40.xml#Ed_163 E40.xml#Ed_164 E40.xml#Ed_165">Ed 162,24-165,33</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b52r">Dm b52r,4-24</ref>, <ref target="D20.xml#b53r">b53r,1-25</ref>, <ref target="D20.xml#b54r">b54r,1-16</ref></ab>
+               </div3>
+               <div3 xml:id="QV2_GM0323" type="genesis">
+                  <ab n="0">KGW/KSA 413/395,11-14</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_162">Ed 162,25-29</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b52r">Dm b52r,5-6</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXV_113r">Mp XV, 113r,40-42</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0324">
                <head>GM III 24</head>
                <div3 xml:id="QV1_GM0324" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 416/398,3-419/401,30</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_166 E40.xml#Ed_167 E40.xml#Ed_168 E40.xml#Ed_169 E40.xml#Ed_170">Ed 166,1-170,18</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b54r">Dm b54r,17-24</ref>, <ref target="D20.xml#b55r">b55r,1-25</ref>, <ref target="D20.xml#b56r">b56r,1-24</ref>, <ref target="D20.xml#b57r">b57r,1-20</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0324" type="genesis">
                   <ab>keine Vs überliefert</ab>
@@ -1686,105 +1185,108 @@
             <div2 xml:id="GM0325">
                <head>GM III 25</head>
                <div3 xml:id="QV1_GM0325" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 420/402,1-423/405,27</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_170 E40.xml#Ed_171 E40.xml#Ed_172 E40.xml#Ed_173 E40.xml#Ed_174 E40.xml#Ed_175">Ed 170,19-175,5</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b57r">Dm b57r,21-24</ref>, <ref target="D20.xml#b58r">b58r,1-25</ref>, <ref target="D20.xml#b59r">b59r,1-24</ref>, <ref target="D20.xml#b60r">b60r,1-26</ref></ab>
+               </div3>
+               <div3 xml:id="QV2_GM0325" type="genesis">
+                  <ab n="0">KGW/KSA 422/404,23-26</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_173">Ed 173,27-30</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b60r">Dm b60r,3-5</ref></ab>
+                  <ab n="3" cert="unknown"><ref target="KGWIX.xml#MpXVII_71v">Mp XVII, 71v,26-28</ref></ab>
+               </div3>
+               <div3 xml:id="QV3_GM0325" type="genesis">
+                  <ab n="0">KGW/KSA 423/405,1-2</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_174">Ed 174,8-9</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b60r">Dm b60r,11</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_83r">Mp XVII, 83r,10</ref></ab>
+               </div3>
+               <div3 xml:id="QV4_GM0325" type="genesis">
+                  <ab n="0">KGW/KSA 423/405,14-17,21-23</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_174">Ed 174,23-27,31-33</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b60r">Dm b60r,18-22</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_61r">Mp XVII, 61r,2-4,10-12</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0326">
                <head>GM III 26</head>
                <div3 xml:id="QV1_GM0326" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 423/405,28-426/408,23</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_175 E40.xml#Ed_176 E40.xml#Ed_177 E40.xml#Ed_178">Ed 175,6-178,20</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b61r">Dm b61r,1-25</ref>, <ref target="D20.xml#b62r">b62r,1-25</ref>, <ref target="D20.xml#b63r">b63r,5-10,14-20</ref>, <ref target="D20.xml#b64r">b64r,4-8</ref>, <ref target="D20.xml#b65r">b65r,4-15,18-19</ref>, <ref target="D20.xml#b66r">b66r,1-9</ref></ab>
                </div3>
                <div3 xml:id="QV2_GM0326" type="genesis">
-                  <ab n="0">KGW/KSA 425/407,34-426/408,4</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_177">Ed 177,26-30</ref>
-                        </ab><!-- paralysis agitans -->
-                  <ab n="2">
-                            <ref target="D20.xml#b64r">Dm b64r,4-8</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#b65r">Dm b65r,4-8</ref>
-                        </ab>
-                  <ab n="4">
-                            <ref target="KGWIX.xml#NVII3_36">N VII 3, 36,36-42</ref>
-                        </ab>
-                  <ab n="5">
-                            <ref target="D20.xml#b62r D20.xml#b66r">Dm b62r,24-26, b66r,1</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 424/406,23-28</ab><!-- Dühring -->
+                  <ab n="1"><ref target="E40.xml#Ed_176">Ed 176,5-10</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b63r">Dm b63r,5-10</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#NVII3_93">N VII 3, 93,32-40</ref>, <ref target="KGWIX.xml#NVII3_79 KGWIX.xml#NVII3_80">N VII 3, 79-80</ref>, <ref target="KGWIX.xml#NVII3_48">N VII 3, 48</ref>, <ref target="KGWIX.xml#NVII3_40">N VII 3, 40,31-36</ref></ab>
+                  <ab n="4"><ref target="D20.xml#b61r">Dm b61r,19-21</ref></ab>
                </div3>
                <div3 xml:id="QV3_GM0326" type="genesis">
+                  <ab n="0">KGW/KSA 425/407,22-29</ab><!-- christlich-arisch-biedermännisch -->
+                  <ab n="1"><ref target="E40.xml#Ed_177">Ed 177,13-19</ref></ab>
+                  <ab n="2"><ref target="KGWIX.xml#NVII3_79">N VII 3, 79,15</ref></ab>
+                  <ab n="3"><ref target="D20.xml#b63r">Dm b63r,14-20</ref></ab>
+                  <ab n="4"><ref target="D20.xml#b62r">Dm b62r,17-20</ref></ab>
+               </div3>
+               <div3 xml:id="QV4_GM0326" type="genesis">
+                  <ab n="0">KGW/KSA 425/407,29-31</ab><!-- Schwindel-Geisterei -->
+                  <ab n="1"><ref target="E40.xml#Ed_177">Ed 177,19-21</ref></ab>
+                  <ab n="2" cert="unknown"><ref target="KGWIX.xml#NVII3_40">N VII 3, 40,22-26</ref></ab>
+                  <ab n="3"><ref target="D20.xml#b62r">Dm b62r,20-21</ref></ab>
+               </div3>
+               <div3 xml:id="QV5_GM0326" type="genesis">
+                  <ab n="0">KGW/KSA 425/407,34-426/408,4</ab><!-- paralysis agitans -->
+                  <ab n="1"><ref target="E40.xml#Ed_177">Ed 177,26-30</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b64r">Dm b64r,4-8</ref></ab>
+                  <ab n="3"><ref target="D20.xml#b65r">Dm b65r,4-8</ref></ab>
+                  <ab n="4"><ref target="KGWIX.xml#NVII3_36">N VII 3, 36,36-42</ref></ab>
+                  <ab n="5"><ref target="D20.xml#b62r">Dm b62r,24-26</ref>, <ref target="D20.xml#b66r">b66r,1</ref></ab>
+               </div3>
+               <div3 xml:id="QV6_GM0326" type="genesis">
                   <ab n="0">KGW/KSA 426/408,4-9</ab><!-- Europa ist heute … Luft überall -->
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_177 E40.xml#Ed_178">Ed 177,30-178,3</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#b65r">Dm b65r,8-15</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#b66r">Dm b66r,1-3</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_177 E40.xml#Ed_178">Ed 177,30-178,3</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b65r">Dm b65r,8-15</ref></ab>
+                  <ab n="3"><ref target="D20.xml#b66r">Dm b66r,1-3</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0327">
                <head>GM III 27</head>
                <div3 xml:id="QV1_GM0327" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 426/408,24-429/411,2</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_178 E40.xml#Ed_179 E40.xml#Ed_180 E40.xml#Ed_181">Ed 178,21-181,12</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b66r">Dm b66r,10-26</ref>, <ref target="D20.xml#b67r">b67r,1-24</ref>, <ref target="D20.xml#b68r">b68r,1-8</ref>, <ref target="D20.xml#b64r">b64r,15-19</ref></ab> 
                </div3>
                <div3 xml:id="QV2_GM0327" type="genesis">
                   <ab n="0">KGW/KSA 427/409,1</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_178">Ed 178,31</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#a1r">Dm a1r,20</ref>
-                        </ab>
-                  <ab n="3">
-                            <ref target="D20.xml#b66r">Dm b66r,14-15</ref>
-                        </ab>
+                  <ab n="1"><ref target="E40.xml#Ed_178">Ed 178,31</ref></ab>
+                  <ab n="2"><ref target="D20.xml#a1r">Dm a1r,20</ref></ab>
+                  <ab n="3"><ref target="D20.xml#b66r">Dm b66r,14-15</ref></ab>
                </div3>
             </div2>
             <div2 xml:id="GM0328">
                <head>GM III 28</head>
                <div3 xml:id="QV1_GM0328" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_@">Ed @</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">KGW/KSA 429/411,3-430/412,16</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_181 E40.xml#Ed_182">Ed 181,13-182,33</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b68r">Dm b68r,9-24</ref>, <ref target="D20.xml#b69r">b69r,1-16</ref></ab>
+               </div3>
+               <div3 xml:id="QV2_GM0328" type="genesis">
+                  <ab n="0">KGW/KSA 429/411,3-430/412,16</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_181 E40.xml#Ed_182">Ed 181,13-182,33</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b68r">Dm b68r,9-24</ref>, <ref target="D20.xml#b69r">b69r,1-16</ref></ab>
+                  <ab n="3"><ref target="KGWIX.xml#MpXVII_111v">Mp XVII, 111v</ref></ab>
                </div3>
             </div2>
          </div1>
+         
          <div1 xml:id="GMInhaltsverzeichnis">
             <div2 xml:id="GMInhalt">
                <head>GM Inhalt</head>
                <div3 xml:id="QV1_GMInhalt" type="concordance">
-                  <ab n="0">KGW/KSA @</ab>
-                  <ab n="1">
-                            <ref target="E40.xml#Ed_183">Ed 183</ref>
-                        </ab>
-                  <ab n="2">
-                            <ref target="D20.xml#@">Dm @</ref>
-                        </ab>
+                  <ab n="0">vgl. KGW/KSA 434/423-424</ab>
+                  <ab n="1"><ref target="E40.xml#Ed_183">Ed 183</ref></ab>
+                  <ab n="2"><ref target="D20.xml#b70r">Dm b70r,4-7</ref></ab>
                </div3>
             </div2>
          </div1>

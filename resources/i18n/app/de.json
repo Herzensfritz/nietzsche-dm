@@ -5,6 +5,7 @@
     		"changes": "Bearbeitungsschritte",
     		"concordance": "Konkordanz",
     		"genesis": "Vorstufen",
+    	
     		"querverweise": "Querverweise",
     		"pageInfo": "Seiteninformationen",
     		"showTimeline": "Zeitstrahl anzeigen",
@@ -17,6 +18,7 @@
     		"author": "Autor",
     		"editor": "Editoren",
     		"date": "Datum",
+    		"handNotes": "Hände und Schreibmittel",
     		"msDesc": "Manuskriptbeschreibung",
     		"msIdentifier": "Manuskriptidentifikation",
     		"publicationStmt": "Publikation",
