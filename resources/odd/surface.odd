@@ -445,6 +445,10 @@
         <pb:template xmlns="" xml:space="preserve"><h1>Metadaten</h1>
         <div>[[content]]</div></pb:template>
         </model>
+         <model output="latex" behaviour="metadata"/>
+        <model output="fo" behaviour="omit"/>
+        <model output="web" predicate="$parameters?header='short'" behaviour="block"/>
+        
     </elementSpec>
     <elementSpec ident="fileDesc" mode="change">
         <model predicate="$parameters?mode='meta'" behaviour="pass-through">
@@ -453,9 +457,24 @@
             <div>[[content]]</div>
       </pb:template>
         </model>
+        <modelSequence predicate="$parameters?header='short'">
+                          <model behaviour="block" cssClass="header-short">
+                              <param name="content" value="titleStmt"/>
+                          </model>
+                          <model behaviour="block" cssClass="header-short">
+                              <param name="content" value="editionStmt"/>
+                          </model>
+                          <model behaviour="block" cssClass="header-short">
+                              <param name="content" value="publicationStmt"/>
+                          </model>
+        </modelSequence>
+        <model behaviour="title">
+                          <param name="content" value="titleStmt"/>
+        </model>
     </elementSpec>
     <elementSpec ident="fw" mode="change">
-                    <model predicate="del and not(del[@cause])" behaviour="inline">
+        <model predicate="contains(@hand,'#GSA') or contains(@hand, '#N-Archiv') or contains(@hand, '#typesetter')" behaviour="omit"/>
+        <model predicate="del and not(del[@cause])" behaviour="inline">
             <param name="place" value="@place"/>
             <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="id" value="substring-after(@corresp, '#')"/>
@@ -478,7 +497,7 @@
                       </p>
           </pb-popover></pb:template>
         </model>
-                    <model predicate="not(del) and anchor[@corresp]" behaviour="inline">
+        <model predicate="not(del) and anchor[@corresp]" behaviour="inline">
             <param name="place" value="@place"/>
             <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="highlightKey" value="substring-after(anchor[1]/@corresp, '#')"/>
@@ -497,7 +516,7 @@
                       </p>
           </pb-popover></pb:template>
         </model>
-                    <model predicate="not(del)" behaviour="inline">
+        <model predicate="not(del)" behaviour="inline">
             <param name="place" value="@place"/>
             <param name="hand" value="replace(@hand, '#', '')"/>
             <param name="id" value="replace(@corresp, '#','')"/>
@@ -523,7 +542,7 @@
         <model predicate="@n" behaviour="listItem"/>
     </elementSpec>
     <elementSpec ident="div" mode="change">
-        <model predicate="@type='qvDiv'" behaviour="pass-through">
+        <model predicate="@type='qvDiv' and p" behaviour="pass-through">
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><div id="qvInfoPage" class="infoPage"> 
             <pb-collapse opened="opened" emit="transcription">
@@ -750,15 +769,19 @@
         </model>
                 </elementSpec>
     <elementSpec ident="ref" mode="change">
-        <model predicate="@target and parent::desc" behaviour="pass-through">
+        <model predicate="@target and parent::desc" behaviour="link">
+            <param name="content" value="."/>
+            <param name="uri" value="concat($parameters?doc,'?template=meta.html', @target)"/>
+        </model>
+       <!-- <model predicate="@target and parent::desc" behaviour="pass-through">
             <param name="id" value="substring-after(@target, '#')"/>
             <param name="content" value="."/>
-            <param name="note" value="id(substring-after(@target, '#'), root($parameters?root))/note/node()"/>
-             <param name="style" value="if (contains(@target, 'black') or contains(@target, 'brown')) then ('background-color: white;') else ()"/>
+             <param name="note" value="if(substring-after(@target, '#')) then (id(substring-after(@target, '#'), root($parameters?root))/note/node()) else ()"/>
+             <param name="style" value="if (contains(@target, 'black') or contains(@target, 'brown')) then ('background-color: white;') else ()"/> 
             <pb:template xmlns="" xml:space="preserve"><span id="[[id]]" class="info trigger popover">[[content]]</span><pb-popover for="[[id]]" theme="material" placement="left">
             <span class="[[id]]" style="[[style]]">[[content]]</span>
-            <p>[[note]]</p></pb-popover></pb:template>
-        </model>
+            <p>[[note]]</p></pb-popover></pb:template> 
+        </model> -->
         <model predicate="@target and parent::ab" behaviour="pass-through">
             <param name="id" value="let $targetToken := tokenize(@target)                                      let $id := substring-after($targetToken[1], '#')                                     let $node := id(concat('srcD_surface_', $id), root($parameters?root))                                     return if ($node) then (util:node-id($node)) else ()"/>
             <param name="channel" value="let $targetToken := tokenize(@target)                                      let $id := substring-after($targetToken[1], '#')                                     let $node := id($id, root($parameters?root))                                     return if ($node) then ('transcription') else ('nowhere')"/>
@@ -816,6 +839,23 @@
                 <table>[[content]]</table>
             </pb:template>
         </model>
+        <modelSequence output="web" predicate="$parameters?header='short'">
+                          <model behaviour="link">
+                              <param name="content" value="title[1]"/>
+                              <param name="uri" value="$parameters?doc"/>
+                          </model>
+                          <model behaviour="block">
+                              <param name="content" value="subsequence(title, 2)"/>
+                          </model>
+                          <model behaviour="block">
+                              <param name="content" value="author"/>
+                          </model>
+                          <model behaviour="link">
+                              <param name="content" value="'Metadaten'"/>
+                              <param name="uri" value="concat($parameters?doc,'?template=meta.html')"/>
+                          </model>
+        </modelSequence>
+        <model output="web" behaviour="block"/>
     </elementSpec>
      <elementSpec ident="idno" mode="change">
         <model predicate="$parameters?mode='meta'" behaviour="pass-through">
@@ -937,12 +977,11 @@
             <param name="id" value="@xml:id"/>
             <param name="source" value="substring-after(parent::div/@source, '#')"/>
             <param name="content" value="."/>
-            <param name="date" value="date/text()"/>
+            <param name="uri" value="concat('?template=timeline.html#', @xml:id)"/>
             <pb:template xmlns="" xml:space="preserve">
-                <li><pb-popover theme="material" placement="left" data-debug="0">
-                    <span slot="default"><a href="?template=timeline.html#[[id]]">[[date]]</a> <pb-load src="document1" url="api/handNote4change/[[id]]/[[source]]" silent="silent" auto="auto" emit="transcription" load-once="load-once"/></span>
-                    <span slot="alternate">[[content]]</span>
-                </pb-popover></li>
+                <li>
+                    <span class="changePreview"><a href="[[path]]">[[content]]</a> <pb-load src="document1" url="api/handNote4change/[[id]]/[[source]]" silent="silent" auto="auto" emit="transcription" load-once="load-once"/></span>
+                    </li>
             </pb:template>
         </model>
        
@@ -958,7 +997,11 @@
                 </elementSpec>
                 <elementSpec ident="div1" mode="add"/>
     <elementSpec ident="handNote" mode="add">
-        <model behaviour="pass-through">
+        <model behaviour="link">
+            <param name="content" value="."/>
+            <param name="uri" value="concat($parameters?doc,'?template=meta.html#', @xml:id)"/>
+        </model>
+       <!-- <model behaviour="pass-through">
             <param name="content" value="."/>
             <param name="id" value="@xml:id"/>
             <param name="style" value="if (contains(@xml:id, 'black') or contains(@xml:id, 'brown')) then ('background-color: white;') else ()"/>
@@ -970,7 +1013,7 @@
                     <p>[[note]]</p>
                 </pb-popover>
             </pb:template>
-        </model>
+        </model> -->
     </elementSpec>
             </schemaSpec>
         </body>

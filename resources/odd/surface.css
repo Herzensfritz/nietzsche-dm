@@ -28,6 +28,10 @@ ul.letters, ul.pages, ul.handNotes {
 .changeInfo {
     padding: 1em;
 }
+.changePreview {
+    max-width: 21em;
+    display: block;
+}
 .change {
     min-width: 45em;
     text-align: justify;
@@ -79,12 +83,12 @@ ul.letters, ul.pages, ul.handNotes {
 .typesetter_blue {
     color: var(--blue, blue);
 }
-.typesetter_black, .typesetter_black1 {
-    color: var(--typesetter_black, black);
-    font-weight: 600;
+.Koeselitz_black, .typesetter_black, .typesetter_black1, .typesetter_black2 {
+    color: var(--typesetter_black, green);
+    font-style: italic;
 }
-.N_black2 {
-    color: var(--nblack2);
+.N_black1,.N_black2, .N_black3, .N_black4 {
+    color: var(--nblack);
 }
 .transkriptionField {background-color: var(--tpField, #CED5CE); padding-right: 20px; padding-left: 5px; padding-top: 10px; padding-bottom: 10px;margin-top: 3em; margin-left: 30px; width: max-content;}
 .highlight, .metamark:hover { background-color: var(--highlight); }
@@ -126,18 +130,25 @@ ul.letters, ul.pages, ul.handNotes {
      text-decoration: none;
     }
    .EOL { color: red;}
-   .XXX_red, .N_red { color: #dc4731;}
+   .XXX_red, .N_red { color: var(--nred,#dc4731); font-weight: bold;}
+   .N_blue { color: var(--nblue,blue); font-weight: bold;}
    .N-Archiv_red { color: #b8390e;font-weight: bold;}
-   .N_pencil { color: gray; font-weight: bold;}
-   .Koeselitz_pencil { color: var(--Koeselitz_pencil, gray); }
-   .N_brown1, .N_brown { color: var(--nbrown);}
+   .N_pencil { color: var(--npencil,gray); font-weight: bold;}
+   .Koeselitz_pencil, .typesetter_pencil { color: var(--npencil, gray); font-style: italic; font-weight: bold;}
+   .Koeselitz_blue, .typesetter_blue { color: var(--nblue, blue); font-style: italic; font-weight: bold;}
+   .N_brown1, .N_brown, .N_brown2, .N_brown3 { color: var(--nbrown);}
    div.hand.toggle span.lnr ~ span:not(.hand), div.hand.toggle span.lnr ~ span span, span.hand.toggle, span.hand.toggle span {
         background: var(--highlight, yellow);
     }
     div.hand.toggle .hand:not(.toggle),  div.hand.toggle .hand:not(.toggle) span  {
          background: var(--tpField, #CED5CE);
     }
-    .strikethrough-typesetter_black1.toggle, .strikethrough-Koeselitz_pencil.toggle, .strikethrough-N_brown1.toggle, .strikethrough-N_red.toggle, .hatching-N_brown1.toggle, .hatching-N_brown2.toggle, .deleted-N_brown1.toggle, 
+    .strikethrough-typesetter_black2.toggle,
+    .strikethrough-typesetter_black1.toggle, 
+    .strikethrough-Koeselitz_pencil.toggle, 
+    .strikethrough-N_brown1.toggle, .strikethrough-N_red.toggle,
+    .hatching-N_brown4.toggle, .hatching-N_brown3.toggle,
+    .hatching-N_brown1.toggle, .hatching-N_brown2.toggle, .deleted-N_brown1.toggle, 
     .deleted-N_brown2.toggle   {
         background: var(--delHighlight, gray);
     }
@@ -150,14 +161,25 @@ ul.letters, ul.pages, ul.handNotes {
       top: 3px;
       border-left: 2.5px solid;
    }
-   .indent { margin-left: 1em;}
+    .indent, .ident1 { margin-left: 1em;}
+   .indent2 { margin-left: 2em;}
+   .indent3 { margin-left: 3em;}
+   .indent4 { margin-left: 4em;}
+   .indent5 { margin-left: 5em;}
    *[draggable] { cursor: grab; }
     .deleted, .deleted-000, .hatching { cursor: context-menu; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAX/GZH4/4FsRpgAmAOSBBFwDkgAAIKuBATRTAAZAAAAAElFTkSuQmCC ) repeat; }
     span.N_red .hatching, .red-deleted { cursor: context-menu; background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='2000' stroke='red' stroke-dasharray='1.2 1.8 1.2' d='M1,1 1500,1500'/></svg>") repeat; }
     .hex-deleted { background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='240' stroke='%23750606' stroke-dasharray='1' d='M1,1 150,150'/></svg>") repeat; }
     .new-deleted { background:url("https://upload.wikimedia.org/wikipedia/commons/7/73/Schraffur_fein_diagonal_hoch.svg") repeat; }
-   .deleted-N_brown1, .hatching-N_brown1 { cursor: context-menu; background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='2000' stroke='%235C4033' stroke-dasharray='0.1 0.2 0.1 0.2' d='M1,1 1500,1500'/></svg>") repeat; }
-   .N_brown1 .hatching, .N_brown1 .deleted { cursor: context-menu; background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='2000' stroke='%235C4033' stroke-dasharray='0.1 0.2 0.1 0.2' d='M1,1 1500,1500'/></svg>") repeat; }
+    .deleted-N_brown, .hatching-N_brown,
+   .deleted-N_brown1, .hatching-N_brown1, 
+   .deleted-N_brown2, .hatching-N_brown2,
+   .deleted-N_brown3, .hatching-N_brown3,
+   .deleted-N_brown4, .hatching-N_brown4 { 
+       cursor: context-menu; background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='2000' stroke='%239b6b56' stroke-dasharray='1 2 1 2' d='M1,1 1500,1500'/></svg>") repeat; }
+   .N_brown1 .hatching, .N_brown1 .deleted, .N_brown2 .hatching, .N_brown2 .deleted,
+   .N_brown3 .hatching, .N_brown3 .deleted, .N_brown4 .hatching, .N_brown4 .deleted { 
+       cursor: context-menu; background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='2000' stroke='%239b6b56' stroke-dasharray='1 2 1 2' d='M1,1 1500,1500'/></svg>") repeat; }
    .GSA_pencil { color: #6b6b6b;font-family: cursive;} 
      .singleBlock { position: relative; padding-top: 5em; padding-bottom: 5em;}
      .firstBlock { position: relative; padding-top: 5em; }
@@ -279,19 +301,24 @@ ul.letters, ul.pages, ul.handNotes {
     }
     .overwritten { text-decoration: line-through; color: red;}
         .superimposed { color: green;}
-    .strikethrough, .strikethrough1,.strikethrough2 , .strikethrough-typesetter_black1, .strikethrough-Koeselitz_pencil, .strikethrough-N_brown1 { text-decoration: line-through; }
+    .strikethrough, .strikethrough1,.strikethrough2 ,.strikethrough-typesetter_black2,  .strikethrough-typesetter_black1, .strikethrough-Koeselitz_pencil, .strikethrough-N_brown1 { text-decoration: line-through; }
     .strikethrough-N_brown1 {
         text-decoration-color: var(--nbrown, brown);
-        text-decoration-thickness: 3px;
+        text-decoration-thickness: 0.2em;
     }
-    .strikethrough-Koeselitz_pencil {
-        text-decoration-color:var(--Koeselitz_pencil, gray);
-        text-decoration-thickness: 0.1em;
+    .strikethrough-Koeselitz_blue, .strikethrough-typesetter_blue {
+        text-decoration-color:var(--nblue, blue);
+        text-decoration-thickness: 0.2em;
     }
-    .strikethrough-typesetter_black1 {
+    .strikethrough-Koeselitz_pencil, .strikethrough-typesetter_pencil {
+        text-decoration-color:var(--npencil, gray);
+        text-decoration-thickness: 0.2em;
+    }
+    .strikethrough-Koeselitz_black, .strikethrough-typesetter_black1, .strikethrough-typesetter_black2 {
         text-decoration-color:var(--typesetter_black, black);
-        text-decoration-thickness: 0.1em;
+        text-decoration-thickness: 0.2em;
     }
+    
         .overwritten-punctuation { position: relative; color: red; }
         .overwritten-punctuation:before {
            position: absolute;
