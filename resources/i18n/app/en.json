@@ -1,5 +1,14 @@
 {
     "myapp": {
+    	"unclear": {
+    		"illegible": "illegible",
+    		"incomplete": "incomplete",
+    		"inoperable": "inoperable",
+    		"hatching": "hatching",
+    		"margin": "margin",
+    		"strikethrough": "strikethrough",
+    		"because": "because of"
+    	},
     	"menu": {
     		"appNotes": "Editor Notes",
     		"changes": "Changes",

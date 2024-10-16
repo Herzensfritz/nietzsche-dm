@@ -106,11 +106,37 @@ declare function local:monthMaps($year, $changes, $index){
 
 declare function pages:timeline-link($node as node(), $model as map(*)) {
     if ($model?template != 'timeline.html') then (
+        
         let $file := if ($model?doc and doc(concat($config:data-root,'/', $model?doc))//tei:profileDesc/tei:creation/tei:listChange/tei:change) 
                     then ($model?doc) else (util:document-name($config:newest-dm))
         return element { node-name($node) } {
             $node/@* except $node/@data-template,
             attribute href { concat($file, '?template=timeline.html') },
+            $node/node()
+        }
+    ) else ()
+
+};
+
+declare function pages:toggle-link($node as node(), $model as map(*)) {
+    if (contains($node/@data-source, $model?template)) then (
+        let $file := if ($model?doc) then ($model?doc) else (util:document-name($config:newest-dm))
+        return element { node-name($node) } {
+            $node/@* except $node/@data-template,
+            attribute href { concat($file, '?template=', $node/@data-link) },
+            $node/node()
+        }
+    ) else ()
+
+};
+
+declare function pages:version-link($node as node(), $model as map(*), $target as xs:string*) {
+    if ($model?template = 'version.html') then (
+        let $log := console:log(concat('test: ', $node/@data-target))
+        let $file := if ($model?doc) then ($model?doc) else (util:document-name($config:newest-dm))
+        return element { node-name($node) } {
+            $node/@* except $node/@data-template,
+            attribute href { concat($file, '?template=surface.html') },
             $node/node()
         }
     ) else ()
@@ -134,7 +160,8 @@ declare function pages:parse-myparams($node as node(), $model as map(*)) {
 };
 declare function pages:check-toc($node as node(), $model as map(*)) {
     let $uri := concat($config:data-root,'/', $model?doc)
-    return if ($model?doc and count(doc($uri)//tei:sourceDoc/tei:surface) eq 1) then (
+    return if ($model?doc and count(doc($uri)//tei:sourceDoc/tei:surface) eq 1 and not(doc($uri)//tei:teiHeader//tei:title/contains(text(),'a30r: Genetische Versionen'))) then (
+        let $log := console:log(doc($uri)//tei:teiHeader//tei:title/string(text()))
        let $file := replace($model?doc, '_tp','')
        let $a := <a href="/exist/restxq/transform?file={$file}" target="topoTEI">topoTEI</a>
         return $a  

@@ -18,6 +18,18 @@
     <script src="resources/scripts/myscroll.js"/>
         <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
         <style>
+        @font-face {
+                font-family: "MyFont";
+                src: url("https://fonts.cdnfonts.com/s/15884/SourceSerifPro-Light.woff");
+        }
+      
+        @font-face {
+                font-family: "MyLatin";
+                src: url("https://fonts.cdnfonts.com/s/12183/SourceSansPro-Light.woff");}
+        .latin {
+            font-family: MyLatin;    
+        }
+        
             @media (min-width: 769px) {
                 .toolbar pb-navigation {
                     display: none;
@@ -68,12 +80,16 @@
 
                     <pb-drawer toggle="tocToggle" class="toc" emit="toc" subscribe="transcription">
                         <div class="drawer-content">
-                            <h3>
+                           <!-- <h3>
                                 <pb-i18n key="document.contents">Contents</pb-i18n>
                             </h3>
                             <pb-load id="toc" url="api/metatoc/{doc}/contents?target=transcription&amp;icons=true" expand="expand" src="document1" subscribe="toc" load-once="load-once">
                                 <pb-i18n key="dialogs.loading">Loading</pb-i18n>
-                            </pb-load>
+                            </pb-load> -->
+                            <pb-view id="view1" no-scroll="no-scroll" src="document1" xpath="//teiHeader" column-separator=".tei-cb" view="single" subscribe="transcription" emit="transcription">
+                            <pb-param name="mode" value="meta"/>
+                            <pb-param name="header" value="toc"/>
+                        </pb-view>
                         </div>
                     </pb-drawer>
                     <section class="breadcrumbs">

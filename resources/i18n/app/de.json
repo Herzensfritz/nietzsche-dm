@@ -1,5 +1,14 @@
 {
     "myapp": {
+    	"unclear": {
+    		"illegible": "unlesbar",
+    		"incomplete": "unvollständig",
+    		"inoperable": "funktionslos",
+    		"hatching": "Schraffur",
+    		"margin": "Rand",
+    		"strikethrough": "Streichung",
+    		"because": "wegen"
+    	},
     	"menu": {
     		"appNotes": "Anmerkungen",
     		"changes": "Bearbeitungsschritte",

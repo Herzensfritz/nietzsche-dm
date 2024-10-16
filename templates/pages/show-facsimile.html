@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+    <link rel="shortcut icon" type="image/x-icon" href="resources/images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="resources/images/favicon-16.png" sizes="16x16"/>
+    <link rel="shortcut icon" type="image/png" href="resources/images/favicon-24.png" sizes="24x24"/>
+    <link rel="shortcut icon" type="image/png" href="resources/images/favicon-32.png" sizes="32x32"/>
+    <link rel="shortcut icon" type="image/png" href="resources/images/favicon-64.png" sizes="64x64"/>
+
+    <title data-template="config:app-title"/>
+    <meta name="description" content="Surface"/>
+    <link rel="stylesheet" href="resources/css/theme.css"/>
+    <link rel="stylesheet" href="resources/css/mystyle.css"/>
+    <script src="resources/scripts/myfunctions.js"/>
+    <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+    <style>
+    
+         body {
+            --pb-view-height: calc(100vh - 200px);
+            --pb-grid-column-gap: 2em;
+            --pb-facsimile-height: calc(var(--pb-view-height) - 22px);
+         --highlight: yellow;
+         --delHighlight: gray;
+         --pb-content-font-family: MyFont;
+         --pb-content-font-size: 16px;
+         --radius: 1em 1em;
+         --red-marking: red;
+         --length: 0.2em;
+         --nbrown: #9b6b56;
+         --nred: #ff0000;
+         --nblue: #0000ff;
+         --red: #dc3545;
+          --nblack2: #46494c;
+          --nblack: #000000;
+          --npencil: #9c9c9c;
+        --typesetter_black: #808080;
+        --fhblack: #808080;
+        --blue: var(--nblue, blue);
+        --tpField: #f8f8f8;
+        --tpFieldMy: #e0e6e2fa;
+        } 
+        #view1 {
+            text-align: right;
+        }
+        #presentationTitle {
+            padding-left: 20px;
+        }
+         #facsimile1, #facsimile2 {
+            flex: 1 1;
+            height: var(--pb-facsimile-height);
+            width: 45%;
+        }
+        
+        ._pb_panel {
+            height: var(--pb-facsimile-height);
+        }
+        
+        div.head {
+            
+              position: relative;
+            display: inline-block;
+        
+      
+            width: 100%;
+        }
+        
+        div.head a {
+            padding: 20px;
+        }
+
+       
+
+        .content-body {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding: 0 20px;
+        }
+        
+         pb-page[unresolved] pb-facsimile {
+            display: none;
+        }
+
+        .content-body pb-facsimile {
+            flex: 1 1;
+           
+        }
+        
+        
+      
+        
+    </style>
+</head>
+
+<body>
+    <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="./resources/i18n/{{ns}}/{{lng}}.json" locale-fallback-ns="app common">
+        <pb-document id="document1" data-template="pages:pb-document"/>
+        <app-drawer-layout force-narrow="force-narrow">
+            <app-drawer data-template="lib:include" data-template-path="templates/drawer.html"/>
+            <app-header-layout>
+                <app-header slot="header" fixed="fixed">
+                 <app-toolbar data-template="lib:include" data-template-path="templates/menu.html"/> 
+                    <app-toolbar data-template="lib:include" data-template-path="templates/toolbar.html"/>
+                </app-header>
+                <pb-drawer toggle="tocToggle" class="toc" emit="toc" subscribe="transcription">
+                    <div class="drawer-content">
+                        <h3>
+                            <pb-i18n key="document.contents">Contents</pb-i18n>
+                        </h3>
+                        <pb-load id="toc" url="api/document/{doc}/contents?target=transcription&amp;icons=true" expand="expand" src="document1" subscribe="toc" load-once="load-once">
+                                <pb-i18n key="dialogs.loading">Loading</pb-i18n>
+                            </pb-load>
+                    </div>
+                </pb-drawer>
+                <section class="breadcrumbs">
+                   <h3 id="presentationTitle">Entwurfsmanuskript vs. Druckmanuskript</h3>
+                    <div class="head">
+                        <a href="https://nietzsche.philhist.unibas.ch/contentView/tln-viewer?navBarOpenState=true&amp;viewMode=Transkription%2FFaksimile&amp;contextView=page&amp;navTabIdx=1&amp;manuscript=http:%2F%2Frdfh.ch%2Fprojects%2F0068%23_Mp_XIV&amp;page=http:%2F%2Frdfh.ch%2Fprojects%2F0068%23_Mp_XIV_Page420&amp;zoom=0.8" target="_blank">Mp XIV 420</a>
+                        <pb-view id="view1" src="document1" column-separator=".tei-cb" view="surface" subscribe="transcription" emit="transcription">
+                                <pb-param name="type" value="facsimile"/>
+                            </pb-view>
+                    </div>
+                </section>
+                  <main class="content-body">
+                  
+                   <pb-facsimile id="facsimile1" default-zoom-level="0.7" sequence-mode="sequence-mode" show-full-page-control="true" show-home-control="true" emit="transcription" type="iiif" show-navigation-control="show-navigation-control" show-navigator="show-navigator" base-uri="https://ores.klassik-stiftung.de/digilib/Scaler/IIIF/" facsimiles="[&#34;gsa!Arbeitskopie!71!212280!212280_501&#34;]">
+                     </pb-facsimile> 
+                     <pb-facsimile id="facsimile2" default-zoom-level="0.7" show-full-page-control="true" show-home-control="true" emit="transcription" subscribe="facsimile1" type="iiif" show-navigation-control="show-navigation-control" show-navigator="show-navigator">
+                     </pb-facsimile>
+                        
+                </main>
+               
+            </app-header-layout>
+        </app-drawer-layout>
+    </pb-page>
+    <div class="splash"/>
+</body>
+
+</html>

@@ -1,10 +1,14 @@
-<?teipublisher template="surface.html" odd="surface.odd" view="surface" media="print"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+<?teipublisher template="version.html" odd="surface.odd" view="surface" media="print"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-          <title>a2r</title>
+            <title>a30r: Genetische Versionen</title>
          </titleStmt>
-         <publicationStmt><p/></publicationStmt><sourceDesc><msDesc>
+         <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <msDesc>
              <msIdentifier>
                 <repository>Goethe- und Schiller-Archiv, Weimar</repository>
                <idno type="GSA-Signatur">71/27,1, 71/27,2</idno>
@@ -1237,7 +1241,9 @@
                </list>
                         </ab>
              </history>
-           </msDesc></sourceDesc></fileDesc>
+           </msDesc>
+            </sourceDesc>
+        </fileDesc>
    <profileDesc>
        <creation>
          <listChange ordered="true">
@@ -1336,73 +1342,118 @@
                 </handNote>
          <handNote xml:id="unknown_pencil" scribe="unknown" medium="pencil" scope="minor">Bleistift (Urheber unklar)</handNote><!-- bis jetzt nur in b20r -->
        </handNotes>
-     </profileDesc></teiHeader>
+     </profileDesc>
+    </teiHeader>
    <text>
-      <body>            
-         <div1 xml:id="GMVorrede" xml:space="preserve"><anchor xml:id="a2r_div1_GMVorrede"/>
-            <pb xml:id="a2r" corresp="#contents_a2r #folDesc_a2rv #addDesc_a2r #N_brown1" facs="#D-20a_III" change="#GMfrontRecord #GM01-02finalVersion #proofreadingCb12Titel"/>
-            <fw type="pageNumber" hand="#N_red" place="top-right" xml:id="a2r_fw_d2e26">III.</fw>
-            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="a2r_fw_d2e29">2</fw>
-            <milestone unit="page" edRef="#Ed" n="III"/>
-            <head xml:id="a2r_head_d2e34">
-               <lb n="1" xml:id="a2r_lb1"/><add place="inline" xml:id="a2r_add_d2e37"><hi rend="underline">Vorrede</hi>.</add>
-            </head>
-            <div2 xml:id="GMVorrede01"><anchor xml:id="a2r_div2_GMVorrede01"/>
-               <head xml:id="a2r_head_d2e46">
-                  <lb n="2" xml:id="a2r_lb2"/><add place="inline" xml:id="a2r_add_d2e49">1.</add>
-               </head>
+      <body>
+         <div1 xml:space="preserve"><anchor xml:id="a30r_div1_d2e22"/>
+            <pb xml:id="a30r" corresp="#contents_a30r #folDesc_a30rv #addDesc_a30r #N_black1" facs="#D-20a_24" change="#GM02abortedVersion #GM02revision #GM01-02finalVersion #proofreadingCb5"/>
+            <fw type="pageNumber" hand="#typesetter_red" place="top-left" xml:id="a30r_fw_d2e26"><certainty match="@hand" locus="value" cert="medium"/>24.</fw>
+            <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" xml:id="a30r_fw_d2e30"><subst xml:id="a30r_subst_d2e31"><del rend="erased">27</del><add place="superimposed" xml:id="a30r_add_d2e34">24</add></subst></fw>
+            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="a30r_fw_d2e37">30</fw>
+            <app loc="a30r,5" corresp="#appAnchor_a30r5 #a30r_lb5">
+               <lem>„Zweck“</lem>
+               <note type="editorial" xml:id="a30r_note_d2e44">Anführungszeichen versehentlich gestrichen?</note></app>
+            <app loc="a30r,6" corresp="#appAnchor_a30r6a #a30r_lb6">
+               <lem>Zweck</lem>
+               <note type="editorial" xml:id="a30r_note_d2e52">überschreibt Z. 7 „nur“</note></app>
+            <app loc="a30r,6" corresp="#appAnchor_a30r6b #a30r_lb6">
+               <lem>Rechts zu</lem>
+               <note type="editorial" xml:id="a30r_note_d2e59">überschreibt Z. 7 „modernen“</note></app>
+            <app loc="a30r,6,8" corresp="#appAnchor_a30r6c #appAnchor_a30r8a #a30r_lb6 #a30r_lb8">
+               <lem>verwenden: … vielmehr giebt</lem>
+               <note type="editorial" xml:id="a30r_note_d2e67">nach Streichung von Z. 7-8 Anschlusslinie von Z. 6 „verwenden:“ nach Z. 8 Zusatz „vielmehr giebt“</note></app>
+            <app loc="a30r,7" corresp="#appAnchor_a30r7a #a30r_lb7">
+               <lem>nur</lem>
+               <note type="editorial" xml:id="a30r_note_d2e74">überschrieben von Z. 6 „Zweck“</note></app>
+            <app loc="a30r,7" corresp="#appAnchor_a30r7b #a30r_lb7">
+               <lem>modernen</lem>
+               <note type="editorial" xml:id="a30r_note_d2e81">überschrieben von Z. 6 „Rechts zu“</note></app>
+            <app loc="a30r,8" corresp="#appAnchor_a30r8b #a30r_lb8">
+               <note type="editorial" xml:id="a30r_note_d2e86">zum Teil zugleich Schraffurstreichung und Durchstreichung</note></app>
+            <app loc="a30r,36" corresp="#appAnchor_a30r36 #a30r_lb36">
+               <lem>mußte … herrschenden</lem>
+               <note type="editorial" xml:id="a30r_note_d2e94">Abfolge der Textänderungen unklar</note></app>
+            <app loc="a30r,39-40" corresp="#appAnchor_a30r40 #a30r_lb39 #a30r_lb40">
+               <lem>sich … anscheinend</lem>
+               <note type="editorial" xml:id="a30r_note_d2e101">Abfolge der Textänderungen unklar</note>
+            </app>
+            <substJoin n="a30r,1-9" target="#subst1a_a30r #subst1b_a30r #subst1c_a30r #substAdd1a_a30r #substAdd1b_a30r #substAdd1c_a30r #substAdd1d_a30r #substAdd1dd_a30r #substAdd1ddd_a30r #substAdd1e_a30r #substAdd1f_a30r #substAdd1g_a30r #substAdd1h_a30r #substAdd1i_a30r #substDel1a_a30r #substDel1b_a30r #substDel1c_a30r #substDel1d_a30r #substDel1e_a30r #substDel1f_a30r #substDel1g_a30r #substDel1h_a30r #substDel1i_a30r #substDel1j_a30r #substDel1k_a30r #substDel1l_a30r #substDel1m_a30r #substDel1n_a30r #substDel1o_a30r #substDel1p_a30r #substDel1q_a30r #substDel1r_a30r #substDel1s_a30r"/>
+            <substJoin n="a30r, 1-9" target="#subst2a_a30r #subst2b_a30r #subst2c_a30r #subst2d_a30r #subst2e_a30r #substAdd2a_a30r #substAdd2b_a30r #substAdd2c_a30r #substAdd2d_a30r #substAdd2e_a30r #substAdd2f_a30r #substAdd2h_a30r #substAdd2i_a30r #substDel2a_a30r #substDel2b_a30r #substDel2c_a30r #substDel2d_a30r #substDel2e_a30r #substDel2f_a30r #substDel2g_a30r #substDel2h_a30r #substDel2i_a30r #substDel2j_a30r #substDel2k_a30r #substDel2l_a30r #substDel2m_a30r #substDel2n_a30r"/>
+            <substJoin n="a30r, 1-9" target="#subst3_a30r #substAdd3a_a30r #substAdd3b_a30r #substAdd3c_a30r #substAdd3d_a30r #substAdd3e_a30r #substDel3a_a30r #substDel3b_a30r"/>
+            <substJoin n="a30r, 1-9" target="#substAdd4_a30r #substDel4a_a30r #substDel4b_a30r #substDel4c_a30r #substDel4d_a30r #substDel4e_a30r #substDel4f_a30r #substDel4g_a30r #substDel4h_a30r #substDel4i_a30r #substDel4j_a30r #substRestore4a_a30r #substRestore4b_a30r"/>
+            <substJoin n="a30r,5-6" target="#subst2d_a30r #substAdd2i_a30r #substDel2b_a30r #substDel2e_a30r"/>
+            <substJoin n="a30r,8" target="#substAdd5a_a30r #substAdd5b_a30r #substDel5a_a30r #substDel5b_a30r #substDel5c_a30r"/>
+            <substJoin n="a30r,9" target="#subst1b_a30r #subst1c_a30r #substAdd1h_a30r #substAdd1i_a30r #substDel1r_a30r #substDel1s_a30r"/>
+            <substJoin n="a30r,11" target="#subst6a_a30r #subst6b_a30r #substAdd6_a30r"/>
+            <substJoin n="a30r,12-13" target="#substAdd7_a30r #substDel7a_a30r #substDel7b_a30r"/> 
+            <substJoin n="a30r,22" target="#substAdd8_a30r #substDel8_a30r"/>
+            <substJoin n="a30r,25-26" target="#subst9_a30r #substAdd9_a30r"/>
+            <substJoin n="a30r,25-26" target="#subst10_a30r #substAdd10_a30r #substDel10a_a30r #substDel10b_a30r"/>
+            <substJoin n="a30r,25-26" target="#substAdd11_a30r #substDel11a_a30r #substDel11b_a30r"/>
+            <substJoin n="a30r,26" target="#substAdd12a_a30r #substAdd12b_a30r"/>
+            <substJoin n="a30r,27-30" target="#substAdd13a_a30r #substAdd13b_a30r #substAdd13c_a30r #substAdd13d_a30r #substAdd13e_a30r #substDel13a_a30r #substDel13b_a30r #substDel13c_a30r"/>
+            <substJoin n="a30r,27-30" target="#subst14_a30r #substDel14a_a30r #substDel14b_a30r #substDel14c_a30r #substDel14d_a30r #substDel14e_a30r #substDel14f_a30r #substDel14g_a30r #substDel14h_a30r #substDel14i_a30r #substDel14j_a30r"/>
+            <substJoin n="a30r,36" target="#substAdd15_a30r #substDel15_a30r"/>
+            <substJoin n="a30r,38" target="#subst16a_a30r #subst16b_a30r"/>
+            <substJoin n="a30r,39" target="#subst17a_a30r #subst17b_a30r #subst17c_a30r"/>
+            <substJoin n="a30r,40-41" target="#subst18_a30r #substAdd18_a30r #substDel18_a30r"/>
+            <div2 xml:id="GM0212"><anchor xml:id="a30r_div2_GM0212"/>
                <p>
-                  <lb n="3" rend="indent" xml:id="a2r_lb3"/>Wir sind uns unbekannt, wir Erkennenden, wir selbst uns selbst: das hat seinen guten Grund. Wir haben nie 
-                  <lb n="4" xml:id="a2r_lb4"/>nach uns gesucht, – wie sollte es geschehn, daß wir eines Tags uns <hi rend="underline">fänden</hi>? Mit Recht hat man gesagt: „wo euer 
-                  <lb n="5" xml:id="a2r_lb5"/>Schatz ist, da ist auch euer Herz“; <hi rend="underline">unser</hi> Schatz ist, wo die Bienenkörbe unsrer Erkenntniß stehn. Wir sind immer 
-                  <lb n="6" xml:id="a2r_lb6"/>dazu unterwegs, als geborne Flügelthiere und Honigsammler des Geistes, wir kümmern uns von Herzen eigentlich 
-                  <lb n="7" xml:id="a2r_lb7"/>nur um Eins – etwas „heimzubringen“. Was das Leben sonst, die sogenannten „Erlebnisse“ angeht, – wer von uns 
-                  <lb n="8" xml:id="a2r_lb8"/>hat dafür auch nur Ernst genug? Oder Zeit genug? Bei solchen Sachen waren wir, fürchte ich, nie recht „bei 
-                  <lb n="9" xml:id="a2r_lb9"/>der Sache“: wir haben eben unser Herz nicht dort<subst xml:id="a2r_subst_d2e76"><del rend="overwritten"><del rend="strikethrough">,</del></del><add place="superimposed" xml:id="a2r_add_d2e80"> –</add></subst> und nicht einmal unser Ohr! Vielmehr wie ein Göttlich-
-                  <lb n="10" xml:id="a2r_lb10"/>Zerstreuter und In-sich-Versenkter, dem die Glocke eben mit aller Macht ihre zwölf Schläge des Mittags in’s 
-                  <lb n="11" xml:id="a2r_lb11"/>Ohr gedröhnt hat, mit Einem Male aufwacht und sich fragt „was hat es da eigentlich geschlagen?“ so reiben 
-                  <lb n="12" xml:id="a2r_lb12"/>auch wir uns mitunter <hi rend="underline">hinterdrein</hi> die Ohren und fragen, ganz erstaunt, ganz betreten „was haben wir da 
-                  <lb n="13" xml:id="a2r_lb13"/>eigentlich erlebt? mehr noch: wer <hi rend="underline">sind</hi> wir eigentlich?“ und zählen nach, hinterdrein, wie gesagt, alle <milestone unit="page" edRef="#Ed" n="IV"/>die 
-                  <lb n="14" xml:id="a2r_lb14"/>zitternden zwölf Glockenschläge unsres Erlebnisses, unsres Lebens, unsres <hi rend="underline">Seins</hi> – ach! und verzählen uns da<pc force="weak">-</pc>
-                  <lb n="15" xml:id="a2r_lb15"/>bei… Wir bleiben uns eben nothwendig fremd, wir verstehn uns nicht, wir <hi rend="underline">müssen</hi> uns verwechseln, für 
-                  <lb n="16" xml:id="a2r_lb16"/>uns heißt der Satz in alle Ewigkeit „Jeder ist sich selbst der Fernste“, – für uns sind wir keine „Erkennen<pc force="weak">-</pc>
-                  <lb n="17" xml:id="a2r_lb17"/>den“…</p>
-               </div2>
-            <div2 xml:id="GMVorrede02"><anchor xml:id="a2r_div2_GMVorrede02"/>
-               <head xml:id="a2r_head_d2e126">
-                  <lb n="18" xml:id="a2r_lb18"/>2.</head>
-               <p>
-                  <lb n="19" xml:id="a2r_lb19"/>– Meine Gedanken über die <hi rend="underline">Herkunft</hi> unsrer moralischen Vorurtheile – denn um sie handelt es sich in dieser Streit<pc force="weak">-</pc>
-                  <lb n="20" xml:id="a2r_lb20"/>schrift – haben ihren ersten, sparsamen und vorläufigen Ausdruck in jener Aphorismen-Sammlung erhalten, die den 
-                  <lb n="21" xml:id="a2r_lb21"/>Titel trägt „Menschliches, Allzumenschliches. Ein Buch für freie Geister<del rend="strikethrough" cert="high">.</del>“ und deren Niederschrift in Sorrent begonnen 
-                  <lb n="22" xml:id="a2r_lb22"/>wurde, während eines Winters, welcher es mir erlaubte, Halt zu machen wie ein Wandrer Halt macht, und das weite 
-                  <lb n="23" xml:id="a2r_lb23"/>und gefährliche Land zu überschauen, durch das mein Geist bis dahin gewandert war. Dies geschah im Winter 1876
-                  <lb n="24" xml:id="a2r_lb24"/>-77; die Gedanken selbst sind älter. Es waren in der Hauptsache schon die gleichen Gedanken, die ich in den 
-                  <lb n="25" xml:id="a2r_lb25"/>vorliegenden Abhandlungen wieder aufnehme: – hoffen wir, daß die lange Zwischenzeit ihnen gut gethan hat, 
-                  <lb n="26" xml:id="a2r_lb26"/>daß sie reifer, heller, stärker, vollkommner geworden sind! <hi rend="underline">Daß</hi> ich aber heute noch an ihnen festhalte, daß sie 
-                  <lb n="27" xml:id="a2r_lb27"/>sich selber inzwischen immer fester an einander gehalten haben, ja in einander gewachsen und verwachsen sind, das 
-                  <lb n="28" xml:id="a2r_lb28"/>stärkt in mir die frohe Zuversichtlichkeit, sie möchten von Anfang an in mir nicht einzeln, <milestone unit="page" edRef="#Ed" n="V"/>nicht beliebig, nicht spo<pc force="weak">-</pc>
-                  <lb n="29" xml:id="a2r_lb29"/>radisch entstanden sein, sondern aus einer gemeinsamen Wurzel heraus, aus einem in der Tiefe gebietenden, im<pc force="weak">-</pc>
-                  <lb n="30" xml:id="a2r_lb30"/>mer bestimmter redenden, immer Bestimmteres verlangenden <hi rend="underline">Grundwillen</hi> der Erkenntniß. So allein nämlich ge<pc force="weak">-</pc>
-                  <lb n="31" xml:id="a2r_lb31"/>ziemt es sich bei einem Philosophen. Wir haben kein Recht darauf, irgend worin <hi rend="underline">einzeln</hi> zu sein: wir dürfen weder 
-                  <lb n="32" xml:id="a2r_lb32"/>einzeln irren, noch einzeln die Wahrheit treffen. Vielmehr mit der Nothwendigkeit, mit der ein Baum seine 
-                  <lb n="33" xml:id="a2r_lb33"/>Früchte trägt, wachsen aus uns unsre Gedanken, unsre Werthe, un<retrace>s</retrace>re Ja’s und Nein’s und Wenn’s und Ob’s – 
-                  <lb n="34" xml:id="a2r_lb34"/>verwandt und bezüglich allesammt unter einander und Zeugnisse Eines Willens, Einer Gesundheit, Eines Erd<pc force="weak">-</pc>
-                  <lb n="35" xml:id="a2r_lb35"/>reichs, Einer Sonne. – Ob sie <hi rend="underline">euch</hi> schmecken, diese unsre Früchte? – Aber was geht das die Bäume an! 
-                  <lb n="36" xml:id="a2r_lb36"/>Was geht das <hi rend="underline">uns</hi> an, uns Philosophen!…</p>
-            </div2>
-            
-            <div2 xml:id="GMVorrede03"><anchor xml:id="a2r_div2_GMVorrede03"/>
-               <head xml:id="a2r_head_d2e222">
-                  <lb n="37" xml:id="a2r_lb37"/>3.
-               </head>
-               <p>
-                  <lb n="38" xml:id="a2r_lb38"/>Bei einer mir eignen Bedenklichkeit, die ich ungern eingestehe – sie bezieht sich nämlich auf die <hi rend="underline">Moral</hi>, 
-                  <lb n="39" xml:id="a2r_lb39"/>auf Alles, was bisher auf Erden als Moral gefeiert worden ist –, einer Bedenklichkeit, <del rend="hatching">die</del> welche in meinem </p>
-            </div2>
-         </div1></body>
+                  <lb type="addLine" n="1" xml:id="a30r_lb1"/><add xml:id="substAdd1a_a30r" place="inline" seq="1" change="#GM02abortedVersion"><seg type="head"><subst xml:id="a30r_subst_d2e168"><del xml:id="substDel3a_a30r" hand="#N_brown1" rend="strikethrough" seq="3">10.</del> <add xml:id="substAdd3a_a30r" hand="#N_brown1" place="inline" seq="3" change="#GM02revision">12.</add></subst></seg></add>
+                  <lb type="addLine" n="2" xml:id="a30r_lb2"/><add xml:id="substAdd3b_a30r" hand="#N_brown1" place="inline" seq="3">Hier noch ein Wort über Ursprung und Zweck der Strafe – zwei Probleme, die auseinander fallen<subst xml:id="subst3_a30r" seq="3" instant="true"><del rend="overwritten">.</del><add place="superimposed" xml:id="a30r_add_d2e181"> o</add></subst>der <restore type="strikethrough" xml:id="substRestore4a_a30r" seq="4"><hi rend="underline">fallen</hi></restore> <restore xml:id="substRestore4b_a30r" type="strikethrough" seq="4"><hi rend="underline">sollten</hi></restore>: leider wirft man sie ge<pc force="weak">-</pc></add>
+                  <lb type="addLine" n="3" xml:id="a30r_lb3"/><add xml:id="substAdd3c_a30r" hand="#N_brown1" place="inline" seq="3">wöhnlich in Eins. </add> 
+                  <lb type="addLine" n="4" xml:id="a30r_lb4"/><add xml:id="substAdd1b_a30r" place="inline" seq="1"><del xml:id="substDel4a_a30r" hand="#N_brown1" rend="hatching" seq="4">Man kann sich</del> <add xml:id="substAdd3d_a30r" hand="#N_brown1" place="above" rend="insM" seq="3"><del xml:id="substDel4b_a30r" hand="#N_brown1" rend="hatching" seq="4">nämlich</del></add> <del xml:id="substDel4c_a30r" hand="#N_brown1" rend="hatching" seq="4">gar nicht</del> <add xml:id="substAdd3e_a30r" hand="#N_brown1" place="above" rend="insM" seq="3"><del xml:id="substDel4d_a30r" hand="#N_brown1" rend="hatching" seq="4">naiver</del></add><add xml:id="substAdd4_a30r" hand="#N_brown1" place="above" seq="4"><milestone unit="page" edRef="#Ed" n="67"/>Wie treiben es doch die bisherigen Moral-Genealogen in diesem Falle? Naiv, wie sie es immer </add><del xml:id="substDel3b_a30r" hand="#N_brown1" rend="hatching" seq="3">mehr</del> <del xml:id="substDel4e_a30r" hand="#N_brown1" rend="hatching" seq="4">an der Geschichte</del> <del xml:id="substDel4f_a30r" hand="#N_brown1" rend="hatching" seq="4">vergreifen</del><del xml:id="substDel4g_a30r" hand="#N_brown1" rend="hatching" seq="4">, als wenn man es </del><subst xml:id="a30r_subst_d2e229"><add xml:id="substAdd2a_a30r" place="above" rend="insM" seq="2"><del xml:id="substDel4h_a30r" hand="#N_brown1" rend="hatching" seq="4">treibt</del></add><del xml:id="substDel2a_a30r" rend="hatching" seq="2">macht</del></subst><del xml:id="substDel4i_a30r" hand="#N_brown1" rend="hatching" seq="4">, wie es bisher die Moral-Genealogen</del> <add xml:id="substAdd2b_a30r" place="above" rend="insM" seq="2"><del hand="#N_brown1" xml:id="substDel4j_a30r" seq="4">in Betreff der Strafe</del></add> </add>
+                  <lb type="addLine" n="5" xml:id="a30r_lb5"/><add xml:id="substAdd1c_a30r" place="inline" seq="1"><subst xml:id="subst2a_a30r" seq="2"><add place="above" rend="insM" xml:id="a30r_add_d2e246">getrieben haben</add><del rend="hatching">machten</del></subst>, <subst xml:id="a30r_subst_d2e251"><add xml:id="substAdd2c_a30r" place="above" rend="insM" seq="2">– sie mach<del xml:id="substDel2b_a30r" rend="hatching" seq="2">t</del>en irgend einen</add><del xml:id="substDel2c_a30r" rend="hatching" seq="2">nämlich einen</del></subst> <del rend="hatching" seq="2" cert="unknown">„</del><retrace>Z</retrace>weck“<anchor xml:id="appAnchor_a30r5"/> in der Strafe <subst xml:id="a30r_subst_d2e266"><add xml:id="substAdd2d_a30r" place="above" rend="insM" seq="2">ausfindig <del xml:id="substDel2d_a30r" rend="hatching" seq="2">machen</del>, zum Beispiel <add xml:id="substAdd2e_a30r" place="above" rend="insM" seq="2">Rache oder</add> Abschreckung<add xml:id="substAdd2f_a30r" place="inline" rend="insMExt" seq="2">, setz<del xml:id="substDel2e_a30r" rend="hatching" seq="2">t</del>en dann arglos</add></add><del xml:id="substDel2f_a30r" rend="hatching" seq="2">suchen</del></subst> <del xml:id="substDel2g_a30r" rend="hatching" seq="2">und dann arglos</del> diesen <retrace>Z</retrace>weck <subst xml:id="subst2b_a30r" seq="2"><del rend="overwritten">i</del><add place="superimposed" xml:id="a30r_add_d2e292">a</add></subst>n <subst xml:id="subst2c_a30r" seq="2"><add place="above" rend="insM" xml:id="a30r_add_d2e296">den Anfang, als <hi rend="latin">causa fiendi</hi></add><del rend="hatching">die Entstehung</del></subst> der Strafe </add>
+                  <lb type="addLine" n="6" xml:id="a30r_lb6"/><add xml:id="substAdd1d_a30r" place="inline" seq="1" next="#substAdd1e_a30r"><del xml:id="substDel2h_a30r" rend="hatching" seq="2">hinein</del><subst xml:id="a30r_subst_d2e308"><add xml:id="substAdd1dd_a30r" place="above" rend="insM" seq="1"><del xml:id="substDel2i_a30r" rend="hatching" seq="2">spielen</del></add><del xml:id="substDel2j_a30r" rend="hatching" seq="2">setzen</del></subst><subst xml:id="a30r_subst_d2e314"><del xml:id="substDel2k_a30r" rend="hatching" seq="2">, als deren <hi rend="latin">causa</hi>.</del> <add xml:id="substAdd2h_a30r" place="above" rend="insM" seq="2"><add xml:id="substAdd2i_a30r" place="inline" seq="2">und </add>– <del xml:id="substDel2l_a30r" rend="hatching" seq="2">und wa</del><subst xml:id="subst2d_a30r" seq="2"><del rend="overwritten">ren</del><add place="superimposed" xml:id="a30r_add_d2e330">sind</add></subst> fertig.</add></subst> Der „<retrace>Z</retrace>weck<anchor xml:id="appAnchor_a30r6a"/> im Rechte“ ist <add xml:id="substAdd1ddd_a30r" place="above" rend="insM" seq="1">aber</add> zuallerletzt für die Entstehungsgeschichte des <subst xml:id="subst1a_a30r" seq="1" instant="true"><add place="above" rend="insM" xml:id="a30r_add_d2e342">Rechts zu</add><del rend="hatching">Rechts zu<anchor xml:id="appAnchor_a30r6b"/></del></subst> verwenden:<anchor xml:id="appAnchor_a30r6c"/> </add>
+                  <lb n="7" xml:id="a30r_lb7"/><del xml:id="substDel1a_a30r" rend="hatching" seq="1">In jeder Art</del> <del xml:id="substDel1b_a30r" rend="hatching" seq="1"><del rend="hatching" instant="true">Art</del> Historie</del> <del xml:id="substDel1c_a30r" rend="hatching" seq="1">ergiebt sich <add place="above" rend="insM" xml:id="a30r_add_d2e364"><del xml:id="substDel1d_a30r" rend="strikethrough" seq="1">nur<anchor xml:id="appAnchor_a30r7a"/></del></add> allmählich ein Gesichtspunkt</del>, <del xml:id="substDel1e_a30r" rend="hatching" seq="1">der </del><subst xml:id="a30r_subst_d2e372"><add place="above" rend="insM" xml:id="a30r_add_d2e373"><del xml:id="substDel1f_a30r" rend="hatching" seq="1">gerade</del></add><del rend="hatching">an sich</del></subst><del xml:id="substDel1g_a30r" rend="hatching" seq="1"> den intellektuellen <add place="above" rend="insM" xml:id="a30r_add_d2e380"><del rend="hatching">modernen<anchor xml:id="appAnchor_a30r7b"/></del></add> Gewohnheiten </del><subst xml:id="a30r_subst_d2e385"><add place="above" rend="insM" xml:id="a30r_add_d2e386"><del xml:id="substDel1h_a30r" rend="hatching" seq="1">und</del> <del xml:id="substDel1i_a30r" rend="hatching" seq="1">Wünschbarkeiten</del> <add place="above" rend="insM" xml:id="a30r_add_d2e393"><del xml:id="substDel1j_a30r" rend="hatching" seq="1">des modernen Menschen</del></add></add><del rend="hatching">und Verwöhnungen</del></subst>
+                  <lb n="8" xml:id="a30r_lb8"/><del xml:id="substDel1k_a30r" rend="strikethrough" seq="1">auf’s höchste zuwider geht – <subst xml:id="a30r_subst_d2e402"><del xml:id="substDel5a_a30r" rend="hatching">es ist</del><add xml:id="substAdd5a_a30r" place="above" rend="insM"><del xml:id="substDel1l_a30r" rend="hatching" seq="1">sein Sieg wäre</del></add></subst> vielleicht <subst xml:id="a30r_subst_d2e409"><add xml:id="substAdd5b_a30r" place="above" rend="insM"><del xml:id="substDel1m_a30r" rend="hatching" seq="1">der</del></add><del xml:id="substDel5b_a30r" rend="hatching">unser</del></subst> größte<del xml:id="substDel5c_a30r" rend="strikethrough">r</del> Triumph über die <hi rend="latin">vis inertiae</hi> des</del> <subst xml:id="a30r_subst_d2e424"><add place="above" rend="insM" xml:id="a30r_add_d2e425"><del xml:id="substDel1n_a30r" rend="hatching" seq="1">demokratischen Instinktes</del></add><del rend="hatching">menschlichen Intellekts</del></subst><del xml:id="substDel1o_a30r" rend="hatching" seq="1"> –:</del><add xml:id="substAdd1e_a30r" place="above" rend="insM" seq="1" prev="#substAdd1d_a30r">vielmehr giebt<anchor xml:id="appAnchor_a30r8a"/> </add> <del xml:id="substDel1p_a30r" rend="hatching" seq="1">daß näm<pc force="weak">-</pc></del><anchor xml:id="appAnchor_a30r8b"/>
+                  <lb n="9" xml:id="a30r_lb9"/><add xml:id="substAdd1f_a30r" place="above" rend="insM" seq="1">es für alle Art Historie gar keinen wichtigeren Satz<add xml:id="substAdd1g_a30r" place="above" rend="insM" seq="1"> als jenen</add>, der mit solcher Mühe errungen ist, aber auch wirklich errungen <hi rend="underline">sein</hi> <hi rend="underline">sollte</hi> – daß nämlich </add><del xml:id="substDel1q_a30r" rend="hatching" seq="1">lich</del> die Ursache der Entstehung eines Dings <subst xml:id="subst2e_a30r" seq="2"><del rend="hatching">von</del><add place="below" xml:id="a30r_add_d2e462">und</add></subst> <subst xml:id="subst1b_a30r" seq="1"><del rend="hatching">seiner</del><add place="below" xml:id="a30r_add_d2e468">dessen</add></subst> schließliche<subst xml:id="a30r_subst_d2e471"><del xml:id="substDel1r_a30r" rend="overwritten" seq="1">n</del><add xml:id="substAdd1h_a30r" place="superimposed" seq="1"><del xml:id="substDel2m_a30r" rend="hatching" seq="2">r</del></add></subst> Nützlichkeit, <subst xml:id="subst1c_a30r" seq="1"><del rend="hatching">seiner</del><add place="below" xml:id="a30r_add_d2e481">dessen</add></subst> thatsächliche<subst xml:id="a30r_subst_d2e484"><del xml:id="substDel1s_a30r" rend="overwritten" seq="1">n</del><add xml:id="substAdd1i_a30r" place="superimposed" seq="1"><del xml:id="substDel2n_a30r" rend="hatching" seq="2">r</del></add></subst> Verwendung und Einord<pc force="weak">-</pc>
+                  <lb n="10" xml:id="a30r_lb10"/>nung in ein System von Zwecken <hi rend="latin">toto coelo</hi> auseinander liegen; daß etwas Vorhandenes, irgendwie Zu-Stande-Gekom<pc force="weak">-</pc>
+                  <lb n="11" xml:id="a30r_lb11"/>menes immer wieder von einer ihm überlegnen Macht auf <subst xml:id="subst6a_a30r"><add place="above" rend="insM" xml:id="a30r_add_d2e506">neue</add><del rend="hatching">deren</del></subst> Absichten ausgelegt, <add xml:id="substAdd6_a30r" place="above" rend="insM">neu</add> in Beschlag genommen, zu <subst xml:id="subst6b_a30r"><add place="above" rend="insM" xml:id="a30r_add_d2e516">einem neuen</add><del rend="hatching">deren</del></subst> 
+                  <lb n="12" xml:id="a30r_lb12"/>Nutzen umgebildet und umgerichtet wird; daß alles Geschehen <add xml:id="substAdd7_a30r" place="above" rend="insM">in der organischen Welt</add> ein <hi rend="underline">Überwältigen</hi>, <hi rend="underline">Herrwerden</hi> und daß wiederum alles 
+                  <lb n="13" xml:id="a30r_lb13"/>Überwältigen und Herrwerden <del xml:id="substDel7a_a30r" rend="hatching">in der organischen und</del> <del xml:id="substDel7b_a30r" rend="hatching">unorganischen Welt</del> ein Neu-Interpretieren, ein Zurechtmachen ist, 
+                  <lb n="14" xml:id="a30r_lb14"/>bei dem der bisherige „Sinn“ <add place="above" rend="insM" xml:id="a30r_add_d2e543">und „Zweck“</add> nothwendig verdunkelt oder ganz ausgelöscht werden muß. Wenn man die <hi rend="underline">Nützlichkeit</hi> 
+                  <lb n="15" xml:id="a30r_lb15"/>von irgend welchem physiologischen Organ (oder auch einer Rechts-Institution, einer <add place="above" rend="insM" xml:id="a30r_add_d2e552">gesellschaftlichen</add> Sitte, eines <add place="above" rend="insM" xml:id="a30r_add_d2e555">politischen</add> Brauchs, einer Form <subst xml:id="a30r_subst_d2e558"><add place="above" xml:id="a30r_add_d2e559">in den</add><del rend="hatching">des</del>  
+                  <lb n="16" xml:id="a30r_lb16"/><add place="above" rend="insM" xml:id="a30r_add_d2e565">Künsten oder im </add></subst>religiösen Cultus) noch so gut begriffen hat, so hat man damit noch nichts in Betreff seiner Entstehung<subst xml:id="a30r_subst_d2e568"><del rend="hatching">, noch nicht ein</del><del rend="none"><pc force="weak">-</pc></del> 
+                  <lb n="17" xml:id="a30r_lb17"/><del rend="hatching">mal in Betreff seiner bisherigen</del> <del rend="hatching">Entwicklung</del></subst> begriffen: so unbequem und unangenehm dies älteren Ohren klingen 
+                  <lb n="18" xml:id="a30r_lb18"/>mag, – denn <subst xml:id="a30r_subst_d2e586"><add place="above" rend="insM" xml:id="a30r_add_d2e587">von Alters her</add><del rend="hatching">bisher</del></subst> hatte man in dem nachweisbaren Zwecke<add place="inline" xml:id="a30r_add_d2e592">, <add place="above" rend="insM" instant="true" xml:id="a30r_add_d2e594">in der Nützlichkeit</add></add> eines Dings, <milestone unit="page" edRef="#Ed" n="68"/>einer Form, einer Einrichtung auch <subst xml:id="a30r_subst_d2e599"><add place="above" rend="insM" xml:id="a30r_add_d2e600">deren</add><del rend="hatching">ihren</del></subst> Ent<pc force="weak">-</pc>
+                  <lb n="19" xml:id="a30r_lb19"/>stehungsgrund zu begreifen <subst xml:id="a30r_subst_d2e611"><del rend="hatching" seq="1">gewähnt</del><del rend="strikethrough" seq="1" cause="insM">.</del><add place="above" rend="insM" seq="1" xml:id="a30r_add_d2e616">geglaubt, das Auge <subst xml:id="a30r_subst_d2e618"><add place="above" rend="insM" seq="2" xml:id="a30r_add_d2e619">als gemacht zum</add><del rend="hatching" seq="2">aus dem</del></subst> Sehen, die Hand <subst xml:id="a30r_subst_d2e624"><add place="above" rend="insM" seq="2" xml:id="a30r_add_d2e625">als gemacht <hi rend="underline">zum</hi></add><del rend="hatching" seq="2">aus dem</del></subst> Greifen.<add place="inline" rend="insMExt" seq="2" xml:id="a30r_add_d2e632"> So hat man sich auch die Strafe vorgestellt als erfunden <hi rend="underline">zum</hi> Strafen.</add></add></subst> Aber alle Zwecke, alle Nützlichkeiten sind nur <hi rend="underline">Anzeichen</hi> davon, daß <add place="above" rend="insM" xml:id="a30r_add_d2e641"><del rend="hatching">wieder</del></add> ein Wille zur 
+                  <lb n="20" xml:id="a30r_lb20"/>Macht über etwas weniger Mächtiges Herr geworden ist und ihm von sich aus den Sinn einer Funktion aufgeprägt hat; und 
+                  <lb n="21" xml:id="a30r_lb21"/>die ganze Geschichte eines „Dings“ <add place="above" rend="insM" xml:id="a30r_add_d2e649">eines Organs, eines Brauchs</add> kann dergestalt eine fortgesetzte <add place="above" rend="insM" xml:id="a30r_add_d2e653">Zeichen-</add>Kette von immer neuen Interpretationen und Zurechtma<pc force="weak">-</pc>
+                  <lb n="22" xml:id="a30r_lb22"/>chungen sein, deren Ursachen selbst unter sich nicht im Zusammenhange zu sein brauchen, vielmehr <add xml:id="substAdd8_a30r" place="above" rend="insM" seq="2">unter Umständen sich</add> bloß zufällig <add place="above" rend="insM" seq="1" xml:id="a30r_add_d2e664"><del xml:id="substDel8_a30r" rend="hatching" seq="2">sich</del></add> hinter 
+                  <lb n="23" xml:id="a30r_lb23"/>einander folgen und ablösen. „Entwicklung“ <add place="above" rend="insM" seq="1" xml:id="a30r_add_d2e671">eines Dings<add place="inline" rend="insMExt" seq="2" xml:id="a30r_add_d2e673">, eines Brauchs<add place="inline" rend="insMExt" seq="3" xml:id="a30r_add_d2e675">, eines Organs</add></add></add> ist demgemäß nichts weniger als sein <hi rend="latin">progressus</hi> auf ein Ziel hin, noch weni<pc force="weak">-</pc>
+                  <lb n="24" xml:id="a30r_lb24"/>ger ein logischer und kürzester, mit dem kleinsten Aufwand von Kraft und Kosten erreichter <hi rend="latin">progressus</hi>, – sondern die Auf<pc force="weak">-</pc>
+                  <lb n="25" xml:id="a30r_lb25"/>einanderfolge von mehr oder minder tiefgehenden, mehr oder minder von einander unabhängigen <add xml:id="substAdd9_a30r" place="above" rend="insM" seq="1"><add xml:id="substAdd11_a30r" place="inline" rend="insMExt" seq="3">an ihm sich abspielenden<space unit="char" quantity="5"/></add> <del xml:id="substDel11a_a30r" rend="hatching" seq="3">an irgend etwas Festerem und Widerstehenden </del><add xml:id="substAdd10_a30r" place="above" rend="insM" seq="2"><del xml:id="substDel11b_a30r" rend="hatching" seq="3">sich abspielenden</del></add><del xml:id="substDel10a_a30r" rend="hatching" seq="2">zu Stande</del><add place="below" seq="1" instant="true" xml:id="a30r_add_d2e707"><del xml:id="substDel10b_a30r" rend="hatching" seq="2">gekommenen</del></add></add> Überwältigung<subst xml:id="subst10_a30r" seq="2"><del rend="overwritten">en</del><add place="superimposed" xml:id="a30r_add_d2e715">s-</add><add place="below" xml:id="a30r_add_d2e717">-Prozessen</add></subst><subst xml:id="subst9_a30r" seq="1"><add place="inline" xml:id="a30r_add_d2e720">,</add> <del rend="hatching">und Versu<pc force="weak">-</pc></del>
+                  <lb n="26" xml:id="a30r_lb26"/><del rend="hatching">chen</del> <del rend="hatching">der Überwältigung</del></subst>, hinzugerechnet die dagegen <add xml:id="substAdd12a_a30r" place="above" rend="insM" seq="1">jedes Mal</add> aufgewendeten Widerstände, die <add xml:id="substAdd12b_a30r" place="above" rend="insM" seq="1">jedesmaligen</add> Form-Verwandlungen zum Zweck der 
+                  <lb n="27" xml:id="a30r_lb27"/>Vertheidigung und Reaktion, <add place="above" rend="insM" xml:id="a30r_add_d2e744">auch</add> die Resultate von gelungenen Gegenaktionen<subst xml:id="subst14_a30r" seq="2"><del rend="overwritten">,</del><add place="superimposed" xml:id="a30r_add_d2e750">.</add></subst> <del xml:id="substDel14a_a30r" rend="hatching" seq="2">von spontanen</del><del xml:id="substDel14b_a30r" rend="hatching" seq="2"><subst instant="true" xml:id="a30r_subst_d2e756"><del rend="overwritten">,</del><add place="superimposed" xml:id="a30r_add_d2e759"> <del rend="hatching" seq="2">A</del></add></subst>ngriffen</del><del xml:id="substDel14c_a30r" rend="hatching" seq="2">, Eingriffen, Aneignungen</del>.<add xml:id="substAdd13a_a30r" place="above" rend="insM" seq="1"><del xml:id="substDel14d_a30r" rend="hatching" seq="2">seitens des Dings, das sich entwickelt</del>.</add>
+                  <lb n="28" xml:id="a30r_lb28"/><del xml:id="substDel14e_a30r" rend="strikethrough" seq="2">Denn <subst xml:id="a30r_subst_d2e776"><add xml:id="substAdd13b_a30r" place="above" rend="insM" seq="1"><del xml:id="substDel14f_a30r" rend="strikethrough" seq="2">dies „Ding“, als ein</del></add><del xml:id="substDel13a_a30r" rend="hatching" seq="1">jedes</del></subst> Quantum von organisirter Kraft</del> <subst xml:id="a30r_subst_d2e784"><add xml:id="substAdd13c_a30r" place="above" rend="insM" seq="1"><del xml:id="substDel14g_a30r" rend="strikethrough" seq="2">muß sich auch seinerseits, so schwach es auch sein mag</del>,</add> <del xml:id="substDel13b_a30r" rend="hatching" seq="1">bewegt sich auch seinerseits</del></subst> <del xml:id="substDel14h_a30r" rend="strikethrough" seq="2">von innen her nach außen<add xml:id="substAdd13d_a30r" place="above" rend="insM" seq="1"> <del xml:id="substDel14i_a30r" rend="strikethrough" seq="2">bewegen</del></add>, um sich an diesem „Au<pc force="weak">-</pc></del>
+                  <lb n="29" xml:id="a30r_lb29"/><del xml:id="substDel14j_a30r" rend="strikethrough" seq="2">ßen“ zu bethätigen und zu bereichern, um es in sich hineinzunehmen und ihm <hi rend="underline">sein</hi> Gesetz, <hi rend="underline">seinen</hi> Sinn aufzuprägen. </del><subst xml:id="a30r_subst_d2e812"><del xml:id="substDel13c_a30r" rend="hatching" seq="1">Selbst</del>
+                  <lb n="30" xml:id="a30r_lb30"/><add xml:id="substAdd13e_a30r" place="above" rend="insM" seq="1">Die Form ist flüssig, der „Sinn“ ist es <add place="above" rend="insM" seq="999" xml:id="a30r_add_d2e819">aber</add> noch mehr, selbst </add></subst>innerhalb jedes einzelnen Organismus steht es nicht anders: mit jedem wesentlichen Wachsthum des Ganzen verschiebt sich auch 
+                  <lb n="31" xml:id="a30r_lb31"/>der „Sinn“ der einzelnen Organe, – unter Umständen kann deren theilweises Zu-Grunde-Gehn, deren Zahl-Verminderung (zum 
+                  <lb n="32" xml:id="a30r_lb32"/>Beispiel durch Vernichtung der Mittel<subst xml:id="a30r_subst_d2e828"><add hand="#N_brown1" place="above" rend="insM" xml:id="a30r_add_d2e829">glieder</add><del hand="#N_brown1" rend="hatching">bildungen</del></subst>) ein Zeichen wachsender Kraft und <milestone unit="page" edRef="#Ed" n="69"/>Vollkommenheit sein. Ich wollte sagen: auch 
+                  <lb n="33" xml:id="a30r_lb33"/>das theilweise <hi rend="underline">Unnützlichwerden</hi>, das Verkümmern und Entarten, das Verlustiggehn von Sinn und Zweckmäßigkeit gehört <add place="above" rend="insM" xml:id="a30r_add_d2e842">unter Umständen</add> zu 
+                  <lb n="34" xml:id="a30r_lb34"/>de<subst xml:id="a30r_subst_d2e847"><del rend="overwritten">m</del><add place="superimposed" xml:id="a30r_add_d2e850">n</add> <add place="above" rend="insM" xml:id="a30r_add_d2e853">Bedingungen <subst xml:id="a30r_subst_d2e855"><del rend="overwritten">ein</del><add place="superimposed" xml:id="a30r_add_d2e858">d</add></subst>es</add></subst> wirklichen <hi rend="latin">progressus</hi>: als welcher immer in Gestalt eines Willens und Wegs zu <hi rend="underline">größerer</hi> <hi rend="underline">Macht</hi> erscheint und immer auf 
+                  <lb n="35" xml:id="a30r_lb35"/>Unkosten zahlreicher kleinerer Mächte durchgesetzt wird. Die Größe eines „Fortschritts“ <hi rend="underline">bemißt</hi> sich <add place="above" rend="insM" xml:id="a30r_add_d2e877">sogar</add> nach der Masse dessen, was 
+                  <lb n="36" xml:id="a30r_lb36"/>ihm <add place="above" rend="insM" xml:id="a30r_add_d2e882">Alles</add> <hi rend="underline">geopfert</hi> werden mußte<subst xml:id="a30r_subst_d2e889"><del rend="overwritten">.</del><add place="superimposed" xml:id="a30r_add_d2e892">;</add> <add place="above" rend="insM" xml:id="a30r_add_d2e895">die Menschheit als Masse dem Gedeihen einer </add><add place="below" rend="insM" xml:id="a30r_add_d2e897">einzelnen stärkeren <hi rend="latin">Species</hi> Mensch <add place="above" rend="insM" xml:id="a30r_add_d2e902">geopfert</add> – das <hi rend="underline">wäre</hi> ein Fortschritt…</add></subst> – Ich hebe diesen <add place="above" rend="insM" xml:id="a30r_add_d2e909">Haupt-</add>Gesichtspunkt <add place="above" rend="insM" xml:id="a30r_add_d2e912">der historischen Methodik</add> hervor, <subst xml:id="a30r_subst_d2e915"><del rend="hatching">so sehr</del> <add place="above" rend="insM" xml:id="a30r_add_d2e919">um so mehr als<add place="inline" xml:id="a30r_add_d2e921"> er</add></add> <del rend="hatching">er</del></subst> <del rend="hatching">auch</del> <add place="above" rend="insM" xml:id="a30r_add_d2e930">im Grunde <add xml:id="substAdd15_a30r" place="inline" rend="insMExt">dem gerade</add></add> <del xml:id="substDel15_a30r" rend="hatching">dem</del> herrschenden<anchor xml:id="appAnchor_a30r36"/> Instinkte <add place="above" rend="insM" xml:id="a30r_add_d2e941">und Zeitgeschmacke</add> entgegengeht, 
+                  <lb n="37" xml:id="a30r_lb37"/>welcher lieber sich noch mit der absoluten Zufälligkeit, ja <add place="above" rend="insM" xml:id="a30r_add_d2e946">mechanistischen</add> Unsinnigkeit alles Geschehens <del instant="unknown">sich</del> vertragen würde als mit der The<pc force="weak">-</pc>
+                  <lb n="38" xml:id="a30r_lb38"/>orie eines in allem Geschehen sich abspielenden <hi rend="underline">Macht-Willens</hi>. D<subst xml:id="subst16a_a30r"><del rend="overwritten">er</del><add place="superimposed" xml:id="a30r_add_d2e964">ie</add></subst> demokratische <subst xml:id="subst16b_a30r"><add place="above" rend="insM" xml:id="a30r_add_d2e968">Idiosynkrasie</add><del rend="hatching">Haß</del></subst> gegen alles, was herrscht und herrschen 
+                  <lb n="39" xml:id="a30r_lb39"/>will, der moderne <hi rend="underline">Misarchismus</hi> <add place="above" rend="insM" seq="1" xml:id="a30r_add_d2e979">(um ein <subst xml:id="subst17a_a30r" seq="2"><del rend="overwritten">neues</del><add place="superimposed" xml:id="a30r_add_d2e984">schlechtes</add></subst> Wort für <subst xml:id="subst17b_a30r" seq="2"><del rend="overwritten">diese</del><add place="superimposed" xml:id="a30r_add_d2e990">eine</add></subst> <subst xml:id="subst17c_a30r" seq="2"><del rend="overwritten">neue</del><add place="superimposed" xml:id="a30r_add_d2e996">schlechte</add></subst> Sache zu bilden)</add> hat sich <subst xml:id="a30r_subst_d2e1000"><add place="above" rend="insM" xml:id="a30r_add_d2e1001"><del rend="hatching">allmählich</del> <add place="inline" rend="insMExt" xml:id="a30r_add_d2e1005">allmählich</add></add><del rend="hatching">bereits</del></subst> dermaaßen <add place="above" rend="insM" xml:id="a30r_add_d2e1010"><del rend="hatching">schon</del></add> ins Geistige, Geistigste umgesetzt<add place="above" rend="insM" xml:id="a30r_add_d2e1014"> und verkleidet</add>, daß er <add place="above" rend="insM" xml:id="a30r_add_d2e1017">heute</add> <subst xml:id="a30r_subst_d2e1021"><add place="above" rend="insM" xml:id="a30r_add_d2e1022"><del rend="hatching">bereits</del></add><del rend="hatching">bereits</del></subst> <subst xml:id="a30r_subst_d2e1028"><add place="above" rend="insM" xml:id="a30r_add_d2e1029">Schritt für Schritt <del rend="strikethrough" instant="true">bere</del></add><del rend="hatching">in den streng</del><del rend="none"><pc force="weak">-</pc></del> 
+                  <lb n="40" xml:id="a30r_lb40"/><add place="above" rend="insM" xml:id="a30r_add_d2e1040">bereits in die streng<pc force="weak">-</pc></add></subst>sten<subst xml:id="a30r_subst_d2e1045"><add place="inline" xml:id="a30r_add_d2e1046">,</add> <del rend="hatching">und</del></subst> anscheinend<anchor xml:id="appAnchor_a30r40"/> objektivsten Wissenschaften <subst xml:id="a30r_subst_d2e1054"><add place="above" rend="insM" seq="1" xml:id="a30r_add_d2e1055">eindringt<add place="inline" seq="2" xml:id="a30r_add_d2e1057"><del rend="overwritten" seq="3">;</del><add hand="#N_brown1" place="superimposed" seq="3" xml:id="a30r_add_d2e1060">,</add></add> <del rend="hatching" seq="2">und in ihnen Unfug</del> <add hand="#N_brown1" place="inline" rend="insMExt" seq="3" xml:id="a30r_add_d2e1066">eindringen <hi rend="underline">darf</hi>;</add></add><del rend="hatching" seq="1">sein Unwesen</del> <del rend="hatching" seq="2">treibt;</del></subst> ja er scheint mir <add place="above" rend="insM" seq="1" xml:id="a30r_add_d2e1078"><subst xml:id="subst18_a30r" seq="2"><del rend="hatching">bereits</del> <add place="inline" rend="insMExt" xml:id="a30r_add_d2e1083">schon über</add></subst></add> die ganze Physiologie und Lehre 
+                  <lb n="41" xml:id="a30r_lb41"/>vom Leben <subst xml:id="a30r_subst_d2e1089"><add xml:id="substAdd18_a30r" place="above" rend="insM" seq="2">Herr geworden zu sein<add hand="#N_brown1" place="inline" rend="insMExt" seq="3" xml:id="a30r_add_d2e1092">, zu ihrem Schaden, wie sich von selbst versteht,</add></add><del xml:id="substDel18_a30r" rend="hatching" seq="2">in eine falsche Richtung gedrängt zu haben</del></subst>, indem er ihr <subst xml:id="a30r_subst_d2e1097"><add place="above" rend="insM" xml:id="a30r_add_d2e1098">einen Grundbegriff, den der</add><del rend="hatching">den Begriff</del></subst> der eigentlichen <hi rend="underline">Aktivität</hi>, <subst xml:id="a30r_subst_d2e1106"><add place="above" rend="insM" xml:id="a30r_add_d2e1107">eskamotirt hat.</add><del rend="hatching">vorenthält oder</del> 
+                  <lb n="42" xml:id="a30r_lb42"/><del rend="hatching">eskamotirt</del></subst>. Man stellt dagegen <add place="above" rend="insM" xml:id="a30r_add_d2e1116">unter dem Druck jener Idiosynkrasie</add> die „Anpassung“ in den Vordergrund<add place="above" rend="insM" xml:id="a30r_add_d2e1120"> das heißt eine Aktivität zweiten Ranges, <milestone unit="page" edRef="#Ed" n="70"/>eine bloße Reaktivität</add>, ja man hat das Leben selbst als eine immer zweckmäßigere 
+                  <lb n="43" xml:id="a30r_lb43"/>innere Anpassung an äußere Umstände definirt (<hi rend="latin">Herbert Spencer</hi>) Damit ist aber das Wesen des Lebens verkannt, sein <hi rend="underline">Wille</hi> <hi rend="underline">zur</hi> 
+                  <lb n="44" xml:id="a30r_lb44"/><hi rend="underline">Macht</hi>; damit ist der principielle Vorrang übersehn, den die spontanen, angreifenden, übergreifenden, neu-auslegenden, neu-richtenden 
+                  <lb n="45" xml:id="a30r_lb45"/>und gestaltenden Kräfte haben, auf deren Wirkung erst die „Anpassung“ folgt; <subst xml:id="a30r_subst_d2e1143"><add place="above" rend="insM" xml:id="a30r_add_d2e1144">damit ist im Organismus selbst die herrschaftliche Rolle der höchsten </add><del rend="hatching">als eine Reaktion und Unterwerfungsform dessen, was</del>
+                  <lb n="46" xml:id="a30r_lb46"/><add place="above" xml:id="a30r_add_d2e1150">Funktionäre abgeleugnet, in denen der Wille zum Leben aktiv und aggressiv erscheint. Man erinnert sich, was <hi rend="latin">Huxley Spencer’n</hi> zum Vorwurf gemacht hat – seinen „<hi rend="latin">admini<pc force="weak">-</pc></hi></add><del rend="hatching">zu schwach ist, um über den Feind Herr zu werden, und eben noch stark genug, um sein Sonderdasein aufrecht zu erhalten</del><add place="below" xml:id="a30r_add_d2e1161"><hi rend="latin">strativen Nihilismus</hi>“: aber es handelt sich noch um <hi rend="underline">mehr</hi> als um’s „Administriren“…</add></subst>
+               </p>
+            </div2></div1>
+      </body>
    </text>
 <facsimile>
+    <surface lrx="907.0" lry="1401.8" n="9v" ulx="37.1" uly="39.7" xml:id="Mappe">
+         <graphic height="1439.84pt" width="1215.2pt" corresp="http://www.nietzschesource.org/DFGAapi/api/page/download/D-20a,5v" url="https://ores.klassik-stiftung.de/digilib/Scaler/IIIF/gsa!Arbeitskopie!71!212280!212280_502/full/full/0/default.jpg"/>
+      </surface>
       <surface lrx="907.0" lry="1401.8" n="9v" ulx="37.1" uly="39.7" xml:id="D-20a_5v">
          <graphic height="1439.84pt" width="1215.2pt" corresp="http://www.nietzschesource.org/DFGAapi/api/page/download/D-20a,5v" url="https://ores.klassik-stiftung.de/digilib/Scaler/IIIF/gsa!Arbeitskopie!71!75094!75094_18/full/full/0/default.jpg"/>
       </surface>
@@ -2069,57 +2120,499 @@
       <surface lrx="711.5" lry="874.6" n="25v" ulx="48.5" uly="47.0" xml:id="D-20b_24v">
          <graphic height="915.68pt" width="1023.52pt" corresp="http://www.nietzschesource.org/DFGAapi/api/page/download/D-20b,24v" url="https://ores.klassik-stiftung.de/digilib/Scaler/IIIF/gsa!Arbeitskopie!71!75097!75097_50/full/full/0/default.jpg"/>
       </surface>
-     </facsimile><sourceDoc><surface xml:id="srcD_surface_a2r" type="relative" start="#a2r" style="min-width:56em;padding-top:0px;" facs="#D-20a_III"><zone xml:id="srcD_zone_a2r_div2_GMVorrede01" start="#a2r_div2_GMVorrede01" type="firstBlock" style="padding-top:8em;"><zone xml:id="srcD_zone_a2r_fw_d2e26" type="fw-top-right" start="#a2r_fw_d2e26"><fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a2r_fw_d2e26">III.</fw></zone><zone xml:id="srcD_head_a2r_head_d2e34" type="head-zone" start="#a2r_head_d2e34"><line xml:id="srcD_line_a2r_head_d2e34_a2r_lb1" start="#a2r_lb1" n="1"><zone xml:id="srcD_zone_a2r_head_d2e34_a2r_lb1" type="head" style="margin-left:4.40313em;"><add place="inline" corresp="#a2r_add_d2e37"><hi rend="underline">Vorrede</hi>.</add>
-            
-            <anchor corresp="#a2r_div2_GMVorrede01"/>
-               
-                  </zone></line></zone><zone xml:id="srcD_zone_a2r_lb2" start="#a2r_lb2" type="add-zone" style="margin-left:8.125em;"><line xml:id="srcD_line_a2r_lb2" start="#a2r_lb2" style="top:5.15625em;" n="2"><add place="inline" corresp="#a2r_add_d2e49">1.</add>
-               
-               
-                  </line></zone><line xml:id="srcD_line_a2r_lb3" start="#a2r_lb3" rend="indent" n="3">Wir sind uns unbekannt, wir Erkennenden, wir selbst uns selbst: das hat seinen guten Grund. Wir haben nie 
-                  </line><line xml:id="srcD_line_a2r_lb4" start="#a2r_lb4" n="4">nach uns gesucht, – wie sollte es geschehn, daß wir eines Tags uns <hi rend="underline">fänden</hi>? Mit Recht hat man gesagt: „wo euer 
-                  </line><line xml:id="srcD_line_a2r_lb5" start="#a2r_lb5" n="5">Schatz ist, da ist auch euer Herz“; <hi rend="underline">unser</hi> Schatz ist, wo die Bienenkörbe unsrer Erkenntniß stehn. Wir sind immer 
-                  </line><line xml:id="srcD_line_a2r_lb6" start="#a2r_lb6" n="6">dazu unterwegs, als geborne Flügelthiere und Honigsammler des Geistes, wir kümmern uns von Herzen eigentlich 
-                  </line><line xml:id="srcD_line_a2r_lb7" start="#a2r_lb7" n="7">nur um Eins – etwas „heimzubringen“. Was das Leben sonst, die sogenannten „Erlebnisse“ angeht, – wer von uns 
-                  </line><line xml:id="srcD_line_a2r_lb8" start="#a2r_lb8" n="8">hat dafür auch nur Ernst genug? Oder Zeit genug? Bei solchen Sachen waren wir, fürchte ich, nie recht „bei 
-                  </line><line xml:id="srcD_line_a2r_lb9" start="#a2r_lb9" n="9">der Sache“: wir haben eben unser Herz nicht dort<del rend="overwritten" cause="#a2r_add_d2e80"><del rend="strikethrough">,</del></del><add place="superimposed" corresp="#a2r_add_d2e80"> –</add> und nicht einmal unser Ohr! Vielmehr wie ein Göttlich-
-                  </line><line xml:id="srcD_line_a2r_lb10" start="#a2r_lb10" n="10">Zerstreuter und In-sich-Versenkter, dem die Glocke eben mit aller Macht ihre zwölf Schläge des Mittags in’s 
-                  </line><line xml:id="srcD_line_a2r_lb11" start="#a2r_lb11" n="11">Ohr gedröhnt hat, mit Einem Male aufwacht und sich fragt „was hat es da eigentlich geschlagen?“ so reiben 
-                  </line><line xml:id="srcD_line_a2r_lb12" start="#a2r_lb12" n="12">auch wir uns mitunter <hi rend="underline">hinterdrein</hi> die Ohren und fragen, ganz erstaunt, ganz betreten „was haben wir da 
-                  </line><line xml:id="srcD_line_a2r_lb13" start="#a2r_lb13" n="13">eigentlich erlebt? mehr noch: wer <hi rend="underline">sind</hi> wir eigentlich?“ und zählen nach, hinterdrein, wie gesagt, alle <milestone unit="page" edRef="#Ed" n="IV"/>die 
-                  </line><line xml:id="srcD_line_a2r_lb14" start="#a2r_lb14" n="14">zitternden zwölf Glockenschläge unsres Erlebnisses, unsres Lebens, unsres <hi rend="underline">Seins</hi> – ach! und verzählen uns da<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a2r_lb15" start="#a2r_lb15" n="15">bei… Wir bleiben uns eben nothwendig fremd, wir verstehn uns nicht, wir <hi rend="underline">müssen</hi> uns verwechseln, für 
-                  </line><line xml:id="srcD_line_a2r_lb16" start="#a2r_lb16" n="16">uns heißt der Satz in alle Ewigkeit „Jeder ist sich selbst der Fernste“, – für uns sind wir keine „Erkennen<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a2r_lb17" start="#a2r_lb17" n="17">den“…
-               
-            <anchor corresp="#a2r_div2_GMVorrede02"/>
-               
-                  </line></zone><zone xml:id="srcD_zone_a2r_div2_GMVorrede02" start="#a2r_div2_GMVorrede02" type="textBlock"><line xml:id="srcD_line_a2r_head_d2e126_a2r_lb18" start="#a2r_lb18" n="18"><zone xml:id="srcD_zone_a2r_head_d2e126_a2r_lb18" type="head">2.
-               
-                  </zone></line><line xml:id="srcD_line_a2r_lb19" start="#a2r_lb19" n="19">– Meine Gedanken über die <hi rend="underline">Herkunft</hi> unsrer moralischen Vorurtheile – denn um sie handelt es sich in dieser Streit<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a2r_lb20" start="#a2r_lb20" n="20">schrift – haben ihren ersten, sparsamen und vorläufigen Ausdruck in jener Aphorismen-Sammlung erhalten, die den 
-                  </line><line xml:id="srcD_line_a2r_lb21" start="#a2r_lb21" n="21">Titel trägt „Menschliches, Allzumenschliches. Ein Buch für freie Geister<del rend="strikethrough" cert="high">.</del>“ und deren Niederschrift in Sorrent begonnen 
-                  </line><line xml:id="srcD_line_a2r_lb22" start="#a2r_lb22" n="22">wurde, während eines Winters, welcher es mir erlaubte, Halt zu machen wie ein Wandrer Halt macht, und das weite 
-                  </line><line xml:id="srcD_line_a2r_lb23" start="#a2r_lb23" n="23">und gefährliche Land zu überschauen, durch das mein Geist bis dahin gewandert war. Dies geschah im Winter 1876
-                  </line><line xml:id="srcD_line_a2r_lb24" start="#a2r_lb24" n="24">-77; die Gedanken selbst sind älter. Es waren in der Hauptsache schon die gleichen Gedanken, die ich in den 
-                  </line><line xml:id="srcD_line_a2r_lb25" start="#a2r_lb25" n="25">vorliegenden Abhandlungen wieder aufnehme: – hoffen wir, daß die lange Zwischenzeit ihnen gut gethan hat, 
-                  </line><line xml:id="srcD_line_a2r_lb26" start="#a2r_lb26" n="26">daß sie reifer, heller, stärker, vollkommner geworden sind! <hi rend="underline">Daß</hi> ich aber heute noch an ihnen festhalte, daß sie 
-                  </line><line xml:id="srcD_line_a2r_lb27" start="#a2r_lb27" n="27">sich selber inzwischen immer fester an einander gehalten haben, ja in einander gewachsen und verwachsen sind, das 
-                  </line><line xml:id="srcD_line_a2r_lb28" start="#a2r_lb28" n="28">stärkt in mir die frohe Zuversichtlichkeit, sie möchten von Anfang an in mir nicht einzeln, <milestone unit="page" edRef="#Ed" n="V"/>nicht beliebig, nicht spo<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a2r_lb29" start="#a2r_lb29" n="29">radisch entstanden sein, sondern aus einer gemeinsamen Wurzel heraus, aus einem in der Tiefe gebietenden, im<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a2r_lb30" start="#a2r_lb30" n="30">mer bestimmter redenden, immer Bestimmteres verlangenden <hi rend="underline">Grundwillen</hi> der Erkenntniß. So allein nämlich ge<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a2r_lb31" start="#a2r_lb31" n="31">ziemt es sich bei einem Philosophen. Wir haben kein Recht darauf, irgend worin <hi rend="underline">einzeln</hi> zu sein: wir dürfen weder 
-                  </line><line xml:id="srcD_line_a2r_lb32" start="#a2r_lb32" n="32">einzeln irren, noch einzeln die Wahrheit treffen. Vielmehr mit der Nothwendigkeit, mit der ein Baum seine 
-                  </line><line xml:id="srcD_line_a2r_lb33" start="#a2r_lb33" n="33">Früchte trägt, wachsen aus uns unsre Gedanken, unsre Werthe, un<retrace>s</retrace>re Ja’s und Nein’s und Wenn’s und Ob’s – 
-                  </line><line xml:id="srcD_line_a2r_lb34" start="#a2r_lb34" n="34">verwandt und bezüglich allesammt unter einander und Zeugnisse Eines Willens, Einer Gesundheit, Eines Erd<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a2r_lb35" start="#a2r_lb35" n="35">reichs, Einer Sonne. – Ob sie <hi rend="underline">euch</hi> schmecken, diese unsre Früchte? – Aber was geht das die Bäume an! 
-                  </line><line xml:id="srcD_line_a2r_lb36" start="#a2r_lb36" n="36">Was geht das <hi rend="underline">uns</hi> an, uns Philosophen!…
-            
-            
-            <anchor corresp="#a2r_div2_GMVorrede03"/>
-               
-                  </line></zone><zone xml:id="srcD_zone_a2r_div2_GMVorrede03" start="#a2r_div2_GMVorrede03" type="lastBlock" style="padding-bottom:5em;"><line xml:id="srcD_line_a2r_head_d2e222_a2r_lb37" start="#a2r_lb37" n="37"><zone xml:id="srcD_zone_a2r_head_d2e222_a2r_lb37" type="head">3.
-               
-               
-                  </zone></line><line xml:id="srcD_line_a2r_lb38" start="#a2r_lb38" n="38">Bei einer mir eignen Bedenklichkeit, die ich ungern eingestehe – sie bezieht sich nämlich auf die <hi rend="underline">Moral</hi>, 
-                  </line><line xml:id="srcD_line_a2r_lb39" start="#a2r_lb39" n="39">auf Alles, was bisher auf Erden als Moral gefeiert worden ist –, einer Bedenklichkeit, <del rend="hatching">die</del> welche in meinem </line><zone xml:id="srcD_zone_a2r_fw_d2e29" type="fw-bottom-left" start="#a2r_fw_d2e29"><fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#a2r_fw_d2e29">2</fw></zone></zone></surface></sourceDoc></TEI>
+     </facsimile>
+  <sourceDoc>
+        <surface xml:id="srcD_surface_a30r" type="relative" start="#a30r" facs="#D-20a_24">
+            <zone xml:id="srcD_zone_a30r_div2_GM0212" start="#a30r_div2_GM0212" type="singleBlock" style="padding-top:12em;padding-bottom:5em;">
+                <zone xml:id="srcD_zone_a30r_fw_d2e26" type="fw-top-left" start="#a30r_fw_d2e26">
+                    <fw type="pageNumber" hand="#typesetter_red" place="top-left" corresp="#a30r_fw_d2e26">
+                        <certainty match="@hand" locus="value" cert="medium"/>24.</fw>
+                </zone>
+                <zone xml:id="srcD_zone_a30r_fw_d2e30" type="fw-top-right" start="#a30r_fw_d2e30">
+                    <fw type="pageNumber" hand="#N-Archiv_red" place="top-right" corresp="#a30r_fw_d2e30">
+                        <del rend="erased" cause="#a30r_add_d2e34" type="SOW">27</del>
+                        <add place="superimposed" corresp="#a30r_add_d2e34">24</add>
+                    </fw>
+                </zone>
+                <zone xml:id="srcD_zone_a30r_lb1" start="#a30r_lb1" type="add-zone" style="margin-left:23.75em;">
+                    <line xml:id="srcD_line_a30r_lb1" style="top:1em;" start="#a30r_lb1" n="1">
+                        <add corresp="#substAdd1a_a30r" place="inline" change="#GM02abortedVersion">
+                            <seg type="head">
+                                <del corresp="#substDel3a_a30r" hand="#N_brown1" rend="strikethrough">10.</del> <add corresp="#substAdd3a_a30r" hand="#N_brown1" place="inline" change="#GM02revision">12.</add>
+                            </seg>
+                        </add>
+                  </line>
+                </zone>
+                <zone xml:id="srcD_zone_a30r_lb2" start="#a30r_lb2" type="add-zone" style="margin-left:0em;">
+                    <line xml:id="srcD_line_a30r_lb2" start="#a30r_lb2" hand="#N_brown1" style="top:2.65625em;" n="2">
+                        <add corresp="#substAdd3b_a30r" hand="#N_brown1" place="inline">Hier noch ein Wort über Ursprung und Zweck der Strafe – zwei Probleme, die auseinander fallen<del rend="overwritten" cause="#a30r_add_d2e181" type="SOW">.</del>
+                            <add place="superimposed" corresp="#a30r_add_d2e181" instant="true"> o</add>der <restore type="strikethrough" corresp="#substRestore4a_a30r">
+                                <hi rend="underline">fallen</hi>
+                            </restore> <restore corresp="#substRestore4b_a30r" type="strikethrough">
+                                <hi rend="underline">sollten</hi>
+                            </restore>: leider wirft man sie ge<pc force="weak">-</pc>
+                        </add>
+                  </line>
+                </zone>
+                <zone xml:id="srcD_zone_a30r_lb3" start="#a30r_lb3" type="add-zone" style="margin-left:0em;">
+                    <line xml:id="srcD_line_a30r_lb3" start="#a30r_lb3" hand="#N_brown1" style="top:4.21875em;" n="3">
+                        <add corresp="#substAdd3c_a30r" hand="#N_brown1" place="inline">wöhnlich in Eins. </add> 
+                  </line>
+                </zone>
+                <zone xml:id="srcD_zone_a30r_lb4" start="#a30r_lb4" type="add-zone" style="margin-left:0em;">
+                    <line xml:id="srcD_line_a30r_lb4" start="#a30r_lb4" style="top:7.26563em;" n="4">
+                        <add corresp="#substAdd1b_a30r" place="inline">
+                            <del corresp="#substDel4a_a30r" hand="#N_brown1" rend="hatching">Man kann sich</del> <metamark xml:id="srcD_metamark_substAdd3d_a30r" function="insertion" rend="inSpatium" style="top:-0.15625em;height:1.48438em;">
+                                <add place="above" hand="#N_brown1" corresp="#substAdd3d_a30r" style="left:-2.34375em;">
+                                    <del corresp="#substDel4b_a30r" hand="#N_brown1" rend="hatching">nämlich</del>
+                                </add>
+                            </metamark> <del corresp="#substDel4c_a30r" hand="#N_brown1" rend="hatching">gar nicht</del> <metamark xml:id="srcD_metamark_substAdd3e_a30r" function="insertion">
+                                <add place="above" hand="#N_brown1" corresp="#substAdd3e_a30r">
+                                    <del corresp="#substDel4d_a30r" hand="#N_brown1" rend="hatching">naiver</del>
+                                </add>
+                            </metamark>
+                            <add corresp="#substAdd4_a30r" style="left:3.90625em;top:-3.02734em;" place="above" hand="#N_brown1">
+                                <milestone unit="page" edRef="#Ed" n="67"/>Wie treiben es doch die bisherigen Moral-Genealogen in diesem Falle? Naiv, wie sie es immer </add>
+                            <del corresp="#substDel3b_a30r" hand="#N_brown1" rend="hatching">mehr</del> <del corresp="#substDel4e_a30r" hand="#N_brown1" rend="hatching">an der Geschichte</del> <del corresp="#substDel4f_a30r" hand="#N_brown1" rend="hatching">vergreifen</del>
+                            <del corresp="#substDel4g_a30r" hand="#N_brown1" rend="hatching">, als wenn man es </del>
+                            <metamark xml:id="srcD_metamark_substAdd2a_a30r" function="insertion">
+                                <add place="above" corresp="#substAdd2a_a30r">
+                                    <del corresp="#substDel4h_a30r" hand="#N_brown1" rend="hatching">treibt</del>
+                                </add>
+                            </metamark>
+                            <del corresp="#substDel2a_a30r" rend="hatching">macht</del>
+                            <del corresp="#substDel4i_a30r" hand="#N_brown1" rend="hatching">, wie es bisher die Moral-Genealogen</del> <metamark xml:id="srcD_metamark_substAdd2b_a30r" function="insertion" rend="endOfLine">
+                                <add place="above" corresp="#substAdd2b_a30r">
+                                    <del hand="#N_brown1" corresp="#substDel4j_a30r">in Betreff der Strafe</del>
+                                </add>
+                            </metamark> </add>
+                  </line>
+                </zone>
+                <zone xml:id="srcD_zone_a30r_lb5" start="#a30r_lb5" type="add-zone" style="margin-left:0em;">
+                    <line xml:id="srcD_line_a30r_lb5" start="#a30r_lb5" style="top:10.625em;" n="5">
+                        <add corresp="#substAdd1c_a30r" place="inline">
+                            <metamark xml:id="srcD_metamark_a30r_add_d2e246" function="insertion" style="top:0.234375em;height:1.09375em;">
+                                <add place="above" corresp="#a30r_add_d2e246" style="left:-2.34375em;">getrieben haben</add>
+                            </metamark>
+                            <del rend="hatching">machten</del>, <metamark xml:id="srcD_metamark_substAdd2c_a30r" function="insertion" style="top:0.429688em;height:0.898437em;">
+                                <add place="above" corresp="#substAdd2c_a30r" style="left:0em;">– sie mach<del corresp="#substDel2b_a30r" rend="hatching">t</del>en irgend einen</add>
+                            </metamark>
+                            <del corresp="#substDel2c_a30r" rend="hatching">nämlich einen</del> <del rend="hatching" cert="unknown">„</del>
+                            <retrace>Z</retrace>weck“<anchor corresp="#appAnchor_a30r5"/> in der Strafe <metamark xml:id="srcD_metamark_substAdd2d_a30r" function="insertion" style="top:0.234375em;height:1.09375em;">
+                                <add place="above" corresp="#substAdd2d_a30r" style="left:-6.25em;">ausfindig <del corresp="#substDel2d_a30r" rend="hatching">machen</del>, zum Beispiel <metamark xml:id="srcD_metamark_substAdd2e_a30r" function="insertion" rend="inSpatium" style="top:0.415038em;height:0.854493em;">
+                                        <add place="above" corresp="#substAdd2e_a30r" style="left:0em;">Rache oder</add>
+                                    </metamark> Abschreckung<add corresp="#substAdd2f_a30r" place="inline" rend="insMExt">, setz<del corresp="#substDel2e_a30r" rend="hatching">t</del>en dann arglos</add>
+                                </add>
+                            </metamark>
+                            <del corresp="#substDel2f_a30r" rend="hatching">suchen</del> <del corresp="#substDel2g_a30r" rend="hatching">und dann arglos</del> diesen <retrace>Z</retrace>weck <del rend="overwritten" cause="#a30r_add_d2e292" type="SOW">i</del>
+                            <add place="superimposed" corresp="#a30r_add_d2e292">a</add>n <metamark xml:id="srcD_metamark_a30r_add_d2e296" function="insertion">
+                                <add place="above" corresp="#a30r_add_d2e296">den Anfang, als <hi rend="latin">causa fiendi</hi>
+                                </add>
+                            </metamark>
+                            <del rend="hatching">die Entstehung</del> der Strafe </add>
+                  </line>
+                </zone>
+                <zone xml:id="srcD_zone_a30r_lb6" start="#a30r_lb6" type="add-zone" style="margin-left:0em;">
+                    <line xml:id="srcD_line_a30r_lb6" start="#a30r_lb6" style="top:12.8906em;" n="6">
+                        <add corresp="#substAdd1d_a30r" place="inline" next="#substAdd1e_a30r">
+                            <del corresp="#substDel2h_a30r" rend="hatching">hinein</del>
+                            <metamark xml:id="srcD_metamark_substAdd1dd_a30r" function="insertion" rend="inWord" style="top:0.625em;height:0.703125em;">
+                                <add place="above" corresp="#substAdd1dd_a30r" style="left:0em;">
+                                    <del corresp="#substDel2i_a30r" rend="hatching">spielen</del>
+                                </add>
+                            </metamark>
+                            <del corresp="#substDel2j_a30r" rend="hatching">setzen</del>
+                            <del corresp="#substDel2k_a30r" rend="hatching">, als deren <hi rend="latin">causa</hi>.</del> <metamark xml:id="srcD_metamark_substAdd2h_a30r" function="insertion" rend="inSpatium" style="top:0.625em;height:0.703125em;">
+                                <add place="above" corresp="#substAdd2h_a30r" style="left:0em;">
+                                    <add corresp="#substAdd2i_a30r" place="inline">und </add>– <del corresp="#substDel2l_a30r" rend="hatching">und wa</del>
+                                    <del rend="overwritten" cause="#a30r_add_d2e330" type="EOW">ren</del>
+                                    <add place="superimposed" corresp="#a30r_add_d2e330">sind</add> fertig.</add>
+                            </metamark> Der „<retrace>Z</retrace>weck<anchor corresp="#appAnchor_a30r6a"/> im Rechte“ ist <metamark xml:id="srcD_metamark_substAdd1ddd_a30r" function="insertion" rend="inSpatium" style="top:0.625em;height:0.703125em;">
+                                <add place="above" corresp="#substAdd1ddd_a30r" style="left:0em;">aber</add>
+                            </metamark> zuallerletzt für die Entstehungsgeschichte des <metamark xml:id="srcD_metamark_a30r_add_d2e342" function="insertion" style="top:0.46875em;height:0.859375em;">
+                                <add place="above" instant="true" corresp="#a30r_add_d2e342" style="left:0em;">Rechts zu</add>
+                            </metamark>
+                            <del rend="hatching">Rechts zu<anchor corresp="#appAnchor_a30r6b"/>
+                            </del> verwenden:<anchor corresp="#appAnchor_a30r6c"/> </add>
+                  </line>
+                </zone>
+                <line xml:id="srcD_line_a30r_lb7" start="#a30r_lb7" n="7">
+                    <del corresp="#substDel1a_a30r" rend="hatching">In jeder Art</del> <del corresp="#substDel1b_a30r" rend="hatching">
+                        <del rend="hatching" instant="true">Art</del> Historie</del> <del corresp="#substDel1c_a30r" rend="hatching">ergiebt sich <metamark xml:id="srcD_metamark_a30r_add_d2e364" function="insertion" rend="inSpatium">
+                            <add place="above" corresp="#a30r_add_d2e364">
+                                <del corresp="#substDel1d_a30r" rend="strikethrough">nur<anchor corresp="#appAnchor_a30r7a"/>
+                                </del>
+                            </add>
+                        </metamark> allmählich ein Gesichtspunkt,</del> <del corresp="#substDel1e_a30r" rend="hatching">der </del>
+                    <metamark xml:id="srcD_metamark_a30r_add_d2e373" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e373">
+                            <del corresp="#substDel1f_a30r" rend="hatching">gerade</del>
+                        </add>
+                    </metamark>
+                    <del rend="hatching">an sich</del>
+                    <del corresp="#substDel1g_a30r" rend="hatching"> den intellektuellen <metamark xml:id="srcD_metamark_a30r_add_d2e380" function="insertion" rend="inSpatium">
+                            <add place="above" corresp="#a30r_add_d2e380">
+                                <del rend="hatching">modernen<anchor corresp="#appAnchor_a30r7b"/>
+                                </del>
+                            </add>
+                        </metamark> Gewohnheiten </del>
+                    <metamark xml:id="srcD_metamark_a30r_add_d2e386" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e386">
+                            <del corresp="#substDel1h_a30r" rend="hatching">und</del> <del corresp="#substDel1i_a30r" rend="hatching">Wünschbarkeiten</del> <metamark xml:id="srcD_metamark_a30r_add_d2e393" function="insertion" style="top:-0.15625em;height:1.48438em;">
+                                <add place="above" corresp="#a30r_add_d2e393" style="left:-8.59375em;">
+                                    <del corresp="#substDel1j_a30r" rend="hatching">des modernen Menschen</del>
+                                </add>
+                            </metamark>
+                        </add>
+                    </metamark>
+                    <del rend="hatching">und Verwöhnungen</del>
+                  </line>
+                <line xml:id="srcD_line_a30r_lb8" start="#a30r_lb8" n="8">
+                    <del corresp="#substDel1k_a30r" rend="strikethrough">auf’s höchste zuwider geht – <del corresp="#substDel5a_a30r" rend="hatching">es ist</del>
+                        <metamark xml:id="srcD_metamark_substAdd5a_a30r" function="insertion" rend="afterWord" style="top:-0.125em;height:1.4375em;">
+                            <add place="above" corresp="#substAdd5a_a30r" style="left:-1.875em;">
+                                <del corresp="#substDel1l_a30r" rend="hatching">sein Sieg wäre</del>
+                            </add>
+                        </metamark> vielleicht <metamark xml:id="srcD_metamark_substAdd5b_a30r" function="insertion">
+                            <add place="above" corresp="#substAdd5b_a30r">
+                                <del corresp="#substDel1m_a30r" rend="hatching">der</del>
+                            </add>
+                        </metamark>
+                        <del corresp="#substDel5b_a30r" rend="hatching">unser</del> größte<del corresp="#substDel5c_a30r" rend="strikethrough">r</del> Triumph über die <hi rend="latin">vis inertiae</hi> des</del> <metamark xml:id="srcD_metamark_a30r_add_d2e425" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e425">
+                            <del corresp="#substDel1n_a30r" rend="hatching">demokratischen Instinktes</del>
+                        </add>
+                    </metamark>
+                    <del rend="hatching">menschlichen Intellekts</del>
+                    <del corresp="#substDel1o_a30r" rend="hatching"> –:</del>
+                    <metamark xml:id="srcD_metamark_substAdd1e_a30r" function="insertion" rend="afterWord">
+                        <add place="above" corresp="#substAdd1e_a30r">vielmehr giebt<anchor corresp="#appAnchor_a30r8a"/> </add>
+                    </metamark> <del corresp="#substDel1p_a30r" rend="hatching">daß näm<pc force="weak">-</pc>
+                    </del>
+                    <anchor corresp="#appAnchor_a30r8b"/>
+                  </line>
+                <line xml:id="srcD_line_a30r_lb9" start="#a30r_lb9" n="9">
+                    <metamark xml:id="srcD_metamark_substAdd1f_a30r" function="insertion" style="top:0.5em;height:0.8125em;">
+                        <add place="above" corresp="#substAdd1f_a30r" style="left:0em;">es für alle Art Historie gar keinen wichtigeren Satz<metamark xml:id="srcD_metamark_substAdd1g_a30r" function="insertion" rend="beforePunctuation" style="top:0.136719em;height:1.19141em;">
+                                <add place="above" corresp="#substAdd1g_a30r" style="left:0.292969em;"> als jenen</add>
+                            </metamark>, der mit solcher Mühe errungen ist, aber auch wirklich errungen <hi rend="underline">sein</hi> <hi rend="underline">sollte</hi> – daß nämlich </add>
+                    </metamark>
+                    <del corresp="#substDel1q_a30r" rend="hatching">lich</del> die Ursache der Entstehung eines Dings <del rend="hatching">von</del>
+                    <add corresp="#a30r_add_d2e462" place="below">und</add> <del rend="hatching">seiner</del>
+                    <add corresp="#a30r_add_d2e468" place="below">dessen</add> schließliche<del rend="overwritten" cause="#substAdd1h_a30r" type="EOW">n</del>
+                    <add corresp="#substAdd1h_a30r" place="superimposed">
+                        <del corresp="#substDel2m_a30r" rend="hatching">r</del>
+                    </add> Nützlichkeit, <del rend="hatching">seiner</del>
+                    <add corresp="#a30r_add_d2e481" place="below">dessen</add> thatsächliche<del rend="overwritten" cause="#substAdd1i_a30r" type="EOW">n</del>
+                    <add corresp="#substAdd1i_a30r" place="superimposed">
+                        <del corresp="#substDel2n_a30r" rend="hatching">r</del>
+                    </add> Verwendung und Einord<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a30r_lb10" start="#a30r_lb10" n="10">nung in ein System von Zwecken <hi rend="latin">toto coelo</hi> auseinander liegen; daß etwas Vorhandenes, irgendwie Zu-Stande-Gekom<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a30r_lb11" start="#a30r_lb11" n="11">menes immer wieder von einer ihm überlegnen Macht auf <metamark xml:id="srcD_metamark_a30r_add_d2e506" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e506">neue</add>
+                    </metamark>
+                    <del rend="hatching">deren</del> Absichten ausgelegt, <metamark xml:id="srcD_metamark_substAdd6_a30r" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#substAdd6_a30r">neu</add>
+                    </metamark> in Beschlag genommen, zu <metamark xml:id="srcD_metamark_a30r_add_d2e516" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e516">einem neuen</add>
+                    </metamark>
+                    <del rend="hatching">deren</del> 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb12" start="#a30r_lb12" n="12">Nutzen umgebildet und umgerichtet wird; daß alles Geschehen <metamark xml:id="srcD_metamark_substAdd7_a30r" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#substAdd7_a30r">in der organischen Welt</add>
+                    </metamark> ein <hi rend="underline">Überwältigen</hi>, <hi rend="underline">Herrwerden</hi> und daß wiederum alles 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb13" start="#a30r_lb13" n="13">Überwältigen und Herrwerden <del corresp="#substDel7a_a30r" rend="hatching">in der organischen und</del> <del corresp="#substDel7b_a30r" rend="hatching">unorganischen Welt</del> ein Neu-Interpretieren, ein Zurechtmachen ist, 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb14" start="#a30r_lb14" n="14">bei dem der bisherige „Sinn“ <metamark xml:id="srcD_metamark_a30r_add_d2e543" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a30r_add_d2e543">und „Zweck“</add>
+                    </metamark> nothwendig verdunkelt oder ganz ausgelöscht werden muß. Wenn man die <hi rend="underline">Nützlichkeit</hi> 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb15" start="#a30r_lb15" n="15">von irgend welchem physiologischen Organ (oder auch einer Rechts-Institution, einer <metamark xml:id="srcD_metamark_a30r_add_d2e552" function="insertion" rend="inSpatium" style="top:-0.125em;height:1.4375em;">
+                        <add place="above" corresp="#a30r_add_d2e552" style="left:-4.375em;">gesellschaftlichen</add>
+                    </metamark> Sitte, eines <metamark xml:id="srcD_metamark_a30r_add_d2e555" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a30r_add_d2e555">politischen</add>
+                    </metamark> Brauchs, einer Form <add corresp="#a30r_add_d2e559" place="above">in den</add>
+                    <del rend="hatching">des</del>  
+                  </line>
+                <line xml:id="srcD_line_a30r_lb16" start="#a30r_lb16" n="16">
+                    <metamark xml:id="srcD_metamark_a30r_add_d2e565" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e565">Künsten oder im </add>
+                    </metamark>religiösen Cultus) noch so gut begriffen hat, so hat man damit noch nichts in Betreff seiner Entstehung<del rend="hatching">, noch nicht ein</del>
+                    <del rend="none">
+                        <pc force="weak">-</pc>
+                    </del> 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb17" start="#a30r_lb17" n="17">
+                    <del rend="hatching">mal in Betreff seiner bisherigen</del> <del rend="hatching">Entwicklung</del> begriffen: so unbequem und unangenehm dies älteren Ohren klingen 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb18" start="#a30r_lb18" n="18">mag, – denn <metamark xml:id="srcD_metamark_a30r_add_d2e587" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e587">von Alters her</add>
+                    </metamark>
+                    <del rend="hatching">bisher</del> hatte man in dem nachweisbaren Zwecke<add place="inline" corresp="#a30r_add_d2e592">, <metamark xml:id="srcD_metamark_a30r_add_d2e594" function="insertion" rend="inSpatium">
+                            <add place="above" instant="true" corresp="#a30r_add_d2e594">in der Nützlichkeit</add>
+                        </metamark>
+                    </add> eines Dings, <milestone unit="page" edRef="#Ed" n="68"/>einer Form, einer Einrichtung auch <metamark xml:id="srcD_metamark_a30r_add_d2e600" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e600">deren</add>
+                    </metamark>
+                    <del rend="hatching">ihren</del> Ent<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a30r_lb19" start="#a30r_lb19" n="19">stehungsgrund zu begreifen <del rend="hatching">gewähnt</del>
+                    <del rend="strikethrough" cause="insM">.</del>
+                    <metamark xml:id="srcD_metamark_a30r_add_d2e616" function="insertion" rend="afterWord" style="top:0.421875em;height:0.890625em;">
+                        <add place="above" corresp="#a30r_add_d2e616" style="left:-13.75em;">geglaubt, das Auge <metamark xml:id="srcD_metamark_a30r_add_d2e619" function="insertion" style="top:0.136719em;height:1.19141em;">
+                                <add place="above" corresp="#a30r_add_d2e619" style="left:0em;">als gemacht zum</add>
+                            </metamark>
+                            <del rend="hatching">aus dem</del> Sehen, die Hand <metamark xml:id="srcD_metamark_a30r_add_d2e625" function="insertion" style="top:0.0390625em;height:1.28906em;">
+                                <add place="above" corresp="#a30r_add_d2e625" style="left:0em;">als gemacht <hi rend="underline">zum</hi>
+                                </add>
+                            </metamark>
+                            <del rend="hatching">aus dem</del> Greifen.<add place="inline" rend="insMExt" corresp="#a30r_add_d2e632"> So hat man sich auch die Strafe vorgestellt als erfunden <hi rend="underline">zum</hi> Strafen.</add>
+                        </add>
+                    </metamark> Aber alle Zwecke, alle Nützlichkeiten sind nur <hi rend="underline">Anzeichen</hi> davon, daß <metamark xml:id="srcD_metamark_a30r_add_d2e641" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e641">
+                            <del rend="hatching">wieder</del>
+                        </add>
+                    </metamark> ein Wille zur 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb20" start="#a30r_lb20" n="20">Macht über etwas weniger Mächtiges Herr geworden ist und ihm von sich aus den Sinn einer Funktion aufgeprägt hat; und 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb21" start="#a30r_lb21" n="21">die ganze Geschichte eines „Dings“ <metamark xml:id="srcD_metamark_a30r_add_d2e649" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a30r_add_d2e649">eines Organs, eines Brauchs</add>
+                    </metamark> kann dergestalt eine fortgesetzte <metamark xml:id="srcD_metamark_a30r_add_d2e653" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e653">Zeichen-</add>
+                    </metamark>Kette von immer neuen Interpretationen und Zurechtma<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a30r_lb22" start="#a30r_lb22" n="22">chungen sein, deren Ursachen selbst unter sich nicht im Zusammenhange zu sein brauchen, vielmehr <metamark xml:id="srcD_metamark_substAdd8_a30r" function="insertion" rend="inSpatium" style="top:-0.125em;height:1.4375em;">
+                        <add place="above" corresp="#substAdd8_a30r" style="left:-5em;">unter Umständen sich</add>
+                    </metamark> bloß zufällig <metamark xml:id="srcD_metamark_a30r_add_d2e664" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e664">
+                            <del corresp="#substDel8_a30r" rend="hatching">sich</del>
+                        </add>
+                    </metamark> hinter 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb23" start="#a30r_lb23" n="23">einander folgen und ablösen. „Entwicklung“ <metamark xml:id="srcD_metamark_a30r_add_d2e671" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a30r_add_d2e671">eines Dings<add place="inline" rend="insMExt" corresp="#a30r_add_d2e673">, eines Brauchs<add place="inline" rend="insMExt" corresp="#a30r_add_d2e675">, eines Organs</add>
+                            </add>
+                        </add>
+                    </metamark> ist demgemäß nichts weniger als sein <hi rend="latin">progressus</hi> auf ein Ziel hin, noch weni<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a30r_lb24" start="#a30r_lb24" n="24">ger ein logischer und kürzester, mit dem kleinsten Aufwand von Kraft und Kosten erreichter <hi rend="latin">progressus</hi>, – sondern die Auf<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a30r_lb25" start="#a30r_lb25" n="25">einanderfolge von mehr oder minder tiefgehenden, mehr oder minder von einander unabhängigen <metamark xml:id="srcD_metamark_substAdd9_a30r" function="insertion" rend="inSpatium" style="top:-0.125em;height:1.4375em;">
+                        <add place="above" corresp="#substAdd9_a30r" style="left:-21.25em;">
+                            <add corresp="#substAdd11_a30r" place="inline" rend="insMExt">an ihm sich abspielenden<space unit="char" quantity="5"/>
+                            </add> <del corresp="#substDel11a_a30r" rend="hatching">an irgend etwas Festerem und Widerstehenden </del>
+                            <metamark xml:id="srcD_metamark_substAdd10_a30r" function="insertion">
+                                <add place="above" corresp="#substAdd10_a30r">
+                                    <del corresp="#substDel11b_a30r" rend="hatching">sich abspielenden</del>
+                                </add>
+                            </metamark>
+                            <del corresp="#substDel10a_a30r" rend="hatching">zu Stande</del>
+                            <add corresp="#a30r_add_d2e707" style="left:-3.75em;top:3.04688em;" place="below" instant="true">
+                                <del corresp="#substDel10b_a30r" rend="hatching">gekommenen</del>
+                            </add>
+                        </add>
+                    </metamark> Überwältigung<del rend="overwritten" cause="#a30r_add_d2e715" type="MOW">en</del>
+                    <add place="superimposed" corresp="#a30r_add_d2e715">s-</add>
+                    <add corresp="#a30r_add_d2e717" place="below">-Prozessen</add>
+                    <add place="inline" corresp="#a30r_add_d2e720">,</add> <del rend="hatching">und Versu<pc force="weak">-</pc>
+                    </del>
+                  </line>
+                <line xml:id="srcD_line_a30r_lb26" start="#a30r_lb26" n="26">
+                    <del rend="hatching">chen</del> <del rend="hatching">der Überwältigung,</del> hinzugerechnet die dagegen <metamark xml:id="srcD_metamark_substAdd12a_a30r" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#substAdd12a_a30r">jedes Mal</add>
+                    </metamark> aufgewendeten Widerstände, die <metamark xml:id="srcD_metamark_substAdd12b_a30r" function="insertion">
+                        <add place="above" corresp="#substAdd12b_a30r">jedesmaligen</add>
+                    </metamark> Form-Verwandlungen zum Zweck der 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb27" start="#a30r_lb27" n="27">Vertheidigung und Reaktion, <metamark xml:id="srcD_metamark_a30r_add_d2e744" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a30r_add_d2e744">auch</add>
+                    </metamark> die Resultate von gelungenen Gegenaktionen<del rend="overwritten" cause="#a30r_add_d2e750" type="EOW">,</del>
+                    <add place="superimposed" corresp="#a30r_add_d2e750">.</add> <del corresp="#substDel14a_a30r" rend="hatching">von spontanen</del>
+                    <del corresp="#substDel14b_a30r" rend="hatching">
+                        <del rend="overwritten" cause="#a30r_add_d2e759" type="MOW">,</del>
+                        <add place="superimposed" corresp="#a30r_add_d2e759" instant="true"> <del rend="hatching">A</del>
+                        </add>ngriffen</del>
+                    <del corresp="#substDel14c_a30r" rend="hatching">, Eingriffen, Aneignungen</del>.<metamark xml:id="srcD_metamark_substAdd13a_a30r" function="insertion" rend="afterWord" style="top:-0.125em;height:1.4375em;">
+                        <add place="above" corresp="#substAdd13a_a30r" style="left:-11.875em;">
+                            <del corresp="#substDel14d_a30r" rend="hatching">seitens des Dings, das sich entwickelt</del>.</add>
+                    </metamark>
+                  </line>
+                <line xml:id="srcD_line_a30r_lb28" start="#a30r_lb28" n="28">
+                    <del corresp="#substDel14e_a30r" rend="strikethrough">Denn <metamark xml:id="srcD_metamark_substAdd13b_a30r" function="insertion">
+                            <add place="above" corresp="#substAdd13b_a30r">
+                                <del corresp="#substDel14f_a30r" rend="strikethrough">dies „Ding“, als ein</del>
+                            </add>
+                        </metamark>
+                        <del corresp="#substDel13a_a30r" rend="hatching">jedes</del> Quantum von organisirter Kraft</del> <metamark xml:id="srcD_metamark_substAdd13c_a30r" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#substAdd13c_a30r">
+                            <del corresp="#substDel14g_a30r" rend="strikethrough">muß sich auch seinerseits, so schwach es auch sein mag,</del>
+                        </add>
+                    </metamark> <del corresp="#substDel13b_a30r" rend="hatching">bewegt sich auch seinerseits</del> <del corresp="#substDel14h_a30r" rend="strikethrough">von innen her nach außen<metamark xml:id="srcD_metamark_substAdd13d_a30r" function="insertion" rend="beforePunctuation">
+                            <add place="above" corresp="#substAdd13d_a30r"> <del corresp="#substDel14i_a30r" rend="strikethrough">bewegen</del>
+                            </add>
+                        </metamark>, um sich an diesem „Au<pc force="weak">-</pc>
+                    </del>
+                  </line>
+                <line xml:id="srcD_line_a30r_lb29" start="#a30r_lb29" n="29">
+                    <del corresp="#substDel14j_a30r" rend="strikethrough">ßen“ zu bethätigen und zu bereichern, um es in sich hineinzunehmen und ihm <hi rend="underline">sein</hi> Gesetz, <hi rend="underline">seinen</hi> Sinn aufzuprägen. </del>
+                    <del corresp="#substDel13c_a30r" rend="hatching">Selbst</del>
+                  </line>
+                <line xml:id="srcD_line_a30r_lb30" start="#a30r_lb30" n="30">
+                    <metamark xml:id="srcD_metamark_substAdd13e_a30r" function="insertion" rend="endOfLine" style="top:0.34375em;height:0.96875em;">
+                        <add place="above" corresp="#substAdd13e_a30r" style="left:-0.234375em;">Die Form ist flüssig, der „Sinn“ ist es <metamark xml:id="srcD_metamark_a30r_add_d2e819" function="insertion" style="top:0.429687em;height:0.898438em;">
+                                <add place="above" corresp="#a30r_add_d2e819" style="left:0em;">aber</add>
+                            </metamark> noch mehr, selbst </add>
+                    </metamark>innerhalb jedes einzelnen Organismus steht es nicht anders: mit jedem wesentlichen Wachsthum des Ganzen verschiebt sich auch 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb31" start="#a30r_lb31" n="31">der „Sinn“ der einzelnen Organe, – unter Umständen kann deren theilweises Zu-Grunde-Gehn, deren Zahl-Verminderung (zum 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb32" start="#a30r_lb32" n="32">Beispiel durch Vernichtung der Mittel<metamark xml:id="srcD_metamark_a30r_add_d2e829" function="insertion" rend="inWord">
+                        <add place="above" hand="#N_brown1" corresp="#a30r_add_d2e829">glieder</add>
+                    </metamark>
+                    <del hand="#N_brown1" rend="hatching">bildungen</del>) ein Zeichen wachsender Kraft und <milestone unit="page" edRef="#Ed" n="69"/>Vollkommenheit sein. Ich wollte sagen: auch 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb33" start="#a30r_lb33" n="33">das theilweise <hi rend="underline">Unnützlichwerden</hi>, das Verkümmern und Entarten, das Verlustiggehn von Sinn und Zweckmäßigkeit gehört <metamark xml:id="srcD_metamark_a30r_add_d2e842" function="insertion" style="top:-0.125em;height:1.4375em;">
+                        <add place="above" corresp="#a30r_add_d2e842" style="left:-2.5em;">unter Umständen</add>
+                    </metamark> zu 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb34" start="#a30r_lb34" n="34">de<del rend="overwritten" cause="#a30r_add_d2e850">m</del>
+                    <add place="superimposed" corresp="#a30r_add_d2e850">n</add> <metamark xml:id="srcD_metamark_a30r_add_d2e853" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a30r_add_d2e853">Bedingungen <del rend="overwritten" cause="#a30r_add_d2e858" type="SOW">ein</del>
+                            <add place="superimposed" corresp="#a30r_add_d2e858">d</add>es</add>
+                    </metamark> wirklichen <hi rend="latin">progressus</hi>: als welcher immer in Gestalt eines Willens und Wegs zu <hi rend="underline">größerer</hi> <hi rend="underline">Macht</hi> erscheint und immer auf 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb35" start="#a30r_lb35" n="35">Unkosten zahlreicher kleinerer Mächte durchgesetzt wird. Die Größe eines „Fortschritts“ <hi rend="underline">bemißt</hi> sich <metamark xml:id="srcD_metamark_a30r_add_d2e877" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e877">sogar</add>
+                    </metamark> nach der Masse dessen, was 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb36" start="#a30r_lb36" n="36">ihm <metamark xml:id="srcD_metamark_a30r_add_d2e882" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a30r_add_d2e882">Alles</add>
+                    </metamark> <hi rend="underline">geopfert</hi> werden mußte<del rend="overwritten" cause="#a30r_add_d2e892" type="EOW">.</del>
+                    <add place="superimposed" corresp="#a30r_add_d2e892">;</add> <metamark xml:id="srcD_metamark_a30r_add_d2e895" function="insertion" style="top:0.5em;height:0.8125em;">
+                        <add place="above" corresp="#a30r_add_d2e895" style="left:-11.25em;">die Menschheit als Masse dem Gedeihen einer </add>
+                    </metamark>
+                    <metamark xml:id="srcD_metamark_a30r_add_d2e897" function="insertion" rend="inSpatium" style="height:1.4375em;">
+                        <add place="below" corresp="#a30r_add_d2e897" style="left:-13.125em;top:1.79688em;">einzelnen stärkeren <hi rend="latin">Species</hi> Mensch <metamark xml:id="srcD_metamark_a30r_add_d2e902" function="insertion" rend="inSpatium" style="top:0.429687em;height:0.898438em;">
+                                <add place="above" corresp="#a30r_add_d2e902" style="left:0em;">geopfert</add>
+                            </metamark> – das <hi rend="underline">wäre</hi> ein Fortschritt…</add>
+                    </metamark> – Ich hebe diesen <metamark xml:id="srcD_metamark_a30r_add_d2e909" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e909">Haupt-</add>
+                    </metamark>Gesichtspunkt <metamark xml:id="srcD_metamark_a30r_add_d2e912" function="insertion" rend="inSpatium" style="top:-0.125em;height:1.4375em;">
+                        <add place="above" corresp="#a30r_add_d2e912" style="left:-3.75em;">der historischen Methodik</add>
+                    </metamark> hervor, <del rend="hatching">so sehr</del> <metamark xml:id="srcD_metamark_a30r_add_d2e919" function="insertion" rend="inSpatium" style="top:-0.515625em;height:1.82813em;">
+                        <add place="above" corresp="#a30r_add_d2e919" style="left:0em;">um so mehr als<add place="inline" corresp="#a30r_add_d2e921"> er</add>
+                        </add>
+                    </metamark> <del rend="hatching">er</del> <del rend="hatching">auch</del> <metamark xml:id="srcD_metamark_a30r_add_d2e930" function="insertion" rend="inSpatium" style="top:0.421875em;height:0.890625em;">
+                        <add place="above" corresp="#a30r_add_d2e930" style="left:0em;">im Grunde <add corresp="#substAdd15_a30r" place="inline" rend="insMExt">dem gerade</add>
+                        </add>
+                    </metamark> <del corresp="#substDel15_a30r" rend="hatching">dem</del> herrschenden<anchor corresp="#appAnchor_a30r36"/> Instinkte <metamark xml:id="srcD_metamark_a30r_add_d2e941" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e941">und Zeitgeschmacke</add>
+                    </metamark> entgegengeht, 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb37" start="#a30r_lb37" n="37">welcher lieber sich noch mit der absoluten Zufälligkeit, ja <metamark xml:id="srcD_metamark_a30r_add_d2e946" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a30r_add_d2e946">mechanistischen</add>
+                    </metamark> Unsinnigkeit alles Geschehens <del instant="unknown">sich</del> vertragen würde als mit der The<pc force="weak">-</pc>
+                  </line>
+                <line xml:id="srcD_line_a30r_lb38" start="#a30r_lb38" n="38">orie eines in allem Geschehen sich abspielenden <hi rend="underline">Macht-Willens</hi>. D<del rend="overwritten" cause="#a30r_add_d2e964" type="EOW">er</del>
+                    <add place="superimposed" corresp="#a30r_add_d2e964">ie</add> demokratische <metamark xml:id="srcD_metamark_a30r_add_d2e968" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e968">Idiosynkrasie</add>
+                    </metamark>
+                    <del rend="hatching">Haß</del> gegen alles, was herrscht und herrschen 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb39" start="#a30r_lb39" n="39">will, der moderne <hi rend="underline">Misarchismus</hi> <metamark xml:id="srcD_metamark_a30r_add_d2e979" function="insertion" rend="inSpatium" style="top:-0.125em;height:1.4375em;">
+                        <add place="above" corresp="#a30r_add_d2e979" style="left:-20.625em;">(um ein <del rend="overwritten" cause="#a30r_add_d2e984">neues</del>
+                            <add place="superimposed" corresp="#a30r_add_d2e984">schlechtes</add> Wort für <del rend="overwritten" cause="#a30r_add_d2e990">diese</del>
+                            <add place="superimposed" corresp="#a30r_add_d2e990">eine</add> <del rend="overwritten" cause="#a30r_add_d2e996">neue</del>
+                            <add place="superimposed" corresp="#a30r_add_d2e996">schlechte</add> Sache zu bilden)</add>
+                    </metamark> hat sich <metamark xml:id="srcD_metamark_a30r_add_d2e1001" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e1001">
+                            <del rend="hatching">allmählich</del> <add place="inline" rend="insMExt" corresp="#a30r_add_d2e1005">allmählich</add>
+                        </add>
+                    </metamark>
+                    <del rend="hatching">bereits</del> dermaaßen <metamark xml:id="srcD_metamark_a30r_add_d2e1010" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a30r_add_d2e1010">
+                            <del rend="hatching">schon</del>
+                        </add>
+                    </metamark> ins Geistige, Geistigste umgesetzt<metamark xml:id="srcD_metamark_a30r_add_d2e1014" function="insertion" rend="beforePunctuation" style="top:-0.125em;height:1.4375em;">
+                        <add place="above" corresp="#a30r_add_d2e1014" style="left:-5.54701em;"> und verkleidet</add>
+                    </metamark>, daß er <metamark xml:id="srcD_metamark_a30r_add_d2e1017" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a30r_add_d2e1017">heute</add>
+                    </metamark> <metamark xml:id="srcD_metamark_a30r_add_d2e1022" function="insertion" style="top:-0.125em;height:1.4375em;">
+                        <add place="above" corresp="#a30r_add_d2e1022" style="left:-3.20329em;">
+                            <del rend="hatching">bereits</del>
+                        </add>
+                    </metamark>
+                    <del rend="hatching">bereits</del> <metamark xml:id="srcD_metamark_a30r_add_d2e1029" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e1029">Schritt für Schritt <del rend="strikethrough" instant="true">bere</del>
+                        </add>
+                    </metamark>
+                    <del rend="hatching">in den streng</del>
+                    <del rend="none">
+                        <pc force="weak">-</pc>
+                    </del> 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb40" start="#a30r_lb40" n="40">
+                    <metamark xml:id="srcD_metamark_a30r_add_d2e1040" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e1040">bereits in die streng<pc force="weak">-</pc>
+                        </add>
+                    </metamark>sten<add place="inline" corresp="#a30r_add_d2e1046">,</add> <del rend="hatching">und</del> anscheinend<anchor corresp="#appAnchor_a30r40"/> objektivsten Wissenschaften <metamark xml:id="srcD_metamark_a30r_add_d2e1055" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e1055">eindringt<add place="inline" corresp="#a30r_add_d2e1057">
+                                <del rend="overwritten" cause="#a30r_add_d2e1060" type="EOW">;</del>
+                                <add hand="#N_brown1" place="superimposed" corresp="#a30r_add_d2e1060">,</add>
+                            </add> <del rend="hatching">und in ihnen Unfug</del> <add hand="#N_brown1" place="inline" rend="insMExt" corresp="#a30r_add_d2e1066">eindringen <hi rend="underline">darf</hi>;</add>
+                        </add>
+                    </metamark>
+                    <del rend="hatching">sein Unwesen</del> <del rend="hatching">treibt;</del> ja er scheint mir <metamark xml:id="srcD_metamark_a30r_add_d2e1078" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e1078">
+                            <del rend="hatching">bereits</del> <add place="inline" rend="insMExt" corresp="#a30r_add_d2e1083">schon über</add>
+                        </add>
+                    </metamark> die ganze Physiologie und Lehre 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb41" start="#a30r_lb41" n="41">vom Leben <metamark xml:id="srcD_metamark_substAdd18_a30r" function="insertion">
+                        <add place="above" corresp="#substAdd18_a30r">Herr geworden zu sein<add hand="#N_brown1" place="inline" rend="insMExt" corresp="#a30r_add_d2e1092">, zu ihrem Schaden, wie sich von selbst versteht,</add>
+                        </add>
+                    </metamark>
+                    <del corresp="#substDel18_a30r" rend="hatching">in eine falsche Richtung gedrängt zu haben</del>, indem er ihr <metamark xml:id="srcD_metamark_a30r_add_d2e1098" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e1098">einen Grundbegriff, den der</add>
+                    </metamark>
+                    <del rend="hatching">den Begriff</del> der eigentlichen <hi rend="underline">Aktivität</hi>, <metamark xml:id="srcD_metamark_a30r_add_d2e1107" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e1107">eskamotirt hat.</add>
+                    </metamark>
+                    <del rend="hatching">vorenthält oder</del> 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb42" start="#a30r_lb42" n="42">
+                    <del rend="hatching">eskamotirt.</del> Man stellt dagegen <metamark xml:id="srcD_metamark_a30r_add_d2e1116" function="insertion" rend="inSpatium">
+                        <add place="above" corresp="#a30r_add_d2e1116">unter dem Druck jener Idiosynkrasie</add>
+                    </metamark> die „Anpassung“ in den Vordergrund<metamark xml:id="srcD_metamark_a30r_add_d2e1120" function="insertion" rend="beforePunctuation">
+                        <add place="above" corresp="#a30r_add_d2e1120"> das heißt eine Aktivität zweiten Ranges, <milestone unit="page" edRef="#Ed" n="70"/>eine bloße Reaktivität</add>
+                    </metamark>, ja man hat das Leben selbst als eine immer zweckmäßigere 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb43" start="#a30r_lb43" n="43">innere Anpassung an äußere Umstände definirt (<hi rend="latin">Herbert Spencer</hi>) Damit ist aber das Wesen des Lebens verkannt, sein <hi rend="underline">Wille</hi> <hi rend="underline">zur</hi> 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb44" start="#a30r_lb44" n="44">
+                    <hi rend="underline">Macht</hi>; damit ist der principielle Vorrang übersehn, den die spontanen, angreifenden, übergreifenden, neu-auslegenden, neu-richtenden 
+                  </line>
+                <line xml:id="srcD_line_a30r_lb45" start="#a30r_lb45" n="45">und gestaltenden Kräfte haben, auf deren Wirkung erst die „Anpassung“ folgt; <metamark xml:id="srcD_metamark_a30r_add_d2e1144" function="insertion">
+                        <add place="above" corresp="#a30r_add_d2e1144">damit ist im Organismus selbst die herrschaftliche Rolle der höchsten </add>
+                    </metamark>
+                    <del rend="hatching">als eine Reaktion und Unterwerfungsform dessen, was</del>
+                  </line>
+                <line xml:id="srcD_line_a30r_lb46" start="#a30r_lb46" n="46">
+                    <add corresp="#a30r_add_d2e1150" place="above">Funktionäre abgeleugnet, in denen der Wille zum Leben aktiv und aggressiv erscheint. Man erinnert sich, was <hi rend="latin">Huxley Spencer’n</hi> zum Vorwurf gemacht hat – seinen „<hi rend="latin">admini<pc force="weak">-</pc>
+                        </hi>
+                    </add>
+                    <del rend="hatching">zu schwach ist, um über den Feind Herr zu werden, und eben noch stark genug, um sein Sonderdasein aufrecht zu erhalten</del>
+                    <add corresp="#a30r_add_d2e1161" style="left:-32.5em;top:1.79688em;" place="below">
+                        <hi rend="latin">strativen Nihilismus</hi>“: aber es handelt sich noch um <hi rend="underline">mehr</hi> als um’s „Administriren“…</add>
+                </line>
+                <zone xml:id="srcD_zone_a30r_fw_d2e37" type="fw-bottom-left" start="#a30r_fw_d2e37">
+                    <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#a30r_fw_d2e37">30</fw>
+                </zone>
+            </zone>
+        </surface>
+    </sourceDoc>
+</TEI>

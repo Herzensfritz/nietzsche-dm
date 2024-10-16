@@ -27,6 +27,9 @@ ul.letters, ul.pages, ul.handNotes {
 div.handNote span.note {
     font-family: italic;
 }
+p.sicCor span.note {
+    margin-right: 0.25em;
+}
 .mycollapse-trigger {
     font-weight: bold;
     font-size: 85%;
@@ -96,7 +99,10 @@ div.handNote span.note {
 .N_black1,.N_black2, .N_black3, .N_black4 {
     color: var(--nblack);
 }
-.transkriptionField {background-color: var(--tpField, #CED5CE); padding-right: 20px; padding-left: 5px; padding-top: 10px; padding-bottom: 10px;margin-top: 3em; margin-left: 30px; width: max-content;}
+span.mytransparent { color: var(--tpField, white);}
+.transkriptionField {background-color: var(--tpField, #CED5CE); padding-right: 20px; padding-left: 5px; padding-top: 0px; padding-bottom: 10px;margin-top: 3em; margin-left: 30px; width: max-content;}
+.transkriptionField.version1 { background-color: var(--tpFieldV1,#CED5CE); }
+.transkriptionField.version2 { background-color: var(--tpFieldV2,#CED5CE); }
 .highlight, .metamark:hover { background-color: var(--highlight); }
 .metamark { cursor: pointer;}
 .small { color: black; padding: 3px; }
@@ -174,6 +180,7 @@ div.handNote span.note {
    .indent5 { margin-left: 5em;}
    *[draggable] { cursor: grab; }
     .deleted, .deleted-000, .hatching { cursor: context-menu; background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAX/GZH4/4FsRpgAmAOSBBFwDkgAAIKuBATRTAAZAAAAAElFTkSuQmCC ) repeat; }
+    .mytransparent.hatching, .mytransparent.deleted { background: var(--tpField, white); }
     span.N_red .hatching, .red-deleted { cursor: context-menu; background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='2000' stroke='red' stroke-dasharray='1.2 1.8 1.2' d='M1,1 1500,1500'/></svg>") repeat; }
     .hex-deleted { background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='240' stroke='%23750606' stroke-dasharray='1' d='M1,1 150,150'/></svg>") repeat; }
     .new-deleted { background:url("https://upload.wikimedia.org/wikipedia/commons/7/73/Schraffur_fein_diagonal_hoch.svg") repeat; }
@@ -402,10 +409,15 @@ div.handNote span.note {
         .above-linearisiert:after { content: '\2309'; }
          .below-linearisiert:before { content: '\230A'; }
          .below-linearisiert:after { content: '\230B'; }
-        span.lnr { position:relative; left: -2.3em;font-style: italic; color: blue;margin-right: 20px;font-size: 80%; cursor: pointer;}
-        span.zlnr { position:relative; left: -2.3em;font-style: italic; color: grey;margin-right: 20px;font-size: 80%; cursor: pointer;}
+          span.lnr, span.zlnr {
+            position:relative; left: -2.3em; font-style: italic; font-size: 80%; cursor: pointer; width: 3.5em;display: inline-block; margin-right: 1.5em;
+        }
+        span.lnr {  color: blue;}
+        span.zlnr { color: grey;}
         span.nolnr { margin-left: 3.125em;}
         div.line { line-height: 3.0em;  }
+        div.line.version2 { overflow-wrap: break-word; inline-size: 1500px;}
+        .add-zone div.line { font-size: 125%; }
         div.line.empty { display: inline-block;  }
         .flushRight {  float: right;  
              position: relative;

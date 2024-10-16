@@ -2,9 +2,14 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-          <title>a2r</title>
+          <title>b63r</title>
          </titleStmt>
-         <publicationStmt><p/></publicationStmt><sourceDesc><msDesc>
+         <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                
+            <msDesc>
              <msIdentifier>
                 <repository>Goethe- und Schiller-Archiv, Weimar</repository>
                <idno type="GSA-Signatur">71/27,1, 71/27,2</idno>
@@ -1237,7 +1242,8 @@
                </list>
                         </ab>
              </history>
-           </msDesc></sourceDesc></fileDesc>
+           </msDesc></sourceDesc>
+        </fileDesc>
    <profileDesc>
        <creation>
          <listChange ordered="true">
@@ -1338,70 +1344,54 @@
        </handNotes>
      </profileDesc></teiHeader>
    <text>
-      <body>            
-         <div1 xml:id="GMVorrede" xml:space="preserve"><anchor xml:id="a2r_div1_GMVorrede"/>
-            <pb xml:id="a2r" corresp="#contents_a2r #folDesc_a2rv #addDesc_a2r #N_brown1" facs="#D-20a_III" change="#GMfrontRecord #GM01-02finalVersion #proofreadingCb12Titel"/>
-            <fw type="pageNumber" hand="#N_red" place="top-right" xml:id="a2r_fw_d2e26">III.</fw>
-            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="a2r_fw_d2e29">2</fw>
-            <milestone unit="page" edRef="#Ed" n="III"/>
-            <head xml:id="a2r_head_d2e34">
-               <lb n="1" xml:id="a2r_lb1"/><add place="inline" xml:id="a2r_add_d2e37"><hi rend="underline">Vorrede</hi>.</add>
-            </head>
-            <div2 xml:id="GMVorrede01"><anchor xml:id="a2r_div2_GMVorrede01"/>
-               <head xml:id="a2r_head_d2e46">
-                  <lb n="2" xml:id="a2r_lb2"/><add place="inline" xml:id="a2r_add_d2e49">1.</add>
-               </head>
+      <body>
+         <div1 xml:space="preserve"><anchor xml:id="b63r_div1_d2e22"/>
+            <pb xml:id="b63r" corresp="#contents_b63r #folDesc_b63rv #addDesc_b63r #N_black3" facs="#D-20b_61a" change="#GM0326belatedMod #proofreadingCb11 #proofreadingCb12"/>
+            <fw type="folNumber" hand="#GSA_pencil" place="bottom-left" xml:id="b63r_fw_d2e26">63</fw>
+            <substJoin xml:id="substJoin1_b63r" corresp="#substJoin7_b61r" n="b63r,5-10 b61r,19-21" target="#mark2_b61r #substAddSeg1_b63r #substDelSeg1_b61r"/>
+            <substJoin xml:id="substJoin2_b63r" corresp="#substJoin1_b62r" n="b63r,14-20 b62r,17-20" target="#mark1_b62r #mark1_b63r #substAddSeg2_b63r #substDelSeg1_b62r"/>
+            <div2 xml:id="GM0326add1a" sameAs="#GM0326"><anchor xml:id="b63r_div2_GM0326add1a"/>
+                  <note type="authorial" hand="#N_black3" place="top-right" xml:id="b63r_note_d2e35">
+                     <hi n="b63r,1-4" hand="#N_red" rend="markLine"/>
+                     <lb n="1" xml:id="b63r_lb1"/><handShift new="#N_black3"/>Im Manuscript zu ändern, 
+                     <lb n="2" xml:id="b63r_lb2"/><hi rend="underline">drittletzter</hi> Abschnitt, die 
+                     <lb n="3" xml:id="b63r_lb3"/>Stelle, wo E. Dühring ge<pc force="weak">-</pc>
+                     <lb n="4" xml:id="b63r_lb4"/>nannt wird</note>
                <p>
-                  <lb n="3" rend="indent" xml:id="a2r_lb3"/>Wir sind uns unbekannt, wir Erkennenden, wir selbst uns selbst: das hat seinen guten Grund. Wir haben nie 
-                  <lb n="4" xml:id="a2r_lb4"/>nach uns gesucht, – wie sollte es geschehn, daß wir eines Tags uns <hi rend="underline">fänden</hi>? Mit Recht hat man gesagt: „wo euer 
-                  <lb n="5" xml:id="a2r_lb5"/>Schatz ist, da ist auch euer Herz“; <hi rend="underline">unser</hi> Schatz ist, wo die Bienenkörbe unsrer Erkenntniß stehn. Wir sind immer 
-                  <lb n="6" xml:id="a2r_lb6"/>dazu unterwegs, als geborne Flügelthiere und Honigsammler des Geistes, wir kümmern uns von Herzen eigentlich 
-                  <lb n="7" xml:id="a2r_lb7"/>nur um Eins – etwas „heimzubringen“. Was das Leben sonst, die sogenannten „Erlebnisse“ angeht, – wer von uns 
-                  <lb n="8" xml:id="a2r_lb8"/>hat dafür auch nur Ernst genug? Oder Zeit genug? Bei solchen Sachen waren wir, fürchte ich, nie recht „bei 
-                  <lb n="9" xml:id="a2r_lb9"/>der Sache“: wir haben eben unser Herz nicht dort<subst xml:id="a2r_subst_d2e76"><del rend="overwritten"><del rend="strikethrough">,</del></del><add place="superimposed" xml:id="a2r_add_d2e80"> –</add></subst> und nicht einmal unser Ohr! Vielmehr wie ein Göttlich-
-                  <lb n="10" xml:id="a2r_lb10"/>Zerstreuter und In-sich-Versenkter, dem die Glocke eben mit aller Macht ihre zwölf Schläge des Mittags in’s 
-                  <lb n="11" xml:id="a2r_lb11"/>Ohr gedröhnt hat, mit Einem Male aufwacht und sich fragt „was hat es da eigentlich geschlagen?“ so reiben 
-                  <lb n="12" xml:id="a2r_lb12"/>auch wir uns mitunter <hi rend="underline">hinterdrein</hi> die Ohren und fragen, ganz erstaunt, ganz betreten „was haben wir da 
-                  <lb n="13" xml:id="a2r_lb13"/>eigentlich erlebt? mehr noch: wer <hi rend="underline">sind</hi> wir eigentlich?“ und zählen nach, hinterdrein, wie gesagt, alle <milestone unit="page" edRef="#Ed" n="IV"/>die 
-                  <lb n="14" xml:id="a2r_lb14"/>zitternden zwölf Glockenschläge unsres Erlebnisses, unsres Lebens, unsres <hi rend="underline">Seins</hi> – ach! und verzählen uns da<pc force="weak">-</pc>
-                  <lb n="15" xml:id="a2r_lb15"/>bei… Wir bleiben uns eben nothwendig fremd, wir verstehn uns nicht, wir <hi rend="underline">müssen</hi> uns verwechseln, für 
-                  <lb n="16" xml:id="a2r_lb16"/>uns heißt der Satz in alle Ewigkeit „Jeder ist sich selbst der Fernste“, – für uns sind wir keine „Erkennen<pc force="weak">-</pc>
-                  <lb n="17" xml:id="a2r_lb17"/>den“…</p>
-               </div2>
-            <div2 xml:id="GMVorrede02"><anchor xml:id="a2r_div2_GMVorrede02"/>
-               <head xml:id="a2r_head_d2e126">
-                  <lb n="18" xml:id="a2r_lb18"/>2.</head>
-               <p>
-                  <lb n="19" xml:id="a2r_lb19"/>– Meine Gedanken über die <hi rend="underline">Herkunft</hi> unsrer moralischen Vorurtheile – denn um sie handelt es sich in dieser Streit<pc force="weak">-</pc>
-                  <lb n="20" xml:id="a2r_lb20"/>schrift – haben ihren ersten, sparsamen und vorläufigen Ausdruck in jener Aphorismen-Sammlung erhalten, die den 
-                  <lb n="21" xml:id="a2r_lb21"/>Titel trägt „Menschliches, Allzumenschliches. Ein Buch für freie Geister<del rend="strikethrough" cert="high">.</del>“ und deren Niederschrift in Sorrent begonnen 
-                  <lb n="22" xml:id="a2r_lb22"/>wurde, während eines Winters, welcher es mir erlaubte, Halt zu machen wie ein Wandrer Halt macht, und das weite 
-                  <lb n="23" xml:id="a2r_lb23"/>und gefährliche Land zu überschauen, durch das mein Geist bis dahin gewandert war. Dies geschah im Winter 1876
-                  <lb n="24" xml:id="a2r_lb24"/>-77; die Gedanken selbst sind älter. Es waren in der Hauptsache schon die gleichen Gedanken, die ich in den 
-                  <lb n="25" xml:id="a2r_lb25"/>vorliegenden Abhandlungen wieder aufnehme: – hoffen wir, daß die lange Zwischenzeit ihnen gut gethan hat, 
-                  <lb n="26" xml:id="a2r_lb26"/>daß sie reifer, heller, stärker, vollkommner geworden sind! <hi rend="underline">Daß</hi> ich aber heute noch an ihnen festhalte, daß sie 
-                  <lb n="27" xml:id="a2r_lb27"/>sich selber inzwischen immer fester an einander gehalten haben, ja in einander gewachsen und verwachsen sind, das 
-                  <lb n="28" xml:id="a2r_lb28"/>stärkt in mir die frohe Zuversichtlichkeit, sie möchten von Anfang an in mir nicht einzeln, <milestone unit="page" edRef="#Ed" n="V"/>nicht beliebig, nicht spo<pc force="weak">-</pc>
-                  <lb n="29" xml:id="a2r_lb29"/>radisch entstanden sein, sondern aus einer gemeinsamen Wurzel heraus, aus einem in der Tiefe gebietenden, im<pc force="weak">-</pc>
-                  <lb n="30" xml:id="a2r_lb30"/>mer bestimmter redenden, immer Bestimmteres verlangenden <hi rend="underline">Grundwillen</hi> der Erkenntniß. So allein nämlich ge<pc force="weak">-</pc>
-                  <lb n="31" xml:id="a2r_lb31"/>ziemt es sich bei einem Philosophen. Wir haben kein Recht darauf, irgend worin <hi rend="underline">einzeln</hi> zu sein: wir dürfen weder 
-                  <lb n="32" xml:id="a2r_lb32"/>einzeln irren, noch einzeln die Wahrheit treffen. Vielmehr mit der Nothwendigkeit, mit der ein Baum seine 
-                  <lb n="33" xml:id="a2r_lb33"/>Früchte trägt, wachsen aus uns unsre Gedanken, unsre Werthe, un<retrace>s</retrace>re Ja’s und Nein’s und Wenn’s und Ob’s – 
-                  <lb n="34" xml:id="a2r_lb34"/>verwandt und bezüglich allesammt unter einander und Zeugnisse Eines Willens, Einer Gesundheit, Eines Erd<pc force="weak">-</pc>
-                  <lb n="35" xml:id="a2r_lb35"/>reichs, Einer Sonne. – Ob sie <hi rend="underline">euch</hi> schmecken, diese unsre Früchte? – Aber was geht das die Bäume an! 
-                  <lb n="36" xml:id="a2r_lb36"/>Was geht das <hi rend="underline">uns</hi> an, uns Philosophen!…</p>
+                  <ab xml:id="b63r_ab_d2e65">
+                  <lb/><lb/>
+                  <hi n="b63r,5-10" rend="markLine"/>
+                     <lb n="5" xml:id="b63r_lb5"/><seg xml:id="copy1_b63r" sameAs="#copiedSeg1_b61r">einem </seg><seg xml:id="substAddSeg1_b63r" change="#GM0326belatedMod">ganz eigentlich <subst xml:id="b63r_subst_d2e67"><add place="above" rend="insM" xml:id="b63r_add_d2e68">Unhistorischen</add><del rend="hatching">Unbeschaulichen</del></subst>, einem Schrei<pc force="weak">-</pc>
+                     <lb n="6" xml:id="b63r_lb6"/>hals von Agitator Gehör <choice xml:id="b63r_choice_d2e78"><sic>schenken</sic><corr>zu schenken</corr></choice> (wie jenem
+                     <lb n="7" xml:id="b63r_lb7"/>Dühring, an dessen Tönen sich im heutigen Deutsch<pc force="weak">-</pc>
+                     <lb n="8" xml:id="b63r_lb8"/>land eine bisher noch schüchterne, noch uneingeständ<pc force="weak">-</pc>
+                     <lb n="9" xml:id="b63r_lb9"/>liche <hi rend="latin">Species</hi> „schöner Seelen“ berauscht, die <hi rend="latin">Species
+                     <lb n="10" xml:id="b63r_lb10"/>anarchistica</hi> innerhalb des gebildeten Proletariats)</seg>
+            </ab>
+                  </p>
             </div2>
-            
-            <div2 xml:id="GMVorrede03"><anchor xml:id="a2r_div2_GMVorrede03"/>
-               <head xml:id="a2r_head_d2e222">
-                  <lb n="37" xml:id="a2r_lb37"/>3.
-               </head>
+            <div2 xml:id="GM0326add1b" sameAs="#GM0326"><anchor xml:id="b63r_div2_GM0326add1b"/>
+               <note type="authorial" hand="#N_black3" place="top-right" xml:id="b63r_note_d2e109">
+                  <hi n="b63r,11-13" hand="#N_red" rend="markLine"/>
+                  <lb n="11" rend="indent" xml:id="b63r_lb11"/>im <hi rend="underline">gleichen</hi> Abschnitte, die
+                  <lb n="12" xml:id="b63r_lb12"/>Stelle, wo die Antise<pc force="weak">-</pc>
+                  <lb n="13" xml:id="b63r_lb13"/>miten genannt werden</note>
                <p>
-                  <lb n="38" xml:id="a2r_lb38"/>Bei einer mir eignen Bedenklichkeit, die ich ungern eingestehe – sie bezieht sich nämlich auf die <hi rend="underline">Moral</hi>, 
-                  <lb n="39" xml:id="a2r_lb39"/>auf Alles, was bisher auf Erden als Moral gefeiert worden ist –, einer Bedenklichkeit, <del rend="hatching">die</del> welche in meinem </p>
-            </div2>
-         </div1></body>
+                  <ab xml:id="b63r_ab_d2e141">
+                  <hi n="b63r,14-20" rend="markLine"/>
+                  <lb n="14" xml:id="b63r_lb14"/><del hand="#typesetter_black2" rend="strikethrough"><seg xml:id="copy2_b63r" sameAs="#copiedSeg1_b62r">ich mag</seg></del> <add hand="#typesetter_black2" place="inline" xml:id="b63r_add_d2e136"><metamark xml:id="mark1_b63r">╒</metamark></add> <seg xml:id="substAddSeg2_b63r" change="#GM0326belatedMod">sie nicht, diese neuesten Spekulanten 
+                  <lb n="15" xml:id="b63r_lb15"/>in Idealismus, die Antisemiten, welche heute …
+                  <lb n="16" xml:id="b63r_lb16"/>ihre Augen christlich-arisch-biedermännisch ver<pc force="weak">-</pc>
+                  <lb n="17" xml:id="b63r_lb17"/>drehn und durch einen Ekel erregenden Mißbrauch
+                  <lb n="18" xml:id="b63r_lb18"/>des wohlfeilsten Agitationsmittels, der moralischen 
+                  <lb n="19" xml:id="b63r_lb19"/>Atti<subst instant="true" xml:id="b63r_subst_d2e156"><del rend="overwritten">d</del><add place="superimposed" xml:id="b63r_add_d2e159">t</add></subst>üde, die noch unzurechnungsfähigen Elemente des
+                  <lb n="20" xml:id="b63r_lb20"/>Volks aufzuregen suchen</seg><seg xml:id="copy3_b63r" sameAs="#copiedSeg2_b62r"><subst xml:id="b63r_subst_d2e167"><del rend="overwritten">.</del><add place="superimposed" xml:id="b63r_add_d2e170"> (</add></subst>– Daß <hi rend="underline">usw</hi> <hi rend="underline">usw.</hi></seg>
+            </ab>
+                     </p>
+            </div2></div1>
+        </body>
    </text>
+
 <facsimile>
       <surface lrx="907.0" lry="1401.8" n="9v" ulx="37.1" uly="39.7" xml:id="D-20a_5v">
          <graphic height="1439.84pt" width="1215.2pt" corresp="http://www.nietzschesource.org/DFGAapi/api/page/download/D-20a,5v" url="https://ores.klassik-stiftung.de/digilib/Scaler/IIIF/gsa!Arbeitskopie!71!75094!75094_18/full/full/0/default.jpg"/>
@@ -2069,57 +2059,31 @@
       <surface lrx="711.5" lry="874.6" n="25v" ulx="48.5" uly="47.0" xml:id="D-20b_24v">
          <graphic height="915.68pt" width="1023.52pt" corresp="http://www.nietzschesource.org/DFGAapi/api/page/download/D-20b,24v" url="https://ores.klassik-stiftung.de/digilib/Scaler/IIIF/gsa!Arbeitskopie!71!75097!75097_50/full/full/0/default.jpg"/>
       </surface>
-     </facsimile><sourceDoc><surface xml:id="srcD_surface_a2r" type="relative" start="#a2r" style="min-width:56em;padding-top:0px;" facs="#D-20a_III"><zone xml:id="srcD_zone_a2r_div2_GMVorrede01" start="#a2r_div2_GMVorrede01" type="firstBlock" style="padding-top:8em;"><zone xml:id="srcD_zone_a2r_fw_d2e26" type="fw-top-right" start="#a2r_fw_d2e26"><fw type="pageNumber" hand="#N_red" place="top-right" corresp="#a2r_fw_d2e26">III.</fw></zone><zone xml:id="srcD_head_a2r_head_d2e34" type="head-zone" start="#a2r_head_d2e34"><line xml:id="srcD_line_a2r_head_d2e34_a2r_lb1" start="#a2r_lb1" n="1"><zone xml:id="srcD_zone_a2r_head_d2e34_a2r_lb1" type="head" style="margin-left:4.40313em;"><add place="inline" corresp="#a2r_add_d2e37"><hi rend="underline">Vorrede</hi>.</add>
+     </facsimile><sourceDoc><surface xml:id="srcD_surface_b63r" type="relative" start="#b63r" style="min-width:47em;min-height:40em;" facs="#D-20b_61a"><zone xml:id="srcD_zone_b63r_div2_GM0326add1a" start="#b63r_div2_GM0326add1a" type="firstBlock" style="padding-top:5em;padding-bottom:0.9em;"><zone xml:id="srcD_zone_b63r_lb1" start="#b63r_lb1" type="note-zone" style="margin-left:27.5em;"><line xml:id="srcD_line_b63r_lb1" style="top:1em;" start="#b63r_lb1" hand="#N_black3" n="1"><handShift new="#N_black3"/>Im Manuscript zu ändern, 
+                     </line></zone><zone xml:id="srcD_zone_b63r_lb2" start="#b63r_lb2" type="note-zone" style="margin-left:27.5em;"><line xml:id="srcD_line_b63r_lb2" style="top:2em;" start="#b63r_lb2" hand="#N_black3" n="2"><hi rend="underline">drittletzter</hi> Abschnitt, die 
+                     </line></zone><zone xml:id="srcD_zone_b63r_lb3" start="#b63r_lb3" type="note-zone" style="margin-left:27.5em;"><line xml:id="srcD_line_b63r_lb3" style="top:3em;" start="#b63r_lb3" hand="#N_black3" n="3">Stelle, wo E. Dühring ge<pc force="weak">-</pc>
+                     </line></zone><zone xml:id="srcD_zone_b63r_lb4" start="#b63r_lb4" type="note-zone" style="margin-left:27.5em;"><line xml:id="srcD_line_b63r_lb4" style="top:4em;" start="#b63r_lb4" hand="#N_black3" n="4">nannt wird
+               
+                  
+                  
+                  <hi n="b63r,5-10" rend="markLine"/>
+                     </line></zone><line xml:id="srcD_line_empty_d4e67"/><zone xml:id="srcD_zone_b63r_ab_d2e65_b63r_lb5" start="#b63r_lb5" type="ab-zone" style="margin-left:8.5em;"><line xml:id="srcD_line_b63r_lb5" style="top:6.5em;" start="#b63r_lb5" hand="#N_black3" n="5"><seg corresp="#copy1_b63r" sameAs="#copiedSeg1_b61r">einem </seg><seg corresp="substAddSeg1_b63r" change="#GM0326belatedMod">ganz eigentlich </seg><metamark xml:id="srcD_metamark_b63r_add_d2e68" function="insertion"><add place="above" corresp="#b63r_add_d2e68">Unhistorischen</add></metamark><del rend="hatching">Unbeschaulichen</del><seg corresp="substAddSeg1_b63r" change="#GM0326belatedMod">, einem Schrei</seg><seg corresp="substAddSeg1_b63r" change="#GM0326belatedMod"><pc force="weak">-</pc></seg>
+                     </line></zone><zone xml:id="srcD_zone_b63r_ab_d2e65_b63r_lb6" start="#b63r_lb6" type="ab-zone" style="margin-left:8.5em;"><line xml:id="srcD_line_b63r_lb6" style="top:8.5em;" start="#b63r_lb6" hand="#N_black3" n="6"><seg corresp="substAddSeg1_b63r" change="#GM0326belatedMod">hals von Agitator Gehör <choice corresp="#b63r_choice_d2e78"><sic>schenken</sic><corr>zu schenken</corr></choice> (wie jenem
+                     </seg></line></zone><zone xml:id="srcD_zone_b63r_ab_d2e65_b63r_lb7" start="#b63r_lb7" type="ab-zone" style="margin-left:8.5em;"><line xml:id="srcD_line_b63r_lb7" style="top:10em;" start="#b63r_lb7" hand="#N_black3" n="7"><seg corresp="substAddSeg1_b63r" change="#GM0326belatedMod">Dühring, an dessen Tönen sich im heutigen Deutsch<pc force="weak">-</pc>
+                     </seg></line></zone><zone xml:id="srcD_zone_b63r_ab_d2e65_b63r_lb8" start="#b63r_lb8" type="ab-zone" style="margin-left:8.5em;"><line xml:id="srcD_line_b63r_lb8" style="top:11.5em;" start="#b63r_lb8" hand="#N_black3" n="8"><seg corresp="substAddSeg1_b63r" change="#GM0326belatedMod">land eine bisher noch schüchterne, noch uneingeständ<pc force="weak">-</pc>
+                     </seg></line></zone><zone xml:id="srcD_zone_b63r_ab_d2e65_b63r_lb9" start="#b63r_lb9" type="ab-zone" style="margin-left:8.5em;"><line xml:id="srcD_line_b63r_lb9" style="top:13em;" start="#b63r_lb9" hand="#N_black3" n="9"><seg corresp="substAddSeg1_b63r" change="#GM0326belatedMod">liche <hi rend="latin">Species</hi> „schöner Seelen“ berauscht, die <hi rend="latin">Species
+                     </hi></seg></line></zone><zone xml:id="srcD_zone_b63r_ab_d2e65_b63r_lb10" start="#b63r_lb10" type="ab-zone" style="margin-left:8em;"><line xml:id="srcD_line_b63r_lb10" style="top:14.5em;" start="#b63r_lb10" hand="#N_black3" n="10"><seg corresp="substAddSeg1_b63r" change="#GM0326belatedMod"><hi rend="latin">anarchistica</hi> innerhalb des gebildeten Proletariats)</seg></line></zone></zone><zone xml:id="srcD_zone_b63r_div2_GM0326add1b" start="#b63r_div2_GM0326add1b" type="lastBlock" style="padding-bottom:5em;padding-top:5em;"><zone xml:id="srcD_zone_b63r_lb11" start="#b63r_lb11" type="note-zone" style="margin-left:25.875em;"><line xml:id="srcD_line_b63r_lb11" style="top:9.125em;" start="#b63r_lb11" hand="#N_black3" n="11">im <hi rend="underline">gleichen</hi> Abschnitte, die
+                  </line></zone><zone xml:id="srcD_zone_b63r_lb12" start="#b63r_lb12" type="note-zone" style="margin-left:25.8125em;"><line xml:id="srcD_line_b63r_lb12" style="top:10.625em;" start="#b63r_lb12" hand="#N_black3" n="12">Stelle, wo die Antise<pc force="weak">-</pc>
+                  </line></zone><zone xml:id="srcD_zone_b63r_lb13" start="#b63r_lb13" type="note-zone" style="margin-left:25.8125em;"><line xml:id="srcD_line_b63r_lb13" style="top:12.0625em;" start="#b63r_lb13" hand="#N_black3" n="13">miten genannt werden
+               
+                  
+                  <hi n="b63r,14-20" rend="markLine"/>
+                  </line></zone><zone xml:id="srcD_zone_b63r_ab_d2e141_b63r_lb14" start="#b63r_lb14" type="ab-zone" style="margin-left:8em;"><line xml:id="srcD_line_b63r_lb14" style="bottom:-5.5em;" start="#b63r_lb14" hand="#N_black3" n="14"><del hand="#typesetter_black2" rend="strikethrough"><seg corresp="#copy2_b63r" sameAs="#copiedSeg1_b62r">ich mag</seg></del> <add hand="#typesetter_black2" place="inline" corresp="#b63r_add_d2e136"><metamark corresp="#mark1_b63r">╒</metamark></add> <seg corresp="substAddSeg2_b63r" change="#GM0326belatedMod">sie nicht, diese neuesten Spekulanten 
+                  </seg></line></zone><zone xml:id="srcD_zone_b63r_ab_d2e141_b63r_lb15" start="#b63r_lb15" type="ab-zone" style="margin-left:8em;"><line xml:id="srcD_line_b63r_lb15" style="bottom:-7em;" start="#b63r_lb15" hand="#N_black3" n="15"><seg corresp="substAddSeg2_b63r" change="#GM0326belatedMod">in Idealismus, die Antisemiten, welche heute …
+                  </seg></line></zone><zone xml:id="srcD_zone_b63r_ab_d2e141_b63r_lb16" start="#b63r_lb16" type="ab-zone" style="margin-left:8em;"><line xml:id="srcD_line_b63r_lb16" style="bottom:-8.5em;" start="#b63r_lb16" hand="#N_black3" n="16"><seg corresp="substAddSeg2_b63r" change="#GM0326belatedMod">ihre Augen christlich-arisch-biedermännisch ver<pc force="weak">-</pc>
+                  </seg></line></zone><zone xml:id="srcD_zone_b63r_ab_d2e141_b63r_lb17" start="#b63r_lb17" type="ab-zone" style="margin-left:8em;"><line xml:id="srcD_line_b63r_lb17" style="bottom:-10em;" start="#b63r_lb17" hand="#N_black3" n="17"><seg corresp="substAddSeg2_b63r" change="#GM0326belatedMod">drehn und durch einen Ekel erregenden Mißbrauch
+                  </seg></line></zone><zone xml:id="srcD_zone_b63r_ab_d2e141_b63r_lb18" start="#b63r_lb18" type="ab-zone" style="margin-left:8em;"><line xml:id="srcD_line_b63r_lb18" style="bottom:-11.5em;" start="#b63r_lb18" hand="#N_black3" n="18"><seg corresp="substAddSeg2_b63r" change="#GM0326belatedMod">des wohlfeilsten Agitationsmittels, der moralischen 
+                  </seg></line></zone><zone xml:id="srcD_zone_b63r_ab_d2e141_b63r_lb19" start="#b63r_lb19" type="ab-zone" style="margin-left:8em;"><line xml:id="srcD_line_b63r_lb19" style="bottom:-13em;" start="#b63r_lb19" hand="#N_black3" n="19"><seg corresp="substAddSeg2_b63r" change="#GM0326belatedMod">Atti<del rend="overwritten" cause="#b63r_add_d2e159">d</del><add place="superimposed" corresp="#b63r_add_d2e159" instant="true">t</add>üde, die noch unzurechnungsfähigen Elemente des
+                  </seg></line></zone><zone xml:id="srcD_zone_b63r_ab_d2e141_b63r_lb20" start="#b63r_lb20" type="ab-zone" style="margin-left:8em;"><line xml:id="srcD_line_b63r_lb20" style="bottom:-14.5em;" start="#b63r_lb20" hand="#N_black3" n="20"><seg corresp="substAddSeg2_b63r" change="#GM0326belatedMod">Volks aufzuregen suchen</seg><seg corresp="#copy3_b63r" sameAs="#copiedSeg2_b62r"><del rend="overwritten" cause="#b63r_add_d2e170" type="SOW">.</del><add place="superimposed" corresp="#b63r_add_d2e170"> (</add>– Daß <hi rend="underline">usw</hi> <hi rend="underline">usw.</hi></seg>
             
-            <anchor corresp="#a2r_div2_GMVorrede01"/>
-               
-                  </zone></line></zone><zone xml:id="srcD_zone_a2r_lb2" start="#a2r_lb2" type="add-zone" style="margin-left:8.125em;"><line xml:id="srcD_line_a2r_lb2" start="#a2r_lb2" style="top:5.15625em;" n="2"><add place="inline" corresp="#a2r_add_d2e49">1.</add>
-               
-               
-                  </line></zone><line xml:id="srcD_line_a2r_lb3" start="#a2r_lb3" rend="indent" n="3">Wir sind uns unbekannt, wir Erkennenden, wir selbst uns selbst: das hat seinen guten Grund. Wir haben nie 
-                  </line><line xml:id="srcD_line_a2r_lb4" start="#a2r_lb4" n="4">nach uns gesucht, – wie sollte es geschehn, daß wir eines Tags uns <hi rend="underline">fänden</hi>? Mit Recht hat man gesagt: „wo euer 
-                  </line><line xml:id="srcD_line_a2r_lb5" start="#a2r_lb5" n="5">Schatz ist, da ist auch euer Herz“; <hi rend="underline">unser</hi> Schatz ist, wo die Bienenkörbe unsrer Erkenntniß stehn. Wir sind immer 
-                  </line><line xml:id="srcD_line_a2r_lb6" start="#a2r_lb6" n="6">dazu unterwegs, als geborne Flügelthiere und Honigsammler des Geistes, wir kümmern uns von Herzen eigentlich 
-                  </line><line xml:id="srcD_line_a2r_lb7" start="#a2r_lb7" n="7">nur um Eins – etwas „heimzubringen“. Was das Leben sonst, die sogenannten „Erlebnisse“ angeht, – wer von uns 
-                  </line><line xml:id="srcD_line_a2r_lb8" start="#a2r_lb8" n="8">hat dafür auch nur Ernst genug? Oder Zeit genug? Bei solchen Sachen waren wir, fürchte ich, nie recht „bei 
-                  </line><line xml:id="srcD_line_a2r_lb9" start="#a2r_lb9" n="9">der Sache“: wir haben eben unser Herz nicht dort<del rend="overwritten" cause="#a2r_add_d2e80"><del rend="strikethrough">,</del></del><add place="superimposed" corresp="#a2r_add_d2e80"> –</add> und nicht einmal unser Ohr! Vielmehr wie ein Göttlich-
-                  </line><line xml:id="srcD_line_a2r_lb10" start="#a2r_lb10" n="10">Zerstreuter und In-sich-Versenkter, dem die Glocke eben mit aller Macht ihre zwölf Schläge des Mittags in’s 
-                  </line><line xml:id="srcD_line_a2r_lb11" start="#a2r_lb11" n="11">Ohr gedröhnt hat, mit Einem Male aufwacht und sich fragt „was hat es da eigentlich geschlagen?“ so reiben 
-                  </line><line xml:id="srcD_line_a2r_lb12" start="#a2r_lb12" n="12">auch wir uns mitunter <hi rend="underline">hinterdrein</hi> die Ohren und fragen, ganz erstaunt, ganz betreten „was haben wir da 
-                  </line><line xml:id="srcD_line_a2r_lb13" start="#a2r_lb13" n="13">eigentlich erlebt? mehr noch: wer <hi rend="underline">sind</hi> wir eigentlich?“ und zählen nach, hinterdrein, wie gesagt, alle <milestone unit="page" edRef="#Ed" n="IV"/>die 
-                  </line><line xml:id="srcD_line_a2r_lb14" start="#a2r_lb14" n="14">zitternden zwölf Glockenschläge unsres Erlebnisses, unsres Lebens, unsres <hi rend="underline">Seins</hi> – ach! und verzählen uns da<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a2r_lb15" start="#a2r_lb15" n="15">bei… Wir bleiben uns eben nothwendig fremd, wir verstehn uns nicht, wir <hi rend="underline">müssen</hi> uns verwechseln, für 
-                  </line><line xml:id="srcD_line_a2r_lb16" start="#a2r_lb16" n="16">uns heißt der Satz in alle Ewigkeit „Jeder ist sich selbst der Fernste“, – für uns sind wir keine „Erkennen<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a2r_lb17" start="#a2r_lb17" n="17">den“…
-               
-            <anchor corresp="#a2r_div2_GMVorrede02"/>
-               
-                  </line></zone><zone xml:id="srcD_zone_a2r_div2_GMVorrede02" start="#a2r_div2_GMVorrede02" type="textBlock"><line xml:id="srcD_line_a2r_head_d2e126_a2r_lb18" start="#a2r_lb18" n="18"><zone xml:id="srcD_zone_a2r_head_d2e126_a2r_lb18" type="head">2.
-               
-                  </zone></line><line xml:id="srcD_line_a2r_lb19" start="#a2r_lb19" n="19">– Meine Gedanken über die <hi rend="underline">Herkunft</hi> unsrer moralischen Vorurtheile – denn um sie handelt es sich in dieser Streit<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a2r_lb20" start="#a2r_lb20" n="20">schrift – haben ihren ersten, sparsamen und vorläufigen Ausdruck in jener Aphorismen-Sammlung erhalten, die den 
-                  </line><line xml:id="srcD_line_a2r_lb21" start="#a2r_lb21" n="21">Titel trägt „Menschliches, Allzumenschliches. Ein Buch für freie Geister<del rend="strikethrough" cert="high">.</del>“ und deren Niederschrift in Sorrent begonnen 
-                  </line><line xml:id="srcD_line_a2r_lb22" start="#a2r_lb22" n="22">wurde, während eines Winters, welcher es mir erlaubte, Halt zu machen wie ein Wandrer Halt macht, und das weite 
-                  </line><line xml:id="srcD_line_a2r_lb23" start="#a2r_lb23" n="23">und gefährliche Land zu überschauen, durch das mein Geist bis dahin gewandert war. Dies geschah im Winter 1876
-                  </line><line xml:id="srcD_line_a2r_lb24" start="#a2r_lb24" n="24">-77; die Gedanken selbst sind älter. Es waren in der Hauptsache schon die gleichen Gedanken, die ich in den 
-                  </line><line xml:id="srcD_line_a2r_lb25" start="#a2r_lb25" n="25">vorliegenden Abhandlungen wieder aufnehme: – hoffen wir, daß die lange Zwischenzeit ihnen gut gethan hat, 
-                  </line><line xml:id="srcD_line_a2r_lb26" start="#a2r_lb26" n="26">daß sie reifer, heller, stärker, vollkommner geworden sind! <hi rend="underline">Daß</hi> ich aber heute noch an ihnen festhalte, daß sie 
-                  </line><line xml:id="srcD_line_a2r_lb27" start="#a2r_lb27" n="27">sich selber inzwischen immer fester an einander gehalten haben, ja in einander gewachsen und verwachsen sind, das 
-                  </line><line xml:id="srcD_line_a2r_lb28" start="#a2r_lb28" n="28">stärkt in mir die frohe Zuversichtlichkeit, sie möchten von Anfang an in mir nicht einzeln, <milestone unit="page" edRef="#Ed" n="V"/>nicht beliebig, nicht spo<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a2r_lb29" start="#a2r_lb29" n="29">radisch entstanden sein, sondern aus einer gemeinsamen Wurzel heraus, aus einem in der Tiefe gebietenden, im<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a2r_lb30" start="#a2r_lb30" n="30">mer bestimmter redenden, immer Bestimmteres verlangenden <hi rend="underline">Grundwillen</hi> der Erkenntniß. So allein nämlich ge<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a2r_lb31" start="#a2r_lb31" n="31">ziemt es sich bei einem Philosophen. Wir haben kein Recht darauf, irgend worin <hi rend="underline">einzeln</hi> zu sein: wir dürfen weder 
-                  </line><line xml:id="srcD_line_a2r_lb32" start="#a2r_lb32" n="32">einzeln irren, noch einzeln die Wahrheit treffen. Vielmehr mit der Nothwendigkeit, mit der ein Baum seine 
-                  </line><line xml:id="srcD_line_a2r_lb33" start="#a2r_lb33" n="33">Früchte trägt, wachsen aus uns unsre Gedanken, unsre Werthe, un<retrace>s</retrace>re Ja’s und Nein’s und Wenn’s und Ob’s – 
-                  </line><line xml:id="srcD_line_a2r_lb34" start="#a2r_lb34" n="34">verwandt und bezüglich allesammt unter einander und Zeugnisse Eines Willens, Einer Gesundheit, Eines Erd<pc force="weak">-</pc>
-                  </line><line xml:id="srcD_line_a2r_lb35" start="#a2r_lb35" n="35">reichs, Einer Sonne. – Ob sie <hi rend="underline">euch</hi> schmecken, diese unsre Früchte? – Aber was geht das die Bäume an! 
-                  </line><line xml:id="srcD_line_a2r_lb36" start="#a2r_lb36" n="36">Was geht das <hi rend="underline">uns</hi> an, uns Philosophen!…
-            
-            
-            <anchor corresp="#a2r_div2_GMVorrede03"/>
-               
-                  </line></zone><zone xml:id="srcD_zone_a2r_div2_GMVorrede03" start="#a2r_div2_GMVorrede03" type="lastBlock" style="padding-bottom:5em;"><line xml:id="srcD_line_a2r_head_d2e222_a2r_lb37" start="#a2r_lb37" n="37"><zone xml:id="srcD_zone_a2r_head_d2e222_a2r_lb37" type="head">3.
-               
-               
-                  </zone></line><line xml:id="srcD_line_a2r_lb38" start="#a2r_lb38" n="38">Bei einer mir eignen Bedenklichkeit, die ich ungern eingestehe – sie bezieht sich nämlich auf die <hi rend="underline">Moral</hi>, 
-                  </line><line xml:id="srcD_line_a2r_lb39" start="#a2r_lb39" n="39">auf Alles, was bisher auf Erden als Moral gefeiert worden ist –, einer Bedenklichkeit, <del rend="hatching">die</del> welche in meinem </line><zone xml:id="srcD_zone_a2r_fw_d2e29" type="fw-bottom-left" start="#a2r_fw_d2e29"><fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#a2r_fw_d2e29">2</fw></zone></zone></surface></sourceDoc></TEI>
+                     </line></zone><zone xml:id="srcD_zone_b63r_fw_d2e26" type="fw-bottom-left" start="#b63r_fw_d2e26" style="left:2.0625em;top:26.8125em;"><fw type="folNumber" hand="#GSA_pencil" place="bottom-left" corresp="#b63r_fw_d2e26">63</fw></zone></zone></surface></sourceDoc></TEI>

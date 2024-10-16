@@ -14,10 +14,11 @@
     <link rel="stylesheet" href="resources/css/theme.css"/>
     <link rel="stylesheet" href="resources/css/mystyle.css"/>
     <script src="resources/scripts/myfunctions.js"/>
-     <script src="resources/scripts/transcription.js"/>
+    <script src="resources/scripts/version.js"/>
     <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
     <style>
-        @font-face {
+    
+       @font-face {
                 font-family: "MyFont";
                 src: url("https://fonts.cdnfonts.com/s/15884/SourceSerifPro-Light.woff");
         }
@@ -36,7 +37,7 @@
         body {
             --pb-view-height: calc(100vh - 200px);
             --pb-grid-column-gap: 2em;
-            --pb-facsimile-height: calc(var(--pb-view-height) - 22px);
+            --pb-height: calc(var(--pb-view-height) - 22px);
          --highlight: yellow;
          --delHighlight: gray;
          --pb-content-font-family: MyFont;
@@ -54,56 +55,40 @@
         --typesetter_black: #808080;
         --fhblack: #808080;
         --blue: var(--nblue, blue);
-        --tpField: #f8f8f8;
-        --tpFieldMy: #e0e6e2fa;
+        --tpFieldHubi: #f8f8f8;
+        --tpField: #e0e6e2fa;
+        --tpFieldV1: #eae5d9fa;
+        --tpFieldV2: #dde2ea;
         }
-       #edView {
-           margin: auto;
-       }
+       
 
-       #view1 {
-            flex: 1 1;
-            display: flex;
+       #view1, #view2 {
             justify-content: center;
-        } 
-         #facsimile {
-            flex: 1 1;
-            height: var(--pb-facsimile-height);
-        }
-        
-        ._pb_panel {
-            height: var(--pb-facsimile-height);
-        }
-
-        #view1 pb-view {
-            height: var(--pb-view-height);
+          
+            height: calc(var(--pb-height)/2);
             overflow: auto;
-        }
+        } 
+       
+
+      
 
         .content-body {
             position: relative;
-            display: flex;
-            justify-content: center;
-            padding: 0 20px;
+            display: block;
+           /* justify-content: center; */
+            padding: 20 20px;
+            margin-left: 5%;
+            width: 90%;
         }
         
          pb-page[unresolved] pb-facsimile {
             display: none;
         }
 
-        .content-body pb-facsimile {
-            flex: 1 1;
-           
-        }
+     
         
+      
         
-    
-
-      /*  @media (max-width: 769px) {
-            pb-facsimile {
-                display: none;
-            }
-        } */
     </style>
 </head>
 
@@ -114,7 +99,7 @@
             <app-drawer data-template="lib:include" data-template-path="templates/drawer.html"/>
             <app-header-layout>
                 <app-header slot="header" fixed="fixed">
-                    <app-toolbar data-template="lib:include" data-template-path="templates/menu.html"/>
+                 <app-toolbar data-template="lib:include" data-template-path="templates/menu.html"/> 
                     <app-toolbar data-template="lib:include" data-template-path="templates/toolbar.html"/>
                 </app-header>
                 <pb-drawer toggle="tocToggle" class="toc" emit="toc" subscribe="transcription">
@@ -122,21 +107,9 @@
                         <h3>
                             <pb-i18n key="document.contents">Contents</pb-i18n>
                         </h3>
-                         <pb-load id="toc" url="api/document/{doc}/contents?target=transcription&amp;icons=true" expand="expand" src="document1" subscribe="toc" load-once="load-once">
-                                <pb-i18n key="dialogs.loading">Loading</pb-i18n>
-                            </pb-load> 
-                           <!-- <pb-panel emit="transcription">
-                                <template title="Test 1">
-                               <pb-load id="toc" url="api/document/{doc}/contents?target=transcription&amp;icons=true" expand="expand" src="document1" subscribe="toc" auto="auto">
+                        <pb-load id="toc" url="api/document/{doc}/contents?target=transcription&amp;icons=true" expand="expand" src="document1" subscribe="toc" load-once="load-once">
                                 <pb-i18n key="dialogs.loading">Loading</pb-i18n>
                             </pb-load>
-                            </template>
-                            <template title="Test 2">
-                                <pb-load id="toc2" url="api/document/{doc}/contents?target=transcription&amp;icons=true" expand="expand" src="document1" subscribe="toc" auto="auto">
-                                <pb-i18n key="dialogs.loading">Loading</pb-i18n>
-                            </pb-load>
-                            </template>
-                        </pb-panel> -->
                     </div>
                 </pb-drawer>
                 <section class="breadcrumbs">
@@ -144,30 +117,21 @@
                         <pb-param name="header" value="short"/>
                     </pb-view>
                 </section>
-                <main class="content-body">
-              
-              
-                 <pb-view id="view1" src="document1" column-separator=".tei-cb" view="surface" subscribe="transcription" emit="transcription">
+                  <main class="content-body">
+                        <pb-view id="view1" src="document1" column-separator=".tei-cb" view="surface" subscribe="transcription" emit="transcription">
+                                <pb-param name="type" value="version"/>
+                                <pb-param name="version" value="1"/>
+                                <pb-param name="changeId" value="GM02abortedVersion"/>
+                                <pb-param name="hand" value="#N_brown1"/>
                             </pb-view>  
-                 <pb-view id="edView" src="document1" column-separator=".tei-cb" map="nietzsche-ed-for-dm" odd="nietzsche-ed" subscribe="transcription">
-                                </pb-view>
-                  <div id="pageInfo">
-                        <div id="fixedContent">
-                                <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-page-info" subscribe="transcription" emit="pageInfo">
-                                </pb-view>
-                                <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-change-info" subscribe="transcription" emit="pageInfo">
-                                </pb-view>
-                                <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-apps" subscribe="transcription" emit="pageInfo">
-                                </pb-view>
-                                <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-qv-head" subscribe="transcription" emit="pageInfo">
-                                    <pb-param name="mode" value="querverweis"/>
-                                </pb-view>
-                        </div>
-                    </div>
-                    <pb-facsimile id="facsimile" default-zoom-level="0.7" show-full-page-control="true" show-home-control="true" emit="transcription" subscribe="transcription" type="iiif" show-navigation-control="show-navigation-control" show-navigator="show-navigator">
-                                            </pb-facsimile> 
-                        
+                            <pb-view id="view2" src="document1" column-separator=".tei-cb" view="surface" subscribe="transcription" emit="transcription">
+                                <pb-param name="type" value="version"/>
+                                <pb-param name="version" value="2"/>
+                                <pb-param name="changeId" value="GM02revision"/>
+                                <pb-param name="hand" value="#N_brown1"/>
+                            </pb-view>  
                 </main>
+               
             </app-header-layout>
         </app-drawer-layout>
     </pb-page>
