@@ -61,6 +61,43 @@
 				}
     		}
     	},
+    	"/api/link/{doc}" : {
+    		"get": {
+    		"summary": "Retrieve node id",
+				"operationId": "custom:get-link",
+				"parameters": [
+					{
+						"name": "doc",
+						"in": "path",
+						"schema": {
+							"type": "string",
+							"example": "D20.xml"
+						},
+						"required": true
+					},
+					{
+						"name": "id",
+						"in": "query",
+						"schema": {
+							"type": "string",
+							"example": "a3r"
+						}
+					}
+				],
+				"responses": {
+					"200": {
+						"description": "Node id",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "object"
+								}
+							}
+						}
+					}
+				}
+    		}
+    	},
     	"/api/id/{id}" : {
     		"get": {
     		"summary": "Retrieve node id",

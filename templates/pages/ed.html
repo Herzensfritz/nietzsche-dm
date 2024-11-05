@@ -111,8 +111,15 @@
                     <pb-view id="view1" src="document1" column-separator=".tei-cb" append-footnotes="append-footnotes" subscribe="transcription" emit="transcription"/>
                     <div id="pageInfo">
                         <div id="fixedContent">
-                              <h2>Test</h2>
-                              <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-dm-for-ed" subscribe="transcription">
+                              <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-qv-head" subscribe="transcription" emit="pageInfo">
+                                    <pb-param name="mode" value="querverweis"/>
+                                    <pb-param name="type" value="genesis"/>
+                                    <pb-param name="odd" value="surface.odd"/>
+                                </pb-view>
+                                 <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-qv-head" subscribe="transcription" emit="pageInfo">
+                                    <pb-param name="mode" value="querverweis"/>
+                                    <pb-param name="type" value="concordance"/>
+                                    <pb-param name="odd" value="surface.odd"/>
                                 </pb-view>
                             
                         </div>

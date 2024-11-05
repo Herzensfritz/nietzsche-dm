@@ -313,8 +313,8 @@ declare function pages:process-content($xml as node()*, $root as node()*, $confi
                 "view": $config?view
             },
             $userParams))
-
-	let $html := $pm-config:web-transform($xml, $params, $config?odd)
+    let $odd := if($userParams?odd) then ($userParams?odd) else ($config?odd)
+	let $html := $pm-config:web-transform($xml, $params, $odd)
     let $class := if ($html//*[@class = ('margin-note')]) then "margin-right" else ()
     let $body := pages:clean-footnotes($html)
     let $footnotes := 

@@ -121,46 +121,48 @@
             <pb:template xmlns="" xml:space="preserve"><p><span>[[lem]]</span>]</p></pb:template>
         </model>
                 </elementSpec>
-            <elementSpec ident="lb" mode="change">
-                    <model predicate="$parameters?mode = 'toc'" behaviour="omit"/>
-                    <model predicate="@edRef and not($parameters?mode = 'toc')" behaviour="pass-through">
+    <elementSpec ident="lb" mode="change">
+        <model predicate="$parameters?mode = 'toc'" behaviour="omit"/>
+        <model predicate="@edRef and not($parameters?mode = 'toc')" behaviour="pass-through">
             <param name="line" value="@n"/>
             <param name="reference" value="replace(replace(@edRef, '#', ''), ' ', '/')"/>
             <param name="page" value="if(preceding::pb[@edRef][1]) then (preceding::pb[@edRef][1]/@n) else ($parameters?root/preceding::pb[@edRef][1]/@n)"/>
             <pb:template xmlns="" xml:space="preserve"><pb-popover theme="material" class="edRefLB toggle"><span slot="default">¶</span>
-   <template slot="alternate">
-          <p><span style="margin-right: 2px;">[[reference]]</span><span>[[page]]:</span> <span>[[line]]</span></p>
-      </template>
-</pb-popover></pb:template>
+                <template slot="alternate">
+                <p><span style="margin-right: 2px;">[[reference]]</span><span>[[page]]:</span> <span>[[line]]</span></p>
+                </template></pb-popover></pb:template>
         </model>
-                    <model predicate="not(@edRef) and ((number(@n) mod 5 = 0) or (number(@n) = 1))" behaviour="pass-through" useSourceRendition="true">
+        <model predicate="not(@edRef) and ((number(@n) mod 5 = 0) or (number(@n) = 1))" behaviour="pass-through" useSourceRendition="true">
             <param name="line" value="@n"/>
             <param name="rend" value="@rend"/>
             <pb:template xmlns="" xml:space="preserve"><br class="tei-lb3"/><span style="position:absolute; left: -3em; color: blue;">[[line]]:</span><span class="[[rend]]"/></pb:template>
         </model>
-                    <model predicate="not(@edRef)" behaviour="break" useSourceRendition="true">
+        <model predicate="not(@edRef) and @rend" behaviour="pass-through" useSourceRendition="true">
             <param name="type" value="'line'"/>
-            <param name="label" value="@n"/>
             <param name="rend" value="@rend"/>
+            <pb:template xmlns="" xml:space="preserve"><br class="tei-lb4 [[type]]"/><span class="[[rend]]"/></pb:template>
+        </model>
+        <model predicate="not(@edRef)" behaviour="break" useSourceRendition="true">
+            <param name="type" value="'line'"/>
         </model>
                 </elementSpec>
                 <elementSpec ident="pc" mode="add">
                     <model predicate="@source=&#34;#KGW #KSA&#34;" behaviour="pass-through">
             <pb:template xmlns="" xml:space="preserve"><span style="margin-left: -0.3em"/></pb:template>
         </model>
-                </elementSpec>
-                <elementSpec ident="pb" mode="change">
-                    <model predicate="ancestor::*[@ed and @source]" behaviour="inline">
+    </elementSpec>
+    <elementSpec ident="pb" mode="change">
+        <model predicate="ancestor::*[@ed and @source]" behaviour="inline">
             <param name="page" value="@n"/>
             <param name="url" value="concat(ancestor::*/@ed, '?root=', ancestor::*/@source)"/>
             <pb:template xmlns="" xml:space="preserve"><a href="[[url]]" style="display: block; margin-left: 4pt; color: blue; float: right;"> [[[page]]]</a></pb:template>
         </model>
-                    <model predicate="@ed and @source" behaviour="inline">
+        <model predicate="@ed and @source" behaviour="inline">
             <param name="page" value="@n"/>
             <param name="url" value="concat(@ed, '?root=', @source)"/>
             <pb:template xmlns="" xml:space="preserve"><a href="[[url]]" style="display: block; margin-left: 4pt; color: blue; float: right;"> [[[page]]]</a></pb:template>
         </model>
-                    <model predicate="@facs" behaviour="inline">
+        <model predicate="@facs" behaviour="inline">
             <param name="page" value="@n"/>
             <param name="url" value="id(substring-after(@facs,'#'), root($parameters?root))/graphic/@url"/>
             <pb:template xmlns="" xml:space="preserve"><pb-facs-link emit="transcription" facs="[[url]]"> [[page]]</pb-facs-link></pb:template>

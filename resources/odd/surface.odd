@@ -98,11 +98,11 @@
        <elementSpec ident="item" mode="change">
                     <model predicate="$parameters?mode='querverweis' and parent::list[@type='qvDiv2']" behaviour="pass-through">
             <param name="key" value="concat('myapp.menu.',normalize-space(@type))"/>
-            <param name="content" value="ab[@n != '0']"/>
-            <param name="target" value="ab[@n='0']/text()"/>
+            <param name="content" value="ab"/>
+            <!-- <param name="target" value="ab[@n='0']/text()"/> -->
             <pb:template xmlns="" xml:space="preserve">
-                <span class="title"><pb-i18n key="[[key]]">...key missing ...[[key]]</pb-i18n> <span class="target">[[target]]</span>:</span>
-                <ol>[[content]]</ol>
+               <!-- <span class="title"><pb-i18n key="[[key]]">...key missing ...[[key]]</pb-i18n> <span class="target">[[target]]</span>:</span> -->
+                <ul>[[content]]</ul>
             </pb:template>
         </model>
                 </elementSpec>
@@ -633,10 +633,11 @@
     <elementSpec ident="div" mode="change">
         <model predicate="@type='qvDiv' and list" behaviour="pass-through">
             <param name="content" value="."/>
+            <param name="key" value="concat('myapp.menu.', $parameters?type)"/>
             <pb:template xmlns="" xml:space="preserve"><div id="qvInfoPage" class="infoPage"> 
             <pb-collapse opened="opened" emit="transcription">
                     <span slot="collapse-trigger">
-                <h2><pb-i18n key="myapp.menu.querverweise">Querverweise</pb-i18n></h2>
+                <h2><pb-i18n key="[[key]]">Querverweise</pb-i18n></h2>
                 </span>
                  <span slot="collapse-content">
                 [[content]]
@@ -881,16 +882,22 @@
         </model>
                 </elementSpec>
     <elementSpec ident="ref" mode="change">
-                    <model predicate="@target and parent::desc" behaviour="link">
+        f<model predicate="@target and parent::desc" behaviour="inline">
             <param name="content" value="."/>
             <param name="uri" value="concat($parameters?doc,'?template=meta.html', @target)"/>
         </model>
-                    <model predicate="@target and parent::ab" behaviour="pass-through">
+         <model predicate="@target and parent::ab" behaviour="pass-through">
+            <param name="id" value="let $target := tokenize(@target)[1] return substring-after($target, '#') "/>
+            <param name="doc" value="let $target := tokenize(@target)[1] return substring-before($target, '#') "/>
+            <param name="content" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><a data-id="[[id]]" data-doc="[[doc]]">[[content]]</a></pb:template>
+        </model>
+      <!--  <model predicate="@target and parent::ab" behaviour="pass-through">
             <param name="id" value="let $targetToken := tokenize(@target)                                      let $id := substring-after($targetToken[1], '#')                                     let $node := id(concat('srcD_surface_', $id), root($parameters?root))                                     return if ($node) then (util:node-id($node)) else ()"/>
             <param name="channel" value="let $targetToken := tokenize(@target)                                      let $id := substring-after($targetToken[1], '#')                                     let $node := id($id, root($parameters?root))                                     return if ($node) then ('transcription') else ('nowhere')"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><pb-link emit="[[channel]]" node-id="[[id]]">[[content]]</pb-link></pb:template>
-        </model>
+        </model> -->
                     <model behaviour="inline"/>
                 </elementSpec>
         <elementSpec ident="respStmt" mode="change">
@@ -1099,7 +1106,16 @@
                 </pb:template>
             </model>
         </modelSequence>
-                    <model predicate="parent::div[@type='changeInfo']" behaviour="pass-through">
+        <model predicate="parent::div[@type='changeInfo'] and $parameters?map='nietzsche-change-info'" behaviour="pass-through">
+            <param name="content" value="."/>
+            <param name="uri" value="concat('timeline/index.html#', @xml:id)"/>
+            <pb:template xmlns="" xml:space="preserve">
+                <li>
+                    <span class="changePreview"><a href="[[uri]]">[[content]]</a> </span>
+                    </li>
+            </pb:template>
+        </model>
+        <model predicate="parent::div[@type='changeInfo']" behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <param name="source" value="substring-after(parent::div/@source, '#')"/>
             <param name="content" value="."/>
@@ -1110,7 +1126,7 @@
                     </li>
             </pb:template>
         </model>
-                    <model behaviour="pass-through">
+        <model behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="change">
@@ -1122,7 +1138,7 @@
                 </elementSpec>
                 <elementSpec ident="div1" mode="add"/>
     <elementSpec ident="handNote" mode="add">
-                    <model predicate="$parameters?mode='meta'" behaviour="pass-through">
+        <model predicate="$parameters?mode='meta'" behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <param name="name" value="text()"/>
             <param name="note" value="note"/>
@@ -1133,7 +1149,7 @@
             </div>
             </pb:template>
         </model>
-                    <model behaviour="link">
+        <model behaviour="inline">
             <param name="content" value="."/>
             <param name="uri" value="concat($parameters?doc,'?template=meta.html#', @xml:id)"/>
         </model>

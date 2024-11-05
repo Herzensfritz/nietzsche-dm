@@ -452,6 +452,8 @@ declare function dapi:get-fragment($request as map(*), $docs as node()*, $path a
                     request:get-parameter-names()[starts-with(., 'user')] ! map { substring-after(., 'user.'): request:get-parameter(., ()) },
                     map { "webcomponents": 7 }
                 ))
+            
+            let $log := if ($userParams?map = 'nietzsche-ed-for-dm') then (console:log($userParams)) else () 
             let $mapped :=
                 if ($request?parameters?map) then
                     let $mapFun := function-lookup(xs:QName("mapping:" || $request?parameters?map), 2)
@@ -485,6 +487,7 @@ declare function dapi:get-fragment($request as map(*), $docs as node()*, $path a
                 else
                     let $next := if ($view = "single") then () else $config:next-page($xml?config, $xml?data, $view)
                     let $prev := if ($view = "single") then () else $config:previous-page($xml?config, $xml?data, $view)
+                    let $myResponseId := if ($request?parameters?map) then ($xml?data/@xml:id/string()) else  ($content/@xml:id/string())
                     return
                         router:response(200, "application/json",
                             map {
@@ -493,7 +496,7 @@ declare function dapi:get-fragment($request as map(*), $docs as node()*, $path a
                                 "doc": $path,
                                 "root": $request?parameters?root,
                                 "rootNode": util:node-id($xml?data[1]),
-                                "id": $content/@xml:id/string(),
+                                "id": $myResponseId,
                                 "odd": $xml?config?odd,
                                 "next":
                                     if ($next) then

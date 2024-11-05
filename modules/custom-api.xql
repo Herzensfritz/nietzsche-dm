@@ -33,6 +33,25 @@ declare function api:lookup($name as xs:string, $arity as xs:integer) {
     }
 };
 
+declare function api:get-link($request as map(*)){
+    let $file :=$request?parameters?doc
+   
+    let $odd := if ($file = 'E40.xml') then ('nietzsche-dm.odd') else ('surface.odd')
+    let $document := if ($file) then (doc(concat($config:data-root, '/',$file))) else ($config:newest-dm)
+     let $id := if ($document//tei:sourceDoc) then (
+                $document//tei:sourceDoc/tei:surface[@start=concat('#', $request?parameters?id )]/@xml:id
+            ) else ($request?parameters?id)
+    let $element := $document//*[@xml:id = $id]
+    return if ($element) then (
+        map {
+            "node": util:node-id($element),
+            "odd" : $odd,
+            "doc": $file
+        }
+    ) else ()
+   
+};
+
 declare function api:node-id($request as map(*)){
     let $file := $request?parameters?doc
     let $document := if ($file) then (doc(concat($config:data-root, '/',$file))) else ($config:newest-dm)

@@ -8,7 +8,29 @@ document.addEventListener('DOMContentLoaded', function () {
     if (params.has('show')){
         CURRENT_TARGET = params.get('show');
     }
-   
+    pbEvents.subscribe("pb-update", "pageInfo", (ev) => {
+        const host = (window.location.port != '') ? window.location.hostname + ':' + window.location.port : window.location.hostname;
+        ev.detail.root.querySelectorAll('[data-doc]').forEach((link) =>{
+            let doc = link.dataset.doc;
+            let id = link.dataset.id;
+            let url = window.location.protocol + '//' + host + '/exist/apps/nietzsche-dm/api/link/' + doc + '?id=' + id;
+            fetch(url).then((response) => {
+                // Our handler throws an error if the request did not succeed.
+                if (!response.ok) {
+                    throw new Error(`HTTP error: ${response.status}`);
+                }
+                return response.json();
+            }).then((data) => {
+                if(data){
+                    link.setAttribute('href', data['doc'] + '?root=' + data['node']);
+                    console.log(link)
+                }
+                
+                }).catch((error) => {
+                    console.error(`Could not fetch id: ${error} on URL ${url}`);
+                });
+        });
+    });
     
     document.querySelectorAll('[data-target]').forEach((link) => {
         const target = document.querySelector(link.dataset.target);

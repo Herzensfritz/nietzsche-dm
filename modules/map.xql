@@ -50,9 +50,8 @@ declare function mapping:nietzsche-dm-for-ed($root as element(), $userParams as 
  : to the surface shown in the diplomatic transcription.
  :)
 declare function mapping:nietzsche-ed-for-dm($root as element(), $userParams as map(*)) {
-    let $pb := substring-after($root/@start, '#')
+    let $pb := if ($root instance of element(tei:pb)) then ($root/@xml:id) else (substring-after($root/@start, '#'))
     let $milestone := $config:newest-ed//tei:text//tei:milestone[@unit="page" and @source="#Dm" and @n=$pb ]
-    let $log := console:log($milestone)
     return if (exists($milestone)) then (
         let $nextMilestone := $milestone/following::tei:milestone[@unit="page" and @source="#Dm"][1]
         let $content := if (exists($nextMilestone)) then (
@@ -102,7 +101,7 @@ declare function local:filterNodes($nodes, $file){
  : to the surface shown in the diplomatic transcription.
  :)
 declare function mapping:nietzsche-page-info($root as element(), $userParams as map(*)) {
-    let $pbId := substring-after($root/@start, '#')
+    let $pbId := if ($root instance of element(tei:pb)) then ($root/@xml:id) else (substring-after($root/@start, '#'))
     let $div := <div xmlns="http://www.tei-c.org/ns/1.0" type="pageInfo">{
         for $id in  root($root)//tei:text//tei:pb[@xml:id = $pbId]/tokenize(@corresp, ' ')
             let $content := root($root)//*[@xml:id = substring-after($id, '#') ]
@@ -113,7 +112,6 @@ declare function mapping:nietzsche-page-info($root as element(), $userParams as 
             ) else ()
     }
     </div>
-    let $log := console:log($div)
     return $div
 };    
    (:~
@@ -121,7 +119,7 @@ declare function mapping:nietzsche-page-info($root as element(), $userParams as 
  : to the surface shown in the diplomatic transcription.
  :)
 declare function mapping:nietzsche-change-info($root as element(), $userParams as map(*)) {
-    let $pbId := substring-after($root/@start, '#')
+    let $pbId := if ($root instance of element(tei:pb)) then ($root/@xml:id) else (substring-after($root/@start, '#'))
     let $div := <div xmlns="http://www.tei-c.org/ns/1.0" type="changeInfo"  source="#{$root/@xml:id}">{
         for $id in  root($root)//tei:text//tei:pb[@xml:id = $pbId]/tokenize(@change, ' ')
             let $xmlId := substring-after($id, '#')
@@ -154,7 +152,7 @@ declare function mapping:nietzsche-apps($root as element(), $userParams as map(*
    (:  : if (empty(root($root)//tei:text//tei:app/tei:note[@type="editorial"]) and count(root($root)//tei:text//tei:note[@type="editorial"]) gt 0) then (
         mapping:nietzsche-notes($root, $userParams)    
     ) else () :)
-        let $pbId := substring-after($root/@start, '#')
+        let $pbId := if ($root instance of element(tei:pb)) then ($root/@xml:id) else (substring-after($root/@start, '#'))
         let $apps := if (root($root)//tei:surface[@xml:id = $root/@xml:id]/following-sibling::tei:surface[1]) then (
             let $nextPbId := substring-after(root($root)//tei:surface[@xml:id = $root/@xml:id]/following-sibling::tei:surface[1]/@start, '#')
             return root($root)//tei:text//tei:pb[@xml:id = $pbId]/following::tei:app[tei:note[@type="editorial"] and following::tei:pb[@xml:id = $nextPbId] ]
@@ -162,7 +160,6 @@ declare function mapping:nietzsche-apps($root as element(), $userParams as map(*
             root($root)//tei:text//tei:app[tei:note[@type="editorial"] and preceding::tei:pb[@xml:id = $pbId]]    
         )
         
-        let $log := console:log($apps)
         let $pbN := root($root)//tei:text//tei:pb[@xml:id = $pbId]/@xml:id
         let $div := <div xmlns="http://www.tei-c.org/ns/1.0" type="noteDiv">
            
@@ -188,9 +185,9 @@ declare function mapping:nietzsche-apps($root as element(), $userParams as map(*
     
 };
 declare function mapping:nietzsche-qv($root as element(), $userParams as map(*)) {
-        let $pbId :=$root/@start
+        let $pbId := if ($root instance of element(tei:pb)) then (concat('#',$root/@xml:id)) else ($root/@start)
         let $qvs := <div xmlns="http://www.tei-c.org/ns/1.0" type="qvDiv">
-                       { for $ref in $config:newest-qv//tei:div3//tei:ref[contains(@target, $pbId)]
+                       { for $ref in $config:newest-qv//tei:div3[@type='genesis']//tei:ref[contains(@target, $pbId)]
                             let $div := $ref/ancestor::tei:div3[1]
                             return  <p xmlns="http://www.tei-c.org/ns/1.0" type="{$div/@type}">
                                         {
@@ -205,8 +202,9 @@ declare function mapping:nietzsche-qv($root as element(), $userParams as map(*))
     
 };
 declare function mapping:nietzsche-qv-head($root as element(), $userParams as map(*)) {
-        let $pbId :=$root/@start
-        let $div2Ids:= distinct-values(for $ref in $config:newest-qv//tei:div3//tei:ref[contains(@target, $pbId)]
+        
+        let $pbId := if ($root instance of element(tei:pb)) then (concat('#',$root/@xml:id)) else ($root/@start)
+        let $div2Ids:= distinct-values(for $ref in $config:newest-qv//tei:div3[@type=$userParams?type]//tei:ref[contains(@target, $pbId)]
                             let $div := $ref/ancestor::tei:div2[1]
                             return $div/@xml:id)
         let $qvs := <div xmlns="http://www.tei-c.org/ns/1.0" type="qvDiv" corresp="{$pbId}">
@@ -215,7 +213,7 @@ declare function mapping:nietzsche-qv-head($root as element(), $userParams as ma
                             return  <list xmlns="http://www.tei-c.org/ns/1.0" type="qvDiv2" corresp="{concat('#', $id)}">
                                         {
                                         $div/tei:head[1],
-                                        for $div3 in $div/tei:div3
+                                        for $div3 in $div/tei:div3[@type=$userParams?type]
                                             where $div3//tei:ref[contains(@target, $pbId)]
                                             return <item xmlns="http://www.tei-c.org/ns/1.0" type="{$div3/@type}">
                                             {
@@ -226,7 +224,7 @@ declare function mapping:nietzsche-qv-head($root as element(), $userParams as ma
                                     </list>
                                 }
                         </div>
-        let $log := console:log($qvs)
+        let $log := console:log($root)
         return $qvs
     
 };
