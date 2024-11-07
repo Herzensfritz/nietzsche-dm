@@ -224,7 +224,7 @@ declare function mapping:nietzsche-qv-head($root as element(), $userParams as ma
                                     </list>
                                 }
                         </div>
-        let $log := console:log($root)
+  
         return $qvs
     
 };

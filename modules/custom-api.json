@@ -25,6 +25,44 @@
         }
     },
     "paths": {
+    	"/api/static-collection": {
+			"post": {
+				"summary": "Get formatted overview of documents in the collection",
+				"tags": ["collection"],
+				"operationId": "custom:list",
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"properties": {
+									"files": {
+										"type": "array",
+										"description": "Filter collection for the files in this list",
+										"items": {
+											"type": "object"
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"responses": {
+					"200": {
+						"description": "Returns HTML describing the collection",
+						"content": {
+							"text/html": {
+								"schema": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
     	"/api/genesis" : {
     		"get": {
     		"summary": "Retrieve timeline data",

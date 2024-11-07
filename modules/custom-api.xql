@@ -17,9 +17,14 @@ declare namespace tei="http://www.tei-c.org/ns/1.0";
 import module namespace config="http://www.tei-c.org/tei-simple/config" at "config.xqm";
 import module namespace vapi="http://teipublisher.com/api/view" at "lib/api/view.xql";
 import module namespace dapi="http://teipublisher.com/api/documents" at "lib/api/document.xql";
+import module namespace capi="http://teipublisher.com/api/collection" at "lib/api/collection.xql";
+import module namespace browse="http://www.tei-c.org/tei-simple/templates" at "lib/browse.xql";
+import module namespace pages="http://www.tei-c.org/tei-simple/pages" at "lib/pages.xql";
+import module namespace nav="http://www.tei-c.org/tei-simple/navigation" at "navigation.xql";
+import module namespace tpu="http://www.tei-c.org/tei-publisher/util" at "lib/util.xql";
+import module namespace templates="http://exist-db.org/xquery/html-templating";
 declare namespace array="http://www.w3.org/2005/xpath-functions/array";
 
-import module namespace tpu="http://www.tei-c.org/tei-publisher/util" at "lib/util.xql";
 import module namespace pm-config="http://www.tei-c.org/tei-simple/pm-config" at "pm-config.xql";
 
 (:~
@@ -31,6 +36,70 @@ declare function api:lookup($name as xs:string, $arity as xs:integer) {
     } catch * {
         ()
     }
+};
+declare function api:test($request as map(*)) {
+    let $json := $request?body
+    let $log := console:log($json?test)
+    return <html><body>OK</body></html>
+};
+declare
+    %templates:wrap
+function api:short-header($node as node(), $model as map(*)) {
+        let $work := root($model("work"))/*
+        let $file := util:document-name(root($model("work")))
+        let $result := array:for-each($model("mapping")?files, function ($item) { if ($item?name = $file) then ($item) else ()})
+        let $prefix := if (array:size($result) gt 0) then (array:get($result, 1)?target) else ()
+        let $relPath := concat($prefix, '/index.html')
+        return
+            try {
+                let $config := tpu:parse-pi(root($work), (), ())
+                let $header :=
+                    $pm-config:web-transform(nav:get-header($model?config, $work), map {
+                        "header": "short",
+                        "doc": $relPath
+                    }, $config?odd)
+                return
+                    if ($header) then
+                        $header
+                    else
+                        <a href="{$relPath}">{util:document-name($work)}</a>
+            } catch * {
+                <a href="{$relPath}">{util:document-name($work)}</a>,
+                <p class="error">Failed to output document metadata: {$err:description}</p>
+            }
+};
+declare function api:list($request as map(*)) {
+    let $json := $request?body
+    let $size := array:size($json?files)
+    let $names := array:for-each($json?files, function ($item) { $item?name })
+    let $params := map { "collection": () }
+    let $works := capi:list-works((), (), $params)
+    let $template :=  $config:app-root || "/templates/static-collection.html"
+    let $lookup := function($name as xs:string, $arity as xs:int) {
+        try {
+            let $cfun := api:lookup($name, $arity)
+            return
+                if (empty($cfun)) then
+                    function-lookup(xs:QName($name), $arity)
+                else
+                    $cfun
+        } catch * {
+            ()
+        }
+    }
+    let $filtered := for $data in $works?all
+                    let $file := util:document-name($data)
+                    where exists(index-of($names, $file))
+                    return $data
+    let $model := map {
+        "all": $filtered,
+        "app": $config:context-path,
+        "mapping": $json,
+        "mode": "browse"
+    }
+    
+    return
+        templates:apply(doc($template), $lookup, $model, tpu:get-template-config($request))
 };
 
 declare function api:get-link($request as map(*)){
