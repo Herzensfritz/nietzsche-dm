@@ -243,9 +243,10 @@ declare function pages:load-xml($view as xs:string?, $root as xs:string?, $doc a
 };
 
 declare function pages:load-xml($data as node()*, $view as xs:string?, $root as xs:string?, $doc as xs:string) {
+    let $myView := if ($view = 'edPage') then ('page') else ($view)
     let $config :=
         (: parse processing instructions and remember original context :)
-        map:merge((tpu:parse-pi(root($data[1]), $view), map { "context": $data }))
+        map:merge((tpu:parse-pi(root($data[1]), $myView), map { "context": $data, "originalView": $view }))
     return
         map {
             "config": $config,
@@ -418,7 +419,6 @@ declare function pages:toc-div($node, $model as map(*), $target as xs:string?,
     $icons as xs:boolean?) {
     let $view := $model?config?view
     let $divs := nav:get-subsections($model?config, $node)
-   
     return
         <ul>
         {
@@ -439,7 +439,7 @@ declare function pages:toc-div($node, $model as map(*), $target as xs:string?,
             let $parent := if ($view = 'page') then () else nav:is-filler($model?config, $div)
             let $hasDivs := exists(nav:get-subsections($model?config, $div))
             let $nodeId :=  if ($parent) then util:node-id($parent) else util:node-id($root)
-            let $xmlId := if ($parent) then $parent/@xml:id else $root/@xml:id
+            let $xmlId := if ($model?config?originalView = 'edPage') then () else (if ($parent) then $parent/@xml:id else $root/@xml:id)
             let $subsect := if ($parent) then attribute hash { util:node-id($root) } else ()
             return
                     <li>

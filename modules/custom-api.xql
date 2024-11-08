@@ -47,7 +47,9 @@ declare
 function api:short-header($node as node(), $model as map(*)) {
         let $work := root($model("work"))/*
         let $file := util:document-name(root($model("work")))
-        let $result := array:for-each($model("mapping")?files, function ($item) { if ($item?name = $file) then ($item) else ()})
+        
+        let $result := array:filter($model("mapping")?files, function ($item) { $item?name = $file})
+        let $log := console:log($result)
         let $prefix := if (array:size($result) gt 0) then (array:get($result, 1)?target) else ()
         let $relPath := concat($prefix, '/index.html')
         return

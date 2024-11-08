@@ -177,7 +177,6 @@ declare function nav:get-content($config as map(*), $div as element()) {
                         ($div/ancestor::tei:div, $div/ancestor::tei:text)[1]
                 )
             let $newChunk := nav:add-app-to-anchor($div, $chunk)
-            let $log := console:log($newChunk)
             return
                 $newChunk
         case element(tei:div) return
