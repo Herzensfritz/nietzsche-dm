@@ -257,8 +257,6 @@ declare function api:handNote4change($request as map(*)){
     let $document := if ($file) then (doc(concat($config:data-root, '/',$file))) else ($config:newest-dm)
     let $sourceDoc := if ($request?parameters?source) then ($document//tei:sourceDoc/tei:surface[@xml:id = $request?parameters?source]) else ()
     let $pb := if ($sourceDoc) then ($document//tei:pb[@xml:id = substring-after($sourceDoc/@start, '#')]) else ()
-    let $log := console:log($xmlId)
-    let $log2 := console:log($document//tei:handNote[contains(@change, $xmlId)])
     let $handNote :=  
     <ul class="handNotes">
     {

@@ -53,7 +53,7 @@ ul.letters, ul.pages {
     background: var(--pb-toolbar-background-color);
 }
 .popoverTarget {
-    text-decoration: var(--pb-toolbar-background-color) wavy underline;
+    text-decoration: blue wavy underline;
 }
 .popoverTargetCorr {
     text-decoration: var(-paper-red-200) wavy underline;
@@ -63,4 +63,7 @@ ul.letters, ul.pages {
 }
 .note {
     font-style: italic;
+}
+.tei-corr1 .tei-note.note {
+    margin-left: 0.5em;
 }

@@ -76,6 +76,7 @@ declare function mapping:nietzsche-ed-for-dm($root as element(), $userParams as 
                 $content,
                 $omitTextAfter}
         </div>
+        let $log := console:log($div)
         return $div
     ) else (
         <div>{concat('Kein Milestone in ', util:document-name($config:newest-ed),' für ', $pb)} </div>    
@@ -89,6 +90,7 @@ declare function local:filterNodes($nodes, $file){
                                             $node/@* except $node/@facs,
                                             attribute ed {$file},
                                             attribute source { util:node-id($node)},
+                                            if ($node instance of element(tei:div2)) then (attribute corresp { concat('#', $node//tei:pb[1]/@xml:id)}) else (),
                                             $node/node()
                                         }
                                     ) else ($node)
