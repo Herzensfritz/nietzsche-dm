@@ -264,6 +264,12 @@
             [[content]]
             </div></pb:template>
         </model>
+        <model predicate="$parameters?mode='timeline' and $parameters?static='true'" behaviour="pass-through" cssClass="timelineEntry">
+            <param name="content" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="tei-div2 timelineEntry">
+            [[content]]
+            </div></pb:template>
+        </model>
         <model predicate="$parameters?mode='timeline'" behaviour="pass-through" cssClass="timelineEntry">
             <param name="content" value="."/>
             <param name="id" value="@xml:id"/>

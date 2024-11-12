@@ -1135,6 +1135,14 @@
     <pb-load src="document1" url="api/page4change/[[id]]" auto="auto" emit="timeline"/>
 </div></pb:template>
         </model>
+        <model predicate="$parameters?mode = 'static'" behaviour="pass-through">
+            <param name="id" value="@xml:id"/>
+            <param name="content" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="change">
+                <div class="changeContent">[[content]]</div>
+            </div>
+            </pb:template>
+        </model>
                 </elementSpec>
                 <elementSpec ident="div1" mode="add"/>
     <elementSpec ident="handNote" mode="add">

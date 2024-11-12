@@ -18,6 +18,12 @@
     <script src="resources/scripts/timeline.js"/>
     <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
     <style>
+        :root {
+            --scroll-top: 128px;
+        }
+        :target {
+            scroll-margin-top: var(--scroll-top, 128px);
+        }
     
         pb-page[unresolved] {
             display: none;
@@ -52,13 +58,16 @@
             margin-left: 20px;
             margin-right: 50px;
             margin-top: 0px;
+            scroll-margin-top: var(--scroll-top, 128px);
         }
         
         pb-view {
             width: 50em;
+            scroll-margin-top: var(--scroll-top, 128px);
         }
         .month {
             vertical-align: top;
+            scroll-margin-top: var(--scroll-top, 128px);
         }
         
     </style>

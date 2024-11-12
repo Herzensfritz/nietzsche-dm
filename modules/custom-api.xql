@@ -130,53 +130,38 @@ declare function api:node-id($request as map(*)){
     return if ($surface) then (util:node-id($surface)) else ()
 };
 
-declare function api:timeline($request as map(*)){
-    let $dates := $config:newest-dm//tei:profileDesc/tei:creation/tei:listChange/tei:change//tei:date/string(@when|@notAfter)
-    let $years := (distinct-values(for $date in $dates
-                                        return substring-before($date, '-')))
-    let $array := []
-    let $output := local:getYears($years, $dates, $array)
-    let $log := console:log($output)
-    let $data := map:merge((
-        map:entry( 'test', $output )
-    ))
-    let $log := console:log($data)
-    return $data
+declare function api:static-timeline($request as map(*)){
+     let $file := $request?parameters?doc
+    let $document := if ($file) then (doc(concat($config:data-root, '/',$file))) else ($config:newest-dm)
+    return pages:static-timeline($document)
 };
-declare function local:getYears($years, $dates, $array) {
-    let $year := $years[1]
-    return if ($year != '') then (
-        let $entry := map:entry($year, map:merge((local:getMonths($year, $dates)))) 
-        return if (count($years) gt 1) then () else (array:append($array, $entry))
-    ) else ()
-
-        
-};
-declare function local:getMonths($year, $dates){
-    for $month in distinct-values(for $date in $dates
-                                                where starts-with($date, $year)
-                                                let $datePart := substring-after($date, concat($year, '-'))
-                                                return substring-before($datePart, '-')
-                                        ) 
-        return map:entry(
-            $month, map { 'test': 'ok'}    
-        )
+declare function api:static-letters($request as map(*)){
+    let $file := $request?parameters?doc
+    let $href := concat('/', $request?parameters?href, '/index.html')
+    let $document := if ($file) then (doc(concat($config:data-root, '/',$file))) else ($config:newest-dm)
+    let $letters := for $change in $document//tei:teiHeader/tei:profileDesc/tei:creation/tei:listChange/tei:change/@xml:id/string()
+                        return local:letters($change, $href)
+    return $letters
+    
 };
 declare function api:letters($request as map(*)){
-    let $id := $request?parameters?id
     let $appendixFile := util:document-name($config:newest-annex)
+    let $href := concat($appendixFile, '?template=nietzsche-timeline.html')
+    return local:letters($request?parameters?id, $href)   
+};
+declare function local:letters($id as xs:string*, $href as xs:string*){
     let $letters := for $letterId in distinct-values($config:newest-annex//*[@change=concat('#', $id)]/ancestor::tei:div2/@xml:id)
                         let $div2 := $config:newest-annex//*[@xml:id = $letterId]
                         return <pb-popover theme="material" placement="right">
                                 <span slot="default">
-                                    <a href="{ concat($appendixFile, '?template=nietzsche-timeline.html#', $div2/@xml:id) }">
+                                    <a href="{ concat($href, '#', $div2/@xml:id) }">
                                        { $div2/tei:head/text() }
                                     </a>
                                 </span>
                                 <template slot="alternate">{$div2/tei:p}</template>
                         </pb-popover>
     return 
-    <div class="appendix">
+    <div class="appendix" data-id="{$id}">
      { if (count($letters) gt 0) then (
         <pb-collapse class="changeInfo">
              <span class="mycollapse-trigger" slot="collapse-trigger">

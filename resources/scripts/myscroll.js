@@ -1,12 +1,20 @@
+
 function myScrollIntoView(target){
     target.scrollIntoView(true);  
-    let scrolledY = window.scrollY;
+    /*let scrolledY = window.scrollY;
 
      if(scrolledY){
         window.scroll(0, scrolledY - headerHeight);
-    }
+    }*/
 }
 document.addEventListener('DOMContentLoaded', function () {
+    const root = document.querySelector(':root');
+    const appHeader = document.querySelector('app-header');
+    if (appHeader && root) {
+        const headerHeight = appHeader.getBoundingClientRect().height; 
+        root.style.setProperty('--scroll-top', headerHeight + 'px');
+    }
+    
     pbEvents.subscribe("pb-update", "transcription", (ev) => {
         const id = document.location.hash
         if (id){

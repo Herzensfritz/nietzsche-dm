@@ -1,9 +1,8 @@
-var headerHeight = 128;
+
 var CURRENT_TARGET = 'pageInfo';
 
 document.addEventListener('DOMContentLoaded', function () {
-    const appHeader = document.querySelector('app-header');
-    headerHeight = (appHeader) ? appHeader.getBoundingClientRect().height : headerHeight;
+    
     let params = new URLSearchParams(document.location.search);
     if (params.has('show')){
         CURRENT_TARGET = params.get('show');

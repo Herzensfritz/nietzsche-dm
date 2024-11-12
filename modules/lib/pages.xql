@@ -70,6 +70,25 @@ declare function pages:timeline($node as node(), $model as map(*)) {
     )
 };
 
+declare function pages:static-timeline($document) {
+    let $data := $document//tei:teiHeader/tei:profileDesc/tei:creation/tei:listChange
+    let $map := local:yearMaps($data//tei:change, 1)
+    return if (count($map) eq 0) then (<h1/>) else (
+             <h1 id="{concat('year-', $map?year)}" class="year"> { $map?year }</h1>,<table class="months"> {
+                    for $month in $map?months
+                        let $monthKey := concat('myapp.months.', $month?month)
+                        return <tr><td id="{concat($map?year, '-', $month?month)}" class="month"><pb-i18n key="{$monthKey}">{ $month?month }</pb-i18n></td><td>
+                            { for $key in $month?keys 
+                                return <pb-view id="{$key}" static="" src="document1" view="single" emit="timeline" xpath="{concat("//teiHeader/profileDesc/creation/listChange", "/change[@xml:id='", $key, "']")}">
+                                    <pb-param name="mode" value="static"></pb-param>
+                                </pb-view>
+                            }
+                       </td></tr>
+                }
+                </table>
+    )
+};
+
 declare function local:yearMaps($changes, $index){
     let $years := for $year in  (distinct-values(for $change in $changes
                                         return substring-before($change/tei:date/(@when|@notAfter|@notBefore)[1], '-')))
