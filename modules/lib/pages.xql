@@ -398,7 +398,7 @@ declare function pages:toc-timeline($node, $model as map(*), $target as xs:strin
         for $map in local:yearMaps($node//tei:teiHeader/tei:profileDesc/tei:creation/tei:listChange/tei:change, 1)
             return 
         <li>
-            <pb-collapse>
+            <pb-collapse opened="opened">
                 <span slot="collapse-trigger">
                     <pb-link emit="{$target}" subscribe="{$target}" xml-id="{concat('year-', $map?year)}">{$map?year}</pb-link>
                 </span>

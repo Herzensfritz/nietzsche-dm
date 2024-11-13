@@ -11,14 +11,14 @@
     	},
     	"menu": {
     		"appNotes": "Anmerkungen",
-    		"changes": "Bearbeitungsschritte",
+    		"changes": "Werkgenetische Bezüge",
     		"concordance": "Konkordanz",
     		"genesis": "Vorstufen",
     	
     		"querverweise": "Querverweise",
-    		"pageInfo": "Seiteninformationen",
-    		"showTimeline": "Zeitstrahl anzeigen",
-    		"timeline": "Zeitstrahl",
+    		"pageInfo": "Manuskriptbeschreibung",
+    		"showTimeline": "Chronik anzeigen",
+    		"timeline": "Chronik",
     		"toggleED": "Erstdruck ein/ausblenden",
     		"toggleFacsimile": "Faksimile ein/ausblenden",
     		"toggleInfo": "Seiteninformation ein/ausblenden"
