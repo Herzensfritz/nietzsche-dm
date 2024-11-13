@@ -177,15 +177,27 @@ declare function local:letters($id as xs:string*, $href as xs:string*){
         ) else ()    }
     </div>
 };
+declare function api:static-change($request as map(*)){
+    let $file := $request?parameters?doc
+    let $href := concat('/', $request?parameters?href, '/index.html')
+    let $document := if ($file) then (doc(concat($config:data-root, '/',$file))) else ($config:newest-dm)
+    let $changes := for $letter in $document//tei:text/tei:back/tei:div1/tei:div2/@xml:id/string()
+                        return local:change($letter, $document, $href)
+    return $changes
+    
+};
 declare function api:change($request as map(*)){
     let $id := $request?parameters?id
-    let $document := if ($request?parameters?doc) then (doc(concat($config:data-root, '/', $request?parameters?doc))) else ($config:newest-annex)
+    let $document := if ($request?parameters?doc) then (doc(concat($config:data-root, '/', $request?parameters?doc))) else ($config:newest-annex)   
+    return local:change($id, $document, ())
+};
+declare function local:change($id as xs:string, $document as node(), $href as xs:string*){
     let $source := $document//*[@xml:id=$id]
     let $changes := for $changeId in $source//*[@change]/substring-after(@change, '#')
                         return $config:newest-dm//*[@xml:id = $changeId]
-    let $file := util:document-name($config:newest-dm)
+    let $file := if ($href) then ($href) else (concat(util:document-name($config:newest-dm), '?template=timeline.html'))
     return 
-    <div class="changes">
+    <div data-id="{$id}" class="changes">
     {
         if (count($changes) gt 0) then (
              <pb-collapse class="changeInfo">
@@ -195,9 +207,8 @@ declare function api:change($request as map(*)){
             <span slot="collapse-content">
                 <ul class="letters">{
                     for $change in $changes
-                        let $path := concat($file, '?template=timeline.html#', $change/@xml:id)
-                        let $key := $change/@xml:id
-                    return <li><pb-highlight key="{$key}" highlight-self="highlight-self" duration="3000"><a href="{$path}">{ $change/node()}</a></pb-highlight> </li>
+                        let $path := concat($file, '#', $change/@xml:id)
+                    return <li><a href="{$path}">{ $change/node()}</a> </li>
                 }</ul>
             </span>
         </pb-collapse>
@@ -205,14 +216,27 @@ declare function api:change($request as map(*)){
     }
     </div>
 };
+declare function api:static-page4change($request as map(*)){
+    let $file := $request?parameters?doc
+    let $href := concat('/', $request?parameters?href, '/index.html')
+    let $document := if ($file) then (doc(concat($config:data-root, '/',$file))) else ($config:newest-dm)
+    let $pages :=   for $change in $document//tei:teiHeader/tei:profileDesc/tei:creation/tei:listChange/tei:change/@xml:id/string()
+                        return local:page4change($change, $document, $href)
+    return $pages
+    
+};
 
 declare function api:page4change($request as map(*)){
-    let $xmlId := concat('#',$request?parameters?id)
     let $file := $request?parameters?doc
     let $document := doc(concat($config:data-root, '/',$file))
+    return local:page4change($request?parameters?id, $document, concat($file, '?template=surface.html'))
+};
+declare function local:page4change($id as xs:string, $document as node(), $href as xs:string*){
+    let $xmlId := concat('#',$id)
+    let $pathPrefix := if(contains($href, '?')) then (concat($href, '&amp;')) else (concat($href, '?'))
     let $pbs := $document//tei:pb[contains(@change, $xmlId)]
     return 
-    <div class="pages">
+    <div data-id="{$id}" class="pages">
     {
         if (count($pbs) gt 0) then (
             <pb-collapse class="changeInfo">
@@ -224,7 +248,7 @@ declare function api:page4change($request as map(*)){
                     for $pb in $pbs
                     let $surfaceId := util:node-id($document//tei:sourceDoc/tei:surface[@start=concat('#', $pb/@xml:id)])
                     let $n := string($pb/@xml:id)
-                    let $path := concat($file, '?template=surface.html&amp;root=', $surfaceId)
+                    let $path := concat($pathPrefix, 'root=', $surfaceId)
                     return <li><a href="{$path}">
                         {$n}
                     </a></li>
