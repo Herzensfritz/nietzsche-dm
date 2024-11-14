@@ -2,7 +2,9 @@
 .myhighlight {
     background: var(--pb-toolbar-background-color);
 }
-
+a {
+    color: inherit;
+}
 ul.letters, ul.pages {
     color: grey;
     font-size: 80%;

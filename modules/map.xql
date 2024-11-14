@@ -108,12 +108,13 @@ declare function mapping:nietzsche-page-info($root as element(), $userParams as 
         for $id in  root($root)//tei:text//tei:pb[@xml:id = $pbId]/tokenize(@corresp, ' ')
             let $content := root($root)//*[@xml:id = substring-after($id, '#') ]
             return if ($content) then ( 
-                element {node-name($content/ancestor::*[local-name() != 'p'][1])} {
+                element {node-name($content/ancestor::*[local-name() != 'ab' and local-name() != 'p'][1])} {
                     $content    
                 }
             ) else ()
     }
     </div>
+    let $log := console:log($div)
     return $div
 };    
    (:~

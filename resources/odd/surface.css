@@ -6,6 +6,9 @@ body {
          --nbrown: #5C4033;
          --red: #dc3545;
 }
+a {
+    color: inherit;
+}
 pb-link[emit='nowhere'] a {
     text-decoration: none;
     color: inherit;

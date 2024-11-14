@@ -155,7 +155,7 @@ declare function local:letters($id as xs:string*, $href as xs:string*){
                         return <pb-popover theme="material" placement="right">
                                 <span slot="default">
                                     <a href="{ concat($href, '#', $div2/@xml:id) }">
-                                       { $div2/tei:head/text() }
+                                       { $div2/tei:head/. }
                                     </a>
                                 </span>
                                 <template slot="alternate">{$div2/tei:p}</template>
@@ -202,13 +202,13 @@ declare function local:change($id as xs:string, $document as node(), $href as xs
         if (count($changes) gt 0) then (
              <pb-collapse class="changeInfo">
              <span class="mycollapse-trigger" slot="collapse-trigger">
-                Relevante Bearbeitungsstufen
+                <pb-i18n key="myapp.menu.change">Werkgenetische Bezüge</pb-i18n>
             </span>
             <span slot="collapse-content">
                 <ul class="letters">{
                     for $change in $changes
                         let $path := concat($file, '#', $change/@xml:id)
-                    return <li><a href="{$path}">{ $change/node()}</a> </li>
+                    return <li><a href="{$path}">{ $change/tei:label/text()}</a> </li>
                 }</ul>
             </span>
         </pb-collapse>
