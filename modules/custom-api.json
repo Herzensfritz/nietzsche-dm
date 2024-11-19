@@ -62,14 +62,83 @@
 					}
 				}
 			}
-		},
-    	"/api/genesis" : {
+		}
+		,"/api/static-links/{doc}" : {
+    		"post": {
+				"summary": "Get formatted overview of documents in the collection",
+				"tags": ["collection"],
+				"operationId": "custom:get-all-links",
+				"parameters": [
+					{
+						"name": "doc",
+						"in": "path",
+						"schema": {
+							"type": "string",
+							"example": "D20.xml"
+						},
+						"required": true
+					}
+				],
+				"requestBody": {
+					"required": true,
+					"content": {
+						"application/json": {
+							"schema": {
+								"type": "object",
+								"properties": {
+									"files": {
+										"type": "array",
+										"description": "Filter collection for the files in this list",
+										"items": {
+											"type": "object"
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+			"responses": {
+					"200": {
+						"description": "HTML <a> for all target in document",
+						"content": {
+							"text/html": {
+								"schema": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+    		}
+    	},
+    	"/api/pbs/{doc}" : {
     		"get": {
-    		"summary": "Retrieve timeline data",
-				"operationId": "custom:documentingGenesis",
+    		"summary": "Retrieve pb data",
+				"operationId": "custom:get-pbs",
+					"parameters": [
+					{
+						"name": "doc",
+						"in": "path",
+						"schema": {
+							"type": "string",
+							"example": "D20.xml"
+						},
+						"required": true
+					},
+					{
+						"name": "prefix",
+						"in": "query",
+						"schema": {
+							"type": "string",
+							"example": "srcD_surface_"
+						},
+						"required": false
+					}
+				],
 				"responses": {
 					"200": {
-						"description": "Timeline data",
+						"description": "Pb data",
 						"content": {
 							"application/json": {
 								"schema": {

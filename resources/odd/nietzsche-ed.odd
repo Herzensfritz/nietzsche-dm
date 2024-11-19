@@ -85,12 +85,22 @@
         <body>
             <schemaSpec start="TEI teiCorpus" ident="nietzsche-ed" source="teipublisher.odd">
     <elementSpec ident="app" mode="change">
-                    <model predicate="@corresp and note" behaviour="pass-through">
+        <model predicate="@corresp and note and $parameters?mode='timeline'" behaviour="pass-through">
+            <param name="id" value="substring-after(@corresp, '#')"/>
+            <param name="content" value="note"/>
+             <param name="footnote" value="count(preceding::app)+1"/>
+            <pb:template xmlns="" xml:space="preserve">
+            <div class="myfootnote">
+                <pb-highlight key="[[id]]" highlight-self="highlight-self"><sup>[[footnote]]</sup></pb-highlight><span>[[content]]</span>
+            </div>
+            </pb:template>
+        </model>
+        <model predicate="@corresp and note" behaviour="pass-through">
             <param name="id" value="substring-after(@corresp, '#')"/>
             <param name="content" value="note"/>
             <pb:template xmlns="" xml:space="preserve"><pb-popover for="[[id]]" theme="material">[[content]]</pb-popover></pb:template>
         </model>
-                    <model predicate="rdg and lem and note" behaviour="pass-through">
+        <model predicate="rdg and lem and note" behaviour="pass-through">
             <param name="rdg" value="rdg"/>
             <param name="lem" value="lem"/>
             <param name="index" value="count(preceding::app)+1"/>
@@ -230,13 +240,13 @@
         </model>
                 </elementSpec>
     <elementSpec ident="anchor" mode="change">
-                    <model predicate="$parameters?mode='timeline' and following::app[@corresp]" behaviour="pass-through">
+        <model predicate="$parameters?mode='timeline' and following::app[@corresp]" behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <param name="count" value="count(preceding::anchor)+1"/>
-            <pb:template xmlns="" xml:space="preserve"><span class="popover trigger" id="[[id]]"><sup>[[count]]</sup></span>
+            <pb:template xmlns="" xml:space="preserve"><pb-highlight key="[[id]]" highlight-self="highlight-self"><sup>[[count]]</sup></pb-highlight>
             </pb:template>
         </model>
-                    <model behaviour="pass-through">
+        <model behaviour="pass-through">
             <desc>following::app/@to = concat('#', @xml:id)</desc>
             <param name="id" value="@xml:id"/>
             <param name="count" value="count(preceding::anchor)+1"/>
@@ -327,24 +337,17 @@
         </model>
                 </elementSpec>
     <elementSpec ident="ref" mode="change">
-                    <model predicate="@target and starts-with(@target, '#')" behaviour="pass-through">
+        <model predicate="@target and starts-with(@target, '#')" behaviour="pass-through">
             <param name="id" value="substring-after(@target, '#')"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><pb-link xml-id="[[id]]" subscribe="transcription" emit="transcription">[[content]]</pb-link></pb:template>
         </model>
-                    <model predicate="not(node())" behaviour="link">
+        <model predicate="not(node())" behaviour="link">
             <param name="content" value="@target"/>
             <param name="uri" value="@target"/>
         </model>
-                    <model behaviour="inline"/>
-                </elementSpec>
-    <elementSpec ident="seg" mode="change">
-                    <model predicate="@type=&#34;passage&#34; and $parameters?mode='timeline'" behaviour="pass-through" useSourceRendition="true">
-            <param name="key" value="substring-after(@change, '#')"/>
-            <param name="content" value="."/>
-            <pb:template xmlns="" xml:space="preserve"><pb-highlight key="[[key]]" duration="3000">[[content]]</pb-highlight></pb:template>
-        </model>
-                </elementSpec>
+         <model behaviour="inline"/>
+    </elementSpec>
     <elementSpec ident="div1" mode="add">
                     <model predicate="$parameters?mode = 'querverweis'" behaviour="pass-through">
             <param name="id" value="@xml:id"/>

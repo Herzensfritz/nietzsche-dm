@@ -103,6 +103,49 @@ declare function api:list($request as map(*)) {
     return
         templates:apply(doc($template), $lookup, $model, tpu:get-template-config($request))
 };
+declare function api:get-all-links($request as map(*)){
+    let $file :=$request?parameters?doc
+    let $json := $request?body
+    let $document := if ($file) then (doc(concat($config:data-root, '/',$file))) else ($config:newest-dm)
+    let $refs := for $ref in $document//tei:ref[@target]
+                    return local:create-link($ref, $json?files)
+    return $refs
+   
+};
+
+declare function local:create-link($ref as node(), $files as array(*)) {
+    let $id := substring-after($ref/@target[1]/string(), '#')
+    let $names := array:for-each($files, function ($item) { $item?name })
+    return if ($config:newest-annex//*[@xml:id = $id]) then (
+        <a href="{$ref/@target/string()}">{$ref/text()}</a>
+    ) else (
+        if ($config:newest-ed//*[@xml:id = $id]) then (
+            let $docName := util:document-name($config:newest-ed)
+            return local:get-static-link($ref, $docName, $names, $files)
+        ) else (
+            if($config:newest-dm//*[@xml:id = $id]) then (
+                if($config:newest-dm//tei:pb[@xml:id = $id]) then (
+                    let $docName := util:document-name($config:newest-dm)
+                    return local:get-static-link($ref, $docName, $names, $files)
+                ) else (
+                    <a data-id="{$id}" href="{concat('/meta-dm/index.html', $ref/@target[1])}">{$ref/text()}</a> 
+                )   
+            ) else (
+                <a data-id="{$id}" href="{concat('/cb/index.html#', substring-after($ref/@target[1], '#'))}">{$ref/text()}</a>
+            )
+        )
+    )
+};
+
+declare function local:get-static-link($ref as node(), $doc as xs:string, $names as array(xs:string*), $files as array(*)){
+    let $index := index-of($names, $doc)
+    return if ($index gt 0) then (
+        let $target := array:get($files, $index)?target
+        let $hash := if (array:get($files, $index)?prefix) then ( concat('#', array:get($files, $index)?prefix, substring-after($ref/@target[1], '#'))) else ($ref/@target[1])
+        let $href := concat('/', $target, '/index.html', $hash)
+        return <a data-id="{substring-after($ref/@target[1], '#')}" href="{$href}">{$ref/text()}</a>    
+    ) else ()
+};
 
 declare function api:get-link($request as map(*)){
     let $file :=$request?parameters?doc
@@ -197,7 +240,7 @@ declare function local:change($id as xs:string, $document as node(), $href as xs
                         return $config:newest-dm//*[@xml:id = $changeId]
     let $file := if ($href) then ($href) else (concat(util:document-name($config:newest-dm), '?template=timeline.html'))
     return 
-    <div data-id="{$id}" class="changes">
+    <div data-id="{$id}" class="changes" data-count="{ count($changes)}">
     {
         if (count($changes) gt 0) then (
              <pb-collapse class="changeInfo">
@@ -215,6 +258,17 @@ declare function local:change($id as xs:string, $document as node(), $href as xs
         ) else ()
     }
     </div>
+};
+declare function api:get-pbs($request as map(*)){
+    let $file := $request?parameters?doc
+    let $document := if ($file) then (doc(concat($config:data-root, '/',$file))) else ($config:newest-dm)
+    let $pages :=   for $pb in $document//tei:pb
+                        return map {
+                            'id': concat($request?parameters?prefix, $pb/@xml:id/string()),
+                            'n': $pb/@n/string()
+                        }
+    return $pages
+    
 };
 declare function api:static-page4change($request as map(*)){
     let $file := $request?parameters?doc

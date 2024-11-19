@@ -79,6 +79,7 @@ ul.letters, ul.pages {
 }
 .note {
     font-style: italic;
+    font-size: 80%;
 }
 .tei-corr1 .tei-note.note {
     margin-left: 0.5em;
