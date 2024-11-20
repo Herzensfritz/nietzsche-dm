@@ -106,44 +106,47 @@ declare function api:list($request as map(*)) {
 declare function api:get-all-links($request as map(*)){
     let $file :=$request?parameters?doc
     let $json := $request?body
+    let $channel := if ($request?parameters?target) then ($request?parameters?target) else ('transcription')
     let $document := if ($file) then (doc(concat($config:data-root, '/',$file))) else ($config:newest-dm)
     let $refs := for $ref in $document//tei:ref[@target]
-                    return local:create-link($ref, $json?files)
+                    return local:create-link($ref, $json?files, $channel)
     return $refs
    
 };
 
-declare function local:create-link($ref as node(), $files as array(*)) {
-    let $id := substring-after($ref/@target[1]/string(), '#')
+declare function local:create-link($ref as node(), $files as array(*), $channel as xs:string) {
+    let $target := tokenize($ref/@target/string())[1]
+    let $targetDoc := substring-before($target, '#')
+    let $targetFile := if ($targetDoc) then (concat($config:data-root, '/', $targetDoc)) else ()
+    let $id := if ($targetDoc = 'E40.xml') then (concat(substring-after($target, '#'), '_id')) else (substring-after($target, '#'))
+    let $currentDoc := if ($targetFile and doc-available($targetFile)) then (doc($targetFile)) else ($config:newest-dm)
     let $names := array:for-each($files, function ($item) { $item?name })
     return if ($config:newest-annex//*[@xml:id = $id]) then (
-        <a href="{$ref/@target/string()}">{$ref/text()}</a>
+        <pb-link xml-id="{$id}" subscribe="{$channel}" emit="{$channel}">{$ref/text()}</pb-link>
     ) else (
-        if ($config:newest-ed//*[@xml:id = $id]) then (
-            let $docName := util:document-name($config:newest-ed)
-            return local:get-static-link($ref, $docName, $names, $files)
-        ) else (
-            if($config:newest-dm//*[@xml:id = $id]) then (
-                if($config:newest-dm//tei:pb[@xml:id = $id]) then (
-                    let $docName := util:document-name($config:newest-dm)
-                    return local:get-static-link($ref, $docName, $names, $files)
-                ) else (
-                    <a data-id="{$id}" href="{concat('/meta-dm/index.html', $ref/@target[1])}">{$ref/text()}</a> 
-                )   
+        if ($currentDoc//*[@xml:id = $id]) then (
+            if ($targetDoc and doc-available($targetFile)) then (
+                local:get-static-link($ref, $id, $targetDoc, $names, $files)
             ) else (
-                <a data-id="{$id}" href="{concat('/cb/index.html#', substring-after($ref/@target[1], '#'))}">{$ref/text()}</a>
+               if($config:newest-dm//tei:pb[@xml:id = $id]) then (
+                    let $docName := util:document-name($config:newest-dm)
+                    return local:get-static-link($ref, $id, $docName, $names, $files)
+                ) else (
+                    <a data-id="{$id}" href="{concat('/meta-dm/index.html', $target)}">{$ref/text()}</a> 
+                ) 
             )
-        )
+        ) else ()
     )
 };
 
-declare function local:get-static-link($ref as node(), $doc as xs:string, $names as array(xs:string*), $files as array(*)){
+declare function local:get-static-link($ref as node(), $targetId as xs:string, $doc as xs:string, $names as array(xs:string*), $files as array(*)){
     let $index := index-of($names, $doc)
     return if ($index gt 0) then (
+        let $dataId := substring-after(tokenize($ref/@target/string())[1], '#')
         let $target := array:get($files, $index)?target
-        let $hash := if (array:get($files, $index)?prefix) then ( concat('#', array:get($files, $index)?prefix, substring-after($ref/@target[1], '#'))) else ($ref/@target[1])
-        let $href := concat('/', $target, '/index.html', $hash)
-        return <a data-id="{substring-after($ref/@target[1], '#')}" href="{$href}">{$ref/text()}</a>    
+        let $id := if (array:get($files, $index)?prefix) then ( concat(array:get($files, $index)?prefix, $targetId)) else ($targetId)
+        let $href := concat('/', $target, '/index.html?id=', $id)
+        return <a data-id="{$dataId}" href="{$href}">{$ref/text()}</a>    
     ) else ()
 };
 

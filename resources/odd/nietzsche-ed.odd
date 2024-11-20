@@ -337,6 +337,11 @@
         </model>
                 </elementSpec>
     <elementSpec ident="ref" mode="change">
+        <model predicate="$parameters?mode='timeline' and $parameters?static='true' and @target" behaviour="pass-through">
+            <param name="id" value="substring-after(tokenize(@target)[1], '#')"/>
+            <param name="content" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><a data-id="[[id]]" class="resolve">[[content]]</a></pb:template>
+        </model>
         <model predicate="@target and starts-with(@target, '#')" behaviour="pass-through">
             <param name="id" value="substring-after(@target, '#')"/>
             <param name="content" value="."/>

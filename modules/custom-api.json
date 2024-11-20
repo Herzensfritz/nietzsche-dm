@@ -77,6 +77,15 @@
 							"example": "D20.xml"
 						},
 						"required": true
+					},
+					{
+						"name": "target",
+						"in": "query",
+						"schema": {
+							"type": "string",
+							"example": "transcription"
+						},
+						"required": false
 					}
 				],
 				"requestBody": {
