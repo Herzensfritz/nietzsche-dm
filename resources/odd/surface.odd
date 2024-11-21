@@ -56,12 +56,13 @@
         </model>
                 </elementSpec>
     <elementSpec ident="note" mode="change">
-                    <model predicate="@type = 'authorial'" behaviour="pass-through">
+        <model predicate="@type = 'msDesc'" behaviour="block"/>
+        <model predicate="@type = 'authorial'" behaviour="pass-through">
             <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><span class="[[hand]]">[[content]]</span></pb:template>
         </model>
-                    <model predicate="@type = 'editorial' and @targetEnd" behaviour="pass-through">
+        <model predicate="@type = 'editorial' and @targetEnd" behaviour="pass-through">
             <param name="startLine" value="id(substring-after(@target, '#'), root($parameters?root))/@n"/>
             <param name="content" value="."/>
             <param name="startTarget" value="substring-after(@target, '#')"/>
@@ -85,7 +86,18 @@
         </model>
                 </elementSpec>
       <elementSpec ident="list" mode="change">
-                    <model predicate="$parameters?mode='querverweis' and parent::div[@type='qvDiv']" behaviour="pass-through">
+       <modelSequence predicate="$parameters?mode='meta' and @xml:id" behaviour="pass-through">
+             <model behaviour="pass-through">
+                <param name="key" value="concat('myapp.meta.', replace(@xml:id, '\.',''))"/>
+                <param name="id" value="@xml:id"/>
+                <pb:template xmlns="" xml:space="preserve"><h3 id="[[id]]"><pb-i18n key="[[key]]">...list...</pb-i18n></h3>
+                </pb:template>
+            </model>
+            <model behaviour="list">
+                <param name="content" value="item"/>
+            </model>
+        </modelSequence>
+        <model predicate="$parameters?mode='querverweis' and parent::div[@type='qvDiv']" behaviour="pass-through">
             <param name="content" value="item"/>
             <param name="head" value="head[1]/text()"/>
             <pb:template xmlns="" xml:space="preserve"><div class="QV">
@@ -94,7 +106,8 @@
                 </div>
             </pb:template>
         </model>
-                </elementSpec>
+        <model behaviour="list"/>
+        </elementSpec>
        <elementSpec ident="item" mode="change">
                     <model predicate="$parameters?mode='querverweis' and parent::list[@type='qvDiv2']" behaviour="pass-through">
             <param name="key" value="concat('myapp.menu.',normalize-space(@type))"/>
@@ -104,7 +117,16 @@
                 <ul>[[content]]</ul>
             </pb:template>
         </model>
-                </elementSpec>
+        <model predicate="abbr and expan" behaviour="pass-through">
+            <param name="abbr" value="abbr/text()"/>
+            <param name="expand" value="expan/text()"/>
+            <pb:template xmlns="" xml:space="preserve">
+                <li><span class="abbr">[[abbr]]</span>:<span style="margin-left: 0.5em">[[expand]]</span></li>
+            </pb:template>
+            
+        </model>
+        <model behaviour="listItem"/>
+    </elementSpec>
      <elementSpec ident="p" mode="change">
                     <model predicate="$parameters?mode='meta' and (parent::msContents or parent::physDesc or parent::additions or parent::history)" behaviour="block"/>
                     <model predicate="parent::div[@type='qvDiv2']" behaviour="pass-through">
@@ -511,7 +533,7 @@
                     <model behaviour="text"/>
                 </elementSpec> -->
     <elementSpec ident="teiHeader" mode="change">
-                    <model predicate="$parameters?mode='meta' and $parameters?header='toc'" behaviour="pass-through">
+        <model predicate="$parameters?mode='meta' and $parameters?header='toc'" behaviour="pass-through">
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve">
         <h3>
@@ -519,11 +541,44 @@
         </h3>
         <div>[[content]]</div></pb:template>
         </model>
-                    <model predicate="$parameters?mode='meta'" behaviour="pass-through">
-            <param name="content" value="."/>
-            <pb:template xmlns="" xml:space="preserve"><h1>Metadaten</h1>
-        <div>[[content]]</div></pb:template>
-        </model>
+        <modelSequence predicate="$parameters?mode='meta'">
+            <model behaviour="heading">
+                <param name="level" value="2"/>
+                <param name="content" value="'Metadaten'"/>
+                <param name="anchor" value="'testAnchor'"/>
+            </model>
+            <model behaviour="block" cssClass="meta-chapter">
+                <param name="content" value="fileDesc/sourceDesc/msDesc/msIdentifier"/>
+            </model>
+            <model behaviour="block" cssClass="meta-chapter">
+                <param name="content" value="fileDesc/sourceDesc/msDesc/msContents"/>
+            </model>
+            <model behaviour="block" cssClass="meta-chapter">
+                <param name="content" value="fileDesc/sourceDesc/msDesc/physDesc"/>
+            </model>
+             <model behaviour="block" cssClass="meta-chapter">
+                <param name="content" value="fileDesc/sourceDesc/msDesc/history"/>
+            </model>
+             <model behaviour="block" cssClass="meta-chapter">
+                <param name="content" value="profileDesc/creation/listChange"/>
+            </model>
+             <model behaviour="block" cssClass="meta-chapter">
+                <param name="content" value="profileDesc/handNotes"/>
+            </model>
+             <model behaviour="block" cssClass="meta-chapter">
+                <param name="content" value="fileDesc/sourceDesc/listBibl"/>
+            </model>
+             <model behaviour="block" cssClass="meta-chapter">
+                <param name="content" value="fileDesc/sourceDesc/list"/>
+            </model>
+        </modelSequence>
+       <!-- <model predicate="$parameters?mode='meta'" behaviour="pass-through">
+            <param name="title" value="fileDesc/(titleStmt|publicationStmt)"/>
+            <pb:template xmlns="" xml:space="preserve">
+            <div>[[title]]</div>
+            <h2>Metadaten</h2>
+            </pb:template>
+        </model> -->
                     <model output="latex" behaviour="metadata"/>
                     <model output="fo" behaviour="omit"/>
                     <model output="web" predicate="$parameters?header='short'" behaviour="block"/>
@@ -539,13 +594,13 @@
                     <model behaviour="omit"/>
                 </elementSpec>
     <elementSpec ident="fileDesc" mode="change">
-                    <model predicate="$parameters?mode='meta'" behaviour="pass-through">
-            <param name="content" value="."/>
+        <model predicate="$parameters?mode='meta'" behaviour="pass-through">
+            <param name="content" value="(titleStmt/.|publicationStmt/.)"/>
             <pb:template xmlns="" xml:space="preserve">
             <div>[[content]]</div>
       </pb:template>
         </model>
-                    <modelSequence predicate="$parameters?header='short'">
+        <modelSequence predicate="$parameters?header='short'">
             <model behaviour="block" cssClass="header-short">
                 <param name="content" value="titleStmt"/>
             </model>
@@ -624,12 +679,20 @@
         </model>
                 </elementSpec>
     <elementSpec ident="ab" mode="change">
-                    <model predicate="$parameters?mode='meta' and (parent::msContents or parent::physDesc or parent::additions or parent::history)" behaviour="heading">
-            <param name="level" value="5"/>
-        </model>
-                    <model predicate="@n" behaviour="listItem"/>
-                    <model behaviour="listItem"/>
-                </elementSpec>
+            <model predicate="$parameters?mode='meta' and @xml:id and ab[@type='head']" behaviour="pass-through">
+                <param name="key" value="concat('myapp.meta.', replace(@xml:id, '\.',''))"/>
+                <param name="id" value="@xml:id"/>
+                 <param name="content" value="ab[empty(@type) or not(@type='head')]"/>
+                <pb:template xmlns="" xml:space="preserve">
+                <pb-collapse>
+                    <span slot="collapse-trigger"><h4 id="[[id]]"><pb-i18n key="[[key]]">...subsection...</pb-i18n></h4></span>
+                    <span slot="collapse-content">[[content]]</span>
+                </pb-collapse>
+                </pb:template>
+            </model>    
+        <model predicate="@n" behaviour="listItem"/>
+        <model behaviour="block"/>
+    </elementSpec>
     <elementSpec ident="div" mode="change">
                     <model predicate="@type='qvDiv' and list" behaviour="pass-through">
             <param name="content" value="."/>
@@ -847,35 +910,107 @@
         </model>
                     <model behaviour="inline" cssClass="term"/>
                 </elementSpec>
-            <elementSpec ident="msContents" mode="add">
-                    <model predicate="$parameters?mode='meta'" behaviour="block"/>
+    <elementSpec ident="msContents" mode="add">
+             <modelSequence predicate="$parameters?mode='meta'">
+                <model behaviour="pass-through">
+                    <param name="key" value="concat('myapp.meta.', @xml:id)"/>
+                    <param name="id" value="@xml:id"/>
+                    <pb:template xmlns="" xml:space="preserve"><h3 id="[[id]]"><pb-i18n key="[[key]]">...contents...</pb-i18n></h3></pb:template>
+                </model>
+                 <model behaviour="block">
+                    <param name="content" value="ab[empty(@type) or not(@type='head')]"/>
+                 </model>
+             </modelSequence>
+                    
                     <model behaviour="listItem"/>
-                </elementSpec>
-                <elementSpec ident="physDesc" mode="add">
-                    <model predicate="$parameters?mode='meta'" behaviour="block"/>
-                    <model behaviour="listItem"/>
-                </elementSpec>
+    </elementSpec>
+    <elementSpec ident="physDesc" mode="add">
+        <modelSequence predicate="$parameters?mode='meta'">
+                <model behaviour="pass-through">
+                    <param name="key" value="concat('myapp.meta.', @xml:id)"/>
+                    <param name="id" value="@xml:id"/>
+                    <pb:template xmlns="" xml:space="preserve"><h3 id="[[id]]"><pb-i18n key="[[key]]">...physDesc...</pb-i18n></h3></pb:template>
+                </model>
+                 <model behaviour="block">
+                    <param name="content" value="ab[empty(@type) or not(@type='head')]|additions"/>
+                 </model>
+        </modelSequence>
+        <model behaviour="listItem"/>
+    </elementSpec>
     <elementSpec ident="additions" mode="add">
-        <model predicate="$parameters?mode='meta'" behaviour="block"/>
+        <model predicate="$parameters?mode='meta' and @xml:id" behaviour="pass-through">
+                <param name="key" value="concat('myapp.meta.', replace(@xml:id, '\.',''))"/>
+                <param name="id" value="@xml:id"/>
+                 <param name="content" value="note|ab[empty(@type) or not(@type='head')]"/>
+                <pb:template xmlns="" xml:space="preserve">
+                <pb-collapse>
+                    <span slot="collapse-trigger"><h4 id="[[id]]"><pb-i18n key="[[key]]">...subsection...</pb-i18n></h4>
+                    </span>
+                    <span slot="collapse-content">[[content]]</span>
+                </pb-collapse>
+                </pb:template>
+        </model> 
         <model behaviour="listItem">
             <param name="content" value="concat('Bearbeitungsspuren fremder Hand: ', .)"/>
             
         </model>
-                </elementSpec>
-                <elementSpec ident="history" mode="add">
-                    <model predicate="$parameters?mode='meta'" behaviour="block"/>
-                    <model behaviour="listItem"/>
-                </elementSpec>
+    </elementSpec>
+       <elementSpec ident="listChange" mode="add">
+        <modelSequence predicate="$parameters?mode='meta' and @xml:id" behaviour="pass-through">
+             <model behaviour="pass-through">
+                <param name="key" value="concat('myapp.meta.', replace(@xml:id, '\.',''))"/>
+                <param name="id" value="@xml:id"/>
+                <pb:template xmlns="" xml:space="preserve"><h3 id="[[id]]"><pb-i18n key="[[key]]">...change...</pb-i18n></h3>
+                </pb:template>
+            </model>
+            <model behaviour="block">
+                <param name="content" value="change"/>
+            </model>
+        </modelSequence>
+        <model behaviour="list"/> 
+    </elementSpec>
+    <elementSpec ident="history" mode="add">
+        <modelSequence predicate="$parameters?mode='meta' and @xml:id" behaviour="pass-through">
+             <model behaviour="pass-through">
+                <param name="key" value="concat('myapp.meta.', replace(@xml:id, '\.',''))"/>
+                <param name="id" value="@xml:id"/>
+                <pb:template xmlns="" xml:space="preserve"><h3 id="[[id]]"><pb-i18n key="[[key]]">...history...</pb-i18n></h3>
+                </pb:template>
+            </model>
+            <model behaviour="block">
+                <param name="content" value="ab[empty(@type) or not(@type='head')]"/>
+            </model>
+        </modelSequence>
+         <model behaviour="listItem"/>
+    </elementSpec>
+      <elementSpec ident="listBibl" mode="change">
+        <modelSequence predicate="$parameters?mode='meta' and @xml:id" behaviour="pass-through">
+             <model behaviour="pass-through">
+                <param name="key" value="concat('myapp.meta.', replace(@xml:id, '\.',''))"/>
+                <param name="id" value="@xml:id"/>
+                <pb:template xmlns="" xml:space="preserve"><h3 id="[[id]]"><pb-i18n key="[[key]]">...listBibl...</pb-i18n></h3>
+                </pb:template>
+            </model>
+            <model behaviour="list">
+                <param name="content" value="bibl"/>
+            </model>
+        </modelSequence>
+        <model behaviour="list"/>
+    </elementSpec>
     <elementSpec ident="handNotes" mode="add">
-                    <model predicate="$parameters?mode='meta'" behaviour="pass-through">
-            <param name="content" value="handNote"/>
-            <pb:template xmlns="" xml:space="preserve">
-                    <h3 id="handNotes"><pb-i18n key="myapp.meta.handNotes">...handNotes...</pb-i18n></h3>
-                    <div>[[content]]</div>
-                    </pb:template>
-        </model>
-                    <model behaviour="listItem"/>
-                </elementSpec>
+        <modelSequence predicate="$parameters?mode='meta' and @xml:id" behaviour="pass-through">
+             <model behaviour="pass-through">
+                <param name="key" value="concat('myapp.meta.', replace(@xml:id, '\.',''))"/>
+                <param name="id" value="@xml:id"/>
+                <pb:template xmlns="" xml:space="preserve"><h3 id="[[id]]"><pb-i18n key="[[key]]">...handNotes...</pb-i18n></h3>
+                </pb:template>
+            </model>
+            <model behaviour="list">
+                <param name="content" value="handNote"/>
+            </model>
+        </modelSequence>
+        <model behaviour="listItem"/>
+    </elementSpec>
             <elementSpec ident="space" mode="add">
                     <model predicate="$parameters?type='version' and $parameters?version='2'" behaviour="omit"/>
                     <model predicate="@unit=&#34;char&#34; and @quantity" behaviour="pass-through">
@@ -897,48 +1032,34 @@
                     <model behaviour="inline"/>
                 </elementSpec>
         <elementSpec ident="respStmt" mode="change">
-                    <model predicate="$parameters?mode='meta'" behaviour="pass-through">
+        <model predicate="$parameters?mode='meta'" behaviour="pass-through">
             <param name="resp" value="resp/text()"/>
             <param name="name" value="name/text()"/>
             <pb:template xmlns="" xml:space="preserve">
-                <tr><td>[[resp]]</td><td>[[name]]</td></tr>
+                <div><span>[[resp]]</span><span style="margin-left: .5em;">[[name]]</span></div>
             </pb:template>
         </model>
                 </elementSpec>
     <elementSpec ident="editor" mode="change">
-                    <model predicate="$parameters?mode='meta'" behaviour="pass-through">
+        <model predicate="$parameters?mode='meta'" behaviour="pass-through">
             <param name="editor" value="."/>
             <pb:template xmlns="" xml:space="preserve">
-                <tr><td><pb-i18n key="myapp.meta.editor">...editor...</pb-i18n>:</td><td>[[editor]]</td></tr>
+                <div><span><pb-i18n key="myapp.meta.editor">...editor...</pb-i18n>:</span> <span style="margin-left: .1em;">[[editor]]</span></div>
             </pb:template>
         </model>
                 </elementSpec>
     <elementSpec ident="author" mode="change">
-                    <model predicate="$parameters?mode='meta'" behaviour="pass-through">
-            <param name="author" value="."/>
-            <pb:template xmlns="" xml:space="preserve">
-                <tr><td><pb-i18n key="myapp.meta.author">...author...</pb-i18n>:</td><td>[[author]]</td></tr>
-            </pb:template>
+        <model predicate="$parameters?mode='meta'" behaviour="block">
+            <param name="content" value="."/>
         </model>
                 </elementSpec>
     <elementSpec ident="publisher" mode="change">
-                    <model predicate="$parameters?mode='meta'" behaviour="pass-through">
-            <param name="publisher" value="."/>
-            <pb:template xmlns="" xml:space="preserve">
-                <tr><td><pb-i18n key="myapp.meta.publisher">...publisher...</pb-i18n>:</td><td>[[publisher]]</td></tr>
-            </pb:template>
-        </model>
-                </elementSpec>
-     <elementSpec ident="date" mode="change">
-                    <model predicate="$parameters?mode='meta' and parent::publicationStmt" behaviour="pass-through">
-            <param name="date" value="."/>
-            <pb:template xmlns="" xml:space="preserve">
-                <tr><td><pb-i18n key="myapp.meta.date">...date...</pb-i18n>:</td><td>[[date]]</td></tr>
-            </pb:template>
+        <model predicate="$parameters?mode='meta'" behaviour="block">
+            <param name="content" value="."/>
         </model>
                 </elementSpec>
     <elementSpec ident="titleStmt" mode="change">
-                    <model predicate="$parameters?mode='meta' and $parameters?header='toc'" behaviour="block">
+        <model predicate="$parameters?mode='meta' and $parameters?header='toc'" behaviour="block">
             <param name="content" value="."/>
             <param name="uri" value="concat($parameters?doc, '?template=meta.html#titleStmt')"/>
             <pb:template xmlns="" xml:space="preserve">
@@ -948,14 +1069,22 @@
                 </pb-collapse>
             </pb:template>
         </model>
-                    <model predicate="$parameters?mode='meta'" behaviour="pass-through">
-            <param name="content" value="."/>
-            <pb:template xmlns="" xml:space="preserve">
-                <h3 id="titleStmt"><pb-i18n key="myapp.meta.titleStmt">...TitleStmt...</pb-i18n></h3>
-                <table>[[content]]</table>
-            </pb:template>
-        </model>
-                    <modelSequence output="web" predicate="$parameters?header='short'">
+        <modelSequence predicate="$parameters?mode='meta'">
+            <model behaviour="link">
+                <param name="content" value="title[1]"/>
+                <param name="uri" value="'?template=surface.html'"/>
+            </model>
+            <model behaviour="block">
+                <param name="content" value="subsequence(title, 2)"/>
+            </model>
+            <model behaviour="block">
+                <param name="content" value="author"/>
+            </model>
+            <model behaviour="block">
+                <param name="content" value="(editor|respStmt)"/>
+            </model>
+        </modelSequence>
+        <modelSequence output="web" predicate="$parameters?header='short'">
             <model behaviour="link">
                 <param name="content" value="title[1]"/>
                 <param name="uri" value="$parameters?doc"/>
@@ -983,11 +1112,13 @@
         </model>
                 </elementSpec>
     <elementSpec ident="msIdentifier" mode="change">
-                    <model predicate="$parameters?mode='meta'" behaviour="pass-through">
+            <model predicate="$parameters?mode='meta'" behaviour="pass-through">
             <param name="repository" value="repository/text()"/>
             <param name="idno" value="idno"/>
+            <param name="key" value="concat('myapp.meta.', @xml:id)"/>
+            <param name="id" value="@xml:id"/>
             <pb:template xmlns="" xml:space="preserve">
-                <h4 id="msIdentifier"><pb-i18n key="myapp.meta.msIdentifier">...msIdentifier...</pb-i18n></h4>
+                <h3 id="[[id]]"><pb-i18n key="[[key]]">...msIdentifier...</pb-i18n></h3>
                 <table>
                     <tr><td><pb-i18n key="myapp.meta.repository">...repository...</pb-i18n>:</td><td>[[repository]]</td></tr>
                     [[idno]]
@@ -1004,43 +1135,34 @@
             </pb:template>
         </model>
                 </elementSpec>
-     <elementSpec ident="publicationStmt" mode="change">
-                    <model predicate="$parameters?mode='meta'" behaviour="pass-through">
-            <param name="content" value="."/>
-            <pb:template xmlns="" xml:space="preserve">
-                <h3 id="publicationStmt"><pb-i18n key="myapp.meta.publicationStmt">...publicationStmt...</pb-i18n></h3>
-                <table>[[content]]</table>
-            </pb:template>
-        </model>
-                </elementSpec>
+    
     <elementSpec ident="sourceDesc" mode="change">
-                    <model predicate="$parameters?mode='meta'" behaviour="pass-through">
+        <model predicate="$parameters?mode='meta'" behaviour="pass-through">
             <param name="msDesc" value="msDesc"/>
             <param name="msContents" value="msContents"/>
             <param name="physDesc" value="physDesc"/>
             <param name="additions" value="additions"/>
             <param name="history" value="history"/>
             <pb:template xmlns="" xml:space="preserve">
-                <h3 id="sourceDesc"><pb-i18n key="myapp.meta.msDesc">...msDesc...</pb-i18n></h3>
                 <div>[[msDesc]]</div>
-                <div id="msContents">[[msContents]]</div>
-                <div id="physDesc">[[physDesc]]</div>
-                <div id="additions">[[additions]]</div>
-                <div id="history">[[history]]</div>
+                <div>[[msContents]]</div>
+                <div>[[physDesc]]</div>
+                <div>[[additions]]</div>
+                <div>[[history]]</div>
             </pb:template>
         </model>
                 </elementSpec>
    
     <elementSpec ident="title" mode="change">
-                    <model predicate="$parameters?header='short' and $parameters?type='timeline'" behaviour="pass-through">
+        <model predicate="$parameters?header='short' and $parameters?type='meta'" behaviour="pass-through">
+            <param name="title" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><h5 class="tei-title1"><pb-i18n style="font-style: italic;" key="myapp.meta.title">...Metadaten...</pb-i18n>: [[title]]</h5></pb:template>
+        </model>
+        <model predicate="$parameters?header='short' and $parameters?type='timeline'" behaviour="pass-through">
             <param name="title" value="substring-before(., '.')"/>
             <pb:template xmlns="" xml:space="preserve"><h5 class="tei-title1"><pb-i18n style="font-style: italic;" key="myapp.menu.timeline">...Zeitstrahl...</pb-i18n>: [[title]]</h5></pb:template>
         </model>
-                    <model predicate="$parameters?mode='meta'" behaviour="pass-through">
-            <param name="title" value="."/>
-            <pb:template xmlns="" xml:space="preserve">
-                <tr><td><pb-i18n key="myapp.meta.title">...title...</pb-i18n>:</td><td>[[title]]</td></tr>
-            </pb:template>
+        <model predicate="$parameters?mode='meta'" behaviour="block">
         </model>
                     <model predicate="$parameters?header='short'" behaviour="heading">
             <param name="level" value="5"/>
@@ -1096,7 +1218,7 @@
                     <model behaviour="inline"/>
                 </elementSpec>
     <elementSpec ident="change" mode="add">
-                    <modelSequence predicate="$parameters?type='version'">
+        <modelSequence predicate="$parameters?type='version'">
             <model behaviour="heading">
                 <param name="level" value="3"/>
                 <param name="content" value="(text()[1]|ref[1]/text())"/>
@@ -1129,7 +1251,7 @@
                     </li>
             </pb:template>
         </model>
-                    <model behaviour="pass-through">
+        <model behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="change">
@@ -1138,7 +1260,7 @@
     <pb-load src="document1" url="api/page4change/[[id]]" auto="auto" emit="timeline"/>
 </div></pb:template>
         </model>
-                    <model predicate="$parameters?mode = 'static'" behaviour="pass-through">
+        <model predicate="$parameters?mode = 'static' or $parameters?mode = 'meta'" behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="change">
@@ -1149,17 +1271,7 @@
                 </elementSpec>
                 <elementSpec ident="div1" mode="add"/>
     <elementSpec ident="handNote" mode="add">
-                    <model predicate="$parameters?mode='meta'" behaviour="pass-through">
-            <param name="id" value="@xml:id"/>
-            <param name="name" value="text()"/>
-            <param name="note" value="note"/>
-            <pb:template xmlns="" xml:space="preserve">
-            <div id="[[id]]" class="handNote">
-                <h4 class="[[id]]">[[name]]</h4>
-                <span class="note">[[note]]</span>
-            </div>
-            </pb:template>
-        </model>
+        <model predicate="$parameters?mode='meta'" behaviour="listItem"/>
         <model behaviour="inline">
             <param name="content" value="text()"/>
             <outputRendition xml:space="preserve" scope="before">

@@ -376,16 +376,17 @@ declare function api:get-meta-toc($request as map(*)){
     let $document := doc(concat($config:data-root, '/', $request?parameters?id))
     let $namespace := namespace-uri-from-QName(node-name(root($document)/*))
     let $target := $request?parameters?target
+    let $descString := 'descChapter'
     return
     <ul>
         {
-        for $entry in $config:meta-entries
-            let $xquery := "declare default element namespace '" || $namespace || "'; $document//" || $entry
-            let $log := console:log($xquery)
-            let $xmlId := util:eval($xquery)/local-name()
+        for $entry in $document//*[@xml:id and starts-with(@xml:id, $descString)]
+            where number(replace(substring-after($entry/@xml:id/string(), $descString), '\.','')) lt 10
+            let $key := concat('myapp.meta.',replace($entry/@xml:id/string(), '\.', '') )
+            order by $entry/@xml:id/string()
             return 
         <li>
-             <pb-link emit="{$target}" subscribe="{$target}" xml-id="{$xmlId}">{$xmlId}</pb-link>
+             <pb-link emit="{$target}" subscribe="{$target}" xml-id="{$entry/@xml:id/string()}"><pb-i18n key="{$key}">...key...</pb-i18n></pb-link>
         </li>
         }
     </ul> 
