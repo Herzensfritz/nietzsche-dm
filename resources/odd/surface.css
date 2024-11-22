@@ -19,6 +19,9 @@ pb-link[emit='nowhere'] a {
 .QV .target {
     margin-left: 1ch;
 }
+.meta-chapter .myhighlight {
+    background: transparent;
+}
 .myhighlight {
     background: var(--pb-toolbar-background-color, gray);
 }
@@ -47,6 +50,9 @@ p.sicCor span.note {
 .change {
     min-width: 45em;
     text-align: justify;
+}
+pb-collapse .change:hover {
+    background: transparent;
 }
 .change:hover {
    background: var(--pb-toolbar-background-color);

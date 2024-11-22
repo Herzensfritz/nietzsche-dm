@@ -29,24 +29,26 @@
           </monogr>
         </biblStruct>
         <msDesc>
-          <msIdentifier>
+          <msIdentifier xml:id="descChapter1">
             <repository>Herzogin Anna Amalia Bibliothek, Weimar</repository>
             <idno type="Mette-Signatur">E 40</idno>
             <idno type="HAAB-Signatur">C 4620</idno>
           </msIdentifier>
-          <msContents>
-            <ab type="descHead">
+          <msContents xml:id="descChapter2">
+            <ab type="head">
               1. Inhaltsbeschreibung</ab>
-            <p>XIV S. (Titelseite, Titelrückseite, Vorrede), 1 Bl. (Titelseite Erste Abhandlung, Verso vakat), 182 S. (Erste Abhandlung, Zweite Abhandlung, Dritte Abhandlung), 1 Bl. (Inhaltsverzeichnis, Verso Impressum).</p>
+            <ab>XIV S. (Titelseite, Titelrückseite, Vorrede), 1 Bl. (Titelseite Erste Abhandlung, Verso vakat), 182 S. (Erste Abhandlung, Zweite Abhandlung, Dritte Abhandlung), 1 Bl. (Inhaltsverzeichnis, Verso Impressum).</ab>
           </msContents>
-          <physDesc>
-            <ab type="descHead">
+          <physDesc xml:id="EDdescChapter3">
+            <ab xml:id="EDdescChapter3.1">
+            <ab type="head">
               2. Frühere Beschreibung (H. J. Mette)</ab>
-            <p>„E 40 (D 20) Zur Genealogie der Moral, Eine Streitschrift; C. G. Naumann, Leipzig 1887.“ (<ref target="#Mette1932">Mette, Der handschriftliche Nachlass [1932]</ref>, 6; <ref target="#Mette1933">Mette, Sachlicher Vorbericht, BAW I [1933]</ref>, XXXVII)</p>
-            <ab type="descHead">
+            <ab>„E 40 (D 20) Zur Genealogie der Moral, Eine Streitschrift; C. G. Naumann, Leipzig 1887.“ (<ref target="#Mette1932">Mette, Der handschriftliche Nachlass [1932]</ref>, 6; <ref target="#Mette1933">Mette, Sachlicher Vorbericht, BAW I [1933]</ref>, XXXVII)</ab></ab>
+             <ab xml:id="EDdescChapter3.2">
+            <ab type="head">
               3. Beschreibung</ab>
-            <p>
-                            <width>15,2</width>×<height>22,4</height>, 184 S., grauer Pappumschlag, Umschlagvorderseite: Titel, Umschlagrückseite: Schriftenverzeichnis.</p>
+            <ab>
+                            <width>15,2</width>×<height>22,4</height>, 184 S., grauer Pappumschlag, Umschlagvorderseite: Titel, Umschlagrückseite: Schriftenverzeichnis.</ab></ab>
           </physDesc>
         </msDesc>
       </sourceDesc>

@@ -1,11 +1,8 @@
 
-function myScrollIntoView(target){
-    target.scrollIntoView(true);  
-    /*let scrolledY = window.scrollY;
-
-     if(scrolledY){
-        window.scroll(0, scrolledY - headerHeight);
-    }*/
+function highlightTarget(target){
+    if (pbRegistry.state.template != 'meta.html'){
+        target.classList.add("myhighlight");  
+    }
 }
 document.addEventListener('DOMContentLoaded', function () {
     const root = document.querySelector(':root');
@@ -22,9 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const target = ev.detail.root.querySelector(id);
             console.log(id, target);
             if (target){
-                myScrollIntoView(target);
+                target.scrollIntoView(true);
                 target.classList.add("myhighlight");
-                console.log('added', target)
             }    
         }
         
@@ -36,9 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const target = document.getElementById(id);
             console.log(id, target);
             if (target){
-                myScrollIntoView(target);
+                target.scrollIntoView(true);
                 if (target.classList.contains('noscroll')){
-                    console.log('noscroll:',target);
                     target.classList.add("myhighlight");
                 }
             }    

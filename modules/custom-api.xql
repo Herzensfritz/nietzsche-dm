@@ -380,13 +380,28 @@ declare function api:get-meta-toc($request as map(*)){
     return
     <ul>
         {
-        for $entry in $document//*[@xml:id and starts-with(@xml:id, $descString)]
+        for $entry in $document//*[@xml:id and contains(@xml:id, $descString)]
             where number(replace(substring-after($entry/@xml:id/string(), $descString), '\.','')) lt 10
             let $key := concat('myapp.meta.',replace($entry/@xml:id/string(), '\.', '') )
-            order by $entry/@xml:id/string()
+            order by substring-after($entry/@xml:id/string(), $descString)
             return 
-        <li>
-             <pb-link emit="{$target}" subscribe="{$target}" xml-id="{$entry/@xml:id/string()}"><pb-i18n key="{$key}">...key...</pb-i18n></pb-link>
+        <li>{
+            let $subEntries := $entry//*[@xml:id and starts-with(@xml:id, $entry/@xml:id/string())]
+            return if (count($subEntries) gt 0) then (
+                    <pb-collapse>
+                        <span slot="collapse-trigger"><pb-link emit="{$target}" subscribe="{$target}" xml-id="{$entry/@xml:id/string()}"><pb-i18n key="{$key}">...key...</pb-i18n></pb-link></span>
+                        <span slot="collapse-content">  
+                        {   for $subEntry in $subEntries
+                                let $subKey := concat('myapp.meta.',replace($subEntry/@xml:id/string(), '\.', '') )
+                                order by $subEntry/@xml:id/string()
+                                return 
+                            <pb-link emit="{$target}" subscribe="{$target}" xml-id="{$subEntry/@xml:id/string()}"><pb-i18n key="{$subKey}">...key...</pb-i18n></pb-link>
+                            }
+                        </span>
+                    </pb-collapse>
+                ) else 
+                (<pb-link emit="{$target}" subscribe="{$target}" xml-id="{$entry/@xml:id/string()}"><pb-i18n key="{$key}">...key...</pb-i18n></pb-link>)
+            }
         </li>
         }
     </ul> 
