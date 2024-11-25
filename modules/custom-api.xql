@@ -58,6 +58,7 @@ function api:short-header($node as node(), $model as map(*)) {
                 let $header :=
                     $pm-config:web-transform(nav:get-header($model?config, $work), map {
                         "header": "short",
+                        "meta": $prefix,
                         "doc": $relPath
                     }, $config?odd)
                 return

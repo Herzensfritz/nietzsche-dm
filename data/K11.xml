@@ -1,0 +1,428 @@
+<?teipublisher template="ed.html" odd="nietzsche-ed.odd" view="page" media="print"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+   <teiHeader>
+      <fileDesc>
+        <titleStmt>
+          <title>Zur Genealogie der Moral. Korrekturbogen K 11</title>
+          <author xml:id="N">Friedrich Nietzsche</author>
+          <editor xml:id="editors"><name>Beat Röllin</name>, <name>Christian Steiner</name>, <name>René Stockmar</name></editor>
+          <respStmt>
+            <resp>Projektleiter: </resp><name>Hubert Thüring</name>
+          </respStmt>
+        </titleStmt>
+        <publicationStmt>
+          <publisher>Nietzsche-Edition, Universität Basel</publisher><date>tba</date>
+        </publicationStmt>
+        <seriesStmt>
+          <title>Der späte Nietzsche. Digitale Edition der Druckdokumente</title>
+        </seriesStmt>
+        <sourceDesc>
+          <msDesc>
+          <msIdentifier>
+            <repository>Herzogin Anna Amalia Bibliothek, Weimar</repository>
+            <idno type="Mette-Signatur">K 11</idno>
+            <idno type="HAAB-Signatur">C 4616</idno>
+          </msIdentifier>
+          <msContents>
+            <ab type="descHead">
+              1. Inhaltsbeschreibung</ab>
+            <p>Korrekturbogenexemplare zu Zur Genealogie der Moral. Eine Streitschrift. C. G. Naumann, Leipzig 1887.</p>
+            <ab type="descHead">
+              1.1 Inhaltsverzeichnis</ab>
+            <p>Bogen 1 (S. 1-16, GM I 1-10), mit Korrekturen von Ns Hand [=<ref target="#Cb1a">Cb1a</ref>]</p>
+            <p>Bogen 1 (S. 1-16, GM I 1-10), mit Korrekturen von Köselitz’ und Ns Hand [=<ref target="K11.xml#Cb1b">Cb1b</ref>]</p>
+            <p>Bogen 10 (S. 145-160, GM III 17-22), ohne Korrekturen</p>
+          </msContents>
+          <physDesc>
+            <ab type="descHead">
+              2. Frühere Beschreibung (H. J. Mette)</ab>
+            <p>„K 11 zu E 40 (nur Bogen 1 ist erhalten, und zwar in zwei Fassungen; Korrekturen von Nietzsches und Peter Gasts Hand)“. (<ref target="#Mette1932">Mette, Der handschriftliche Nachlass [1932]</ref>, 18; <ref target="#Mette1933">Mette, Sachlicher Vorbericht, BAW I [1933]</ref>, LI)</p>
+            <ab type="descHead">
+              3. Beschreibung</ab>
+            <p>Bogen 1 in doppelter Ausführung, Cb1a: <width>13,7</width>×<height>21,9</height>, 16 S.; Cb1b: <width>14,3</width>×<height>21,9</height>, 16 S.; Bogen 10, <width>14,4</width>×<height>22,6</height>, 16 S.</p>
+            <p>Cb1a, S. 1, Cb1b, S. 1, Cb10, S. 145, jeweils oben Mitte: „C 4616“, HAAB-Signatur, Bleistift.</p>
+          </physDesc>
+        </msDesc></sourceDesc>
+      </fileDesc>
+     <encodingDesc><projectDesc><p/></projectDesc>
+       <variantEncoding method="location-referenced" location="external"/>
+     </encodingDesc>  
+   </teiHeader>
+   <facsimile>
+      <surface xml:id="K11_Cb_a1">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0008.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_a2">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0009.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_a3">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0010.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_a4">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0011.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_a5">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0012.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_a6">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0013.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_a7">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0014.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_a8">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0015.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_a9">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0016.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_a10">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0017.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_a11">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0018.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_a12">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0019.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_a13">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0020.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_a14">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0021.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_a15">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0022.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_a16">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0023.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_b1">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0024.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_b2">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0025.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_b3">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0026.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_b4">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0027.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_b5">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0028.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_b6">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0029.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_b7">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0030.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_b8">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0031.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_b9">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0032.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_b10">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0033.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_b11">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0034.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_b12">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0035.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_b13">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0036.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_b14">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0037.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_b15">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0038.tif"/>
+      </surface>
+      <surface xml:id="K11_Cb_b16">
+            <graphic url="https://haab-digital.klassik-stiftung.de/viewer/api/v1/records/1649471971/files/images/EPN_547711808_0039.tif"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+        <div1 xml:id="GM01" xml:space="preserve">
+          <!-- Cb1a, 1-16 -->
+          <milestone xml:id="Cb1a" unit="section" spanTo="#secEnd_Cb1a"/>
+          <pb xml:id="Cb_a1" facs="#K11_Cb_a1"/><!-- "C 4616" = additions, addDesc -->
+          <div2 sameAs="#GM0101">
+            <app loc="Cb1a 1,6"><lem>dami<sic>t a</sic>ls</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 1,11"><lem>honte<sic source="typesetting">n</sic>se</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 1,20"><lem>Molekular<sic source="typesetting">u</sic>m</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            
+            <pb xml:id="Cb_a2" facs="#K11_Cb_a2"/>  
+          </div2>
+          <div2 sameAs="#GM0102">
+            
+            <pb xml:id="Cb_a3" facs="#K11_Cb_a3"/>
+            <app loc="Cb1a 3,11"><lem>al<sic source="typesetting">t</sic>e</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 3,12"><lem>Idio<sic source="typesetting"> sinho</sic>asie</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 3,14"><note type="editorial">Markierung, <ref target="#N_red">Rotstift, N</ref></note></app><!-- NB! mit lem-Leerelement für nur ZA ohne Lemma -->
+            
+            <pb xml:id="Cb_a4" facs="#K11_Cb_a4"/>
+            
+            <pb xml:id="Cb_a5" facs="#K11_Cb_a5"/>
+          </div2>
+          <div2 sameAs="#GM0103">
+            <app loc="Cb1a 5,15"><lem>n<sic source="typesetting">ur</sic></lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 5,18"><lem><sic>darstell</sic>en</lem><note type="authorial" hand="#N_black2" place="margin-right"><hi rend="latin">eindrück</hi></note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref></note></app>
+            <app loc="Cb1a 5,26"><note type="authorial" hand="#N_black2" place="margin-right">=</note></app>
+            <app loc="Cb1a 5,26"><note type="authorial" hand="#N_black2" place="margin-right">=</note></app>
+          </div2>
+          
+          <pb xml:id="Cb_a6" facs="#K11_Cb_a6"/>
+          <div2 sameAs="#GM0104">
+            <app loc="Cb1a 6,4"><note type="authorial" hand="#N_black2" place="margin-left"><hi rend="latin">in</hi></note></app><!-- im Kontext latin -->
+            <app loc="Cb1a 6,33"><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            
+            <pb xml:id="Cb_a7" facs="#K11_Cb_a7"/>
+          </div2>
+          <div2 sameAs="#GM0105">
+            <app loc="Cb1a 7,19"><lem>ar<sic source="typesetting">g</sic>a</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 7,23"><lem>Wahrhaftigen“<sic>;</sic></lem><note type="authorial" hand="#N_black2" place="margin-right">:</note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref></note></app>
+            <app loc="Cb1a 7,24"><lem>m<sic source="typesetting">a</sic>garische</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            
+            <pb xml:id="Cb_a8" facs="#K11_Cb_a8"/>
+            <app loc="Cb1a 8,4"><lem><foreign xml:lang="grc">δειλ<sic source="typesetting">ὸσ</sic></foreign></lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 8,5"><lem><foreign xml:lang="grc">ἀγαϑ<sic>ὸ</sic>ς</foreign></lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 8,9"><lem><foreign xml:lang="grc"><sic source="typesetting">π</sic>έλας</foreign></lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 8,11-12"><lem><sic source="typesetting">nov</sic>ari-/sche</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 8,16"><note type="authorial" hand="#N_blue" place="margin-right">:</note><note type="editorial">Markierung mit <ref target="#N_red">Rotstift</ref></note></app>
+            <app loc="Cb1a 8,17-18"><lem>ursprünglich … Reine</lem><note type="editorial">Markierung Umstellung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 8,23"><lem>sorgfältige<sic>n,</sic></lem><note type="authorial" hand="#N_black2" place="margin-left"><hi rend="latin">ren</hi></note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref> und <ref target="#N_blue">Blaustift</ref></note></app>
+            <app loc="Cb1a 8,27"><lem><hi rend="spaced"><sic source="typesetting">nov</sic>arische</hi></lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            
+            <pb xml:id="Cb_a9" facs="#K11_Cb_a9"/>
+            <app loc="Cb1a 9,1"><lem><sic>c</sic>ommune</lem><note type="authorial" hand="#N_blue" place="margin-right"><hi rend="latin">C</hi></note><note type="editorial">Markierung mit <ref target="#N_blue">Blaustift</ref></note></app>
+            <app loc="Cb1a 9,10"><lem>d<sic source="typesetting">e</sic>n-lum</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 9,13"><lem>Ro<sic source="typesetting">ma</sic>n</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 9,13"><lem>sein<sic source="typesetting">e G</sic>üte</lem><note type="authorial" hand="#N_blue" place="margin-right">„“</note><note type="editorial">Markierung mit <ref target="#N_blue">Blaustift</ref></note></app>
+          </div2>
+          <div2 sameAs="#GM0106">
+            <app loc="Cb1a 9,26"><lem>das<sic>s</sic></lem><note type="editorial">Markierung, <ref target="#N_black2">schwarze Tinte (2), N</ref></note></app>
+            
+            <pb xml:id="Cb_a10" facs="#K11_Cb_a10"/>
+            <app loc="Cb1a 10,3-4"><lem><hi rend="spaced">un<sic source="typesetting">n</sic>sym-/bolisch</hi></lem><note type="editorial">Markierung, <ref target="#N_black2">schwarze Tinte (2), N</ref></note></app>
+            <app loc="Cb1a 10,9"><lem>nich<sic source="typesetting">tm</sic>ehr</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            
+            <pb xml:id="Cb_a11" facs="#K11_Cb_a11"/>
+            <app loc="Cb1a 11,4"><lem>Met<sic source="typesetting">h</sic>aphysik</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 11,5"><lem>Art<sic source="typesetting">,</sic></lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 11,6"><lem>Fa<sic source="typesetting">hios</sic></lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 11,7"><lem>u<sic source="typesetting">n d</sic></lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 11,7"><lem>sch<sic source="typesetting">impf</sic>liche</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 11,8-9"><lem>Ra<sic source="typesetting">t</sic>ikal-/kur</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+          </div2>
+          <div2 sameAs="#GM0107">
+            <app loc="Cb1a 11,25"><lem><sic source="typesetting">e</sic>icht</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            
+            <pb xml:id="Cb_a12" facs="#K11_Cb_a12"/>
+            
+            <pb xml:id="Cb_a13" facs="#K11_Cb_a13"/>
+            <app loc="Cb1a 13,7-8"><lem>Se<sic source="typesetting">e</sic>lig-/keit</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 13,12"><lem>sein!<sic source="typesetting">…“</sic></lem><note type="authorial" hand="#N_blue" place="inline">“…</note><note type="editorial">Markierung mit <ref target="#N_blue">Blaustift</ref></note></app>
+            <app loc="Cb1a 13,18"><lem>Böse<sic source="typesetting">,</sic></lem><note type="authorial" hand="#N_blue" place="inline">“</note><note type="editorial">Markierung mit <ref target="#N_blue">Blaustift</ref></note></app>
+          </div2>
+          <div2 sameAs="#GM0108">
+            <app loc="Cb1a 13,27"><lem>Dar<sic source="typesetting">um</sic></lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 13,28"><lem>langen</lem><note type="editorial">Markierung, <ref target="#N_black2">schwarze Tinte (2), N</ref></note></app>
+            
+            <pb xml:id="Cb_a14" facs="#K11_Cb_a14"/>
+            <app loc="Cb1a 14,25"><lem>Auflöse<sic source="typesetting">r I</sic>sraels</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 14,31"><lem><sic source="typesetting">t</sic>odfeindliches</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            
+            <pb xml:id="Cb_a15" facs="#K11_Cb_a15"/>
+            <app loc="Cb1a 15,1"><lem>diese<sic source="typesetting">m</sic></lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+          </div2>
+          <div2 sameAs="#GM0109">
+            <app loc="Cb1a 15,18"><lem><sic source="typesetting">inneren B</sic>elieben</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 15,21"><lem>He<sic source="typesetting">o</sic>ren</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+            <app loc="Cb1a 15,24"><lem>gemengt<sic source="typesetting"> –</sic></lem><note type="authorial" hand="#N_blue" place="inline margin-right">)</note></app>
+            
+            <pb xml:id="Cb_a16" facs="#K11_Cb_a16"/>
+            <app loc="Cb1a 16,7"><lem><sic>E</sic>twas</lem><note type="editorial">Markierung, <ref target="#N_blue">Blaustift, N</ref></note></app>
+          </div2>
+          <div2 sameAs="#GM0110">
+            <app loc="Cb1a 16,25"><lem>durch die</lem><note type="authorial" hand="#N_black2" place="margin-right"><hi rend="latin">der</hi></note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref></note></app>
+            <app loc="Cb1a 16,25-26"><lem>is<sic>t / u</sic>nd</lem><note type="authorial" hand="#N_blue" place="inline">,</note><note type="editorial">Markierung mit <ref target="#N_blue">Blaustift</ref></note></app>
+            <app loc="Cb1a 16,26"><lem>und</lem><note type="authorial" hand="#N_blue" place="margin-right"><hi rend="latin">die</hi></note><note type="editorial">Markierung mit <ref target="#N_blue">Blaustift</ref></note></app>
+            <app loc="Cb1a 16,26"><lem>sic<sic source="typesetting">h d</sic>urch</lem><note type="authorial" hand="#N_black2" place="margin-left"><hi rend="latin">nur</hi></note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref></note></app>
+          </div2>
+          <anchor xml:id="Cb_secEnd_Cb1a"/>
+          
+          <!-- Cb1b, 1-16 -->
+          <milestone xml:id="Cb1b" unit="section" spanTo="#secEnd_Cb1b"/>
+          <pb xml:id="Cb_b1" facs="#K11_Cb_b1"/><!-- "C 4616" = additions, addDesc -->
+          <div2 xml:id="GM0101">
+            <app loc="Cb1b 1,4"><lem><sic source="typesetting">E n</sic>tstehungsgeschichte</lem><note type="editorial">Markierung Zusammenschreibung, <ref target="#Koeselitz_black">schwarze Tinte, Köselitz</ref></note></app><!-- ebf. b10 -->
+            <app loc="Cb1b 1,6"><lem>dami<sic>t a</sic>ls</lem><note type="authorial" hand="#N_black2" place="margin-right">Komma</note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref></note></app>
+            <app loc="Cb1b 1,11"><lem>honte<sic source="typesetting">n</sic>se</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">u (honteuse)</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 1,15"><lem>de<sic source="typesetting">r</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">s (des)</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 1,20"><lem>Molekular<sic source="typesetting">u</sic>m</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">e (Molekularem)</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app>
+            
+            <pb xml:id="Cb_b2" facs="#K11_Cb_b2"/>
+            <app loc="Cb1b 2,1"><note type="non-authorial" hand="#Koeselitz_black" place="margin-left">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 2,4-5"><lem>endlic<sic source="typesetting">h / v</sic>on</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-left">Gedankenstrich – </note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 2,18"><lem>Zaum<sic source="typesetting">e</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-left">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+          </div2>
+          <div2 xml:id="GM0102">
+            
+            <pb xml:id="Cb_b3" facs="#K11_Cb_b3"/>
+            <app loc="Cb1b 3,3"><lem>uneg<sic source="typesetting">o</sic>stische</lem><note type="non-authorial" hand="#Koeselitz_black" place="top-left">unegoistische</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">oi</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app><!-- NB! 2 notes, different places -->
+            <app loc="Cb1b 3,3"><lem><sic>d</sic>erer</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">D</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app>
+            <app loc="Cb1b 3,9-10"><lem>wä-/ren<sic source="typesetting">“.</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">.“ erst Punkt / da<reg type="gemination">nn</reg> Gänsefüßchen</note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 3,11"><lem>al<sic source="typesetting">t</sic>e</lem><note type="non-authorial" hand="#Koeselitz_black" place="above"><hi rend="latin">alle</hi></note><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">l</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app><!-- NB! 2 notes, different places -->
+            <app loc="Cb1b 3,11"><lem>typisch<sic source="typesetting">e</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="above"><hi rend="latin">typischen</hi></note><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">en</hi> </note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app><!-- NB! 2 notes, different places -->
+            <app loc="Cb1b 3,12"><lem>Idio<sic source="typesetting"> sinho</sic>asie</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-left"><hi rend="latin">(Idiosynkrasie)</hi></note><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">ynkr</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 3,14"><lem><sic source="typesetting">a</sic>lles</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">A</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 3,17"><lem>soll<sic source="typesetting"/></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">gesperrt</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app><!-- NB! mit sic als Leerelement -->
+            <app loc="Cb1b 3,22"><lem><sic>d</sic>enen</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">D</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app>
+            
+            <pb xml:id="Cb_b4" facs="#K11_Cb_b4"/>
+            <app loc="Cb1b 4,33"><lem>gleichwer<sic source="typesetting">thige</sic></lem><note type="non-authorial" hand="#Koeselitz_pencil" place="bottom-right">geradesetzen</note><note type="editorial">Markierung mit <ref target="#Koeselitz_pencil">Bleistift</ref></note></app>
+            
+            <pb xml:id="Cb_b5" facs="#K11_Cb_b5"/>
+            <app loc="Cb1b 5,1"><lem>unter uns</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            </div2>
+          <div2 xml:id="GM0103">
+            <app loc="Cb1b 5,9"><lem><hi rend="spaced">vergess<sic source="typesetting">s</sic>en</hi></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 5,15"><lem>n<sic source="typesetting">ur</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">eu</hi> (neu)</note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app>
+            <app loc="Cb1b 5,18"><lem><sic>darstell</sic>en</lem><note type="authorial" hand="#N_black2" place="margin-right"><hi rend="latin">eindrück</hi></note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref></note></app>
+            <app loc="Cb1b 5,22-23"><lem>zweck-/mäs<sic source="typesetting">s</sic>ig</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">verkehrtes <hi rend="latin">s</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 5,24-25"><lem><hi rend="spaced">unvergess<sic source="typesetting">e</sic>-/nen</hi></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app>
+            <app loc="Cb1b 5,25"><lem><hi rend="spaced">unve</hi><sic source="typesetting">rg</sic><hi rend="spaced">essbaren</hi></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">Spatie</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+          </div2>
+          
+          <pb xml:id="Cb_b6" facs="#K11_Cb_b6"/>
+          <div2 xml:id="GM0104">
+            <app loc="Cb1b 6,1"><lem>De<sic source="typesetting">m</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="top-left">Den</note><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">n</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app>
+            <app loc="Cb1b 6,4-5"><lem>„Gute<sic source="typesetting">n“ e</sic>tymo-/logischer</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">in</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 6,5"><lem>und</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 6,14"><lem>übergehen<sic source="typesetting">d</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 6,33"><lem>Buckl<sic source="typesetting">es</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="bottom-center">Buckle’s</note><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">’ Apostroph</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            
+            <pb xml:id="Cb_b7" facs="#K11_Cb_b7"/>
+            <app loc="Cb1b 7,3"><lem>schlammi<sic source="typesetting">g</sic>ter</lem><note type="non-authorial" hand="#Koeselitz_black" place="top-center">schlammichter</note><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">ch</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+          </div2>
+          <div2 xml:id="GM0105">
+            <app loc="Cb1b 7,8"><lem>kann<sic source="typesetting">,</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app>
+            <app loc="Cb1b 7,19"><lem>ar<sic source="typesetting">g</sic>a</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">y</hi> (arya)</note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 7,23"><lem>Wahrhaftigen“<sic>;</sic></lem><note type="authorial" hand="#N_black2" place="margin-right">Kolon</note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref></note></app>
+            <app loc="Cb1b 7,24"><lem><sic source="typesetting">ma</sic>garische</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">Me</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app>
+            
+            <pb xml:id="Cb_b8" facs="#K11_Cb_b8"/>
+            <app loc="Cb1b 8,4"><lem><foreign xml:lang="grc">κακ<sic>ό</sic>ς</foreign></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-left"><foreign xml:lang="grc">`</foreign></note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app><!-- @René: Sonderbar, N vereinheitlicht die Akzente in Cb1a gerade umgekehrt (alles mit Tonos), korrigiert es hier aber nicht – und trotzdem erscheint es in Ed zuletzt so, wie N es wollte (alles mit Tonos)! -->
+            <app loc="Cb1b 8,4"><lem><foreign xml:lang="grc">δειλὸ<sic source="typesetting">σ</sic></foreign></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><foreign xml:lang="grc">ς</foreign></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 8,5"><lem><foreign xml:lang="grc">ἀγαϑὸς</foreign><sic>(</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">Parenthese / umdrehen</note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 8,9"><lem><foreign xml:lang="grc"><sic source="typesetting">π</sic>έλας</foreign></lem><note type="authorial" hand="#N_black2" place="margin-left"><foreign xml:lang="grc">μ</foreign> / (<hi rend="latin">melas</hi>)</note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref> und <ref target="#N_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 8,11-12"><lem><sic source="typesetting">nov</sic>ari-/sche</lem><note type="non-authorial" hand="#Koeselitz_black" place="above">vorari-</note><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">vor</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 8,16"><lem>Fal<sic>l –</sic></lem><note type="authorial" hand="#N_black2" place="margin-left">Komma</note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref></note></app>
+            <app loc="Cb1b 8,17-18"><lem>ursprünglich … Reine</lem><note type="authorial" hand="#N_black2" place="margin-left">umstellen!!</note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref> und <ref target="#N_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 8,23"><lem>sorgfältige<sic>n</sic></lem><note type="authorial" hand="#N_black2" place="margin-left"><hi rend="latin">ren</hi></note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref></note></app>
+            <app loc="Cb1b 8,23"><lem>sorgfältige<sic>n,</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app>
+            <app loc="Cb1b 8,27"><lem><hi rend="spaced"><sic source="typesetting">nov</sic>arische</hi></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-left">(<hi rend="underline">vorarische</hi>)</note><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="underline"><hi rend="latin">vor</hi></hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            
+            <pb xml:id="Cb_b9" facs="#K11_Cb_b9"/>
+            <app loc="Cb1b 9,1"><lem><sic>c</sic>ommune</lem><note type="authorial" hand="#N_black2" place="margin-right"><hi rend="latin">C</hi></note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref></note></app>
+            <app loc="Cb1b 9,3"><lem>Europ<sic source="typesetting">as</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">’ Apostroph</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 9,10"><lem><sic source="typesetting">de</sic>n-lum</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">du</hi> (duen-lum)</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 9,12"><lem>i<sic source="typesetting">n</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">m</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 9,13"><lem>Ro<sic source="typesetting">ma</sic>n</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">Spatie</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 9,13"><lem><sic source="typesetting">G</sic>üt<sic>e</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">„ “ / Gänsefüßchen</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app><!-- NB! im lem 2. sic ohne "typesetting" -->
+          </div2>
+          <div2 xml:id="GM0106">
+            <app loc="Cb1b 9,26"><lem>das<sic>s</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            
+            <pb xml:id="Cb_b10" facs="#K11_Cb_b10"/>
+            <app loc="Cb1b 10,3-4"><lem><hi rend="spaced">un<sic source="typesetting">n</sic>sym-/bolisch</hi></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app>
+            <app loc="Cb1b 10,8"><lem>ha<sic>t –</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">, Ko<reg type="gemination">mm</reg>a</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 10,9"><lem>nich<sic source="typesetting">tm</sic>ehr</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">Spatie</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 10,16"><lem>hinwe<sic source="typesetting">g s</sic>etzen</lem><note type="editorial">Markierung Zusammenschreibung, <ref target="#Koeselitz_black">schwarze Tinte, Köselitz</ref></note></app>
+            <app loc="Cb1b 10,21-22"><lem>unver-/<sic source="typesetting">änder</sic>lich</lem><note type="non-authorial" hand="#Koeselitz_black" place="above">meidlich</note><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">meid</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            
+            <pb xml:id="Cb_b11" facs="#K11_Cb_b11"/>
+            <app loc="Cb1b 11,4"><lem>Met<sic source="typesetting">h</sic>aphysik</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del (Metaph.)</note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 11,5"><lem>Art<sic source="typesetting">,</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app>
+            <app loc="Cb1b 11,6"><lem>Fa<sic source="typesetting">hio</sic>s</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">kir</hi> (Fakirs)</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 11,7"><lem>u<sic source="typesetting">n d</sic></lem><note type="editorial">Markierung Zusammenschreibung, <ref target="#Koeselitz_red">Rotstift, Köselitz</ref></note></app>
+            <app loc="Cb1b 11,7"><lem>sch<sic source="typesetting">impf</sic>liche</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">liess</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 11,8"><lem>begreifliche<sic source="typesetting">,</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app>
+            <app loc="Cb1b 11,8-9"><lem>Ra<sic source="typesetting">t</sic>ikal-/kur</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">d</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 11,9"><lem>Nichts<sic source="typesetting"/></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="underline">gesperrt</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 11,11"><lem>i<sic>ns</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">’ Apostroph</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+          </div2>
+          <div2 xml:id="GM0107">
+            <app loc="Cb1b 11,25"><lem><sic source="typesetting">e</sic>icht</lem><note type="non-authorial" hand="#Koeselitz_black" place="above">leicht</note><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">le</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            
+            <pb xml:id="Cb_b12" facs="#K11_Cb_b12"/>
+            <app loc="Cb1b 12,4"><lem><sic>a</sic>lles</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">A</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 12,10"><lem><sic source="typesetting">O</sic>hnmächtig-/sten</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-left">(kleines o)</note><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">o</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app><!-- im Kontext latin -->
+            <app loc="Cb1b 12,12"><lem>i<sic>ns</sic> … i<sic>ns</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">’ ’ Apostrophe</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 12,18"><lem>z u<sic source="typesetting"/></lem><note type="editorial">Markierung Zusammenschreibung, <ref target="#Koeselitz_blue">Blaustift, Köselitz</ref></note></app>
+            <app loc="Cb1b 12,21"><lem>Vornehmen“<sic source="typesetting">, d</sic>ie</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">„ Gänsefüßchen</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 12,25"><lem>das<sic source="typesetting">s</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            
+            <pb xml:id="Cb_b13" facs="#K11_Cb_b13"/>
+            <app loc="Cb1b 13,1"><lem>ge<sic source="typesetting">mach</sic>t</lem><note type="non-authorial" hand="#Koeselitz_black" place="above">gewagt</note><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">wag</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 13,7-8"><lem>Se<sic source="typesetting">e</sic>lig-/keit</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 13,12"><lem>sein<sic source="typesetting">!…“</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">!“…</note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app>
+            <app loc="Cb1b 13,18"><lem>Böse<sic source="typesetting">,</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note><note type="authorial" hand="#N_black2" place="margin-right">aber Gänse-/füßchen!</note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref></note></app>
+          </div2>
+          <div2 xml:id="GM0108">
+            <app loc="Cb1b 13,27"><lem>Dar<sic source="typesetting">um</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">an</hi> (Daran)</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 13,28"><lem>langen</lem><note type="authorial" hand="#N_black2" place="margin-right">gesperrt!</note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref></note></app>
+            <app loc="Cb1b 13,30"><lem>Baum<sic source="typesetting">e</sic>s</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            
+            <pb xml:id="Cb_b14" facs="#K11_Cb_b14"/>
+            <app loc="Cb1b 14,17"><lem>leibhaft<sic source="typesetting">ig</sic>e</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 14,25"><lem>Auflöse<sic source="typesetting">r</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">rs</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 14,25"><lem>Israe<sic source="typesetting">ls</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">’</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 14,31"><lem><sic source="typesetting">t</sic>odfeindliches</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">T</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 14,32"><lem>a<sic source="typesetting">ns</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">’</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 14,33"><lem>Israe<sic>ls</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">’ Apostrophe</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            
+            <pb xml:id="Cb_b15" facs="#K11_Cb_b15"/>
+            <app loc="Cb1b 15,12"><lem>all<sic source="typesetting">e v</sic><hi rend="spaced">ornehmeren</hi></lem><note type="non-authorial" hand="#Koeselitz_black" place="top">bisher über alle anderen Ideale, über alle <hi rend="underline">vornehmeren</hi> Ideale / <hi rend="latin">etc</hi></note><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">anderen / Ideale, über / alle</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+          </div2>
+          <div2 xml:id="GM0109">
+            <app loc="Cb1b 15,18"><lem>inneren<sic source="typesetting"/></lem><note type="non-authorial" hand="#Koeselitz_black" place="above"><hi rend="latin">nennen</hi></note><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">nennen</note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 15,18"><lem><sic source="typesetting">B</sic>elieben</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">b</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app>
+            <app loc="Cb1b 15,21"><lem>He<sic source="typesetting">o</sic>ren</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">r</hi> (Herren)</note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 15,24"><lem>gemeng<sic source="typesetting">t –</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="inline">)</note><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">) Parenthese</note></app>
+            <app loc="Cb1b 15,25"><lem>aber ist<sic source="typesetting"/></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">ist aber</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+            <app loc="Cb1b 15,27-28"><lem>ver-/jüdelt<sic source="typesetting">,</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 15,28"><lem>verchristlicht<sic source="typesetting">,</sic></lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right">del</note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            
+            <pb xml:id="Cb_b16" facs="#K11_Cb_b16"/>
+            <app loc="Cb1b 16,7"><lem><sic>E</sic>twas</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">e</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_blue">Blaustift</ref></note></app>
+          </div2>
+          <div2 xml:id="GM0110">
+            <app loc="Cb1b 16,25"><lem>Rea<sic>c</sic>tion</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">k</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_red">Rotstift</ref></note></app>
+            <app loc="Cb1b 16,25"><lem>durch die</lem><note type="authorial" hand="#N_black2" place="margin-left"><hi rend="latin">der</hi></note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref></note></app>
+            <app loc="Cb1b 16,25-26"><lem>is<sic>t / u</sic>nd</lem><note type="authorial" hand="#N_black2" place="margin-right">Komma</note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref></note></app>
+            <app loc="Cb1b 16,26"><lem>und sich</lem><note type="authorial" hand="#N_black2" place="margin-left"><hi rend="latin">die sich nur</hi></note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref></note></app>
+            <app loc="Cb1b 16,25-26"><lem>Reaction … durch</lem><note type="authorial" hand="#N_black2" place="bottom-right">Reaktion, die der That, versagt ist, die sich nur durch usw</note></app><!-- Reihenfolge 25-26 so? -->
+            <app loc="Cb1b 16,33"><lem><sic source="typesetting">a</sic>ussen</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">A</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
+          </div2>
+          <anchor xml:id="Cb_secEnd_Cb1b"/>
+        </div1>
+        <div1 xml:id="GM03" xml:space="preserve">
+          <milestone xml:id="Cb10" unit="section"/><!-- was und wie hier noch aufnehmen?! pb? div2? -->
+          <note type="editorial">Exemplar ohne Korrekturen</note>
+          <div2 xml:id="GM0317">
+            <pb xml:id="Cb_146" facs="#K11_Cb_146"/><!-- Bezug auf Cb10 146,6-16 von b40r und Appendix aus -->
+          </div2>
+          <div2 xml:id="GM0322">
+            <pb xml:id="Cb_159" facs="#K11_Cb_159"/>
+          <app loc="Cb10 159,31"><lem><sic source="typesetting">vrdirebt</sic></lem><note type="editorial">Setzerfehler, vgl. <ref target="D20#apdx1887-10-20">N an C. G. Naumann, 20.10.1887</ref> (KGB III 5/KSB 8 Nr. 935)</note></app>
+          </div2>
+        </div1>
+      </body>
+   </text>
+</TEI>

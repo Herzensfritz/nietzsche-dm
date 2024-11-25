@@ -89,9 +89,9 @@
        <model predicate="$parameters?mode='meta' and @xml:id" behaviour="pass-through">
                     <param name="key" value="concat('myapp.meta.',  replace(@xml:id, '\.',''))"/>
                     <param name="id" value="@xml:id"/>
-                    <param name="content" value="item"/>
+                    <param name="content" value="for $item in item order by $item/abbr/lower-case(text()) return $item"/>
                     <pb:template xmlns="" xml:space="preserve"><pb-collapse opened="opened">
-                    <span slot="collapse-trigger"> <h3 id="[[id]]"><pb-i18n key="[[key]]">...handNotes...</pb-i18n></h3></span>
+                    <span slot="collapse-trigger"> <h3 id="[[id]]"><pb-i18n key="[[key]]">...siglen...</pb-i18n></h3></span>
                     <span slot="collapse-content">[[content]]</span>
                     </pb-collapse>
                    </pb:template>
@@ -527,25 +527,9 @@
 </pb-popover></pb:template>
         </model>
                 </elementSpec>
-                <!--<elementSpec ident="text()" mode="add">
-                    <model predicate="following::anchor[1]/@xml:id = substring-after(preceding::index[1]/@spanTo, '#')" behaviour="omit"/>
-                    <model behaviour="text"/>
-                </elementSpec> -->
     <elementSpec ident="teiHeader" mode="change">
-        <model predicate="$parameters?mode='meta' and $parameters?header='toc'" behaviour="pass-through">
-            <param name="content" value="."/>
-            <pb:template xmlns="" xml:space="preserve">
-        <h3>
-            <pb-i18n key="document.contents">Contents</pb-i18n>
-        </h3>
-        <div>[[content]]</div></pb:template>
-        </model>
         <modelSequence predicate="$parameters?mode='meta'">
-            <!--<model behaviour="heading">
-                <param name="level" value="2"/>
-                <param name="content" value="'Metadaten'"/>
-                <param name="id" value="'testAnchor'"/>
-            </model> -->
+
             <model behaviour="block" cssClass="meta-chapter">
                 <param name="content" value="fileDesc/sourceDesc/msDesc/msIdentifier"/>
             </model>
@@ -683,7 +667,7 @@
                 <param name="id" value="@xml:id"/>
                  <param name="content" value="ab[empty(@type) or not(@type='head')]"/>
                 <pb:template xmlns="" xml:space="preserve">
-                <pb-collapse>
+                <pb-collapse opened="opened">
                     <span slot="collapse-trigger"><h4 id="[[id]]"><pb-i18n key="[[key]]">...subsection...</pb-i18n></h4></span>
                     <span slot="collapse-content">[[content]]</span>
                 </pb-collapse>
@@ -942,7 +926,7 @@
                 <param name="id" value="@xml:id"/>
                  <param name="content" value="note|ab[empty(@type) or not(@type='head')]"/>
                 <pb:template xmlns="" xml:space="preserve">
-                <pb-collapse>
+                <pb-collapse opened="opened">
                     <span slot="collapse-trigger"><h4 id="[[id]]"><pb-i18n key="[[key]]">...subsection...</pb-i18n></h4>
                     </span>
                     <span slot="collapse-content">[[content]]</span>
@@ -987,7 +971,7 @@
                     <param name="content" value="bibl"/>
                     <pb:template xmlns="" xml:space="preserve"><pb-collapse opened="opened">
                     <span slot="collapse-trigger"> <h3 id="[[id]]"><pb-i18n key="[[key]]">...listBibl...</pb-i18n></h3></span>
-                    <span slot="collapse-content">[[content]]</span>
+                    <span id="bibliography" slot="collapse-content">[[content]]</span>
                     </pb-collapse>
                    </pb:template>
                  </model>
@@ -1014,17 +998,27 @@
         </model>
                 </elementSpec>
     <elementSpec ident="ref" mode="change">
-                    <model predicate="@target and parent::desc" behaviour="inline">
+        <model predicate="@target and parent::desc" behaviour="inline">
             <param name="content" value="."/>
             <param name="uri" value="concat($parameters?doc,'?template=meta.html', @target)"/>
         </model>
-                    <model predicate="@target and parent::ab" behaviour="pass-through">
+        <model predicate="@target and ancestor::ab and ancestor::teiHeader and starts-with(@target, '#')" behaviour="pass-through">
+            <param name="id" value="let $target := tokenize(@target)[1] return substring-after($target, '#') "/>
+            <param name="content" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><pb-link emit="transcription" subscribe="transcription" xml-id="[[id]]">[[content]]</pb-link></pb:template>
+        </model>
+        <model predicate="@target and (parent::ab or parent::item) and contains(@target, '#')" behaviour="pass-through">
             <param name="id" value="let $target := tokenize(@target)[1] return substring-after($target, '#') "/>
             <param name="doc" value="let $target := tokenize(@target)[1] return substring-before($target, '#') "/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><a data-id="[[id]]" data-doc="[[doc]]">[[content]]</a></pb:template>
         </model>
-                    <model behaviour="inline"/>
+        <model predicate="@target and (parent::ab or parent::item)" behaviour="pass-through">
+            <param name="doc" value="@target"/>
+            <param name="content" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><a href="[[doc]]">[[content]]</a></pb:template>
+        </model>
+        <model behaviour="inline"/>
                 </elementSpec>
         <elementSpec ident="respStmt" mode="change">
         <model predicate="$parameters?mode='meta'" behaviour="pass-through">
@@ -1079,7 +1073,23 @@
                 <param name="content" value="(editor|respStmt)"/>
             </model>
         </modelSequence>
-        <modelSequence output="web" predicate="$parameters?header='short'">
+        <modelSequence output="web" predicate="$parameters?header='short' and $parameters?meta">
+            <model behaviour="link">
+                <param name="content" value="title[1]"/>
+                <param name="uri" value="$parameters?doc"/>
+            </model>
+            <model behaviour="block">
+                <param name="content" value="subsequence(title, 2)"/>
+            </model>
+            <model behaviour="block">
+                <param name="content" value="author"/>
+            </model>
+            <model behaviour="link">
+                <param name="content" value="'Metadaten'"/>
+                <param name="uri" value="concat('meta-',$parameters?meta,'/index.html')"/>
+            </model>
+        </modelSequence>
+         <modelSequence output="web" predicate="$parameters?header='short'">
             <model behaviour="link">
                 <param name="content" value="title[1]"/>
                 <param name="uri" value="$parameters?doc"/>

@@ -22,7 +22,7 @@ pb-link[emit='nowhere'] a {
 .meta-chapter .myhighlight {
     background: transparent;
 }
-.myhighlight {
+.myhighlight, .meta-chapter li.myhighlight {
     background: var(--pb-toolbar-background-color, gray);
 }
 ul.letters, ul.pages, ul.handNotes {

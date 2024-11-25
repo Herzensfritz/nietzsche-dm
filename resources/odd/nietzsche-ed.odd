@@ -388,6 +388,38 @@
             </outputRendition>
         </model>
     </elementSpec>
+        <elementSpec ident="titleStmt" mode="change">
+        <modelSequence output="web" predicate="$parameters?header='short' and $parameters?meta">
+            <model behaviour="link">
+                <param name="content" value="title[1]"/>
+                <param name="uri" value="$parameters?doc"/>
+            </model>
+            <model behaviour="block">
+                <param name="content" value="subsequence(title, 2)"/>
+            </model>
+            <model behaviour="block">
+                <param name="content" value="author"/>
+            </model>
+            <model behaviour="link">
+                <param name="content" value="'Metadaten'"/>
+                <param name="uri" value="concat('meta-',$parameters?meta,'/index.html')"/>
+            </model>
+        </modelSequence>
+         <modelSequence output="web" predicate="$parameters?header='short'">
+            <model behaviour="link">
+                <param name="content" value="title[1]"/>
+                <param name="uri" value="$parameters?doc"/>
+            </model>
+            <model behaviour="block">
+                <param name="content" value="subsequence(title, 2)"/>
+            </model>
+            <model behaviour="block">
+                <param name="content" value="author"/>
+            </model>
+
+        </modelSequence>
+                    <model output="web" behaviour="block"/>
+                </elementSpec>
             </schemaSpec>
         </body>
     </text>

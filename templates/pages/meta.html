@@ -18,6 +18,13 @@
     <script src="resources/scripts/myscroll.js"/>
         <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
         <style>
+    
+         :root {
+            --scroll-top: 128px;
+        }
+        :target {
+            scroll-margin-top: var(--scroll-top, 128px);
+        }
         @font-face {
                 font-family: "MyFont";
                 src: url("https://fonts.cdnfonts.com/s/15884/SourceSerifPro-Light.woff");
@@ -36,12 +43,9 @@
                 }
             }
             body {
-                --pb-view-scroll-margin-top: 0;
+                --pb-view-scroll-margin-top: var(--scroll-top, 128px);
             }
-            :target {
-                background-color: yellow;
-                color: red;
-            }
+            
            
 
          /*   .content-body {
@@ -55,6 +59,7 @@
             display: flex;
             align-self: center;
             max-width: 60em;
+            scroll-margin-top: var(--scroll-top, 128px);
         } 
         .content-body {
             position: relative;
