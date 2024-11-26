@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log('end update', ev.originalTarget.url);
                 apis.splice(index, 1);
                 if (apis.length == 0 && target){
-                     myScrollIntoView(target);
+                    target.scrollIntoView(true);
                     target.classList.add('myhighlight');
                     console.log('scroll to ', target)
                 }

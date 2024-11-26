@@ -85,6 +85,17 @@
         <body>
             <schemaSpec start="TEI teiCorpus" ident="nietzsche-ed" source="teipublisher.odd">
     <elementSpec ident="app" mode="change">
+        <model predicate="$parameters?mode='cb' and lem" behaviour="pass-through">
+            <param name="loc" value="substring-after(@loc, ',')"/>   
+               <param name="lem" value="lem"/> 
+               <param name="note" value="note"/> 
+                <pb:template xmlns="" xml:space="preserve"><ol class="cbApp"><li class="cbLem" data-loc="[[loc]]"><span>[[lem]]</span>]<span style="margin-left: 0.5em;">[[note]]</span></li></ol></pb:template>
+            </model>
+             <model predicate="$parameters?mode='cb'" behaviour="pass-through">
+            <param name="loc" value="substring-after(@loc, ',')"/>   
+               <param name="note" value="note"/> 
+                <pb:template xmlns="" xml:space="preserve"><ol class="cbApp"><li class="cbLem" data-loc="[[loc]]"><span>[[note]]</span></li></ol></pb:template>
+            </model>
         <model predicate="@corresp and note and $parameters?mode='timeline'" behaviour="pass-through">
             <param name="id" value="substring-after(@corresp, '#')"/>
             <param name="content" value="note"/>
@@ -115,7 +126,7 @@
                 </template>
             </pb-popover></pb:template>
         </model>
-                    <model predicate="rdg and lem" behaviour="pass-through">
+        <model predicate="rdg and lem" behaviour="pass-through">
             <param name="content" value="."/>
             <param name="index" value="count(preceding::app)+1"/>
             <pb:template xmlns="" xml:space="preserve"><pb-popover theme="material" class="KGWKSAchoice toggle"><span slot="default" class="popoverTarget"><sup>[[index]]</sup></span>
@@ -126,6 +137,10 @@
         </model>
                 </elementSpec>
         <elementSpec ident="lem" mode="add">
+        <model predicate="$parameters?mode='cb'" behaviour="pass-through">
+         <param name="lem" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><span>[[lem]]</span>]</pb:template>
+        </model>
                     <model behaviour="pass-through">
             <param name="lem" value="."/>
             <pb:template xmlns="" xml:space="preserve"><p><span>[[lem]]</span>]</p></pb:template>
@@ -163,18 +178,18 @@
         </model>
                 </elementSpec>
     <elementSpec ident="pb" mode="change">
-                    <model predicate="$parameters?odd = 'nietzsche-ed.odd' and ancestor::*[@ed and @corresp]" behaviour="inline">
+        <model predicate="$parameters?odd = 'nietzsche-ed.odd' and ancestor::*[@ed and @corresp]" behaviour="inline">
             <param name="page" value="@n"/>
             <param name="doc" value="ancestor::*/@ed"/>
             <param name="id" value="substring-after(ancestor::*/@corresp, '#')"/>
             <pb:template xmlns="" xml:space="preserve"><a data-doc="[[doc]]" data-id="[[id]]" style="display: block; margin-left: 4pt; color: blue; float: right;"> [[[page]]]</a></pb:template>
         </model>
-                    <model predicate="ancestor::*[@ed and @source]" behaviour="inline">
+        <model predicate="ancestor::*[@ed and @source]" behaviour="inline">
             <param name="page" value="@n"/>
             <param name="url" value="concat(ancestor::*/@ed, '?root=', ancestor::*/@source)"/>
             <pb:template xmlns="" xml:space="preserve"><a href="[[url]]" style="display: block; margin-left: 4pt; color: blue; float: right;"> [[[page]]]</a></pb:template>
         </model>
-                    <model predicate="$parameters?odd = 'nietzsche-ed.odd' and @ed and @xml:id" behaviour="inline">
+        <model predicate="$parameters?odd = 'nietzsche-ed.odd' and @ed and @xml:id" behaviour="inline">
             <param name="page" value="@n"/>
             <param name="doc" value="@ed"/>
             <param name="id" value="@xml:id"/>
@@ -185,8 +200,13 @@
             <param name="url" value="concat(@ed, '?root=', @source)"/>
             <pb:template xmlns="" xml:space="preserve"><a href="[[url]]" style="display: block; margin-left: 4pt; color: blue; float: right;"> [[[page]]]</a></pb:template>
         </model>
-                    <model predicate="@facs" behaviour="inline">
+        <model predicate="@facs and @n" behaviour="inline">
             <param name="page" value="@n"/>
+            <param name="url" value="id(substring-after(@facs,'#'), root($parameters?root))/graphic/@url"/>
+            <pb:template xmlns="" xml:space="preserve"><pb-facs-link emit="transcription" facs="[[url]]"> [[page]]</pb-facs-link></pb:template>
+        </model>
+        <model predicate="@facs" behaviour="inline">
+            <param name="page" value="substring-after(@xml:id, '_')"/>
             <param name="url" value="id(substring-after(@facs,'#'), root($parameters?root))/graphic/@url"/>
             <pb:template xmlns="" xml:space="preserve"><pb-facs-link emit="transcription" facs="[[url]]"> [[page]]</pb-facs-link></pb:template>
         </model>
@@ -240,6 +260,7 @@
         </model>
                 </elementSpec>
     <elementSpec ident="anchor" mode="change">
+        <model predicate="$parameters?mode='cb'" behaviour="omit"/>
         <model predicate="$parameters?mode='timeline' and following::app[@corresp]" behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <param name="count" value="count(preceding::anchor)+1"/>
@@ -263,9 +284,13 @@
         </model>
                 </elementSpec>
                 <elementSpec ident="note" mode="change">
-                    <model behaviour="inline" cssClass="note">
-            <desc>type="annotation"</desc>
-        </model>
+                    <model predicate="@type='authorial'" behaviour="inline" cssClass="Nnote"/>
+                    <model predicate="@type='non-authorial' and @hand" behaviour="pass-through">
+                        <param name="cssClass" value="substring-after(@hand, '#')"/>
+                        <param name="content" value="."/>
+                        <pb:template xmlns="" xml:space="preserve"><span class="[[cssClass]] fnote">[[content]])</span></pb:template>
+                    </model>
+                    <model behaviour="inline" cssClass="note"/>
                 </elementSpec>
     <elementSpec ident="div2" mode="change">
                     <model predicate="$parameters?mode='querverweis'" behaviour="pass-through" cssClass="timelineEntry">

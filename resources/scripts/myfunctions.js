@@ -1,11 +1,21 @@
 
-var CURRENT_TARGET = 'pageInfo';
+
+var PAGE_DICT = {
+    'Erstdruck': 'facsimile',
+    'Korrekturbogen': 'view1',
+    'Surface': 'pageInfo'
+}
 
 document.addEventListener('DOMContentLoaded', function () {
+    let current_target = 'pageInfo';
+    const meta = document.querySelector('meta[name="description"]')
+    if (meta && meta.content && PAGE_DICT.hasOwnProperty(meta.content)){
+        current_target = PAGE_DICT[meta.content];
+    }
     
     let params = new URLSearchParams(document.location.search);
     if (params.has('show')){
-        CURRENT_TARGET = params.get('show');
+        current_target = params.get('show');
     }
     pbEvents.subscribe("pb-update", "pageInfo", (ev) => {
         const host = (window.location.port != '') ? window.location.hostname + ':' + window.location.port : window.location.hostname;
@@ -22,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }).then((data) => {
                 if(data){
                     link.setAttribute('href', data['doc'] + '?root=' + data['node']);
-                    console.log(link)
                 }
                 
                 }).catch((error) => {
@@ -34,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('[data-target]').forEach((link) => {
         const target = document.querySelector(link.dataset.target);
         if (target){
-            if (target.id != CURRENT_TARGET){
+            if (target.id != current_target){
                 target.classList.add('noDisplay');
             }
             link.addEventListener('click', (ev) => {
@@ -51,6 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.querySelectorAll('[data-target]').forEach((link) => {
             const target = document.querySelector(link.dataset.target);
             if (link === eventTarget) {
+                console.log(target);
                 target.classList.toggle('noDisplay');
                 if (ev.detail.target.dataset.altIcon){
                     let alt = ev.detail.target.icon;

@@ -376,6 +376,37 @@ declare function pages:clean-footnotes($nodes as node()*) {
                 $node
 };
 
+declare function pages:cb-pb-toc($node, $model as map(*), $target as xs:string?,
+    $icons as xs:boolean?) {
+    <ul>{
+            for $milestone in $node//tei:milestone[@unit='section' and @spanTo]
+                let $endAnchor :=  $milestone/following::tei:anchor[@xml:id = substring-after($milestone/@spanTo, '#')]
+                let $pbs := ($milestone/following::tei:pb intersect $endAnchor/preceding::tei:pb)
+                let $firstPb := $milestone/following::tei:pb[1]
+                let $xmlId := $firstPb/@xml:id
+                let $nodeId := util:node-id($firstPb)
+                let $text := if ($node//tei:msContents//tei:ref[contains(@target, $milestone/@xml:id)]) 
+                                then ($node//tei:msContents//tei:ref[contains(@target, $milestone/@xml:id)]/parent::tei:p/substring-before(text()[1], '['))
+                                else ($milestone/following::tei:note[1]/text())
+                return <li>
+                      <pb-collapse>
+                <span slot="collapse-trigger">
+                   <pb-link node-id="{$nodeId}" emit="{$target}" subscribe="{$target}">{$text}</pb-link>
+                </span>
+                <span slot="collapse-content">
+                    <ul>
+           { for $pb in $pbs 
+                let $nodeId := util:node-id($pb)
+                let $xmlId := $pb/@xml:id
+                let $pbId := substring-after($xmlId, 'Cb_')
+                return <li><pb-link  node-id="{$nodeId}" emit="{$target}" subscribe="{$target}">{$pbId}</pb-link></li>
+                }
+                </ul></span></pb-collapse>
+                </li>
+        }
+    </ul>
+};
+
 declare function pages:toc-ms-contents($node, $model as map(*), $target as xs:string?,
     $icons as xs:boolean?) {
     <ul>

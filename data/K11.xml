@@ -1,16 +1,20 @@
-<?teipublisher template="ed.html" odd="nietzsche-ed.odd" view="page" media="print"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
+<?teipublisher template="cb.html" odd="nietzsche-ed.odd" view="page" media="print"?><TEI xmlns="http://www.tei-c.org/ns/1.0" version="4.1.0">
    <teiHeader>
       <fileDesc>
         <titleStmt>
           <title>Zur Genealogie der Moral. Korrekturbogen K 11</title>
           <author xml:id="N">Friedrich Nietzsche</author>
-          <editor xml:id="editors"><name>Beat Röllin</name>, <name>Christian Steiner</name>, <name>René Stockmar</name></editor>
+          <editor xml:id="editors">
+                    <name>Beat Röllin</name>, <name>Christian Steiner</name>, <name>René Stockmar</name>
+                </editor>
           <respStmt>
-            <resp>Projektleiter: </resp><name>Hubert Thüring</name>
+            <resp>Projektleiter: </resp>
+                    <name>Hubert Thüring</name>
           </respStmt>
         </titleStmt>
         <publicationStmt>
-          <publisher>Nietzsche-Edition, Universität Basel</publisher><date>tba</date>
+          <publisher>Nietzsche-Edition, Universität Basel</publisher>
+                <date>tba</date>
         </publicationStmt>
         <seriesStmt>
           <title>Der späte Nietzsche. Digitale Edition der Druckdokumente</title>
@@ -41,9 +45,13 @@
             <p>Bogen 1 in doppelter Ausführung, Cb1a: <width>13,7</width>×<height>21,9</height>, 16 S.; Cb1b: <width>14,3</width>×<height>21,9</height>, 16 S.; Bogen 10, <width>14,4</width>×<height>22,6</height>, 16 S.</p>
             <p>Cb1a, S. 1, Cb1b, S. 1, Cb10, S. 145, jeweils oben Mitte: „C 4616“, HAAB-Signatur, Bleistift.</p>
           </physDesc>
-        </msDesc></sourceDesc>
+        </msDesc>
+            </sourceDesc>
       </fileDesc>
-     <encodingDesc><projectDesc><p/></projectDesc>
+     <encodingDesc>
+            <projectDesc>
+                <p/>
+            </projectDesc>
        <variantEncoding method="location-referenced" location="external"/>
      </encodingDesc>  
    </teiHeader>
@@ -254,7 +262,7 @@
             <app loc="Cb1a 16,26"><lem>und</lem><note type="authorial" hand="#N_blue" place="margin-right"><hi rend="latin">die</hi></note><note type="editorial">Markierung mit <ref target="#N_blue">Blaustift</ref></note></app>
             <app loc="Cb1a 16,26"><lem>sic<sic source="typesetting">h d</sic>urch</lem><note type="authorial" hand="#N_black2" place="margin-left"><hi rend="latin">nur</hi></note><note type="editorial">Markierung mit <ref target="#N_black2">Tinte</ref></note></app>
           </div2>
-          <anchor xml:id="Cb_secEnd_Cb1a"/>
+          <anchor xml:id="secEnd_Cb1a"/>
           
           <!-- Cb1b, 1-16 -->
           <milestone xml:id="Cb1b" unit="section" spanTo="#secEnd_Cb1b"/>
@@ -410,16 +418,16 @@
             <app loc="Cb1b 16,25-26"><lem>Reaction … durch</lem><note type="authorial" hand="#N_black2" place="bottom-right">Reaktion, die der That, versagt ist, die sich nur durch usw</note></app><!-- Reihenfolge 25-26 so? -->
             <app loc="Cb1b 16,33"><lem><sic source="typesetting">a</sic>ussen</lem><note type="non-authorial" hand="#Koeselitz_black" place="margin-right"><hi rend="latin">A</hi></note><note type="editorial">Markierung mit <ref target="#Koeselitz_black">Tinte</ref></note></app>
           </div2>
-          <anchor xml:id="Cb_secEnd_Cb1b"/>
+          <anchor xml:id="secEnd_Cb1b"/>
         </div1>
         <div1 xml:id="GM03" xml:space="preserve">
           <milestone xml:id="Cb10" unit="section"/><!-- was und wie hier noch aufnehmen?! pb? div2? -->
           <note type="editorial">Exemplar ohne Korrekturen</note>
           <div2 xml:id="GM0317">
-            <pb xml:id="Cb_146" facs="#K11_Cb_146"/><!-- Bezug auf Cb10 146,6-16 von b40r und Appendix aus -->
+            <pb xml:id="Cb_146"/><!-- Bezug auf Cb10 146,6-16 von b40r und Appendix aus -->
           </div2>
           <div2 xml:id="GM0322">
-            <pb xml:id="Cb_159" facs="#K11_Cb_159"/>
+            <pb xml:id="Cb_159"/>
           <app loc="Cb10 159,31"><lem><sic source="typesetting">vrdirebt</sic></lem><note type="editorial">Setzerfehler, vgl. <ref target="D20#apdx1887-10-20">N an C. G. Naumann, 20.10.1887</ref> (KGB III 5/KSB 8 Nr. 935)</note></app>
           </div2>
         </div1>

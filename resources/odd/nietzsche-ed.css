@@ -1,3 +1,10 @@
+
+.Koeselitz_black, .typesetter_black, .typesetter_black1, .typesetter_black2 {
+    color: var(--typesetter_black, green);
+    font-style: italic;
+}
+ .Koeselitz_pencil, .typesetter_pencil { color: var(--npencil, gray); font-style: italic; font-weight: bold;}
+   .Koeselitz_blue, .typesetter_blue { color: var(--nblue, blue); font-style: italic; font-weight: bold;}
 .italic {
     font-style: italic;
     margin-right: 1em;
@@ -5,6 +12,16 @@
 }
 a {
     color: inherit;
+}
+.Nnote, .fnote {
+    padding-right: 0.5em;
+}
+.cbLem:before {
+   content: attr(data-loc) ": "; 
+}
+.cbApp {
+    list-style: none;
+    padding-top: 1em;
 }
 .line, .xLine {
     position:absolute; 

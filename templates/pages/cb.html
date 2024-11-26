@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes"/>
+    <link rel="shortcut icon" type="image/x-icon" href="resources/images/favicon.ico"/>
+    <link rel="shortcut icon" type="image/png" href="resources/images/favicon-16.png" sizes="16x16"/>
+    <link rel="shortcut icon" type="image/png" href="resources/images/favicon-24.png" sizes="24x24"/>
+    <link rel="shortcut icon" type="image/png" href="resources/images/favicon-32.png" sizes="32x32"/>
+    <link rel="shortcut icon" type="image/png" href="resources/images/favicon-64.png" sizes="64x64"/>
+
+    <title data-template="config:app-title"/>
+    <meta name="description" content="Korrekturbogen"/>
+    <link rel="stylesheet" href="resources/css/theme.css"/>
+    <link rel="stylesheet" href="resources/css/mystyle.css"/>
+    <script src="resources/scripts/myfunctions.js"/>
+    <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
+    <style>
+        
+       
+        pb-page[unresolved] {
+            display: none;
+        }
+        body {
+            --pb-view-height: calc(100vh - 200px);
+            --pb-grid-column-gap: 2em;
+            --pb-facsimile-height: calc(var(--pb-view-height) - 22px);
+         --highlight: yellow;
+         --pb-content-font-family: MyFont;
+         --pb-content-font-size: 16px;
+        --blue: blue;
+         --nbrown: #9b6b56;
+         --nred: #ff0000;
+         --nblue: #0000ff;
+         --red: #dc3545;
+          --nblack2: #46494c;
+          --nblack: #000000;
+          --npencil: #9c9c9c;
+        --typesetter_black: #808080;
+        --fhblack: #808080;
+        --blue: var(--nblue, blue);
+        }
+
+       #view1:not(.noDisplay) {
+            flex: 1 1;
+            display: flex;
+            justify-content: center;
+            min-width: 30%;
+        } 
+         #facsimile {
+            flex: 1 1;
+            height: var(--pb-facsimile-height);
+            min-width: 70%;
+        }
+        
+        
+        #view1 pb-view {
+            height: var(--pb-view-height);
+            overflow: auto;
+        }
+
+        .content-body {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding: 0 20px;
+        }
+        
+         pb-page[unresolved] pb-facsimile {
+            display: none;
+        }
+
+        .content-body pb-facsimile {
+            flex: 1 1;
+           
+        }
+        
+         .content-body #pageInfo {
+            flex: 1 1;
+           
+        }
+    
+
+    </style>
+</head>
+
+<body>
+    <pb-page data-template="pages:pb-page" unresolved="unresolved" locales="./resources/i18n/{{ns}}/{{lng}}.json" locale-fallback-ns="app common">
+        <pb-document id="document1" data-template="pages:pb-document"/>
+        <app-drawer-layout force-narrow="force-narrow">
+            <app-drawer data-template="lib:include" data-template-path="templates/drawer.html"/>
+            <app-header-layout>
+                <app-header slot="header" fixed="fixed">
+                    <app-toolbar data-template="lib:include" data-template-path="templates/menu.html"/>
+                    <app-toolbar data-template="lib:include" data-template-path="templates/simple-toolbar.html"/>
+                </app-header>
+                <pb-drawer toggle="tocToggle" class="toc" emit="toc" subscribe="transcription">
+                    <div class="drawer-content">
+                        <h3>
+                            <pb-i18n key="document.contents">Contents</pb-i18n>
+                        </h3>
+                        <pb-load id="toc" url="api/document/{doc}/contents?target=transcription&amp;icons=true" expand="expand" src="document1" subscribe="toc" load-once="load-once">
+                                <pb-i18n key="dialogs.loading">Loading</pb-i18n>
+                            </pb-load>
+                    </div>
+                </pb-drawer>
+                <section class="breadcrumbs">
+                    <pb-view id="title-view1" src="document1" xpath="//teiHeader/fileDesc/titleStmt/title" view="single" disable-history="">
+                        <pb-param name="header" value="short"/>
+                    </pb-view>
+                </section>
+                <main class="content-body">
+                    <pb-facsimile id="facsimile" default-zoom-level="0.7" show-full-page-control="true" show-home-control="true" emit="transcription" subscribe="transcription" type="iiif" show-navigation-control="show-navigation-control" show-navigator="show-navigator">
+                                            </pb-facsimile> 
+                    <pb-view id="view1" src="document1" column-separator=".tei-cb" append-footnotes="append-footnotes" subscribe="transcription" emit="transcription">
+                            <pb-param name="mode" value="cb"/>
+                        </pb-view>
+                    <div id="pageInfo">
+                        <div id="fixedContent">
+                        
+                              <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-qv-head" subscribe="transcription" emit="pageInfo">
+                                    <pb-param name="mode" value="querverweis"/>
+                                    <pb-param name="type" value="concordance"/>
+                                    <pb-param name="odd" value="surface.odd"/>
+                                </pb-view>
+                                 <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-qv-head" subscribe="transcription" emit="pageInfo">
+                                    <pb-param name="mode" value="genesis"/>
+                                    <pb-param name="type" value="concordance"/>
+                                    <pb-param name="odd" value="surface.odd"/>
+                                </pb-view>
+                            
+                        </div>
+                    </div>
+
+                        
+                </main>
+            </app-header-layout>
+        </app-drawer-layout>
+    </pb-page>
+    <div class="splash"/>
+</body>
+
+</html>
