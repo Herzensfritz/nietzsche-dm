@@ -21,29 +21,32 @@
         </seriesStmt>
         <sourceDesc>
           <msDesc>
-          <msIdentifier>
+          <msIdentifier xml:id="descChapter1">
             <repository>Herzogin Anna Amalia Bibliothek, Weimar</repository>
             <idno type="Mette-Signatur">K 11</idno>
             <idno type="HAAB-Signatur">C 4616</idno>
           </msIdentifier>
-          <msContents>
-            <ab type="descHead">
+           <msContents xml:id="descChapter2">
+            <ab type="head">
               1. Inhaltsbeschreibung</ab>
-            <p>Korrekturbogenexemplare zu Zur Genealogie der Moral. Eine Streitschrift. C. G. Naumann, Leipzig 1887.</p>
-            <ab type="descHead">
+            <ab>Korrekturbogenexemplare zu Zur Genealogie der Moral. Eine Streitschrift. C. G. Naumann, Leipzig 1887.</ab>
+            <ab xml:id="descChapter2.1">
+            <ab type="head">
               1.1 Inhaltsverzeichnis</ab>
-            <p>Bogen 1 (S. 1-16, GM I 1-10), mit Korrekturen von Ns Hand [=<ref target="#Cb1a">Cb1a</ref>]</p>
-            <p>Bogen 1 (S. 1-16, GM I 1-10), mit Korrekturen von Köselitz’ und Ns Hand [=<ref target="K11.xml#Cb1b">Cb1b</ref>]</p>
-            <p>Bogen 10 (S. 145-160, GM III 17-22), ohne Korrekturen</p>
+            <ab>Bogen 1 (S. 1-16, GM I 1-10), mit Korrekturen von Ns Hand [=<ref target="#Cb1a">Cb1a</ref>]</ab>
+            <ab>Bogen 1 (S. 1-16, GM I 1-10), mit Korrekturen von Köselitz’ und Ns Hand [=<ref target="K11.xml#Cb1b">Cb1b</ref>]</ab>
+            <ab>Bogen 10 (S. 145-160, GM III 17-22), ohne Korrekturen</ab></ab>
           </msContents>
-          <physDesc>
-            <ab type="descHead">
+         <physDesc xml:id="EDdescChapter3">
+            <ab xml:id="EDdescChapter3.1">
+            <ab type="head">
               2. Frühere Beschreibung (H. J. Mette)</ab>
-            <p>„K 11 zu E 40 (nur Bogen 1 ist erhalten, und zwar in zwei Fassungen; Korrekturen von Nietzsches und Peter Gasts Hand)“. (<ref target="#Mette1932">Mette, Der handschriftliche Nachlass [1932]</ref>, 18; <ref target="#Mette1933">Mette, Sachlicher Vorbericht, BAW I [1933]</ref>, LI)</p>
-            <ab type="descHead">
+            <ab>„K 11 zu E 40 (nur Bogen 1 ist erhalten, und zwar in zwei Fassungen; Korrekturen von Nietzsches und Peter Gasts Hand)“. (<ref target="#Mette1932">Mette, Der handschriftliche Nachlass [1932]</ref>, 18; <ref target="#Mette1933">Mette, Sachlicher Vorbericht, BAW I [1933]</ref>, LI)</ab></ab>
+            <ab xml:id="EDdescChapter3.2">
+            <ab type="head">
               3. Beschreibung</ab>
-            <p>Bogen 1 in doppelter Ausführung, Cb1a: <width>13,7</width>×<height>21,9</height>, 16 S.; Cb1b: <width>14,3</width>×<height>21,9</height>, 16 S.; Bogen 10, <width>14,4</width>×<height>22,6</height>, 16 S.</p>
-            <p>Cb1a, S. 1, Cb1b, S. 1, Cb10, S. 145, jeweils oben Mitte: „C 4616“, HAAB-Signatur, Bleistift.</p>
+            <ab>Bogen 1 in doppelter Ausführung, Cb1a: <width>13,7</width>×<height>21,9</height>, 16 S.; Cb1b: <width>14,3</width>×<height>21,9</height>, 16 S.; Bogen 10, <width>14,4</width>×<height>22,6</height>, 16 S.</ab>
+            <ab>Cb1a, S. 1, Cb1b, S. 1, Cb10, S. 145, jeweils oben Mitte: „C 4616“, HAAB-Signatur, Bleistift.</ab></ab>
           </physDesc>
         </msDesc>
             </sourceDesc>

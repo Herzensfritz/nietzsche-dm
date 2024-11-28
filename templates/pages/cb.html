@@ -52,7 +52,10 @@
             height: var(--pb-facsimile-height);
             min-width: 70%;
         }
-        
+        #pbView {
+            display: inline;
+            right: 1em;
+        }
         
         #view1 pb-view {
             height: var(--pb-view-height);
@@ -116,16 +119,20 @@
                             <pb-param name="mode" value="cb"/>
                         </pb-view>
                     <div id="pageInfo">
+                        <pb-view id="pbView" src="document1" column-separator=".tei-cb" append-footnotes="append-footnotes" subscribe="transcription" emit="transcription">
+                            <pb-param name="mode" value="cb"/>
+                            <pb-param name="pbOnly" value="true"/>
+                        </pb-view>
                         <div id="fixedContent">
-                        
+                            
                               <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-qv-head" subscribe="transcription" emit="pageInfo">
                                     <pb-param name="mode" value="querverweis"/>
                                     <pb-param name="type" value="concordance"/>
                                     <pb-param name="odd" value="surface.odd"/>
                                 </pb-view>
                                  <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-qv-head" subscribe="transcription" emit="pageInfo">
-                                    <pb-param name="mode" value="genesis"/>
-                                    <pb-param name="type" value="concordance"/>
+                                    <pb-param name="mode" value="querverweis"/>
+                                    <pb-param name="type" value="genesis"/>
                                     <pb-param name="odd" value="surface.odd"/>
                                 </pb-view>
                             

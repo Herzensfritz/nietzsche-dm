@@ -386,7 +386,7 @@ declare function pages:cb-pb-toc($node, $model as map(*), $target as xs:string?,
                 let $xmlId := $firstPb/@xml:id
                 let $nodeId := util:node-id($firstPb)
                 let $text := if ($node//tei:msContents//tei:ref[contains(@target, $milestone/@xml:id)]) 
-                                then ($node//tei:msContents//tei:ref[contains(@target, $milestone/@xml:id)]/parent::tei:p/substring-before(text()[1], '['))
+                                then ($node//tei:msContents//tei:ref[contains(@target, $milestone/@xml:id)]/parent::tei:*[1]/substring-before(text()[1], '['))
                                 else ($milestone/following::tei:note[1]/text())
                 return <li>
                       <pb-collapse>

@@ -49,7 +49,6 @@ function api:short-header($node as node(), $model as map(*)) {
         let $file := util:document-name(root($model("work")))
         
         let $result := array:filter($model("mapping")?files, function ($item) { $item?name = $file})
-        let $log := console:log($result)
         let $prefix := if (array:size($result) gt 0) then (array:get($result, 1)?target) else ()
         let $relPath := concat($prefix, '/index.html')
         return
@@ -74,7 +73,7 @@ function api:short-header($node as node(), $model as map(*)) {
 declare function api:list($request as map(*)) {
     let $json := $request?body
     let $size := array:size($json?files)
-    let $names := array:for-each($json?files, function ($item) { $item?name })
+    let $names := array:for-each($json?files, function ($item) { if ($item?type ='doc') then ($item?name) else () })
     let $params := map { "collection": () }
     let $works := capi:list-works((), (), $params)
     let $template :=  $config:app-root || "/templates/static-collection.html"
@@ -92,7 +91,9 @@ declare function api:list($request as map(*)) {
     }
     let $filtered := for $data in $works?all
                     let $file := util:document-name($data)
-                    where exists(index-of($names, $file))
+                    let $index := index-of($names, $file)
+                    where exists($index)
+                    order by $index
                     return $data
     let $model := map {
         "all": $filtered,
@@ -332,7 +333,6 @@ declare function api:handNote4change($request as map(*)){
             return <li><pb-toggle-feature data-type="handNote" subscribe="transcription" emit="transcription" name="{$handNote/@xml:id}" default="off" selector=".{$handNote/@xml:id}, .strikethrough-{$handNote/@xml:id}, .deleted-{$handNote/@xml:id}, .hatching-{$handNote/@xml:id}">{$handNote/text()}</pb-toggle-feature></li>
     }
     </ul>
-    let $log := console:log($handNote)
     return $handNote
 };
 
@@ -351,7 +351,6 @@ declare function api:get-link-for-target($request as map(*))  {
     let $targetFile := concat($config:data-root, '/', $targetDoc)
     return if ($targetDoc and doc-available($targetFile)) then (
         let $targetElement := doc($targetFile)//*[@xml:id=$targetId]
-        let $log := if ($targetElement) then (console:log($targetElement)) else (console:log($targetId))
         return if ($targetElement) then (
             let $parent := $targetElement/ancestor::*[local-name() = 'text' or local-name() = 'sourceDoc' or local-name() = 'teiHeader']
             return typeswitch($parent)

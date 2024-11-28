@@ -109,7 +109,7 @@ pb-collapse .change:hover {
     color: var(--nblack);
 }
 span.mytransparent { color: var(--tpField, white);}
-.transkriptionField {background-color: var(--tpField, #CED5CE); padding-right: 20px; padding-left: 5px; padding-top: 0px; padding-bottom: 10px;margin-top: 3em; margin-left: 30px; width: max-content;}
+.transkriptionField {background-color: var(--tpField, #CED5CE); padding-right: 20px; padding-left: 5px; padding-top: 0px; padding-bottom: 10px;margin-top: 3em; margin-left: 30px; width: max-content;font-family: var(--tpFont);}
 .transkriptionField.version1 { background-color: var(--tpFieldV1,#CED5CE); }
 .transkriptionField.version2 { background-color: var(--tpFieldV2,#CED5CE); }
 .highlight, .metamark:hover { background-color: var(--highlight); }
@@ -419,9 +419,9 @@ span.mytransparent { color: var(--tpField, white);}
          .below-linearisiert:before { content: '\230A'; }
          .below-linearisiert:after { content: '\230B'; }
           span.lnr, span.zlnr {
-            position:relative; left: -2.3em; font-style: italic; font-size: 80%; cursor: pointer; width: 3.5em;display: inline-block; margin-right: 1.5em;
+            position:relative; left: -2.3em; font-style: italic; font-size: 80%; cursor: pointer; width: 3.5em;display: inline-block; margin-right: 1.5em; font-family: var(--editor-font, sans-serif);
         }
-        span.lnr {  color: blue;}
+        span.lnr {  color: black;}
         span.zlnr { color: grey;}
         span.nolnr { margin-left: 3.125em;}
         div.line { line-height: 3.0em;  }

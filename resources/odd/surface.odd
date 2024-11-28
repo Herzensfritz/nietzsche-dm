@@ -185,7 +185,7 @@
         </model>
                 </elementSpec>
     <elementSpec ident="line" mode="add">
-                    <model predicate="ends-with(parent::zone/@type, 'Block') and parent::zone/parent::surface and @start" behaviour="pass-through">
+        <model predicate="ends-with(parent::zone/@type, 'Block') and parent::zone/parent::surface and @start" behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <param name="style" value="@style"/>
             <param name="n" value="@n"/>
@@ -193,11 +193,11 @@
             <param name="rend" value="@rend"/>
             <param name="target" value="substring-after(@start, '#')"/>
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="line" style="[[style]]">
-                <span class="lnr"><pb-highlight key="[[target]]" duration="5000">[[n]]</pb-highlight>:</span>
+                <span class="lnr"><pb-highlight key="[[target]]" duration="5000">[[n]]</pb-highlight></span>
                 <span class="[[hand]] [[rend]]" style="[[spanStyle]]">[[content]]</span>
                 </div></pb:template>
         </model>
-                    <model predicate="ends-with(parent::zone/@type, 'Block') and parent::zone/parent::surface and not(@start)" behaviour="pass-through">
+        <model predicate="ends-with(parent::zone/@type, 'Block') and parent::zone/parent::surface and not(@start)" behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="line empty">
 </div></pb:template>
@@ -219,7 +219,7 @@
                 <span class="[[isMarginLeft]] [[hand]] [[rend]]" style="[[spanStyle]]">[[content]]</span>
             </div></pb:template>
         </model>
-                    <model predicate="parent::zone/parent::zone and not(ends-with(parent::zone/@type, 'Block'))" behaviour="pass-through">
+        <model predicate="parent::zone/parent::zone and not(ends-with(parent::zone/@type, 'Block'))" behaviour="pass-through">
             <param name="n" value="@n"/>
             <param name="style" value="@style"/>
             <param name="id" value="@xml:id"/>
@@ -230,7 +230,7 @@
             <param name="rend" value="@rend"/>
             <param name="target" value="substring-after(@start, '#')"/>
             <pb:template xmlns="" xml:space="preserve"><div id="[[id]]" class="zoneLine" style="[[style]]">
-                <span class="lnr"><pb-highlight key="[[target]]" duration="5000">[[n]]</pb-highlight>:</span>
+                <span class="lnr"><pb-highlight key="[[target]]" duration="5000">[[n]]</pb-highlight></span>
                 <span class="[[isMarginLeft]] [[hand]] [[rend]]" style="[[spanStyle]]">[[content]]</span>
             </div></pb:template>
         </model>

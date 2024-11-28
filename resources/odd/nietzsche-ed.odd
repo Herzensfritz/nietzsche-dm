@@ -85,6 +85,7 @@
         <body>
             <schemaSpec start="TEI teiCorpus" ident="nietzsche-ed" source="teipublisher.odd">
     <elementSpec ident="app" mode="change">
+        <model predicate="$parameters?mode='cb' and $parameters?pbOnly='true'" behaviour="omit"/>
         <model predicate="$parameters?mode='cb' and lem" behaviour="pass-through">
             <param name="loc" value="substring-after(@loc, ',')"/>   
                <param name="lem" value="lem"/> 
@@ -362,6 +363,7 @@
         </model>
                 </elementSpec>
     <elementSpec ident="ref" mode="change">
+        <model predicate="$parameters?mode='cb' and ancestor::app" behaviour="inline"/>
         <model predicate="$parameters?mode='timeline' and $parameters?static='true' and @target" behaviour="pass-through">
             <param name="id" value="substring-after(tokenize(@target)[1], '#')"/>
             <param name="content" value="."/>
@@ -371,6 +373,12 @@
             <param name="id" value="substring-after(@target, '#')"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><pb-link xml-id="[[id]]" subscribe="transcription" emit="transcription">[[content]]</pb-link></pb:template>
+        </model>
+        <model predicate="$parameters?mode='querverweis' and @target" behaviour="pass-through">
+            <param name="id" value="substring-after(tokenize(@target)[1], '#')"/>
+            <param name="doc" value="substring-before(tokenize(@target)[1], '#')"/>
+             <param name="content" value="."/>
+            <pb:template xmlns="" xml:space="preserve"><a data-id="[[id]]" data-doc="[[doc]]">[[content]]</a></pb:template>
         </model>
         <model predicate="not(node())" behaviour="link">
             <param name="content" value="@target"/>
