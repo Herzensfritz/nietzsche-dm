@@ -154,7 +154,7 @@
                             
             </pb:template>
         </model>
-                    <model predicate="@type='relative' and $parameters?type='version'" behaviour="body">
+        <model predicate="@type='relative' and $parameters?type='version'" behaviour="body">
             <param name="content" value="."/>
             <param name="id" value="@xml:id"/>
             <param name="pb" value="replace(@start, '#', '')"/>
@@ -164,21 +164,20 @@
             <param name="hand" value="let $pbCorresp := id(substring-after(@start,'#'), root($parameters?root))/@corresp  let $correspTok := if($pbCorresp) then (tokenize($pbCorresp)) else () let $tokLength := count($correspTok) let $lastTok := if($tokLength gt 0) then ($correspTok[$tokLength]) else () let $handNote := if ($lastTok) then (id(substring-after($lastTok, '#'), root($parameters?root))) else () return if ($handNote and $handNote/local-name() = 'handNote') then (concat('hand ',substring-after($lastTok, '#'))) else ()"/>
             <pb:template xmlns="" xml:space="preserve">
                 <div>[[change]]</div>
-                            <div id="[[id]]" class="transkriptionField [[versionCss]] [[hand]]" style="[[style]]">
+                            <div id="[[id]]" class="transkriptionField [[versionCss]]" style="[[style]]">
                                 [[content]]
                             </div>
                         </pb:template>
         </model>
-                    <model predicate="@type='relative'" behaviour="body">
+        <model predicate="@type='relative'" behaviour="body">
             <param name="content" value="."/>
             <param name="id" value="@xml:id"/>
             <param name="pb" value="replace(@start, '#', '')"/>
             <param name="style" value="@style"/>
             <param name="url" value="substring-before(id(substring-after(@facs,'#'), root($parameters?root))/graphic/@url,'/full')"/>
-            <param name="hand" value="let $pbCorresp := id(substring-after(@start,'#'), root($parameters?root))/@corresp  let $correspTok := if($pbCorresp) then (tokenize($pbCorresp)) else () let $tokLength := count($correspTok) let $lastTok := if($tokLength gt 0) then ($correspTok[$tokLength]) else () let $handNote := if ($lastTok) then (id(substring-after($lastTok, '#'), root($parameters?root))) else () return if ($handNote and $handNote/local-name() = 'handNote') then (concat('hand ',substring-after($lastTok, '#'))) else ()"/>
             <pb:template xmlns="" xml:space="preserve">
                             <pb-facs-link emit="transcription" facs="[[url]]" style="float: right; margin-top: -2em;">[[pb]]</pb-facs-link>                           
-                            <div id="[[id]]" class="transkriptionField [[hand]]" style="[[style]]">
+                            <div id="[[id]]" class="transkriptionField" style="[[style]]">
                                 [[content]]
                             </div>
                         </pb:template>

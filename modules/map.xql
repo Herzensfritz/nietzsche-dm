@@ -207,7 +207,8 @@ declare function mapping:nietzsche-qv($root as element(), $userParams as map(*))
 declare function mapping:nietzsche-qv-head($root as element(), $userParams as map(*)) {
         
         let $pbId := if ($root instance of element(tei:pb)) then (concat('#',$root/@xml:id)) else ($root/@start)
-        let $div2Ids:= distinct-values(for $ref in $config:newest-qv//tei:div3[@type=$userParams?type]//tei:ref[contains(@target, $pbId)]
+        let $pbContains := concat($pbId, ' ')
+        let $div2Ids:= distinct-values(for $ref in $config:newest-qv//tei:div3[@type=$userParams?type]//tei:ref[contains(@target, $pbContains) or ends-with(@target, $pbId)]
                             let $div := $ref/ancestor::tei:div2[1]
                             return $div/@xml:id)
         let $qvs := <div xmlns="http://www.tei-c.org/ns/1.0" type="qvDiv" corresp="{$pbId}">
