@@ -39,6 +39,9 @@
         <body>
             <schemaSpec start="TEI teiCorpus" ident="surface" source="teipublisher.odd"> 
         <elementSpec ident="pb" mode="change"/>
+        <elementSpec ident="certainty" mode="change">
+            <model behaviour="omit"/>
+        </elementSpec>
         <elementSpec ident="hi" mode="change">
                     <model predicate="@rend and parent::restore" behaviour="pass-through">
             <param name="rend" value="@rend"/>
@@ -308,41 +311,46 @@
             <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/>
             <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]" data-debug="add4"><span class="inline [[hand]] [[instant]]">[[content]]</span></span></pb:template>
         </model>
-                    <model predicate="parent::metamark[following-sibling::del/@cause = concat('#', @xml:id) or preceding-sibling::del/@cause = concat('#', @xml:id)] and (@place='above' or @place='below')" behaviour="pass-through">
-            <param name="metamarkClass" value="if (parent::metamark/@rend) then (concat(parent::metamark/@rend, 'insertion-', @place)) else (concat('insMinsertion-', @place))"/>
+        <model predicate="parent::metamark[following-sibling::del/@cause = concat('#', @xml:id) or preceding-sibling::del/@cause = concat('#', @xml:id)] and (@place='above' or @place='below')" behaviour="pass-through">
+           <param name="metamarkClass" value="if (parent::metamark/@rend) then (concat('insertionMark ', parent::metamark/@place, ' ',parent::metamark/@rend, ' insertion-', @place)) else (concat('insertionMark right insM insertion-', @place))"/>
             <param name="metamarkStyle" value="parent::metamark/@style"/>
             <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="class" value="@place"/>
             <param name="content" value="."/>
             <param name="id" value="parent::metamark/@xml:id"/>
             <param name="overwritten" value="if(parent::metamark/following-sibling::del[1]/@cause = concat('#', parent::metamark/@xml:id)) then (parent::metamark/following-sibling::del[1]/text()) else (parent::metamark/preceding-sibling::del[1]/text())"/>
-            <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/>
-            <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]">[[overwritten]]</span><span class="[[metamarkClass]] [[hand]]" style="[[metamarkStyle]]">
+            <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/> 
+            <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]">[[overwritten]]</span><span class="[[metamarkClass]] [[hand]]" style="[[metamarkStyle]]" debug-msg="0">
   <span class="[[class]] [[instant]]">[[content]]</span>
 </span></pb:template>
         </model>
-                    <model predicate="parent::metamark and (@place='above' or @place='below') and anchor[@corresp]" behaviour="pass-through">
+        <model predicate="parent::metamark and (@place='above' or @place='below') and anchor[@corresp]" behaviour="pass-through">
             <param name="highlightKey" value="substring-after(anchor[1]/@corresp, '#')"/>
-            <param name="metamarkClass" value="if (parent::metamark/@rend) then (concat(parent::metamark/@rend, 'insertion-', @place)) else (concat('insMinsertion-', @place))"/>
+           <param name="metamarkClass" value="concat('insertion-', @place)"/>
+            <param name="metamarkRend" value="parent::metamark/@rend"/>
+             <param name="metamarkDirection" value="if (parent::metamark/@place) then (parent::metamark/@place) else ('right')"/>
             <param name="metamarkStyle" value="parent::metamark/@style"/>
             <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="class" value="@place"/>
             <param name="style" value="@style"/>
             <param name="content" value="."/>
-            <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/>
-            <pb:template xmlns="" xml:space="preserve"><pb-highlight key="[[highlightKey]]" duration="5000"><span class="[[metamarkClass]] [[hand]]" style="[[metamarkStyle]]">
+            <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/> 
+            <pb:template xmlns="" xml:space="preserve"><pb-highlight key="[[highlightKey]]" duration="5000">
+            <span class="insertionMark [[metamarkDirection]] [[metamarkRend]] [[metamarkClass]] [[hand]]" style="[[metamarkStyle]]" debug-msg="1">
   <span class="[[class]] [[instant]]" style="[[style]]">[[content]]</span>
 </span></pb-highlight></pb:template>
         </model>
-                    <model predicate="parent::metamark and (@place='above' or @place='below')" behaviour="pass-through">
-            <param name="metamarkClass" value="if (parent::metamark/@rend) then (concat(parent::metamark/@rend, 'insertion-', @place)) else (concat('insMinsertion-', @place))"/>
+        <model predicate="parent::metamark and (@place='above' or @place='below')" behaviour="pass-through">
+            <param name="metamarkClass" value="concat('insertion-', @place)"/>
+            <param name="metamarkRend" value="parent::metamark/@rend"/>
+             <param name="metamarkDirection" value="if (parent::metamark/@place) then (parent::metamark/@place) else ('right')"/>
             <param name="metamarkStyle" value="parent::metamark/@style"/>
             <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="class" value="@place"/>
             <param name="style" value="@style"/>
             <param name="content" value="."/>
             <param name="instant" value="if (@instant = 'true') then ('instantaneous') else ()"/>
-            <pb:template xmlns="" xml:space="preserve"><span class="[[metamarkClass]] [[hand]]" style="[[metamarkStyle]]">
+            <pb:template xmlns="" xml:space="preserve"><span class="insertionMark [[metamarkDirection]] [[metamarkRend]] [[metamarkClass]] [[hand]]" style="[[metamarkStyle]]" debug-msg="2">
   <span class="[[class]] [[instant]]" style="[[style]]">[[content]]</span>
 </span></pb:template>
         </model>
@@ -392,14 +400,14 @@
         </model>
                 </elementSpec>
                 <elementSpec ident="subst" mode="add"/>
-            <elementSpec ident="metamark" mode="add">
-                    <model predicate="$parameters?type='version' and $parameters?version='2' and not(add[@hand=$parameters?hand])" behaviour="inline"/>
-                    <model predicate="@target and @corresp" behaviour="pass-through">
-            <param name="content" value="."/>
-            <param name="target" value="let $corresp := @corresp let $target := if (contains(@target, ' ')) then (substring-before(@target, ' ')) else (@target) return  if (following::metamark[@corresp = $target]) then (concat($corresp,$target)) else (concat($target, $corresp))"/>
-            <pb:template xmlns="" xml:space="preserve"><pb-highlight key="[[target]]" highlight-self="highlight-self" duration="5000">[[content]]</pb-highlight></pb:template>
-        </model>
-                    <model predicate="@target" behaviour="pass-through">
+        <elementSpec ident="metamark" mode="add">
+            <model predicate="$parameters?type='version' and $parameters?version='2' and not(add[@hand=$parameters?hand])" behaviour="inline"/>
+            <model predicate="@target and @corresp" behaviour="pass-through">
+                <param name="content" value="."/>
+                <param name="target" value="let $corresp := @corresp let $target := if (contains(@target, ' ')) then (substring-before(@target, ' ')) else (@target) return  if (following::metamark[@corresp = $target]) then (concat($corresp,$target)) else (concat($target, $corresp))"/>
+                <pb:template xmlns="" xml:space="preserve"><pb-highlight key="[[target]]" highlight-self="highlight-self" duration="5000">[[content]]</pb-highlight></pb:template>
+            </model>
+            <model predicate="@target" behaviour="pass-through">
             <param name="content" value="."/>
             <param name="target" value="substring-after(if (contains(@target, ' ')) then (substring-before(@target, ' ')) else (@target), '#')"/>
             <pb:template xmlns="" xml:space="preserve"><pb-highlight key="[[target]]" highlight-self="highlight-self" duration="5000">[[content]]</pb-highlight></pb:template>
@@ -476,7 +484,22 @@
                           </pb-i18n>:</span>
                         <span class="transkriptionField small [[hand]]">[[alternate]]</span></p></pb-popover></pb:template>
         </model>
-                    <model predicate="@rend and @hand" behaviour="pass-through">
+        <model predicate="@rend and @hand and descendant::del" behaviour="pass-through">
+            <param name="content" value="."/>
+            <param name="deleteCls" value="concat(@rend, replace(@hand, '#', '-'))"/>
+            <pb:template xmlns="" xml:space="preserve"><span class="[[deleteCls]]">[[content]]</span></pb:template>
+        </model>
+        <model predicate="@rend and descendant::del" behaviour="pass-through">
+            <param name="content" value="."/>
+            <param name="deleteCls" value="@rend"/>
+            <pb:template xmlns="" xml:space="preserve"><span class="[[deleteCls]]">[[content]]</span></pb:template>
+        </model>
+        <model predicate="@hand and descendant::del" behaviour="pass-through">
+            <param name="content" value="."/>
+            <param name="deleteCls" value="concat('deleted', replace(@hand, '#', '-'))"/>
+            <pb:template xmlns="" xml:space="preserve"><span class="[[deleteCls]]">[[content]]</span></pb:template>
+        </model>
+        <model predicate="@rend and @hand" behaviour="pass-through">
             <param name="content" value="."/>
             <param name="deleteCls" value="concat(@rend, replace(@hand, '#', '-'))"/>
             <param name="id" value="generate-id()"/>
@@ -484,9 +507,9 @@
             <param name="innerContent" value="for $item in ./(*|text())     return if ($item/local-name() = 'metamark') then () else ($item)"/>
             <param name="disabled" value="if($parameters?del = 'off') then ('disabled') else ()"/>
             <pb:template xmlns="" xml:space="preserve"><span id="[[id]]" class="[[deleteCls]]">[[content]]</span><pb-popover theme="material" for="[[id]][[disabled]]">
-  <span class="editor"><pb-i18n key="[[key]]">gestrichen</pb-i18n>:</span>[[innerContent]]</pb-popover></pb:template>
+                <span class="transcription">[[innerContent]]</span></pb-popover></pb:template>
         </model>
-                    <model predicate="@rend" behaviour="pass-through">
+        <model predicate="@rend" behaviour="pass-through">
             <param name="content" value="."/>
             <param name="deleteCls" value="@rend"/>
             <param name="id" value="generate-id()"/>
@@ -494,9 +517,9 @@
             <param name="innerContent" value="for $item in ./(*|text())     return if ($item/local-name() = 'metamark') then () else ($item)"/>
             <param name="disabled" value="if($parameters?del = 'off') then ('disabled') else ()"/>
             <pb:template xmlns="" xml:space="preserve"><span id="[[id]]" class="[[deleteCls]]">[[content]]</span><pb-popover theme="material" for="[[id]][[disabled]]">
-  <span class="editor" data-debug="1"><pb-i18n key="[[key]]">gestrichen</pb-i18n>:</span>[[innerContent]]</pb-popover></pb:template>
+                <span class="transcription">[[innerContent]]</span></pb-popover></pb:template>
         </model>
-                    <model predicate="@hand" behaviour="pass-through">
+        <model predicate="@hand" behaviour="pass-through">
             <param name="content" value="."/>
             <param name="deleteCls" value="concat('deleted', replace(@hand, '#', '-'))"/>
             <param name="id" value="generate-id()"/>
@@ -504,7 +527,7 @@
             <param name="innerContent" value="for $item in ./(*|text())     return if ($item/local-name() = 'metamark') then () else ($item)"/>
             <param name="disabled" value="if($parameters?del = 'off') then ('disabled') else ()"/>
             <pb:template xmlns="" xml:space="preserve"><span id="[[id]]" class="[[deleteCls]]">[[content]]</span><pb-popover theme="material" for="[[id]][[disabled]]">
-  <span class="editor"><pb-i18n key="[[key]]">gestrichen</pb-i18n>:</span>[[innerContent]]</pb-popover></pb:template>
+  <span class="transcription">[[innerContent]]</span></pb-popover></pb:template>
         </model>
                     <model behaviour="inline" cssClass="strikethrough"/>
                 </elementSpec>
@@ -862,13 +885,7 @@
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><span class="retrace [[hand]]">[[content]]</span></pb:template>
         </model>
-                </elementSpec>
-                <elementSpec ident="seg" mode="change">
-                    <model predicate="@corresp" behaviour="pass-through" useSourceRendition="true">
-            <param name="target" value="substring-after(@corresp, '#')"/>
-            <param name="content" value="."/>
-            <pb:template xmlns="" xml:space="preserve"><pb-highlight key="[[target]]" highlight-self="highlight-self" duration="5000">[[content]]</pb-highlight></pb:template>
-        </model>
+    
                 </elementSpec>
                 <elementSpec ident="term" mode="add">
                     <model predicate="@type='lem' and @target" behaviour="pass-through">

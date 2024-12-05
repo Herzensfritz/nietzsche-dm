@@ -5,6 +5,7 @@ body {
          --length: 0.2em;
          --nbrown: #5C4033;
          --red: #dc3545;
+         --editor-font: 'Junicode';
 }
 a {
     color: inherit;
@@ -110,17 +111,18 @@ pb-collapse .change:hover {
 }
 span.mytransparent { color: var(--tpField, white);}
 .transkriptionField {background-color: var(--tpField, #CED5CE); padding-right: 20px; padding-left: 5px; padding-top: 0px; padding-bottom: 10px;margin-top: 3em; margin-left: 30px; width: max-content;font-family: var(--tpFont);}
+.transcription { font-family: var(--tpFont);}
 .transkriptionField.version1 { background-color: var(--tpFieldV1,#CED5CE); }
 .transkriptionField.version2 { background-color: var(--tpFieldV2,#CED5CE); }
 .highlight, .metamark:hover { background-color: var(--highlight); }
 .metamark { cursor: pointer;}
 .small { color: black; padding: 3px; }
 .fw-box { background-color: #add8e6;}
-.popover { background-color: #F5F5F5; cursor: context-menu; color: inherit;}
+.popover { background-color: var(--box-color, #CED5CE); cursor: context-menu; color: inherit;}
 .sicCor .popover {
     color: black;
 }
-    .box, .editorCorrection { background-color: #F5F5F5; width: max-content; text-align: start;}
+    .box, .editorCorrection { background-color: red; width: max-content; text-align: start;}
     .box .tooltip {
        display: none;
     }
@@ -209,7 +211,7 @@ span.mytransparent { color: var(--tpField, white);}
      .textBlock { position: relative;}
      .add-zone { font-size: 80%; }
      .ab-zone { }
-     .zoneLine { position: absolute;}
+     .zoneLine { position: absolute;width: 120%;}
      .note-zone-bottom-right { position: absolute; bottom: 1em;  font-style: italic;}
      .fw-top { position: absolute; top: -0.1em;}
      .fw-top-right { position: absolute; top: -0.1em; right: 50px;}
@@ -227,37 +229,45 @@ span.mytransparent { color: var(--tpField, white);}
      .top-left { text-align: left }
      .bottom-left { text-align: left }
      .top-right { margin-left: 60%; }
-    .afterWordinsertion-above.toggle .above, .beforePunctuationinsertion-above.toggle .above, .insertion-above.toggle .above {
-        background: var(--highlight, yellow);
-     } 
-     .afterWordinsertion-above, .beforePunctuationinsertion-above,.endOfLineinsertion-above, .inWordinsertion-above, .inSpatiuminsertion-above, .insMinsertion-above, .Ezinsertion-above, .insertion-above { 
+     .insertion-above { 
          position:relative; top: -2px;height: 100%; width: 100%; }
-    .inSpatiuminsertion-above { padding-left: -0.1em;}
-     .beforePunctuationinsertion-above { padding-left: 3px;}
-     .afterWordinsertion-above:before, .beforePunctuationinsertion-above:before, .endOfLineinsertion-above:before,.inWordinsertion-above:before, .inSpatiuminsertion-above:before, .insMinsertion-above:before, .Ezinsertion-above:before { 
+     .inSpatium { padding-left: -0.1em;}
+     .beforePunctuation { padding-left: -0.01em;}
+     .insertionMark.insertion-below:before { 
         position: absolute;
         content: "";
-        left: -2px;
-        height: inherit;
         width: 0.2em;
+        height: inherit;
+        top: 2px;
+        border-bottom: 1px solid;
+        border-color: inherit;
+    }
+     .insertionMark.insertion-above:before, .insertionMark.left.insertion-below:before { 
+        position: absolute;
+        content: "";
+        height: inherit;
+        width: var(--length);
         top: -3px;
         border-top: 1px solid;
-        border-left: 1px solid;
-        border-top-left-radius: var(--radius);
         border-color: inherit;/* inherit color from text */
      }
-    pb-popover .afterWordinsertion-above:before, 
-    pb-popover .beforePunctuationinsertion-above:before, 
-    pb-popover .inWordinsertion-above:before, 
-    pb-popover .inSpatiuminsertion-above:before, 
-    pb-popover .insMinsertion-above:before, 
-    pb-popover .Ezinsertion-above:before {
+     .insertionMark.right.insertion-above:before, .insertionMark.right.insertion-below:before { 
+        left: -2px;
+        border-left: 1px solid;
+        border-top-left-radius: var(--radius);
+     }
+     .insertionMark.left.insertion-above:before { 
+        left: -2px;
+        border-right: 1px solid;
+        border-top-right-radius: var(--radius);
+     }
+    .inSpatium.insertion-above:before { left: -0.1em; }
+    .afterWord.insertion-above:before, .endOfLine.insertion-above:before { left: 0.05em;   }
+    .inWord.insertion-above:before { left: -0.5px; }
+    .beforePunctuation.insertion-above:before {  left: 2px;  }
+    pb-popover .insertionMark.insertion-above:before, pb-popover .insertionMark.insertion-below:before {
         border: 0;
     }
-    .inSpatiuminsertion-above:before { left: -0.1em; }
-    .afterWordinsertion-above:before, .endOfLineinsertion-above:before { left: 0.05em;   }
-    .inWordinsertion-above:before { left: -0.5px; }
-    .beforePunctuationinsertion-above:before {  left: 2px;  }
      .below { 
         position: absolute;
         top: 1.8em;
@@ -276,10 +286,10 @@ span.mytransparent { color: var(--tpField, white);}
     .before {
         left: -1em;
     }
-    .above.instantaneous, .below.instantaneous, .inline.instantaneous {
+    .above.instantaneous, .below.instantaneous, .inline.instantaneous, .after.instantaneous, .before.instantaneous {
        font-size: 100%; 
     }
-    .above, .below {
+    .above, .below, .before, .after {
        font-size:80%; 
     }
      .above  {
@@ -303,27 +313,16 @@ span.mytransparent { color: var(--tpField, white);}
          position: relative; left: 0em;
      }
      .insert-mark-above, .insert-mark-below { position: relative;padding-left: 2px; padding-right: 2px; height: 100%; }
-     .afterWordinsertion-below, .beforePunctuationinsertion-below, .inWordinsertion-below, .inSpatiuminsertion-below,.insMinsertion-below, .Ezinsertion-below, .insertion-below  { 
+     .insertion-below  { 
          position:relative; top: 10px;height: 100%; width: 100%; 
       }
-     .inSpatiuminsertion-below { padding-left: -3.5px;}
-     .beforePunctuationinsertion-below { padding-left: 3px;}
-     .afterWordinsertion-below:before, .beforePunctuationinsertion-below:before, .inWordinsertion-below:before, .inSpatiuminsertion-below:before, .insMinsertion-below:before, .Ezinsertion-below:before { 
-        position: absolute;
-        content: "";
-        left: -2px;
-        width: 0.2em;
-        height: inherit;
-        top: 2px;
-        border-bottom: 1px solid;
-        border-left: 1px solid;
-        border-bottom-left-radius:  var(--radius);
-        border-color: inherit;
-     }
-    .inSpatiuminsertion-below:before { left: -3.5px; }
-    .afterWordinsertion-below:before { left: 1px;   }
-    .inWordinsertion-below:before { left: -0.5px; }
-   .beforePunctuationinsertion-below:before { margin-left: 4px;}
+     .inSpatium.insertion-below { padding-left: -3.5px;}
+     .beforePunctuation.insertion-below { padding-left: 3px;}
+    
+    .inSpatium.insertion-below:before { left: -3.5px; }
+    .afterWord.insertion-below:before { left: 1px;   }
+    .inWord.insertion-below:before { left: -0.5px; }
+   .beforePunctuation.insertion-below:before { margin-left: 4px;}
    .addSpan { font-size:80%;}
    .erased { color: grey;}
    .tei-del1.erased {
@@ -336,7 +335,9 @@ span.mytransparent { color: var(--tpField, white);}
     }
     .overwritten { text-decoration: line-through; color: red;}
         .superimposed { color: green;}
-    .strikethrough, .strikethrough1,.strikethrough2 ,.strikethrough-typesetter_black2,  .strikethrough-typesetter_black1, .strikethrough-Koeselitz_pencil, .strikethrough-N_brown1 { text-decoration: line-through; }
+    .strikethrough, .strikethrough1,.strikethrough2 ,.strikethrough-typesetter_black2,  
+    .strikethrough-typesetter_blue, .strikethrough-typesetter_red, 
+    .strikethrough-typesetter_black1, .strikethrough-Koeselitz_pencil, .strikethrough-N_brown1 { text-decoration: line-through; }
     .strikethrough-N_brown1 {
         text-decoration-color: var(--nbrown, brown);
         text-decoration-thickness: 0.2em;
@@ -432,7 +433,16 @@ span.mytransparent { color: var(--tpField, white);}
          .below-linearisiert:before { content: '\230A'; }
          .below-linearisiert:after { content: '\230B'; }
           span.lnr, span.zlnr {
-            position:relative; left: -2.3em; font-style: italic; font-size: 80%; cursor: pointer; width: 3.5em;display: inline-block; margin-right: 1.5em; font-family: var(--editor-font, sans-serif);
+            position:relative; 
+            left: -5em; 
+            font-style: italic; 
+            font-size: 80%; 
+            font-family: var(--editor-font, sans-serif);
+            cursor: pointer; 
+            width: 3.5em;
+            display: inline-block; 
+            margin-right: 1.5em; 
+            text-align: right;
         }
         span.lnr {  color: black;}
         span.zlnr { color: grey;}
@@ -440,7 +450,7 @@ span.mytransparent { color: var(--tpField, white);}
         div.line { line-height: 3.0em;  }
         div.line.version2 { overflow-wrap: break-word; inline-size: 1500px;}
         .add-zone div.line { font-size: 125%; }
-        div.line.empty { display: inline-block;  }
+        div.line.empty {  display: block; height: 3em; width: 100%;  }
         .flushRight {  float: right;  
              position: relative;
              left: -1em;
