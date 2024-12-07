@@ -258,7 +258,7 @@
   [[content]]
 </div></pb:template>
         </model>
-                    <model predicate="parent::zone and not(ends-with(@type, 'Block')) and line" behaviour="pass-through">
+        <model predicate="parent::zone and not(ends-with(@type, 'Block')) and line" behaviour="pass-through">
             <param name="id" value="@xml:id"/>
             <param name="class" value="@type"/>
             <param name="content" value="."/>
@@ -277,16 +277,16 @@
         </model>
                 </elementSpec>
     <elementSpec ident="add" mode="change">
-                    <model predicate="$parameters?type='version' and $parameters?version='1' and @hand=$parameters?hand" behaviour="omit"/>
-                    <model predicate="$parameters?type='version' and $parameters?version='2' and not(@hand=$parameters?hand)" behaviour="inline"/>
-                    <model predicate="@place = 'superimposed' and (parent::fw)" behaviour="omit">
+        <model predicate="$parameters?type='version' and $parameters?version='1' and @hand=$parameters?hand" behaviour="omit"/>
+        <model predicate="$parameters?type='version' and $parameters?version='2' and not(@hand=$parameters?hand)" behaviour="inline"/>
+        <model predicate="@place = 'superimposed' and (parent::fw)" behaviour="omit">
             <param name="id" value="replace(@corresp, '#', '')"/>
             <param name="hand" value="@hand"/>
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]" data-debug="add1"><span class="[[hand]]">[[content]]</span></span></pb:template>
         </model>
-                    <model predicate="@place = 'superimposed' and add[@place='superimposed']" behaviour="inline"/>
-                    <model predicate="@place = 'superimposed' and parent::del[@rend and @hand]" behaviour="pass-through">
+        <model predicate="@place = 'superimposed' and add[@place='superimposed']" behaviour="inline"/>
+        <model predicate="@place = 'superimposed' and parent::del[@rend and @hand]" behaviour="pass-through">
             <param name="id" value="if (@xml:id) then (@xml:id) else (substring-after(@corresp, '#'))"/>
             <param name="deleteCls" value="concat(parent::del/@rend, replace(parent::del/@hand, '#', '-'))"/>
             <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
@@ -295,7 +295,7 @@
             <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]" data-debug="add2">
                 <span class="inline [[hand]] [[instant]] [[deleteCls]]">[[content]]</span></span></pb:template>
         </model>
-                    <model predicate="@place = 'superimposed' and parent::del[@rend]" behaviour="pass-through">
+        <model predicate="@place = 'superimposed' and parent::del[@rend]" behaviour="pass-through">
             <param name="id" value="if (@xml:id) then (@xml:id) else (substring-after(@corresp, '#'))"/>
             <param name="deleteCls" value="parent::del/@rend"/>
             <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
@@ -304,7 +304,7 @@
             <pb:template xmlns="" xml:space="preserve"><span class="trigger popover" id="[[id]]" data-debug="add3">
                 <span class="inline [[hand]] [[instant]] [[deleteCls]]">[[content]]</span></span></pb:template>
         </model>
-                    <model predicate="@place = 'superimposed'" behaviour="pass-through">
+         <model predicate="@place = 'superimposed'" behaviour="pass-through">
             <param name="id" value="if (@xml:id) then (@xml:id) else (substring-after(@corresp, '#'))"/>
             <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="content" value="."/>
@@ -377,7 +377,8 @@
   <span class="[[class]] [[instant]]" style="[[style]]">[[content]]</span>
 </span></pb:template>
         </model>
-                    <model predicate="@place = 'inline'  and anchor[@corresp]" behaviour="pass-through">
+       <model predicate="@place = 'inline'  and parent::line/parent::zone[@type='add-zone']" behaviour="inline"/> 
+        <model predicate="@place = 'inline'  and anchor[@corresp]" behaviour="pass-through">
             <param name="highlightKey" value="substring-after(anchor[1]/@corresp, '#')"/>
             <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="content" value="."/>

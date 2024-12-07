@@ -272,8 +272,7 @@ span.mytransparent { color: var(--tpField, white);}
         position: absolute;
         top: 1.8em;
         width: max-content;
-        line-height: 1em;
-         transition: color 1s;
+        line-height: 1.5em;
          
      }
      .before, .after {
@@ -296,9 +295,7 @@ span.mytransparent { color: var(--tpField, white);}
          position: absolute;
          top: -1.5em;
          width: max-content;
-         line-height: 1em;
-         /*height: max-content;*/
-         transition: color 1s;
+         line-height: 1.5em;
      }
      .centered{
          display: inline-block;
@@ -330,9 +327,9 @@ span.mytransparent { color: var(--tpField, white);}
        opacity: 0.6;
    }
     .inline { font-size:80%;}
-    .add-zone .inline {
+   /* .add-zone .inline {
         font-size: 100%;
-    }
+    }*/
     .overwritten { text-decoration: line-through; color: red;}
         .superimposed { color: green;}
     .strikethrough, .strikethrough1,.strikethrough2 ,.strikethrough-typesetter_black2,  
