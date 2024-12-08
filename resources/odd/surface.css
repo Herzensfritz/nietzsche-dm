@@ -212,6 +212,14 @@ span.mytransparent { color: var(--tpField, white);}
      .add-zone { font-size: 80%; }
      .ab-zone { }
      .zoneLine { position: absolute;width: 120%;}
+     .zoneLine[data-right-line-number]:after {
+         content: attr(data-right-line-number); 
+         position: relative;
+         text-align: right;
+         width: 90%;
+         display: block;
+         top: -1.5em; 
+     }
      .note-zone-bottom-right { position: absolute; bottom: 1em;  font-style: italic;}
      .fw-top { position: absolute; top: -0.1em;}
      .fw-top-right { position: absolute; top: -0.1em; right: 50px;}
@@ -432,16 +440,19 @@ span.mytransparent { color: var(--tpField, white);}
           span.lnr, span.zlnr {
             position:relative; 
             left: -5em; 
-            font-style: italic; 
-            font-size: 80%; 
-            font-family: var(--editor-font, sans-serif);
             cursor: pointer; 
             width: 3.5em;
             display: inline-block; 
             margin-right: 1.5em; 
             text-align: right;
         }
-        span.lnr {  color: black;}
+        span.lnr, .zoneLine[data-right-line-number]:after {  
+            color: black;
+            font-style: italic; 
+            font-size: 80%; 
+            font-family: var(--editor-font, sans-serif);
+            
+        }
         span.zlnr { color: grey;}
         span.nolnr { margin-left: 3.125em;}
         div.line { line-height: 3.0em;  }
