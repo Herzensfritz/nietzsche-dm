@@ -1,3 +1,6 @@
+.content {
+    font-family: var(--ed-content-font-family);
+}
 
 .Koeselitz_black, .typesetter_black, .typesetter_black1, .typesetter_black2 {
     color: var(--typesetter_black, green);
@@ -25,16 +28,26 @@ a {
 }
 .line, .xLine {
     position:absolute; 
-    left: -3em; 
+    left: -6em; 
     color: black;
-    font-style: italic;
+    width: 3.5em;
+    text-align: right;
+    font-family: var(--lnrFont);
+     font-size: 80%;
 }
-.line {
-    font-size: 80%;
-    margin-top: 0.25em;
+.tei-p {
+    line-height: 1.5em;
 }
-.tei-p3 {
-    line-height: 1.15em;
+.tei-p.justify {
+    width: 26em;
+}
+.tei-line:after {
+    content: ' ';
+    display: block;
+}
+.tei-line {
+	text-align-last: justify;
+	display: block;
 }
 ul.letters, ul.pages {
     color: grey;
@@ -52,11 +65,12 @@ ul.letters, ul.pages {
  pb-facs-link {
             display: block;
             margin-left: 7pt;
+            margin-top: -2em;
             color: grey;
             float: right;
 }
 .tei-hi2.spaced {
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
 }
 .tei-hi2.bold {
     font-weight: bold;

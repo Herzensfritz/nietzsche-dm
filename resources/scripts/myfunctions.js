@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
         });
     });
-    
+
     document.querySelectorAll('[data-target]').forEach((link) => {
         const target = document.querySelector(link.dataset.target);
         if (target){

@@ -205,9 +205,10 @@ declare function pages:adapt-settings($node as node(), $model as map(*)) {
                 </pb-toggle-feature>
         
             ) else (
-                <pb-toggle-feature emit="transcription" subscribe="transcription" name="edRef" selector=".edRefLB">
-                    <pb-i18n key="myapp.edref-lb">... KGW KSA Zeilenumbruch ...</pb-i18n>
-                </pb-toggle-feature>
+                if ($model?template = 'ed.html') then (
+                <pb-toggle-feature emit="transcription" subscribe="transcription" name="justify" on="on" off="off">
+                    Blocksatz
+                </pb-toggle-feature>) else ()
             )
             
             }
@@ -255,6 +256,7 @@ declare function pages:load-components($node as node(), $model as map(*)) {
 declare function pages:load-xml($view as xs:string?, $root as xs:string?, $doc as xs:string) {
     for $data in config:get-document($doc)
     return
+        let $log := console:log($data) return
         if (exists($data)) then
             pages:load-xml($data, $view, $root, $doc)
         else

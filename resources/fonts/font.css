@@ -1,3 +1,42 @@
+
+@font-face {
+  font-family: 'SourceSerifLight';
+  src: url('Source_Serif_Pro/SourceSerifPro-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SourceSerifRegular';
+  src: url('Source_Serif_Pro/SourceSerifPro-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SourceSansLight';
+  src: url('Source_Sans_Pro/SourceSansPro-Light.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SourceSansLightItalic';
+  src: url('Source_Sans_Pro/SourceSansPro-LightItalic.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'SourceSansRegular';
+  src: url('Source_Sans_Pro/SourceSansPro-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+
 @font-face {
   font-family: 'Junicode';
   src: url('Junicode.eot');

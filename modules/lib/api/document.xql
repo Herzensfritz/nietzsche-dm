@@ -407,6 +407,7 @@ declare function dapi:get-fragment($request as map(*)) {
 
 declare function dapi:get-fragment($request as map(*), $docs as node()*, $path as xs:string) {
     let $view := head(($request?parameters?view, $config:default-view))
+    
     let $xml :=
         if ($request?parameters?xpath) then
             for $document in $docs
@@ -426,7 +427,10 @@ declare function dapi:get-fragment($request as map(*), $docs as node()*, $path a
                 if (count($request?parameters?id) = 1) then
                     if ($view = 'surface') then (
                         $document/id($request?parameters?id)
-                    ) else (nav:get-section-for-node($config, $document/id($request?parameters?id)))
+                    ) else (
+                        let $section-for-node := nav:get-section-for-node($config, $document/id($request?parameters?id))
+                        return if ($section-for-node) then ($section-for-node) else ($document//*[@xml:id=$request?parameters?id])    
+                    )
                 else
                     let $ms1 := $document/id($request?parameters?id[1])
                     let $ms2 := $document/id($request?parameters?id[2])
@@ -444,9 +448,9 @@ declare function dapi:get-fragment($request as map(*), $docs as node()*, $path a
                 }
         ) else
             pages:load-xml($docs, $view, $request?parameters?root, $path)
-    
     return
         if ($xml?data) then
+            
             let $userParams :=
                 map:merge((
                     request:get-parameter-names()[starts-with(., 'user')] ! map { substring-after(., 'user.'): request:get-parameter(., ()) },
