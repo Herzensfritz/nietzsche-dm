@@ -448,6 +448,7 @@ declare function dapi:get-fragment($request as map(*), $docs as node()*, $path a
                 }
         ) else
             pages:load-xml($docs, $view, $request?parameters?root, $path)
+    
     return
         if ($xml?data) then
             
@@ -476,7 +477,7 @@ declare function dapi:get-fragment($request as map(*), $docs as node()*, $path a
                 else
                     $data
             
-            
+            let $log := console:log($content)
             let $html :=
                 typeswitch ($mapped)
                     case element() | document-node() return

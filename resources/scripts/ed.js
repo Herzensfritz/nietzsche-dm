@@ -1,9 +1,76 @@
 const PSELECTOR = 'p.tei-p'
 
+function getNextSibling(item, targetIsLine){
+    if (!item || !item.nextSibling) {
+        return null;
+    }
+    if (!item.nextSibling.classList){
+        if (targetIsLine) {
+            getNextSibling(item.nextSibling)
+        }
+        return item.nextSibling;
+    }
+    if (targetIsLine) {
+        return (item.nextSibling.classList.contains('tei-line')) ? item.nextSibling : getNextSibling(item.nextSibling);
+    }
+    return (!item.nextSibling.classList.contains('tei-line')) ? item.nextSibling : null;
+}
+
+function fixIncludedLB() {
+    
+   document.querySelector('pb-view#view1').shadowRoot.querySelectorAll('.tei-line span span.tei-line').forEach(line =>{
+        let parentSpan = line.parentElement;  
+        let copyOfParent = parentSpan.cloneNode();
+        line.childNodes.forEach(child =>{
+            copyOfParent.appendChild(child);    
+        });
+        line.appendChild(copyOfParent);
+        let nextSibling = parentSpan.nextSibling;
+        while (nextSibling){
+            let tmpSibling = nextSibling.nextSibling;
+            line.appendChild(nextSibling);
+            nextSibling = tmpSibling;
+        }
+        let nextParentLine = parentSpan.parentElement.nextSibling;
+        if (nextParentLine) {
+            nextParentLine.parentElement.insertBefore(line, nextParentLine);
+        } else {
+            parentSpan.parentElement.parentElement.appendChild(line);
+        }
+        if (parentSpan.parentElement.classList.contains('last')){
+            parentSpan.parentElement.classList.remove('last');
+            line.classList.add('last');
+        }
+   });
+   document.querySelector('pb-view#view1').shadowRoot.querySelectorAll('p.tei-p span.spaced span.tei-line').forEach(line =>{
+        let parentSpan = line.parentElement;  
+        let copyOfParent = parentSpan.cloneNode();
+        line.childNodes.forEach(child =>{
+            copyOfParent.appendChild(child);    
+        });
+        line.appendChild(copyOfParent);
+        let nextSibling = getNextSibling(parentSpan, false);
+        while (nextSibling){
+            let tmpSibling = getNextSibling(nextSibling, false);
+            line.appendChild(nextSibling);
+            nextSibling = tmpSibling;
+        }
+        let nextParentLine = getNextSibling(parentSpan, true);
+        if (nextParentLine) {
+            nextParentLine.parentElement.insertBefore(line, nextParentLine);
+        } else {
+            parentSpan.parentElement.appendChild(line);
+        }
+   });
+}
+
 function justifyParagraphs(){
     let index = 0;
     document.querySelector('pb-view#view1').shadowRoot.querySelectorAll(PSELECTOR).forEach(p =>{
-        p.querySelectorAll('br').forEach(br =>{
+        let isFollowedByHead = (p.nextElementSibling && p.nextElementSibling.classList && p.nextElementSibling.classList.contains('head'))
+        const lbs = p.querySelectorAll('br');
+        let paragraphIndex = 0;
+        lbs.forEach(br =>{
             let newParent = br.parentElement;
             let newSpan = document.createElement('span');
             let nextSibling = br.nextSibling;
@@ -14,31 +81,21 @@ function justifyParagraphs(){
                       nextSibling = tmpSibling;
             }
             newSpan.setAttribute('id', 'insertedSpan' + index);
-            newSpan.setAttribute('class', 'tei-line');
-            if (br.classList.length > 0){
-                newSpan.setAttribute('data-br-class', br.classList[0])
+            newSpan.classList.add('tei-line');
+            if (br.dataset.rend == 'last'){
+               newSpan.classList.add('last'); 
             }
             newParent.insertBefore(newSpan, br);
             newParent.removeChild(br);
+            paragraphIndex++
+            if (isFollowedByHead && paragraphIndex == lbs.length){
+                newSpan.classList.add('last');
+            }
             index++;
+            
         });
+        fixIncludedLB();
         p.classList.toggle('justify');
-    });
-}
-function unjustifyParagraphs() {
-    document.querySelector('pb-view#view1').shadowRoot.querySelectorAll(PSELECTOR + '.justify').forEach(p =>{
-       let children = [];
-       p.querySelectorAll('span.tei-line').forEach(inserted =>{
-           let br = document.createElement('br');
-           br.setAttribute('class', inserted.dataset.brClass);
-           inserted.parentElement.insertBefore(br, inserted);
-           children.forEach(child =>{
-               br.parentElement.insertBefore(child, br);
-           });
-           children = inserted.childNodes;
-           inserted.parentElement.removeChild(inserted);
-       }); 
-       p.classList.toggle('justify');
     });
 }
 
@@ -47,12 +104,5 @@ document.addEventListener('DOMContentLoaded', function () {
        if(pbRegistry.state.justify == 'on') {
             justifyParagraphs();
        }       
-    });
-     pbEvents.subscribe("pb-toggle", 'transcription', (ev) => {
-        if(pbRegistry.state.justify == 'on') {
-            justifyParagraphs();
-       } else {
-           unjustifyParagraphs();
-       }
     });
 });

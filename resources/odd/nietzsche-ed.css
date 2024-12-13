@@ -39,7 +39,7 @@ a {
     line-height: 1.5em;
 }
 .tei-p.justify {
-    width: 26em;
+    width: 27em;
 }
 .tei-line:after {
     content: ' ';
@@ -48,6 +48,9 @@ a {
 .tei-line {
 	text-align-last: justify;
 	display: block;
+}
+.tei-line.last {
+    text-align-last: start;
 }
 ul.letters, ul.pages {
     color: grey;
@@ -70,7 +73,7 @@ ul.letters, ul.pages {
             float: right;
 }
 .tei-hi2.spaced {
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.11rem;
 }
 .tei-hi2.bold {
     font-weight: bold;
