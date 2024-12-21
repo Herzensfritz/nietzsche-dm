@@ -1,4 +1,4 @@
-.content {
+pb-view#view1 .content {
     font-family: var(--ed-content-font-family);
 }
 
@@ -32,6 +32,7 @@ a {
     color: black;
     width: 3.5em;
     text-align: right;
+    text-align-last: right;
     font-family: var(--lnrFont);
      font-size: 80%;
 }
@@ -51,6 +52,9 @@ a {
 }
 .tei-line.last {
     text-align-last: start;
+}
+.tei-line.center {
+    text-align-last: center;
 }
 ul.letters, ul.pages {
     color: grey;
@@ -109,12 +113,12 @@ ul.letters, ul.pages {
     text-decoration: var(-paper-red-200) wavy underline;
 }
 .indent {
-    margin-right: 3em;
+    margin-left: 2em;
 }
 .note {
     font-style: italic;
     font-size: 80%;
 }
-.tei-corr1 .tei-note.note {
+.tei-corr1 .note {
     margin-left: 0.5em;
 }

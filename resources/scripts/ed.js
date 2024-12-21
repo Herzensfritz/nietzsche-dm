@@ -17,10 +17,15 @@ function getNextSibling(item, targetIsLine){
 }
 
 function fixIncludedLB() {
-    
-   document.querySelector('pb-view#view1').shadowRoot.querySelectorAll('.tei-line span span.tei-line').forEach(line =>{
+  document.querySelector('pb-view#view1').shadowRoot.querySelectorAll('.tei-line span span.tei-line').forEach(line =>{
+      Array.from(line.childNodes).forEach(child =>{
+         line.removeChild(child); 
+      });
+  });  
+  /* document.querySelector('pb-view#view1').shadowRoot.querySelectorAll('.tei-line span span.tei-line').forEach(line =>{
         let parentSpan = line.parentElement;  
-        let copyOfParent = parentSpan.cloneNode();
+        
+        let copyOfParent = parentSpan.cloneNode(); 
         line.childNodes.forEach(child =>{
             copyOfParent.appendChild(child);    
         });
@@ -61,7 +66,7 @@ function fixIncludedLB() {
         } else {
             parentSpan.parentElement.appendChild(line);
         }
-   });
+   }); */
 }
 
 function justifyParagraphs(){
@@ -70,14 +75,16 @@ function justifyParagraphs(){
         let isFollowedByHead = (p.nextElementSibling && p.nextElementSibling.classList && p.nextElementSibling.classList.contains('head'))
         const lbs = p.querySelectorAll('br');
         let paragraphIndex = 0;
+        let popover = null;
         lbs.forEach(br =>{
             let newParent = br.parentElement;
             let newSpan = document.createElement('span');
             let nextSibling = br.nextSibling;
             while (nextSibling && nextSibling.nodeName != 'BR') {
                       let tmpSibling = nextSibling.nextSibling;
-                      newParent.removeChild(nextSibling);
-                      newSpan.appendChild(nextSibling);
+                     
+                        newSpan.appendChild(nextSibling);
+                      
                       nextSibling = tmpSibling;
             }
             newSpan.setAttribute('id', 'insertedSpan' + index);
@@ -95,14 +102,27 @@ function justifyParagraphs(){
             
         });
         fixIncludedLB();
+        if (popover){
+            p.appendChild(popover)
+        }
         p.classList.toggle('justify');
     });
 }
 
 document.addEventListener('DOMContentLoaded', function () {
     pbEvents.subscribe("pb-update", 'transcription', (ev) => {
-       if(pbRegistry.state.justify == 'on') {
-            justifyParagraphs();
-       }       
+        document.querySelector('pb-view#view1').shadowRoot.querySelectorAll('.tei-line span span.tei-line').forEach(line =>{
+            Array.from(line.childNodes).forEach(child =>{
+                line.removeChild(child); 
+        });
+        document.querySelector('pb-view#view1').shadowRoot.querySelectorAll(PSELECTOR).forEach(p =>{
+            if (p.nextElementSibling && p.nextElementSibling.classList && p.nextElementSibling.classList.contains('head')) {
+                const lines = p.querySelectorAll('.tei-line');
+                if (lines.length > 0){
+                    lines[lines.length-1].classList.add('last');
+                }
+            }   
+        });
+  });   
     });
 });

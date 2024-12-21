@@ -77,8 +77,12 @@ pb-collapse .change:hover {
 .retrace {
     font-weight: 1000;
 }
+.dotUnderline {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
 .choice {
-    text-decoration: var(--blue, blue) wavy underline;
+    text-decoration: var(--cyan, cyan) wavy underline;
 }
 .overwrittenSic {
     position: absolute;
@@ -152,11 +156,15 @@ span.mytransparent { color: var(--tpField, white);}
      top: -2em;
      text-decoration: none;
     }
+    .upside-down {
+	transform: rotate(180deg);
+	display: inline-block;
+    }
    .EOL { color: red;}
    .XXX_red, .N_red { color: var(--nred,#dc4731); font-weight: bold;}
    .N_blue { color: var(--nblue,blue); font-weight: bold;}
    .N-Archiv_red { color: #b8390e;font-weight: bold;}
-   .N_pencil { color: var(--npencil,gray); font-weight: bold;}
+   .N_pencil, .N-pencil { color: var(--npencil,gray); font-weight: bold;}
    .Koeselitz_pencil, .typesetter_pencil { color: var(--npencil, gray); font-style: italic; font-weight: bold;}
    .Koeselitz_blue, .typesetter_blue { color: var(--nblue, blue); font-style: italic; font-weight: bold;}
    .N_brown1, .N_brown, .N_brown2, .N_brown3 { color: var(--nbrown);}
@@ -204,6 +212,8 @@ span.mytransparent { color: var(--tpField, white);}
    .N_brown1 .hatching, .N_brown1 .deleted, .N_brown2 .hatching, .N_brown2 .deleted,
    .N_brown3 .hatching, .N_brown3 .deleted, .N_brown4 .hatching, .N_brown4 .deleted { 
        cursor: context-menu; background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='2000' stroke='%239b6b56' stroke-dasharray='1 2 1 2' d='M1,1 1500,1500'/></svg>") repeat; }
+    .hatching-N_pencil { 
+       cursor: context-menu; background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path stroke-width='2000' stroke='%239c9c9c' stroke-dasharray='1 2 1 2' d='M1,1 1500,1500'/></svg>") repeat; }
    .GSA_pencil { color: #6b6b6b;font-family: cursive;} 
      .singleBlock { position: relative; padding-top: 5em; padding-bottom: 5em;}
      .firstBlock { position: relative; padding-top: 5em; }

@@ -39,11 +39,14 @@
         <body>
             <schemaSpec start="TEI teiCorpus" ident="surface" source="teipublisher.odd"> 
         <elementSpec ident="pb" mode="change"/>
+        <elementSpec ident="restore" mode="change">
+            <model predicate="@type='dotUnderline'" behaviour="inline" cssClass="dotUnderline"/>
+        </elementSpec>
         <elementSpec ident="certainty" mode="change">
             <model behaviour="omit"/>
         </elementSpec>
         <elementSpec ident="hi" mode="change">
-                    <model predicate="@rend and parent::restore" behaviour="pass-through">
+        <model predicate="@rend and parent::restore" behaviour="pass-through">
             <param name="rend" value="@rend"/>
             <param name="restore" value="concat('restoreBy',parent::restore/@type)"/>
             <param name="content" value="."/>
@@ -146,7 +149,7 @@
                 <elementSpec ident="div2" mode="add"/>
                 <elementSpec ident="body" mode="change"/>
     <elementSpec ident="surface" mode="add">
-                    <model predicate="@type='relative' and $parameters?type='facsimile'" behaviour="body">
+        <model predicate="@type='relative' and $parameters?type='facsimile'" behaviour="body">
             <param name="pb" value="replace(@start, '#', '')"/>
             <param name="url" value="substring-before(id(substring-after(@facs,'#'), root($parameters?root))/graphic/@url,'/full')"/>
             <param name="alt" value="substring-before(id('Mappe', root($parameters?root))/graphic/@url,'/full')"/>
@@ -637,8 +640,8 @@
         </model>
                 </elementSpec>
     <elementSpec ident="fw" mode="change">
-                    <model predicate="contains(@hand,'#GSA') or contains(@hand, '#N-Archiv') or contains(@hand, '#typesetter')" behaviour="omit"/>
-                    <model predicate="del and not(del[@cause])" behaviour="inline">
+        <model predicate="contains(@hand,'#GSA') or contains(@hand, '#N-Archiv') or contains(@hand, '#typesetter') or contains(@hand, '#unknown')" behaviour="omit"/>
+        <model predicate="del and not(del[@cause])" behaviour="inline">
             <param name="place" value="@place"/>
             <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="id" value="substring-after(@corresp, '#')"/>
@@ -661,7 +664,7 @@
                       </p>
           </pb-popover></pb:template>
         </model>
-                    <model predicate="not(del) and anchor[@corresp]" behaviour="inline">
+            <model predicate="not(del) and anchor[@corresp]" behaviour="inline">
             <param name="place" value="@place"/>
             <param name="hand" value="if(@hand) then (concat('hand ', substring-after(@hand, '#'))) else ()"/>
             <param name="highlightKey" value="substring-after(anchor[1]/@corresp, '#')"/>
@@ -846,8 +849,8 @@
         </model>
                 </elementSpec>
         <elementSpec ident="node()" mode="add"/>
-        <elementSpec ident="choice" mode="change">
-                    <model predicate="@corresp and sic and orig" behaviour="pass-through">
+    <elementSpec ident="choice" mode="change">
+        <model predicate="@corresp and sic and orig" behaviour="pass-through">
             <param name="sic" value="sic[1]"/>
             <param name="corr" value="corr[1]"/>
             <param name="orig" value="orig[1]"/>
@@ -871,15 +874,19 @@
             <param name="sic" value="sic[1]"/>
             <pb:template xmlns="" xml:space="preserve"><p class="test">[[sic]] &gt; [[corr]]</p></pb:template>
         </model>
-                    <model predicate="abbr and reg" behaviour="alternate">
+        
+        <model predicate="abbr and reg" behaviour="alternate">
             <param name="default" value="abbr[1]"/>
             <param name="alternate" value="reg[1]"/>
         </model>
-                    <model predicate="orig and reg" behaviour="alternate">
+        <model predicate="abbr" behaviour="inline">
+            <param name="content" value="abbr[1]"/>
+        </model>
+        <model predicate="orig and reg" behaviour="alternate">
             <param name="default" value="reg[1]"/>
             <param name="alternate" value="orig[1]"/>
         </model>
-                </elementSpec>
+        </elementSpec>
                 <elementSpec ident="sic" mode="change">
                     <model predicate="parent::choice and count(parent::*/*) gt 1" behaviour="inline"/>
                     <model behaviour="inline" cssClass="sic"/>
@@ -1319,16 +1326,14 @@
         </model>
                 </elementSpec>
     <elementSpec ident="unclear" mode="change">
-                    <model predicate="@reason and @agent" behaviour="pass-through">
+                    <model predicate="@reason='illegible'" behaviour="pass-through">
             <param name="target" value="."/>
             <param name="choiceCls" value="if ($parameters?choice = 'off') then () else ('choice')"/>
             <param name="reason" value="concat('myapp.unclear.', @reason)"/>
             <param name="agent" value="concat('myapp.unclear.',@agent)"/>
             <pb:template xmlns="" xml:space="preserve"><pb-popover theme="material">
   <span slot="default" class="[[choiceCls]] choiceParent">[[target]]</span>
-  <template slot="alternate"><p class="sicCor">[[target]] ] ¿ <span class="note"><pb-i18n key="[[reason]]">...key missing ...[[reason]]</pb-i18n></span> 
-  <span class="note"><pb-i18n key="myapp.unclear.because"/></span> 
-  <span class="note"><pb-i18n key="[[agent]]">...key missing ...[[agent]]</pb-i18n></span></p></template>
+  <template slot="alternate"><p class="sicCor">[[target]] ] <span class="note">Entzifferung unsicher</span></p></template>
 </pb-popover></pb:template>
         </model>
                     <model behaviour="pass-through">

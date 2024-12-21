@@ -16,6 +16,7 @@ div#pageInfo {
     width: 20%;
     position: relative;
     height: 100%;
+    left: 2.5em;
 }
 .noDisplay {
     display: none;   
