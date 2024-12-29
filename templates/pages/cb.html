@@ -36,8 +36,8 @@
           --nblack2: #46494c;
           --nblack: #000000;
           --npencil: #9c9c9c;
-        --typesetter_black: #808080;
-        --fhblack: #808080;
+        --typesetter_black: green;
+        --fhblack: green;
         --blue: var(--nblue, blue);
         }
 
@@ -113,7 +113,7 @@
                     </pb-view>
                 </section>
                 <main class="content-body">
-                    <pb-facsimile id="facsimile" default-zoom-level="0.7" show-full-page-control="true" show-home-control="true" emit="transcription" subscribe="transcription" type="iiif" show-navigation-control="show-navigation-control" show-navigator="show-navigator">
+                    <pb-facsimile id="facsimile" default-zoom-level="0.5" show-full-page-control="true" show-home-control="true" emit="transcription" subscribe="transcription" type="iiif" show-navigation-control="show-navigation-control" show-navigator="show-navigator">
                                             </pb-facsimile> 
                     <pb-view id="view1" src="document1" column-separator=".tei-cb" append-footnotes="append-footnotes" subscribe="transcription" emit="transcription">
                             <pb-param name="mode" value="cb"/>

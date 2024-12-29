@@ -17,14 +17,6 @@
      <script src="resources/scripts/transcription.js"/>
     <script type="module" src="pb-components-bundle.js" data-template="pages:load-components"/>
     <style>
-        @font-face {
-                font-family: "MyFont";
-                src: url("https://fonts.cdnfonts.com/s/15884/SourceSerifPro-Light.woff");
-        }
-      
-        @font-face {
-                font-family: "MyLatin";
-                src: url("https://fonts.cdnfonts.com/s/12183/SourceSansPro-Light.woff");}
         .latin {
             font-family: SourceSansLight;    
         }
@@ -50,8 +42,8 @@
           --nblack2: #46494c;
           --nblack: #000000;
           --npencil: #9c9c9c;
-        --typesetter_black: #808080;
-        --fhblack: #808080;
+        --typesetter_black: green;
+        --fhblack: green;
         --blue: var(--nblue, blue);
         --tpField: #f8f8f8;
         --tpFieldMy: #e0e6e2fa;
@@ -140,8 +132,8 @@
               
                  <pb-view id="view1" src="document1" column-separator=".tei-cb" view="surface" subscribe="transcription" emit="transcription">
                             </pb-view>  
-                 <pb-view id="edView" src="document1" column-separator=".tei-cb" map="nietzsche-ed-for-dm" odd="nietzsche-ed" subscribe="transcription">
-                                </pb-view>
+                <!-- <pb-view id="edView" src="document1" column-separator=".tei-cb" map="nietzsche-ed-for-dm" odd="nietzsche-ed" subscribe="transcription">
+                                </pb-view> -->
                   <div id="pageInfo">
                         <div id="fixedContent">
                                 <pb-view src="document1" column-separator=".tei-cb" map="nietzsche-page-info" subscribe="transcription" emit="pageInfo">

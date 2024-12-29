@@ -34,7 +34,7 @@ a {
     text-align: right;
     text-align-last: right;
     font-family: var(--lnrFont);
-     font-size: 80%;
+     font-size: calc(var(--pb-content-fontsize) * 0.8);
 }
 .tei-p {
     line-height: 1.5em;
@@ -55,6 +55,9 @@ a {
 }
 .tei-line.center {
     text-align-last: center;
+}
+.tei-line.Anmerkung {
+    font-size: 80%;
 }
 ul.letters, ul.pages {
     color: grey;
@@ -91,6 +94,11 @@ ul.letters, ul.pages {
 .underline {
     text-decoration: underline;
 }
+.tei-epigraph {
+    text-align: right;
+    margin-top: 5em;
+    margin-left: 5em;
+}
 
 .doubleUnderline {
             text-decoration-line: underline;
@@ -107,7 +115,7 @@ ul.letters, ul.pages {
     background: var(--pb-toolbar-background-color);
 }
 .popoverTarget {
-    text-decoration: blue wavy underline;
+    text-decoration: cyan wavy underline;
 }
 .popoverTargetCorr {
     text-decoration: var(-paper-red-200) wavy underline;
@@ -119,6 +127,6 @@ ul.letters, ul.pages {
     font-style: italic;
     font-size: 80%;
 }
-.tei-corr1 .note {
+.tei-corr1 .note, span span.note {
     margin-left: 0.5em;
 }

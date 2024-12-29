@@ -51,6 +51,7 @@ app-header {
 }
 
 body {
+    --pb-content-fontsize: 16px;
     --pb-splash-image-size: 360px auto;
     --pb-splash-background-color: var(--pb-color-inverse);
     --pb-logo-image-width: 140px;

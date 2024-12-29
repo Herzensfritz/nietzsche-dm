@@ -149,7 +149,13 @@
                 </elementSpec>
     <elementSpec ident="lb" mode="change">
         <model predicate="$parameters?mode = 'toc'" behaviour="omit"/>
-        <model predicate="parent::head" behaviour="break" useSourceRendition="true">
+        <model predicate="((number(@n) mod 5 = 0) or (number(@n) = 1)) and (parent::head or ancestor::epigraph or ancestor::titlePart or ancestor::docTitle or ancestor::byline or ancestor::docImprint)" behaviour="pass-through" useSourceRendition="true">
+            <param name="line" value="@n"/>
+            <param name="rend" value="@rend"/>
+            <pb:template xmlns="" xml:space="preserve"><br class="special-br"/><span class="line [[rend]]">[[line]]</span>
+            </pb:template>
+        </model>
+         <model predicate="parent::head or ancestor::epigraph or ancestor::titlePart or ancestor::docTitle or ancestor::byline or ancestor::docImprint" behaviour="break" useSourceRendition="true">
         <param name="type" value="'line'"/>
         </model>
         <model predicate="@edRef and not($parameters?mode = 'toc')" behaviour="pass-through">
@@ -164,30 +170,31 @@
          <model predicate="@rend and ((number(@n) mod 5 = 0) or (number(@n) = 1))" behaviour="pass-through" useSourceRendition="true">
             <param name="line" value="@n"/>
             <param name="rend" value="@rend"/>
-            <!-- <param name="content" value="let $nextLb := following-sibling::lb[1] return if ($nextLb) then (following-sibling::*[following-sibling::lb[1][@n = $nextLb/@n]) else (following-sibling::*)"/> -->
             <param name="content" value="let $nextLb := following-sibling::lb[1] return if($nextLb) then (following-sibling::node()[following-sibling::lb[@n = $nextLb/@n]]) else (following-sibling::node())"/>
-            <param name="cls" value="if (ancestor::div2[@type='Anmerkung']) then ('xLine') else ('line')"/>
-            <pb:template xmlns="" xml:space="preserve"><span class="[[cls]]">[[line]]</span>
-                <span class="tei-line [[rend]]">[[content]]</span>
+            <param name="cls" value="if (ancestor::div2[@type='Anmerkung']) then ('Anmerkung') else ()"/>
+            <pb:template xmlns="" xml:space="preserve"><span class="line">[[line]]</span>
+                <span class="tei-line [[rend]] [[cls]]">[[content]]</span>
             </pb:template>
         </model>
         <model predicate="not(@edRef) and ((number(@n) mod 5 = 0) or (number(@n) = 1))" behaviour="pass-through" useSourceRendition="true">
             <param name="line" value="@n"/>
             <param name="rend" value="@rend"/>
-            <param name="cls" value="if (ancestor::div2[@type='Anmerkung']) then ('xLine') else ('line')"/>
+            <param name="cls" value="if (ancestor::div2[@type='Anmerkung']) then ('Anmerkung') else ()"/>
             <param name="content" value="let $nextLb := following-sibling::lb[1] return if($nextLb) then (following-sibling::node()[following-sibling::lb[@n = $nextLb/@n]]) else (following-sibling::node())"/>
-            <pb:template xmlns="" xml:space="preserve"><span class="[[cls]]">[[line]]</span>
-                <span class="tei-line [[rend]]">[[content]]</span>
+            <pb:template xmlns="" xml:space="preserve"><span class="line">[[line]]</span>
+                <span class="tei-line [[rend]] [[cls]]">[[content]]</span>
             </pb:template>
         </model>
         <model predicate="not(@edRef) and @rend" behaviour="pass-through" useSourceRendition="true">
             <param name="rend" value="@rend"/>
+            <param name="cls" value="if (ancestor::div2[@type='Anmerkung']) then ('Anmerkung') else ()"/>
             <param name="content" value="let $nextLb := following-sibling::lb[1] return if($nextLb) then (following-sibling::node()[following-sibling::lb[@n = $nextLb/@n]]) else (following-sibling::node())"/>
-            <pb:template xmlns="" xml:space="preserve"> <span class="tei-line [[rend]]">[[content]]</span></pb:template>
+            <pb:template xmlns="" xml:space="preserve"> <span class="tei-line [[rend]] [[cls]]">[[content]]</span></pb:template>
         </model>
         <model predicate="not(@edRef)" behaviour="pass-through" useSourceRendition="true">
+            <param name="cls" value="if (ancestor::div2[@type='Anmerkung']) then ('Anmerkung') else ()"/>
             <param name="content" value="let $nextLb := following-sibling::lb[1] return if($nextLb) then (following-sibling::node()[following-sibling::lb[@n = $nextLb/@n]]) else (following-sibling::node())"/>
-            <pb:template xmlns="" xml:space="preserve"> <span class="tei-line">[[content]]</span></pb:template>
+            <pb:template xmlns="" xml:space="preserve"> <span class="tei-line [[cls]]">[[content]]</span></pb:template>
         </model>
     </elementSpec>
                 <elementSpec ident="pc" mode="add">
@@ -253,6 +260,27 @@
             </template>
             </pb-popover></pb:template>
         </model>
+        <model predicate="orig and corr" behaviour="pass-through">
+            <param name="default" value="orig"/>
+            <param name="alternate" value="corr"/>
+            <pb:template xmlns="" xml:space="preserve"><pb-popover theme="material">
+            <span slot="default" class="popoverTarget">[[default]]</span>
+            <template slot="alternate">
+                <p><span style="margin-right: 0.5em;">[[default]]</span>&gt;<span style="margin-left: 0.5em;">[[alternate]]</span></p>
+            </template>
+            </pb-popover></pb:template>
+        </model>
+         <model predicate="orig and sic[@source=&#34;#KGW #KSA&#34;]" behaviour="pass-through">
+            <param name="default" value="orig"/>
+            <param name="alternate" value="sic[@source=&#34;#KGW #KSA&#34;]"/>
+            <param name="note" value="(sic[1]/note[1]|note[1])"/>
+            <pb:template xmlns="" xml:space="preserve"><pb-popover theme="material">
+            <span slot="default" class="popoverTarget">[[default]]</span>
+            <template slot="alternate">
+                <p><span style="margin-right: 0.5em;">[[default]]</span>&lt;<span style="margin-left: 0.5em;">[[alternate]] (KGW/KSA)</span></p>
+            </template>
+            </pb-popover></pb:template>
+        </model>
         <model predicate="$parameters?mode = 'toc' and orig[@source=&#34;#Ed&#34;] and orig[@source=&#34;#KGW #KSA&#34;]" behaviour="inline">
             <param name="content" value="orig[@source=&#34;#Ed&#34;]"/>
         </model>
@@ -307,7 +335,7 @@
                     <model predicate="@type='non-authorial' and @hand" behaviour="pass-through">
                         <param name="cssClass" value="substring-after(@hand, '#')"/>
                         <param name="content" value="."/>
-                        <pb:template xmlns="" xml:space="preserve"><span class="[[cssClass]] fnote">[[content]])</span></pb:template>
+                        <pb:template xmlns="" xml:space="preserve"><span class="[[cssClass]] fnote">[[content]]</span></pb:template>
                     </model>
                     <model behaviour="inline" cssClass="note"/>
                 </elementSpec>
@@ -428,11 +456,21 @@
                 </elementSpec>
     <elementSpec ident="p" mode="change">
         <model output="print" predicate="ancestor::note" behaviour="inline"/>
-        <model predicate="ancestor::div2[@type='Anmerkung']" behaviour="paragraph" useSourceRendition="true">
-            <outputRendition xml:space="preserve">
-            text-align: justify; font-size: 80%;
-            </outputRendition>
-        </model>
+        <model predicate="$parameters?mode='timeline'" behaviour="paragraph" useSourceRendition="true"/>
+       <!-- <modelSequence predicate="pb and ancestor::div2[@type='Anmerkung']">
+            <model behaviour="inline">
+                <param name="content" value="pb"/>
+            </model>
+            <model behaviour="paragraph" cssClass="tei-p">
+               
+                <param name="content" value="lb"/>
+                <param name="style" value="'font-size: 80%;'"/>
+            </model>
+        </modelSequence> 
+        <model  predicate="ancestor::div2[@type='Anmerkung']" behaviour="paragraph" cssClass="tei-p">
+                <param name="content" value="lb"/>
+                <param name="style" value="'font-size: 80%;'"/>
+        </model> -->
          <modelSequence predicate="pb and style">
             <model behaviour="inline">
                 <param name="content" value="pb"/>
@@ -477,7 +515,7 @@
             </model>
             <model behaviour="link">
                 <param name="content" value="'Metadaten'"/>
-                <param name="uri" value="concat('meta-',$parameters?meta,'/index.html')"/>
+                <param name="uri" value="concat('/meta-',$parameters?meta,'/index.html')"/>
             </model>
         </modelSequence>
          <modelSequence output="web" predicate="$parameters?header='short'">

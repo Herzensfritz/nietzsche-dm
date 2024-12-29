@@ -50,7 +50,7 @@ function api:short-header($node as node(), $model as map(*)) {
         
         let $result := array:filter($model("mapping")?files, function ($item) { $item?name = $file})
         let $prefix := if (array:size($result) gt 0) then (array:get($result, 1)?target) else ()
-        let $relPath := concat($prefix, '/index.html')
+        let $relPath := concat('/', $prefix, '/index.html')
         return
             try {
                 let $config := tpu:parse-pi(root($work), (), ())

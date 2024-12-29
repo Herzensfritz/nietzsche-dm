@@ -1125,7 +1125,7 @@
             </model>
             <model behaviour="link">
                 <param name="content" value="'Metadaten'"/>
-                <param name="uri" value="concat('meta-',$parameters?meta,'/index.html')"/>
+                <param name="uri" value="concat('/meta-',$parameters?meta,'/index.html')"/>
             </model>
         </modelSequence>
          <modelSequence output="web" predicate="$parameters?header='short'">

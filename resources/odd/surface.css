@@ -5,7 +5,6 @@ body {
          --length: 0.2em;
          --nbrown: #5C4033;
          --red: #dc3545;
-         --editor-font: 'Junicode';
 }
 a {
     color: inherit;
@@ -460,7 +459,7 @@ span.mytransparent { color: var(--tpField, white);}
             color: black;
             font-style: italic; 
             font-size: 80%; 
-            font-family: var(--editor-font, sans-serif);
+            font-family: var(--lnrFont, sans-serif);
             
         }
         span.zlnr { color: grey;}
@@ -478,4 +477,3 @@ span.mytransparent { color: var(--tpField, white);}
         .old-insert-mark:before { content: '\23DF';}
         .headSpan { position: absolute; display: inline-block; left: 208px;}
         .head { margin-left: 20%; display: inline-block; }
-        .latin { font-family: MyLatin, Arial, Helvetica, sans-serif;}
