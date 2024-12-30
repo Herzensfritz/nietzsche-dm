@@ -733,27 +733,12 @@
                 </div>
             </pb:template>
         </model>
-                    <model predicate="@type='changeInfo' and @source='#srcD_surface_a30r' and change" behaviour="pass-through">
+        <model predicate="@type='changeInfo' and change" behaviour="pass-through">
             <param name="content" value="."/>
             <pb:template xmlns="" xml:space="preserve"><div id="changeInfoPage" class="infoPage"> 
             <pb-collapse opened="opened" emit="transcription">
                     <span slot="collapse-trigger">
                 <h2><pb-i18n key="myapp.menu.changes">Werkgenetische Bezüge</pb-i18n></h2>
-                </span>
-                 <span slot="collapse-content">
-                 <a href="?template=version.html">Genetische Versionen</a>
-                <ul>[[content]]</ul>
-                 </span>
-                </pb-collapse>
-                </div>
-            </pb:template>
-        </model>
-                    <model predicate="@type='changeInfo' and change" behaviour="pass-through">
-            <param name="content" value="."/>
-            <pb:template xmlns="" xml:space="preserve"><div id="changeInfoPage" class="infoPage"> 
-            <pb-collapse opened="opened" emit="transcription">
-                    <span slot="collapse-trigger">
-                <h2><pb-i18n key="myapp.menu.changes">Bearbeitungsschritte</pb-i18n></h2>
                 </span>
                  <span slot="collapse-content">
                 <ul>[[content]]</ul>
